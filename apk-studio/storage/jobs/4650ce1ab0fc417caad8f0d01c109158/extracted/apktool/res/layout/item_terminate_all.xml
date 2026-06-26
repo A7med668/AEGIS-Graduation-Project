@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/item_terminate_all_0" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Bazaar.ContainerRipple"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/error_primary" android:gravity="start" android:tag="binding_1" android:padding="@dimen/default_margin_double" android:layout_width="match_parent" android:layout_height="wrap_content" android:textAlignment="viewStart" style="@style/Bazaar.Text.Subtitle1" />
+    <View android:layout_gravity="bottom" android:id="@id/divider" android:layout_width="match_parent" android:layout_marginTop="@dimen/default_margin_double" style="@style/Bazaar.HorizontalDivider" />
+</FrameLayout>

@@ -1,0 +1,416 @@
+.class public final Landroidx/fragment/app/DefaultSpecialEffectsController$AnimatorEffect;
+.super Landroidx/fragment/app/SpecialEffectsController$Effect;
+.source "SourceFile"
+
+
+# instance fields
+.field public animator:Landroid/animation/AnimatorSet;
+
+.field public final animatorInfo:Landroidx/fragment/app/DefaultSpecialEffectsController$AnimationInfo;
+
+
+# direct methods
+.method public constructor <init>(Landroidx/fragment/app/DefaultSpecialEffectsController$AnimationInfo;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Landroidx/fragment/app/DefaultSpecialEffectsController$AnimatorEffect;->animatorInfo:Landroidx/fragment/app/DefaultSpecialEffectsController$AnimationInfo;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onCancel(Landroid/view/ViewGroup;)V
+    .locals 3
+
+    const-string v0, "container"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    iget-object p1, p0, Landroidx/fragment/app/DefaultSpecialEffectsController$AnimatorEffect;->animator:Landroid/animation/AnimatorSet;
+
+    iget-object v0, p0, Landroidx/fragment/app/DefaultSpecialEffectsController$AnimatorEffect;->animatorInfo:Landroidx/fragment/app/DefaultSpecialEffectsController$AnimationInfo;
+
+    if-nez p1, :cond_0
+
+    iget-object p1, v0, Lcom/github/k1rakishou/fsaf/file/Root;->holder:Ljava/lang/Object;
+
+    check-cast p1, Landroidx/fragment/app/SpecialEffectsController$FragmentStateManagerOperation;
+
+    invoke-virtual {p1, p0}, Landroidx/fragment/app/SpecialEffectsController$FragmentStateManagerOperation;->completeEffect(Landroidx/fragment/app/SpecialEffectsController$Effect;)V
+
+    goto :goto_2
+
+    :cond_0
+    iget-object v0, v0, Lcom/github/k1rakishou/fsaf/file/Root;->holder:Ljava/lang/Object;
+
+    check-cast v0, Landroidx/fragment/app/SpecialEffectsController$FragmentStateManagerOperation;
+
+    iget-boolean v1, v0, Landroidx/fragment/app/SpecialEffectsController$FragmentStateManagerOperation;->isSeeking:Z
+
+    if-eqz v1, :cond_1
+
+    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v2, 0x1a
+
+    if-lt v1, v2, :cond_2
+
+    sget-object v1, Landroidx/fragment/app/DefaultSpecialEffectsController$Api26Impl;->INSTANCE:Landroidx/fragment/app/DefaultSpecialEffectsController$Api26Impl;
+
+    invoke-virtual {v1, p1}, Landroidx/fragment/app/DefaultSpecialEffectsController$Api26Impl;->reverse(Landroid/animation/AnimatorSet;)V
+
+    goto :goto_0
+
+    :cond_1
+    invoke-virtual {p1}, Landroid/animation/AnimatorSet;->end()V
+
+    :cond_2
+    :goto_0
+    const-string p1, "FragmentManager"
+
+    const/4 v1, 0x2
+
+    invoke-static {p1, v1}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_4
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    const-string v2, "Animator from operation "
+
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v2, " has been canceled"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-boolean v0, v0, Landroidx/fragment/app/SpecialEffectsController$FragmentStateManagerOperation;->isSeeking:Z
+
+    if-eqz v0, :cond_3
+
+    const-string v0, " with seeking."
+
+    goto :goto_1
+
+    :cond_3
+    const-string v0, "."
+
+    :goto_1
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const/16 v0, 0x20
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {p1, v0}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_4
+    :goto_2
+    return-void
+.end method
+
+.method public final onCommit(Landroid/view/ViewGroup;)V
+    .locals 3
+
+    const-string v0, "container"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    iget-object p1, p0, Landroidx/fragment/app/DefaultSpecialEffectsController$AnimatorEffect;->animatorInfo:Landroidx/fragment/app/DefaultSpecialEffectsController$AnimationInfo;
+
+    iget-object p1, p1, Lcom/github/k1rakishou/fsaf/file/Root;->holder:Ljava/lang/Object;
+
+    check-cast p1, Landroidx/fragment/app/SpecialEffectsController$FragmentStateManagerOperation;
+
+    iget-object v0, p0, Landroidx/fragment/app/DefaultSpecialEffectsController$AnimatorEffect;->animator:Landroid/animation/AnimatorSet;
+
+    if-nez v0, :cond_0
+
+    invoke-virtual {p1, p0}, Landroidx/fragment/app/SpecialEffectsController$FragmentStateManagerOperation;->completeEffect(Landroidx/fragment/app/SpecialEffectsController$Effect;)V
+
+    return-void
+
+    :cond_0
+    invoke-virtual {v0}, Landroid/animation/AnimatorSet;->start()V
+
+    const-string v0, "FragmentManager"
+
+    const/4 v1, 0x2
+
+    invoke-static {v0, v1}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    const-string v2, "Animator from operation "
+
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string p1, " has started."
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-static {v0, p1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_1
+    return-void
+.end method
+
+.method public final onProgress(Landroidx/activity/BackEventCompat;Landroid/view/ViewGroup;)V
+    .locals 11
+
+    const-string v0, "backEvent"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "container"
+
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    iget-object p2, p0, Landroidx/fragment/app/DefaultSpecialEffectsController$AnimatorEffect;->animatorInfo:Landroidx/fragment/app/DefaultSpecialEffectsController$AnimationInfo;
+
+    iget-object p2, p2, Lcom/github/k1rakishou/fsaf/file/Root;->holder:Ljava/lang/Object;
+
+    check-cast p2, Landroidx/fragment/app/SpecialEffectsController$FragmentStateManagerOperation;
+
+    iget-object v0, p0, Landroidx/fragment/app/DefaultSpecialEffectsController$AnimatorEffect;->animator:Landroid/animation/AnimatorSet;
+
+    if-nez v0, :cond_0
+
+    invoke-virtual {p2, p0}, Landroidx/fragment/app/SpecialEffectsController$FragmentStateManagerOperation;->completeEffect(Landroidx/fragment/app/SpecialEffectsController$Effect;)V
+
+    return-void
+
+    :cond_0
+    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v2, 0x22
+
+    if-lt v1, v2, :cond_5
+
+    iget-object v1, p2, Landroidx/fragment/app/SpecialEffectsController$FragmentStateManagerOperation;->fragment:Landroidx/fragment/app/Fragment;
+
+    iget-boolean v1, v1, Landroidx/fragment/app/Fragment;->mTransitioning:Z
+
+    if-eqz v1, :cond_5
+
+    const-string v1, "FragmentManager"
+
+    const/4 v2, 0x2
+
+    invoke-static {v1, v2}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_1
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    const-string v4, "Adding BackProgressCallbacks for Animators to operation "
+
+    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v3, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-static {v1, v3}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_1
+    sget-object v3, Landroidx/fragment/app/DefaultSpecialEffectsController$Api24Impl;->INSTANCE:Landroidx/fragment/app/DefaultSpecialEffectsController$Api24Impl;
+
+    invoke-virtual {v3, v0}, Landroidx/fragment/app/DefaultSpecialEffectsController$Api24Impl;->totalDuration(Landroid/animation/AnimatorSet;)J
+
+    move-result-wide v3
+
+    long-to-float v5, v3
+
+    iget p1, p1, Landroidx/activity/BackEventCompat;->progress:F
+
+    mul-float p1, p1, v5
+
+    float-to-long v5, p1
+
+    const-wide/16 v7, 0x0
+
+    const-wide/16 v9, 0x1
+
+    cmp-long p1, v5, v7
+
+    if-nez p1, :cond_2
+
+    move-wide v5, v9
+
+    :cond_2
+    cmp-long p1, v5, v3
+
+    if-nez p1, :cond_3
+
+    sub-long v5, v3, v9
+
+    :cond_3
+    invoke-static {v1, v2}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_4
+
+    new-instance p1, Ljava/lang/StringBuilder;
+
+    const-string v2, "Setting currentPlayTime to "
+
+    invoke-direct {p1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {p1, v5, v6}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    const-string v2, " for Animator "
+
+    invoke-virtual {p1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v2, " on operation "
+
+    invoke-virtual {p1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-static {v1, p1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_4
+    sget-object p1, Landroidx/fragment/app/DefaultSpecialEffectsController$Api26Impl;->INSTANCE:Landroidx/fragment/app/DefaultSpecialEffectsController$Api26Impl;
+
+    invoke-virtual {p1, v0, v5, v6}, Landroidx/fragment/app/DefaultSpecialEffectsController$Api26Impl;->setCurrentPlayTime(Landroid/animation/AnimatorSet;J)V
+
+    :cond_5
+    return-void
+.end method
+
+.method public final onStart(Landroid/view/ViewGroup;)V
+    .locals 9
+
+    const-string v0, "container"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    iget-object v0, p0, Landroidx/fragment/app/DefaultSpecialEffectsController$AnimatorEffect;->animatorInfo:Landroidx/fragment/app/DefaultSpecialEffectsController$AnimationInfo;
+
+    invoke-virtual {v0}, Lcom/github/k1rakishou/fsaf/file/Root;->isVisibilityUnchanged()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    return-void
+
+    :cond_0
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    const-string v2, "context"
+
+    invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {v0, v1}, Landroidx/fragment/app/DefaultSpecialEffectsController$AnimationInfo;->getAnimation(Landroid/content/Context;)Landroidx/room/EntityUpsertionAdapter;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_1
+
+    iget-object v1, v1, Landroidx/room/EntityUpsertionAdapter;->updateAdapter:Ljava/lang/Object;
+
+    check-cast v1, Landroid/animation/AnimatorSet;
+
+    goto :goto_0
+
+    :cond_1
+    const/4 v1, 0x0
+
+    :goto_0
+    iput-object v1, p0, Landroidx/fragment/app/DefaultSpecialEffectsController$AnimatorEffect;->animator:Landroid/animation/AnimatorSet;
+
+    iget-object v0, v0, Lcom/github/k1rakishou/fsaf/file/Root;->holder:Ljava/lang/Object;
+
+    move-object v5, v0
+
+    check-cast v5, Landroidx/fragment/app/SpecialEffectsController$FragmentStateManagerOperation;
+
+    iget-object v0, v5, Landroidx/fragment/app/SpecialEffectsController$FragmentStateManagerOperation;->fragment:Landroidx/fragment/app/Fragment;
+
+    iget v1, v5, Landroidx/fragment/app/SpecialEffectsController$FragmentStateManagerOperation;->finalState:I
+
+    const/4 v2, 0x3
+
+    if-ne v1, v2, :cond_2
+
+    const/4 v1, 0x1
+
+    const/4 v4, 0x1
+
+    goto :goto_1
+
+    :cond_2
+    const/4 v1, 0x0
+
+    const/4 v4, 0x0
+
+    :goto_1
+    iget-object v0, v0, Landroidx/fragment/app/Fragment;->mView:Landroid/view/View;
+
+    invoke-virtual {p1, v0}, Landroid/view/ViewGroup;->startViewTransition(Landroid/view/View;)V
+
+    iget-object v7, p0, Landroidx/fragment/app/DefaultSpecialEffectsController$AnimatorEffect;->animator:Landroid/animation/AnimatorSet;
+
+    if-eqz v7, :cond_3
+
+    new-instance v8, Landroidx/fragment/app/DefaultSpecialEffectsController$AnimatorEffect$onStart$1;
+
+    move-object v1, v8
+
+    move-object v2, p1
+
+    move-object v3, v0
+
+    move-object v6, p0
+
+    invoke-direct/range {v1 .. v6}, Landroidx/fragment/app/DefaultSpecialEffectsController$AnimatorEffect$onStart$1;-><init>(Landroid/view/ViewGroup;Landroid/view/View;ZLandroidx/fragment/app/SpecialEffectsController$FragmentStateManagerOperation;Landroidx/fragment/app/DefaultSpecialEffectsController$AnimatorEffect;)V
+
+    invoke-virtual {v7, v8}, Landroid/animation/Animator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
+
+    :cond_3
+    iget-object p1, p0, Landroidx/fragment/app/DefaultSpecialEffectsController$AnimatorEffect;->animator:Landroid/animation/AnimatorSet;
+
+    if-eqz p1, :cond_4
+
+    invoke-virtual {p1, v0}, Landroid/animation/AnimatorSet;->setTarget(Ljava/lang/Object;)V
+
+    :cond_4
+    return-void
+.end method

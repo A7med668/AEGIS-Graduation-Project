@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/navigation_fehrest" app:startDestination="@id/emptyFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="EmptyFragment" android:name="com.farsitel.bazaar.component.EmptyFragment" android:id="@id/emptyFragment" />
+    <fragment android:label="FehrestFragment" android:name="com.farsitel.bazaar.feature.fehrest.view.FehrestFragmentContainer" android:id="@id/FehrestFragmentFragment">
+        <deepLink app:uri="@string/deeplink_fehrest_fragment" />
+    </fragment>
+    <fragment android:label="FehrestFragment" android:name="com.farsitel.bazaar.feature.fehrest.view.HomeFehrestFragmentContainer" android:id="@id/HomeFehrestFragmentFragment">
+        <deepLink app:uri="@string/deeplink_home_fehrest_fragment" />
+    </fragment>
+</navigation>

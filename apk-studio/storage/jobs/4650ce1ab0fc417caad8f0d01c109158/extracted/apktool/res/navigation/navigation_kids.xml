@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/navigation_kids" app:startDestination="@id/emptyFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="EmptyFragment" android:name="com.farsitel.bazaar.component.EmptyFragment" android:id="@id/emptyFragment" />
+    <dialog android:label="enableBazaarKidsFragment" android:name="com.farsitel.bazaar.kids.view.EnableBazaarKidsFragment" android:id="@id/enableBazaarKidsFragment">
+        <deepLink app:uri="@string/deeplink_enable_kids" />
+    </dialog>
+    <dialog android:label="disableBazaarKidsFragment" android:name="com.farsitel.bazaar.kids.view.DisableBazaarKidsFragment" android:id="@id/disableBazaarKidsFragment">
+        <deepLink app:uri="@string/deeplink_disable_kids" />
+    </dialog>
+</navigation>

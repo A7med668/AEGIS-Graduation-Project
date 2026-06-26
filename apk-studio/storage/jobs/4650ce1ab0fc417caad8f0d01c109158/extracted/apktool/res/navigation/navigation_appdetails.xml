@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/navigation_appdetails" app:startDestination="@id/emptyFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="AppDetailFragment" android:name="com.farsitel.bazaar.appdetails.view.AppDetailFragment" android:id="@id/appDetailFragment">
+        <deepLink app:uri="@string/deeplink_app_detail_fragment" />
+    </fragment>
+    <fragment android:label="EmptyFragment" android:name="com.farsitel.bazaar.component.EmptyFragment" android:id="@id/emptyFragment" />
+    <fragment android:label="AppMoreDescriptionFragment" android:name="com.farsitel.bazaar.appdetails.view.MoreDescriptionFragment" android:id="@id/moreDescriptionFragment">
+        <deepLink app:uri="@string/deeplink_app_more_description_fragment" />
+    </fragment>
+    <fragment android:label="AppMoreDescriptionDetailFragment" android:name="com.farsitel.bazaar.appdetails.view.MoreDescriptionDetailFragment" android:id="@id/moreDescriptionDetailFragment">
+        <deepLink app:uri="@string/deeplink_app_more_description_detail_fragment" />
+    </fragment>
+    <fragment android:label="ReportFragment" android:name="com.farsitel.bazaar.view.ReportFragment" android:id="@id/reportFragment">
+        <deepLink app:uri="@string/deeplink_report_fragment" />
+    </fragment>
+</navigation>

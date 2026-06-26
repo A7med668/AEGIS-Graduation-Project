@@ -1,0 +1,151 @@
+{
+  "risk_score": 14,
+  "risk_level": "informational",
+  "confidence": 0.55,
+  "verdict": "No significant risk indicators from current evidence",
+  "needs_human_review": false,
+  "review_status": "completed",
+  "evidence_findings": [
+    {
+      "id": "finding-001",
+      "source_model_role": "ai_disabled",
+      "source_model": "local-fallback",
+      "severity": "low",
+      "title": "Rule-based risk indicators",
+      "explanation": "The deterministic risk engine produced a non-zero score.",
+      "evidence_refs": [
+        "risk.reasons"
+      ],
+      "model_run_id": null,
+      "mitre_mobile": []
+    }
+  ],
+  "recommended_actions": [
+    "Review rule reasons and evidence references.",
+    "Run dynamic analysis in a disposable emulator for suspicious or high-risk APKs.",
+    "Keep Ollama running with Mistral/Llama3 for full local AI analysis.",
+    "No immediate block recommended from current evidence; continue standard monitoring.",
+    "Preserve job artifacts and evidence lineage.",
+    "Use a disposable emulator for dynamic validation before allowing installation."
+  ],
+  "routing_decision": {
+    "path": "suspicious_primary_llm",
+    "models": [
+      "primary_llm"
+    ],
+    "human_review": false,
+    "critical_signal": false,
+    "high_signal": false,
+    "suspicious": true,
+    "ambiguous": false,
+    "rule_score": 14,
+    "calibration": {
+      "profile": "v3.5_benign_runtime_context_aware",
+      "human_review_threshold": 88,
+      "note": "Generic runtime observations and permission-heavy samples route to medium analysis unless hard strong evidence is present."
+    },
+    "routing_reasons": {
+      "dangerous_permission_count": 0,
+      "has_accessibility_plus_overlay": false,
+      "suspicious_domain_count": 0,
+      "cleartext_http_url_count": 259,
+      "exported_component_count": 4,
+      "has_embedded_secrets": false,
+      "has_webview_indicator": true,
+      "has_dynamic_code_indicator": false,
+      "has_strong_rule_evidence": false,
+      "app_profile": "generic",
+      "permission_heavy_downgrade_applied": false,
+      "strong_rule_codes": [],
+      "dynamic_indicator_count": 0,
+      "dynamic_network_signal": false,
+      "dynamic_generic_runtime_only": false,
+      "dynamic_c2_signal": false
+    }
+  },
+  "fusion_inputs": {
+    "rule_score": 14,
+    "model_scores": [
+      15
+    ],
+    "feature_summary": {
+      "rule_score": 14,
+      "risk_level": "informational",
+      "score_breakdown": {
+        "permission_score_raw": 0,
+        "permission_score_capped": 0,
+        "permission_score_cap": 16,
+        "context_score": 14,
+        "combo_score": 0,
+        "dynamic_score_raw": 0,
+        "dynamic_score_capped": 0,
+        "dynamic_score_cap": 3,
+        "dynamic_generic_only": true,
+        "dynamic_high_or_critical_count": 0,
+        "dynamic_c2_like_count": 0,
+        "score_before_profile": 14,
+        "app_profile": "generic",
+        "expected_permission_reduction": 0,
+        "score_after_profile": 14,
+        "strong_evidence": false,
+        "hard_strong_evidence": false,
+        "hard_strong_evidence_count": 0,
+        "soft_strong_only": false,
+        "critical_calibration_applied": false,
+        "permission_reason_count": 0,
+        "combo_reason_count": 0,
+        "risk_reason_count": 5,
+        "risk_reason_group_count": 5,
+        "observation_count": 0,
+        "permission_heavy_downgrade_applied": false,
+        "high_risk_gate_applied": false
+      },
+      "app_profile": "generic",
+      "expected_permission_reduction": 0,
+      "permission_heavy_downgrade_applied": false,
+      "has_strong_rule_evidence": false,
+      "strong_rule_codes": [],
+      "dangerous_permission_count": 0,
+      "permission_count": 3,
+      "has_accessibility_plus_overlay": false,
+      "has_overlay": false,
+      "has_accessibility": false,
+      "has_installer_inventory_combo": false,
+      "has_boot_foreground_network_combo": false,
+      "has_audio_background_network_combo": false,
+      "exported_component_count": 4,
+      "domain_count": 5,
+      "url_count": 259,
+      "cleartext_http_url_count": 259,
+      "suspicious_domain_count": 0,
+      "has_embedded_secrets": false,
+      "native_library_count": 8,
+      "dex_file_count": 1,
+      "has_webview_indicator": true,
+      "webview_indicator_count": 2,
+      "has_dynamic_code_indicator": false,
+      "dynamic_code_indicator_count": 0,
+      "dynamic_status": null,
+      "dynamic_indicator_count": 0,
+      "dynamic_network_signal": false,
+      "dynamic_c2_signal": false,
+      "dynamic_generic_runtime_only": false,
+      "dynamic_crash_signal": false,
+      "known_bad_indicator": false,
+      "conflicting_evidence": false,
+      "low_confidence_static": false
+    },
+    "strong_evidence_gate": false,
+    "permission_heavy_or_generic_runtime_cap": false,
+    "allowed_evidence_refs_count": 350,
+    "dropped_model_findings_count": 0,
+    "claim_downgraded_count": 0
+  },
+  "evidence_quality": {
+    "validated_findings_count": 1,
+    "dropped_model_findings_count": 0,
+    "claim_downgraded_count": 0,
+    "dropped_model_findings": []
+  },
+  "review_label": "malware_confirmed"
+}

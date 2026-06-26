@@ -1,0 +1,16 @@
+{
+  "job_id": "b622e6777a7c4ab49c5faac7ed7cb6d3",
+  "filename": "malware_01_goatdroid.apk",
+  "status": "completed",
+  "progress": 100,
+  "error": null,
+  "report_available": true,
+  "created_at": "2026-06-24T23:28:13.956896+00:00",
+  "updated_at": "2026-06-24T23:28:32.502904+00:00",
+  "risk_score": 35,
+  "risk_level": "low",
+  "ai_risk_score": 38,
+  "ai_risk_level": "low",
+  "agentic_triggered": false,
+  "agentic_action_count": 1
+}

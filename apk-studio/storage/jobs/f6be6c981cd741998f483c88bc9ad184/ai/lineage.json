@@ -1,0 +1,83 @@
+{
+  "job_id": "f6be6c981cd741998f483c88bc9ad184",
+  "raw": {
+    "uploaded_apk": "upload/app.apk",
+    "intake": "intake.json",
+    "static_result": "static/static_result.json",
+    "dynamic_result": "dynamic/dynamic_report.json"
+  },
+  "derived": {
+    "rule_risk": "risk.json",
+    "normalized_evidence": "ai/normalized_evidence.json",
+    "redacted_evidence": "ai/redacted_evidence.json",
+    "allowed_evidence_refs": "ai/allowed_evidence_refs.json",
+    "risk_features": "ai/risk_features.json",
+    "routing_decision": "ai/routing_decision.json",
+    "model_runs": "ai/model_runs.jsonl",
+    "ai_findings": "ai/ai_findings.json",
+    "final_assessment": "ai/ai_final_assessment.json"
+  },
+  "finding_edges": [
+    {
+      "finding_id": "finding-001",
+      "model_run_id": null,
+      "evidence_refs": [
+        "static.permissions.android.permission.RECORD_AUDIO"
+      ],
+      "mitre_mobile": []
+    },
+    {
+      "finding_id": "finding-002",
+      "model_run_id": null,
+      "evidence_refs": [
+        "static.permissions.android.permission.REQUEST_INSTALL_PACKAGES"
+      ],
+      "mitre_mobile": [
+        {
+          "tactic": "Persistence",
+          "technique": "Install Additional Applications"
+        }
+      ]
+    },
+    {
+      "finding_id": "finding-003",
+      "model_run_id": null,
+      "evidence_refs": [
+        "static.permissions.android.permission.QUERY_ALL_PACKAGES"
+      ],
+      "mitre_mobile": [
+        {
+          "tactic": "Discovery",
+          "technique": "Software Discovery"
+        }
+      ]
+    },
+    {
+      "finding_id": "finding-004",
+      "model_run_id": null,
+      "evidence_refs": [
+        "static.permissions.android.permission.MANAGE_EXTERNAL_STORAGE"
+      ],
+      "mitre_mobile": []
+    },
+    {
+      "finding_id": "finding-005",
+      "model_run_id": null,
+      "evidence_refs": [
+        "static.permissions.android.permission.RECEIVE_BOOT_COMPLETED"
+      ],
+      "mitre_mobile": [
+        {
+          "tactic": "Persistence",
+          "technique": "Boot or Logon Initialization Scripts"
+        }
+      ]
+    }
+  ],
+  "evidence_quality": {
+    "validated_findings_count": 5,
+    "dropped_model_findings_count": 0,
+    "claim_downgraded_count": 0,
+    "dropped_model_findings": []
+  }
+}

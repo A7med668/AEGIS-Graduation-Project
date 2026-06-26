@@ -1,0 +1,256 @@
+{
+  "score": 44,
+  "level": "low",
+  "reasons": [
+    {
+      "code": "exported_components",
+      "bucket": "context",
+      "weight": 2,
+      "detail": "6 exported components",
+      "evidence_ref": "static.components.exported_count"
+    },
+    {
+      "code": "network_indicators",
+      "bucket": "context",
+      "weight": 1,
+      "detail": "2 domains found",
+      "evidence_ref": "static.network_indicators.domains"
+    },
+    {
+      "code": "cleartext_http_urls",
+      "bucket": "context",
+      "weight": 6,
+      "detail": "16 cleartext HTTP URLs found",
+      "evidence_ref": "static.network_indicators.urls"
+    },
+    {
+      "code": "embedded_secrets",
+      "bucket": "context",
+      "weight": 25,
+      "detail": "4 possible secrets",
+      "evidence_ref": "static.secrets",
+      "strong_evidence": true
+    },
+    {
+      "code": "native_code",
+      "bucket": "context",
+      "weight": 2,
+      "detail": "2 native libraries",
+      "evidence_ref": "static.native_libraries"
+    },
+    {
+      "code": "dynamic_code_loading",
+      "bucket": "context",
+      "weight": 3,
+      "detail": "1 dynamic-code indicators",
+      "evidence_ref": "static.dynamic_code_indicators",
+      "strong_evidence": false
+    },
+    {
+      "code": "dynamic_code_network_combo",
+      "bucket": "combo",
+      "weight": 10,
+      "detail": "Dynamic code indicators plus network indicators",
+      "evidence_ref": "static.dynamic_code_indicators",
+      "strong_evidence": true
+    }
+  ],
+  "risk_reasons": [
+    {
+      "code": "exported_components",
+      "bucket": "context",
+      "weight": 2,
+      "detail": "6 exported components",
+      "evidence_ref": "static.components.exported_count"
+    },
+    {
+      "code": "network_indicators",
+      "bucket": "context",
+      "weight": 1,
+      "detail": "2 domains found",
+      "evidence_ref": "static.network_indicators.domains"
+    },
+    {
+      "code": "cleartext_http_urls",
+      "bucket": "context",
+      "weight": 6,
+      "detail": "16 cleartext HTTP URLs found",
+      "evidence_ref": "static.network_indicators.urls"
+    },
+    {
+      "code": "embedded_secrets",
+      "bucket": "context",
+      "weight": 25,
+      "detail": "4 possible secrets",
+      "evidence_ref": "static.secrets",
+      "strong_evidence": true
+    },
+    {
+      "code": "native_code",
+      "bucket": "context",
+      "weight": 2,
+      "detail": "2 native libraries",
+      "evidence_ref": "static.native_libraries"
+    },
+    {
+      "code": "dynamic_code_loading",
+      "bucket": "context",
+      "weight": 3,
+      "detail": "1 dynamic-code indicators",
+      "evidence_ref": "static.dynamic_code_indicators",
+      "strong_evidence": false
+    },
+    {
+      "code": "dynamic_code_network_combo",
+      "bucket": "combo",
+      "weight": 10,
+      "detail": "Dynamic code indicators plus network indicators",
+      "evidence_ref": "static.dynamic_code_indicators",
+      "strong_evidence": true
+    }
+  ],
+  "informational_observations": [],
+  "risk_reason_groups": [
+    {
+      "group": "context:exported_components",
+      "title": "6 Exported Components",
+      "bucket": "context",
+      "count": 1,
+      "total_weight": 2,
+      "strong_evidence": false,
+      "examples": [
+        "6 exported components"
+      ],
+      "evidence_refs": [
+        "static.components.exported_count"
+      ]
+    },
+    {
+      "group": "context:network_indicators",
+      "title": "2 Domains Found",
+      "bucket": "context",
+      "count": 1,
+      "total_weight": 1,
+      "strong_evidence": false,
+      "examples": [
+        "2 domains found"
+      ],
+      "evidence_refs": [
+        "static.network_indicators.domains"
+      ]
+    },
+    {
+      "group": "context:cleartext_http_urls",
+      "title": "16 Cleartext Http Urls Found",
+      "bucket": "context",
+      "count": 1,
+      "total_weight": 6,
+      "strong_evidence": false,
+      "examples": [
+        "16 cleartext HTTP URLs found"
+      ],
+      "evidence_refs": [
+        "static.network_indicators.urls"
+      ]
+    },
+    {
+      "group": "context:embedded_secrets",
+      "title": "4 Possible Secrets",
+      "bucket": "context",
+      "count": 1,
+      "total_weight": 25,
+      "strong_evidence": true,
+      "examples": [
+        "4 possible secrets"
+      ],
+      "evidence_refs": [
+        "static.secrets"
+      ]
+    },
+    {
+      "group": "context:native_code",
+      "title": "2 Native Libraries",
+      "bucket": "context",
+      "count": 1,
+      "total_weight": 2,
+      "strong_evidence": false,
+      "examples": [
+        "2 native libraries"
+      ],
+      "evidence_refs": [
+        "static.native_libraries"
+      ]
+    },
+    {
+      "group": "context:dynamic_code_loading",
+      "title": "1 Dynamic-Code Indicators",
+      "bucket": "context",
+      "count": 1,
+      "total_weight": 3,
+      "strong_evidence": false,
+      "examples": [
+        "1 dynamic-code indicators"
+      ],
+      "evidence_refs": [
+        "static.dynamic_code_indicators"
+      ]
+    },
+    {
+      "group": "combo:dynamic_code_network_combo",
+      "title": "Dynamic Code Indicators Plus Network Indicators",
+      "bucket": "combo",
+      "count": 1,
+      "total_weight": 10,
+      "strong_evidence": true,
+      "examples": [
+        "Dynamic code indicators plus network indicators"
+      ],
+      "evidence_refs": [
+        "static.dynamic_code_indicators"
+      ]
+    }
+  ],
+  "risk_reason_count": 7,
+  "risk_reason_group_count": 7,
+  "observation_count": 0,
+  "total_reason_entries": 7,
+  "verdict_note": "Risk score is based on the listed contributing evidence groups.",
+  "score_breakdown": {
+    "permission_score_raw": 0,
+    "permission_score_capped": 0,
+    "permission_score_cap": 16,
+    "context_score": 39,
+    "combo_score": 5,
+    "dynamic_score_raw": 0,
+    "dynamic_score_capped": 0,
+    "dynamic_score_cap": 3,
+    "dynamic_generic_only": true,
+    "dynamic_high_or_critical_count": 0,
+    "dynamic_c2_like_count": 0,
+    "score_before_profile": 44,
+    "app_profile": "generic",
+    "expected_permission_reduction": 0,
+    "score_after_profile": 44,
+    "strong_evidence": true,
+    "hard_strong_evidence": true,
+    "hard_strong_evidence_count": 1,
+    "soft_strong_only": false,
+    "critical_calibration_applied": false,
+    "permission_reason_count": 0,
+    "combo_reason_count": 1,
+    "risk_reason_count": 7,
+    "risk_reason_group_count": 7,
+    "observation_count": 0,
+    "permission_heavy_downgrade_applied": false,
+    "high_risk_gate_applied": false
+  },
+  "calibration": {
+    "profile": "v4.7.2_false_positive_resistant_calibration",
+    "high_threshold": 88,
+    "critical_threshold": 96,
+    "permission_score_cap": 16,
+    "dynamic_generic_score_cap": 3,
+    "note": "False-positive resistant calibration: permissions, domains, exported components, and soft static indicators cannot produce Critical 100% without hard malicious evidence."
+  },
+  "summary": "Rule score 44/100 (low). Risk groups: 7; observations: 0"
+}

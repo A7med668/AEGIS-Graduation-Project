@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true">
+        <set>
+            <objectAnimator android:duration="200" android:valueTo="1.08" android:valueType="floatType" android:propertyName="scaleX" />
+            <objectAnimator android:duration="200" android:valueTo="1.08" android:valueType="floatType" android:propertyName="scaleY" />
+            <objectAnimator android:duration="200" android:valueTo="16.0dp" android:valueType="floatType" android:propertyName="translationZ" />
+        </set>
+    </item>
+    <item android:state_pressed="true">
+        <set>
+            <objectAnimator android:duration="200" android:valueTo="1.02" android:valueType="floatType" android:propertyName="scaleX" />
+            <objectAnimator android:duration="200" android:valueTo="1.02" android:valueType="floatType" android:propertyName="scaleY" />
+            <objectAnimator android:duration="200" android:valueTo="16.0dp" android:valueType="floatType" android:propertyName="translationZ" />
+        </set>
+    </item>
+    <item>
+        <set>
+            <objectAnimator android:duration="200" android:valueTo="1" android:valueType="floatType" android:propertyName="scaleX" />
+            <objectAnimator android:duration="200" android:valueTo="1" android:valueType="floatType" android:propertyName="scaleY" />
+            <objectAnimator android:duration="200" android:valueTo="0.0dp" android:valueType="floatType" android:propertyName="translationZ" />
+        </set>
+    </item>
+</selector>

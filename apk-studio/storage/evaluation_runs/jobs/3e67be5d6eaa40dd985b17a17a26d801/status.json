@@ -1,0 +1,16 @@
+{
+  "job_id": "3e67be5d6eaa40dd985b17a17a26d801",
+  "filename": "malware_10_damn_vulnerable_bank.apk",
+  "status": "completed",
+  "progress": 100,
+  "error": null,
+  "report_available": true,
+  "created_at": "2026-06-24T23:34:34.434925+00:00",
+  "updated_at": "2026-06-24T23:35:09.144392+00:00",
+  "risk_score": 14,
+  "risk_level": "informational",
+  "ai_risk_score": 14,
+  "ai_risk_level": "informational",
+  "agentic_triggered": false,
+  "agentic_action_count": 1
+}

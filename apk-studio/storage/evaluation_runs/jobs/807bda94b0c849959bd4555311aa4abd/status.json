@@ -1,0 +1,16 @@
+{
+  "job_id": "807bda94b0c849959bd4555311aa4abd",
+  "filename": "benign_07_qr_scanner.apk",
+  "status": "completed",
+  "progress": 100,
+  "error": null,
+  "report_available": true,
+  "created_at": "2026-06-24T23:24:30.249735+00:00",
+  "updated_at": "2026-06-24T23:25:52.780913+00:00",
+  "risk_score": 16,
+  "risk_level": "low",
+  "ai_risk_score": 16,
+  "ai_risk_level": "low",
+  "agentic_triggered": false,
+  "agentic_action_count": 1
+}

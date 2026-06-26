@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_mode_done">Готово</string>
+    <string name="abc_capital_off">ИСКЛУЧЕНО</string>
+    <string name="abc_capital_on">ВКЛУЧЕНО</string>
+    <string name="abc_search_hint">Пребарување…</string>
+    <string name="abc_searchview_description_clear">Исчисти барање</string>
+    <string name="abc_searchview_description_search">Пребарај</string>
+    <string name="abc_searchview_description_submit">Испрати барање</string>
+    <string name="abc_searchview_description_voice">Гласовно пребарување</string>
+    <string name="abc_toolbar_collapse_description">Собери</string>
+    <string name="bottomsheet_drag_handle_content_description">Рачка за влечење</string>
+    <string name="close_drawer">Затворете го менито за навигација</string>
+    <string name="close_sheet">Затворете го листот</string>
+    <string name="default_error_message">Неважечки запис</string>
+    <string name="default_popup_window_title">Скокачки прозорец</string>
+    <string name="error_a11y_label">Грешка: неважечко</string>
+    <string name="glance_error_layout_text_v2">Не може да се прикажат содржините</string>
+    <string name="in_progress">Во тек</string>
+    <string name="indeterminate">Делумно проверено</string>
+    <string name="m3_adaptive_default_pane_title_primary">Примарно окно</string>
+    <string name="m3_adaptive_default_pane_title_secondary">Секундарно окно</string>
+    <string name="m3_adaptive_default_pane_title_tertiary">Терцијарно окно</string>
+    <string name="m3_loading_indicator_content_description">Се вчитува</string>
+    <string name="m3c_bottom_sheet_collapse_description">Собери го долниот лист</string>
+    <string name="m3c_bottom_sheet_dismiss_description">Отфрли го долниот лист</string>
+    <string name="m3c_bottom_sheet_drag_handle_description">Рачка за влечење</string>
+    <string name="m3c_bottom_sheet_expand_description">Прошири го долниот лист</string>
+    <string name="m3c_bottom_sheet_pane_title">Долен лист</string>
+    <string name="m3c_snackbar_pane_title">Предупредување</string>
+    <string name="mtrl_button_snackbar_close_content_description">Затвори</string>
+    <string name="navigation_menu">Мени за навигација</string>
+    <string name="not_selected">Не е избрано</string>
+    <string name="password_toggle_content_description">Прикажи ја лозинката</string>
+    <string name="selected">Избрано</string>
+    <string name="state_empty">Празно</string>
+    <string name="state_off">Исклучено</string>
+    <string name="state_on">Вклучено</string>
+    <string name="switch_role">Прекинувач</string>
+    <string name="tab">Картичка</string>
+    <string name="template_percent">%1$d проценти.</string>
+    <string name="tooltip_description">совет за алатка</string>
+    <string name="tooltip_label">прикажи совет за алатка</string>
+</resources>

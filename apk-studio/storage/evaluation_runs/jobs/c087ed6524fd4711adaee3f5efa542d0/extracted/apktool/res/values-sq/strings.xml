@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_mode_done">U krye</string>
+    <string name="abc_capital_off">JOAKTIV</string>
+    <string name="abc_capital_on">AKTIV</string>
+    <string name="abc_search_hint">Kërko…</string>
+    <string name="abc_searchview_description_clear">Pastro pyetjen</string>
+    <string name="abc_searchview_description_search">Kërko</string>
+    <string name="abc_searchview_description_submit">Dërgo pyetjen</string>
+    <string name="abc_searchview_description_voice">Kërkim me zë</string>
+    <string name="abc_toolbar_collapse_description">Palos</string>
+    <string name="bottomsheet_drag_handle_content_description">Doreza e zvarritjes</string>
+    <string name="close_drawer">Mbyll menynë e navigimit</string>
+    <string name="close_sheet">Mbyll fletën</string>
+    <string name="default_error_message">Hyrje e pavlefshme</string>
+    <string name="default_popup_window_title">Dritare kërcyese</string>
+    <string name="error_a11y_label">Gabim: E pavlefshme</string>
+    <string name="glance_error_layout_text_v2">Përmbajtja nuk mund të shfaqet</string>
+    <string name="in_progress">Në vazhdim</string>
+    <string name="indeterminate">Pjesërisht e shënuar</string>
+    <string name="m3_adaptive_default_pane_title_primary">Paneli kryesor</string>
+    <string name="m3_adaptive_default_pane_title_secondary">Paneli dytësor</string>
+    <string name="m3_adaptive_default_pane_title_tertiary">Paneli tretësor</string>
+    <string name="m3_loading_indicator_content_description">Po ngarkohet</string>
+    <string name="m3c_bottom_sheet_collapse_description">Palos fletën e poshtme</string>
+    <string name="m3c_bottom_sheet_dismiss_description">Hiq fletën e poshtme</string>
+    <string name="m3c_bottom_sheet_drag_handle_description">Doreza e zvarritjes</string>
+    <string name="m3c_bottom_sheet_expand_description">Zgjero fletën e poshtme</string>
+    <string name="m3c_bottom_sheet_pane_title">Fleta e poshtme</string>
+    <string name="m3c_snackbar_pane_title">Sinjalizim</string>
+    <string name="mtrl_button_snackbar_close_content_description">Mbyll</string>
+    <string name="navigation_menu">Menyja e navigimit</string>
+    <string name="not_selected">Nuk është zgjedhur</string>
+    <string name="password_toggle_content_description">Shfaq fjalëkalimin</string>
+    <string name="selected">Zgjedhur</string>
+    <string name="state_empty">Bosh</string>
+    <string name="state_off">Joaktiv</string>
+    <string name="state_on">Aktiv</string>
+    <string name="switch_role">Ndërro</string>
+    <string name="tab">Tab</string>
+    <string name="template_percent">%1$d për qind.</string>
+    <string name="tooltip_description">këshillë për veglën</string>
+    <string name="tooltip_label">shfaq këshillën për veglën</string>
+</resources>

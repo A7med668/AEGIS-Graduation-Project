@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:icon="@drawable/ic_logging" android:id="@id/nav_insecure_logging" android:title="Insecure Logging" />
+        <item android:icon="@drawable/ic_creds" android:id="@id/nav_hardcoded_credentials" android:title="Hardcoded Credentials" />
+        <item android:icon="@drawable/ic_firebase" android:id="@id/nav_firebase_database" android:title="Firebase Database" />
+        <item android:icon="@drawable/ic_shared_preferences" android:id="@id/nav_insecure_shared_preferences" android:title="Insecure Shared Preferences" />
+        <item android:icon="@drawable/ic_injection" android:id="@id/nav_sql_injection" android:title="SQL Injection" />
+        <item android:icon="@drawable/ic_pin_bypass" android:id="@id/nav_pin_bypass" android:title="PIN Bypass" />
+        <item android:icon="@drawable/ic_root_detection" android:id="@id/nav_root_detection" android:title="Root Detection" />
+        <item android:icon="@drawable/ic_flag" android:id="@id/nav_secure_flag_bypass" android:title="Secure Flag Bypass" />
+        <item android:icon="@drawable/ic_deep_link" android:id="@id/nav_deep_link_exploitation" android:title="Deep Link Exploitation" />
+        <item android:icon="@drawable/ic_broadcast" android:id="@id/nav_insecure_broadcast_receiver" android:title="Insecure Broadcast Receiver" />
+        <item android:icon="@drawable/ic_webview" android:id="@id/nav_vulnerable_web_view" android:title="Vulnerable WebView" />
+        <item android:icon="@drawable/ic_cert" android:id="@id/nav_certificate_pinning" android:title="Certificate Pinning" />
+        <item android:icon="@drawable/ic_encryption_key" android:id="@id/nav_weak_cryptography" android:title="Weak Cryptography" />
+        <item android:icon="@drawable/ic_mic" android:id="@id/nav_insecure_service" android:title="Insecure Service" />
+        <item android:icon="@drawable/ic_serialization" android:id="@id/nav_object_serialization" android:title="Object Serialization" />
+        <item android:icon="@drawable/ic_provider" android:id="@id/nav_insecure_providers" android:title="Insecure Providers" />
+        <item android:icon="@drawable/ic_extension" android:id="@id/nav_arbitrary_code_execution" android:title="Arbitrary Code Execution" />
+        <item android:icon="@drawable/ic_native_library" android:id="@id/nav_native_library" android:title="Native Library" />
+        <item android:icon="@drawable/ic_smali" android:id="@id/nav_smali_patch" android:title="Smali Patch" />
+        <item android:icon="@drawable/ic_about" android:id="@id/nav_about" android:title="About" />
+    </group>
+</menu>

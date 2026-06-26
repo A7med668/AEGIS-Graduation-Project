@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+</head>
+<body>
+<a href="#feedback">Kritik</a>
+
+<h3>Inhaltsverzeichnis</h3>
+
+<a href="#introduction">Einleitung</a><br>
+<a href="#start">Programmstart</a><br>
+<a href="#albums">Alben</a><br>
+<a href="#pictures">Albumbilder</a><br>
+<a href="#limitations">Einschränkungen</a><br>
+<a href="#technical">Technisches</a><br>
+<a href="#licenses">Externe Lizenzen</a><br>
+
+    <h3>Der Classical Music Scanner</h3>
+
+<a id="introduction"></a>
+<h4>Was sind Sinn und Zweck dieses Programms?</h4>
+
+    <p>Der <i>Unpopular Music Player</i> und der <i>Opus 1 Music Player</i> verwenden die Mediendatenbank
+    des Android-Systems. Diese ist unvollständig, enthält diverse falsche Angaben, und der Automatismus,
+    mit dem die Datenbank aktualisiert wird, ist schwer vorhersagbar und versagt mitunter.</p>
+
+    <p>Um die Musikbibliothek ordentlich zu verwalten, müssen sich diese Programme die fehlenden und
+    unvollständigen Metadaten mittels einer "Tagger"-Bibliothek selbst aus den Audiodateien extrahieren.
+    Das funktioniert zwar recht gut, aber das Inkonsistenzproblem bleibt.</p>
+
+    <p>Der <i>Classical Music Scanner</i> macht für die o.g. Programme die System-Mediendatenbank überflüssig,
+    indem er eine eigene erstellt, wenn auch nur für Audiodateien (keine Bilder und Filme). Die Musikprogramme
+    greifen, wenn sie entsprechend konfiguriert sind, auf diese Datenbank zu. Die Tagger-Bibliothek in diesen
+    beiden Programmen wird damit nicht mehr benötigt.</p>
+
+<a id="start"></a>
+<h4>Start aus dem <i>Opus 1 Music Player</i></h4>
+
+   <p>Über den Menüpunkt „Gerät nach Musik durchsuchen...“ oder über das Kontextmenü.</p>
+
+<h4>Start aus dem <i>Unpopular Music Player</i></h4>
+
+   <p>Über den Menüpunkt „Gerät nach Musik durchsuchen...“ oder über das Kontextmenü in der Wiedergabe-Ansicht.</p>
+
+<h4>Start aus dem <i>Classical Music Tagger</i></h4>
+
+   <p>Geschieht automatisch unsichtbar im Hintergrund, wenn Dateien verändert oder gelöscht wurden.</p>
+
+<h4>Start als eigenständiges Programm</h4>
+
+    <p>Einfach starten und die grüne oder gelbe Schaltfläche betätigen.</p>
+
+    <p>Der „Auto Scan“ sucht nach geänderten, gelöschten und hinzgefügten Dateien und aktualisiert die
+    Datenbank ensprechend. Stellt das Programm fest, daß die Änderungen sehr viele sind, entscheidet
+    es sich selbständig (nicht: selbstständig, wir wollen doch nicht stottern...) für einen
+    vollständigen „Scan“, desgleichen auch im Fehlerfall.</p>
+
+    <p>Geht etwas schief, kann man den vollständigen „Scan“ manuell mit der gelben Schaltfläche auslösen.</p>
+
+<a id="albums"></a>
+<h4>Alben, auch aus mehreren CDs</h4>
+
+    <p>Im Gegensatz um Android-System hat der Scanner einen Mechanismus, solche Alben korrekt zu
+    behandeln, auch wenn nicht alle Dateien im selben Verzeichnis liegen. Dazu verwendet
+    man ein Albumverzeichnis, in dem das Albumbild ("folder.jpg") und für jede
+    CD ein Unterverzeichnis liegen. Diese müssen "CD1" etc. oder "1" etc. heißen.</p>
+
+    <p>Ansonsten gehört zum selben Album, was den gleichen Albumnamen und den gleichen
+    Album-Interpreten hat. Die Dateien sollten alle im selben Verzeichnis liegen.</p>
+
+
+<a id="pictures"></a>
+<h4>Albumbilder</h4>
+
+    <p>Albumbilder liegen im Albumverzeichnis und heißen "albumart.jpg/png" oder "folder.jpg/png". Außerdem
+    ist "cover.jpg" erlaubt. Andere Dateinamen, auch "Folder.jpg" o.ä., werden nicht erkannt.</p>
+
+    <p>Fehlt ein Bild, wird das größte eingebettete Bild aus den zugehörigen Audiodateien
+    extrahiert (falls vorhanden) und als Bild abgespeichert. Der Dateiname ist konfigurierbar.
+    Anschließend wird es ggf. herunterskaliert, wobei je nach Programmeinstellungen die
+    Originaldatei in ".backup" umbenannt wird.</p>
+
+    <p>Wenn in den Einstellungen gewünscht, werden vorhandene Albumbilder ebenfalls skaliert und
+    ggf. die Originaldatei gesichert.</p>
+
+    <p>Wenn in den Einstellungen gewünscht, werden vorhandene Albumbilder ggf. umbenannt.</p>
+
+    <p>Sind die Bilder zu groß, stocken die Musik-Abspielprogramme beim Durchblättern. Deshalb sind,
+    wie im Android-System, 500 Pixel voreingestellt. Im Gegensatz zum System wird eine Datei von
+    501 Pixeln jedoch nicht auf 250 reduziert, weil Android stets halbiert, bis es paßt, sondern auf 500.</p>
+
+<a id="limitations"></a>
+<h4>Einschränkungen</h4>
+
+    <p>Bilddateien mit Namen wie „AlbumArt.jpg“ können nicht in „albumart.jpg“ umbenannt werden.</p>
+
+    <p>Schreibzugriffe auf SD-Karte, USB-Speicher usw. sind von Android verboten. Dafür benötigt man den
+    SAF-Scanner.</p>
+
+<a id="technical"></a>
+<h4>Technisches</h4>
+
+    <p>Die Hauptfunktionalität ist in C++ geschrieben, sogenannter „native code“.</p>
+
+    <p>Das Programm verwendet die C++-Bibliothek <i>TagLib</i>.</p>
+
+    <p>Das Programm verwendet nicht die SQLite-Datenbankfunktionen, die in Android
+    enthalten sind, sondern bringt seine eigene <i>SQLite</i>-Programmbibliothek mit.</p>
+
+    <p>Die erzeugte Musik-Datenbank kann theoretisch auch von anderen Programmen genutzt werden.
+    Man kann sie auch auf den Computer kopieren und dort z.B. mit dem "DB Browser" analysieren.</p>
+
+<a id="licenses"></a>
+<h4>Externe Lizenzen</h4>
+
+    <p>TagLib C++ Library:</p>
+    <p>Source: https://taglib.org/</p>
+    <p>License: LGPL (http://www.gnu.org/copyleft/lesser.html) and MPL (https://www.mozilla.org/en-US/MPL/1.1/)</p>
+    <p></p>
+    <p>SQLite C Library:</p>
+    <p>Source: https://www.sqlite.org/</p>
+    <p>License: https://www.sqlite.org/copyright.html</p>
+
+<br>
+<a name="feedback" id="feedback">
+    <h3>Kritik</h3>
+    Kommentare, Kritik, Verbesserungsvorschläge bitte an:
+    <br><br>
+    <a href="mailto:Andreas.Kromke@gmail.com">Kontaktiere Suppen-Ort</a>
+</a>
+<br><br>
+</body>
+</html>

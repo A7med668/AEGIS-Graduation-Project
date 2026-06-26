@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_mode_done">ແລ້ວໆ</string>
+    <string name="abc_capital_off">ປິດ</string>
+    <string name="abc_capital_on">ເປີດ</string>
+    <string name="abc_search_hint">ຊອກຫາ…</string>
+    <string name="abc_searchview_description_clear">ລຶບຂໍ້ຄວາມຊອກຫາ</string>
+    <string name="abc_searchview_description_search">ຊອກຫາ</string>
+    <string name="abc_searchview_description_submit">ສົ່ງຂໍ້ມູນ</string>
+    <string name="abc_searchview_description_voice">ຊອກຫາດ້ວຍສຽງ</string>
+    <string name="abc_toolbar_collapse_description">ຫຍໍ້ລົງ</string>
+    <string name="bottomsheet_drag_handle_content_description">ບ່ອນຈັບລາກ</string>
+    <string name="close_drawer">ປິດ​ເມ​ນູການ​ນຳ​ທາງ</string>
+    <string name="close_sheet">ປິດຊີດ</string>
+    <string name="default_error_message">ຂໍ້ມູນທີ່ປ້ອນເຂົ້າບໍ່ຖືກຕ້ອງ</string>
+    <string name="default_popup_window_title">ໜ້າຈໍປັອບອັບ</string>
+    <string name="error_a11y_label">ຂໍ້ຜິດພາດ: ບໍ່ຖືກຕ້ອງ</string>
+    <string name="glance_error_layout_text_v2">ບໍ່ສາມາດສະແດງເນື້ອຫາໄດ້</string>
+    <string name="in_progress">ກຳ​ລັງ​ດຳ​ເນີນ​ການ</string>
+    <string name="indeterminate">ກວດສອບບາງສ່ວນແລ້ວ</string>
+    <string name="m3_adaptive_default_pane_title_primary">ແຖບຫຼັກ</string>
+    <string name="m3_adaptive_default_pane_title_secondary">ແຖບສຳຮອງ</string>
+    <string name="m3_adaptive_default_pane_title_tertiary">ແຖບລຳດັບທີ 3</string>
+    <string name="m3_loading_indicator_content_description">ກຳລັງໂຫຼດ</string>
+    <string name="m3c_bottom_sheet_collapse_description">ຫຍໍ້ຊີດລຸ່ມສຸດລົງ</string>
+    <string name="m3c_bottom_sheet_dismiss_description">ປິດຊີດລຸ່ມສຸດໄວ້</string>
+    <string name="m3c_bottom_sheet_drag_handle_description">ບ່ອນຈັບລາກ</string>
+    <string name="m3c_bottom_sheet_expand_description">ຂະຫຍາຍຊີດລຸ່ມສຸດ</string>
+    <string name="m3c_bottom_sheet_pane_title">ຊີດລຸ່ມສຸດ</string>
+    <string name="m3c_snackbar_pane_title">ແຈ້ງເຕືອນ</string>
+    <string name="mtrl_button_snackbar_close_content_description">ປິດ</string>
+    <string name="navigation_menu">ເມນູການນຳທາງ</string>
+    <string name="not_selected">ບໍ່ໄດ້ເລືອກ</string>
+    <string name="password_toggle_content_description">ສະແດງລະຫັດຜ່ານ</string>
+    <string name="selected">ເລືອກແລ້ວ</string>
+    <string name="state_empty">ຫວ່າງເປົ່າ</string>
+    <string name="state_off">ປິດຢູ່</string>
+    <string name="state_on">ເປີດຢູ່</string>
+    <string name="switch_role">ປຸ່ມກົດ</string>
+    <string name="tab">ແຖບ</string>
+    <string name="template_percent">%1$d ເປີ​ເຊັນ.</string>
+    <string name="tooltip_description">ຄຳແນະນຳ</string>
+    <string name="tooltip_label">ສະແດງຄຳແນະນຳ</string>
+</resources>

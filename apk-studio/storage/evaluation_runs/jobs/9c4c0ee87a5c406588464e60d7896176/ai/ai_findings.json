@@ -1,0 +1,38 @@
+[
+  {
+    "id": "finding-001",
+    "source_model_role": "ai_disabled",
+    "source_model": "local-fallback",
+    "severity": "medium",
+    "title": "Dynamic code loading indicators",
+    "explanation": "Static string scanning found dynamic loading or reflection related indicators that require analyst review.",
+    "evidence_refs": [
+      "static.dynamic_code_indicators"
+    ],
+    "model_run_id": null,
+    "mitre_mobile": [
+      {
+        "tactic": "Defense Evasion",
+        "technique": "Dynamic Code Loading"
+      }
+    ]
+  },
+  {
+    "id": "finding-002",
+    "source_model_role": "ai_disabled",
+    "source_model": "local-fallback",
+    "severity": "medium",
+    "title": "Suspicious domain indicators",
+    "explanation": "Network indicators include domains with higher-risk TLDs or suspicious patterns.",
+    "evidence_refs": [
+      "static.network_indicators.domains"
+    ],
+    "model_run_id": null,
+    "mitre_mobile": [
+      {
+        "tactic": "Command and Control",
+        "technique": "Application Layer Protocol"
+      }
+    ]
+  }
+]

@@ -1,0 +1,35 @@
+{
+  "path": "suspicious_primary_llm",
+  "models": [
+    "primary_llm"
+  ],
+  "human_review": false,
+  "critical_signal": false,
+  "high_signal": false,
+  "suspicious": true,
+  "ambiguous": false,
+  "rule_score": 16,
+  "calibration": {
+    "profile": "v3.5_benign_runtime_context_aware",
+    "human_review_threshold": 88,
+    "note": "Generic runtime observations and permission-heavy samples route to medium analysis unless hard strong evidence is present."
+  },
+  "routing_reasons": {
+    "dangerous_permission_count": 0,
+    "has_accessibility_plus_overlay": false,
+    "suspicious_domain_count": 0,
+    "cleartext_http_url_count": 74,
+    "exported_component_count": 1,
+    "has_embedded_secrets": false,
+    "has_webview_indicator": true,
+    "has_dynamic_code_indicator": false,
+    "has_strong_rule_evidence": false,
+    "app_profile": "generic",
+    "permission_heavy_downgrade_applied": false,
+    "strong_rule_codes": [],
+    "dynamic_indicator_count": 0,
+    "dynamic_network_signal": false,
+    "dynamic_generic_runtime_only": false,
+    "dynamic_c2_signal": false
+  }
+}

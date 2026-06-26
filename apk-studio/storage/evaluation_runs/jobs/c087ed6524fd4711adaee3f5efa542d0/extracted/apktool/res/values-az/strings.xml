@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_mode_done">Hazırdır</string>
+    <string name="abc_capital_off">DEAKTİV</string>
+    <string name="abc_capital_on">AKTİV</string>
+    <string name="abc_search_hint">Axtarış...</string>
+    <string name="abc_searchview_description_clear">Sorğunu silin</string>
+    <string name="abc_searchview_description_search">Axtarın</string>
+    <string name="abc_searchview_description_submit">Sorğunu göndərin</string>
+    <string name="abc_searchview_description_voice">Səsli axtarış</string>
+    <string name="abc_toolbar_collapse_description">Yığcamlaşdırın</string>
+    <string name="bottomsheet_drag_handle_content_description">Dəstək</string>
+    <string name="close_drawer">Naviqasiya menyusunu bağlayın</string>
+    <string name="close_sheet">Səhifəni bağlayın</string>
+    <string name="default_error_message">Yanlış daxiletmə</string>
+    <string name="default_popup_window_title">Popap Pəncərəsi</string>
+    <string name="error_a11y_label">Xəta: yanlışdır</string>
+    <string name="glance_error_layout_text_v2">Kontenti göstərmək olmur</string>
+    <string name="in_progress">Davam edir</string>
+    <string name="indeterminate">Qismən yoxlanıb</string>
+    <string name="m3_adaptive_default_pane_title_primary">Əsas panel</string>
+    <string name="m3_adaptive_default_pane_title_secondary">İkinci dərəcəli panel</string>
+    <string name="m3_adaptive_default_pane_title_tertiary">Üçüncü dərəcəli panel</string>
+    <string name="m3_loading_indicator_content_description">Yüklənir</string>
+    <string name="m3c_bottom_sheet_collapse_description">Aşağıdakı vərəqi yığcamlaşdırın</string>
+    <string name="m3c_bottom_sheet_dismiss_description">Aşağıdakı vərəqi rədd edin</string>
+    <string name="m3c_bottom_sheet_drag_handle_description">Dəstəyi çəkin</string>
+    <string name="m3c_bottom_sheet_expand_description">Aşağıdakı vərəqi genişləndirin</string>
+    <string name="m3c_bottom_sheet_pane_title">Aşağıdakı vərəq</string>
+    <string name="m3c_snackbar_pane_title">Xəbərdarlıq</string>
+    <string name="mtrl_button_snackbar_close_content_description">Bağlayın</string>
+    <string name="navigation_menu">Naviqasiya menyusu</string>
+    <string name="not_selected">Seçilməyib</string>
+    <string name="password_toggle_content_description">Parolu göstərin</string>
+    <string name="selected">Seçilib</string>
+    <string name="state_empty">Boş</string>
+    <string name="state_off">Deaktiv</string>
+    <string name="state_on">Aktiv</string>
+    <string name="switch_role">Dəyişdirin</string>
+    <string name="tab">Tab</string>
+    <string name="template_percent">%1$d faiz.</string>
+    <string name="tooltip_description">alət izahı</string>
+    <string name="tooltip_label">alət izahını göstərin</string>
+</resources>

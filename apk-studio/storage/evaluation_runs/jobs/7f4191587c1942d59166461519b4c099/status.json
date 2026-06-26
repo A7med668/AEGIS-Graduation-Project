@@ -1,0 +1,16 @@
+{
+  "job_id": "7f4191587c1942d59166461519b4c099",
+  "filename": "malware_09_allsafe.apk",
+  "status": "completed",
+  "progress": 100,
+  "error": null,
+  "report_available": true,
+  "created_at": "2026-06-24T23:33:28.708189+00:00",
+  "updated_at": "2026-06-24T23:34:34.369440+00:00",
+  "risk_score": 47,
+  "risk_level": "medium",
+  "ai_risk_score": 47,
+  "ai_risk_level": "medium",
+  "agentic_triggered": false,
+  "agentic_action_count": 1
+}

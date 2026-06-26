@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.TextAppearance.AppCompat.Widget.ActionBar.Menu" parent="@android:style/TextAppearance.Material.Widget.ActionBar.Menu" />
+    <style name="Base.TextAppearance.AppCompat.Widget.Button.Inverse" parent="@android:style/TextAppearance.Material.Widget.Button.Inverse" />
+    <style name="Base.Theme.AppCompat" parent="@style/Base.V23.Theme.AppCompat" />
+    <style name="Base.Theme.AppCompat.Light" parent="@style/Base.V23.Theme.AppCompat.Light" />
+    <style name="Base.V23.Theme.AppCompat" parent="@style/Base.V22.Theme.AppCompat">
+        <item name="actionBarItemBackground">?android:actionBarItemBackground</item>
+        <item name="actionMenuTextAppearance">?android:actionMenuTextAppearance</item>
+        <item name="actionMenuTextColor">?android:actionMenuTextColor</item>
+        <item name="actionOverflowButtonStyle">?android:actionOverflowButtonStyle</item>
+        <item name="controlBackground">@drawable/abc_control_background_material</item>
+        <item name="ratingBarStyleIndicator">?android:ratingBarStyleIndicator</item>
+        <item name="ratingBarStyleSmall">?android:ratingBarStyleSmall</item>
+    </style>
+    <style name="Base.V23.Theme.AppCompat.Light" parent="@style/Base.V22.Theme.AppCompat.Light">
+        <item name="actionBarItemBackground">?android:actionBarItemBackground</item>
+        <item name="actionMenuTextAppearance">?android:actionMenuTextAppearance</item>
+        <item name="actionMenuTextColor">?android:actionMenuTextColor</item>
+        <item name="actionOverflowButtonStyle">?android:actionOverflowButtonStyle</item>
+        <item name="controlBackground">@drawable/abc_control_background_material</item>
+        <item name="ratingBarStyleIndicator">?android:ratingBarStyleIndicator</item>
+        <item name="ratingBarStyleSmall">?android:ratingBarStyleSmall</item>
+    </style>
+    <style name="Base.Widget.AppCompat.ActionButton.Overflow" parent="@android:style/Widget.Material.ActionButton.Overflow" />
+    <style name="Base.Widget.AppCompat.Button.Borderless.Colored" parent="@android:style/Widget.Material.Button.Borderless.Colored" />
+    <style name="Base.Widget.AppCompat.EditText" parent="@android:style/Widget.Material.EditText">
+        <item name="android:breakStrategy">simple</item>
+        <item name="android:hyphenationFrequency">none</item>
+    </style>
+    <style name="Base.Widget.AppCompat.RatingBar.Indicator" parent="@android:style/Widget.Material.RatingBar.Indicator" />
+    <style name="Base.Widget.AppCompat.RatingBar.Small" parent="@android:style/Widget.Material.RatingBar.Small" />
+    <style name="Base.Widget.AppCompat.TextView" parent="@android:style/Widget.Material.TextView">
+        <item name="android:breakStrategy">high_quality</item>
+        <item name="android:hyphenationFrequency">none</item>
+    </style>
+    <style name="CardView" parent="@style/Base.CardView">
+        <item name="cardBackgroundColor">?android:colorBackgroundFloating</item>
+    </style>
+    <style name="Theme.AntennaPod.Dark.Translucent" parent="@style/Theme.AntennaPod.Dark.NoTitle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@style/AnimationFade</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+    <style name="Theme.AntennaPod.Dynamic.Dark.Translucent" parent="@style/Theme.AntennaPod.Dynamic.Dark.NoTitle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@style/AnimationFade</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+    <style name="Theme.AntennaPod.Dynamic.Light" parent="@style/Theme.Base.AntennaPod.Dynamic.Light">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+    <style name="Theme.AntennaPod.Dynamic.Light.Translucent" parent="@style/Theme.AntennaPod.Dynamic.Light.NoTitle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@style/AnimationFade</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+    <style name="Theme.AntennaPod.Dynamic.TrueBlack.Translucent" parent="@style/Theme.AntennaPod.Dynamic.TrueBlack.NoTitle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@style/AnimationFade</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+    <style name="Theme.AntennaPod.Light.Translucent" parent="@style/Theme.AntennaPod.Light.NoTitle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@style/AnimationFade</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+    <style name="Theme.AntennaPod.Splash" parent="@style/Theme.SplashScreen">
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:enforceNavigationBarContrast">false</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/launcher_animate</item>
+    </style>
+    <style name="Theme.AntennaPod.TrueBlack.Translucent" parent="@style/Theme.AntennaPod.TrueBlack.NoTitle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@style/AnimationFade</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+    <style name="Theme.Base.AntennaPod.Dynamic.Dark" parent="@style/Theme.Material3.DynamicColors.Dark">
+        <item name="android:fitsSystemWindows">false</item>
+        <item name="android:splitMotionEvents">false</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="actionBarStyle">@style/Widget.AntennaPod.ActionBar</item>
+        <item name="action_icon_color">@color/white</item>
+        <item name="background_color">@color/background_darktheme</item>
+        <item name="background_elevated">@color/background_elevated_darktheme</item>
+        <item name="dragview_background">@drawable/ic_drag_darktheme</item>
+        <item name="icon_gray">#cdd9e4</item>
+        <item name="icon_green">#008537</item>
+        <item name="icon_purple">#aa55d8</item>
+        <item name="icon_red">#cf1800</item>
+        <item name="icon_yellow">#f59f00</item>
+        <item name="preferenceTheme">@style/AppPreferenceThemeOverlay</item>
+        <item name="scrollbar_thumb">@drawable/scrollbar_thumb_dark</item>
+        <item name="seek_background">@color/seek_background_dark</item>
+        <item name="toolbarStyle">@style/Style.AntennaPod.Toolbar</item>
+    </style>
+    <style name="ThemeOverlay.Material3.AutoCompleteTextView" parent="@style/Base.ThemeOverlay.Material3.AutoCompleteTextView">
+        <item name="colorControlNormal">@color/m3_textfield_indicator_text_color</item>
+    </style>
+    <style name="ThemeOverlay.Material3.Chip" parent="">
+        <item name="colorControlNormal">@color/m3_chip_text_color</item>
+    </style>
+    <style name="ThemeOverlay.Material3.Chip.Assist" parent="">
+        <item name="colorControlNormal">@color/m3_assist_chip_icon_tint_color</item>
+    </style>
+    <style name="ThemeOverlay.Material3.TextInputEditText" parent="@style/Base.ThemeOverlay.Material3.TextInputEditText">
+        <item name="colorControlNormal">@color/m3_textfield_indicator_text_color</item>
+    </style>
+    <style name="Widget.Material3.CompoundButton.CheckBox" parent="@style/Base.Widget.Material3.CompoundButton.CheckBox">
+        <item name="android:background">@drawable/m3_selection_control_ripple</item>
+    </style>
+    <style name="Widget.Material3.CompoundButton.RadioButton" parent="@style/Base.Widget.Material3.CompoundButton.RadioButton">
+        <item name="android:background">@drawable/m3_radiobutton_ripple</item>
+    </style>
+    <style name="Widget.Material3.CompoundButton.Switch" parent="@style/Base.Widget.Material3.CompoundButton.Switch">
+        <item name="android:background">@drawable/m3_selection_control_ripple</item>
+    </style>
+    <style name="Widget.MaterialComponents.PopupMenu.ContextMenu" parent="@style/Base.Widget.MaterialComponents.PopupMenu.ContextMenu">
+        <item name="android:popupBackground">?popupMenuBackground</item>
+        <item name="android:popupElevation">8.0dp</item>
+    </style>
+    <style name="Widget.MaterialComponents.PopupMenu.ListPopupWindow" parent="@style/Base.Widget.MaterialComponents.PopupMenu.ListPopupWindow">
+        <item name="android:popupBackground">?popupMenuBackground</item>
+        <item name="android:popupElevation">8.0dp</item>
+    </style>
+</resources>

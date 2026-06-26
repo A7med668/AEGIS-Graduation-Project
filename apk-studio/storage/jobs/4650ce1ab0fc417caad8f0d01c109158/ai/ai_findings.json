@@ -1,0 +1,82 @@
+[
+  {
+    "id": "finding-001",
+    "source_model_role": "rule_engine",
+    "source_model": "deterministic",
+    "severity": "low",
+    "title": "Permission Signal",
+    "explanation": "android.permission.REQUEST_INSTALL_PACKAGES",
+    "evidence_refs": [
+      "static.permissions.android.permission.REQUEST_INSTALL_PACKAGES"
+    ],
+    "model_run_id": null,
+    "mitre_mobile": [
+      {
+        "tactic": "Persistence",
+        "technique": "Install Additional Applications"
+      }
+    ]
+  },
+  {
+    "id": "finding-002",
+    "source_model_role": "rule_engine",
+    "source_model": "deterministic",
+    "severity": "low",
+    "title": "Permission Signal",
+    "explanation": "android.permission.QUERY_ALL_PACKAGES",
+    "evidence_refs": [
+      "static.permissions.android.permission.QUERY_ALL_PACKAGES"
+    ],
+    "model_run_id": null,
+    "mitre_mobile": [
+      {
+        "tactic": "Discovery",
+        "technique": "Software Discovery"
+      }
+    ]
+  },
+  {
+    "id": "finding-003",
+    "source_model_role": "rule_engine",
+    "source_model": "deterministic",
+    "severity": "low",
+    "title": "Permission Signal",
+    "explanation": "android.permission.MANAGE_EXTERNAL_STORAGE",
+    "evidence_refs": [
+      "static.permissions.android.permission.MANAGE_EXTERNAL_STORAGE"
+    ],
+    "model_run_id": null,
+    "mitre_mobile": []
+  },
+  {
+    "id": "finding-004",
+    "source_model_role": "rule_engine",
+    "source_model": "deterministic",
+    "severity": "informational",
+    "title": "Permission Signal",
+    "explanation": "android.permission.RECEIVE_BOOT_COMPLETED",
+    "evidence_refs": [
+      "static.permissions.android.permission.RECEIVE_BOOT_COMPLETED"
+    ],
+    "model_run_id": null,
+    "mitre_mobile": [
+      {
+        "tactic": "Persistence",
+        "technique": "Boot or Logon Initialization Scripts"
+      }
+    ]
+  },
+  {
+    "id": "finding-005",
+    "source_model_role": "rule_engine",
+    "source_model": "deterministic",
+    "severity": "informational",
+    "title": "Permission Signal",
+    "explanation": "android.permission.FOREGROUND_SERVICE",
+    "evidence_refs": [
+      "static.permissions.android.permission.FOREGROUND_SERVICE"
+    ],
+    "model_run_id": null,
+    "mitre_mobile": []
+  }
+]

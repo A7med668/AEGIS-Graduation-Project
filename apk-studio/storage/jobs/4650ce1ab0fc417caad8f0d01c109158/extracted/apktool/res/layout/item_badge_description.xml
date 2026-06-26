@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/item_badge_description_0" android:background="@drawable/shape_round_dark_box" android:padding="@dimen/default_margin" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/infoIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_info_outline_primary_18dp_old" />
+    <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/text_primary" android:tag="binding_1" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginStart="@dimen/default_margin" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/infoIcon" app:layout_constraintTop_toTopOf="parent" style="@style/Bazaar.Text.Caption" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,22 @@
+{
+  "ok": true,
+  "total_label_rows": 4,
+  "apk_files_found": 4,
+  "by_label": {
+    "benign": 3,
+    "suspicious": 1
+  },
+  "by_expected_risk": {
+    "low": 1,
+    "medium": 2,
+    "high": 1
+  },
+  "by_category": {
+    "app_store_like": 1,
+    "chat_like": 1,
+    "file_manager_like": 1,
+    "generic": 1
+  },
+  "issues": [],
+  "unlabeled_files": []
+}

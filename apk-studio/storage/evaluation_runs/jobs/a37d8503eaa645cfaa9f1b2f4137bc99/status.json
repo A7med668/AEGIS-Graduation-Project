@@ -1,0 +1,16 @@
+{
+  "job_id": "a37d8503eaa645cfaa9f1b2f4137bc99",
+  "filename": "benign_01_calculator.apk",
+  "status": "completed",
+  "progress": 100,
+  "error": null,
+  "report_available": true,
+  "created_at": "2026-06-24T23:15:26.029956+00:00",
+  "updated_at": "2026-06-24T23:16:12.185265+00:00",
+  "risk_score": 13,
+  "risk_level": "informational",
+  "ai_risk_score": 13,
+  "ai_risk_level": "informational",
+  "agentic_triggered": false,
+  "agentic_action_count": 1
+}

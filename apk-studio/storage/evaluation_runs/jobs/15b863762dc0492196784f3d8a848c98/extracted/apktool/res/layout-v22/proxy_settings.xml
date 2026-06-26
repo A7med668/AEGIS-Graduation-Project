@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <AutoCompleteTextView android:id="@id/proxyTypeSpinner" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/proxy_type_label" android:inputType="none" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <EditText android:id="@id/hostText" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/host_label" android:inputType="textUri" android:autofillHints="" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <EditText android:id="@id/portText" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/port_label" android:inputType="number" android:autofillHints="" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <EditText android:id="@id/usernameText" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/username_label" android:inputType="text" android:autofillHints="username" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <EditText android:id="@id/passwordText" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/password_label" android:inputType="textPassword" android:autofillHints="password" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView android:gravity="center" android:id="@id/infoLabel" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" />
+</LinearLayout>

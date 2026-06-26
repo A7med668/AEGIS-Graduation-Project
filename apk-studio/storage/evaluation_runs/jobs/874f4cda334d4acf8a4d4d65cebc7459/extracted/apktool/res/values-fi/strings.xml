@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="about">Tietoa</string>
+    <string name="addDate">Lisää päivämäärä</string>
+    <string name="addLink">Lisää linkki</string>
+    <string name="addMedia">Lisää media…</string>
+    <string name="appName">Muistiinpanot</string>
+    <string name="backup">Varmuuskopioi…</string>
+    <string name="built">Koontiversio %s</string>
+    <string name="cancel">Peruuta</string>
+    <string name="changedOverwrite">Tiedosto on muuttunut, haluatko kirjoittaa sen päälle?</string>
+    <string name="changedReload">Tiedosto on muuttunut. Haluatko ladata sen uudestaan?</string>
+    <string name="choose">Valitse tiedostonimi</string>
+    <string name="clearList">Tyhjennä lista</string>
+    <string name="complete">Varmuuskopionti valmis</string>
+    <string name="copyright">Tekijänoikeus © 2020 <a href="https://billthefarmer.github.io">Bill Farmer</a>"
+
+Markdown-näkymä: "<a href="https://github.com/falnatsheh/MarkdownView">Markdown View</a>, saksankielinen käännös: <a href="https://github.com/mondlicht-und-sterne">mondstern</a>, käännös brasilianportugaliksi <a href="https://github.com/aevw">aevw</a>, suomennos <a href="https://github.com/Rigo-V">Rigo-V</a>, turkinkielinen käännös <a href="https://github.com/berkaygunduzz">Berkay Gündüz</a> </string>
+    <string name="discard">Hylkää</string>
+    <string name="editScript">Muokkaa skriptiä…</string>
+    <string name="editStyles">Muokkaa tyyliä…</string>
+    <string name="findAll">Etsi kaikki…</string>
+    <string name="folder">Kansio</string>
+    <string name="licence">Lisenssi <a href="https://www.gnu.org/licenses/gpl.txt">GNU GPLv3</a> </string>
+    <string name="loading">Ladataan…</string>
+    <string name="media">Media</string>
+    <string name="modified">Sinulla on tallentamattomia muutoksia. Haluatko tallentaa muutokset?</string>
+    <string name="name">Nimi</string>
+    <string name="newNote">Uusi muistiinpano</string>
+    <string name="new_note_name">Uusi muistiinpanon nimimalli</string>
+    <string name="ok">OK</string>
+    <string name="openNote">Avaa</string>
+    <string name="openRecent">Avaa viimeaikainen</string>
+    <string name="overwrite">Päällekirjoita</string>
+    <string name="pref_about_summ"><a href="https://github.com/billthefarmer/notes/releases/latest">Versio %s</a></string>
+    <string name="pref_external">Selain</string>
+    <string name="pref_external_summ">Käytä selainta ulkoisten linkkien avaamiseen</string>
+    <string name="pref_name">Muistiinpanon oletusnimi</string>
+    <string name="pref_new_name">Uusi muistiinpanon nimi</string>
+    <string name="pref_new_template_summ">Käytä mallia uuden muistiinpanon nimeen</string>
+    <string name="pref_template_file">Uusi muistiinpanomallitiedosto</string>
+    <string name="pref_use_template">Käytä mallia</string>
+    <string name="pref_use_template_summ">Käytä mallia uusien dokumenttien pohjana</string>
+    <string name="print">Tulosta…</string>
+    <string name="reload">Lataa uudestaan</string>
+    <string name="saveAs">Tallenna nimellä…</string>
+    <string name="saveNote">Tallenna</string>
+    <string name="search">Hae…</string>
+    <string name="settings">Asetukset</string>
+    <string name="share">Jaa…</string>
+    <string name="start">Aloita varmuuskopiointi</string>
+    <string name="storage">Tallennustila</string>
+    <string name="template">Uusi muistiinpanomalli</string>
+    <string name="theme">Teema</string>
+</resources>

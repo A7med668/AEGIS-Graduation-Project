@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="entries_selected">
+        <item quantity="one">%1$d zaznaczony element</item>
+        <item quantity="few">%1$d zaznaczone elementy</item>
+        <item quantity="many">%1$d zaznaczonych elementów</item>
+        <item quantity="other">%1$d zaznaczonych elementów</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d nowe powiadomienie</item>
+        <item quantity="few">%d nowe powiadomienia</item>
+        <item quantity="many">%d nowych powiadomień</item>
+        <item quantity="other">%d nowego powiadomienia</item>
+    </plurals>
+</resources>

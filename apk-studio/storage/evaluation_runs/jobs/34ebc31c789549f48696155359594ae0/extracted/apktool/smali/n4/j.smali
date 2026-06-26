@@ -1,0 +1,49 @@
+.class public final Ln4/j;
+.super Ljava/lang/Object;
+.source ""
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field public final synthetic e:Ln4/k;
+
+
+# direct methods
+.method public constructor <init>(Ln4/k;)V
+    .locals 0
+
+    iput-object p1, p0, Ln4/j;->e:Ln4/k;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 2
+
+    iget-object v0, p0, Ln4/j;->e:Ln4/k;
+
+    iget-object v0, v0, Ln4/k;->f:Ln4/l;
+
+    iget-object v0, v0, Ln4/l;->f:Ln4/a$c;
+
+    iget-object v0, v0, Ln4/a$c;->h:Li5/l;
+
+    if-eqz v0, :cond_0
+
+    sget-object v1, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+
+    invoke-interface {v0, v1}, Li5/l;->g(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lx4/h;
+
+    :cond_0
+    return-void
+.end method

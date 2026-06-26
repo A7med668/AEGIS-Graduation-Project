@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="16.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0sp" android:textColor="?android:textColorPrimary" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_marginBottom="8.0dp" android:text="@string/echo_home_header" android:layout_weight="1.0" android:layout_marginVertical="8.0dp" android:accessibilityHeading="true" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/closeButton" android:background="?selectableItemBackgroundBorderless" android:padding="16.0dp" android:layout_width="48.0dp" android:layout_height="48.0dp" android:src="@drawable/ic_cancel" android:contentDescription="@string/close_label" />
+    </LinearLayout>
+    <androidx.cardview.widget.CardView android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="8.0dp" app:cardElevation="0.0dp">
+        <LinearLayout android:orientation="vertical" android:id="@id/echoButton" android:background="@drawable/bg_blue_gradient" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground">
+            <TextView android:textColor="#fff" android:id="@id/titleLabel" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" android:text="@string/antennapod_echo_year" android:textFontWeight="500" style="@style/TextAppearance.Material3.TitleLarge" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="#fff" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/echo_home_subtitle" android:layout_weight="1.0" style="@style/TextAppearance.Material3.BodyMedium" />
+                <ImageView android:textColor="#fff" android:layout_gravity="bottom" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/ic_arrow_right_white" android:importantForAccessibility="no" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

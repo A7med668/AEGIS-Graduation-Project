@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/item_avatar_part_0" android:layout_width="@dimen/avatar_part_size" android:layout_height="@dimen/avatar_part_size" android:layout_margin="@dimen/default_margin_half" android:contentDescription="@string/avatar_content_description"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:tag="binding_1" android:background="@drawable/selector_avatar_part" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/avatarPart" android:tag="binding_2" android:padding="@dimen/default_margin_quarter" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/default_margin_quarter" />
+</FrameLayout>

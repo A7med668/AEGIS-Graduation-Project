@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="deleted_episode_message">
+        <item quantity="one">%d prenešena epizoda izbrisana.</item>
+        <item quantity="two">%d prenešeni epizodi izbrisani.</item>
+        <item quantity="few">%d prenešene epizode izbrisane.</item>
+        <item quantity="other">%d prenešenih epizod izbrisanih.</item>
+    </plurals>
+    <plurals name="downloading_episodes_message">
+        <item quantity="one">Prenašam %d epizodo.</item>
+        <item quantity="two">Prenašam %d epizodi.</item>
+        <item quantity="few">Prenašam %d epizode.</item>
+        <item quantity="other">Prenašam %d epizod.</item>
+    </plurals>
+    <plurals name="downloads_left">
+        <item quantity="one">%d prenos preostane</item>
+        <item quantity="two">%dprenosa preostaneta</item>
+        <item quantity="few">%d prenosi preostanejo</item>
+        <item quantity="other">%d prenosi preostanejo</item>
+    </plurals>
+    <plurals name="episode_cleanup_days_after_listening">
+        <item quantity="one">%d dan po zaključku</item>
+        <item quantity="two">%d dneva po zaključku</item>
+        <item quantity="few">%d dni po zaključku</item>
+        <item quantity="other">%d dni po zaključku</item>
+    </plurals>
+    <plurals name="episode_cleanup_hours_after_listening">
+        <item quantity="one">%d uro po zaključku</item>
+        <item quantity="two">%d uri po zaključku</item>
+        <item quantity="few">%d ure po zaključku</item>
+        <item quantity="other">%d ur po zaključku</item>
+    </plurals>
+    <plurals name="mobile_download_notice">
+        <item quantity="one">Prenos preko mobilnih podatkov naslednjo %d minuto</item>
+        <item quantity="two">Prenos preko mobilnih podatkov naslednji %d minuti</item>
+        <item quantity="few">Prenos preko mobilnih podatkov naslednje %d minute</item>
+        <item quantity="other">Prenos preko mobilnih podatkov naslednjih %d minut</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d novo obvestilo</item>
+        <item quantity="two">%d novi obvestili</item>
+        <item quantity="few">%d nova obvestila</item>
+        <item quantity="other">%d novih obvestil</item>
+    </plurals>
+    <plurals name="new_episode_notification_message">
+        <item quantity="one">%2$s ima novo epizodo</item>
+        <item quantity="two">%2$s ima %1$d novi epizodi</item>
+        <item quantity="few">%2$s ima %1$d nove epizode</item>
+        <item quantity="other">%2$s ima %1$d nove epizode</item>
+    </plurals>
+    <plurals name="new_episode_notification_title">
+        <item quantity="one">Nova epizoda</item>
+        <item quantity="two">Novi epizodi</item>
+        <item quantity="few">Nove epizode</item>
+        <item quantity="other">Nove epizode</item>
+    </plurals>
+    <plurals name="num_episodes">
+        <item quantity="one">%d epizoda</item>
+        <item quantity="two">%d epizodi</item>
+        <item quantity="few">%d epizode</item>
+        <item quantity="other">%d epizode</item>
+    </plurals>
+    <plurals name="num_selected_label">
+        <item quantity="one">%1$d/%2$d izbrana</item>
+        <item quantity="two">%1$d/%2$d izbrani</item>
+        <item quantity="few">%1$d/%2$d izbrane</item>
+        <item quantity="other">%1$d/%2$d izbrane</item>
+    </plurals>
+    <plurals name="num_subscriptions">
+        <item quantity="one">%d naročnina</item>
+        <item quantity="two">%d naročnini</item>
+        <item quantity="few">%d naročnine</item>
+        <item quantity="other">%d naročnin</item>
+    </plurals>
+    <plurals name="removed_from_inbox_batch_label">
+        <item quantity="one">%d epizoda odstranjena iz nabiralnika.</item>
+        <item quantity="two">%d epizodi odstranjeni iz nabiralnika.</item>
+        <item quantity="few">%d epizode odstranjene iz nabiralnika.</item>
+        <item quantity="other">%d epizode odstranjene iz nabiralnika.</item>
+    </plurals>
+    <plurals name="statistics_episodes_total">
+        <item quantity="one">skupaj</item>
+        <item quantity="two">skupaj</item>
+        <item quantity="few">skupaj</item>
+        <item quantity="other">skupaj</item>
+    </plurals>
+    <plurals name="time_days_quantified">
+        <item quantity="one">%d dan</item>
+        <item quantity="two">%d dneva</item>
+        <item quantity="few">%d dni</item>
+        <item quantity="other">%d dni</item>
+    </plurals>
+    <plurals name="time_hours_quantified">
+        <item quantity="one">%d ur</item>
+        <item quantity="two">%d uri</item>
+        <item quantity="few">%d ure</item>
+        <item quantity="other">%d ur</item>
+    </plurals>
+    <plurals name="total_size_downloaded_podcasts">
+        <item quantity="one">Skupna velikost %d epizode na tej napravi</item>
+        <item quantity="two">Skupna velikost %d epizod na tej napravi</item>
+        <item quantity="few">Skupna velikost %d epizod na tej napravi</item>
+        <item quantity="other">Skupna velikost %d epizod na tej napravi</item>
+    </plurals>
+    <plurals name="updated_feeds_batch_label">
+        <item quantity="one">%dnaročnina je posodobljena.</item>
+        <item quantity="two">%dnaročnini sta posodobljeni.</item>
+        <item quantity="few">%dnaročnine so posodobljene.</item>
+        <item quantity="other">%d naročnine so posodobljene.</item>
+    </plurals>
+</resources>

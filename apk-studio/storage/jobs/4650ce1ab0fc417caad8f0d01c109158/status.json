@@ -1,0 +1,16 @@
+{
+  "job_id": "4650ce1ab0fc417caad8f0d01c109158",
+  "filename": "bazaar-27-6-1.apk",
+  "status": "completed_dynamic",
+  "progress": 100,
+  "error": null,
+  "report_available": true,
+  "created_at": "2026-06-22T16:54:11.866229+00:00",
+  "updated_at": "2026-06-22T17:01:18.931056+00:00",
+  "risk_score": 64,
+  "risk_level": "medium",
+  "ai_risk_score": 64,
+  "ai_risk_level": "medium",
+  "agentic_triggered": false,
+  "agentic_action_count": 1
+}

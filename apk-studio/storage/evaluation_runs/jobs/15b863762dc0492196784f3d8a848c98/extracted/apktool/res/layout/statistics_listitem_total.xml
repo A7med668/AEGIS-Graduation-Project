@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <de.danoeh.antennapod.ui.statistics.PieChartView android:id="@id/pie_chart" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_marginRight="8.0dp" android:maxWidth="800.0dp" android:minWidth="460.0dp" android:layout_centerInParent="true" />
+    <TextView android:textSize="28.0sp" android:textColor="?android:textColorPrimary" android:gravity="center_horizontal" android:id="@id/total_time" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dp" android:layout_above="@id/total_description" />
+    <TextView android:textSize="14.0sp" android:id="@id/total_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dp" android:maxLines="3" android:layout_alignBottom="@id/pie_chart" android:layout_centerHorizontal="true" android:textAlignment="center" />
+    <View android:background="?android:dividerVertical" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginTop="16.0dp" android:layout_below="@id/pie_chart" />
+</RelativeLayout>

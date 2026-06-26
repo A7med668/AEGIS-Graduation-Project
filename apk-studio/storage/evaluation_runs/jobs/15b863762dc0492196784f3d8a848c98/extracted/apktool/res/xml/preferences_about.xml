@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:layout="@layout/about_teaser" />
+    <Preference android:icon="@drawable/ic_star" android:title="@string/antennapod_version" android:key="about_version" android:summary="1.7.2 (asd8qs)" />
+    <Preference android:icon="@drawable/ic_contributors" android:title="@string/contributors" android:key="about_contributors" android:summary="@string/contributors_summary" />
+    <Preference android:icon="@drawable/ic_policy" android:title="@string/privacy_policy" android:key="about_privacy_policy" android:summary="www.antennapod.org/privacy" />
+    <Preference android:icon="@drawable/ic_info" android:title="@string/licenses" android:key="about_licenses" android:summary="@string/licenses_summary" />
+</PreferenceScreen>

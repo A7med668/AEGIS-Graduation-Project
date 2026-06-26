@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:padding="16.0dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dp" android:text="@string/share_label" style="@style/TextAppearance.Material3.TitleLarge" />
+    <androidx.cardview.widget.CardView android:id="@id/socialMessageCard" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dp" android:foreground="?selectableItemBackground" android:elevation="1.0dp" app:cardBackgroundColor="?colorSurfaceContainer" app:cardCornerRadius="4.0dp">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <LinearLayout android:orientation="vertical" android:paddingTop="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="16.0dp" android:paddingEnd="0.0dp">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/share_dialog_for_social" style="@style/TextAppearance.Material3.TitleMedium" />
+                    <TextView android:id="@id/socialMessageText" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/share_dialog_for_social" android:maxLines="7" style="@style/TextAppearance.Material3.BodyMedium" />
+                </LinearLayout>
+                <CheckBox android:id="@id/share_position_checkbox" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_marginRight="8.0dp" android:text="@string/share_playback_position_dialog_label" android:layout_marginHorizontal="8.0dp" />
+            </LinearLayout>
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_margin="16.0dp" app:srcCompat="@drawable/ic_share" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView android:id="@id/mediaAddressCard" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dp" android:foreground="?selectableItemBackground" android:elevation="1.0dp" app:cardBackgroundColor="?colorSurfaceContainer" app:cardCornerRadius="4.0dp">
+        <LinearLayout android:orientation="horizontal" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/share_dialog_media_address" style="@style/TextAppearance.Material3.TitleMedium" />
+                <TextView android:ellipsize="end" android:id="@id/mediaAddressText" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/share_dialog_media_address" android:maxLines="2" android:layout_marginEnd="16.0dp" style="@style/TextAppearance.Material3.BodyMedium" />
+            </LinearLayout>
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="24.0dp" android:layout_height="24.0dp" app:srcCompat="@drawable/ic_share" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView android:id="@id/mediaFileCardCard" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground" android:elevation="1.0dp" app:cardBackgroundColor="?colorSurfaceContainer" app:cardCornerRadius="4.0dp">
+        <LinearLayout android:orientation="horizontal" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/share_dialog_media_file_label" style="@style/TextAppearance.Material3.TitleMedium" />
+            </LinearLayout>
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="24.0dp" android:layout_height="24.0dp" app:srcCompat="@drawable/ic_share" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

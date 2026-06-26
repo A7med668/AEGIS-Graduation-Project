@@ -1,0 +1,55 @@
+.class public final Landroidx/compose/material3/MultiChoiceSegmentedButtonScopeWrapper;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Landroidx/compose/foundation/layout/RowScope;
+
+
+# virtual methods
+.method public final weight(Landroidx/compose/ui/Modifier;FZ)Landroidx/compose/ui/Modifier;
+    .locals 5
+
+    float-to-double v0, p2
+
+    const-wide/16 v2, 0x0
+
+    cmpl-double v4, v0, v2
+
+    if-lez v4, :cond_0
+
+    new-instance v0, Landroidx/compose/foundation/layout/LayoutWeightElement;
+
+    const v1, 0x7f7fffff    # Float.MAX_VALUE
+
+    invoke-static {p2, v1}, Lkotlin/text/CharsKt;->coerceAtMost(FF)F
+
+    move-result p2
+
+    invoke-direct {v0, p2, p3}, Landroidx/compose/foundation/layout/LayoutWeightElement;-><init>(FZ)V
+
+    invoke-interface {p1, v0}, Landroidx/compose/ui/Modifier;->then(Landroidx/compose/ui/Modifier;)Landroidx/compose/ui/Modifier;
+
+    move-result-object p1
+
+    return-object p1
+
+    :cond_0
+    const-string p1, "invalid weight "
+
+    const-string p3, "; must be greater than zero"
+
+    invoke-static {p1, p2, p3}, Landroidx/compose/foundation/lazy/LazyListScope$-CC;->m(Ljava/lang/String;FLjava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    new-instance p2, Ljava/lang/IllegalArgumentException;
+
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {p2, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw p2
+.end method

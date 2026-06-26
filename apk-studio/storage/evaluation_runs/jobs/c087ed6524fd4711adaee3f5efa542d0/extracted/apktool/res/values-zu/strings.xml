@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_mode_done">Kwenziwe</string>
+    <string name="abc_capital_off">VALA</string>
+    <string name="abc_capital_on">VULA</string>
+    <string name="abc_search_hint">Sesha…</string>
+    <string name="abc_searchview_description_clear">Sula inkinga</string>
+    <string name="abc_searchview_description_search">Sesha</string>
+    <string name="abc_searchview_description_submit">Thumela umbuzo</string>
+    <string name="abc_searchview_description_voice">Ukusesha ngezwi</string>
+    <string name="abc_toolbar_collapse_description">Goqa</string>
+    <string name="bottomsheet_drag_handle_content_description">Hudula isibambi</string>
+    <string name="close_drawer">Vala imenyu yokuzulazula</string>
+    <string name="close_sheet">Vala ishidi</string>
+    <string name="default_error_message">Okufakwayo okungalungile</string>
+    <string name="default_popup_window_title">Iwindi Lesikhashana</string>
+    <string name="error_a11y_label">Iphutha: okungavumelekile</string>
+    <string name="glance_error_layout_text_v2">Ayikwazi ukubonisa okuqukethwe</string>
+    <string name="in_progress">Kuyaqhubeka</string>
+    <string name="indeterminate">Kuhlolwe kancane</string>
+    <string name="m3_adaptive_default_pane_title_primary">I-pane eyinhloko</string>
+    <string name="m3_adaptive_default_pane_title_secondary">I-pane yesibili</string>
+    <string name="m3_adaptive_default_pane_title_tertiary">I-pane yesithathu</string>
+    <string name="m3_loading_indicator_content_description">Iyalayisha</string>
+    <string name="m3c_bottom_sheet_collapse_description">Goqa ishidi eliphansi</string>
+    <string name="m3c_bottom_sheet_dismiss_description">Chitha ishidi eliphansi</string>
+    <string name="m3c_bottom_sheet_drag_handle_description">Hudula isibambi</string>
+    <string name="m3c_bottom_sheet_expand_description">Nweba ishidi eliphansi</string>
+    <string name="m3c_bottom_sheet_pane_title">Ishidi Eliphansi</string>
+    <string name="m3c_snackbar_pane_title">Isexwayiso</string>
+    <string name="mtrl_button_snackbar_close_content_description">Vala</string>
+    <string name="navigation_menu">Imenyu yokuzulazula</string>
+    <string name="not_selected">Ayikhethiwe</string>
+    <string name="password_toggle_content_description">Bonisa iphasiwedi</string>
+    <string name="selected">Okukhethiwe</string>
+    <string name="state_empty">Akunalutho</string>
+    <string name="state_off">Ivaliwe</string>
+    <string name="state_on">Ivuliwe</string>
+    <string name="switch_role">Shintsha</string>
+    <string name="tab">Ithebhu</string>
+    <string name="template_percent">%1$d amaphesenti.</string>
+    <string name="tooltip_description">ithulithiphu</string>
+    <string name="tooltip_label">bonisa ithulithiphu</string>
+</resources>

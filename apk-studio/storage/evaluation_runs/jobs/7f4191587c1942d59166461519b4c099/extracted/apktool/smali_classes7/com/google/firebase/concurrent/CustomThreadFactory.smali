@@ -1,0 +1,131 @@
+.class Lcom/google/firebase/concurrent/CustomThreadFactory;
+.super Ljava/lang/Object;
+.source "CustomThreadFactory.java"
+
+# interfaces
+.implements Ljava/util/concurrent/ThreadFactory;
+
+
+# static fields
+.field private static final DEFAULT:Ljava/util/concurrent/ThreadFactory;
+
+
+# instance fields
+.field private final namePrefix:Ljava/lang/String;
+
+.field private final policy:Landroid/os/StrictMode$ThreadPolicy;
+
+.field private final priority:I
+
+.field private final threadCount:Ljava/util/concurrent/atomic/AtomicLong;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    invoke-static {}, Ljava/util/concurrent/Executors;->defaultThreadFactory()Ljava/util/concurrent/ThreadFactory;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/google/firebase/concurrent/CustomThreadFactory;->DEFAULT:Ljava/util/concurrent/ThreadFactory;
+
+    return-void
+.end method
+
+.method constructor <init>(Ljava/lang/String;ILandroid/os/StrictMode$ThreadPolicy;)V
+    .locals 1
+    .param p3    # Landroid/os/StrictMode$ThreadPolicy;
+        .annotation runtime Ljavax/annotation/Nullable;
+        .end annotation
+    .end param
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    new-instance v0, Ljava/util/concurrent/atomic/AtomicLong;
+
+    invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicLong;-><init>()V
+
+    iput-object v0, p0, Lcom/google/firebase/concurrent/CustomThreadFactory;->threadCount:Ljava/util/concurrent/atomic/AtomicLong;
+
+    iput-object p1, p0, Lcom/google/firebase/concurrent/CustomThreadFactory;->namePrefix:Ljava/lang/String;
+
+    iput p2, p0, Lcom/google/firebase/concurrent/CustomThreadFactory;->priority:I
+
+    iput-object p3, p0, Lcom/google/firebase/concurrent/CustomThreadFactory;->policy:Landroid/os/StrictMode$ThreadPolicy;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method synthetic lambda$newThread$0$com-google-firebase-concurrent-CustomThreadFactory(Ljava/lang/Runnable;)V
+    .locals 1
+
+    iget v0, p0, Lcom/google/firebase/concurrent/CustomThreadFactory;->priority:I
+
+    invoke-static {v0}, Landroid/os/Process;->setThreadPriority(I)V
+
+    iget-object v0, p0, Lcom/google/firebase/concurrent/CustomThreadFactory;->policy:Landroid/os/StrictMode$ThreadPolicy;
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lcom/google/firebase/concurrent/CustomThreadFactory;->policy:Landroid/os/StrictMode$ThreadPolicy;
+
+    invoke-static {v0}, Landroid/os/StrictMode;->setThreadPolicy(Landroid/os/StrictMode$ThreadPolicy;)V
+
+    :cond_0
+    invoke-interface {p1}, Ljava/lang/Runnable;->run()V
+
+    return-void
+.end method
+
+.method public newThread(Ljava/lang/Runnable;)Ljava/lang/Thread;
+    .locals 6
+
+    sget-object v0, Lcom/google/firebase/concurrent/CustomThreadFactory;->DEFAULT:Ljava/util/concurrent/ThreadFactory;
+
+    new-instance v1, Lcom/google/firebase/concurrent/CustomThreadFactory$$ExternalSyntheticLambda0;
+
+    invoke-direct {v1, p0, p1}, Lcom/google/firebase/concurrent/CustomThreadFactory$$ExternalSyntheticLambda0;-><init>(Lcom/google/firebase/concurrent/CustomThreadFactory;Ljava/lang/Runnable;)V
+
+    invoke-interface {v0, v1}, Ljava/util/concurrent/ThreadFactory;->newThread(Ljava/lang/Runnable;)Ljava/lang/Thread;
+
+    move-result-object v0
+
+    sget-object v1, Ljava/util/Locale;->ROOT:Ljava/util/Locale;
+
+    iget-object v2, p0, Lcom/google/firebase/concurrent/CustomThreadFactory;->namePrefix:Ljava/lang/String;
+
+    iget-object v3, p0, Lcom/google/firebase/concurrent/CustomThreadFactory;->threadCount:Ljava/util/concurrent/atomic/AtomicLong;
+
+    invoke-virtual {v3}, Ljava/util/concurrent/atomic/AtomicLong;->getAndIncrement()J
+
+    move-result-wide v3
+
+    invoke-static {v3, v4}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    move-result-object v3
+
+    const/4 v4, 0x2
+
+    new-array v4, v4, [Ljava/lang/Object;
+
+    const/4 v5, 0x0
+
+    aput-object v2, v4, v5
+
+    const/4 v2, 0x1
+
+    aput-object v3, v4, v2
+
+    const-string v2, "%s Thread #%d"
+
+    invoke-static {v1, v2, v4}, Ljava/lang/String;->format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/Thread;->setName(Ljava/lang/String;)V
+
+    return-object v0
+.end method

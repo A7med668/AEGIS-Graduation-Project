@@ -1,0 +1,11 @@
+{
+  "status": "completed",
+  "started_at": "2026-06-24T23:15:08.568880+00:00",
+  "dataset": "/workspace/apk-studio/evaluation_dataset",
+  "storage": "/workspace/apk-studio/storage/evaluation_runs",
+  "out": "/workspace/apk-studio/evaluation_dataset/results/evaluation_summary.json",
+  "finished_at": "2026-06-24T23:35:10.020515+00:00",
+  "returncode": 0,
+  "stdout": "/workspace/apk-studio/evaluation_dataset/results/evaluation_summary.json\n",
+  "stderr": "/usr/local/lib/python3.12/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (2.7.0) or chardet (7.4.3)/charset_normalizer (3.4.7) doesn't match a supported version!\n  warnings.warn(\n"
+}

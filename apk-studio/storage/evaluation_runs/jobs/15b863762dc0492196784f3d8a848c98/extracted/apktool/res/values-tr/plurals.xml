@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="added_to_queue_message">
+        <item quantity="one">%d bölüm sıraya eklendi.</item>
+        <item quantity="other">%d bölüm sıraya eklendi.</item>
+    </plurals>
+    <plurals name="deleted_episode_message">
+        <item quantity="one">%d indirilen bölüm silindi.</item>
+        <item quantity="other">%d indirilen bölüm silindi.</item>
+    </plurals>
+    <plurals name="downloading_episodes_message">
+        <item quantity="one">%d bölüm indiriliyor.</item>
+        <item quantity="other">%d bölüm indiriliyor.</item>
+    </plurals>
+    <plurals name="downloads_left">
+        <item quantity="one">%d indirme kaldı</item>
+        <item quantity="other">%d indirme kaldı</item>
+    </plurals>
+    <plurals name="echo_hours_podcasts">
+        <item quantity="one">"saat bölüm
+%1$d podcastten"</item>
+        <item quantity="other">"saat bölüm
+%1$d podcastlerden"</item>
+    </plurals>
+    <plurals name="echo_queue_hours_waiting">
+        <item quantity="one">"saat, %1$d bölümlük sıranda
+dinlenmeyi bekliyor"</item>
+        <item quantity="other">"saat, %1$d bölümlük sıranda
+dinlenmeyi bekliyor"</item>
+    </plurals>
+    <plurals name="episode_cleanup_days_after_listening">
+        <item quantity="one">Bitirdikten %dgün sonra</item>
+        <item quantity="other">Bitirdikten %d gün sonra</item>
+    </plurals>
+    <plurals name="episode_cleanup_hours_after_listening">
+        <item quantity="one">Bitirdikten %d saat sonra</item>
+        <item quantity="other">Bitirdikten %d saat sonra</item>
+    </plurals>
+    <plurals name="marked_as_played_message">
+        <item quantity="one">%d bölüm oynatıldı olarak işaretlendi.</item>
+        <item quantity="other">%d bölüm oynatıldı olarak işaretlendi.</item>
+    </plurals>
+    <plurals name="marked_as_unplayed_message">
+        <item quantity="one">%d bölüm oynatılmadı olarak işaretlendi.</item>
+        <item quantity="other">%d bölüm oynatılmadı olarak işaretlendi.</item>
+    </plurals>
+    <plurals name="mobile_download_notice">
+        <item quantity="one">Sonraki %d dakika boyunca mobil veri bağlantısı üzerinden indirme yapılıyor</item>
+        <item quantity="other">Sonraki %d dakika boyunca mobil veri bağlantısı üzerinden indirme yapılıyor</item>
+    </plurals>
+    <plurals name="move_to_bottom_message">
+        <item quantity="one">%d bölüm aşağı taşındı.</item>
+        <item quantity="other">%d bölüm aşağı taşındı.</item>
+    </plurals>
+    <plurals name="move_to_top_message">
+        <item quantity="one">%d bölüm yukarı taşındı.</item>
+        <item quantity="other">%d bölüm yukarı taşındı.</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d yeni bildirim</item>
+        <item quantity="other">%d yeni bildirim</item>
+    </plurals>
+    <plurals name="new_episode_notification_message">
+        <item quantity="one">"%2$s'de yeni bir bölüm var"</item>
+        <item quantity="other">"%2$s 'de yeni %1$d bölüm var"</item>
+    </plurals>
+    <plurals name="new_episode_notification_title">
+        <item quantity="one">Yeni bölüm</item>
+        <item quantity="other">Yeni bölümler</item>
+    </plurals>
+    <plurals name="num_episodes">
+        <item quantity="one">%d bölüm</item>
+        <item quantity="other">%d bölüm</item>
+    </plurals>
+    <plurals name="num_selected_label">
+        <item quantity="one">%1$d/%2$d seçildi</item>
+        <item quantity="other">%1$d/%2$d seçildi</item>
+    </plurals>
+    <plurals name="num_subscriptions">
+        <item quantity="one">%d abonelik</item>
+        <item quantity="other">%d abonelik</item>
+    </plurals>
+    <plurals name="removed_from_inbox_batch_label">
+        <item quantity="one">%d bölüm gelen kutusundan kaldırıldı.</item>
+        <item quantity="other">%d bölüm gelen kutusundan kaldırıldı.</item>
+    </plurals>
+    <plurals name="removed_from_queue_message">
+        <item quantity="one">%d bölüm sıradan kaldırıldı.</item>
+        <item quantity="other">%d bölüm sıradan kaldırıldı.</item>
+    </plurals>
+    <plurals name="statistics_episodes_downloaded">
+        <item quantity="one">indirildi</item>
+        <item quantity="other">indirildi</item>
+    </plurals>
+    <plurals name="statistics_episodes_started">
+        <item quantity="one">başlandı</item>
+        <item quantity="other">başlandı</item>
+    </plurals>
+    <plurals name="statistics_episodes_total">
+        <item quantity="one">toplam</item>
+        <item quantity="other">toplam</item>
+    </plurals>
+    <plurals name="time_days_quantified">
+        <item quantity="one">%d gün</item>
+        <item quantity="other">%dgün</item>
+    </plurals>
+    <plurals name="time_hours_quantified">
+        <item quantity="one">%d saat</item>
+        <item quantity="other">%d saat</item>
+    </plurals>
+    <plurals name="time_minutes_quantified">
+        <item quantity="one">%d dakika</item>
+        <item quantity="other">%ddakika</item>
+    </plurals>
+    <plurals name="time_seconds_quantified">
+        <item quantity="one">%d saniye</item>
+        <item quantity="other">%dsaniye</item>
+    </plurals>
+    <plurals name="total_size_downloaded_podcasts">
+        <item quantity="one">Cihazdaki %d bölümün toplam boyutu</item>
+        <item quantity="other">Cihazdaki %d bölümün toplam boyutu</item>
+    </plurals>
+    <plurals name="updated_feeds_batch_label">
+        <item quantity="one">%d abonelik güncellendi.</item>
+        <item quantity="other">%d abonelik güncellendi.</item>
+    </plurals>
+</resources>

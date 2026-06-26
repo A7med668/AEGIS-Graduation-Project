@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView android:id="@id/expandableDesc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/default_margin" style="@style/Bazaar.Text.Caption" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/steadyIcon" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="@dimen/default_margin" android:layout_marginBottom="@dimen/default_margin" android:contentDescription="@string/more_button_content_description" />
+</merge>

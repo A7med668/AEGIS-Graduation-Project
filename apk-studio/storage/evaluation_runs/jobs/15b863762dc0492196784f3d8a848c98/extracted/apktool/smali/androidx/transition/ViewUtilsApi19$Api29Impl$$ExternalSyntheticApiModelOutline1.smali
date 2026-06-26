@@ -1,0 +1,15 @@
+.class public abstract synthetic Landroidx/transition/ViewUtilsApi19$Api29Impl$$ExternalSyntheticApiModelOutline1;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# direct methods
+.method public static bridge synthetic m(Landroid/view/View;)F
+    .locals 0
+
+    invoke-virtual {p0}, Landroid/view/View;->getTransitionAlpha()F
+
+    move-result p0
+
+    return p0
+.end method

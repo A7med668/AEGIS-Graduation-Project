@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_mode_done">Eginda</string>
+    <string name="abc_capital_off">DESAKTIBATU</string>
+    <string name="abc_capital_on">AKTIBATU</string>
+    <string name="abc_search_hint">Bilatu…</string>
+    <string name="abc_searchview_description_clear">Garbitu kontsulta</string>
+    <string name="abc_searchview_description_search">Bilatu</string>
+    <string name="abc_searchview_description_submit">Bidali kontsulta</string>
+    <string name="abc_searchview_description_voice">Ahozko bilaketa</string>
+    <string name="abc_toolbar_collapse_description">Tolestu</string>
+    <string name="bottomsheet_drag_handle_content_description">Arrastatzeko kontrol-puntua</string>
+    <string name="close_drawer">Itxi nabigazio-menua</string>
+    <string name="close_sheet">Itxi orria</string>
+    <string name="default_error_message">Sarrerak ez du balio</string>
+    <string name="default_popup_window_title">Leiho gainerakorra</string>
+    <string name="error_a11y_label">Errorea: ez du balio</string>
+    <string name="glance_error_layout_text_v2">Ezin da erakutsi edukia</string>
+    <string name="in_progress">Abian</string>
+    <string name="indeterminate">Erdi-markatuta</string>
+    <string name="m3_adaptive_default_pane_title_primary">Panel nagusia</string>
+    <string name="m3_adaptive_default_pane_title_secondary">Bigarren mailako panela</string>
+    <string name="m3_adaptive_default_pane_title_tertiary">Hirugarren mailako panela</string>
+    <string name="m3_loading_indicator_content_description">Kargatzen</string>
+    <string name="m3c_bottom_sheet_collapse_description">Tolestu pantailaren behealdean ainguratutako orria</string>
+    <string name="m3c_bottom_sheet_dismiss_description">Baztertu pantailaren behealdean ainguratutako orria</string>
+    <string name="m3c_bottom_sheet_drag_handle_description">Arrastatzeko kontrol-puntua</string>
+    <string name="m3c_bottom_sheet_expand_description">Zabaldu pantailaren behealdean ainguratutako orria</string>
+    <string name="m3c_bottom_sheet_pane_title">Pantailaren behealdean ainguratutako orria</string>
+    <string name="m3c_snackbar_pane_title">Alerta</string>
+    <string name="mtrl_button_snackbar_close_content_description">Itxi</string>
+    <string name="navigation_menu">Nabigazio-menua</string>
+    <string name="not_selected">Hautatu gabe</string>
+    <string name="password_toggle_content_description">Erakutsi pasahitza</string>
+    <string name="selected">Hautatuta</string>
+    <string name="state_empty">Hutsik</string>
+    <string name="state_off">Desaktibatuta</string>
+    <string name="state_on">Aktibatuta</string>
+    <string name="switch_role">Aldatu</string>
+    <string name="tab">Fitxa</string>
+    <string name="template_percent">Ehuneko %1$d.</string>
+    <string name="tooltip_description">aholkua</string>
+    <string name="tooltip_label">erakutsi aholkua</string>
+</resources>

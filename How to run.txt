@@ -1,0 +1,19 @@
+1- cd "C:\Users\cc\OneDrive\Desktop\New folder\Graduation-Project-main"
+2- Stop-Service SQLServerReportingServices -ErrorAction SilentlyContinue
+3- Set-Service SQLServerReportingServices -StartupType Manual
+4- try:
+http://localhost/dashboard/
+http://localhost/apk-studio/
+http://localhost/docs
+http://localhost/admin
+http://localhost/kafka-ui/
+http://localhost:5540/
+http://localhost/pgadmin/
+
+5- $adb = "$env:LOCALAPPDATA\Android\Sdk\platform-tools\adb.exe"
+6- $emu = "$env:LOCALAPPDATA\Android\Sdk\emulator\emulator.exe"
+7- & $adb kill-server
+8- Start-Process -FilePath $adb -ArgumentList @("-a","-P","5037","nodaemon","server") -WindowStyle Hidden
+9- Start-Process -FilePath $emu -ArgumentList @("-avd","Medium_Phone_API_36.1","-no-snapshot","-no-boot-anim")
+10- & $adb devices
+11- docker compose exec -T apk-studio-api adb devices

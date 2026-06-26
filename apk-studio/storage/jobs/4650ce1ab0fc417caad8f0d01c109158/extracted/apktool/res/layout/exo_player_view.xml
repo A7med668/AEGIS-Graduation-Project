@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent" android:animateLayoutChanges="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.media3.ui.AspectRatioFrameLayout android:layout_gravity="center" android:id="@id/exo_content_frame" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="start|bottom" android:id="@id/exo_watermark" android:layout_width="48.0dp" android:layout_height="wrap_content" android:layout_margin="@dimen/default_margin" android:maxHeight="48.0dp" />
+        <View android:id="@id/exo_shutter" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <androidx.media3.ui.SubtitleView android:id="@id/exo_subtitles" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <com.farsitel.bazaar.designsystem.widget.loading.SpinKitView android:layout_gravity="center" android:id="@id/exo_buffering" android:layout_width="@dimen/loading_size" android:layout_height="@dimen/loading_size" android:indeterminate="true" app:loadingColor="@color/white_primary" />
+        <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/exo_error_message" android:background="@color/exo_error_message_background_color" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </androidx.media3.ui.AspectRatioFrameLayout>
+    <FrameLayout android:id="@id/exo_overlay" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@id/double_tap_navigation" layout="@layout/exo_playback_navigation_view" />
+        <include android:id="@id/exo_controller_placeholder" layout="@layout/exo_player_control_view" />
+    </FrameLayout>
+</merge>

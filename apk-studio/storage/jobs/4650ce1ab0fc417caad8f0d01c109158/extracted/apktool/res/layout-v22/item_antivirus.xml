@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:tag="layout/item_antivirus_0" android:paddingTop="@dimen/default_margin_half_quarter" android:paddingBottom="@dimen/default_margin_half_quarter" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="@dimen/default_margin_half_quarter"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.farsitel.bazaar.designsystem.widget.LocalAwareTextView android:textAppearance="@style/Bazaar.Text.Caption" android:tag="binding_1" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/default_margin" />
+    <com.farsitel.bazaar.designsystem.widget.LocalAwareTextView android:textAppearance="@style/Bazaar.Text.Caption" android:id="@id/antiVirusResultText" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <androidx.constraintlayout.utils.widget.ImageFilterView android:textAppearance="@style/Bazaar.Text.Caption" android:id="@id/antiVirusResultIcon" android:tag="binding_3" android:layout_width="@dimen/icon_size_middle" android:layout_height="@dimen/icon_size_middle" android:contentDescription="@string/general_icon_content_description" android:paddingStart="@dimen/default_margin_half" />
+</LinearLayout>

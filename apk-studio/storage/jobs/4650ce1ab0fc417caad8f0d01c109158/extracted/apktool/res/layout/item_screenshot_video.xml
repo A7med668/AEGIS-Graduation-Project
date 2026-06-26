@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/item_screenshot_video_0" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginStart="@dimen/default_margin_double" android:layout_marginEnd="@dimen/default_margin_half_quarter"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="match_parent" app:cardCornerRadius="@dimen/default_margin" app:cardPreventCornerOverlap="false" app:cardUseCompatPadding="true">
+        <FrameLayout android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/ivThumbRowScreenshotVideo" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:adjustViewBounds="true" android:contentDescription="@string/screen_shot_content_description" />
+            <View android:id="@id/darkShade" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/Bazaar.Image.ShadeBackground" />
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/ivPlayRowScreenshotVideo" android:tag="binding_2" android:adjustViewBounds="true" android:contentDescription="@string/play_button_content_description" app:srcCompat="@drawable/ic_player_play_white_56dp_old" style="@style/Bazaar.Image.Avatar" />
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

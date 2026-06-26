@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.farsitel.bazaar.designsystem.widget.LocalAwareTextView android:textColor="@color/text_primary" android:id="@id/pointTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/default_margin_half" style="@style/Bazaar.Text.Headline1" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/retryButton" android:visibility="gone" android:layout_width="18.0dp" android:layout_height="18.0dp" android:layout_marginEnd="@dimen/default_margin" app:srcCompat="@drawable/ic_refresh_secondary_18dp" />
+    <ProgressBar android:id="@id/pointLoadingProgress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/default_margin" style="?android:progressBarStyleSmall" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/coinIcon" android:layout_width="24.0dp" android:layout_height="24.0dp" android:contentDescription="@string/general_icon_content_description" app:srcCompat="@drawable/ic_point_48dp" />
+</merge>

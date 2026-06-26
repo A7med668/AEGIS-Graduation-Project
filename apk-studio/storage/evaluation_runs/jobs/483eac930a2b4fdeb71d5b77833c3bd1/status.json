@@ -1,0 +1,16 @@
+{
+  "job_id": "483eac930a2b4fdeb71d5b77833c3bd1",
+  "filename": "benign_08_calendar.apk",
+  "status": "completed",
+  "progress": 100,
+  "error": null,
+  "report_available": true,
+  "created_at": "2026-06-24T23:25:52.844660+00:00",
+  "updated_at": "2026-06-24T23:26:40.574716+00:00",
+  "risk_score": 27,
+  "risk_level": "low",
+  "ai_risk_score": 27,
+  "ai_risk_level": "low",
+  "agentic_triggered": false,
+  "agentic_action_count": 1
+}

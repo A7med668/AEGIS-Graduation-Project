@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/pref_category_paths" app:iconSpaceReserved="false">
+        <EditTextPreference android:hint="@string/str_music_base_path_hint" android:maxLines="3" android:maxLength="768" android:title="@string/str_music_base_path_title" android:key="prefMusicBasePath" android:summary="@string/str_music_base_path_summary" android:defaultValue="/" android:inputType="textMultiLine|textNoSuggestions" app:icon="@drawable/ic_setting_folder" />
+        <EditTextPreference android:maxLength="256" android:title="@string/str_PrefDataBasePath" android:key="prefDataBasePath" android:summary="@string/str_PrefDataBasePathSummary" android:defaultValue="/" android:inputType="textNoSuggestions" />
+        <Preference android:title="@string/str_reset_settings" android:key="prefRestoreDefaultPaths" android:summary="@string/str_reset_settings_summary" />
+        <Preference android:title="@string/str_select_path" android:key="prefSelectPath" android:summary="@string/str_select_path_summary" />
+        <CheckBoxPreference android:title="@string/str_IgnoreNoMedia" android:key="prefIgnoreNoMedia" android:defaultValue="false" android:summaryOn="@string/str_IgnoreNoMediaSummaryOn" android:summaryOff="@string/str_IgnoreNoMediaSummaryOff" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_category_album_images" app:iconSpaceReserved="false">
+        <CheckBoxPreference android:title="@string/str_ExtractFolderImages" android:key="prefExtractFolderImages" android:defaultValue="true" android:summaryOn="@string/str_ExtractFolderImagesSummaryOn" android:summaryOff="@string/str_ExtractFolderImagesSummaryOff" app:icon="@drawable/ic_setting_extract_album_art" />
+        <EditTextPreference android:maxLength="4" android:title="@string/str_MaxSizeOfFolderImages" android:key="prefMaxSizeOfFolderImages" android:summary="@string/str_MaxSizeOfFolderImagesSummary" android:dependency="prefExtractFolderImages" android:defaultValue="500" android:inputType="number" app:icon="@drawable/ic_setting_scale_album_art" />
+        <EditTextPreference android:maxLength="32" android:title="@string/str_FileNameOfAlbumImages" android:key="prefFileNameOfAlbumImages" android:summary="@string/str_FileNameOfAlbumImagesSummary" android:dependency="prefExtractFolderImages" android:defaultValue="albumart" android:inputType="textNoSuggestions" />
+        <CheckBoxPreference android:title="@string/str_ScaleExistingFolderImages" android:key="prefScaleExistingFolderImages" android:defaultValue="false" android:summaryOn="@string/str_ScaleExistingFolderImagesSummaryOn" android:summaryOff="@string/str_ScaleExistingFolderImagesSummaryOff" />
+        <CheckBoxPreference android:title="@string/str_RenameExistingFolderImages" android:key="prefRenameExistingFolderImages" android:defaultValue="false" android:summaryOn="@string/str_RenameExistingFolderImagesSummaryOn" android:summaryOff="@string/str_RenameExistingFolderImagesSummaryOff" />
+        <CheckBoxPreference android:title="@string/str_prefKeepBackupOfOriginalFolderImages" android:key="prefKeepBackupOfOriginalFolderImages" android:defaultValue="false" android:summaryOn="@string/str_prefKeepBackupOfOriginalFolderImagesSummaryOn" android:summaryOff="@string/str_prefKeepBackupOfOriginalFolderImagesSummaryOff" app:icon="@drawable/ic_setting_backup" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_category_various" app:iconSpaceReserved="false">
+        <CheckBoxPreference android:title="@string/str_ShowDebugMenuEntries" android:key="prefShowDebugMenuEntries" android:defaultValue="false" android:summaryOn="@string/str_ShowDebugMenuEntriesSummaryOn" android:summaryOff="@string/str_ShowDebugMenuEntriesSummaryOff" app:icon="@drawable/ic_setting_debug" />
+        <CheckBoxPreference android:title="@string/str_DebugRequestMediaFileAccess" android:key="prefDebugRequestMediaFileAccess" android:summary="@string/str_DebugRequestMediaFileAccessSummary" android:defaultValue="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

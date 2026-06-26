@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/navigation_content" app:startDestination="@id/contentDetailFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="contentDetailFragment" android:name="com.farsitel.bazaar.feature.content.detail.view.ContentDetailFragment" android:id="@id/contentDetailFragment">
+        <deepLink app:uri="@string/deeplink_content_detail_internal" />
+    </fragment>
+    <fragment android:label="contentDetailDescriptionFragment" android:name="com.farsitel.bazaar.feature.content.detail.view.ContentDetailDescriptionFragment" android:id="@id/contentDetailDescriptionFragment">
+        <deepLink app:uri="@string/deeplink_content_detail_description_launcher" />
+    </fragment>
+    <fragment android:label="contentAllEpisodesFragment" android:name="com.farsitel.bazaar.feature.content.detail.view.ContentAllEpisodesFragment" android:id="@id/contentAllEpisodesFragment">
+        <deepLink app:uri="@string/deeplink_content_all_episodes_launcher" />
+    </fragment>
+    <fragment android:label="VideoPlayerLauncherFragment" android:name="com.farsitel.content.launcher.VideoPlayerLauncherFragment" android:id="@id/videoPlayerLauncherFragment">
+        <deepLink app:uri="@string/deeplink_video_player_launcher" />
+    </fragment>
+</navigation>

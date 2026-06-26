@@ -1,0 +1,10 @@
+{
+  "sha256": [
+    {
+      "value": "replace_with_confirmed_sha256_hash",
+      "severity": "critical",
+      "source": "local_lab_placeholder",
+      "description": "Placeholder. Add hashes only when legally and safely obtained."
+    }
+  ]
+}

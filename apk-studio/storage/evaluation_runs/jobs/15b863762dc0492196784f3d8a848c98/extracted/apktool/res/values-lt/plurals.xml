@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="added_to_queue_message">
+        <item quantity="one">%d epizodas įtrauktas į eilę.</item>
+        <item quantity="few">%d epizodai įtraukti į eilę.</item>
+        <item quantity="other">%d epizodų įtraukta į eilę.</item>
+    </plurals>
+    <plurals name="deleted_episode_message">
+        <item quantity="one">Ištrintas %d atsisiųstas epizodas.</item>
+        <item quantity="few">Ištrinti %d atsisiųsti epizodai.</item>
+        <item quantity="other">Ištrinta %d atsisiųstų epizodų.</item>
+    </plurals>
+    <plurals name="downloading_episodes_message">
+        <item quantity="one">Atsisiunčiamas %d epizodas.</item>
+        <item quantity="few">Atsisiunčiami %d epizodai.</item>
+        <item quantity="other">Atsisiunčiama %d epizodų.</item>
+    </plurals>
+    <plurals name="downloads_left">
+        <item quantity="one">Liko %d atsiuntimas</item>
+        <item quantity="few">Liko %d atsiuntimai</item>
+        <item quantity="other">Liko %d atsiuntimų</item>
+    </plurals>
+    <plurals name="echo_hours_podcasts">
+        <item quantity="one">"valandų epizodų
+iš %1$d tinklalaidės"</item>
+        <item quantity="few">"valandų epizodų
+iš %1$d skirtingų tinklalaidžių"</item>
+        <item quantity="other">"valandų epizodų
+iš %1$d skirtingų tinklalaidžių"</item>
+    </plurals>
+    <plurals name="echo_queue_hours_waiting">
+        <item quantity="one">"valandų jūsų eilėje
+iš %1$d epizodo"</item>
+        <item quantity="few">"valandų jūsų eilėje
+iš %1$d epizodų"</item>
+        <item quantity="other">"valandų jūsų eilėje
+iš %1$d epizodų"</item>
+    </plurals>
+    <plurals name="episode_cleanup_days_after_listening">
+        <item quantity="one">Po %d dienos po perklausos</item>
+        <item quantity="few">Po %d dienų po perklausos</item>
+        <item quantity="other">Po %d dienų po perklausos</item>
+    </plurals>
+    <plurals name="episode_cleanup_hours_after_listening">
+        <item quantity="one">Po %d valandos po perklausos</item>
+        <item quantity="few">Po %d valandų po perklausos</item>
+        <item quantity="other">Po %d valandų po perklausos</item>
+    </plurals>
+    <plurals name="marked_as_played_message">
+        <item quantity="one">%d epizodas pažymėtas kaip perklausytas.</item>
+        <item quantity="few">%d epizodai pažymėti kaip perklausyti.</item>
+        <item quantity="many">%d epizodų pažymėta kaip perklausyti.</item>
+        <item quantity="other">%d epizodų pažymėta kaip perklausyti.</item>
+    </plurals>
+    <plurals name="marked_as_unplayed_message">
+        <item quantity="one">%d epizodas pažymėtas kaip neperklausytas.</item>
+        <item quantity="few">%d epizodai pažymėti kaip neperklausyti.</item>
+        <item quantity="many">%d epizodų pažymėta kaip neperklausyti.</item>
+        <item quantity="other">%d epizodų pažymėta kaip neperklausyti.</item>
+    </plurals>
+    <plurals name="mobile_download_notice">
+        <item quantity="one">Atsiunčiama naudojant mobiliųjų duomenų ryšį dar %d minutę</item>
+        <item quantity="few">Atsiunčiama naudojant mobiliųjų duomenų ryšį dar %d minutes</item>
+        <item quantity="many">Atsiunčiama naudojant mobiliųjų duomenų ryšį dar %d minučių</item>
+        <item quantity="other">Atsiunčiama naudojant mobiliųjų duomenų ryšį dar %d minučių</item>
+    </plurals>
+    <plurals name="move_to_bottom_message">
+        <item quantity="one">%d epizodas perkeltas žemyn.</item>
+        <item quantity="few">%d epizodai perkelti žemyn.</item>
+        <item quantity="other">%d epizodų perkelta žemyn.</item>
+    </plurals>
+    <plurals name="move_to_top_message">
+        <item quantity="one">%d epizodas perkeltas viršun.</item>
+        <item quantity="few">%d epizodai perkelti viršun.</item>
+        <item quantity="other">%d epizodų perkelta viršun.</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d naujas pranešimas</item>
+        <item quantity="few">%d nauji pranešimai</item>
+        <item quantity="many">%d naujo pranešimo</item>
+        <item quantity="other">%d naujų pranešimų</item>
+    </plurals>
+    <plurals name="new_episode_notification_message">
+        <item quantity="one">%2$s yra naujas epizodas</item>
+        <item quantity="few">%2$s yra %1$d nauji epizodai</item>
+        <item quantity="other">%2$s yra %1$d naujų epizodų</item>
+    </plurals>
+    <plurals name="new_episode_notification_title">
+        <item quantity="one">Naujas epizodas</item>
+        <item quantity="few">Nauji epizodai</item>
+        <item quantity="other">Naujų epizodų</item>
+    </plurals>
+    <plurals name="num_episodes">
+        <item quantity="one">%d epizodas</item>
+        <item quantity="few">%d epizodai</item>
+        <item quantity="other">%d epizodų</item>
+    </plurals>
+    <plurals name="num_selected_label">
+        <item quantity="one">%1$d/%2$d pažymėtas</item>
+        <item quantity="few">%1$d/%2$d pažymėti</item>
+        <item quantity="other">%1$d/%2$d pažymėtų</item>
+    </plurals>
+    <plurals name="num_subscriptions">
+        <item quantity="one">%d prenumerata</item>
+        <item quantity="few">%d prenumeratos</item>
+        <item quantity="many">%d prenumeratų</item>
+        <item quantity="other">%d prenumeratų</item>
+    </plurals>
+    <plurals name="removed_from_inbox_batch_label">
+        <item quantity="one">%d epizodas pašalintas iš gautųjų.</item>
+        <item quantity="few">%d epizodai pašalinti iš gautųjų.</item>
+        <item quantity="other">%d epizodų pašalinta iš gautųjų.</item>
+    </plurals>
+    <plurals name="removed_from_queue_message">
+        <item quantity="one">%d epizodas pašalintas iš eilės.</item>
+        <item quantity="few">%d epizodai pašalinti iš eilės.</item>
+        <item quantity="other">%d epizodų pašalinta iš eilės.</item>
+    </plurals>
+    <plurals name="statistics_episodes_downloaded">
+        <item quantity="one">atsisiųstas</item>
+        <item quantity="few">atsisiųsti</item>
+        <item quantity="many">atsisiųsta</item>
+        <item quantity="other">atsisiųsta</item>
+    </plurals>
+    <plurals name="statistics_episodes_started">
+        <item quantity="one">pradėtas</item>
+        <item quantity="few">pradėti</item>
+        <item quantity="many">pradėta</item>
+        <item quantity="other">pradėta</item>
+    </plurals>
+    <plurals name="statistics_episodes_total">
+        <item quantity="one">iš viso</item>
+        <item quantity="few">iš viso</item>
+        <item quantity="many">iš viso</item>
+        <item quantity="other">iš viso</item>
+    </plurals>
+    <plurals name="time_days_quantified">
+        <item quantity="one">%d diena</item>
+        <item quantity="few">%d dienos</item>
+        <item quantity="other">%d dienų</item>
+    </plurals>
+    <plurals name="time_hours_quantified">
+        <item quantity="one">%d valanda</item>
+        <item quantity="few">%d valandos</item>
+        <item quantity="other">%d valandų</item>
+    </plurals>
+    <plurals name="time_minutes_quantified">
+        <item quantity="one">%d minutė</item>
+        <item quantity="few">%d minutės</item>
+        <item quantity="other">%d minučių</item>
+    </plurals>
+    <plurals name="time_seconds_quantified">
+        <item quantity="one">%d sekundė</item>
+        <item quantity="few">%d sekundės</item>
+        <item quantity="other">%d sekundžių</item>
+    </plurals>
+    <plurals name="total_size_downloaded_podcasts">
+        <item quantity="one">Bendras %d epizodo dydis įrenginyje</item>
+        <item quantity="few">Bendras %d epizodų dydis įrenginyje</item>
+        <item quantity="other">Bendras %d epizodų dydis įrenginyje</item>
+    </plurals>
+    <plurals name="updated_feeds_batch_label">
+        <item quantity="one">%d prenumerata atnaujinta.</item>
+        <item quantity="few">%d prenumeratos atnaujintos.</item>
+        <item quantity="other">%d prenumeratų atnaujinta.</item>
+    </plurals>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="16.0dp" android:paddingTop="8.0dp" android:paddingRight="16.0dp" android:paddingBottom="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imgvCover" android:layout_width="@dimen/thumbnail_length_itemlist" android:layout_height="@dimen/thumbnail_length_itemlist" android:scaleType="fitXY" android:adjustViewBounds="true" android:cropToPadding="true" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:importantForAccessibility="no" android:layout_alignParentStart="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_toRightOf="@id/imgvCover" android:layout_centerVertical="true" android:layout_marginStart="16.0dp" android:layout_toEndOf="@id/imgvCover">
+        <TextView android:id="@id/txtvTitle" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/AntennaPod.TextView.ListItemPrimaryTitle" />
+        <TextView android:textSize="14.0sp" android:textColor="?android:textColorSecondary" android:ellipsize="middle" android:id="@id/txtvAuthor" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" style="android:style/TextAppearance.Small" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/scroll_view" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/medium_margin" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/medium_margin" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="@dimen/thumbnail_size" android:layout_height="@dimen/thumbnail_size" android:src="@mipmap/ic_launcher" android:contentDescription="@string/app_name" android:layout_marginEnd="@dimen/big_margin" />
+            <LinearLayout android:orientation="vertical" android:background="?android:selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textAppearance="?android:textAppearanceLarge" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" />
+                <TextView android:textStyle="bold" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/description" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/about_layout_version" android:background="?android:selectableItemBackground" android:paddingTop="@dimen/medium_margin" android:paddingBottom="@dimen/medium_margin" android:layout_width="match_parent" android:layout_height="?android:listPreferredItemHeight">
+                <ImageView android:id="@id/about_img_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/about_label_version" android:layout_marginStart="@dimen/activity_margin" android:layout_marginEnd="@dimen/excessive_margin" app:srcCompat="@drawable/ic_info_vector" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent">
+                    <TextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about_label_version" />
+                    <TextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/about_text_version" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/about_layout_license" android:background="?android:selectableItemBackground" android:paddingTop="@dimen/medium_margin" android:paddingBottom="@dimen/medium_margin" android:layout_width="match_parent" android:layout_height="?android:listPreferredItemHeight">
+                <ImageView android:id="@id/about_img_license" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/about_label_license" android:layout_marginStart="@dimen/activity_margin" android:layout_marginEnd="@dimen/excessive_margin" app:srcCompat="@drawable/ic_copyright_vector" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent">
+                    <TextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about_label_license" />
+                    <TextView android:textAppearance="?android:textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about_label_gnu" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/about_layout_privacy_policy" android:background="?android:selectableItemBackground" android:paddingTop="@dimen/medium_margin" android:paddingBottom="@dimen/medium_margin" android:layout_width="match_parent" android:layout_height="?android:listPreferredItemHeight">
+                <ImageView android:id="@id/about_img_privacy_policy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/about_label_changelog" android:layout_marginStart="@dimen/activity_margin" android:layout_marginEnd="@dimen/excessive_margin" app:srcCompat="@drawable/ic_shield_lock_vector" />
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about_label_privacy_policy" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/about_layout_changelog" android:background="?android:selectableItemBackground" android:paddingTop="@dimen/medium_margin" android:paddingBottom="@dimen/medium_margin" android:layout_width="match_parent" android:layout_height="?android:listPreferredItemHeight">
+                <ImageView android:id="@id/about_img_changelog" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/about_label_changelog" android:layout_marginStart="@dimen/activity_margin" android:layout_marginEnd="@dimen/excessive_margin" app:srcCompat="@drawable/ic_history_vector" />
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about_label_changelog" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/about_layout_source" android:background="?android:selectableItemBackground" android:paddingTop="@dimen/medium_margin" android:paddingBottom="@dimen/medium_margin" android:layout_width="match_parent" android:layout_height="?android:listPreferredItemHeight">
+                <ImageView android:id="@id/about_img_source" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/about_label_source" android:layout_marginStart="@dimen/activity_margin" android:layout_marginEnd="@dimen/excessive_margin" app:srcCompat="@drawable/ic_code_vector" />
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about_label_source" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/about_layout_faq" android:background="?android:selectableItemBackground" android:paddingTop="@dimen/medium_margin" android:paddingBottom="@dimen/medium_margin" android:layout_width="match_parent" android:layout_height="?android:listPreferredItemHeight">
+                <ImageView android:id="@id/about_img_faq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/about_label_faq" android:layout_marginStart="@dimen/activity_margin" android:layout_marginEnd="@dimen/excessive_margin" app:srcCompat="@drawable/ic_help_vector" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent">
+                    <TextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about_label_faq" />
+                    <TextView android:textAppearance="?android:textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about_label_faq_long" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/about_layout_contribute" android:background="?android:selectableItemBackground" android:paddingTop="@dimen/medium_margin" android:paddingBottom="@dimen/medium_margin" android:layout_width="match_parent" android:layout_height="?android:listPreferredItemHeight">
+                <ImageView android:id="@id/about_img_contribute" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/about_label_faq" android:layout_marginStart="@dimen/activity_margin" android:layout_marginEnd="@dimen/excessive_margin" app:srcCompat="@drawable/ic_account_group_vector" />
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about_label_contribute" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

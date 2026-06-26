@@ -1,0 +1,9 @@
+{
+  "attempted": true,
+  "action": "save",
+  "name": "aegis_clean",
+  "ok": false,
+  "supported": false,
+  "returncode": 1,
+  "output_sample": "error: could not connect to TCP port 5554: Connection refused"
+}

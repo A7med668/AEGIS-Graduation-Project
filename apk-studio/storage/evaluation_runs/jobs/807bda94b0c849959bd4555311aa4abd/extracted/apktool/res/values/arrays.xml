@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen</item>
+        <item>@color/dot_light_screen</item>
+        <item>@color/dot_light_screen</item>
+    </array>
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen</item>
+        <item>@color/dot_dark_screen</item>
+        <item>@color/dot_dark_screen</item>
+    </array>
+    <string-array name="calendar_array">
+        <item>Add to Calendar</item>
+        <item>Do nothing</item>
+    </string-array>
+    <string-array name="content_types">
+        <item>UNDEFINED</item>
+        <item>Text</item>
+        <item>E-Mail</item>
+        <item>Phone number</item>
+        <item>SMS</item>
+        <item>MMS</item>
+        <item>URL</item>
+        <item>Wifi</item>
+        <item>VCard</item>
+        <item>MeCard</item>
+        <item>BizCard</item>
+        <item>Market</item>
+        <item>Contact</item>
+        <item>Geo location</item>
+        <item>Address book</item>
+        <item>Product</item>
+        <item>Calendar</item>
+        <item>ISBN</item>
+        <item>Vehicle Identification Number (VIN)</item>
+    </string-array>
+    <string-array name="email_array">
+        <item>Send Email</item>
+        <item>Add to Contacts</item>
+    </string-array>
+    <string-array name="generator_array">
+        <item>Text</item>
+        <item>E-mail</item>
+        <item>URL</item>
+        <item>Phone number</item>
+        <item>SMS</item>
+        <item>Geo location</item>
+        <item>MeCard</item>
+        <item>BizCard</item>
+        <item>Wifi</item>
+        <item>VCard</item>
+        <item>Market</item>
+    </string-array>
+    <string-array name="geo_array">
+        <item>Open Maps App</item>
+        <item>Do nothing</item>
+    </string-array>
+    <string-array name="history_array">
+        <item>Copy to clipboard</item>
+        <item>Delete entry</item>
+    </string-array>
+    <string-array name="mms_array">
+        <item>Send MMS</item>
+        <item>Call Number</item>
+        <item>Add to Contacts</item>
+    </string-array>
+    <string-array name="pref_app_theme_entries">
+        <item>Light</item>
+        <item>Dark</item>
+        <item>System default</item>
+    </string-array>
+    <string-array name="pref_app_theme_values">
+        <item>LIGHT</item>
+        <item>DARK</item>
+        <item>SYSTEM</item>
+    </string-array>
+    <string-array name="pref_search_engine_entries">
+        <item>DuckDuckGo</item>
+        <item>Google</item>
+        <item>Startpage</item>
+        <item>Brave</item>
+        <item>@string/pref_custom_search_engine_title</item>
+    </string-array>
+    <string-array name="pref_search_engine_uris">
+        <item>https://duckduckgo.com/?q=%s</item>
+        <item>https://www.google.com/search?q=%s</item>
+        <item>https://www.startpage.com/search?query=%s</item>
+        <item>https://search.brave.com/search?q=%s</item>
+    </string-array>
+    <string-array name="pref_search_engine_values">
+        <item>DUCK_DUCK_GO</item>
+        <item>GOOGLE</item>
+        <item>STARTPAGE</item>
+        <item>BRAVE</item>
+        <item>CUSTOM</item>
+    </string-array>
+    <string-array name="product_array">
+        <item>Search on Web</item>
+        <item>Do nothing</item>
+    </string-array>
+    <string-array name="send_email_array">
+        <item>Send Email</item>
+        <item>Add to Contacts</item>
+    </string-array>
+    <string-array name="sms_array">
+        <item>Send SMS</item>
+        <item>Call Number</item>
+        <item>Add to Contacts</item>
+    </string-array>
+    <string-array name="tel_array">
+        <item>Call Number</item>
+        <item>Add to Contacts</item>
+    </string-array>
+    <string-array name="text_array">
+        <item>Search on Web</item>
+        <item>Do nothing</item>
+    </string-array>
+    <string-array name="url_array">
+        <item>Visit URL</item>
+        <item>Do nothing</item>
+    </string-array>
+    <string-array name="vcard_array">
+        <item>Add to Contacts</item>
+        <item>Do nothing</item>
+    </string-array>
+    <string-array name="wifi_array">
+        <item>Copy Password</item>
+        <item>Add WiFi network</item>
+        <item>Do nothing</item>
+    </string-array>
+</resources>

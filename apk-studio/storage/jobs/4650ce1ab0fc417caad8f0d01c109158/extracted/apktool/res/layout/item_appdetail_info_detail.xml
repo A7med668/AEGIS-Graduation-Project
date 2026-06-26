@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:tag="layout/item_appdetail_info_detail_0" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/ivImage" android:tag="binding_1" android:layout_width="@dimen/info_detail_icon_size" android:layout_height="@dimen/info_detail_icon_size" android:contentDescription="@string/general_icon_content_description" android:layout_marginEnd="@dimen/default_margin" />
+    <com.farsitel.bazaar.designsystem.widget.textview.NoDiscountTextView android:textColor="@color/text_secondary" android:id="@id/tvStrikeText" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/default_margin" style="@style/Bazaar.Text.Caption" />
+    <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/text_secondary" android:id="@id/tvMainText" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Bazaar.Text.Caption" />
+</LinearLayout>

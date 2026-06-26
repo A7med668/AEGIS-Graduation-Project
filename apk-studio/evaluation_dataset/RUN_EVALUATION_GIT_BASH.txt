@@ -1,0 +1,8 @@
+cd "/c/Users/cc/OneDrive/Desktop/aegis-apk-studio-product"
+cd backend
+source .venv/Scripts/activate
+cd ..
+python scripts/run_evaluation_dataset.py \
+  --dataset evaluation_dataset \
+  --storage storage/evaluation_runs \
+  --out evaluation_dataset/results/evaluation_summary.json

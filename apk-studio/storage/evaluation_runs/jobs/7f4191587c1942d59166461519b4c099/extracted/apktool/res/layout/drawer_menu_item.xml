@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="?android:selectableItemBackground" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/menu_icon" android:layout_width="24.0dp" android:layout_height="24.0dp" android:tint="@color/secondaryColor" android:layout_marginEnd="12.0dp" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="14.0sp" android:textStyle="normal" android:textColor="@color/white" android:id="@id/menu_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:fontFamily="monospace" />
+        <TextView android:textSize="11.0sp" android:textColor="@android:color/darker_gray" android:id="@id/menu_description" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:fontFamily="monospace" />
+    </LinearLayout>
+    <TextView android:textSize="9.0sp" android:textStyle="bold" android:textColor="@color/difficultyEasy" android:layout_gravity="center_vertical" android:id="@id/difficulty_badge" android:background="@drawable/difficulty_badge_easy" android:paddingLeft="6.0dp" android:paddingTop="2.0dp" android:paddingRight="6.0dp" android:paddingBottom="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Easy" android:fontFamily="monospace" android:paddingHorizontal="6.0dp" android:paddingVertical="2.0dp" />
+</LinearLayout>

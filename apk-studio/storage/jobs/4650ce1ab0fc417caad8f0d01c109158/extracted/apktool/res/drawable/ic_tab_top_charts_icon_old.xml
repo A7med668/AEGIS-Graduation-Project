@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true" android:drawable="@drawable/ic_tab_top_charts_pressed_icon_96dp_old" />
+    <item android:drawable="@drawable/ic_tab_top_charts_normal_icon_96dp_old" />
+</selector>

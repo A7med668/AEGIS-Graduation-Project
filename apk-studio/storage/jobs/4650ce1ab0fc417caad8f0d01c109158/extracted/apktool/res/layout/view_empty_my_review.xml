@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:padding="@dimen/default_margin_quintuple" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/reviewEmptyViewIcon" android:layout_width="30.0dp" android:layout_height="30.0dp" android:tint="@color/icon_hint_color" />
+    <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/text_primary" android:gravity="center" android:id="@id/reviewEmptyViewTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin_quadruple" style="@style/Bazaar.Text.Headline2" />
+    <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/text_secondary" android:gravity="center" android:id="@id/reviewEmptyViewDescription" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin_double" style="@style/Bazaar.Text.Body2" />
+</LinearLayout>

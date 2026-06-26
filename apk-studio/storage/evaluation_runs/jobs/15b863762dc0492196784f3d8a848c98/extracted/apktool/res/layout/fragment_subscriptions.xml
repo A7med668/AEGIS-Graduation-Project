@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/appbar" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:layout_width="match_parent" android:layout_height="?actionBarSize" app:layout_collapseMode="pin" app:navigationContentDescription="@string/toolbar_back_button_content_description" app:navigationIcon="?homeAsUpIndicator" app:title="@string/subscriptions_label" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@id/collapsing_container" android:layout_width="match_parent" android:layout_height="wrap_content" app:contentScrim="#00000000" app:layout_scrollFlags="scroll|exitUntilCollapsed|enterAlways|snap" app:titleEnabled="false">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="1.0dp" app:layout_collapseMode="pin">
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/tags_recycler" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:visibility="visible" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" />
+                    <TextView android:id="@id/feeds_filtered_message" android:background="?android:selectableItemBackground" android:paddingLeft="16.0dp" android:paddingTop="4.0dp" android:paddingRight="16.0dp" android:paddingBottom="4.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/filtered_label" />
+                </LinearLayout>
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipeRefresh" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center_horizontal" android:id="@id/subscriptions_grid" android:paddingBottom="88.0dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        <ProgressBar android:layout_gravity="center" android:id="@id/progressBar" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateOnly="true" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="end|bottom" android:id="@id/subscriptions_add" android:layout_width="56.0dp" android:layout_height="56.0dp" android:layout_margin="16.0dp" android:contentDescription="@string/add_feed_label" app:srcCompat="@drawable/ic_add" />
+        <de.danoeh.antennapod.ui.view.FloatingSelectMenu android:layout_gravity="bottom" android:id="@id/floatingSelectMenu" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>

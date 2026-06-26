@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="@string/setting_title_app">
+        <Preference android:title="@string/setting_title_browser" android:key="settings_start" />
+        <Preference android:title="@string/setting_title_ui" android:key="settings_ui" />
+        <Preference android:title="@string/setting_filter" android:key="settings_filter" />
+        <Preference android:title="@string/setting_title_data" android:key="settings_data" />
+        <Preference android:title="@string/menu_delete" android:key="settings_clear" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/setting_userScript">
+        <Preference android:title="@string/menu_edit" android:key="scripts" />
+        <SwitchPreference android:id="@id/debug" android:title="Debug" android:key="sp_debug" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/setting_network">
+        <SwitchPreference android:id="@id/metered" android:title="@string/metered_connection" android:key="sp_metered" android:defaultValue="false" />
+        <org.woheller69.preferences.EditTextSwitchPreference android:title="@string/setting_title_proxy" android:selectable="true" android:key="sp_proxy" android:defaultValue="socks5://12.34.56.78:9090" app:SwitchKey="userProxy" app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+</PreferenceScreen>

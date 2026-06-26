@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/emptyViewImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/general_icon_content_description" style="@style/Bazaar.Image.Toolbar" />
+    <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/text_primary" android:gravity="center" android:id="@id/emptyViewTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin_double_half" android:layout_marginStart="@dimen/default_margin_double" android:layout_marginEnd="@dimen/default_margin_double" style="@style/Bazaar.Text.Body2" />
+    <com.farsitel.bazaar.designsystem.component.button.BazaarButton android:textSize="@dimen/subtitle2" android:id="@id/emptyViewAction" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin_double" android:minWidth="185.0dp" android:minHeight="@dimen/default_button_height" app:buttonTheme="transparent" app:buttonType="app" />
+</LinearLayout>

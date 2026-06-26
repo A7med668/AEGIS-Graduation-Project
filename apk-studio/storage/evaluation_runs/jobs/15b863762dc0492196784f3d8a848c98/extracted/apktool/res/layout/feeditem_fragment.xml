@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/content_root" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/header" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/imgvCover" android:layout_width="@dimen/thumbnail_length_queue_item" android:layout_height="@dimen/thumbnail_length_queue_item" android:foreground="?selectableItemBackground" android:contentDescription="@string/open_podcast" />
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginStart="16.0dp">
+                <TextView android:id="@id/txtvPodcast" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground" android:importantForAccessibility="no" style="@style/AntennaPod.TextView.ListItemSecondaryTitle" />
+                <TextView android:textSize="16.0sp" android:textColor="?android:textColorPrimary" android:ellipsize="end" android:id="@id/txtvTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="5" />
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@id/txtvDuration" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/AntennaPod.TextView.ListItemSecondaryTitle" />
+                    <TextView android:id="@id/separatorIcons" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:layout_marginRight="4.0dp" android:text="·" android:importantForAccessibility="no" android:layout_marginStart="4.0dp" android:layout_marginEnd="4.0dp" style="@style/AntennaPod.TextView.ListItemSecondaryTitle" />
+                    <TextView android:id="@id/txtvPublished" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/AntennaPod.TextView.ListItemSecondaryTitle" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/butAction1" android:background="?android:selectableItemBackground" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/butAction1Icon" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="8.0dp" android:layout_marginBottom="12.0dp" android:layout_marginEnd="8.0dp" />
+                <TextView android:textAppearance="@style/TextAppearance.AppCompat.Button" android:textColor="?android:textColorPrimary" android:id="@id/butAction1Text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/butAction2" android:background="?android:selectableItemBackground" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <FrameLayout android:layout_gravity="end|bottom" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginTop="4.0dp" android:layout_marginBottom="4.0dp">
+                    <de.danoeh.antennapod.ui.common.CircularProgressBar android:layout_gravity="center" android:id="@id/circularProgressBar" android:visibility="gone" android:layout_width="36.0dp" android:layout_height="36.0dp" app:foregroundColor="?android:textColorPrimary" />
+                    <ImageView android:layout_gravity="center" android:id="@id/butAction2Icon" android:layout_width="24.0dp" android:layout_height="24.0dp" />
+                </FrameLayout>
+                <TextView android:textAppearance="@style/TextAppearance.AppCompat.Button" android:textColor="?android:textColorPrimary" android:id="@id/butAction2Text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textColor="?colorAccent" android:id="@id/nonSubscribedWarningLabel" android:background="@drawable/bg_message_info" android:paddingLeft="16.0dp" android:paddingTop="8.0dp" android:paddingRight="16.0dp" android:paddingBottom="8.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_marginBottom="8.0dp" android:foreground="?selectableItemBackground" android:text="@string/state_deleted_not_subscribed" />
+        <TextView android:id="@id/noMediaLabel" android:background="?android:dividerVertical" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/no_media_label" android:textAlignment="center" />
+        <View android:background="?android:dividerVertical" android:layout_width="match_parent" android:layout_height="1.0dp" />
+    </LinearLayout>
+    <de.danoeh.antennapod.ui.view.NestedScrollableHost android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/header" app:preferVertical="3">
+        <de.danoeh.antennapod.ui.view.ShownotesWebView android:id="@id/webvDescription" android:layout_width="match_parent" android:layout_height="match_parent" android:foreground="?android:windowContentOverlay" />
+    </de.danoeh.antennapod.ui.view.NestedScrollableHost>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:layout_gravity="center" android:id="@id/progbarLoading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" />
+    </FrameLayout>
+</RelativeLayout>

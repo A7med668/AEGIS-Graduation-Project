@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="added_to_queue_message">
+        <item quantity="one">%d episodio engadido á cola.</item>
+        <item quantity="other">%d episodios engadidos á cola.</item>
+    </plurals>
+    <plurals name="deleted_episode_message">
+        <item quantity="one">Eliminouse %d episodio descargado.</item>
+        <item quantity="other">Elimináronse %d episodios descargados.</item>
+    </plurals>
+    <plurals name="downloading_episodes_message">
+        <item quantity="one">Descargando %d episodio.</item>
+        <item quantity="other">Descargando %d episodios.</item>
+    </plurals>
+    <plurals name="downloads_left">
+        <item quantity="one">%d descarga restante</item>
+        <item quantity="other">%d descargas restantes</item>
+    </plurals>
+    <plurals name="echo_hours_podcasts">
+        <item quantity="one">"horas de episodios
+de %1$d podcast"</item>
+        <item quantity="other">"horas de episodios
+de %1$d podcasts diferentes"</item>
+    </plurals>
+    <plurals name="echo_queue_hours_waiting">
+        <item quantity="one">"horas agardando na cola
+de %1$d episodio"</item>
+        <item quantity="other">"horas agardando na cola
+de %1$d episodios"</item>
+    </plurals>
+    <plurals name="episode_cleanup_days_after_listening">
+        <item quantity="one">%d día despois de finalizar</item>
+        <item quantity="other">%d días despois de finalizar</item>
+    </plurals>
+    <plurals name="episode_cleanup_hours_after_listening">
+        <item quantity="one">%d hora despois de finalizar</item>
+        <item quantity="other">%d horas despois de finalizar</item>
+    </plurals>
+    <plurals name="episodes_sleep_timer_exceeds_queue">
+        <item quantity="one">Só queda %1$d episodio na cola</item>
+        <item quantity="other">Só quedan %1$d episodios na cola</item>
+    </plurals>
+    <plurals name="marked_as_played_message">
+        <item quantity="one">Marcouse %d episodio como reproducido.</item>
+        <item quantity="other">Marcáronse %d episodios como reproducidos.</item>
+    </plurals>
+    <plurals name="marked_as_unplayed_message">
+        <item quantity="one">Marcouse %d episodio como non reproducido.</item>
+        <item quantity="other">Marcáronse %d episodios como non reproducidos.</item>
+    </plurals>
+    <plurals name="mobile_download_notice">
+        <item quantity="one">Descargar usando datos do móbil no próximo %d minuto</item>
+        <item quantity="other">Descargar usando datos do móbil nos próximos %d minutos</item>
+    </plurals>
+    <plurals name="move_to_bottom_message">
+        <item quantity="one">%d episodio movido abaixo.</item>
+        <item quantity="other">%d episodios movidos abaixo.</item>
+    </plurals>
+    <plurals name="move_to_top_message">
+        <item quantity="one">%d episodio movido arriba.</item>
+        <item quantity="other">%d episodios movidos arriba.</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d notificación nova</item>
+        <item quantity="other">%d notificacións novas</item>
+    </plurals>
+    <plurals name="new_episode_notification_message">
+        <item quantity="one">%2$s ten un episodio novo</item>
+        <item quantity="other">%2$s ten %1$d episodios novos</item>
+    </plurals>
+    <plurals name="new_episode_notification_title">
+        <item quantity="one">Episodio novo</item>
+        <item quantity="other">Episodios novos</item>
+    </plurals>
+    <plurals name="num_episodes">
+        <item quantity="one">%d episodio</item>
+        <item quantity="other">%d episodios</item>
+    </plurals>
+    <plurals name="num_selected_label">
+        <item quantity="one">%1$d / %2$d seleccionado</item>
+        <item quantity="other">%1$d / %2$d seleccionados</item>
+    </plurals>
+    <plurals name="num_subscriptions">
+        <item quantity="one">%d subscrición</item>
+        <item quantity="other">%d subscricións</item>
+    </plurals>
+    <plurals name="removed_from_inbox_batch_label">
+        <item quantity="one">%d episodio eliminado das novidades.</item>
+        <item quantity="other">%d episodios eliminados das novidades.</item>
+    </plurals>
+    <plurals name="removed_from_queue_message">
+        <item quantity="one">%d episodio retirado da cola.</item>
+        <item quantity="other">%d episodios retirados da cola.</item>
+    </plurals>
+    <plurals name="statistics_episodes_downloaded">
+        <item quantity="one">descargado</item>
+        <item quantity="other">descargados</item>
+    </plurals>
+    <plurals name="statistics_episodes_started">
+        <item quantity="one">iniciado</item>
+        <item quantity="other">iniciados</item>
+    </plurals>
+    <plurals name="statistics_episodes_total">
+        <item quantity="one">en total</item>
+        <item quantity="other">en total</item>
+    </plurals>
+    <plurals name="time_days_quantified">
+        <item quantity="one">%d día</item>
+        <item quantity="other">%d días</item>
+    </plurals>
+    <plurals name="time_hours_quantified">
+        <item quantity="one">%d hora</item>
+        <item quantity="other">%d horas</item>
+    </plurals>
+    <plurals name="time_minutes_quantified">
+        <item quantity="one">%d minuto</item>
+        <item quantity="other">%d minutos</item>
+    </plurals>
+    <plurals name="time_seconds_quantified">
+        <item quantity="one">%d segundo</item>
+        <item quantity="other">%d segundos</item>
+    </plurals>
+    <plurals name="timer_exceeds_remaining_time_while_continuous_playback_disabled">
+        <item quantity="one">Está desactivada a reprodución contínua e ao episodio actual só que lle queda %1$d minuto</item>
+        <item quantity="other">Está desactivada a reprodución contínua e ao episodio actual só que lle quedan %1$d minutos</item>
+    </plurals>
+    <plurals name="total_size_downloaded_podcasts">
+        <item quantity="one">Tamaño total de %d episodio no dispositivo</item>
+        <item quantity="other">Tamaño total de %d episodios no dispositivo</item>
+    </plurals>
+    <plurals name="updated_feeds_batch_label">
+        <item quantity="one">%d subscrición actualizada.</item>
+        <item quantity="other">%d subscricións actualizadas.</item>
+    </plurals>
+</resources>

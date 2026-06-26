@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layoutVpnWarning" android:tag="layout/item_vpn_warning_0" android:background="@drawable/bg_surface_color_1" android:paddingLeft="@dimen/default_margin_one_half" android:paddingTop="@dimen/default_margin" android:paddingRight="@dimen/default_margin_one_half" android:paddingBottom="@dimen/default_margin" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:tag="binding_1" android:layout_width="@dimen/error_icon_size" android:layout_height="@dimen/error_icon_size" android:layout_marginTop="@dimen/default_margin_half" android:layout_marginBottom="@dimen/default_margin_half" android:layout_marginEnd="@dimen/default_margin_one_half" />
+    <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/text_primary" android:gravity="start" android:tag="binding_2" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Bazaar.Text.Body2" />
+</LinearLayout>

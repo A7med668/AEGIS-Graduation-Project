@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/downloading_group_small_0" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.farsitel.bazaar.designsystem.component.button.BazaarButton android:id="@id/primaryButton" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" app:buttonTheme="outline" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:sizeMode="small" />
+    <include android:id="@id/progress" layout="@layout/downloading_progress" />
+</androidx.constraintlayout.widget.ConstraintLayout>

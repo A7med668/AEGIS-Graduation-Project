@@ -1,0 +1,10 @@
+{
+  "domains": [
+    {
+      "value": "example-c2-domain.test",
+      "severity": "high",
+      "source": "local_lab_placeholder",
+      "description": "Placeholder for demo. Replace with real lab-confirmed indicators."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "type": "launch",
+    "detail": "Launch package com.farsitel.bazaar",
+    "status": "attempted"
+  },
+  {
+    "type": "keyevent",
+    "detail": "shell input keyevent 82",
+    "status": "executed"
+  },
+  {
+    "type": "tap",
+    "detail": "shell input tap 540 1600",
+    "status": "executed"
+  },
+  {
+    "type": "swipe",
+    "detail": "shell input swipe 540 1600 540 500 500",
+    "status": "executed"
+  },
+  {
+    "type": "keyevent",
+    "detail": "shell input keyevent 4",
+    "status": "executed"
+  },
+  {
+    "type": "keyevent",
+    "detail": "shell input keyevent 3",
+    "status": "executed"
+  },
+  {
+    "type": "monkey",
+    "detail": "shell monkey -p com.farsitel.bazaar -c android.intent.category.LAUNCHER 1",
+    "status": "executed"
+  }
+]

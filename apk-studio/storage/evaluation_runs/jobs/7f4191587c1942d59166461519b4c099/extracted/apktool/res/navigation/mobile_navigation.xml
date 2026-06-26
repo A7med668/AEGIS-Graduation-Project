@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/mobile_navigation" app:startDestination="@id/nav_main"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="@string/app_name" android:name="infosecadventures.allsafe.MainFragment" android:id="@id/nav_main" />
+    <fragment android:label="Insecure Logging" android:name="infosecadventures.allsafe.challenges.InsecureLogging" android:id="@id/nav_insecure_logging" />
+    <fragment android:label="Hardcoded Credentials" android:name="infosecadventures.allsafe.challenges.HardcodedCredentials" android:id="@id/nav_hardcoded_credentials" />
+    <fragment android:label="Firebase Database" android:name="infosecadventures.allsafe.challenges.FirebaseDatabase" android:id="@id/nav_firebase_database" />
+    <fragment android:label="Insecure Shared Preferences" android:name="infosecadventures.allsafe.challenges.InsecureSharedPreferences" android:id="@id/nav_insecure_shared_preferences" />
+    <fragment android:label="SQL Injection" android:name="infosecadventures.allsafe.challenges.SQLInjection" android:id="@id/nav_sql_injection" />
+    <fragment android:label="Vulnerable WebView" android:name="infosecadventures.allsafe.challenges.VulnerableWebView" android:id="@id/nav_vulnerable_web_view" />
+    <fragment android:label="Certificate Pinning" android:name="infosecadventures.allsafe.challenges.CertificatePinning" android:id="@id/nav_certificate_pinning" />
+    <fragment android:label="PIN Bypass" android:name="infosecadventures.allsafe.challenges.PinBypass" android:id="@id/nav_pin_bypass" />
+    <fragment android:label="Deep Link Exploitation" android:name="infosecadventures.allsafe.challenges.DeepLink" android:id="@id/nav_deep_link_exploitation" />
+    <fragment android:label="Insecure Broadcast Receiver" android:name="infosecadventures.allsafe.challenges.InsecureBroadcastReceiver" android:id="@id/nav_insecure_broadcast_receiver" />
+    <fragment android:label="Root Detection" android:name="infosecadventures.allsafe.challenges.RootDetection" android:id="@id/nav_root_detection" />
+    <fragment android:label="Secure Flag Bypass" android:name="infosecadventures.allsafe.challenges.SecureFlagBypass" android:id="@id/nav_secure_flag_bypass" />
+    <fragment android:label="Weak Cryptography" android:name="infosecadventures.allsafe.challenges.WeakCryptography" android:id="@id/nav_weak_cryptography" />
+    <fragment android:label="Insecure Service" android:name="infosecadventures.allsafe.challenges.InsecureService" android:id="@id/nav_insecure_service" />
+    <fragment android:label="Object Serialization" android:name="infosecadventures.allsafe.challenges.ObjectSerialization" android:id="@id/nav_object_serialization" />
+    <fragment android:label="Insecure Providers" android:name="infosecadventures.allsafe.challenges.InsecureProviders" android:id="@id/nav_insecure_providers" />
+    <fragment android:label="Arbitrary Code Execution" android:name="infosecadventures.allsafe.challenges.ArbitraryCodeExecution" android:id="@id/nav_arbitrary_code_execution" />
+    <fragment android:label="Smali Patch" android:name="infosecadventures.allsafe.challenges.SmaliPatch" android:id="@id/nav_smali_patch" />
+    <fragment android:label="Native Library" android:name="infosecadventures.allsafe.challenges.NativeLibrary" android:id="@id/nav_native_library" />
+    <fragment android:label="About" android:name="infosecadventures.allsafe.about.About" android:id="@id/nav_about" />
+</navigation>

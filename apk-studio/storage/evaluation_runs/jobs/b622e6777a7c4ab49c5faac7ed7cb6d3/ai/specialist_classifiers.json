@@ -1,0 +1,254 @@
+{
+  "schema_version": "4.11.7-specialist-classifiers",
+  "classifiers": [
+    {
+      "id": "permission_risk",
+      "name": "Permission Risk Classifier",
+      "score": 43,
+      "severity": "low",
+      "description": "Scores permission abuse potential and manifest attack surface.",
+      "evidence": [
+        {
+          "ref": "static.permissions",
+          "title": "Sensitive permissions",
+          "detail": [
+            "android.permission.SEND_SMS",
+            "android.permission.ACCESS_COARSE_LOCATION",
+            "android.permission.ACCESS_FINE_LOCATION"
+          ],
+          "weight": 9
+        },
+        {
+          "ref": "static.permissions",
+          "title": "High-risk permission subset",
+          "detail": [
+            "android.permission.SEND_SMS"
+          ],
+          "weight": 6
+        },
+        {
+          "ref": "static.components.exported_count",
+          "title": "Exported attack surface",
+          "detail": 3,
+          "weight": 9
+        },
+        {
+          "ref": "risk.risk_reason_groups",
+          "title": "Permission/combo risk groups",
+          "detail": [
+            "Sensitive permissions present",
+            "Dynamic Code Indicators Plus Network Indicators"
+          ],
+          "weight": 16
+        }
+      ],
+      "evidence_count": 4,
+      "recommendation": "No major permission-risk pattern detected. Continue standard review."
+    },
+    {
+      "id": "network_risk",
+      "name": "Network Risk Classifier",
+      "score": 100,
+      "severity": "critical",
+      "description": "Scores static and dynamic network indicators, cleartext traffic, suspicious domains, and runtime connectivity.",
+      "evidence": [
+        {
+          "ref": "network_analysis.domains",
+          "title": "Domains",
+          "detail": [
+            "android.support.v4.app"
+          ],
+          "weight": 2
+        },
+        {
+          "ref": "network_analysis.cleartext_http_urls",
+          "title": "Cleartext HTTP endpoints",
+          "detail": [
+            "http://schemas.android.com/apk/res/android",
+            "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000",
+            "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u0004\u0004menu\u0000\u0004\u0004item\u0000",
+            "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u0004\u0004menu\u0000\u0004\u0004item\u0000\u0000\u0000\u0000\u0001\b\u0000\u0010\u0000\u0000\u0000\u0000\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0002\u0001\u0010\u0000$\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u0001\u0010\u0000L\u0000\u0000\u0000\u0004\u0000\u0000\u0000\u0006\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0002\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0000\u0000\u0000\u0000\b\u0000\u0000\u0001g\u0000\u0004\u0003\u0000\u0000\u0000\u0001\u0000\u0000\u0000\b\u0000\u0000\u0001",
+            "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u0005\u0005class\u0000\u0004\u0004view\u0000",
+            "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u0005\u0005class\u0000\u0005\u0005style\u0000\u0004\u0004view\u0000GGcom.actionbarsherlock.internal.widget.ScrollingTabContainerView$TabView\u0000\u0017\u0017?attr/actionBarTabStyle\u0000\u0000\u0000\u0000\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0002\u0001\u0010\u0000L\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0002\u0000\u0000\u0000\u0001\u0000\u0002\u0000\u0003\u0000\u0000\u0000\u0006\u0000\u0000\u0000\b\u0000\u0000\u0003\u0006\u0000\u0000\u0000\u0004\u0000\u0000\u0000\u0007\u0000\u0000\u0000\b\u0000\u0000\u0002\u0006\u0000\u0001\u0003\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0007\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0001\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0007\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0000\u0000",
+            "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u0005\u0005style\u0000\b\bTextView\u0000",
+            "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u0005\u0005style\u0000\b\bTextView\u0000\u0016\u0016?attr/spinnerItemStyle\u0000\u0000\u0001\b\u0000",
+            "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u0005\u0005style\u0000\b\bTextView\u0000&&?android:attr/spinnerDropDownItemStyle\u0000\u0000\u0001\b\u0000",
+            "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u0005\u0005style\u000055com.actionbarsherlock.internal.widget.IcsLinearLayout\u0000"
+          ],
+          "weight": 30
+        }
+      ],
+      "evidence_count": 2,
+      "recommendation": "Investigate suspicious domains/IPs, block cleartext HTTP where possible, and validate whether contacted endpoints match the legitimate app backend."
+    },
+    {
+      "id": "secrets_crypto",
+      "name": "Secrets Classifier",
+      "score": 6,
+      "severity": "informational",
+      "description": "Detects hardcoded secrets, crypto indicators, and environment/root-check patterns.",
+      "evidence": [
+        {
+          "ref": "static.crypto_indicators",
+          "title": "Crypto indicators",
+          "detail": [
+            {
+              "kind": "AES",
+              "snippet": "4jHtkTBV2YHVsw=\r \r Name: res/drawable/ic_reward_pressed.png\r SHA1-Digest: 5ViGFGbXgzmhmCumAESnzQGNWuM=\r \r Name: res/drawable-mdpi/abs__btn_cab_done_focused_holo_dark.9.png\r SHA1-Diges",
+              "evidence_ref": "static.crypto_indicators.0"
+            }
+          ],
+          "weight": 5
+        }
+      ],
+      "evidence_count": 1,
+      "recommendation": "No embedded secret pattern detected in collected static evidence."
+    },
+    {
+      "id": "webview_security",
+      "name": "WebView Classifier",
+      "score": 100,
+      "severity": "critical",
+      "description": "Scores WebView exposure, JavaScript/file-access style indicators, and unsafe HTTP loading.",
+      "evidence": [
+        {
+          "ref": "static.webview_indicators",
+          "title": "WebView indicators",
+          "detail": [
+            {
+              "kind": "WebView",
+              "snippet": "ientation\u0000\u0002\u0002id\u0000\u0007\u0007android\u0000**http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\f\fLinearLayout\u0000\u0007\u0007WebView\u0000\u0000\u0000\u0000\u0001\b\u0000\u0018\u0000\u0000\u0000\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0004\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0002\u0001\u0010\u0000`\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0007\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0003\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0002\u0000\u0000\u0000\b\u0000\u0000\u0010\u0001\u0000\u0000\u0000\u0005\u0000\u0000",
+              "evidence_ref": "static.webview_indicators.0"
+            },
+            {
+              "kind": "android.webkit",
+              "snippet": "emas.android.com/apk/res/android\u0000\u0000\u0000\u0000\f\fLinearLayout\u0000\u0005\u0005style\u0000\b\bTextView\u0000\u000f\u000f@style/TextFont\u0000\u0016\u0016android.webkit.WebView\u0000\u0000\u0000\u0000\u0001\b\u0000(\u0000\u0000\u0000\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001O\u0001\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0002\u0000\u0000\u0000\b\u0000\u0000\u0000\t\u0000\u0000\u0000\u0002\u0001\u0010\u0000t\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u000b\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0004\u0000\u0000\u0000\u0000\u0000",
+              "evidence_ref": "static.webview_indicators.1"
+            },
+            {
+              "kind": "WebView",
+              "snippet": "m/apk/res/android\u0000\u0000\u0000\u0000\f\fLinearLayout\u0000\u0005\u0005style\u0000\b\bTextView\u0000\u000f\u000f@style/TextFont\u0000\u0016\u0016android.webkit.WebView\u0000\u0000\u0000\u0000\u0001\b\u0000(\u0000\u0000\u0000\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001O\u0001\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0002\u0000\u0000\u0000\b\u0000\u0000\u0000\t\u0000\u0000\u0000\u0002\u0001\u0010\u0000t\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u000b\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0004\u0000\u0000\u0000\u0000\u0000\u0000\u0000\t\u0000\u0000\u0000\u0003\u0000",
+              "evidence_ref": "static.webview_indicators.2"
+            },
+            {
+              "kind": "android.webkit",
+              "snippet": "ientation\u0000\u0002\u0002id\u0000\u0007\u0007android\u0000**http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\f\fLinearLayout\u0000\u0016\u0016android.webkit.WebView\u0000\u0000\u0000\u0000\u0001\b\u0000\u001c\u0000\u0000\u0000\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0006\u0000\u0000\u0000\u0002\u0001\u0010\u0000t\u0000\u0000\u0000\u0002\u0000\u0000\u0000\b\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0004\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0006\u0000\u0000\u0000\u0003\u0000\u0000\u0000",
+              "evidence_ref": "static.webview_indicators.3"
+            },
+            {
+              "kind": "WebView",
+              "snippet": "\u0007\u0007android\u0000**http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\f\fLinearLayout\u0000\u0016\u0016android.webkit.WebView\u0000\u0000\u0000\u0000\u0001\b\u0000\u001c\u0000\u0000\u0000\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0006\u0000\u0000\u0000\u0002\u0001\u0010\u0000t\u0000\u0000\u0000\u0002\u0000\u0000\u0000\b\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0004\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0006\u0000\u0000\u0000\u0003\u0000\u0000\u0000\b\u0000\u0000\u0010\u0001\u0000\u0000\u0000",
+              "evidence_ref": "static.webview_indicators.4"
+            },
+            {
+              "kind": "WebView",
+              "snippet": "on\"/>         <activity android:label=\"@string/app_name\" android:name=\".activities.GenericWebViewActivity\"/>         <service android:name=\".services.LocationService\">             <intent",
+              "evidence_ref": "static.webview_indicators.5"
+            },
+            {
+              "kind": "WebView",
+              "snippet": "_height=\"match_parent\"   xmlns:android=\"http://schemas.android.com/apk/res/android\">     <WebView android:id=\"@id/webView\" android:layout_width=\"match_parent\" android:layout_height=\"match",
+              "evidence_ref": "static.webview_indicators.6"
+            },
+            {
+              "kind": "webView",
+              "snippet": " xmlns:android=\"http://schemas.android.com/apk/res/android\">     <WebView android:id=\"@id/webView\" android:layout_width=\"match_parent\" android:layout_height=\"match_parent\" /> </LinearLayo",
+              "evidence_ref": "static.webview_indicators.7"
+            },
+            {
+              "kind": "android.webkit",
+              "snippet": "ut_marginTop=\"100.0dp\" android:text=\"@string/no_checkins\" style=\"@style/TextFont\" />     <android.webkit.WebView android:id=\"@id/historyWebView\" android:layout_width=\"match_parent\" android:layou",
+              "evidence_ref": "static.webview_indicators.8"
+            },
+            {
+              "kind": "WebView",
+              "snippet": "00.0dp\" android:text=\"@string/no_checkins\" style=\"@style/TextFont\" />     <android.webkit.WebView android:id=\"@id/historyWebView\" android:layout_width=\"match_parent\" android:layout_height",
+              "evidence_ref": "static.webview_indicators.9"
+            }
+          ],
+          "weight": 45
+        },
+        {
+          "ref": "network_analysis.cleartext_http_urls",
+          "title": "Cleartext Web/HTTP URLs",
+          "detail": [
+            "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\b\bselector\u0000\u0004\u0004item\u0000\u0001\b\u0000\u0010\u0000\u0000\u0000\u0000\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0011\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0002\u0001\u0010\u0000$\u0000\u0000\u0000\u0011\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u0001\u0010\u0000L\u0000\u0000\u0000\u0012\u0000\u0000\u0000\u0006\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0002\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0000\u0000\u0000\u0000\b\u0000\u0000\u0012\u0000\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0001\u0000\u0000\u0000\b\u0000\u0000\u0001\u0004\u0000\u0006\u0003\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0012\u0000\u0000\u0000\u0006\u0000\u0000\u0000\u0002\u0001\u0010\u00008\u0000\u0000\u0000\u0013\u0000\u0000\u0000\u0006\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0001\u0000\u0000\u0000\b\u0000\u0000\u0001\u0002\u0000\u0006\u0003\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0013\u0000\u0000\u0000\u0006\u0000\u0000\u0000\u0003\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0014\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0001\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0014\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0003\u0000\u0000\u0000",
+            "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\b\bselector\u0000\u0004\u0004item\u0000\u0001\b\u0000\u0010\u0000\u0000\u0000\u0000\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0011\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0002\u0001\u0010\u0000$\u0000\u0000\u0000\u0011\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u0001\u0010\u0000L\u0000\u0000\u0000\u0012\u0000\u0000\u0000\u0006\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0002\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0000\u0000\u0000\u0000\b\u0000\u0000\u0012\u0000\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0001\u0000\u0000\u0000\b\u0000\u0000\u0001\u0005\u0000\u0006\u0003\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0012\u0000\u0000\u0000\u0006\u0000\u0000\u0000\u0002\u0001\u0010\u00008\u0000\u0000\u0000\u0013\u0000\u0000\u0000\u0006\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0001\u0000\u0000\u0000\b\u0000\u0000\u0001\u0003\u0000\u0006\u0003\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0013\u0000\u0000\u0000\u0006\u0000\u0000\u0000\u0003\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0014\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0001\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0014\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0003\u0000\u0000\u0000",
+            "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\b\bselector\u0000\u0004\u0004item\u0000\u0000\u0000\u0001\b\u0000",
+            "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000",
+            "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u0005\u0005class\u0000\u0004\u0004view\u0000",
+            "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u0005\u0005class\u0000\u0005\u0005style\u0000\u0004\u0004view\u0000GGcom.actionbarsherlock.internal.widget.ScrollingTabContainerView$TabView\u0000\u0017\u0017?attr/actionBarTabStyle\u0000\u0000\u0000\u0000\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0002\u0001\u0010\u0000L\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0002\u0000\u0000\u0000\u0001\u0000\u0002\u0000\u0003\u0000\u0000\u0000\u0006\u0000\u0000\u0000\b\u0000\u0000\u0003\u0006\u0000\u0000\u0000\u0004\u0000\u0000\u0000\u0007\u0000\u0000\u0000\b\u0000\u0000\u0002\u0006\u0000\u0001\u0003\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0007\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0001\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0007\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0000\u0000",
+            "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u0005\u0005style\u000055com.actionbarsherlock.internal.widget.IcsLinearLayout\u0000\u001a\u001a?attr/actionBarTabBarStyle\u0000\u0000\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0002\u0001\u0010\u00008\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0004\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0003\u0000\u0000\u0000\u0005\u0000\u0000\u0000\b\u0000\u0000\u0002\u0007\u0000\u0001\u0003\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0006\u0000\u0000\u0000\u0004\u0000\u0000\u0000\u0001\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0006\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0000\u0000",
+            "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u0005\u0005style\u0000;;com.actionbarsherlock.internal.view.menu.ActionMenuItemView\u0000\u0017\u0017?attr/actionButtonStyle\u0000",
+            "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u000077com.actionbarsherlock.internal.view.menu.ActionMenuView\u0000\u0001\b\u0000",
+            "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u0005\u0005style\u0000::com.actionbarsherlock.internal.widget.ActionBarContextView\u0000\u0015\u0015?attr/actionModeStyle\u0000\u0000\u0001\b\u0000\u0014\u0000\u0000\u0000\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0013\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0004\u0000\u0000\u0000\u0002\u0001\u0010\u0000t\u0000\u0000\u0000\u0013\u0000\u0000\u0000\u0007\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0004\u0000\u0000\u0000\u0000\u0000\u0004\u0000\u0004\u0000\u0000\u0000\u0002\u0000\u0000\u0000\b\u0000\u0000\u0010\u0002\u0000\u0000\u0000\u0004\u0000\u0000\u0000\u0000\u0000\u0000\u0000\b\u0000\u0000\u0010\u0004\u0000\u0000\u0000\u0001\u0000\u0000\u0000\b\u0000\u0000\u0010\u0006\u0000\u0000\u0000\b\u0000\u0000\u0000\b\u0000\u0000\u0002\u0012\u0000\u0001\u0003\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0018\u0000\u0000\u0000\u0007\u0000\u0000\u0000\u0001\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0018\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0004\u0000\u0000\u0000"
+          ],
+          "weight": 30
+        }
+      ],
+      "evidence_count": 2,
+      "recommendation": "Review WebView settings, disable unsafe JavaScript bridges/file access where possible, enforce HTTPS, and restrict loaded domains."
+    },
+    {
+      "id": "dynamic_behavior",
+      "name": "Dynamic Behavior Classifier",
+      "score": 0,
+      "severity": "informational",
+      "description": "Scores emulator runtime indicators, dynamic coverage, observed behavior, and cleanup state.",
+      "evidence": [],
+      "evidence_count": 0,
+      "recommendation": "Runtime behavior did not show strong indicators in the captured path. Consider longer dynamic coverage for high-value samples."
+    },
+    {
+      "id": "mitre_mapping",
+      "name": "MITRE Classifier",
+      "score": 36,
+      "severity": "low",
+      "description": "Summarizes mapped MITRE Mobile tactics/techniques and mapping confidence.",
+      "evidence": [
+        {
+          "ref": "mitre_attack_mapping",
+          "title": "Mapped MITRE techniques",
+          "detail": [
+            {
+              "tactic": "Collection",
+              "technique": "SMS Collection / Abuse Risk",
+              "confidence": "medium"
+            },
+            {
+              "tactic": "Defense Evasion",
+              "technique": "Dynamic Code Loading",
+              "confidence": "medium"
+            },
+            {
+              "tactic": "Command and Control",
+              "technique": "Application Layer Protocol / Network Communication",
+              "confidence": "medium"
+            }
+          ],
+          "weight": 30
+        }
+      ],
+      "evidence_count": 1,
+      "recommendation": "No strong MITRE mapping was produced from current evidence.",
+      "tactics": [
+        "Collection",
+        "Defense Evasion",
+        "Command and Control"
+      ],
+      "techniques": [
+        "SMS Collection / Abuse Risk",
+        "Dynamic Code Loading",
+        "Application Layer Protocol / Network Communication"
+      ]
+    }
+  ],
+  "summary": {
+    "classifier_count": 6,
+    "max_score": 100,
+    "max_severity": "critical",
+    "high_or_critical_count": 2,
+    "medium_plus_count": 2,
+    "note": "Specialist classifiers are deterministic, evidence-backed views. They complement the final risk score and help analyst triage."
+  }
+}

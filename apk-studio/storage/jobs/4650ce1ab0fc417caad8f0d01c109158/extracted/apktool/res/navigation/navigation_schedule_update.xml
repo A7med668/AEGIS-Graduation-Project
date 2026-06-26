@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/navigation_schedule_update" app:startDestination="@id/fragment_schedule_update"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="UpdateTabFragment" android:name="com.farsitel.bazaar.scheduleupdate.view.ScheduleUpdateFragment" android:id="@id/fragment_schedule_update">
+        <deepLink app:uri="@string/deeplink_schedule_update" />
+    </fragment>
+    <fragment android:label="Auto-Update Apps" android:name="com.farsitel.bazaar.scheduleupdate.view.AutoUpdateAppsFragment" android:id="@id/fragment_auto_update_apps">
+        <deepLink app:uri="@string/deeplink_auto_update_apps" />
+    </fragment>
+    <dialog android:label="NotificationPermissionFragment" android:name="com.farsitel.bazaar.scheduleupdate.view.permission.AlarmPermissionFragment" android:id="@id/alarmPermissionFragment">
+        <deepLink app:uri="@string/deeplink_alarm_permission" />
+    </dialog>
+</navigation>

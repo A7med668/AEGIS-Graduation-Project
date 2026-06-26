@@ -1,0 +1,1013 @@
+Activity Resolver Table:
+  Schemes:
+      bazaar:
+        8b67a41 com.farsitel.bazaar/.MainActivity filter 2041cc3
+          Action: "android.intent.action.VIEW"
+          Action: "android.intent.action.RUN"
+          Action: "android.nfc.action.NDEF_DISCOVERED"
+          Category: "android.intent.category.MULTIWINDOW_LAUNCHER"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "bazaar"
+          Authority: "appinfo": -1
+          Authority: "apps": -1
+          Authority: "badge": -1
+          Authority: "badge_missions": -1
+          Authority: "balance": -1
+          Authority: "cat": -1
+          Authority: "catslist": -1
+          Authority: "collection": -1
+          Authority: "details": -1
+          Authority: "direct_debit": -1
+          Authority: "downloads": -1
+          Authority: "edit_avatar_direct": -1
+          Authority: "enable_bazaar_kids": -1
+          Authority: "event_details": -1
+          Authority: "feedback": -1
+          Authority: "finalize_payman": -1
+          Authority: "home": -1
+          Authority: "installed": -1
+          Authority: "loyalty_club": -1
+          Authority: "magazine_article": -1
+          Authority: "main": -1
+          Authority: "malicious": -1
+          Authority: "mini_game": -1
+          Authority: "mini_game_leaderboard": -1
+          Authority: "my_bazaar": -1
+          Authority: "myreviews": -1
+          Authority: "notes": -1
+          Authority: "onboarding": -1
+          Authority: "page": -1
+          Authority: "payman_on_boarding": -1
+          Authority: "profile": -1
+          Authority: "profile_direct": -1
+          Authority: "review_reply": -1
+          Authority: "search": -1
+          Authority: "settings": -1
+          Authority: "subscriptions": -1
+          Authority: "promoted_subscription": -1
+          Authority: "suggested_reviews": -1
+          Authority: "support": -1
+          Authority: "terms": -1
+          Authority: "tournament_history": -1
+          Authority: "tournament_leaderboard": -1
+          Authority: "tournament_rule": -1
+          Authority: "upgradable": -1
+          Authority: "vpn": -1
+          Authority: "web_page": -1
+          Authority: "player": -1
+          Authority: "content_details": -1
+          Path: "PatternMatcher{LITERAL: }"
+          Path: "PatternMatcher{PREFIX: /packageName/}"
+        a3f3079 com.farsitel.bazaar/.postcomment.ThirdPartyReviewActivity filter 442b1be
+          Action: "android.intent.action.EDIT"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "bazaar"
+          Scheme: "market"
+          Authority: "details": -1
+          Path: "PatternMatcher{GLOB: .*}"
+        981c21f com.farsitel.bazaar/.player.view.VideoPlayerActivity filter 85f496c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "bazaar"
+          Authority: "player_internal": -1
+        e795b35 com.farsitel.bazaar/.appdetails.view.thirdparty.ThirdPartyAppDetailActivity filter 3742bca
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "bazaar"
+          Authority: "details": -1
+          Path: "PatternMatcher{LITERAL: /modal}"
+        60a613b com.farsitel.bazaar/.checkupdate.view.ThirdPartyAutoUpdateRequestActivity filter aad9058
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "bazaar"
+          Authority: "autoupdate": -1
+          Path: "PatternMatcher{LITERAL: /modal}"
+        9f175b1 com.farsitel.bazaar/.login.view.activity.LoginActivity filter 5913a96
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "bazaar"
+          Authority: "login": -1
+          Path: "PatternMatcher{LITERAL: }"
+        8975a04 com.farsitel.bazaar/.payment.PaymentInitActivity filter 49e6a22
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "bazaar"
+          Authority: "in_app": -1
+        415bcb3 com.farsitel.bazaar/.payment.PaymentActivity filter 2321270
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "bazaar"
+          Authority: "continue_payment_flow": -1
+          Authority: "paymentDone": -1
+          Authority: "paymentFailure": -1
+          Path: "PatternMatcher{LITERAL: }"
+        45d066e com.farsitel.bazaar/.inapplogin.view.InAppLoginActivity filter aa5710f
+          Action: "android.intent.action.VIEW"
+          Action: "ir.cafebazaar.intent.action.IAL"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "bazaar"
+          Authority: "inapplogin": -1
+      market:
+        8b67a41 com.farsitel.bazaar/.MainActivity filter 1690072
+          Action: "android.intent.action.VIEW"
+          Action: "android.intent.action.RUN"
+          Action: "android.nfc.action.NDEF_DISCOVERED"
+          Category: "android.intent.category.MULTIWINDOW_LAUNCHER"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "market"
+          Authority: "details": -1
+          Authority: "search": -1
+          Path: "PatternMatcher{GLOB: .*}"
+        a3f3079 com.farsitel.bazaar/.postcomment.ThirdPartyReviewActivity filter 442b1be
+          Action: "android.intent.action.EDIT"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "bazaar"
+          Scheme: "market"
+          Authority: "details": -1
+          Path: "PatternMatcher{GLOB: .*}"
+      http:
+        8b67a41 com.farsitel.bazaar/.MainActivity filter 38d53d4
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "cafebazaar.ir": -1
+          Authority: "www.cafebazaar.ir": -1
+          Path: "PatternMatcher{PREFIX: /catslist}"
+          Path: "PatternMatcher{GLOB: /cat/.*}"
+          Path: "PatternMatcher{GLOB: /lists/.*}"
+          Path: "PatternMatcher{GLOB: /pages/.*}"
+          Path: "PatternMatcher{PREFIX: /app/}"
+          Path: "PatternMatcher{PREFIX: /developer/}"
+          Path: "PatternMatcher{GLOB: /game/.*}"
+          Path: "PatternMatcher{GLOB: /search}"
+          Path: "PatternMatcher{GLOB: /balance}"
+          Path: "PatternMatcher{GLOB: /subscriptions}"
+          Path: "PatternMatcher{GLOB: /promoted_subscription}"
+          Path: "PatternMatcher{GLOB: /myreviews}"
+          Path: "PatternMatcher{GLOB: /loyalty_club/.*}"
+          Path: "PatternMatcher{GLOB: /mini_game}"
+          Path: "PatternMatcher{GLOB: /mini_game_leaderboard}"
+          Path: "PatternMatcher{GLOB: /web_page}"
+          Path: "PatternMatcher{GLOB: /direct_debit}"
+          Path: "PatternMatcher{GLOB: /suggested_reviews}"
+          Path: "PatternMatcher{GLOB: /badge_missions}"
+          Path: "PatternMatcher{GLOB: /badge}"
+          Path: "PatternMatcher{GLOB: /reels}"
+          Path: "PatternMatcher{GLOB: /tournament_history}"
+          Path: "PatternMatcher{GLOB: /tournament_rule}"
+          Path: "PatternMatcher{GLOB: /tournament_leaderboard}"
+          Path: "PatternMatcher{GLOB: /event_details}"
+          Path: "PatternMatcher{GLOB: /magazine_article}"
+          Path: "PatternMatcher{GLOB: /magazine}"
+          Path: "PatternMatcher{GLOB: /video}"
+          Path: "PatternMatcher{PREFIX: /video/}"
+          Path: "PatternMatcher{GLOB: /filtered_commodities}"
+          AutoVerify=true
+        8b67a41 com.farsitel.bazaar/.MainActivity filter caf797d
+          Action: "android.intent.action.EDIT"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: ".cafebazaar.ir": -1 WILD
+          Authority: "cafebazaar.ir": -1
+          Path: "PatternMatcher{PREFIX: /app/}"
+          AutoVerify=true
+      https:
+        8b67a41 com.farsitel.bazaar/.MainActivity filter 38d53d4
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "cafebazaar.ir": -1
+          Authority: "www.cafebazaar.ir": -1
+          Path: "PatternMatcher{PREFIX: /catslist}"
+          Path: "PatternMatcher{GLOB: /cat/.*}"
+          Path: "PatternMatcher{GLOB: /lists/.*}"
+          Path: "PatternMatcher{GLOB: /pages/.*}"
+          Path: "PatternMatcher{PREFIX: /app/}"
+          Path: "PatternMatcher{PREFIX: /developer/}"
+          Path: "PatternMatcher{GLOB: /game/.*}"
+          Path: "PatternMatcher{GLOB: /search}"
+          Path: "PatternMatcher{GLOB: /balance}"
+          Path: "PatternMatcher{GLOB: /subscriptions}"
+          Path: "PatternMatcher{GLOB: /promoted_subscription}"
+          Path: "PatternMatcher{GLOB: /myreviews}"
+          Path: "PatternMatcher{GLOB: /loyalty_club/.*}"
+          Path: "PatternMatcher{GLOB: /mini_game}"
+          Path: "PatternMatcher{GLOB: /mini_game_leaderboard}"
+          Path: "PatternMatcher{GLOB: /web_page}"
+          Path: "PatternMatcher{GLOB: /direct_debit}"
+          Path: "PatternMatcher{GLOB: /suggested_reviews}"
+          Path: "PatternMatcher{GLOB: /badge_missions}"
+          Path: "PatternMatcher{GLOB: /badge}"
+          Path: "PatternMatcher{GLOB: /reels}"
+          Path: "PatternMatcher{GLOB: /tournament_history}"
+          Path: "PatternMatcher{GLOB: /tournament_rule}"
+          Path: "PatternMatcher{GLOB: /tournament_leaderboard}"
+          Path: "PatternMatcher{GLOB: /event_details}"
+          Path: "PatternMatcher{GLOB: /magazine_article}"
+          Path: "PatternMatcher{GLOB: /magazine}"
+          Path: "PatternMatcher{GLOB: /video}"
+          Path: "PatternMatcher{PREFIX: /video/}"
+          Path: "PatternMatcher{GLOB: /filtered_commodities}"
+          AutoVerify=true
+        8b67a41 com.farsitel.bazaar/.MainActivity filter caf797d
+          Action: "android.intent.action.EDIT"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: ".cafebazaar.ir": -1 WILD
+          Authority: "cafebazaar.ir": -1
+          Path: "PatternMatcher{PREFIX: /app/}"
+          AutoVerify=true
+
+  Non-Data Actions:
+      com.farsitel.bazaar.payment.directDebitInfo:
+        415bcb3 com.farsitel.bazaar/.payment.PaymentActivity filter 39029e9
+          Action: "com.farsitel.bazaar.payment.directDebitInfo"
+          Action: "com.farsitel.bazaar.payment.pay"
+          Action: "com.farsitel.bazaar.payment.credit"
+          Action: "com.farsitel.bazaar.payment.onBoarding"
+          Action: "com.farsitel.bazaar.payment.giftCard"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.MAIN:
+        8b67a41 com.farsitel.bazaar/.MainActivity filter e380be6
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+          Category: "android.intent.category.LEANBACK_LAUNCHER"
+          Category: "android.intent.category.MULTIWINDOW_LAUNCHER"
+      com.farsitel.bazaar.login.inAppReview:
+        9f175b1 com.farsitel.bazaar/.login.view.activity.LoginActivity filter 4b3d617
+          Action: "com.farsitel.bazaar.login.inAppReview"
+          Action: "com.farsitel.bazaar.login.inAppLogin"
+          Action: "com.farsitel.bazaar.login.mergeAccount"
+          Action: "com.farsitel.bazaar.login.inAppPurchase"
+          Action: "com.farsitel.bazaar.login.default"
+          Category: "android.intent.category.DEFAULT"
+      com.farsitel.bazaar.login.inAppLogin:
+        9f175b1 com.farsitel.bazaar/.login.view.activity.LoginActivity filter 4b3d617
+          Action: "com.farsitel.bazaar.login.inAppReview"
+          Action: "com.farsitel.bazaar.login.inAppLogin"
+          Action: "com.farsitel.bazaar.login.mergeAccount"
+          Action: "com.farsitel.bazaar.login.inAppPurchase"
+          Action: "com.farsitel.bazaar.login.default"
+          Category: "android.intent.category.DEFAULT"
+      com.farsitel.bazaar.login.mergeAccount:
+        9f175b1 com.farsitel.bazaar/.login.view.activity.LoginActivity filter 4b3d617
+          Action: "com.farsitel.bazaar.login.inAppReview"
+          Action: "com.farsitel.bazaar.login.inAppLogin"
+          Action: "com.farsitel.bazaar.login.mergeAccount"
+          Action: "com.farsitel.bazaar.login.inAppPurchase"
+          Action: "com.farsitel.bazaar.login.default"
+          Category: "android.intent.category.DEFAULT"
+      com.farsitel.bazaar.payment.pay:
+        415bcb3 com.farsitel.bazaar/.payment.PaymentActivity filter 39029e9
+          Action: "com.farsitel.bazaar.payment.directDebitInfo"
+          Action: "com.farsitel.bazaar.payment.pay"
+          Action: "com.farsitel.bazaar.payment.credit"
+          Action: "com.farsitel.bazaar.payment.onBoarding"
+          Action: "com.farsitel.bazaar.payment.giftCard"
+          Category: "android.intent.category.DEFAULT"
+      com.farsitel.bazaar.login.inAppPurchase:
+        9f175b1 com.farsitel.bazaar/.login.view.activity.LoginActivity filter 4b3d617
+          Action: "com.farsitel.bazaar.login.inAppReview"
+          Action: "com.farsitel.bazaar.login.inAppLogin"
+          Action: "com.farsitel.bazaar.login.mergeAccount"
+          Action: "com.farsitel.bazaar.login.inAppPurchase"
+          Action: "com.farsitel.bazaar.login.default"
+          Category: "android.intent.category.DEFAULT"
+      com.farsitel.bazaar.login.default:
+        9f175b1 com.farsitel.bazaar/.login.view.activity.LoginActivity filter 4b3d617
+          Action: "com.farsitel.bazaar.login.inAppReview"
+          Action: "com.farsitel.bazaar.login.inAppLogin"
+          Action: "com.farsitel.bazaar.login.mergeAccount"
+          Action: "com.farsitel.bazaar.login.inAppPurchase"
+          Action: "com.farsitel.bazaar.login.default"
+          Category: "android.intent.category.DEFAULT"
+      com.farsitel.bazaar.payment.credit:
+        415bcb3 com.farsitel.bazaar/.payment.PaymentActivity filter 39029e9
+          Action: "com.farsitel.bazaar.payment.directDebitInfo"
+          Action: "com.farsitel.bazaar.payment.pay"
+          Action: "com.farsitel.bazaar.payment.credit"
+          Action: "com.farsitel.bazaar.payment.onBoarding"
+          Action: "com.farsitel.bazaar.payment.giftCard"
+          Category: "android.intent.category.DEFAULT"
+      com.farsitel.bazaar.main.launcher:
+        8b67a41 com.farsitel.bazaar/.MainActivity filter e55d940
+          Action: "com.farsitel.bazaar.main.launcher"
+          Category: "android.intent.category.DEFAULT"
+      com.farsitel.bazaar.payment.in_app:
+        8975a04 com.farsitel.bazaar/.payment.PaymentInitActivity filter 8f6bbed
+          Action: "com.farsitel.bazaar.payment.in_app"
+          Category: "android.intent.category.DEFAULT"
+      com.farsitel.bazaar.splashscreen.launcher:
+        8b67a41 com.farsitel.bazaar/.MainActivity filter b615527
+          Action: "com.farsitel.bazaar.splashscreen.launcher"
+          Category: "android.intent.category.DEFAULT"
+      com.farsitel.bazaar.payment.onBoarding:
+        415bcb3 com.farsitel.bazaar/.payment.PaymentActivity filter 39029e9
+          Action: "com.farsitel.bazaar.payment.directDebitInfo"
+          Action: "com.farsitel.bazaar.payment.pay"
+          Action: "com.farsitel.bazaar.payment.credit"
+          Action: "com.farsitel.bazaar.payment.onBoarding"
+          Action: "com.farsitel.bazaar.payment.giftCard"
+          Category: "android.intent.category.DEFAULT"
+      com.farsitel.bazaar.payment.giftCard:
+        415bcb3 com.farsitel.bazaar/.payment.PaymentActivity filter 39029e9
+          Action: "com.farsitel.bazaar.payment.directDebitInfo"
+          Action: "com.farsitel.bazaar.payment.pay"
+          Action: "com.farsitel.bazaar.payment.credit"
+          Action: "com.farsitel.bazaar.payment.onBoarding"
+          Action: "com.farsitel.bazaar.payment.giftCard"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Schemes:
+      package:
+        17de59c com.farsitel.bazaar/.installedapps.receiver.PackageChangeReceiver filter 1387ba5
+          Action: "android.intent.action.PACKAGE_ADDED"
+          Scheme: "package"
+        17de59c com.farsitel.bazaar/.installedapps.receiver.PackageChangeReceiver filter 1571b7a
+          Action: "android.intent.action.PACKAGE_REMOVED"
+          Scheme: "package"
+        17de59c com.farsitel.bazaar/.installedapps.receiver.PackageChangeReceiver filter 6d20f2b
+          Action: "android.intent.action.PACKAGE_REPLACED"
+          Scheme: "package"
+
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        c24f494 com.farsitel.bazaar/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter cb96b3d
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        84f0ea6 com.farsitel.bazaar/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter a8400e7
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      com.farsitel.bazaar.getInAppData:
+        65a182 com.farsitel.bazaar/.inapplogin.receiver.InAppLoginReceiver filter f079093
+          Action: "com.farsitel.bazaar.getInAppData"
+          Action: "com.farsitel.bazaar.lastAccount"
+          Action: "com.farsitel.bazaar.setInAppData"
+      com.google.android.gms.auth.api.phone.SMS_RETRIEVED:
+        353edcc com.farsitel.bazaar/.login.receiver.SmsReceiver filter 4f89815
+          Action: "com.google.android.gms.auth.api.phone.SMS_RETRIEVED"
+          Action: "com.huawei.hms.auth.api.phone.SMS_RETRIEVED"
+      com.farsitel.bazaar.lastAccount:
+        65a182 com.farsitel.bazaar/.inapplogin.receiver.InAppLoginReceiver filter f079093
+          Action: "com.farsitel.bazaar.getInAppData"
+          Action: "com.farsitel.bazaar.lastAccount"
+          Action: "com.farsitel.bazaar.setInAppData"
+      android.intent.action.QUICKBOOT_POWERON:
+        be6f7a0 com.farsitel.bazaar/.scheduleupdate.alarmmanager.ScheduleBootReceiver filter 68a5f59
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      com.farsitel.bazaar.skuDetail:
+        16d572a com.farsitel.bazaar/.inappbilling.receiver.InAppBillingReceiver filter 99191b
+          Action: "com.farsitel.bazaar.skuDetail"
+          Action: "com.farsitel.bazaar.billingSupport"
+          Action: "com.farsitel.bazaar.consume"
+          Action: "com.farsitel.bazaar.purchase"
+          Action: "com.farsitel.bazaar.ping"
+          Action: "com.farsitel.bazaar.getPurchase"
+      com.huawei.android.push.intent.REGISTRATION:
+        9b0d473 com.farsitel.bazaar/com.huawei.hms.support.api.push.PushReceiver filter 4f7af30
+          Action: "com.huawei.android.push.intent.REGISTRATION"
+          Action: "com.huawei.android.push.intent.RECEIVE"
+      com.farsitel.bazaar.billingSupport:
+        16d572a com.farsitel.bazaar/.inappbilling.receiver.InAppBillingReceiver filter 99191b
+          Action: "com.farsitel.bazaar.skuDetail"
+          Action: "com.farsitel.bazaar.billingSupport"
+          Action: "com.farsitel.bazaar.consume"
+          Action: "com.farsitel.bazaar.purchase"
+          Action: "com.farsitel.bazaar.ping"
+          Action: "com.farsitel.bazaar.getPurchase"
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        4175518 com.farsitel.bazaar/androidx.profileinstaller.ProfileInstallReceiver filter ab8f1d7
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      com.farsitel.bazaar.consume:
+        16d572a com.farsitel.bazaar/.inappbilling.receiver.InAppBillingReceiver filter 99191b
+          Action: "com.farsitel.bazaar.skuDetail"
+          Action: "com.farsitel.bazaar.billingSupport"
+          Action: "com.farsitel.bazaar.consume"
+          Action: "com.farsitel.bazaar.purchase"
+          Action: "com.farsitel.bazaar.ping"
+          Action: "com.farsitel.bazaar.getPurchase"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        7cd6f32 com.farsitel.bazaar/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter d05c483
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        da6c600 com.farsitel.bazaar/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 4567e39
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.farsitel.bazaar.purchase:
+        16d572a com.farsitel.bazaar/.inappbilling.receiver.InAppBillingReceiver filter 99191b
+          Action: "com.farsitel.bazaar.skuDetail"
+          Action: "com.farsitel.bazaar.billingSupport"
+          Action: "com.farsitel.bazaar.consume"
+          Action: "com.farsitel.bazaar.purchase"
+          Action: "com.farsitel.bazaar.ping"
+          Action: "com.farsitel.bazaar.getPurchase"
+      com.huawei.intent.action.PUSH_DELAY_NOTIFY:
+        3409dad com.farsitel.bazaar/com.huawei.hms.support.api.push.PushMsgReceiver filter 35c08e2
+          Action: "com.huawei.intent.action.PUSH_DELAY_NOTIFY"
+          Action: "com.huawei.intent.action.PUSH"
+      introduceDeviceAndGetAppConfigReady:
+        4ab7546 com.farsitel.bazaar/.upgradableapp.work.GetUpgradableAppsBroadCastReceiver filter 4e07307
+          Action: "introduceDeviceAndGetAppConfigReady"
+      loginHappened:
+        5074c34 com.farsitel.bazaar/.myreview.receiver.LoginReceiver filter 18b7a5d
+          Action: "loginHappened"
+        4302a64 com.farsitel.bazaar/.common.bookmark.receiver.LoginReceiver filter 2c4b4cd
+          Action: "loginHappened"
+      com.farsitel.bazaar.eventDoneNotify:
+        d5053ce com.farsitel.bazaar/.game.GameHubBroadcastReceiver filter 410a2ef
+          Action: "com.farsitel.bazaar.eventDoneNotify"
+          Action: "com.farsitel.bazaar.isLogin"
+          Action: "com.farsitel.bazaar.getCurrentLeaderboardData"
+          Action: "com.farsitel.bazaar.getTournamentTimes"
+          Action: "com.farsitel.bazaar.endTournamentMatch"
+          Action: "com.farsitel.bazaar.startTournamentMatch"
+          Action: "com.farsitel.bazaar.getEventsByPackageName"
+          Action: "com.farsitel.bazaar.getLeaderboardData"
+      android.intent.action.DEVICE_STORAGE_OK:
+        7cd6f32 com.farsitel.bazaar/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter d05c483
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.farsitel.bazaar.referrer.consume:
+        cb81ab8 com.farsitel.bazaar/.referrerprovider.ReferrerProviderReceiver filter 4d7a091
+          Action: "com.farsitel.bazaar.referrer.consume"
+          Action: "com.farsitel.bazaar.referrer.get"
+      com.farsitel.bazaar.ping:
+        16d572a com.farsitel.bazaar/.inappbilling.receiver.InAppBillingReceiver filter 99191b
+          Action: "com.farsitel.bazaar.skuDetail"
+          Action: "com.farsitel.bazaar.billingSupport"
+          Action: "com.farsitel.bazaar.consume"
+          Action: "com.farsitel.bazaar.purchase"
+          Action: "com.farsitel.bazaar.ping"
+          Action: "com.farsitel.bazaar.getPurchase"
+      com.farsitel.bazaar.setInAppData:
+        65a182 com.farsitel.bazaar/.inapplogin.receiver.InAppLoginReceiver filter f079093
+          Action: "com.farsitel.bazaar.getInAppData"
+          Action: "com.farsitel.bazaar.lastAccount"
+          Action: "com.farsitel.bazaar.setInAppData"
+      com.farsitel.bazaar.isLogin:
+        d5053ce com.farsitel.bazaar/.game.GameHubBroadcastReceiver filter 410a2ef
+          Action: "com.farsitel.bazaar.eventDoneNotify"
+          Action: "com.farsitel.bazaar.isLogin"
+          Action: "com.farsitel.bazaar.getCurrentLeaderboardData"
+          Action: "com.farsitel.bazaar.getTournamentTimes"
+          Action: "com.farsitel.bazaar.endTournamentMatch"
+          Action: "com.farsitel.bazaar.startTournamentMatch"
+          Action: "com.farsitel.bazaar.getEventsByPackageName"
+          Action: "com.farsitel.bazaar.getLeaderboardData"
+      com.huawei.android.push.intent.RECEIVE:
+        9b0d473 com.farsitel.bazaar/com.huawei.hms.support.api.push.PushReceiver filter 4f7af30
+          Action: "com.huawei.android.push.intent.REGISTRATION"
+          Action: "com.huawei.android.push.intent.RECEIVE"
+      com.huawei.hms.auth.api.phone.SMS_RETRIEVED:
+        353edcc com.farsitel.bazaar/.login.receiver.SmsReceiver filter 4f89815
+          Action: "com.google.android.gms.auth.api.phone.SMS_RETRIEVED"
+          Action: "com.huawei.hms.auth.api.phone.SMS_RETRIEVED"
+      com.farsitel.bazaar.getCurrentLeaderboardData:
+        d5053ce com.farsitel.bazaar/.game.GameHubBroadcastReceiver filter 410a2ef
+          Action: "com.farsitel.bazaar.eventDoneNotify"
+          Action: "com.farsitel.bazaar.isLogin"
+          Action: "com.farsitel.bazaar.getCurrentLeaderboardData"
+          Action: "com.farsitel.bazaar.getTournamentTimes"
+          Action: "com.farsitel.bazaar.endTournamentMatch"
+          Action: "com.farsitel.bazaar.startTournamentMatch"
+          Action: "com.farsitel.bazaar.getEventsByPackageName"
+          Action: "com.farsitel.bazaar.getLeaderboardData"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        4175518 com.farsitel.bazaar/androidx.profileinstaller.ProfileInstallReceiver filter 26cbb71
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.google.android.c2dm.intent.RECEIVE:
+        c3a1e8 com.farsitel.bazaar/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 10d001
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        c24f494 com.farsitel.bazaar/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter cb96b3d
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        c5f4c7e com.farsitel.bazaar/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 55625df
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        c5f4c7e com.farsitel.bazaar/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 55625df
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      androidx.profileinstaller.action.SKIP_FILE:
+        4175518 com.farsitel.bazaar/androidx.profileinstaller.ProfileInstallReceiver filter 3ce6d56
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      com.farsitel.bazaar.getTournamentTimes:
+        d5053ce com.farsitel.bazaar/.game.GameHubBroadcastReceiver filter 410a2ef
+          Action: "com.farsitel.bazaar.eventDoneNotify"
+          Action: "com.farsitel.bazaar.isLogin"
+          Action: "com.farsitel.bazaar.getCurrentLeaderboardData"
+          Action: "com.farsitel.bazaar.getTournamentTimes"
+          Action: "com.farsitel.bazaar.endTournamentMatch"
+          Action: "com.farsitel.bazaar.startTournamentMatch"
+          Action: "com.farsitel.bazaar.getEventsByPackageName"
+          Action: "com.farsitel.bazaar.getLeaderboardData"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        4175518 com.farsitel.bazaar/androidx.profileinstaller.ProfileInstallReceiver filter db8aac4
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      android.intent.action.BOOT_COMPLETED:
+        be6f7a0 com.farsitel.bazaar/.scheduleupdate.alarmmanager.ScheduleBootReceiver filter 68a5f59
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.BOOT_COMPLETED"
+        c5f4c7e com.farsitel.bazaar/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 55625df
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      logoutHappened:
+        8999fd2 com.farsitel.bazaar/.myreview.receiver.LogoutReceiver filter 68738a3
+          Action: "logoutHappened"
+        3e1bbf6 com.farsitel.bazaar/.account.receiver.LogoutReceiver filter 4a62bf7
+          Action: "logoutHappened"
+        9461fc com.farsitel.bazaar/.core.receiver.LogoutReceiver filter 9f0b085
+          Action: "logoutHappened"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        84f0ea6 com.farsitel.bazaar/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter a8400e7
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      com.farsitel.bazaar.getPurchase:
+        16d572a com.farsitel.bazaar/.inappbilling.receiver.InAppBillingReceiver filter 99191b
+          Action: "com.farsitel.bazaar.skuDetail"
+          Action: "com.farsitel.bazaar.billingSupport"
+          Action: "com.farsitel.bazaar.consume"
+          Action: "com.farsitel.bazaar.purchase"
+          Action: "com.farsitel.bazaar.ping"
+          Action: "com.farsitel.bazaar.getPurchase"
+      com.farsitel.bazaar.endTournamentMatch:
+        d5053ce com.farsitel.bazaar/.game.GameHubBroadcastReceiver filter 410a2ef
+          Action: "com.farsitel.bazaar.eventDoneNotify"
+          Action: "com.farsitel.bazaar.isLogin"
+          Action: "com.farsitel.bazaar.getCurrentLeaderboardData"
+          Action: "com.farsitel.bazaar.getTournamentTimes"
+          Action: "com.farsitel.bazaar.endTournamentMatch"
+          Action: "com.farsitel.bazaar.startTournamentMatch"
+          Action: "com.farsitel.bazaar.getEventsByPackageName"
+          Action: "com.farsitel.bazaar.getLeaderboardData"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        e9fb28a com.farsitel.bazaar/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 32140fb
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      com.huawei.intent.action.PUSH:
+        3409dad com.farsitel.bazaar/com.huawei.hms.support.api.push.PushMsgReceiver filter 35c08e2
+          Action: "com.huawei.intent.action.PUSH_DELAY_NOTIFY"
+          Action: "com.huawei.intent.action.PUSH"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        e51bf88 com.farsitel.bazaar/.installedapps.receiver.BazaarPackageUpdateReceiver filter c5a2d21
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      com.farsitel.bazaar.referrer.get:
+        cb81ab8 com.farsitel.bazaar/.referrerprovider.ReferrerProviderReceiver filter 4d7a091
+          Action: "com.farsitel.bazaar.referrer.consume"
+          Action: "com.farsitel.bazaar.referrer.get"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        eb2422c com.farsitel.bazaar/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter c17c4f5
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      com.farsitel.bazaar.startTournamentMatch:
+        d5053ce com.farsitel.bazaar/.game.GameHubBroadcastReceiver filter 410a2ef
+          Action: "com.farsitel.bazaar.eventDoneNotify"
+          Action: "com.farsitel.bazaar.isLogin"
+          Action: "com.farsitel.bazaar.getCurrentLeaderboardData"
+          Action: "com.farsitel.bazaar.getTournamentTimes"
+          Action: "com.farsitel.bazaar.endTournamentMatch"
+          Action: "com.farsitel.bazaar.startTournamentMatch"
+          Action: "com.farsitel.bazaar.getEventsByPackageName"
+          Action: "com.farsitel.bazaar.getLeaderboardData"
+      notificationCancel:
+        9cde71e com.farsitel.bazaar/.install.receiver.DownloadNotificationActionReceiver filter 84abbff
+          Action: "notificationCancel"
+          Action: "notificationDelete"
+        8f788d0 com.farsitel.bazaar/.webpage.webview.WebNotificationActionReceiver filter df4d0c9
+          Action: "notificationCancel"
+        d21deda com.farsitel.bazaar/.notification.receiver.NotificationActionReceiver filter fee7f0b
+          Action: "notificationCancel"
+          Action: "notificationDelete"
+      com.farsitel.bazaar.getEventsByPackageName:
+        d5053ce com.farsitel.bazaar/.game.GameHubBroadcastReceiver filter 410a2ef
+          Action: "com.farsitel.bazaar.eventDoneNotify"
+          Action: "com.farsitel.bazaar.isLogin"
+          Action: "com.farsitel.bazaar.getCurrentLeaderboardData"
+          Action: "com.farsitel.bazaar.getTournamentTimes"
+          Action: "com.farsitel.bazaar.endTournamentMatch"
+          Action: "com.farsitel.bazaar.startTournamentMatch"
+          Action: "com.farsitel.bazaar.getEventsByPackageName"
+          Action: "com.farsitel.bazaar.getLeaderboardData"
+      com.farsitel.bazaar.getLeaderboardData:
+        d5053ce com.farsitel.bazaar/.game.GameHubBroadcastReceiver filter 410a2ef
+          Action: "com.farsitel.bazaar.eventDoneNotify"
+          Action: "com.farsitel.bazaar.isLogin"
+          Action: "com.farsitel.bazaar.getCurrentLeaderboardData"
+          Action: "com.farsitel.bazaar.getTournamentTimes"
+          Action: "com.farsitel.bazaar.endTournamentMatch"
+          Action: "com.farsitel.bazaar.startTournamentMatch"
+          Action: "com.farsitel.bazaar.getEventsByPackageName"
+          Action: "com.farsitel.bazaar.getLeaderboardData"
+      notificationDelete:
+        9cde71e com.farsitel.bazaar/.install.receiver.DownloadNotificationActionReceiver filter 84abbff
+          Action: "notificationCancel"
+          Action: "notificationDelete"
+        d21deda com.farsitel.bazaar/.notification.receiver.NotificationActionReceiver filter fee7f0b
+          Action: "notificationCancel"
+          Action: "notificationDelete"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.farsitel.bazaar.InAppStorage.BIND:
+        28ee1d5 com.farsitel.bazaar/.inapplogin.service.InAppStorageService filter f633dea
+          Action: "com.farsitel.bazaar.InAppStorage.BIND"
+      com.farsitel.bazaar.Game.BIND:
+        71ad8db com.farsitel.bazaar/.game.GameHubService filter 8e33f78 permission com.farsitel.bazaar.GAME_HUB_PERMISSION
+          Action: "com.farsitel.bazaar.Game.BIND"
+      androidx.media3.session.MediaSessionService:
+        fe427b7 com.farsitel.bazaar/.voice.service.MusicService filter 6c8db24
+          Action: "androidx.media3.session.MediaSessionService"
+      android.net.VpnService:
+        81262e1 com.farsitel.bazaar/.vpn.service.BazaarVpnService filter 4fad806 permission android.permission.BIND_VPN_SERVICE
+          Action: "android.net.VpnService"
+      com.huawei.push.msg.NOTIFY_MSG:
+        4898853 com.farsitel.bazaar/com.huawei.hms.support.api.push.service.HmsMsgService filter 94a8590
+          Action: "com.huawei.push.msg.NOTIFY_MSG"
+          Action: "com.huawei.push.msg.PASSBY_MSG"
+      com.farsitel.bazaar.download.service.InstallService.launcher.DOWNLOAD:
+        743fec7 com.farsitel.bazaar/.download.service.InstallService filter 47e4cf4
+          Action: "com.farsitel.bazaar.download.service.InstallService.launcher.DOWNLOAD"
+          Action: "com.farsitel.bazaar.download.service.InstallService.launcher.STOP_ALL"
+          Action: "com.farsitel.bazaar.download.service.InstallService.launcher.STOP_APP"
+          Action: "com.farsitel.bazaar.download.service.InstallService.launcher.SCHEDULED_BATCH_DOWNLOAD"
+          Action: "com.farsitel.bazaar.download.service.InstallService.launcher.cancel_install_action"
+          Action: "com.farsitel.bazaar.download.service.InstallService.launcher.BATCH_DOWNLOAD"
+      com.farsitel.bazaar.InAppLogin.BIND:
+        6db8d19 com.farsitel.bazaar/.inapplogin.service.InAppLoginService filter acee1de
+          Action: "com.farsitel.bazaar.InAppLogin.BIND"
+      com.farsitel.bazaar.download.service.InstallService.launcher.STOP_ALL:
+        743fec7 com.farsitel.bazaar/.download.service.InstallService filter 47e4cf4
+          Action: "com.farsitel.bazaar.download.service.InstallService.launcher.DOWNLOAD"
+          Action: "com.farsitel.bazaar.download.service.InstallService.launcher.STOP_ALL"
+          Action: "com.farsitel.bazaar.download.service.InstallService.launcher.STOP_APP"
+          Action: "com.farsitel.bazaar.download.service.InstallService.launcher.SCHEDULED_BATCH_DOWNLOAD"
+          Action: "com.farsitel.bazaar.download.service.InstallService.launcher.cancel_install_action"
+          Action: "com.farsitel.bazaar.download.service.InstallService.launcher.BATCH_DOWNLOAD"
+      com.farsitel.bazaar.download.service.InstallService.launcher.STOP_APP:
+        743fec7 com.farsitel.bazaar/.download.service.InstallService filter 47e4cf4
+          Action: "com.farsitel.bazaar.download.service.InstallService.launcher.DOWNLOAD"
+          Action: "com.farsitel.bazaar.download.service.InstallService.launcher.STOP_ALL"
+          Action: "com.farsitel.bazaar.download.service.InstallService.launcher.STOP_APP"
+          Action: "com.farsitel.bazaar.download.service.InstallService.launcher.SCHEDULED_BATCH_DOWNLOAD"
+          Action: "com.farsitel.bazaar.download.service.InstallService.launcher.cancel_install_action"
+          Action: "com.farsitel.bazaar.download.service.InstallService.launcher.BATCH_DOWNLOAD"
+      com.farsitel.bazaar.downloadedapp.service.DELETE_DOWNLOADED_APPS:
+        a405eeb com.farsitel.bazaar/.downloadedapp.service.DeleteDownloadedAppsService filter f163448
+          Action: "com.farsitel.bazaar.downloadedapp.service.DELETE_DOWNLOADED_APPS"
+      com.google.firebase.MESSAGING_EVENT:
+        3f667a9 com.farsitel.bazaar/.core.pushnotification.fcm.BazaarFirebaseMessagingService filter 935d12e
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        822768d com.farsitel.bazaar/com.google.firebase.messaging.FirebaseMessagingService filter 4d9a042
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.farsitel.bazaar.service.UpdateCheckService.BIND:
+        93a44cf com.farsitel.bazaar/.checkupdate.service.UpdateCheckService filter 5e08e5c
+          Action: "com.farsitel.bazaar.service.UpdateCheckService.BIND"
+      com.farsitel.bazaar.download.service.InstallService.launcher.SCHEDULED_BATCH_DOWNLOAD:
+        743fec7 com.farsitel.bazaar/.download.service.InstallService filter 47e4cf4
+          Action: "com.farsitel.bazaar.download.service.InstallService.launcher.DOWNLOAD"
+          Action: "com.farsitel.bazaar.download.service.InstallService.launcher.STOP_ALL"
+          Action: "com.farsitel.bazaar.download.service.InstallService.launcher.STOP_APP"
+          Action: "com.farsitel.bazaar.download.service.InstallService.launcher.SCHEDULED_BATCH_DOWNLOAD"
+          Action: "com.farsitel.bazaar.download.service.InstallService.launcher.cancel_install_action"
+          Action: "com.farsitel.bazaar.download.service.InstallService.launcher.BATCH_DOWNLOAD"
+      com.farsitel.bazaar.service.LoginCheckService.BIND:
+        29bffbf com.farsitel.bazaar/.inapplogin.service.LoginCheckService filter 112468c
+          Action: "com.farsitel.bazaar.service.LoginCheckService.BIND"
+      com.farsitel.bazaar.service.AutoUpdateCheckService.BIND:
+        324d565 com.farsitel.bazaar/.checkupdate.service.AutoUpdateCheckService filter d1d23a
+          Action: "com.farsitel.bazaar.service.AutoUpdateCheckService.BIND"
+      com.huawei.push.msg.PASSBY_MSG:
+        4898853 com.farsitel.bazaar/com.huawei.hms.support.api.push.service.HmsMsgService filter 94a8590
+          Action: "com.huawei.push.msg.NOTIFY_MSG"
+          Action: "com.huawei.push.msg.PASSBY_MSG"
+      com.farsitel.bazaar.download.service.InstallService.launcher.cancel_install_action:
+        743fec7 com.farsitel.bazaar/.download.service.InstallService filter 47e4cf4
+          Action: "com.farsitel.bazaar.download.service.InstallService.launcher.DOWNLOAD"
+          Action: "com.farsitel.bazaar.download.service.InstallService.launcher.STOP_ALL"
+          Action: "com.farsitel.bazaar.download.service.InstallService.launcher.STOP_APP"
+          Action: "com.farsitel.bazaar.download.service.InstallService.launcher.SCHEDULED_BATCH_DOWNLOAD"
+          Action: "com.farsitel.bazaar.download.service.InstallService.launcher.cancel_install_action"
+          Action: "com.farsitel.bazaar.download.service.InstallService.launcher.BATCH_DOWNLOAD"
+      com.farsitel.bazaar.download.service.InstallService.launcher.BATCH_DOWNLOAD:
+        743fec7 com.farsitel.bazaar/.download.service.InstallService filter 47e4cf4
+          Action: "com.farsitel.bazaar.download.service.InstallService.launcher.DOWNLOAD"
+          Action: "com.farsitel.bazaar.download.service.InstallService.launcher.STOP_ALL"
+          Action: "com.farsitel.bazaar.download.service.InstallService.launcher.STOP_APP"
+          Action: "com.farsitel.bazaar.download.service.InstallService.launcher.SCHEDULED_BATCH_DOWNLOAD"
+          Action: "com.farsitel.bazaar.download.service.InstallService.launcher.cancel_install_action"
+          Action: "com.farsitel.bazaar.download.service.InstallService.launcher.BATCH_DOWNLOAD"
+      ir.cafebazaar.pardakht.InAppBillingService.BIND:
+        df14c1d com.farsitel.bazaar/.inappbilling.service.InAppBillingService filter 5c6e92
+          Action: "ir.cafebazaar.pardakht.InAppBillingService.BIND"
+      com.huawei.push.action.MESSAGING_EVENT:
+        4e8c651 com.farsitel.bazaar/.core.pushnotification.hms.BazaarHmsMessagingService filter 72f4eb6
+          Action: "com.huawei.push.action.MESSAGING_EVENT"
+      com.cafebazaar.referrer.BIND:
+        7f7c063 com.farsitel.bazaar/.referrerprovider.ReferrerProviderServiceImpl filter ad4460
+          Action: "com.cafebazaar.referrer.BIND"
+
+Domain verification status:
+  com.farsitel.bazaar:
+    ID: 4c12db5f-5b79-46f9-bafd-bf0b2ae9bc99
+    Signatures: [E5:41:CA:7B:92:FF:A0:B4:56:12:AB:26:47:AA:6C:6D:6D:59:5C:EA:DA:6A:CF:8D:AD:81:30:63:F3:6D:5D:77]
+    Domain verification state:
+      www.cafebazaar.ir: 1024
+      cafebazaar.ir: verified
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          www.cafebazaar.ir
+          cafebazaar.ir
+
+Permissions:
+  Permission [com.farsitel.bazaar.permission.PAY_THROUGH_BAZAAR] (1f478c3):
+    sourcePackage=com.farsitel.bazaar
+    uid=10190 gids=[] type=0 prot=normal
+    perm=PermissionInfo{bb50540 com.farsitel.bazaar.permission.PAY_THROUGH_BAZAAR}
+    flags=0x0
+
+Permissions:
+  Permission [com.farsitel.bazaar.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (32cec79):
+    sourcePackage=com.farsitel.bazaar
+    uid=10190 gids=[] type=0 prot=signature
+    perm=PermissionInfo{8c3bdbe com.farsitel.bazaar.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Permissions:
+  Permission [com.farsitel.bazaar.permission.REFERRER] (e1bde1f):
+    sourcePackage=com.farsitel.bazaar
+    uid=10190 gids=[] type=0 prot=normal
+    perm=PermissionInfo{a85356c com.farsitel.bazaar.permission.REFERRER}
+    flags=0x0
+
+Permissions:
+  Permission [com.farsitel.bazaar.GAME_HUB_PERMISSION] (e86d735):
+    sourcePackage=com.farsitel.bazaar
+    uid=10190 gids=[] type=0 prot=normal
+    perm=PermissionInfo{cf9f7ca com.farsitel.bazaar.GAME_HUB_PERMISSION}
+    flags=0x0
+
+Permissions:
+  Permission [com.farsitel.bazaar.permission.PUSH_PROVIDER] (2a3d3b):
+    sourcePackage=com.farsitel.bazaar
+    uid=10190 gids=[] type=0 prot=signature
+    perm=PermissionInfo{7463c58 com.farsitel.bazaar.permission.PUSH_PROVIDER}
+    flags=0x0
+
+Permissions:
+  Permission [com.farsitel.bazaar.permission.PUSH_WRITE_PROVIDER] (35ab1b1):
+    sourcePackage=com.farsitel.bazaar
+    uid=10190 gids=[] type=0 prot=signature
+    perm=PermissionInfo{fa7c696 com.farsitel.bazaar.permission.PUSH_WRITE_PROVIDER}
+    flags=0x0
+
+Permissions:
+  Permission [com.farsitel.bazaar.permission.PROCESS_PUSH_MSG] (6f57217):
+    sourcePackage=com.farsitel.bazaar
+    uid=10190 gids=[] type=0 prot=signature
+    perm=PermissionInfo{40ec604 com.farsitel.bazaar.permission.PROCESS_PUSH_MSG}
+    flags=0x0
+
+Registered ContentProviders:
+  com.farsitel.bazaar/androidx.startup.InitializationProvider:
+    Provider{5b7b7ed com.farsitel.bazaar/androidx.startup.InitializationProvider}
+  com.farsitel.bazaar/io.sentry.android.core.SentryPerformanceProvider:
+    Provider{791b622 com.farsitel.bazaar/io.sentry.android.core.SentryPerformanceProvider}
+  com.farsitel.bazaar/io.sentry.android.core.SentryInitProvider:
+    Provider{ed518b3 com.farsitel.bazaar/io.sentry.android.core.SentryInitProvider}
+  com.farsitel.bazaar/com.huawei.agconnect.core.provider.AGConnectInitializeProvider:
+    Provider{bb43e70 com.farsitel.bazaar/com.huawei.agconnect.core.provider.AGConnectInitializeProvider}
+  com.farsitel.bazaar/androidx.core.content.FileProvider:
+    Provider{164e5e9 com.farsitel.bazaar/androidx.core.content.FileProvider}
+  com.farsitel.bazaar/com.huawei.hms.support.api.push.PushProvider:
+    Provider{139126e com.farsitel.bazaar/com.huawei.hms.support.api.push.PushProvider}
+  com.farsitel.bazaar/com.huawei.hms.aaid.InitProvider:
+    Provider{7fe8d0f com.farsitel.bazaar/com.huawei.hms.aaid.InitProvider}
+  com.farsitel.bazaar/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{ef6d19c com.farsitel.bazaar/com.google.firebase.provider.FirebaseInitProvider}
+
+ContentProvider Authorities:
+  [com.farsitel.bazaar.androidx-startup]:
+    Provider{5b7b7ed com.farsitel.bazaar/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{d9cf7a5 com.farsitel.bazaar}
+  [com.farsitel.bazaar.firebaseinitprovider]:
+    Provider{ef6d19c com.farsitel.bazaar/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{de7e77a com.farsitel.bazaar}
+  [com.farsitel.bazaar.SentryInitProvider]:
+    Provider{ed518b3 com.farsitel.bazaar/io.sentry.android.core.SentryInitProvider}
+      applicationInfo=ApplicationInfo{6a0eb2b com.farsitel.bazaar}
+  [com.farsitel.bazaar.SentryPerformanceProvider]:
+    Provider{791b622 com.farsitel.bazaar/io.sentry.android.core.SentryPerformanceProvider}
+      applicationInfo=ApplicationInfo{86d6b88 com.farsitel.bazaar}
+  [com.farsitel.bazaar.provider]:
+    Provider{164e5e9 com.farsitel.bazaar/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{8a6921 com.farsitel.bazaar}
+  [com.farsitel.bazaar.AGCInitializeProvider]:
+    Provider{bb43e70 com.farsitel.bazaar/com.huawei.agconnect.core.provider.AGConnectInitializeProvider}
+      applicationInfo=ApplicationInfo{77d0146 com.farsitel.bazaar}
+  [com.farsitel.bazaar.aaidinitprovider]:
+    Provider{7fe8d0f com.farsitel.bazaar/com.huawei.hms.aaid.InitProvider}
+      applicationInfo=ApplicationInfo{8c10f07 com.farsitel.bazaar}
+  [com.farsitel.bazaar.huawei.push.provider]:
+    Provider{139126e com.farsitel.bazaar/com.huawei.hms.support.api.push.PushProvider}
+      applicationInfo=ApplicationInfo{331b834 com.farsitel.bazaar}
+
+Key Set Manager:
+  [com.farsitel.bazaar]
+      Signing KeySets: 61
+
+Packages:
+  Package [com.farsitel.bazaar] (e83765d):
+    appId=10190
+    pkg=Package{4f7ebd2 com.farsitel.bazaar}
+    codePath=/data/app/~~uRyHRKep9UOcua2ERIAOhA==/com.farsitel.bazaar-xR3WwIfi1mUHyOeq1G0DJw==
+    resourcePath=/data/app/~~uRyHRKep9UOcua2ERIAOhA==/com.farsitel.bazaar-xR3WwIfi1mUHyOeq1G0DJw==
+    legacyNativeLibraryDir=/data/app/~~uRyHRKep9UOcua2ERIAOhA==/com.farsitel.bazaar-xR3WwIfi1mUHyOeq1G0DJw==/lib
+    extractNativeLibs=true
+    primaryCpuAbi=x86_64
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=2700601 minSdk=21 targetSdk=35
+    minExtensionVersions=[]
+    versionName=27.6.1
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesPackages=[com.google.android.gms.policy_cast_dynamite, com.google.android.apps.tv.launcherx, com.google.android.tvlauncher, com.google.android.tvrecommendations, androidx.test.orchestrator, androidx.test.services, com.google.android.apps.common.testing.services]
+    queriesIntents=[Intent { act=android.intent.action.VIEW dat=https:/... }, Intent { act=android.intent.action.VIEW dat=http:/... }, Intent { act=com.huawei.hms.core.aidlservice }, Intent { act=com.huawei.hms.core }]
+    dataDir=/data/user/0/com.farsitel.bazaar
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2026-06-22 20:00:20
+    lastUpdateTime=2026-06-22 20:00:21
+    installerPackageName=null
+    installerPackageUid=-1
+    initiatingPackageName=com.android.shell
+    originatingPackageName=null
+    packageSource=1
+    appMetadataFilePath=null
+    signatures=PackageSignatures{dd594a3 version:3, signatures:[fb936c89], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.farsitel.bazaar.permission.PAY_THROUGH_BAZAAR: prot=normal
+      com.farsitel.bazaar.permission.REFERRER: prot=normal
+      com.farsitel.bazaar.GAME_HUB_PERMISSION: prot=normal
+      com.farsitel.bazaar.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+      com.farsitel.bazaar.permission.PROCESS_PUSH_MSG: prot=signature
+      com.farsitel.bazaar.permission.PUSH_PROVIDER: prot=signature
+      com.farsitel.bazaar.permission.PUSH_WRITE_PROVIDER: prot=signature
+    requested permissions:
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.REQUEST_DELETE_PACKAGES
+      android.permission.INTERNET
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.REQUEST_INSTALL_PACKAGES
+      android.permission.FOREGROUND_SERVICE
+      android.permission.FOREGROUND_SERVICE_SPECIAL_USE
+      android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK
+      com.farsitel.bazaar.permission.PAY_THROUGH_BAZAAR
+      android.permission.QUERY_ALL_PACKAGES
+      android.permission.UPDATE_PACKAGES_WITHOUT_USER_ACTION
+      android.permission.ENFORCE_UPDATE_OWNERSHIP
+      android.permission.MANAGE_EXTERNAL_STORAGE
+      android.permission.WAKE_LOCK
+      android.permission.SCHEDULE_EXACT_ALARM
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
+      com.farsitel.bazaar.permission.REFERRER
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.gms.permission.AD_ID
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION
+      android.permission.ACCESS_ADSERVICES_AD_ID
+      android.permission.AD_SERVICES_CONFIG
+      android.permission.CHANGE_WIFI_STATE
+      com.farsitel.bazaar.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.REORDER_TASKS
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      com.farsitel.bazaar.permission.PROCESS_PUSH_MSG
+      com.farsitel.bazaar.permission.PUSH_PROVIDER
+      android.permission.READ_EXTERNAL_STORAGE
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.farsitel.bazaar.permission.PAY_THROUGH_BAZAAR: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.MANAGE_EXTERNAL_STORAGE: granted=false
+      com.farsitel.bazaar.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.FOREGROUND_SERVICE_SPECIAL_USE: granted=true
+      android.permission.ENFORCE_UPDATE_OWNERSHIP: granted=true
+      android.permission.ACCESS_ADSERVICES_AD_ID: granted=true
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.REORDER_TASKS: granted=true
+      android.permission.UPDATE_PACKAGES_WITHOUT_USER_ACTION: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      com.farsitel.bazaar.permission.REFERRER: granted=true
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION: granted=true
+      android.permission.SCHEDULE_EXACT_ALARM: granted=false
+      android.permission.REQUEST_DELETE_PACKAGES: granted=true
+      android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK: granted=true
+      com.farsitel.bazaar.permission.PUSH_PROVIDER: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.REQUEST_INSTALL_PACKAGES: granted=false
+      android.permission.QUERY_ALL_PACKAGES: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      com.farsitel.bazaar.permission.PROCESS_PUSH_MSG: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=336067 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2026-06-22 20:00:21
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-Sr4d.frro
+        /data/resource-cache/com.android.systemui-accent-Llp3.frro
+        /data/resource-cache/com.android.systemui-dynamic-kMxO.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+      enabledComponents:
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+        androidx.work.impl.background.systemjob.SystemJobService
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.settings.intelligence:
+      com.farsitel.bazaar
+    com.google.android.apps.messaging:
+      com.farsitel.bazaar
+    com.farsitel.bazaar:
+      com.google.android.calendar
+      com.android.chrome
+      com.google.android.apps.docs
+  queryable via interaction:
+    User 0:
+      [com.android.location.fused,com.android.settings,com.android.dynsystem,com.android.providers.settings,com.android.server.telecom,com.android.wallpaperbackup,com.android.localtransport,com.android.inputdevices,com.android.emulator.multidisplay,android,com.android.keychain]:
+        com.farsitel.bazaar
+      [com.google.android.gsf,com.google.android.gms]:
+        com.farsitel.bazaar
+      com.google.android.inputmethod.latin:
+        com.farsitel.bazaar
+      com.farsitel.bazaar:
+        [com.android.location.fused,com.android.settings,com.android.dynsystem,com.android.providers.settings,com.android.server.telecom,com.android.wallpaperbackup,com.android.localtransport,com.android.inputdevices,com.android.emulator.multidisplay,android,com.android.keychain]
+  queryable via uses-library:
+
+Dexopt state:
+  [com.farsitel.bazaar]
+    path: /data/app/~~uRyHRKep9UOcua2ERIAOhA==/com.farsitel.bazaar-xR3WwIfi1mUHyOeq1G0DJw==/base.apk
+      x86_64: [status=verify] [reason=install] [primary-abi]
+        [location is /data/app/~~uRyHRKep9UOcua2ERIAOhA==/com.farsitel.bazaar-xR3WwIfi1mUHyOeq1G0DJw==/oat/x86_64/base.odex]
+
+Compiler stats:
+  [com.farsitel.bazaar]
+     base.apk - 9677

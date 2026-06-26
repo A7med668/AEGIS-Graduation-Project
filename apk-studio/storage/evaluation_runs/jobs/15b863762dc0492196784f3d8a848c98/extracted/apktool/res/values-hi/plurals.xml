@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="added_to_queue_message">
+        <item quantity="one">%d एपिसोड कतार में जोड़ा गया।</item>
+        <item quantity="other">%d एपिसोड कतार में जोड़े गए।</item>
+    </plurals>
+    <plurals name="deleted_episode_message">
+        <item quantity="one">%d डाउनलोड किया गया एपिसोड मिटाया गया।</item>
+        <item quantity="other">%d डाउनलोड करे गए एपिसोड मिटाए गए।</item>
+    </plurals>
+    <plurals name="downloading_episodes_message">
+        <item quantity="one">%d एपिसोड डाउनलोड कर रहे।</item>
+        <item quantity="other">%d एपिसोड डाउनलोड हो रहे।</item>
+    </plurals>
+    <plurals name="downloads_left">
+        <item quantity="one">%d डाउनलोड बाकी</item>
+        <item quantity="other">%d डाउनलोड बाकी</item>
+    </plurals>
+    <plurals name="echo_hours_podcasts">
+        <item quantity="one">"घंटे का एपिसोड 
+%1$d पॉडकास्ट से"</item>
+        <item quantity="other">"घंटे का एपिसोड 
+%1$d पॉडकास्ट से"</item>
+    </plurals>
+    <plurals name="echo_queue_hours_waiting">
+        <item quantity="one">"घंटे आपके कतार में इंतज़ार कर रहे हैं
+%1$d एपिसोड से"</item>
+        <item quantity="other">"घंटे आपके कतार में इंतज़ार कर रहे हैं
+%1$d एपिसोड से"</item>
+    </plurals>
+    <plurals name="episode_cleanup_days_after_listening">
+        <item quantity="one">खत्म होने के %d दिन बाद</item>
+        <item quantity="other">खत्म होने के %d दिनों बाद</item>
+    </plurals>
+    <plurals name="episode_cleanup_hours_after_listening">
+        <item quantity="one">खत्म होने के %d घंटे बाद</item>
+        <item quantity="other">खत्म होने के %d घंटों बाद</item>
+    </plurals>
+    <plurals name="episodes_sleep_timer_exceeds_queue">
+        <item quantity="one">आपके कतार में सिर्फ %1$d एपिसोड बाकी हैं</item>
+        <item quantity="other">आपके कतार में सिर्फ %1$d एपिसोड बाकी हैं</item>
+    </plurals>
+    <plurals name="marked_as_played_message">
+        <item quantity="one">%d एपिसोड सुना हुआ मार्क किया गया।</item>
+        <item quantity="other">%d एपिसोड सुने हुए मार्क करे गए।</item>
+    </plurals>
+    <plurals name="marked_as_unplayed_message">
+        <item quantity="one">%d एपिसोड अनसुना मार्क किया गया।</item>
+        <item quantity="other">%d एपिसोड अनसुना मार्क करे गए।</item>
+    </plurals>
+    <plurals name="mobile_download_notice">
+        <item quantity="one">अगले %d मिनट के लिए मोबाइल डाटा पर डाउनलोड कर रहे</item>
+        <item quantity="other">अगले %d मिनटों के लिए मोबाइल डाटा पर डाउनलोड कर रहे</item>
+    </plurals>
+    <plurals name="move_to_bottom_message">
+        <item quantity="one">%d एपिसोड नीचे ले जाया गया।</item>
+        <item quantity="other">%d एपिसोड नीचे ले जाए गए।</item>
+    </plurals>
+    <plurals name="move_to_top_message">
+        <item quantity="one">%d एपिसोड ऊपर ले जाया गया।</item>
+        <item quantity="other">%d एपिसोड ऊपर ले जाए गए।</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d नई सूचनाएं</item>
+        <item quantity="other">%d नई सूचनाएं</item>
+    </plurals>
+    <plurals name="new_episode_notification_message">
+        <item quantity="one">%2$s में एक नया एपिसोड है</item>
+        <item quantity="other">%2$s में %1$d नए एपिसोड है</item>
+    </plurals>
+    <plurals name="new_episode_notification_title">
+        <item quantity="one">नया एपिसोड</item>
+        <item quantity="other">नए एपिसोड</item>
+    </plurals>
+    <plurals name="num_episodes">
+        <item quantity="one">%d एपिसोड</item>
+        <item quantity="other">%d एपिसोड</item>
+    </plurals>
+    <plurals name="num_selected_label">
+        <item quantity="one">%1$d/%2$d चुना गया</item>
+        <item quantity="other">%1$d/%2$d चुने गए</item>
+    </plurals>
+    <plurals name="num_subscriptions">
+        <item quantity="one">%d सब्सक्रिप्शन</item>
+        <item quantity="other">%d सब्सक्रिप्शन</item>
+    </plurals>
+    <plurals name="removed_from_inbox_batch_label">
+        <item quantity="one">%d एपिसोड इनबॉक्स से हटाया गया।</item>
+        <item quantity="other">%d एपिसोड इनबॉक्स से हटाए गए।</item>
+    </plurals>
+    <plurals name="removed_from_queue_message">
+        <item quantity="one">%d एपिसोड कतार से हटाया गया।</item>
+        <item quantity="other">%d एपिसोड कतार से हटाए गए।</item>
+    </plurals>
+    <plurals name="statistics_episodes_downloaded">
+        <item quantity="one">डाउनलोड किया गया</item>
+        <item quantity="other">डाउनलोड किए गए</item>
+    </plurals>
+    <plurals name="statistics_episodes_started">
+        <item quantity="one">शुरू हो गया</item>
+        <item quantity="other">शुरू हो गए</item>
+    </plurals>
+    <plurals name="statistics_episodes_total">
+        <item quantity="one">कुल</item>
+        <item quantity="other">कुल</item>
+    </plurals>
+    <plurals name="time_days_quantified">
+        <item quantity="one">%d दिन</item>
+        <item quantity="other">%d दिन</item>
+    </plurals>
+    <plurals name="time_hours_quantified">
+        <item quantity="one">%d घंटा</item>
+        <item quantity="other">%d घंटे</item>
+    </plurals>
+    <plurals name="time_minutes_quantified">
+        <item quantity="one">%d मिनट</item>
+        <item quantity="other">%d मिनट</item>
+    </plurals>
+    <plurals name="time_seconds_quantified">
+        <item quantity="one">%d सेकंड</item>
+        <item quantity="other">%d सेकंड</item>
+    </plurals>
+    <plurals name="timer_exceeds_remaining_time_while_continuous_playback_disabled">
+        <item quantity="one">लगातार प्लेबैक बंद हैं और इस एपिसोड के %1$d मिनट बाकी हैं</item>
+        <item quantity="other">लगातार प्लेबैक बंद हैं और इस एपिसोड में %1$d मिनट बाकी हैं</item>
+    </plurals>
+    <plurals name="total_size_downloaded_podcasts">
+        <item quantity="one">डिवाइस के %d एपिसोड का कुल साइज़</item>
+        <item quantity="other">डिवाइस के सब %d एपिसोड का कुल साइज़</item>
+    </plurals>
+    <plurals name="updated_feeds_batch_label">
+        <item quantity="one">%d सब्सक्रिप्शन अपडेट किया गया।</item>
+        <item quantity="other">%d सब्सक्रिपन अपडेट करे गए।</item>
+    </plurals>
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_check_vector" android:id="@id/cab_confirm_selection" android:title="@string/confirm_selection" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_hide_vector" android:id="@id/cab_hide" android:title="@string/hide" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_remove_red_eye_vector" android:id="@id/cab_unhide" android:title="@string/unhide" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_lock_vector" android:id="@id/cab_encrypt" android:title="@string/encrypt" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_lock_open_vector" android:id="@id/cab_decrypt" android:title="@string/decrypt" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_info_vector" android:id="@id/cab_properties" android:title="@string/properties" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_edit_vector" android:id="@id/cab_rename" android:title="@string/rename" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_share_vector" android:id="@id/cab_share" android:title="@string/share" app:showAsAction="ifRoom" />
+    <item android:id="@id/cab_copy_path" android:title="@string/copy_path" app:showAsAction="never" />
+    <item android:id="@id/cab_set_as" android:title="@string/set_as" app:showAsAction="never" />
+    <item android:id="@id/cab_open_with" android:title="@string/open_with" app:showAsAction="never" />
+    <item android:id="@id/cab_open_as" android:title="@string/open_as" app:showAsAction="never" />
+    <item android:id="@id/cab_copy_to" android:title="@string/copy_to" app:showAsAction="never" />
+    <item android:id="@id/cab_move_to" android:title="@string/move_to" app:showAsAction="never" />
+    <item android:id="@id/cab_compress" android:title="@string/compress" app:showAsAction="never" />
+    <item android:id="@id/cab_decompress" android:title="@string/decompress" app:showAsAction="never" />
+    <item android:icon="@drawable/ic_select_all_vector" android:id="@id/cab_select_all" android:title="@string/select_all" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_delete_vector" android:id="@id/cab_delete" android:title="@string/delete" app:showAsAction="ifRoom" />
+</menu>

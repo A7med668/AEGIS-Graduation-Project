@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AEGIS Agent</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_skip">Skip</string>
+    <string name="onboarding_next">Next</string>
+    <string name="onboarding_get_started">Get Started</string>
+    <string name="onboarding_page1_title">Your device, protected</string>
+    <string name="onboarding_page1_body">AEGIS continuously monitors your device security posture and reports risk signals to your organisation\'s security team.</string>
+    <string name="onboarding_page2_title">What AEGIS scans</string>
+    <string name="onboarding_page2_body">Root detection · Bootloader state · Security patch age · App inventory changes · Important system logs · Play Integrity verification</string>
+    <string name="onboarding_page3_title">Your privacy matters</string>
+    <string name="onboarding_page3_body">AEGIS collects only security-relevant device metadata. No personal files, messages, photos, or browsing history are ever accessed or shared.</string>
+    <string name="onboarding_page4_title">Ready to connect</string>
+    <string name="onboarding_page4_body">Enter your organisation\'s backend URL and enrollment token to activate continuous monitoring.</string>
+
+    <!-- Scan Complete -->
+    <string name="scan_complete_title">Scan Complete</string>
+    <string name="scan_complete_subtitle">Device security analysis finished</string>
+    <string name="scan_complete_view_report">View Full Report</string>
+    <string name="scan_complete_done">Done</string>
+    <string name="scan_complete_share">Share Brief</string>
+    <string name="scan_complete_findings_label">Key Findings</string>
+    <string name="scan_complete_no_findings">No notable risk signals detected.</string>
+    <string name="scan_complete_uploaded">Uploaded to backend</string>
+    <string name="scan_complete_queued">Queued for upload</string>
+
+    <!-- Support -->
+    <string name="support_title">Help &amp; Support</string>
+    <string name="support_app_info">App Information</string>
+    <string name="support_version_label">Version</string>
+    <string name="support_device_id_label">Device ID</string>
+    <string name="support_backend_label">Backend</string>
+    <string name="support_faq_title">Frequently Asked Questions</string>
+    <string name="support_faq_q1">Why does AEGIS need device permissions?</string>
+    <string name="support_faq_a1">AEGIS reads security-relevant device state: root status, bootloader, security patch date, and installed app list. This is required to generate a risk posture report for your organisation.</string>
+    <string name="support_faq_q2">Is my data shared with third parties?</string>
+    <string name="support_faq_a2">No. All data is sent only to the backend URL configured by your organisation. AEGIS does not share data with Anthropic or any third party.</string>
+    <string name="support_faq_q3">How often does AEGIS scan?</string>
+    <string name="support_faq_a3">Scans run automatically every 60 minutes in the background. You can trigger an immediate scan at any time from the main screen.</string>
+    <string name="support_faq_q4">What is Play Integrity?</string>
+    <string name="support_faq_a4">Google Play Integrity is a security API that verifies whether your device and app meet Google\'s integrity standards. AEGIS requests an integrity token as part of the security assessment.</string>
+    <string name="support_faq_q5">Why is my upload status showing Failed?</string>
+    <string name="support_faq_a5">Upload failures occur when the backend is unreachable or the enrollment token is invalid. Check your backend URL in Device Setup and ensure you have network connectivity.</string>
+    <string name="support_faq_q6">How do I unenroll my device?</string>
+    <string name="support_faq_a6">Tap "Clear Local Data" at the bottom of this screen to remove all local AEGIS data. Contact your administrator to remove the device from the backend.</string>
+    <string name="support_contact_title">Contact Support</string>
+    <string name="support_email">Email Support</string>
+    <string name="support_report_bug">Report a Bug</string>
+    <string name="support_privacy_policy">Privacy Policy</string>
+    <string name="support_terms">Terms of Use</string>
+    <string name="support_clear_data">Clear Local Data</string>
+    <string name="support_clear_data_confirm">This will remove all locally stored scan history and configuration. Are you sure?</string>
+    <string name="support_clear_data_confirm_yes">Clear</string>
+    <string name="support_clear_data_confirm_no">Cancel</string>
+
+    <!-- Device Status -->
+    <string name="device_status_title">Device Status</string>
+    <string name="device_status_identity">Device Identity</string>
+    <string name="device_status_compliance">Compliance</string>
+    <string name="device_status_history">Recent Risk History</string>
+    <string name="device_status_re_enroll">Re-enroll Device</string>
+    <string name="device_status_disconnect">Disconnect Device</string>
+    <string name="device_status_last_verified">Last verified</string>
+    <string name="device_status_enrolled">Enrolled</string>
+    <string name="device_status_not_enrolled">Not enrolled</string>
+
+    <!-- Main Activity -->
+    <string name="main_title">AEGIS</string>
+    <string name="main_subtitle">Security Console</string>
+    <string name="main_scan_now">Scan Now</string>
+    <string name="main_menu_settings">Device Setup</string>
+    <string name="main_menu_device_status">Device Status</string>
+    <string name="main_menu_support">Help &amp; Support</string>
+    <string name="main_menu_toggle_theme">Toggle Theme</string>
+    <string name="main_risk_score_title">Risk Score</string>
+    <string name="main_recent_scans">Scan History</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Device Setup</string>
+    <string name="settings_subtitle">Configure your backend connection</string>
+    <string name="settings_connection_card_title">Backend Connection</string>
+    <string name="settings_backend_url_hint">Backend URL</string>
+    <string name="settings_device_id_hint">Device ID</string>
+    <string name="settings_token_hint">Enrollment Token</string>
+    <string name="settings_save">Save Connection</string>
+    <string name="settings_test">Test Connection</string>
+    <string name="settings_latest_payload">Latest Payload</string>
+    <string name="settings_latest_upload">Upload Status</string>
+
+    <!-- Common -->
+    <string name="back">Back</string>
+    <string name="copy">Copy</string>
+    <string name="share">Share</string>
+    <string name="loading">Loading…</string>
+    <string name="none">None</string>
+</resources>

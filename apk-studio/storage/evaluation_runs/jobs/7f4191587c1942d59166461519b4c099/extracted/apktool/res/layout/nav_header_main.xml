@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:orientation="vertical" android:background="@color/black" android:paddingLeft="16.0dp" android:paddingTop="16.0dp" android:paddingRight="16.0dp" android:paddingBottom="16.0dp" android:layout_width="match_parent" android:layout_height="@dimen/nav_header_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/secondaryColor" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" android:text="ALLSAFE" android:fontFamily="monospace" />
+    <TextView android:textSize="10.0sp" android:textColor="@color/secondaryColor" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dp" android:text="CYBERSECURITY" android:fontFamily="monospace" android:letterSpacing="0.1" />
+    <View android:background="@color/secondaryColor" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginTop="4.0dp" android:layout_marginBottom="4.0dp" />
+    <TextView android:textSize="10.0sp" android:textColor="@android:color/darker_gray" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="VULNERABILITY MODULES" android:fontFamily="monospace" android:letterSpacing="0.1" />
+</LinearLayout>

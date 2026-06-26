@@ -1,0 +1,1790 @@
+{
+  "schema_version": "4.11.7-specialist-classifiers",
+  "generated_at": "2026-06-24T23:30:39.298793+00:00",
+  "job_id": "76ab1b44a335478997f673155989b50c",
+  "filename": "malware_05_sieve.apk",
+  "summary": {
+    "package": "com.mwr.example.sieve",
+    "app_name": "Sieve",
+    "version_name": "1.0",
+    "size_bytes": 367886,
+    "sha256": "31878e33c526f9747c9b7ff38954bfcb2acc2a947ce7103589438e034637a6b7"
+  },
+  "hashes": {
+    "sha256": "31878e33c526f9747c9b7ff38954bfcb2acc2a947ce7103589438e034637a6b7",
+    "sha1": "1017a046cd963d7be05c7d6302de48c94b4c6850",
+    "md5": "b011baaa8aac34fbdf68691e63a96a08"
+  },
+  "static": {
+    "package": "com.mwr.example.sieve",
+    "app_label": "Sieve",
+    "version_name": "1.0",
+    "version_code": "1",
+    "min_sdk": "8",
+    "target_sdk": "17",
+    "permissions": [
+      "android.permission.READ_EXTERNAL_STORAGE",
+      "android.permission.WRITE_EXTERNAL_STORAGE",
+      "android.permission.INTERNET"
+    ],
+    "components": {
+      "activities": [
+        "FileSelectActivity",
+        "MainLoginActivity",
+        "PWList",
+        "SettingsActivity",
+        "AddEntryActivity",
+        "ShortLoginActivity",
+        "WelcomeActivity",
+        "PINActivity"
+      ],
+      "services": [
+        "AuthService",
+        "CryptoService"
+      ],
+      "receivers": [],
+      "providers": [
+        "DBContentProvider",
+        "FileBackupProvider"
+      ],
+      "exported_count": 6
+    },
+    "network_indicators": {
+      "urls": [
+        "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u000e\u000eRelativeLayout\u0000\b\bTextView\u0000\b\bEditText\u0000\u0006\u0006Button\u0000\u0004\u0004save\u0000\u0006\u0006cancel\u0000\u0000\u0000\u0001\b\u0000H\u0000\u0000\u0000\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001O\u0001\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0001",
+        "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u000e\u000eRelativeLayout\u0000\b\bTextView\u0000\b\bListView\u0000\u0000\u0000\u0001\b\u0000$\u0000\u0000\u0000\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001O\u0001\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0007\u0000\u0000\u0000\b\u0000\u0000\u0000\u0002\u0001\u0010\u0000L\u0000\u0000\u0000\u0001\u0000\u0000\u0000",
+        "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u000e\u000eRelativeLayout\u0000\u0006\u0006Button\u0000\u0005\u0005login\u0000\b\bEditText\u0000\b\bTextView\u0000\u0010\u0010sans-serif-light\u0000\u0000\u0000\u0000\u0001\b\u0000d\u0000\u0000\u0000\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001O\u0001\u0001\u0001o\u0002\u0001\u0001\u0001\u0001\u0001X\u0001\u0001\u0001P\u0001\u0001\u0001f\u0002\u0001\u0001e\u0002\u0001\u0001d\u0002\u0001\u0001",
+        "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u000e\u000eRelativeLayout\u0000\b\bEditText\u0000\b\bTextView\u0000\u0003\u0003PIN\u0000\u0006\u0006Button\u0000\u0006\u0006submit\u0000\b\bPIN(old)\u0000\u0000\u0000\u0000\u0001\b\u0000T\u0000\u0000\u0000\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0001",
+        "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u000e\u000eRelativeLayout\u0000\b\bListView\u0000\b\bTextView\u0000\u0000\u0000\u0001\b\u0000(\u0000\u0000\u0000\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001O\u0001\u0001\u0001\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0001\u0000\u0000\u0000\b\u0000\u0000\u0000",
+        "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u000e\u000eRelativeLayout\u0000",
+        "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u000e\u000eRelativeLayout\u0000\b\bEditText\u0000",
+        "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u000e\u000eRelativeLayout\u0000\b\bTextView\u0000\b\bEditText\u0000\u0006\u0006Button\u0000\u0006\u0006submit\u0000\u0000\u0000\u0000\u0001\b\u0000P\u0000\u0000\u0000\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001O\u0001\u0001\u00014\u0000\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0001",
+        "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000",
+        "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u0004\u0004menu\u0000\u0000\u0000\u0000\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0002\u0001\u0010\u0000$\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0001\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0000\u0000",
+        "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u0004\u0004menu\u0000\u0004\u0004item\u0000\u0000\u0000\u0000\u0001\b\u0000",
+        "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u0004\u0004menu\u0000\u0000\u0000\u0000\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0002\u0001\u0010\u0000$\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0001\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0000\u0000",
+        "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u0004\u0004menu\u0000\u0004\u0004item\u0000\u0000\u0000\u0001\b\u0000\u0018\u0000\u0000\u0000\u0000\u0001\u0001\u0001\u0001\u0001\u0002\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0004\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0002\u0001\u0010\u0000$\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0007\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u0001\u0010\u0000t\u0000\u0000\u0000\u0003\u0000\u0000\u0000\b\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0004\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0000\u0000\u0000\u0000\b\u0000\u0000\u00013\u0000\b\u0005\u0000\u0000\u0000\u0001\u0000\u0000\u0000\b\u0000\u0000\u0010d\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0003\u0000\u0000\u0000\b\u0000\u0000\u0001\u0002\u0000\u0005\u0005\u0000\u0000\u0000\u0002\u0000\u0000\u0000\b\u0000\u0000\u0011\u0000\u0000\u0000\u0000\u0003\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0007\u0000\u0000\u0000\b\u0000\u0000\u0000\u0003\u0001\u0010\u0000\u0018\u0000\u0000\u0000\b\u0000\u0000\u0000\u0007\u0000\u0000\u0000\u0001\u0001\u0010\u0000\u0018\u0000\u0000\u0000\b\u0000\u0000\u0000\u0004\u0000\u0000\u0000\u0005\u0000\u0000\u0000",
+        "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u0010\u0010PreferenceScreen\u0000\u000e\u000eListPreference\u0000\b\bpref_key\u0000\u0001\b\u0000",
+        "http://schemas.android.com/apk/res/android",
+        "http://xmlpull.org/v1/doc/features.html#process-namespaces"
+      ],
+      "domains": [
+        "android.support.v4.app",
+        "xmlpull.org"
+      ],
+      "ips": [
+        "10.0.2.2"
+      ],
+      "emails": []
+    },
+    "native_libraries": [
+      "lib/armeabi/libencrypt.so",
+      "lib/armeabi/libdecrypt.so"
+    ],
+    "dex_files": [
+      "classes.dex"
+    ],
+    "file_tree_sample": [
+      "res/layout/activity_add_entry.xml",
+      "res/layout/activity_file_select.xml",
+      "res/layout/activity_main_login.xml",
+      "res/layout/activity_pin.xml",
+      "res/layout/activity_pwlist.xml",
+      "res/layout/activity_settings.xml",
+      "res/layout/activity_short_login.xml",
+      "res/layout/activity_welcome.xml",
+      "res/layout/format_pwlist.xml",
+      "res/menu/activity_add_entry_add.xml",
+      "res/menu/activity_add_entry_edit.xml",
+      "res/menu/activity_file_select.xml",
+      "res/menu/activity_main_login.xml",
+      "res/menu/activity_pin.xml",
+      "res/menu/activity_pwlist.xml",
+      "res/menu/activity_settings.xml",
+      "res/menu/activity_short_login.xml",
+      "res/menu/activity_welcome.xml",
+      "res/xml/prefrences.xml",
+      "AndroidManifest.xml",
+      "resources.arsc",
+      "res/drawable-hdpi/ic_launcher.png",
+      "res/drawable-ldpi/ic_launcher.png",
+      "res/drawable-mdpi/ic_launcher.png",
+      "res/drawable-xhdpi/ic_launcher.png",
+      "classes.dex",
+      "lib/armeabi/gdbserver",
+      "lib/armeabi/libencrypt.so",
+      "lib/armeabi/libdecrypt.so",
+      "META-INF/MANIFEST.MF",
+      "META-INF/CERT.SF",
+      "META-INF/CERT.RSA"
+    ],
+    "secrets": [
+      {
+        "kind": "password",
+        "redacted_value": "Land...id",
+        "evidence_ref": "static.secrets"
+      },
+      {
+        "kind": "password",
+        "redacted_value": "Land...id",
+        "evidence_ref": "static.secrets"
+      },
+      {
+        "kind": "password",
+        "redacted_value": "Land...id",
+        "evidence_ref": "static.secrets"
+      },
+      {
+        "kind": "password",
+        "redacted_value": "Land...id",
+        "evidence_ref": "static.secrets"
+      }
+    ],
+    "webview_indicators": [],
+    "dynamic_code_indicators": [
+      {
+        "kind": "loadClass(",
+        "snippet": "Loader;      move-result-object v3      invoke-virtual {v3, p1}, Ljava/lang/ClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;      move-result-object v0      sget-object v3, Landr",
+        "evidence_ref": "static.dynamic_code_indicators.0"
+      }
+    ],
+    "crypto_indicators": [],
+    "root_check_indicators": [],
+    "anti_analysis_indicators": [],
+    "manifest": {
+      "decoded_manifest_ref": "extracted/apktool/AndroidManifest.xml",
+      "exported_components": 6
+    },
+    "decompiled_sources": {
+      "apktool": "extracted/apktool",
+      "jadx": "extracted/jadx",
+      "samples": [
+        {
+          "source": "aapt_badging",
+          "path": "tool-output/aapt_badging",
+          "size_bytes": 1093
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/AndroidManifest.xml",
+          "size_bytes": 3474
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/apktool.yml",
+          "size_bytes": 224
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/original/AndroidManifest.xml",
+          "size_bytes": 5816
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/res/layout/activity_add_entry.xml",
+          "size_bytes": 3934
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/res/layout/activity_file_select.xml",
+          "size_bytes": 621
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/res/layout/activity_main_login.xml",
+          "size_bytes": 1423
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/res/layout/activity_pin.xml",
+          "size_bytes": 2961
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/res/layout/activity_pwlist.xml",
+          "size_bytes": 671
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/res/layout/activity_settings.xml",
+          "size_bytes": 2481
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/res/layout/activity_short_login.xml",
+          "size_bytes": 1075
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/res/layout/activity_welcome.xml",
+          "size_bytes": 2380
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/res/layout/format_pwlist.xml",
+          "size_bytes": 572
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/res/menu/activity_add_entry_add.xml",
+          "size_bytes": 109
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/res/menu/activity_add_entry_edit.xml",
+          "size_bytes": 304
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/res/menu/activity_file_select.xml",
+          "size_bytes": 109
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/res/menu/activity_main_login.xml",
+          "size_bytes": 256
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/res/menu/activity_pin.xml",
+          "size_bytes": 109
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/res/menu/activity_pwlist.xml",
+          "size_bytes": 485
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/res/menu/activity_settings.xml",
+          "size_bytes": 109
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/res/menu/activity_short_login.xml",
+          "size_bytes": 109
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/res/menu/activity_welcome.xml",
+          "size_bytes": 109
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/res/values/ids.xml",
+          "size_bytes": 2252
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/res/values/public.xml",
+          "size_bytes": 10312
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/res/values/strings.xml",
+          "size_bytes": 4928
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/res/values/styles.xml",
+          "size_bytes": 420
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/res/values-large-v4/styles.xml",
+          "size_bytes": 344
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/res/values-v11/styles.xml",
+          "size_bytes": 133
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/res/values-v14/styles.xml",
+          "size_bytes": 133
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/res/xml/prefrences.xml",
+          "size_bytes": 342
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/accessibilityservice/AccessibilityServiceInfoCompat$AccessibilityServiceInfoIcsImpl.smali",
+          "size_bytes": 2700
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/accessibilityservice/AccessibilityServiceInfoCompat$AccessibilityServiceInfoStubImpl.smali",
+          "size_bytes": 1670
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/accessibilityservice/AccessibilityServiceInfoCompat$AccessibilityServiceInfoVersionImpl.smali",
+          "size_bytes": 1182
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/accessibilityservice/AccessibilityServiceInfoCompat.smali",
+          "size_bytes": 7915
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/accessibilityservice/AccessibilityServiceInfoCompatIcs.smali",
+          "size_bytes": 1841
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/ActivityCompat.smali",
+          "size_bytes": 730
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/ActivityCompatHoneycomb.smali",
+          "size_bytes": 776
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/BackStackRecord$Op.smali",
+          "size_bytes": 1057
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/BackStackRecord.smali",
+          "size_bytes": 68600
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/BackStackState$1.smali",
+          "size_bytes": 1874
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/BackStackState.smali",
+          "size_bytes": 18970
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/DialogFragment.smali",
+          "size_bytes": 20251
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/Fragment$1.smali",
+          "size_bytes": 1664
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/Fragment$InstantiationException.smali",
+          "size_bytes": 638
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/Fragment$SavedState$1.smali",
+          "size_bytes": 1975
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/Fragment$SavedState.smali",
+          "size_bytes": 2526
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/Fragment.smali",
+          "size_bytes": 87581
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/FragmentActivity$1.smali",
+          "size_bytes": 2248
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/FragmentActivity$2.smali",
+          "size_bytes": 1194
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/FragmentActivity$FragmentTag.smali",
+          "size_bytes": 1091
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/FragmentActivity$NonConfigurationInstances.smali",
+          "size_bytes": 1508
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/FragmentActivity.smali",
+          "size_bytes": 63683
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/FragmentContainer.smali",
+          "size_bytes": 217
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/FragmentManager$BackStackEntry.smali",
+          "size_bytes": 832
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/FragmentManager$OnBackStackChangedListener.smali",
+          "size_bytes": 506
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/FragmentManager.smali",
+          "size_bytes": 2853
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/FragmentManagerImpl$1.smali",
+          "size_bytes": 1121
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/FragmentManagerImpl$2.smali",
+          "size_bytes": 1604
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/FragmentManagerImpl$3.smali",
+          "size_bytes": 2046
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/FragmentManagerImpl$4.smali",
+          "size_bytes": 1940
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/FragmentManagerImpl$5.smali",
+          "size_bytes": 2603
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/FragmentManagerImpl.smali",
+          "size_bytes": 193371
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/FragmentManagerState$1.smali",
+          "size_bytes": 1946
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/FragmentManagerState.smali",
+          "size_bytes": 3155
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/FragmentPagerAdapter.smali",
+          "size_bytes": 9131
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/FragmentState$1.smali",
+          "size_bytes": 1855
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/FragmentState.smali",
+          "size_bytes": 12891
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/FragmentStatePagerAdapter.smali",
+          "size_bytes": 17330
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/FragmentTabHost$1.smali",
+          "size_bytes": 364
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/FragmentTabHost$DummyTabFactory.smali",
+          "size_bytes": 1368
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/FragmentTabHost$SavedState$1.smali",
+          "size_bytes": 2085
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/FragmentTabHost$SavedState.smali",
+          "size_bytes": 3841
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/FragmentTabHost$TabInfo.smali",
+          "size_bytes": 2860
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/FragmentTabHost.smali",
+          "size_bytes": 25235
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/FragmentTransaction.smali",
+          "size_bytes": 3321
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/ListFragment$1.smali",
+          "size_bytes": 1373
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/ListFragment$2.smali",
+          "size_bytes": 1563
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/ListFragment.smali",
+          "size_bytes": 22241
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/LoaderManager$LoaderCallbacks.smali",
+          "size_bytes": 1525
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/LoaderManager.smali",
+          "size_bytes": 2295
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/LoaderManagerImpl$LoaderInfo.smali",
+          "size_bytes": 43474
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/LoaderManagerImpl.smali",
+          "size_bytes": 49313
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/NavUtils$NavUtilsImpl.smali",
+          "size_bytes": 843
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/NavUtils$NavUtilsImplBase.smali",
+          "size_bytes": 5400
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/NavUtils$NavUtilsImplJB.smali",
+          "size_bytes": 2522
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/NavUtils.smali",
+          "size_bytes": 10019
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/NavUtilsJB.smali",
+          "size_bytes": 1234
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/NoSaveStateFrameLayout.smali",
+          "size_bytes": 2430
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/NotificationCompat$Action.smali",
+          "size_bytes": 1028
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/NotificationCompat$BigPictureStyle.smali",
+          "size_bytes": 2057
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/NotificationCompat$BigTextStyle.smali",
+          "size_bytes": 2021
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/NotificationCompat$Builder.smali",
+          "size_bytes": 16148
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/NotificationCompat$InboxStyle.smali",
+          "size_bytes": 2715
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/NotificationCompat$NotificationCompatImpl.smali",
+          "size_bytes": 563
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/NotificationCompat$NotificationCompatImplBase.smali",
+          "size_bytes": 1853
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/NotificationCompat$NotificationCompatImplHoneycomb.smali",
+          "size_bytes": 2350
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/NotificationCompat$NotificationCompatImplIceCreamSandwich.smali",
+          "size_bytes": 2651
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/NotificationCompat$NotificationCompatImplJellybean.smali",
+          "size_bytes": 9087
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/NotificationCompat$Style.smali",
+          "size_bytes": 2382
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/NotificationCompat.smali",
+          "size_bytes": 3775
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/NotificationCompatHoneycomb.smali",
+          "size_bytes": 5558
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/NotificationCompatIceCreamSandwich.smali",
+          "size_bytes": 5864
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/NotificationCompatJellybean.smali",
+          "size_bytes": 10809
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/ServiceCompat.smali",
+          "size_bytes": 329
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/ShareCompat$IntentBuilder.smali",
+          "size_bytes": 24039
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/ShareCompat$IntentReader.smali",
+          "size_bytes": 16704
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/ShareCompat$ShareCompatImpl.smali",
+          "size_bytes": 629
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/ShareCompat$ShareCompatImplBase.smali",
+          "size_bytes": 4218
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/ShareCompat$ShareCompatImplICS.smali",
+          "size_bytes": 1966
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/ShareCompat$ShareCompatImplJB.smali",
+          "size_bytes": 996
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/ShareCompat.smali",
+          "size_bytes": 5651
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/ShareCompatICS.smali",
+          "size_bytes": 2115
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/ShareCompatJB.smali",
+          "size_bytes": 502
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/SuperNotCalledException.smali",
+          "size_bytes": 361
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/TaskStackBuilder$TaskStackBuilderImpl.smali",
+          "size_bytes": 585
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/TaskStackBuilder$TaskStackBuilderImplBase.smali",
+          "size_bytes": 1365
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/TaskStackBuilder$TaskStackBuilderImplHoneycomb.smali",
+          "size_bytes": 1427
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/TaskStackBuilder$TaskStackBuilderImplJellybean.smali",
+          "size_bytes": 1450
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/TaskStackBuilder.smali",
+          "size_bytes": 16407
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/TaskStackBuilderHoneycomb.smali",
+          "size_bytes": 653
+        }
+      ]
+    },
+    "tools": {
+      "aapt": {
+        "available": true,
+        "path": "/usr/bin/aapt",
+        "status": "ok",
+        "returncode": 0
+      },
+      "apksigner": {
+        "available": true,
+        "path": "/usr/bin/apksigner",
+        "status": "ok",
+        "returncode": 0
+      },
+      "apktool": {
+        "available": true,
+        "path": "/usr/local/bin/apktool",
+        "status": "ok",
+        "output_dir": "extracted/apktool",
+        "returncode": 0,
+        "output_sample": "I: Using Apktool 3.0.2 on app.apk with 8 threads\nI: Loading resource table...\nI: Baksmaling classes.dex...\nI: Decoding value resources...\nI: Loading resource table from file: /root/.local/share/apktool/framework/1.apk\nI: Decoding file resources...\nI: Generating values XMLs...\nI: Decoding AndroidManifest.xml with resources...\nI: Copying original files...\nI: Copying lib...\nI: Copying unknown files...\n"
+      },
+      "jadx": {
+        "available": true,
+        "path": "/usr/local/bin/jadx",
+        "status": "ok",
+        "output_dir": "extracted/jadx",
+        "timeout_seconds": 170,
+        "threads": 1,
+        "returncode": 0,
+        "output_sample": "Exception in thread \"AWT-EventQueue-0\" java.awt.HeadlessException: \nNo X11 DISPLAY variable was set,\nor no headful library support was found,\nbut this program performed an operation which requires it.\n\tat java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:164)\n\tat java.desktop/java.awt.Window.<init>(Window.java:553)\n\tat java.desktop/java.awt.Frame.<init>(Frame.java:428)\n\tat java.desktop/java.awt.Frame.<init>(Frame.java:393)\n\tat java.desktop/javax.swing.JFrame.<init>(JFrame.java:180)\n\tat jadx.gui.ui.MainWindow.<init>(MainWindow.java:255)\n\tat jadx.gui.JadxGUI.lambda$main$0(JadxGUI.java:41)\n\tat java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318)\n\tat java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773)\n\tat java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720)\n\tat java.desktop/java.awt.EventQueue$4.run(EventQueue.java:714)\n\tat java.base/java.security.AccessController.doPrivileged(AccessController.java:400)\n\tat java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87)\n\tat java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742)\n\tat java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)\n\tat java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)\n\tat java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)\n\tat java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)\n\tat java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)\n\tat java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)\n"
+      }
+    },
+    "warnings": [],
+    "evidence_refs": [
+      "static.permissions",
+      "static.components.exported_count",
+      "static.network_indicators.domains",
+      "static.network_indicators.urls",
+      "static.secrets",
+      "static.webview_indicators",
+      "static.dynamic_code_indicators",
+      "static.crypto_indicators",
+      "static.root_check_indicators",
+      "static.anti_analysis_indicators",
+      "static.native_libraries",
+      "static.decompiled_sources"
+    ],
+    "certificate": {
+      "verified": true,
+      "output_sample": "Signer #1 certificate DN: CN=Android Debug, O=Android, C=US\nSigner #1 certificate SHA-256 digest: dca76ba76f4b3f5dea55952a5e85670fb7fbd298fe4ae6f2ca4b5b6aba0df5c1\nSigner #1 certificate SHA-1 digest: 1901fb7891bfc127363701812b81735e3ee3de08\nSigner #1 certificate MD5 digest: a8890569c57dccd72705995bbe2b411d\n"
+    }
+  },
+  "dynamic": {},
+  "risk": {
+    "score": 44,
+    "level": "low",
+    "reasons": [
+      {
+        "code": "exported_components",
+        "bucket": "context",
+        "weight": 2,
+        "detail": "6 exported components",
+        "evidence_ref": "static.components.exported_count"
+      },
+      {
+        "code": "network_indicators",
+        "bucket": "context",
+        "weight": 1,
+        "detail": "2 domains found",
+        "evidence_ref": "static.network_indicators.domains"
+      },
+      {
+        "code": "cleartext_http_urls",
+        "bucket": "context",
+        "weight": 6,
+        "detail": "16 cleartext HTTP URLs found",
+        "evidence_ref": "static.network_indicators.urls"
+      },
+      {
+        "code": "embedded_secrets",
+        "bucket": "context",
+        "weight": 25,
+        "detail": "4 possible secrets",
+        "evidence_ref": "static.secrets",
+        "strong_evidence": true
+      },
+      {
+        "code": "native_code",
+        "bucket": "context",
+        "weight": 2,
+        "detail": "2 native libraries",
+        "evidence_ref": "static.native_libraries"
+      },
+      {
+        "code": "dynamic_code_loading",
+        "bucket": "context",
+        "weight": 3,
+        "detail": "1 dynamic-code indicators",
+        "evidence_ref": "static.dynamic_code_indicators",
+        "strong_evidence": false
+      },
+      {
+        "code": "dynamic_code_network_combo",
+        "bucket": "combo",
+        "weight": 10,
+        "detail": "Dynamic code indicators plus network indicators",
+        "evidence_ref": "static.dynamic_code_indicators",
+        "strong_evidence": true
+      }
+    ],
+    "risk_reasons": [
+      {
+        "code": "exported_components",
+        "bucket": "context",
+        "weight": 2,
+        "detail": "6 exported components",
+        "evidence_ref": "static.components.exported_count"
+      },
+      {
+        "code": "network_indicators",
+        "bucket": "context",
+        "weight": 1,
+        "detail": "2 domains found",
+        "evidence_ref": "static.network_indicators.domains"
+      },
+      {
+        "code": "cleartext_http_urls",
+        "bucket": "context",
+        "weight": 6,
+        "detail": "16 cleartext HTTP URLs found",
+        "evidence_ref": "static.network_indicators.urls"
+      },
+      {
+        "code": "embedded_secrets",
+        "bucket": "context",
+        "weight": 25,
+        "detail": "4 possible secrets",
+        "evidence_ref": "static.secrets",
+        "strong_evidence": true
+      },
+      {
+        "code": "native_code",
+        "bucket": "context",
+        "weight": 2,
+        "detail": "2 native libraries",
+        "evidence_ref": "static.native_libraries"
+      },
+      {
+        "code": "dynamic_code_loading",
+        "bucket": "context",
+        "weight": 3,
+        "detail": "1 dynamic-code indicators",
+        "evidence_ref": "static.dynamic_code_indicators",
+        "strong_evidence": false
+      },
+      {
+        "code": "dynamic_code_network_combo",
+        "bucket": "combo",
+        "weight": 10,
+        "detail": "Dynamic code indicators plus network indicators",
+        "evidence_ref": "static.dynamic_code_indicators",
+        "strong_evidence": true
+      }
+    ],
+    "informational_observations": [],
+    "risk_reason_groups": [
+      {
+        "group": "context:exported_components",
+        "title": "6 Exported Components",
+        "bucket": "context",
+        "count": 1,
+        "total_weight": 2,
+        "strong_evidence": false,
+        "examples": [
+          "6 exported components"
+        ],
+        "evidence_refs": [
+          "static.components.exported_count"
+        ]
+      },
+      {
+        "group": "context:network_indicators",
+        "title": "2 Domains Found",
+        "bucket": "context",
+        "count": 1,
+        "total_weight": 1,
+        "strong_evidence": false,
+        "examples": [
+          "2 domains found"
+        ],
+        "evidence_refs": [
+          "static.network_indicators.domains"
+        ]
+      },
+      {
+        "group": "context:cleartext_http_urls",
+        "title": "16 Cleartext Http Urls Found",
+        "bucket": "context",
+        "count": 1,
+        "total_weight": 6,
+        "strong_evidence": false,
+        "examples": [
+          "16 cleartext HTTP URLs found"
+        ],
+        "evidence_refs": [
+          "static.network_indicators.urls"
+        ]
+      },
+      {
+        "group": "context:embedded_secrets",
+        "title": "4 Possible Secrets",
+        "bucket": "context",
+        "count": 1,
+        "total_weight": 25,
+        "strong_evidence": true,
+        "examples": [
+          "4 possible secrets"
+        ],
+        "evidence_refs": [
+          "static.secrets"
+        ]
+      },
+      {
+        "group": "context:native_code",
+        "title": "2 Native Libraries",
+        "bucket": "context",
+        "count": 1,
+        "total_weight": 2,
+        "strong_evidence": false,
+        "examples": [
+          "2 native libraries"
+        ],
+        "evidence_refs": [
+          "static.native_libraries"
+        ]
+      },
+      {
+        "group": "context:dynamic_code_loading",
+        "title": "1 Dynamic-Code Indicators",
+        "bucket": "context",
+        "count": 1,
+        "total_weight": 3,
+        "strong_evidence": false,
+        "examples": [
+          "1 dynamic-code indicators"
+        ],
+        "evidence_refs": [
+          "static.dynamic_code_indicators"
+        ]
+      },
+      {
+        "group": "combo:dynamic_code_network_combo",
+        "title": "Dynamic Code Indicators Plus Network Indicators",
+        "bucket": "combo",
+        "count": 1,
+        "total_weight": 10,
+        "strong_evidence": true,
+        "examples": [
+          "Dynamic code indicators plus network indicators"
+        ],
+        "evidence_refs": [
+          "static.dynamic_code_indicators"
+        ]
+      }
+    ],
+    "risk_reason_count": 7,
+    "risk_reason_group_count": 7,
+    "observation_count": 0,
+    "total_reason_entries": 7,
+    "verdict_note": "Risk score is based on the listed contributing evidence groups.",
+    "score_breakdown": {
+      "permission_score_raw": 0,
+      "permission_score_capped": 0,
+      "permission_score_cap": 16,
+      "context_score": 39,
+      "combo_score": 5,
+      "dynamic_score_raw": 0,
+      "dynamic_score_capped": 0,
+      "dynamic_score_cap": 3,
+      "dynamic_generic_only": true,
+      "dynamic_high_or_critical_count": 0,
+      "dynamic_c2_like_count": 0,
+      "score_before_profile": 44,
+      "app_profile": "generic",
+      "expected_permission_reduction": 0,
+      "score_after_profile": 44,
+      "strong_evidence": true,
+      "hard_strong_evidence": true,
+      "hard_strong_evidence_count": 1,
+      "soft_strong_only": false,
+      "critical_calibration_applied": false,
+      "permission_reason_count": 0,
+      "combo_reason_count": 1,
+      "risk_reason_count": 7,
+      "risk_reason_group_count": 7,
+      "observation_count": 0,
+      "permission_heavy_downgrade_applied": false,
+      "high_risk_gate_applied": false
+    },
+    "calibration": {
+      "profile": "v4.7.2_false_positive_resistant_calibration",
+      "high_threshold": 88,
+      "critical_threshold": 96,
+      "permission_score_cap": 16,
+      "dynamic_generic_score_cap": 3,
+      "note": "False-positive resistant calibration: permissions, domains, exported components, and soft static indicators cannot produce Critical 100% without hard malicious evidence."
+    },
+    "summary": "Rule score 44/100 (low). Risk groups: 7; observations: 0"
+  },
+  "mitre_attack_mapping": [
+    {
+      "framework": "MITRE ATT&CK Mobile",
+      "tactic": "Defense Evasion",
+      "technique": "Dynamic Code Loading",
+      "evidence_ref": "static.dynamic_code_indicators",
+      "confidence": "medium",
+      "recommended_action": "Review loaded code paths and network download behavior."
+    },
+    {
+      "framework": "MITRE ATT&CK Mobile",
+      "tactic": "Command and Control",
+      "technique": "Application Layer Protocol / Network Communication",
+      "evidence_ref": "static.network_indicators",
+      "confidence": "medium",
+      "recommended_action": "Review contacted domains/IPs and block suspicious infrastructure."
+    },
+    {
+      "framework": "MITRE ATT&CK Mobile",
+      "tactic": "Credential Access",
+      "technique": "Hardcoded Credentials / Secrets",
+      "evidence_ref": "static.secrets",
+      "confidence": "high",
+      "recommended_action": "Rotate exposed keys and verify if secrets are production credentials."
+    }
+  ],
+  "network_analysis": {
+    "domains": [
+      "android.support.v4.app",
+      "xmlpull.org"
+    ],
+    "urls": [
+      "http://schemas.android.com/apk/res/android",
+      "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000",
+      "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u0004\u0004menu\u0000\u0000\u0000\u0000\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0002\u0001\u0010\u0000$\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0001\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0000\u0000",
+      "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u0004\u0004menu\u0000\u0000\u0000\u0000\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0002\u0001\u0010\u0000$\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0001\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0000\u0000",
+      "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u0004\u0004menu\u0000\u0004\u0004item\u0000\u0000\u0000\u0000\u0001\b\u0000",
+      "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u0004\u0004menu\u0000\u0004\u0004item\u0000\u0000\u0000\u0001\b\u0000\u0018\u0000\u0000\u0000\u0000\u0001\u0001\u0001\u0001\u0001\u0002\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0004\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0002\u0001\u0010\u0000$\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0007\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u0001\u0010\u0000t\u0000\u0000\u0000\u0003\u0000\u0000\u0000\b\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0004\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0000\u0000\u0000\u0000\b\u0000\u0000\u00013\u0000\b\u0005\u0000\u0000\u0000\u0001\u0000\u0000\u0000\b\u0000\u0000\u0010d\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0003\u0000\u0000\u0000\b\u0000\u0000\u0001\u0002\u0000\u0005\u0005\u0000\u0000\u0000\u0002\u0000\u0000\u0000\b\u0000\u0000\u0011\u0000\u0000\u0000\u0000\u0003\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0007\u0000\u0000\u0000\b\u0000\u0000\u0000\u0003\u0001\u0010\u0000\u0018\u0000\u0000\u0000\b\u0000\u0000\u0000\u0007\u0000\u0000\u0000\u0001\u0001\u0010\u0000\u0018\u0000\u0000\u0000\b\u0000\u0000\u0000\u0004\u0000\u0000\u0000\u0005\u0000\u0000\u0000",
+      "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u000e\u000eRelativeLayout\u0000",
+      "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u000e\u000eRelativeLayout\u0000\u0006\u0006Button\u0000\u0005\u0005login\u0000\b\bEditText\u0000\b\bTextView\u0000\u0010\u0010sans-serif-light\u0000\u0000\u0000\u0000\u0001\b\u0000d\u0000\u0000\u0000\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001O\u0001\u0001\u0001o\u0002\u0001\u0001\u0001\u0001\u0001X\u0001\u0001\u0001P\u0001\u0001\u0001f\u0002\u0001\u0001e\u0002\u0001\u0001d\u0002\u0001\u0001",
+      "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u000e\u000eRelativeLayout\u0000\b\bEditText\u0000",
+      "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u000e\u000eRelativeLayout\u0000\b\bEditText\u0000\b\bTextView\u0000\u0003\u0003PIN\u0000\u0006\u0006Button\u0000\u0006\u0006submit\u0000\b\bPIN(old)\u0000\u0000\u0000\u0000\u0001\b\u0000T\u0000\u0000\u0000\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0001",
+      "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u000e\u000eRelativeLayout\u0000\b\bListView\u0000\b\bTextView\u0000\u0000\u0000\u0001\b\u0000(\u0000\u0000\u0000\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001O\u0001\u0001\u0001\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0001\u0000\u0000\u0000\b\u0000\u0000\u0000",
+      "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u000e\u000eRelativeLayout\u0000\b\bTextView\u0000\b\bEditText\u0000\u0006\u0006Button\u0000\u0004\u0004save\u0000\u0006\u0006cancel\u0000\u0000\u0000\u0001\b\u0000H\u0000\u0000\u0000\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001O\u0001\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0001",
+      "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u000e\u000eRelativeLayout\u0000\b\bTextView\u0000\b\bEditText\u0000\u0006\u0006Button\u0000\u0006\u0006submit\u0000\u0000\u0000\u0000\u0001\b\u0000P\u0000\u0000\u0000\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001O\u0001\u0001\u00014\u0000\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0001",
+      "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u000e\u000eRelativeLayout\u0000\b\bTextView\u0000\b\bListView\u0000\u0000\u0000\u0001\b\u0000$\u0000\u0000\u0000\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001O\u0001\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0007\u0000\u0000\u0000\b\u0000\u0000\u0000\u0002\u0001\u0010\u0000L\u0000\u0000\u0000\u0001\u0000\u0000\u0000",
+      "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u0010\u0010PreferenceScreen\u0000\u000e\u000eListPreference\u0000\b\bpref_key\u0000\u0001\b\u0000",
+      "http://xmlpull.org/v1/doc/features.html#process-namespaces"
+    ],
+    "ips": [
+      "10.0.2.2"
+    ],
+    "cleartext_http_urls": [
+      "http://schemas.android.com/apk/res/android",
+      "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000",
+      "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u0004\u0004menu\u0000\u0000\u0000\u0000\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0002\u0001\u0010\u0000$\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0001\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0000\u0000",
+      "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u0004\u0004menu\u0000\u0000\u0000\u0000\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0002\u0001\u0010\u0000$\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0001\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0000\u0000",
+      "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u0004\u0004menu\u0000\u0004\u0004item\u0000\u0000\u0000\u0000\u0001\b\u0000",
+      "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u0004\u0004menu\u0000\u0004\u0004item\u0000\u0000\u0000\u0001\b\u0000\u0018\u0000\u0000\u0000\u0000\u0001\u0001\u0001\u0001\u0001\u0002\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0004\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0002\u0001\u0010\u0000$\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0007\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u0001\u0010\u0000t\u0000\u0000\u0000\u0003\u0000\u0000\u0000\b\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0004\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0000\u0000\u0000\u0000\b\u0000\u0000\u00013\u0000\b\u0005\u0000\u0000\u0000\u0001\u0000\u0000\u0000\b\u0000\u0000\u0010d\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0003\u0000\u0000\u0000\b\u0000\u0000\u0001\u0002\u0000\u0005\u0005\u0000\u0000\u0000\u0002\u0000\u0000\u0000\b\u0000\u0000\u0011\u0000\u0000\u0000\u0000\u0003\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0007\u0000\u0000\u0000\b\u0000\u0000\u0000\u0003\u0001\u0010\u0000\u0018\u0000\u0000\u0000\b\u0000\u0000\u0000\u0007\u0000\u0000\u0000\u0001\u0001\u0010\u0000\u0018\u0000\u0000\u0000\b\u0000\u0000\u0000\u0004\u0000\u0000\u0000\u0005\u0000\u0000\u0000",
+      "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u000e\u000eRelativeLayout\u0000",
+      "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u000e\u000eRelativeLayout\u0000\u0006\u0006Button\u0000\u0005\u0005login\u0000\b\bEditText\u0000\b\bTextView\u0000\u0010\u0010sans-serif-light\u0000\u0000\u0000\u0000\u0001\b\u0000d\u0000\u0000\u0000\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001O\u0001\u0001\u0001o\u0002\u0001\u0001\u0001\u0001\u0001X\u0001\u0001\u0001P\u0001\u0001\u0001f\u0002\u0001\u0001e\u0002\u0001\u0001d\u0002\u0001\u0001",
+      "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u000e\u000eRelativeLayout\u0000\b\bEditText\u0000",
+      "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u000e\u000eRelativeLayout\u0000\b\bEditText\u0000\b\bTextView\u0000\u0003\u0003PIN\u0000\u0006\u0006Button\u0000\u0006\u0006submit\u0000\b\bPIN(old)\u0000\u0000\u0000\u0000\u0001\b\u0000T\u0000\u0000\u0000\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0001",
+      "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u000e\u000eRelativeLayout\u0000\b\bListView\u0000\b\bTextView\u0000\u0000\u0000\u0001\b\u0000(\u0000\u0000\u0000\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001O\u0001\u0001\u0001\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0001\u0000\u0000\u0000\b\u0000\u0000\u0000",
+      "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u000e\u000eRelativeLayout\u0000\b\bTextView\u0000\b\bEditText\u0000\u0006\u0006Button\u0000\u0004\u0004save\u0000\u0006\u0006cancel\u0000\u0000\u0000\u0001\b\u0000H\u0000\u0000\u0000\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001O\u0001\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0001",
+      "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u000e\u000eRelativeLayout\u0000\b\bTextView\u0000\b\bEditText\u0000\u0006\u0006Button\u0000\u0006\u0006submit\u0000\u0000\u0000\u0000\u0001\b\u0000P\u0000\u0000\u0000\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001O\u0001\u0001\u00014\u0000\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0001",
+      "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u000e\u000eRelativeLayout\u0000\b\bTextView\u0000\b\bListView\u0000\u0000\u0000\u0001\b\u0000$\u0000\u0000\u0000\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001O\u0001\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0007\u0000\u0000\u0000\b\u0000\u0000\u0000\u0002\u0001\u0010\u0000L\u0000\u0000\u0000\u0001\u0000\u0000\u0000",
+      "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u0010\u0010PreferenceScreen\u0000\u000e\u000eListPreference\u0000\b\bpref_key\u0000\u0001\b\u0000",
+      "http://xmlpull.org/v1/doc/features.html#process-namespaces"
+    ],
+    "suspicious_domains": [],
+    "static_domain_count": 2,
+    "dynamic_domain_count": 0,
+    "remote_ip_count": 1,
+    "cleartext_http_count": 16,
+    "suspicious_domain_count": 0,
+    "note": "Network analysis combines static strings with emulator artifacts. It is triage evidence, not proof of live C2 behavior."
+  },
+  "specialist_classifiers": {
+    "schema_version": "4.11.7-specialist-classifiers",
+    "classifiers": [
+      {
+        "id": "permission_risk",
+        "name": "Permission Risk Classifier",
+        "score": 26,
+        "severity": "low",
+        "description": "Scores permission abuse potential and manifest attack surface.",
+        "evidence": [
+          {
+            "ref": "static.components.exported_count",
+            "title": "Exported attack surface",
+            "detail": 6,
+            "weight": 18
+          },
+          {
+            "ref": "risk.risk_reason_groups",
+            "title": "Permission/combo risk groups",
+            "detail": [
+              "Dynamic Code Indicators Plus Network Indicators"
+            ],
+            "weight": 16
+          }
+        ],
+        "evidence_count": 2,
+        "recommendation": "No major permission-risk pattern detected. Continue standard review."
+      },
+      {
+        "id": "network_risk",
+        "name": "Network Risk Classifier",
+        "score": 100,
+        "severity": "critical",
+        "description": "Scores static and dynamic network indicators, cleartext traffic, suspicious domains, and runtime connectivity.",
+        "evidence": [
+          {
+            "ref": "network_analysis.domains",
+            "title": "Domains",
+            "detail": [
+              "android.support.v4.app",
+              "xmlpull.org"
+            ],
+            "weight": 4
+          },
+          {
+            "ref": "network_analysis.ips",
+            "title": "Remote IPs",
+            "detail": [
+              "10.0.2.2"
+            ],
+            "weight": 2
+          },
+          {
+            "ref": "network_analysis.cleartext_http_urls",
+            "title": "Cleartext HTTP endpoints",
+            "detail": [
+              "http://schemas.android.com/apk/res/android",
+              "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000",
+              "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u0004\u0004menu\u0000\u0000\u0000\u0000\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0002\u0001\u0010\u0000$\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0001\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0000\u0000",
+              "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u0004\u0004menu\u0000\u0000\u0000\u0000\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0002\u0001\u0010\u0000$\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0001\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0000\u0000",
+              "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u0004\u0004menu\u0000\u0004\u0004item\u0000\u0000\u0000\u0000\u0001\b\u0000",
+              "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u0004\u0004menu\u0000\u0004\u0004item\u0000\u0000\u0000\u0001\b\u0000\u0018\u0000\u0000\u0000\u0000\u0001\u0001\u0001\u0001\u0001\u0002\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0004\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0002\u0001\u0010\u0000$\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0007\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u0001\u0010\u0000t\u0000\u0000\u0000\u0003\u0000\u0000\u0000\b\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0004\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0000\u0000\u0000\u0000\b\u0000\u0000\u00013\u0000\b\u0005\u0000\u0000\u0000\u0001\u0000\u0000\u0000\b\u0000\u0000\u0010d\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0003\u0000\u0000\u0000\b\u0000\u0000\u0001\u0002\u0000\u0005\u0005\u0000\u0000\u0000\u0002\u0000\u0000\u0000\b\u0000\u0000\u0011\u0000\u0000\u0000\u0000\u0003\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0007\u0000\u0000\u0000\b\u0000\u0000\u0000\u0003\u0001\u0010\u0000\u0018\u0000\u0000\u0000\b\u0000\u0000\u0000\u0007\u0000\u0000\u0000\u0001\u0001\u0010\u0000\u0018\u0000\u0000\u0000\b\u0000\u0000\u0000\u0004\u0000\u0000\u0000\u0005\u0000\u0000\u0000",
+              "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u000e\u000eRelativeLayout\u0000",
+              "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u000e\u000eRelativeLayout\u0000\u0006\u0006Button\u0000\u0005\u0005login\u0000\b\bEditText\u0000\b\bTextView\u0000\u0010\u0010sans-serif-light\u0000\u0000\u0000\u0000\u0001\b\u0000d\u0000\u0000\u0000\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001O\u0001\u0001\u0001o\u0002\u0001\u0001\u0001\u0001\u0001X\u0001\u0001\u0001P\u0001\u0001\u0001f\u0002\u0001\u0001e\u0002\u0001\u0001d\u0002\u0001\u0001",
+              "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u000e\u000eRelativeLayout\u0000\b\bEditText\u0000",
+              "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u000e\u000eRelativeLayout\u0000\b\bEditText\u0000\b\bTextView\u0000\u0003\u0003PIN\u0000\u0006\u0006Button\u0000\u0006\u0006submit\u0000\b\bPIN(old)\u0000\u0000\u0000\u0000\u0001\b\u0000T\u0000\u0000\u0000\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0001"
+            ],
+            "weight": 30
+          }
+        ],
+        "evidence_count": 3,
+        "recommendation": "Investigate suspicious domains/IPs, block cleartext HTTP where possible, and validate whether contacted endpoints match the legitimate app backend."
+      },
+      {
+        "id": "secrets_crypto",
+        "name": "Secrets Classifier",
+        "score": 88,
+        "severity": "critical",
+        "description": "Detects hardcoded secrets, crypto indicators, and environment/root-check patterns.",
+        "evidence": [
+          {
+            "ref": "static.secrets",
+            "title": "Embedded secrets / keys",
+            "detail": [
+              {
+                "kind": "password",
+                "redacted_value": "Land...id",
+                "evidence_ref": "static.secrets"
+              },
+              {
+                "kind": "password",
+                "redacted_value": "Land...id",
+                "evidence_ref": "static.secrets"
+              },
+              {
+                "kind": "password",
+                "redacted_value": "Land...id",
+                "evidence_ref": "static.secrets"
+              },
+              {
+                "kind": "password",
+                "redacted_value": "Land...id",
+                "evidence_ref": "static.secrets"
+              }
+            ],
+            "weight": 55
+          }
+        ],
+        "evidence_count": 1,
+        "recommendation": "Rotate exposed credentials, review API keys/tokens, and avoid shipping hardcoded secrets. Validate crypto usage and root-check intent."
+      },
+      {
+        "id": "webview_security",
+        "name": "WebView Classifier",
+        "score": 100,
+        "severity": "critical",
+        "description": "Scores WebView exposure, JavaScript/file-access style indicators, and unsafe HTTP loading.",
+        "evidence": [
+          {
+            "ref": "network_analysis.cleartext_http_urls",
+            "title": "Cleartext Web/HTTP URLs",
+            "detail": [
+              "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u000e\u000eRelativeLayout\u0000\b\bTextView\u0000\b\bEditText\u0000\u0006\u0006Button\u0000\u0004\u0004save\u0000\u0006\u0006cancel\u0000\u0000\u0000\u0001\b\u0000H\u0000\u0000\u0000\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001O\u0001\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0001",
+              "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u000e\u000eRelativeLayout\u0000\b\bTextView\u0000\b\bListView\u0000\u0000\u0000\u0001\b\u0000$\u0000\u0000\u0000\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001O\u0001\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0007\u0000\u0000\u0000\b\u0000\u0000\u0000\u0002\u0001\u0010\u0000L\u0000\u0000\u0000\u0001\u0000\u0000\u0000",
+              "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u000e\u000eRelativeLayout\u0000\u0006\u0006Button\u0000\u0005\u0005login\u0000\b\bEditText\u0000\b\bTextView\u0000\u0010\u0010sans-serif-light\u0000\u0000\u0000\u0000\u0001\b\u0000d\u0000\u0000\u0000\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001O\u0001\u0001\u0001o\u0002\u0001\u0001\u0001\u0001\u0001X\u0001\u0001\u0001P\u0001\u0001\u0001f\u0002\u0001\u0001e\u0002\u0001\u0001d\u0002\u0001\u0001",
+              "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u000e\u000eRelativeLayout\u0000\b\bEditText\u0000\b\bTextView\u0000\u0003\u0003PIN\u0000\u0006\u0006Button\u0000\u0006\u0006submit\u0000\b\bPIN(old)\u0000\u0000\u0000\u0000\u0001\b\u0000T\u0000\u0000\u0000\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0001",
+              "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u000e\u000eRelativeLayout\u0000\b\bListView\u0000\b\bTextView\u0000\u0000\u0000\u0001\b\u0000(\u0000\u0000\u0000\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001O\u0001\u0001\u0001\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0001\u0000\u0000\u0000\b\u0000\u0000\u0000",
+              "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u000e\u000eRelativeLayout\u0000",
+              "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u000e\u000eRelativeLayout\u0000\b\bEditText\u0000",
+              "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u000e\u000eRelativeLayout\u0000\b\bTextView\u0000\b\bEditText\u0000\u0006\u0006Button\u0000\u0006\u0006submit\u0000\u0000\u0000\u0000\u0001\b\u0000P\u0000\u0000\u0000\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001O\u0001\u0001\u00014\u0000\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0001",
+              "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000",
+              "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u0004\u0004menu\u0000\u0000\u0000\u0000\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0002\u0001\u0010\u0000$\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0001\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0000\u0000"
+            ],
+            "weight": 30
+          }
+        ],
+        "evidence_count": 1,
+        "recommendation": "Review WebView settings, disable unsafe JavaScript bridges/file access where possible, enforce HTTPS, and restrict loaded domains."
+      },
+      {
+        "id": "dynamic_behavior",
+        "name": "Dynamic Behavior Classifier",
+        "score": 0,
+        "severity": "informational",
+        "description": "Scores emulator runtime indicators, dynamic coverage, observed behavior, and cleanup state.",
+        "evidence": [],
+        "evidence_count": 0,
+        "recommendation": "Runtime behavior did not show strong indicators in the captured path. Consider longer dynamic coverage for high-value samples."
+      },
+      {
+        "id": "mitre_mapping",
+        "name": "MITRE Classifier",
+        "score": 50,
+        "severity": "medium",
+        "description": "Summarizes mapped MITRE Mobile tactics/techniques and mapping confidence.",
+        "evidence": [
+          {
+            "ref": "mitre_attack_mapping",
+            "title": "Mapped MITRE techniques",
+            "detail": [
+              {
+                "tactic": "Defense Evasion",
+                "technique": "Dynamic Code Loading",
+                "confidence": "medium"
+              },
+              {
+                "tactic": "Command and Control",
+                "technique": "Application Layer Protocol / Network Communication",
+                "confidence": "medium"
+              },
+              {
+                "tactic": "Credential Access",
+                "technique": "Hardcoded Credentials / Secrets",
+                "confidence": "high"
+              }
+            ],
+            "weight": 30
+          },
+          {
+            "ref": "mitre_attack_mapping.confidence",
+            "title": "High-confidence mappings",
+            "detail": [
+              {
+                "tactic": "Credential Access",
+                "technique": "Hardcoded Credentials / Secrets"
+              }
+            ],
+            "weight": 12
+          }
+        ],
+        "evidence_count": 2,
+        "recommendation": "Use the MITRE mapping to plan analyst review, response actions, and report explanation. Focus on high-confidence tactics first.",
+        "tactics": [
+          "Defense Evasion",
+          "Command and Control",
+          "Credential Access"
+        ],
+        "techniques": [
+          "Dynamic Code Loading",
+          "Application Layer Protocol / Network Communication",
+          "Hardcoded Credentials / Secrets"
+        ]
+      }
+    ],
+    "summary": {
+      "classifier_count": 6,
+      "max_score": 100,
+      "max_severity": "critical",
+      "high_or_critical_count": 3,
+      "medium_plus_count": 4,
+      "note": "Specialist classifiers are deterministic, evidence-backed views. They complement the final risk score and help analyst triage."
+    }
+  },
+  "recommended_actions": [
+    {
+      "priority": "low",
+      "action": "No immediate blocking action from current evidence.",
+      "rationale": "Current evidence did not trigger elevated triage state."
+    },
+    {
+      "priority": "medium",
+      "action": "Run dynamic analysis in a disposable emulator.",
+      "rationale": "Runtime behavior is missing or incomplete."
+    },
+    {
+      "priority": "high",
+      "action": "Rotate and validate hardcoded secrets.",
+      "rationale": "Hardcoded credentials or API keys were detected."
+    },
+    {
+      "priority": "medium",
+      "action": "Review network indicators.",
+      "rationale": "Domains/IPs were found statically or dynamically."
+    },
+    {
+      "priority": "medium",
+      "action": "Use MITRE mapping to guide analyst workflow.",
+      "rationale": "Mapped tactics provide a structured review path."
+    }
+  ],
+  "agentic_response": {
+    "enabled": true,
+    "triggered": false,
+    "risk_level": "low",
+    "risk_score": 44,
+    "policy": {
+      "enabled": true,
+      "dry_run": true,
+      "risk_score_threshold": 75,
+      "email_enabled": false,
+      "webhook_enabled": false,
+      "quarantine_enabled": true,
+      "require_approval_for_destructive": true
+    },
+    "actions": [
+      {
+        "ts": "2026-06-24T23:30:39.374712+00:00",
+        "type": "no_action",
+        "status": "skipped",
+        "message": "Risk did not meet agentic threshold.",
+        "data": {}
+      }
+    ],
+    "generated_at": "2026-06-24T23:30:39.366588+00:00",
+    "message": "No agentic action was triggered."
+  },
+  "ai": {
+    "enabled": false,
+    "routing_decision": {
+      "path": "suspicious_primary_llm",
+      "models": [
+        "primary_llm"
+      ],
+      "human_review": false,
+      "critical_signal": false,
+      "high_signal": false,
+      "suspicious": true,
+      "ambiguous": false,
+      "rule_score": 44,
+      "calibration": {
+        "profile": "v3.5_benign_runtime_context_aware",
+        "human_review_threshold": 88,
+        "note": "Generic runtime observations and permission-heavy samples route to medium analysis unless hard strong evidence is present."
+      },
+      "routing_reasons": {
+        "dangerous_permission_count": 0,
+        "has_accessibility_plus_overlay": false,
+        "suspicious_domain_count": 0,
+        "cleartext_http_url_count": 16,
+        "exported_component_count": 6,
+        "has_embedded_secrets": true,
+        "has_webview_indicator": false,
+        "has_dynamic_code_indicator": true,
+        "has_strong_rule_evidence": true,
+        "app_profile": "generic",
+        "permission_heavy_downgrade_applied": false,
+        "strong_rule_codes": [
+          "embedded_secrets",
+          "dynamic_code_network_combo"
+        ],
+        "dynamic_indicator_count": 0,
+        "dynamic_network_signal": false,
+        "dynamic_generic_runtime_only": false,
+        "dynamic_c2_signal": false
+      }
+    },
+    "final_assessment": {
+      "risk_score": 44,
+      "risk_level": "low",
+      "confidence": 0.55,
+      "verdict": "Low-risk APK with minor indicators",
+      "needs_human_review": false,
+      "review_status": "not_required",
+      "evidence_quality": {
+        "validated_findings_count": 2,
+        "dropped_model_findings_count": 0,
+        "claim_downgraded_count": 0,
+        "dropped_model_findings": []
+      }
+    },
+    "evidence_findings": [
+      {
+        "id": "finding-001",
+        "source_model_role": "ai_disabled",
+        "source_model": "local-fallback",
+        "severity": "medium",
+        "title": "Dynamic code loading indicators",
+        "explanation": "Static string scanning found dynamic loading or reflection related indicators that require analyst review.",
+        "evidence_refs": [
+          "static.dynamic_code_indicators"
+        ],
+        "model_run_id": null,
+        "mitre_mobile": [
+          {
+            "tactic": "Defense Evasion",
+            "technique": "Dynamic Code Loading"
+          }
+        ]
+      },
+      {
+        "id": "finding-002",
+        "source_model_role": "ai_disabled",
+        "source_model": "local-fallback",
+        "severity": "medium",
+        "title": "Possible embedded secrets",
+        "explanation": "Static string scanning found values resembling tokens, keys, or secrets. Values are redacted.",
+        "evidence_refs": [
+          "static.secrets"
+        ],
+        "model_run_id": null,
+        "mitre_mobile": [
+          {
+            "tactic": "Credential Access",
+            "technique": "Credentials from Files"
+          }
+        ]
+      }
+    ],
+    "recommended_actions": [
+      "Review rule reasons and evidence references.",
+      "Run dynamic analysis in a disposable emulator for suspicious or high-risk APKs.",
+      "Keep Ollama running with Mistral/Llama3 for full local AI analysis.",
+      "No immediate block recommended from current evidence; continue standard monitoring.",
+      "Preserve job artifacts and evidence lineage.",
+      "Use a disposable emulator for dynamic validation before allowing installation."
+    ],
+    "model_runs": [
+      {
+        "ts": "2026-06-24T23:30:39.094862+00:00",
+        "run_id": "run-46abcec3e4",
+        "model_role": "disabled",
+        "model": "none",
+        "provider": "deterministic",
+        "status": "skipped",
+        "duration_ms": null,
+        "error": null,
+        "validation": {
+          "allowed_refs_count": 100,
+          "raw_findings_count": 2,
+          "kept_findings_count": 2,
+          "dropped_findings_count": 0,
+          "dropped_findings": []
+        },
+        "output": {
+          "verdict": "Fallback assessment: AI is disabled by configuration",
+          "risk_level": "medium",
+          "confidence": 0.55,
+          "findings": [
+            {
+              "severity": "medium",
+              "title": "Dynamic code loading indicators",
+              "explanation": "Static string scanning found dynamic loading or reflection related indicators that require analyst review.",
+              "evidence_refs": [
+                "static.dynamic_code_indicators"
+              ]
+            },
+            {
+              "severity": "medium",
+              "title": "Possible embedded secrets",
+              "explanation": "Static string scanning found values resembling tokens, keys, or secrets. Values are redacted.",
+              "evidence_refs": [
+                "static.secrets"
+              ]
+            }
+          ],
+          "recommended_actions": [
+            "Review rule reasons and evidence references.",
+            "Run dynamic analysis in a disposable emulator for suspicious or high-risk APKs.",
+            "Keep Ollama running with Mistral/Llama3 for full local AI analysis."
+          ],
+          "validation": {
+            "allowed_refs_count": 100,
+            "raw_findings_count": 2,
+            "kept_findings_count": 2,
+            "dropped_findings_count": 0,
+            "dropped_findings": []
+          }
+        }
+      }
+    ],
+    "lineage_ref": "ai/lineage.json"
+  },
+  "agent_steps": [
+    {
+      "ts": "2026-06-24T23:30:22.951045+00:00",
+      "agent": "Upload Gateway",
+      "phase": "upload",
+      "status": "created",
+      "message": "Job created",
+      "data": {
+        "filename": "malware_05_sieve.apk"
+      }
+    },
+    {
+      "ts": "2026-06-24T23:30:23.018236+00:00",
+      "agent": "Orchestrator",
+      "phase": "pipeline",
+      "status": "running",
+      "message": "Static + AI analysis pipeline started",
+      "data": {}
+    },
+    {
+      "ts": "2026-06-24T23:30:23.047820+00:00",
+      "agent": "Intake Agent",
+      "phase": "intake",
+      "status": "done",
+      "message": "APK fingerprinted",
+      "data": {
+        "sha256": "31878e33c526f9747c9b7ff38954bfcb2acc2a947ce7103589438e034637a6b7",
+        "size_bytes": 367886
+      }
+    },
+    {
+      "ts": "2026-06-24T23:30:38.605171+00:00",
+      "agent": "Static Analysis Agent",
+      "phase": "static-analysis",
+      "status": "done",
+      "message": "Static analysis completed",
+      "data": {
+        "permissions": 3,
+        "domains": 2,
+        "exported_components": 6,
+        "apktool": "ok",
+        "jadx": "ok"
+      }
+    },
+    {
+      "ts": "2026-06-24T23:30:38.719276+00:00",
+      "agent": "Rule Risk Agent",
+      "phase": "rule-risk",
+      "status": "done",
+      "message": "Rule score 44/100 (low). Risk groups: 7; observations: 0",
+      "data": {
+        "score": 44,
+        "level": "low"
+      }
+    },
+    {
+      "ts": "2026-06-24T23:30:38.926120+00:00",
+      "agent": "Evidence Preprocess Agent",
+      "phase": "evidence-preprocess",
+      "status": "done",
+      "message": "Evidence normalized and redacted",
+      "data": {
+        "redaction": {
+          "enabled": true,
+          "emails": "redacted",
+          "ips": "redacted",
+          "secrets": "redacted"
+        }
+      }
+    },
+    {
+      "ts": "2026-06-24T23:30:38.975091+00:00",
+      "agent": "Feature Extraction Agent",
+      "phase": "feature-extraction",
+      "status": "done",
+      "message": "Risk features extracted",
+      "data": {
+        "rule_score": 44,
+        "risk_level": "low",
+        "score_breakdown": {
+          "permission_score_raw": 0,
+          "permission_score_capped": 0,
+          "permission_score_cap": 16,
+          "context_score": 39,
+          "combo_score": 5,
+          "dynamic_score_raw": 0,
+          "dynamic_score_capped": 0,
+          "dynamic_score_cap": 3,
+          "dynamic_generic_only": true,
+          "dynamic_high_or_critical_count": 0,
+          "dynamic_c2_like_count": 0,
+          "score_before_profile": 44,
+          "app_profile": "generic",
+          "expected_permission_reduction": 0,
+          "score_after_profile": 44,
+          "strong_evidence": true,
+          "hard_strong_evidence": true,
+          "hard_strong_evidence_count": 1,
+          "soft_strong_only": false,
+          "critical_calibration_applied": false,
+          "permission_reason_count": 0,
+          "combo_reason_count": 1,
+          "risk_reason_count": 7,
+          "risk_reason_group_count": 7,
+          "observation_count": 0,
+          "permission_heavy_downgrade_applied": false,
+          "high_risk_gate_applied": false
+        },
+        "app_profile": "generic",
+        "expected_permission_reduction": 0,
+        "permission_heavy_downgrade_applied": false,
+        "has_strong_rule_evidence": true,
+        "strong_rule_codes": [
+          "embedded_secrets",
+          "dynamic_code_network_combo"
+        ],
+        "dangerous_permission_count": 0,
+        "permission_count": 3,
+        "has_accessibility_plus_overlay": false,
+        "has_overlay": false,
+        "has_accessibility": false,
+        "has_installer_inventory_combo": false,
+        "has_boot_foreground_network_combo": false,
+        "has_audio_background_network_combo": false,
+        "exported_component_count": 6,
+        "domain_count": 2,
+        "url_count": 16,
+        "cleartext_http_url_count": 16,
+        "suspicious_domain_count": 0,
+        "has_embedded_secrets": true,
+        "native_library_count": 2,
+        "dex_file_count": 1,
+        "has_webview_indicator": false,
+        "webview_indicator_count": 0,
+        "has_dynamic_code_indicator": true,
+        "dynamic_code_indicator_count": 1,
+        "dynamic_status": null,
+        "dynamic_indicator_count": 0,
+        "dynamic_network_signal": false,
+        "dynamic_c2_signal": false,
+        "dynamic_generic_runtime_only": false,
+        "dynamic_crash_signal": false,
+        "known_bad_indicator": false,
+        "conflicting_evidence": false,
+        "low_confidence_static": false
+      }
+    },
+    {
+      "ts": "2026-06-24T23:30:39.061137+00:00",
+      "agent": "AI Model Router",
+      "phase": "ai-routing",
+      "status": "done",
+      "message": "Selected route: suspicious_primary_llm",
+      "data": {
+        "path": "suspicious_primary_llm",
+        "models": [
+          "primary_llm"
+        ],
+        "human_review": false,
+        "critical_signal": false,
+        "high_signal": false,
+        "suspicious": true,
+        "ambiguous": false,
+        "rule_score": 44,
+        "calibration": {
+          "profile": "v3.5_benign_runtime_context_aware",
+          "human_review_threshold": 88,
+          "note": "Generic runtime observations and permission-heavy samples route to medium analysis unless hard strong evidence is present."
+        },
+        "routing_reasons": {
+          "dangerous_permission_count": 0,
+          "has_accessibility_plus_overlay": false,
+          "suspicious_domain_count": 0,
+          "cleartext_http_url_count": 16,
+          "exported_component_count": 6,
+          "has_embedded_secrets": true,
+          "has_webview_indicator": false,
+          "has_dynamic_code_indicator": true,
+          "has_strong_rule_evidence": true,
+          "app_profile": "generic",
+          "permission_heavy_downgrade_applied": false,
+          "strong_rule_codes": [
+            "embedded_secrets",
+            "dynamic_code_network_combo"
+          ],
+          "dynamic_indicator_count": 0,
+          "dynamic_network_signal": false,
+          "dynamic_generic_runtime_only": false,
+          "dynamic_c2_signal": false
+        }
+      }
+    },
+    {
+      "ts": "2026-06-24T23:30:39.231428+00:00",
+      "agent": "Evidence Fusion Agent",
+      "phase": "evidence-fusion",
+      "status": "done",
+      "message": "Evidence fused into final assessment",
+      "data": {
+        "risk_score": 44,
+        "risk_level": "low",
+        "needs_human_review": false,
+        "dropped_model_findings": 0
+      }
+    }
+  ],
+  "limitations": [
+    "This report is a triage aid, not a final malware/benign verdict. High-impact decisions should include analyst review and, when appropriate, additional sandboxing or reverse engineering.",
+    "Static analysis quality depends on available tooling. apktool improves AndroidManifest/resource decoding; jadx improves Java/Kotlin source inspection. If these tools are unavailable or time out, the report falls back to ZIP/aapt-level evidence.",
+    "Obfuscated, packed, encrypted, or dynamically downloaded code may hide behavior from static analysis.",
+    "Dynamic analysis coverage is limited by emulator runtime, triggered UI paths, network availability, permissions granted, and anti-emulator behavior. Lack of dynamic findings does not prove safety.",
+    "AI findings are restricted to collected evidence references. Unsupported model claims are removed, but remaining findings should still be reviewed by a qualified analyst."
+  ],
+  "safety_notes": [
+    "Unknown APKs should only be executed inside a disposable emulator or VM.",
+    "AI findings are evidence-grounded and should be reviewed by a qualified analyst for enforcement decisions."
+  ]
+}

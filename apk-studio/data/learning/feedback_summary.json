@@ -1,0 +1,14 @@
+{
+  "false_positive_patterns": [
+    {
+      "pattern": "permission-heavy app_store_like with no strong dynamic evidence",
+      "recommended_adjustment": "cap_score_to_medium"
+    }
+  ],
+  "true_positive_patterns": [
+    {
+      "pattern": "accessibility + overlay + suspicious network",
+      "recommended_adjustment": "raise_to_high_or_critical"
+    }
+  ]
+}

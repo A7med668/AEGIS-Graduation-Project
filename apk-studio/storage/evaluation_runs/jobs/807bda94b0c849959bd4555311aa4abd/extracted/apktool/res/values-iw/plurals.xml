@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="entries_selected">
+        <item quantity="one">נבחרה ערך %1$d</item>
+        <item quantity="two">נבחרו %1$d ערכים</item>
+        <item quantity="other">נבחרו %1$d ערכים</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d התראות חדשות</item>
+        <item quantity="two">%d התראות חדשות</item>
+        <item quantity="other">%d התראות חדשות</item>
+    </plurals>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:tag="layout/fragment_tournament_rule_0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/appBarLayout" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="scroll|enterAlways">
+        <androidx.appcompat.widget.Toolbar android:theme="@style/ThemeOverlay.MaterialComponents.ActionBar" android:id="@id/pageToolbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/default_margin_double" android:paddingEnd="@dimen/default_margin_double" app:popupTheme="@style/ThemeOverlay.MaterialComponents.Light">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/actionBarSize">
+                <com.farsitel.bazaar.designsystem.widget.RTLImageView android:id="@id/backButton" android:contentDescription="@string/back_content_description" app:srcCompat="@drawable/ic_round_arrow_back_icon_secondary_24dp_old" style="@style/Bazaar.Image.Toolbar.Icon" />
+                <com.farsitel.bazaar.designsystem.widget.LocalAwareTextView android:textColor="@color/text_primary" android:gravity="center_vertical" android:id="@id/titleTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:layout_marginStart="@dimen/default_margin_one_half" style="@style/Bazaar.Text.Medium.Heading2" />
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <ScrollView android:padding="@dimen/default_margin_double" android:clipToPadding="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/text_primary" android:id="@id/tournamentRuleTextView" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Bazaar.Text.Body" />
+    </ScrollView>
+    <include android:layout_gravity="center_vertical" android:id="@id/noDataInclude" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/layout_page_non_data" />
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.farsitel.bazaar.designsystem.widget.NestedCoordinatorLayout android:id="@id/coordinatorLayout" android:tag="layout/fragment_chips_0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/chipsAppBarLayout" android:background="@color/transparent" android:paddingTop="@dimen/default_margin" android:paddingBottom="@dimen/default_margin" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar android:id="@id/chipsToolbar" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_collapseMode="pin">
+            <com.google.android.material.tabs.TabLayout android:layout_gravity="start" android:id="@id/chipsLayout" android:background="@color/surface_color_0" android:layout_width="match_parent" android:layout_height="32.0dp" android:tabStripEnabled="false" app:tabIndicatorHeight="0.0dp" app:tabMode="scrollable" app:tabRippleColor="@null" app:tabUnboundedRipple="false" style="@style/Bazaar.ChipsTabLayout" />
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.viewpager2.widget.ViewPager2 android:id="@id/chipsViewPager" android:saveEnabled="false" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</com.farsitel.bazaar.designsystem.widget.NestedCoordinatorLayout>

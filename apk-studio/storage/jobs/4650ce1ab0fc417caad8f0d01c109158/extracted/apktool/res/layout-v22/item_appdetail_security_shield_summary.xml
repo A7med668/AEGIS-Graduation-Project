@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/item_appdetail_security_shield_summary_0" android:background="@drawable/shape_text_rounded_light_gray_background" android:padding="@dimen/default_margin_double" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_margin_double" android:layout_marginRight="@dimen/default_margin_double" android:layout_marginBottom="@dimen/default_margin" android:layout_marginHorizontal="@dimen/default_margin_double"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="@style/Bazaar.Text.Body2" android:textColor="@color/text_primary" android:layout_gravity="center_vertical" android:id="@id/header" android:tag="binding_1" android:layout_width="0.0dp" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@id/arrow" app:layout_constraintEnd_toStartOf="@id/arrow" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@id/header" app:layout_constraintEnd_toEndOf="parent" app:srcCompat="@drawable/ic_chevron_down" />
+    <FrameLayout android:id="@id/expandableLayoutContainer" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintTop_toBottomOf="@id/arrow">
+        <FrameLayout android:id="@id/expandableLayout" android:tag="binding_2" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include android:id="@id/child" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/item_security_shield_summary_child" />
+            <com.farsitel.bazaar.designsystem.widget.textview.VectorDrawableTextView android:textAppearance="@style/Bazaar.Text.Caption" android:textColor="@color/text_hint" android:id="@id/emptyMessage" android:tag="binding_3" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin_one_half" android:drawablePadding="@dimen/default_margin_half" app:drawableStartCompat="@drawable/ic_info_grey" />
+        </FrameLayout>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

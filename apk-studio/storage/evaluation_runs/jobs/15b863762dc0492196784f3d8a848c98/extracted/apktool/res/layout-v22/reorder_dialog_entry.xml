@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/dragHandle" android:paddingTop="12.0dp" android:paddingBottom="12.0dp" android:layout_width="48.0dp" android:layout_height="40.0dp" android:src="?dragview_background" android:contentDescription="@string/sort" android:paddingStart="8.0dp" android:paddingEnd="0.0dp" android:paddingVertical="12.0dp" />
+    <TextView android:textSize="16.0sp" android:textColor="?android:textColorPrimary" android:layout_gravity="center_vertical" android:id="@id/sectionLabel" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_margin="8.0dp" android:layout_weight="1.0" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreferenceCompat android:title="@string/pref_automatic_download_title" android:key="prefEnableAutoDl" android:summary="@string/pref_automatic_download_global_description" android:defaultValue="false" />
+    <SwitchPreferenceCompat android:title="@string/pref_automatic_download_queue_title" android:key="prefEnableAutoDlQueue" android:summary="@string/pref_automatic_download_queue_description" android:defaultValue="false" />
+    <de.danoeh.antennapod.ui.preferences.preference.MaterialListPreference android:entries="@array/episode_cache_size_entries" android:title="@string/pref_episode_cache_title" android:key="prefEpisodeCacheSize" android:summary="@string/pref_episode_cache_summary" android:defaultValue="25" android:entryValues="@array/episode_cache_size_values" />
+    <SwitchPreferenceCompat android:title="@string/pref_automatic_download_on_battery_title" android:key="prefEnableAutoDownloadOnBattery" android:summary="@string/pref_automatic_download_on_battery_sum" android:defaultValue="true" />
+</PreferenceScreen>

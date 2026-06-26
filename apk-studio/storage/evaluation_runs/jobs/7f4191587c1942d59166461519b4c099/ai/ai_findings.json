@@ -1,0 +1,20 @@
+[
+  {
+    "id": "finding-001",
+    "source_model_role": "ai_disabled",
+    "source_model": "local-fallback",
+    "severity": "medium",
+    "title": "Dynamic code loading indicators",
+    "explanation": "Static string scanning found dynamic loading or reflection related indicators that require analyst review.",
+    "evidence_refs": [
+      "static.dynamic_code_indicators"
+    ],
+    "model_run_id": null,
+    "mitre_mobile": [
+      {
+        "tactic": "Defense Evasion",
+        "technique": "Dynamic Code Loading"
+      }
+    ]
+  }
+]

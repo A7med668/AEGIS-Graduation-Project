@@ -1,0 +1,485 @@
+{
+  "counts": {
+    "total_jobs": 20,
+    "completed_jobs": 20,
+    "reviewed_jobs": 20,
+    "needs_review": 3,
+    "risk_levels": {
+      "informational": 5,
+      "medium": 3,
+      "low": 12
+    },
+    "labels": {
+      "malware_confirmed": 10,
+      "benign": 10
+    },
+    "false_positive_candidates": 0,
+    "high_without_review": 0
+  },
+  "metrics": {
+    "total_samples": 20,
+    "benign_samples": 10,
+    "malware_suspicious_samples": 10,
+    "correct_predictions": 10,
+    "false_positives": 0,
+    "false_negatives": 10,
+    "true_positives": 0,
+    "true_negatives": 10,
+    "accuracy": 0.5,
+    "accuracy_percent": 50.0,
+    "precision": null,
+    "precision_percent": null,
+    "recall": 0.0,
+    "recall_percent": 0.0,
+    "f1_score": null,
+    "f1_percent": null,
+    "false_positive_rate": 0.0,
+    "false_positive_rate_percent": 0.0,
+    "reviewed_for_metrics": 20,
+    "predicted_positive_high_or_critical": 0,
+    "actual_positive_reviewed": 10,
+    "true_positive": 0,
+    "false_positive": 0,
+    "true_negative": 10,
+    "false_negative": 10,
+    "decision_threshold": 75,
+    "note": "Metrics are based on labelled dataset/review samples. Medium below score 75 is treated as Review Needed, not confirmed risky. Predicted risky means High/Critical or score >= 75."
+  },
+  "confusion_matrix": {
+    "actual_benign": {
+      "predicted_benign": 10,
+      "predicted_risky": 0
+    },
+    "actual_malware_or_suspicious": {
+      "predicted_benign": 10,
+      "predicted_risky": 0
+    }
+  },
+  "rows": [
+    {
+      "job_id": "3e67be5d6eaa40dd985b17a17a26d801",
+      "filename": "malware_10_damn_vulnerable_bank.apk",
+      "status": "completed",
+      "risk_level": "informational",
+      "risk_score": 14,
+      "needs_review": false,
+      "review_label": "malware_confirmed",
+      "true_label": "malware_or_suspicious",
+      "predicted_label": "benign",
+      "correct": false,
+      "evaluation_outcome": "fn",
+      "verdict": "No significant risk indicators from current evidence"
+    },
+    {
+      "job_id": "7f4191587c1942d59166461519b4c099",
+      "filename": "malware_09_allsafe.apk",
+      "status": "completed",
+      "risk_level": "medium",
+      "risk_score": 47,
+      "needs_review": true,
+      "review_label": "malware_confirmed",
+      "true_label": "malware_or_suspicious",
+      "predicted_label": "benign",
+      "correct": false,
+      "evaluation_outcome": "fn",
+      "verdict": "Suspicious APK with indicators that merit review, not confirmed malware"
+    },
+    {
+      "job_id": "4d65e18a693442e6bd3247ad625f5513",
+      "filename": "malware_08_injuredandroid.apk",
+      "status": "completed",
+      "risk_level": "low",
+      "risk_score": 27,
+      "needs_review": false,
+      "review_label": "malware_confirmed",
+      "true_label": "malware_or_suspicious",
+      "predicted_label": "benign",
+      "correct": false,
+      "evaluation_outcome": "fn",
+      "verdict": "Low-risk APK with minor indicators"
+    },
+    {
+      "job_id": "9c4c0ee87a5c406588464e60d7896176",
+      "filename": "malware_07_ostorlab_insecure.apk",
+      "status": "completed",
+      "risk_level": "medium",
+      "risk_score": 49,
+      "needs_review": true,
+      "review_label": "malware_confirmed",
+      "true_label": "malware_or_suspicious",
+      "predicted_label": "benign",
+      "correct": false,
+      "evaluation_outcome": "fn",
+      "verdict": "Suspicious APK with indicators that merit review, not confirmed malware"
+    },
+    {
+      "job_id": "df540bd8225d4112bc9552d5c7e83437",
+      "filename": "malware_06_vulnapk.apk",
+      "status": "completed",
+      "risk_level": "low",
+      "risk_score": 18,
+      "needs_review": false,
+      "review_label": "malware_confirmed",
+      "true_label": "malware_or_suspicious",
+      "predicted_label": "benign",
+      "correct": false,
+      "evaluation_outcome": "fn",
+      "verdict": "Low-risk APK with minor indicators"
+    },
+    {
+      "job_id": "76ab1b44a335478997f673155989b50c",
+      "filename": "malware_05_sieve.apk",
+      "status": "completed",
+      "risk_level": "low",
+      "risk_score": 44,
+      "needs_review": false,
+      "review_label": "malware_confirmed",
+      "true_label": "malware_or_suspicious",
+      "predicted_label": "benign",
+      "correct": false,
+      "evaluation_outcome": "fn",
+      "verdict": "Low-risk APK with minor indicators"
+    },
+    {
+      "job_id": "fb57dba4de7444bdaa1296f6ff265736",
+      "filename": "malware_04_diva.apk",
+      "status": "completed",
+      "risk_level": "low",
+      "risk_score": 16,
+      "needs_review": false,
+      "review_label": "malware_confirmed",
+      "true_label": "malware_or_suspicious",
+      "predicted_label": "benign",
+      "correct": false,
+      "evaluation_outcome": "fn",
+      "verdict": "Low-risk APK with minor indicators"
+    },
+    {
+      "job_id": "0acaa11099714189904e0a3ce3083124",
+      "filename": "malware_03_insecurebankv2.apk",
+      "status": "completed",
+      "risk_level": "low",
+      "risk_score": 42,
+      "needs_review": false,
+      "review_label": "malware_confirmed",
+      "true_label": "malware_or_suspicious",
+      "predicted_label": "benign",
+      "correct": false,
+      "evaluation_outcome": "fn",
+      "verdict": "Low-risk APK with minor indicators"
+    },
+    {
+      "job_id": "edbfb10708de47869490b44771c383ab",
+      "filename": "malware_02_androgoat.apk",
+      "status": "completed",
+      "risk_level": "low",
+      "risk_score": 21,
+      "needs_review": false,
+      "review_label": "malware_confirmed",
+      "true_label": "malware_or_suspicious",
+      "predicted_label": "benign",
+      "correct": false,
+      "evaluation_outcome": "fn",
+      "verdict": "Low-risk APK with minor indicators"
+    },
+    {
+      "job_id": "b622e6777a7c4ab49c5faac7ed7cb6d3",
+      "filename": "malware_01_goatdroid.apk",
+      "status": "completed",
+      "risk_level": "low",
+      "risk_score": 38,
+      "needs_review": false,
+      "review_label": "malware_confirmed",
+      "true_label": "malware_or_suspicious",
+      "predicted_label": "benign",
+      "correct": false,
+      "evaluation_outcome": "fn",
+      "verdict": "Low-risk APK with minor indicators"
+    },
+    {
+      "job_id": "53e0fd519b5a4c7494ca53c5c270f26b",
+      "filename": "benign_10_music_player.apk",
+      "status": "completed",
+      "risk_level": "informational",
+      "risk_score": 11,
+      "needs_review": false,
+      "review_label": "benign",
+      "true_label": "benign",
+      "predicted_label": "benign",
+      "correct": true,
+      "evaluation_outcome": "tn",
+      "verdict": "No significant risk indicators from current evidence"
+    },
+    {
+      "job_id": "15b863762dc0492196784f3d8a848c98",
+      "filename": "benign_09_antennapod.apk",
+      "status": "completed",
+      "risk_level": "low",
+      "risk_score": 24,
+      "needs_review": false,
+      "review_label": "benign",
+      "true_label": "benign",
+      "predicted_label": "benign",
+      "correct": true,
+      "evaluation_outcome": "tn",
+      "verdict": "Low-risk APK with minor indicators"
+    },
+    {
+      "job_id": "483eac930a2b4fdeb71d5b77833c3bd1",
+      "filename": "benign_08_calendar.apk",
+      "status": "completed",
+      "risk_level": "low",
+      "risk_score": 27,
+      "needs_review": false,
+      "review_label": "benign",
+      "true_label": "benign",
+      "predicted_label": "benign",
+      "correct": true,
+      "evaluation_outcome": "tn",
+      "verdict": "Low-risk APK with minor indicators"
+    },
+    {
+      "job_id": "807bda94b0c849959bd4555311aa4abd",
+      "filename": "benign_07_qr_scanner.apk",
+      "status": "completed",
+      "risk_level": "low",
+      "risk_score": 16,
+      "needs_review": false,
+      "review_label": "benign",
+      "true_label": "benign",
+      "predicted_label": "benign",
+      "correct": true,
+      "evaluation_outcome": "tn",
+      "verdict": "Low-risk APK with minor indicators"
+    },
+    {
+      "job_id": "c087ed6524fd4711adaee3f5efa542d0",
+      "filename": "benign_06_weather.apk",
+      "status": "completed",
+      "risk_level": "low",
+      "risk_score": 34,
+      "needs_review": false,
+      "review_label": "benign",
+      "true_label": "benign",
+      "predicted_label": "benign",
+      "correct": true,
+      "evaluation_outcome": "tn",
+      "verdict": "Low-risk APK with minor indicators"
+    },
+    {
+      "job_id": "0952fbe587bd4fabae575ca729864d87",
+      "filename": "benign_05_browser.apk",
+      "status": "completed",
+      "risk_level": "medium",
+      "risk_score": 45,
+      "needs_review": true,
+      "review_label": "benign",
+      "true_label": "benign",
+      "predicted_label": "benign",
+      "correct": true,
+      "evaluation_outcome": "tn",
+      "verdict": "Suspicious APK with indicators that merit review, not confirmed malware"
+    },
+    {
+      "job_id": "98ad655191204980aeaf5096bbb99a4d",
+      "filename": "benign_04_media_player.apk",
+      "status": "completed",
+      "risk_level": "low",
+      "risk_score": 22,
+      "needs_review": false,
+      "review_label": "benign",
+      "true_label": "benign",
+      "predicted_label": "benign",
+      "correct": true,
+      "evaluation_outcome": "tn",
+      "verdict": "Low-risk APK with minor indicators"
+    },
+    {
+      "job_id": "34ebc31c789549f48696155359594ae0",
+      "filename": "benign_03_file_manager.apk",
+      "status": "completed",
+      "risk_level": "informational",
+      "risk_score": 11,
+      "needs_review": false,
+      "review_label": "benign",
+      "true_label": "benign",
+      "predicted_label": "benign",
+      "correct": true,
+      "evaluation_outcome": "tn",
+      "verdict": "No significant risk indicators from current evidence"
+    },
+    {
+      "job_id": "874f4cda334d4acf8a4d4d65cebc7459",
+      "filename": "benign_02_notes.apk",
+      "status": "completed",
+      "risk_level": "informational",
+      "risk_score": 7,
+      "needs_review": false,
+      "review_label": "benign",
+      "true_label": "benign",
+      "predicted_label": "benign",
+      "correct": true,
+      "evaluation_outcome": "tn",
+      "verdict": "No significant risk indicators from current evidence"
+    },
+    {
+      "job_id": "a37d8503eaa645cfaa9f1b2f4137bc99",
+      "filename": "benign_01_calculator.apk",
+      "status": "completed",
+      "risk_level": "informational",
+      "risk_score": 13,
+      "needs_review": false,
+      "review_label": "benign",
+      "true_label": "benign",
+      "predicted_label": "benign",
+      "correct": true,
+      "evaluation_outcome": "tn",
+      "verdict": "No significant risk indicators from current evidence"
+    }
+  ],
+  "summary_cards": {
+    "total_samples": 20,
+    "benign_samples": 10,
+    "malware_suspicious_samples": 10,
+    "correct_predictions": 10,
+    "false_positives": 0,
+    "false_negatives": 10,
+    "accuracy": 0.5,
+    "precision": null,
+    "recall": 0.0,
+    "f1_score": null
+  },
+  "calibration": {
+    "version": "v4.8.3",
+    "decision_threshold": 75,
+    "rule": "Predicted risky = High/Critical or score >= 75. Medium below threshold remains Review Needed."
+  },
+  "dataset": {
+    "path": "/workspace/apk-studio/evaluation_dataset",
+    "storage": "/workspace/apk-studio/storage/evaluation_runs",
+    "samples_processed": 20,
+    "runs": [
+      {
+        "job_id": "a37d8503eaa645cfaa9f1b2f4137bc99",
+        "filename": "benign_01_calculator.apk",
+        "label": "benign",
+        "status": "completed"
+      },
+      {
+        "job_id": "874f4cda334d4acf8a4d4d65cebc7459",
+        "filename": "benign_02_notes.apk",
+        "label": "benign",
+        "status": "completed"
+      },
+      {
+        "job_id": "34ebc31c789549f48696155359594ae0",
+        "filename": "benign_03_file_manager.apk",
+        "label": "benign",
+        "status": "completed"
+      },
+      {
+        "job_id": "98ad655191204980aeaf5096bbb99a4d",
+        "filename": "benign_04_media_player.apk",
+        "label": "benign",
+        "status": "completed"
+      },
+      {
+        "job_id": "0952fbe587bd4fabae575ca729864d87",
+        "filename": "benign_05_browser.apk",
+        "label": "benign",
+        "status": "completed"
+      },
+      {
+        "job_id": "c087ed6524fd4711adaee3f5efa542d0",
+        "filename": "benign_06_weather.apk",
+        "label": "benign",
+        "status": "completed"
+      },
+      {
+        "job_id": "807bda94b0c849959bd4555311aa4abd",
+        "filename": "benign_07_qr_scanner.apk",
+        "label": "benign",
+        "status": "completed"
+      },
+      {
+        "job_id": "483eac930a2b4fdeb71d5b77833c3bd1",
+        "filename": "benign_08_calendar.apk",
+        "label": "benign",
+        "status": "completed"
+      },
+      {
+        "job_id": "15b863762dc0492196784f3d8a848c98",
+        "filename": "benign_09_antennapod.apk",
+        "label": "benign",
+        "status": "completed"
+      },
+      {
+        "job_id": "53e0fd519b5a4c7494ca53c5c270f26b",
+        "filename": "benign_10_music_player.apk",
+        "label": "benign",
+        "status": "completed"
+      },
+      {
+        "job_id": "b622e6777a7c4ab49c5faac7ed7cb6d3",
+        "filename": "malware_01_goatdroid.apk",
+        "label": "malware_confirmed",
+        "status": "completed"
+      },
+      {
+        "job_id": "edbfb10708de47869490b44771c383ab",
+        "filename": "malware_02_androgoat.apk",
+        "label": "malware_confirmed",
+        "status": "completed"
+      },
+      {
+        "job_id": "0acaa11099714189904e0a3ce3083124",
+        "filename": "malware_03_insecurebankv2.apk",
+        "label": "malware_confirmed",
+        "status": "completed"
+      },
+      {
+        "job_id": "fb57dba4de7444bdaa1296f6ff265736",
+        "filename": "malware_04_diva.apk",
+        "label": "malware_confirmed",
+        "status": "completed"
+      },
+      {
+        "job_id": "76ab1b44a335478997f673155989b50c",
+        "filename": "malware_05_sieve.apk",
+        "label": "malware_confirmed",
+        "status": "completed"
+      },
+      {
+        "job_id": "df540bd8225d4112bc9552d5c7e83437",
+        "filename": "malware_06_vulnapk.apk",
+        "label": "malware_confirmed",
+        "status": "completed"
+      },
+      {
+        "job_id": "9c4c0ee87a5c406588464e60d7896176",
+        "filename": "malware_07_ostorlab_insecure.apk",
+        "label": "malware_confirmed",
+        "status": "completed"
+      },
+      {
+        "job_id": "4d65e18a693442e6bd3247ad625f5513",
+        "filename": "malware_08_injuredandroid.apk",
+        "label": "malware_confirmed",
+        "status": "completed"
+      },
+      {
+        "job_id": "7f4191587c1942d59166461519b4c099",
+        "filename": "malware_09_allsafe.apk",
+        "label": "malware_confirmed",
+        "status": "completed"
+      },
+      {
+        "job_id": "3e67be5d6eaa40dd985b17a17a26d801",
+        "filename": "malware_10_damn_vulnerable_bank.apk",
+        "label": "malware_confirmed",
+        "status": "completed"
+      }
+    ],
+    "note": "Metrics use folder-derived analyst labels. Keep malware samples in an isolated lab only."
+  }
+}

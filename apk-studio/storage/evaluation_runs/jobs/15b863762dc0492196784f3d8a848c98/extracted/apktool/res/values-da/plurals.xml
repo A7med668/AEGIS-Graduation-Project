@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="added_to_queue_message">
+        <item quantity="one">%d afsnit tilføjet til kø.</item>
+        <item quantity="other">%d afsnit tilføjet til kø.</item>
+    </plurals>
+    <plurals name="deleted_episode_message">
+        <item quantity="one">%d overført afsnit slettet.</item>
+        <item quantity="other">%d overførte afsnit slettet.</item>
+    </plurals>
+    <plurals name="downloading_episodes_message">
+        <item quantity="one">Overfører %d afsnit.</item>
+        <item quantity="other">Overfører %d afsnit.</item>
+    </plurals>
+    <plurals name="downloads_left">
+        <item quantity="one">%d overførsel mangler</item>
+        <item quantity="other">%d overførsler mangler</item>
+    </plurals>
+    <plurals name="echo_hours_podcasts">
+        <item quantity="one">"timer afsnit
+fra %1$d podcast"</item>
+        <item quantity="other">"timer afsnit
+fra %1$d forskellige podcasts"</item>
+    </plurals>
+    <plurals name="echo_queue_hours_waiting">
+        <item quantity="one">"timer ventende i din kø
+fra %1$d afsnit"</item>
+        <item quantity="other">"timer ventende i din kø
+fra %1$d afsnit"</item>
+    </plurals>
+    <plurals name="episode_cleanup_days_after_listening">
+        <item quantity="one">%d dag efter afsluttet afspilning</item>
+        <item quantity="other">%d dage efter afsluttet afspilning</item>
+    </plurals>
+    <plurals name="episode_cleanup_hours_after_listening">
+        <item quantity="one">%d time efter afsluttet afspilning</item>
+        <item quantity="other">%d timer efter afsluttet afspilning</item>
+    </plurals>
+    <plurals name="episodes_sleep_timer_exceeds_queue">
+        <item quantity="one">Der er kun %1$d afsnit tilbage i din kø</item>
+        <item quantity="other">Der er kun %1$d afsnit tilbage i din kø</item>
+    </plurals>
+    <plurals name="marked_as_played_message">
+        <item quantity="one">%d afsnit markeret som afspillet.</item>
+        <item quantity="other">%d afsnit markeret som afspillet.</item>
+    </plurals>
+    <plurals name="marked_as_unplayed_message">
+        <item quantity="one">%d afsnit markeret som uafspillet.</item>
+        <item quantity="other">%d afsnit markeret som uafspillet.</item>
+    </plurals>
+    <plurals name="mobile_download_notice">
+        <item quantity="one">Overfører via mobildataforbindelse i det næste %d minut</item>
+        <item quantity="other">Overfører via mobildataforbindelse i de næste %d minutter</item>
+    </plurals>
+    <plurals name="move_to_bottom_message">
+        <item quantity="one">%d afsnit flyttet til bund.</item>
+        <item quantity="other">%d afsnit flyttet til bund.</item>
+    </plurals>
+    <plurals name="move_to_top_message">
+        <item quantity="one">%d afsnit flyttet til top.</item>
+        <item quantity="other">%d afsnit flyttet til top.</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d ny notifikation</item>
+        <item quantity="other">%d nye notifikationer</item>
+    </plurals>
+    <plurals name="new_episode_notification_message">
+        <item quantity="one">%2$s har et nyt afsnit</item>
+        <item quantity="other">%2$s har %1$d nye afsnit</item>
+    </plurals>
+    <plurals name="new_episode_notification_title">
+        <item quantity="one">Nyt afsnit</item>
+        <item quantity="other">Nye afsnit</item>
+    </plurals>
+    <plurals name="num_episodes">
+        <item quantity="one">%d afsnit</item>
+        <item quantity="other">%d afsnit</item>
+    </plurals>
+    <plurals name="num_selected_label">
+        <item quantity="one">%1$d/%2$d valgt</item>
+        <item quantity="other">%1$d/%2$d valgte</item>
+    </plurals>
+    <plurals name="num_subscriptions">
+        <item quantity="one">%d abonnement</item>
+        <item quantity="other">%d abonnementer</item>
+    </plurals>
+    <plurals name="removed_from_inbox_batch_label">
+        <item quantity="one">%d afsnit fjernet fra indbakken.</item>
+        <item quantity="other">%d afsnit fjernet fra indbakken.</item>
+    </plurals>
+    <plurals name="removed_from_queue_message">
+        <item quantity="one">%d afsnit fjernet fra kø.</item>
+        <item quantity="other">%d afsnit fjernet fra kø.</item>
+    </plurals>
+    <plurals name="statistics_episodes_downloaded">
+        <item quantity="one">overført</item>
+        <item quantity="other">overført</item>
+    </plurals>
+    <plurals name="statistics_episodes_started">
+        <item quantity="one">startet</item>
+        <item quantity="other">startet</item>
+    </plurals>
+    <plurals name="statistics_episodes_total">
+        <item quantity="one">i alt</item>
+        <item quantity="other">i alt</item>
+    </plurals>
+    <plurals name="time_days_quantified">
+        <item quantity="one">%d dag</item>
+        <item quantity="other">%d dage</item>
+    </plurals>
+    <plurals name="time_hours_quantified">
+        <item quantity="one">%d time</item>
+        <item quantity="other">%d timer</item>
+    </plurals>
+    <plurals name="time_minutes_quantified">
+        <item quantity="one">%d minut</item>
+        <item quantity="other">%d minutter</item>
+    </plurals>
+    <plurals name="time_seconds_quantified">
+        <item quantity="one">%d sekund</item>
+        <item quantity="other">%d sekunder</item>
+    </plurals>
+    <plurals name="timer_exceeds_remaining_time_while_continuous_playback_disabled">
+        <item quantity="one">Kontinuerlig afspilning er deaktiveret, og det aktuelle afsnit har kun %1$d minut tilbage</item>
+        <item quantity="other">Kontinuerlig afspilning er deaktiveret, og det aktuelle afsnit har kun %1$d minutter tilbage</item>
+    </plurals>
+    <plurals name="total_size_downloaded_podcasts">
+        <item quantity="one">Samlet størrelse af %d afsnit på enheden</item>
+        <item quantity="other">Samlet størrelse af %d afsnit på enheden</item>
+    </plurals>
+    <plurals name="updated_feeds_batch_label">
+        <item quantity="one">%d abonnement opdateret.</item>
+        <item quantity="other">%d abonnementer opdateret.</item>
+    </plurals>
+</resources>

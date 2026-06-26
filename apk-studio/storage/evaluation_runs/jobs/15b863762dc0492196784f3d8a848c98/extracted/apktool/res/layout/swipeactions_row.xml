@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:layout_marginBottom="8.0dp">
+        <TextView android:textSize="18.0sp" android:textColor="?android:textColorPrimary" android:id="@id/swipeDirectionLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/swipe_left" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true" />
+        <TextView android:textSize="14.0sp" android:id="@id/swipeActionLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/swipeDirectionLabel" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" />
+        <Button android:id="@id/changeButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/change_setting" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" style="@style/Widget.MaterialComponents.Button.TextButton" />
+    </RelativeLayout>
+    <com.google.android.material.divider.MaterialDivider android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/previewContainer" android:background="?background_color" android:layout_width="match_parent" android:layout_height="76.0dp" android:foreground="?selectableItemBackground">
+        <include android:id="@id/mockEpisode" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="0.7" layout="@layout/feeditemlist_item" />
+        <ImageView android:id="@id/swipeIcon" android:background="?background_elevated" android:padding="22.0dp" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="0.3" app:srcCompat="@drawable/ic_add" />
+    </LinearLayout>
+    <com.google.android.material.divider.MaterialDivider android:layout_width="match_parent" android:layout_height="wrap_content" />
+</LinearLayout>

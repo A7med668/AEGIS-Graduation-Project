@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="added_to_queue_message">
+        <item quantity="other">%d 集已新增至待播清單。</item>
+    </plurals>
+    <plurals name="deleted_episode_message">
+        <item quantity="other">已刪除 %d 個已下載的集數。</item>
+    </plurals>
+    <plurals name="downloading_episodes_message">
+        <item quantity="other">正在下載 %d 集。</item>
+    </plurals>
+    <plurals name="downloads_left">
+        <item quantity="other">剩餘 %d 個下載</item>
+    </plurals>
+    <plurals name="echo_hours_podcasts">
+        <item quantity="other">"小時的單集
+來自 %1$d 個不同的 Podcast"</item>
+    </plurals>
+    <plurals name="echo_queue_hours_waiting">
+        <item quantity="other">"小時的待播清單
+包含有 %1$d 個單集"</item>
+    </plurals>
+    <plurals name="episode_cleanup_days_after_listening">
+        <item quantity="other">聽完後 %d 天</item>
+    </plurals>
+    <plurals name="episode_cleanup_hours_after_listening">
+        <item quantity="other">聽完後 %d 小時</item>
+    </plurals>
+    <plurals name="episodes_sleep_timer_exceeds_queue">
+        <item quantity="other">您的清單中僅剩下 %1$d 集</item>
+    </plurals>
+    <plurals name="marked_as_played_message">
+        <item quantity="other">已將 %d 集標示為已播放。</item>
+    </plurals>
+    <plurals name="marked_as_unplayed_message">
+        <item quantity="other">已將 %d 集標示為未播放。</item>
+    </plurals>
+    <plurals name="mobile_download_notice">
+        <item quantity="other">將透過行動網路連線下載，持續 %d 分鐘</item>
+    </plurals>
+    <plurals name="move_to_bottom_message">
+        <item quantity="other">%d 集已移至底部。</item>
+    </plurals>
+    <plurals name="move_to_top_message">
+        <item quantity="other">%d 集已移至頂端。</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d 則新通知</item>
+        <item quantity="other">%d 則新通知</item>
+    </plurals>
+    <plurals name="new_episode_notification_message">
+        <item quantity="other">%2$s 發表了 %1$d 則新集數</item>
+    </plurals>
+    <plurals name="new_episode_notification_title">
+        <item quantity="other">新集數</item>
+    </plurals>
+    <plurals name="num_episodes">
+        <item quantity="other">%d 集</item>
+    </plurals>
+    <plurals name="num_selected_label">
+        <item quantity="other">%1$d/%2$d 被選取</item>
+    </plurals>
+    <plurals name="num_subscriptions">
+        <item quantity="other">%d 個訂閱</item>
+    </plurals>
+    <plurals name="removed_from_inbox_batch_label">
+        <item quantity="other">已從最新集數中刪除 %d 集。</item>
+    </plurals>
+    <plurals name="removed_from_queue_message">
+        <item quantity="other">已從待播清單移除 %d 集。</item>
+    </plurals>
+    <plurals name="statistics_episodes_downloaded">
+        <item quantity="other">下載</item>
+    </plurals>
+    <plurals name="statistics_episodes_started">
+        <item quantity="other">已開始</item>
+    </plurals>
+    <plurals name="statistics_episodes_total">
+        <item quantity="other">總共</item>
+    </plurals>
+    <plurals name="time_days_quantified">
+        <item quantity="other">%d 天</item>
+    </plurals>
+    <plurals name="time_hours_quantified">
+        <item quantity="other">%d 小時</item>
+    </plurals>
+    <plurals name="time_minutes_quantified">
+        <item quantity="other">%d 分鐘</item>
+    </plurals>
+    <plurals name="time_seconds_quantified">
+        <item quantity="other">%d 秒</item>
+    </plurals>
+    <plurals name="timer_exceeds_remaining_time_while_continuous_playback_disabled">
+        <item quantity="other">連續播放已停用，目前的單集僅剩下 %1$d 分鐘</item>
+    </plurals>
+    <plurals name="total_size_downloaded_podcasts">
+        <item quantity="other">裝置上共計 %d 個單集的總大小</item>
+    </plurals>
+    <plurals name="updated_feeds_batch_label">
+        <item quantity="other">%d 個訂閱已更新。</item>
+    </plurals>
+</resources>

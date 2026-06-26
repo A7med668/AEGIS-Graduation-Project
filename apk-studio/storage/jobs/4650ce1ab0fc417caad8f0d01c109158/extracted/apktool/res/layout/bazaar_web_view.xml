@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.progressindicator.LinearProgressIndicator android:layout_gravity="top" android:id="@id/webViewLoading" android:layout_width="match_parent" android:layout_height="4.0dp" android:indeterminate="true" app:indicatorColor="@color/brand_bazaar" app:trackColor="@color/grey_60" />
+    <LinearLayout android:orientation="vertical" android:id="@id/webViewParent" android:layout_width="match_parent" android:layout_height="match_parent">
+        <WebView android:id="@id/webView" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+        <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/text_primary" android:ellipsize="end" android:gravity="center" android:id="@id/urlBar" android:padding="@dimen/default_margin" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" style="@style/Bazaar.Text.Caption" />
+    </LinearLayout>
+</merge>

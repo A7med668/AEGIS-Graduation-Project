@@ -1,0 +1,9 @@
+Uid mode: POST_NOTIFICATION: ignore
+READ_EXTERNAL_STORAGE: ignore
+WRITE_EXTERNAL_STORAGE: ignore
+LEGACY_STORAGE: ignore
+WAKE_LOCK: allow; time=+34s25ms ago; duration=+14s816ms
+WRITE_MEDIA_VIDEO: deny; rejectTime=+32s335ms ago
+WRITE_MEDIA_IMAGES: deny; rejectTime=+32s337ms ago
+MANAGE_EXTERNAL_STORAGE: default; rejectTime=+32s540ms ago
+NO_ISOLATED_STORAGE: deny; rejectTime=+32s542ms ago

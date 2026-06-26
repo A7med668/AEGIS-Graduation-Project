@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginBottom="14.0dp">
+        <ImageView android:id="@id/menu_icon" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/icon_image_broken" android:scaleType="fitCenter" android:layout_centerVertical="true" android:contentDescription="@null" android:layout_marginStart="20.0dp" android:layout_marginEnd="8.0dp" android:layout_alignParentStart="true" />
+        <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceBody1" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Title" android:scrollHorizontally="true" android:singleLine="true" android:layout_centerVertical="true" android:layout_marginEnd="16.0dp" android:layout_toEndOf="@id/menu_icon" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dp">
+        <ImageButton android:id="@id/overflow_settings" android:background="?actionBarItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_settings" android:layout_marginStart="8.0dp" android:layout_marginEnd="16.0dp" android:layout_alignParentEnd="true" />
+        <ImageButton android:id="@id/overflow_info" android:background="?actionBarItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_info" android:layout_marginStart="8.0dp" android:layout_marginEnd="8.0dp" android:layout_toStartOf="@id/overflow_settings" />
+        <ImageButton android:id="@id/overflow_print" android:background="?actionBarItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_print" android:layout_marginStart="8.0dp" android:layout_marginEnd="8.0dp" android:layout_toStartOf="@id/overflow_info" />
+        <ImageButton android:id="@id/overflow_share" android:background="?actionBarItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_menu_share" android:layout_marginStart="8.0dp" android:layout_marginEnd="8.0dp" android:layout_toStartOf="@id/overflow_print" />
+        <ImageButton android:id="@id/overflow_view_source" android:background="?actionBarItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_view_source" android:layout_marginStart="8.0dp" android:layout_marginEnd="8.0dp" android:layout_toStartOf="@id/overflow_share" />
+    </RelativeLayout>
+    <com.google.android.material.tabs.TabLayout android:id="@id/tabLayout" android:background="?actionBarItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <View android:background="?colorPrimary" android:layout_width="match_parent" android:layout_height="1.0dp" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp">
+        <GridView android:id="@id/overflow_tab" android:layout_width="match_parent" android:layout_height="wrap_content" android:numColumns="1" />
+        <GridView android:id="@id/overflow_save" android:layout_width="match_parent" android:layout_height="wrap_content" android:numColumns="1" />
+        <GridView android:id="@id/overflow_other" android:layout_width="match_parent" android:layout_height="wrap_content" android:numColumns="1" />
+    </RelativeLayout>
+</LinearLayout>

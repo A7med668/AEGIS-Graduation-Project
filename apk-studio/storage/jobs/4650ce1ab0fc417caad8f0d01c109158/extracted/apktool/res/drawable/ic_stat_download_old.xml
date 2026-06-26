@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="125" android:drawable="@drawable/ic_stat_download_1_old" />
+    <item android:duration="125" android:drawable="@drawable/ic_stat_download_2_old" />
+    <item android:duration="125" android:drawable="@drawable/ic_stat_download_3_old" />
+    <item android:duration="125" android:drawable="@drawable/ic_stat_download_4_old" />
+    <item android:duration="125" android:drawable="@drawable/ic_stat_download_5_old" />
+    <item android:duration="125" android:drawable="@drawable/ic_stat_download_6_old" />
+    <item android:duration="125" android:drawable="@drawable/ic_stat_download_7_old" />
+    <item android:duration="125" android:drawable="@drawable/ic_stat_basket_old" />
+</animation-list>

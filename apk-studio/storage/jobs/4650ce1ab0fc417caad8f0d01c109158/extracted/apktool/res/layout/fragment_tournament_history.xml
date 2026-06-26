@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/appBarLayout" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="scroll|enterAlways">
+        <androidx.appcompat.widget.Toolbar android:theme="@style/ThemeOverlay.MaterialComponents.ActionBar" android:id="@id/pageToolbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/default_margin_double" android:paddingEnd="@dimen/default_margin_double" app:popupTheme="@style/ThemeOverlay.MaterialComponents.Light">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/actionBarSize">
+                    <com.farsitel.bazaar.designsystem.widget.RTLImageView android:id="@id/backButton" android:contentDescription="@string/back_content_description" app:srcCompat="@drawable/ic_round_arrow_back_icon_secondary_24dp_old" style="@style/Bazaar.Image.Toolbar.Icon" />
+                    <com.farsitel.bazaar.designsystem.widget.LocalAwareTextView android:textColor="@color/text_primary" android:gravity="center_vertical" android:id="@id/titleTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:layout_marginStart="@dimen/default_margin_one_half" style="@style/Bazaar.Text.Medium.Heading2" />
+                </LinearLayout>
+                <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/filterRecyclerView" android:visibility="gone" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin_one_half" android:layout_marginBottom="@dimen/default_margin_one_half" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.farsitel.bazaar.designsystem.recyclerview.PageRecyclerView android:id="@id/recyclerView" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <include layout="@layout/layout_page_non_data" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

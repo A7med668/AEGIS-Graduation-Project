@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="downloads_left">
+        <item quantity="one">Απομένει %d λήψη</item>
+        <item quantity="other">Απομένουν %d λήψεις</item>
+    </plurals>
+    <plurals name="echo_hours_podcasts">
+        <item quantity="one">"ώρες επεισοδίων
+από %1$d podcast"</item>
+        <item quantity="other">"ώρες επεισοδίων
+από %1$d διαφορετικά podcasts"</item>
+    </plurals>
+    <plurals name="echo_queue_hours_waiting">
+        <item quantity="one">"ώρες αναμονής στην ουρά σας
+από το επεισόδιο %1$d"</item>
+        <item quantity="other">"ώρες αναμονής στην ουρά σας
+από %1$d επεισόδια"</item>
+    </plurals>
+    <plurals name="episode_cleanup_days_after_listening">
+        <item quantity="one">%d ημέρα μετά την ολοκλήρωση</item>
+        <item quantity="other">%d ημέρες μετά την ολοκλήρωση</item>
+    </plurals>
+    <plurals name="episode_cleanup_hours_after_listening">
+        <item quantity="one">%d ώρα μετά την ολοκλήρωση</item>
+        <item quantity="other">%d ώρες μετά την ολοκλήρωση</item>
+    </plurals>
+    <plurals name="mobile_download_notice">
+        <item quantity="one">Λήψη μέσω σύνδεσης δεδομένων κινητής τηλεφωνίας για το επόμενο %d λεπτό</item>
+        <item quantity="other">Λήψη μέσω σύνδεσης δεδομένων κινητής τηλεφωνίας για τα επόμενα %d λεπτά</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d νέα ειδοποίηση</item>
+        <item quantity="other">%d νέες ειδοποιήσεις</item>
+    </plurals>
+    <plurals name="new_episode_notification_message">
+        <item quantity="one">Το %2$s έχει ένα νέο επεισόδιο</item>
+        <item quantity="other">Το %2$s έχει %1$d νέα επεισόδια</item>
+    </plurals>
+    <plurals name="new_episode_notification_title">
+        <item quantity="one">Νέο επεισόδιο</item>
+        <item quantity="other">Νέα επεισόδια</item>
+    </plurals>
+    <plurals name="num_episodes">
+        <item quantity="one">%d επεισόδιο</item>
+        <item quantity="other">%d επεισόδια</item>
+    </plurals>
+    <plurals name="num_selected_label">
+        <item quantity="one">%1$d/%2$d επιλέχθηκε</item>
+        <item quantity="other">%1$d/%2$d επιλέχθηκαν</item>
+    </plurals>
+    <plurals name="removed_from_inbox_batch_label">
+        <item quantity="one">%d επεισόδιο αφαιρέθηκε από τα εισερχόμενα.</item>
+        <item quantity="other">%d επεισόδια αφαιρέθηκαν από τα εισερχόμενα.</item>
+    </plurals>
+    <plurals name="statistics_episodes_downloaded">
+        <item quantity="one">κατεβασμένο</item>
+        <item quantity="other">κατεβασμένα</item>
+    </plurals>
+    <plurals name="statistics_episodes_started">
+        <item quantity="one">ξεκίνησε</item>
+        <item quantity="other">ξεκίνησαν</item>
+    </plurals>
+    <plurals name="statistics_episodes_total">
+        <item quantity="one">σύνολο</item>
+        <item quantity="other">σύνολα</item>
+    </plurals>
+    <plurals name="time_days_quantified">
+        <item quantity="one">%d ημέρα</item>
+        <item quantity="other">%d ημέρες</item>
+    </plurals>
+    <plurals name="time_hours_quantified">
+        <item quantity="one">%d ώρα</item>
+        <item quantity="other">%d ώρες</item>
+    </plurals>
+    <plurals name="time_minutes_quantified">
+        <item quantity="one">%d λεπτό</item>
+        <item quantity="other">%d λεπτά</item>
+    </plurals>
+    <plurals name="time_seconds_quantified">
+        <item quantity="one">%d δευτερόλεπτο</item>
+        <item quantity="other">%d δευτερόλεπτα</item>
+    </plurals>
+    <plurals name="total_size_downloaded_podcasts">
+        <item quantity="one">Σύνολο %d του επεισοδίου είναι αποθηκευμένο στη συσκευή</item>
+        <item quantity="other">Σύνολο %d των επεισοδίων είναι αποθηκευμένα στη συσκευή</item>
+    </plurals>
+    <plurals name="updated_feeds_batch_label">
+        <item quantity="one">%d συνδρομή ενημερώθηκε.</item>
+        <item quantity="other">%d συνδρομές ενημερώθηκαν.</item>
+    </plurals>
+</resources>

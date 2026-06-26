@@ -1,0 +1,47 @@
+.class public final Landroidx/compose/foundation/gestures/DragGestureDetectorKt$awaitTouchSlopOrCancellation$1;
+.super Lkotlin/coroutines/jvm/internal/ContinuationImpl;
+.source "r8-map-id-6111cd36e04836b2112845bbfefcd639addb724f4b704f459dbb2086dbc06466"
+
+
+# instance fields
+.field public F$0:F
+
+.field public L$0:Lkotlin/jvm/functions/Function2;
+
+.field public L$1:Landroidx/compose/ui/input/pointer/SuspendingPointerInputModifierNodeImpl$PointerEventHandlerCoroutine;
+
+.field public L$2:Lkotlin/jvm/internal/Ref$LongRef;
+
+.field public L$3:Landroidx/compose/foundation/gestures/TouchSlopDetector;
+
+.field public L$4:Landroidx/compose/ui/input/pointer/PointerInputChange;
+
+.field public label:I
+
+.field public synthetic result:Ljava/lang/Object;
+
+
+# virtual methods
+.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
+
+    iput-object p1, p0, Landroidx/compose/foundation/gestures/DragGestureDetectorKt$awaitTouchSlopOrCancellation$1;->result:Ljava/lang/Object;
+
+    iget p1, p0, Landroidx/compose/foundation/gestures/DragGestureDetectorKt$awaitTouchSlopOrCancellation$1;->label:I
+
+    const/high16 v0, -0x80000000
+
+    or-int/2addr p1, v0
+
+    iput p1, p0, Landroidx/compose/foundation/gestures/DragGestureDetectorKt$awaitTouchSlopOrCancellation$1;->label:I
+
+    const/4 p1, 0x0
+
+    const-wide/16 v0, 0x0
+
+    invoke-static {p1, v0, v1, p1, p0}, Landroidx/compose/foundation/gestures/DragGestureDetectorKt;->awaitTouchSlopOrCancellation-jO51t88(Landroidx/compose/ui/input/pointer/SuspendingPointerInputModifierNodeImpl$PointerEventHandlerCoroutine;JLandroidx/compose/runtime/Updater$$ExternalSyntheticLambda1;Lkotlin/coroutines/jvm/internal/BaseContinuationImpl;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    return-object p0
+.end method

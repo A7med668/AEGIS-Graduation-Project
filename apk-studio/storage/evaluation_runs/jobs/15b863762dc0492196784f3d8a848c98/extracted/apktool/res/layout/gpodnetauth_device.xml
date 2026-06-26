@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dp" android:text="@string/synchronization_selectDevice_explanation" />
+    <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <com.google.android.material.textfield.TextInputEditText android:id="@id/deviceName" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/gpodnetauth_device_name" android:lines="1" android:imeOptions="actionNext|flagNoFullscreen" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button android:layout_gravity="end" android:id="@id/createDeviceButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gpodnetauth_create_device" />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="@string/gpodnetauth_existing_devices" style="@style/AntennaPod.TextView.Heading" />
+    <TextView android:textSize="@dimen/text_size_small" android:textColor="?icon_red" android:id="@id/deviceSelectError" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:id="@id/devicesContainer" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <ProgressBar android:textColor="?icon_red" android:id="@id/progbarCreateDevice" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

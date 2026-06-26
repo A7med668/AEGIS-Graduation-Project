@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="added_to_queue_message">
+        <item quantity="one">"Un'episòdiu agiuntu a s'elencu."</item>
+        <item quantity="other">"%d episòdios agiuntos a s'elencu."</item>
+    </plurals>
+    <plurals name="deleted_episode_message">
+        <item quantity="one">%d episòdiu iscarrigadu cantzelladu.</item>
+        <item quantity="other">%d episòdios iscarrigados cantzellados.</item>
+    </plurals>
+    <plurals name="downloading_episodes_message">
+        <item quantity="one">"Iscarrigamentu in cursu de un'episòdiu."</item>
+        <item quantity="other">Iscarrigamentu in cursu de %d episòdios.</item>
+    </plurals>
+    <plurals name="downloads_left">
+        <item quantity="one">Mancat %d iscarrigamentu</item>
+        <item quantity="other">Mancant %d iscarrigamentos</item>
+    </plurals>
+    <plurals name="echo_hours_podcasts">
+        <item quantity="one">"oras de episòdios
+de %1$d podcast"</item>
+        <item quantity="other">"oras de episòdios
+de %1$d podcast diferentes"</item>
+    </plurals>
+    <plurals name="echo_queue_hours_waiting">
+        <item quantity="one">"oras de %1$d episòdiu
+chi t'abarrant in s'elencu"</item>
+        <item quantity="other">"oras de %1$d episòdios
+chi t'abarrant in s'elencu"</item>
+    </plurals>
+    <plurals name="episode_cleanup_days_after_listening">
+        <item quantity="one">"%d die a pustis de s'agabbu"</item>
+        <item quantity="other">"%d dies a pustis de s'agabbu"</item>
+    </plurals>
+    <plurals name="episode_cleanup_hours_after_listening">
+        <item quantity="one">"%d ora a pustis de s'agabbu"</item>
+        <item quantity="other">"%d oras a pustis de s'agabbu"</item>
+    </plurals>
+    <plurals name="episodes_sleep_timer_exceeds_queue">
+        <item quantity="one">"Abarrat isceti un'episòdiu in s'elencu"</item>
+        <item quantity="other">"Abarrant isceti %1$d episòdios in s'elencu"</item>
+    </plurals>
+    <plurals name="marked_as_played_message">
+        <item quantity="one">"Un'episòdiu sinnadu comente riproduidu."</item>
+        <item quantity="other">%d episòdios sinnados comente riproduidos.</item>
+    </plurals>
+    <plurals name="marked_as_unplayed_message">
+        <item quantity="one">"Un'episòdiu sinnadu comente non riproduidu."</item>
+        <item quantity="other">%d episòdios sinnados comente non riproduidos.</item>
+    </plurals>
+    <plurals name="mobile_download_notice">
+        <item quantity="one">Iscarrigamentu in cursu cun connessione de datos mòbiles durante su minutu imbeniente</item>
+        <item quantity="other">Iscarrigamentu in cursu cun connessione de datos mòbiles durante is %d minutos imbenientes</item>
+    </plurals>
+    <plurals name="move_to_bottom_message">
+        <item quantity="one">"Episòdiu tramudadu a s'agabbu."</item>
+        <item quantity="other">"%d episòdios tramudados a s'agabbu."</item>
+    </plurals>
+    <plurals name="move_to_top_message">
+        <item quantity="one">Episòdiu tramudadu a su cumintzu.</item>
+        <item quantity="other">%d episòdios tramudados a su cumintzu.</item>
+    </plurals>
+    <plurals name="new_episode_notification_message">
+        <item quantity="one">"%2$s at publicadu un'episòdiu nou"</item>
+        <item quantity="other">%2$s at publicadu %1$d episòdios noos</item>
+    </plurals>
+    <plurals name="new_episode_notification_title">
+        <item quantity="one">Episòdiu nou</item>
+        <item quantity="other">Episòdios noos</item>
+    </plurals>
+    <plurals name="num_episodes">
+        <item quantity="one">%d episòdiu</item>
+        <item quantity="other">%d episòdios</item>
+    </plurals>
+    <plurals name="num_selected_label">
+        <item quantity="one">%1$d/%2$d seletzionadu</item>
+        <item quantity="other">%1$d/%2$d seletzionados</item>
+    </plurals>
+    <plurals name="num_subscriptions">
+        <item quantity="one">%d sutiscritzione</item>
+        <item quantity="other">%d sutiscritziones</item>
+    </plurals>
+    <plurals name="removed_from_inbox_batch_label">
+        <item quantity="one">%d episòdiu bogadu dae sa cartella de intrada.</item>
+        <item quantity="other">%d episòdios bogados dae sa cartella de intrada.</item>
+    </plurals>
+    <plurals name="removed_from_queue_message">
+        <item quantity="one">"Un'episòdiu bogadu dae s'elencu."</item>
+        <item quantity="other">"%d episòdios bogados dae s'elencu."</item>
+    </plurals>
+    <plurals name="statistics_episodes_downloaded">
+        <item quantity="one">iscarrigadu</item>
+        <item quantity="other">iscarrigados</item>
+    </plurals>
+    <plurals name="statistics_episodes_started">
+        <item quantity="one">cumintzadu</item>
+        <item quantity="other">cumintzados</item>
+    </plurals>
+    <plurals name="statistics_episodes_total">
+        <item quantity="one">totale</item>
+        <item quantity="other">totales</item>
+    </plurals>
+    <plurals name="time_days_quantified">
+        <item quantity="one">%d die</item>
+        <item quantity="other">%d dies</item>
+    </plurals>
+    <plurals name="time_hours_quantified">
+        <item quantity="one">%d ora</item>
+        <item quantity="other">%d oras</item>
+    </plurals>
+    <plurals name="time_minutes_quantified">
+        <item quantity="one">%d minutu</item>
+        <item quantity="other">%d minutos</item>
+    </plurals>
+    <plurals name="time_seconds_quantified">
+        <item quantity="one">%d segundu</item>
+        <item quantity="other">%d segundos</item>
+    </plurals>
+    <plurals name="timer_exceeds_remaining_time_while_continuous_playback_disabled">
+        <item quantity="one">"Sa riprodutzione continuada est disativada e a s'episòdiu atuale abarrat isceti unu minutu"</item>
+        <item quantity="other">"Sa riprodutzione continuada est disativada e a s'episòdiu atuale abarrant isceti %1$d minutos"</item>
+    </plurals>
+    <plurals name="total_size_downloaded_podcasts">
+        <item quantity="one">Mannària totale de %d episòdiu in su dispositivu</item>
+        <item quantity="other">Mannària totale de %d episòdios in su dispositivu</item>
+    </plurals>
+    <plurals name="updated_feeds_batch_label">
+        <item quantity="one">%d sutiscritzione atualizada.</item>
+        <item quantity="other">%d sutiscritziones atualizadas.</item>
+    </plurals>
+</resources>

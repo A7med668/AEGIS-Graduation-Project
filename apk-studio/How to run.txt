@@ -1,0 +1,29 @@
+- emulator -avd Medium_Phone_API_36.1 -no-snapshot -wipe-data
+
+- source ~/.bashrc
+cd /f/apk-agent-studio/backend
+source .venv/Scripts/activate
+python -m uvicorn app.main:app --env-file ../.env --host 127.0.0.1 --port 8000
+
+- cd /f/apk-agent-studio/frontend
+npm run dev
+
+
+v4.4 Production Hardening quick notes
+------------------------------------
+Local demo:
+1) Keep API_AUTH_ENABLED=false in .env
+2) Run backend and frontend normally.
+
+Production-style auth test:
+1) Set API_AUTH_ENABLED=true
+2) Set API_KEY=your-secret
+3) Restart backend
+4) In the UI go to Settings -> Production Auth and save the same key.
+
+New endpoints:
+- GET /api/queue/status
+- GET /api/sandbox/policy
+
+Production compose:
+docker compose -f docker-compose.prod.yml --env-file .env.production up --build

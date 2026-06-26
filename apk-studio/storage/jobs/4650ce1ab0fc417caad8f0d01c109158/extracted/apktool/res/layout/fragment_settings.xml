@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/appBarLayout" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="scroll|enterAlways">
+        <androidx.appcompat.widget.Toolbar android:theme="@style/ThemeOverlay.MaterialComponents.ActionBar" android:id="@id/pageToolbar" android:layout_width="match_parent" android:layout_height="@dimen/actionBarSize" app:popupTheme="@style/ThemeOverlay.MaterialComponents.Light">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/default_margin_double" android:paddingEnd="@dimen/default_margin_double">
+                <com.farsitel.bazaar.designsystem.widget.RTLImageView android:id="@id/backButton" android:contentDescription="@string/back_content_description" app:srcCompat="@drawable/ic_round_arrow_back_icon_secondary_24dp_old" style="@style/Bazaar.Image.Toolbar.Icon" />
+                <com.farsitel.bazaar.designsystem.widget.LocalAwareTextView android:textColor="@color/text_primary" android:gravity="center_vertical" android:id="@id/titleTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/settings" android:layout_marginStart="@dimen/default_margin_double" style="@style/Bazaar.Text.Subtitle1" />
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.fragment.app.FragmentContainerView android:name="com.farsitel.bazaar.setting.view.SettingsPreferencesFragment" android:id="@id/settings_preferences_fragment_container" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

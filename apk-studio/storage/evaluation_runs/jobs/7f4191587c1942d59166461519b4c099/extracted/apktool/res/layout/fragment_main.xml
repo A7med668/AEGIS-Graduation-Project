@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:padding="24.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="42.0sp" android:textStyle="bold" android:textColor="@color/secondaryColor" android:id="@id/allsafe_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dp" android:text="ALLSAFE" android:fontFamily="monospace" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textSize="14.0sp" android:textStyle="normal" android:textColor="@color/secondaryColor" android:id="@id/cybersecurity_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="CYBERSECURITY" android:fontFamily="monospace" android:letterSpacing="0.2" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/allsafe_title" />
+        <View android:id="@id/divider" android:background="@color/secondaryColor" android:layout_width="200.0dp" android:layout_height="2.0dp" android:layout_marginTop="20.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/cybersecurity_subtitle" />
+        <TextView android:textSize="16.0sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="center" android:id="@id/lab_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="MOBILE PENETRATION TESTING LAB" android:fontFamily="monospace" android:letterSpacing="0.1" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/divider" />
+        <LinearLayout android:orientation="vertical" android:id="@id/features_container" android:background="@drawable/terminal_border" android:padding="20.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="32.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/lab_title">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dp">
+                <TextView android:textSize="14.0sp" android:textColor="@color/secondaryColor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="> " android:fontFamily="monospace" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/white" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="Identify mobile security vulnerabilities" android:layout_weight="1.0" android:fontFamily="monospace" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dp">
+                <TextView android:textSize="14.0sp" android:textColor="@color/secondaryColor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="> " android:fontFamily="monospace" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/white" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="Extract flags from insecure implementations" android:layout_weight="1.0" android:fontFamily="monospace" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dp">
+                <TextView android:textSize="14.0sp" android:textColor="@color/secondaryColor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="> " android:fontFamily="monospace" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/white" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="Practice OWASP MSTG methodologies" android:layout_weight="1.0" android:fontFamily="monospace" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0sp" android:textColor="@color/secondaryColor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="> " android:fontFamily="monospace" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/white" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="Master mobile application security" android:layout_weight="1.0" android:fontFamily="monospace" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="12.0sp" android:textColor="@color/secondaryColor" android:id="@id/menu_instruction" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" android:text="[MENU] Access vulnerability modules" android:fontFamily="monospace" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/features_container" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

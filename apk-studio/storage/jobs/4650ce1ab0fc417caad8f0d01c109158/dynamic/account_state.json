@@ -1,0 +1,6 @@
+{
+  "account_count": 0,
+  "has_accounts": false,
+  "redacted": true,
+  "note": "Only account count is stored. Account identifiers are intentionally redacted."
+}

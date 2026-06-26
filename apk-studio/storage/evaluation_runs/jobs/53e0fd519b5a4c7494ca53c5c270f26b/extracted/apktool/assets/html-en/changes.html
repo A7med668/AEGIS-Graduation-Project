@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+</head>
+<body>
+<h3>List of Changes</h3>
+
+<h4>Version 1.9.1</h4>
+<p>
+- Handling of "scan path" messages from Music Player.<br>
+- Use git commit date and time for application information instead of system build time.<br>
+- Adapted to Android 16 (SDK 36).<br>
+- New Gradle and libraries.<br>
+- Android 4.4 (SDK 19) no longer supported, minimum is 5 (SDK 21).
+</p>
+
+<h4>Version 1.8</h4>
+<p>
+- Handling of ".nomedia" files repaired and made configurable.<br>
+- Music path can be selected via system file selector.
+</p>
+
+<h4>Version 1.7</h4>
+<p>
+- Ogg Opus file support added.<br>
+- Extract album pictures from Ogg Vorbis and Ogg Opus files.<br>
+- 1.7.1: SDK 33, new libraries, SQLite and TagLib updated.<br>
+- 1.7.2: Report number of album images found, debug functionalities added, landscape mode, reset paths moved to settings.
+</p>
+
+<h4>Version 1.6.1</h4>
+<p>
+- Correction: Precede movement name with movement number (arabic digits).<br>
+- Correction: After renaming album pictures, write correct (new) file name to database.<br>
+- Progress and result text corrected.
+</p>
+
+<h4>Version 1.6</h4>
+<p>
+- Vorbis (.ogg or .flac files) movement tags added according to the "MusicBrainz Picard" tagger.<br>
+- Preserve original file name of album art pictures when downscaling.<br>
+- Image files can be renamed automatically, e.g. from "folder.jpg" to "albumart.jpg".
+</p>
+
+<h4>Version 1.5</h4>
+
+<p>
+- Built for Android 10 (SDK 29).<br>
+- Base name for extracted album images is configurable ...<br>
+- ... and its default value is now "albumart" instead of "folder".<br>
+- Preference screen beautified.<br>
+- Warnings about failed album image extraction (mostly because SD card is only writable via SAF).<br>
+- Visual indication in case file access was denied.
+</p>
+
+<h4>Version 1.4</h4>
+
+<p>
+- Auto scan now finds added and removed album pictures.<br>
+- Multi CD album handling repaired.<br>
+- Extracted album pictures may be scaled, like existing ones.
+</p>
+
+<h4>Version 1.3</h4>
+
+<p>
+- SD card detection<br>
+- Database path is configurable<br>
+- Menu entry to restore default paths<br>
+- .nomedia file handling<br>
+- 1.3.1: Workaround for Android bug that causes a null path to be returned.
+</p>
+
+<h4>Version 1.2.4</h4>
+
+<p>
+- Smaller package<br>
+- Round app icon (for round displays)
+</p>
+
+<h4>Version 1.2.3</h4>
+
+<p>
+- Multi CD albums are processed correctly, i.e. with CD and track number.
+</p>
+
+<h4>Version 1.2.2</h4>
+
+<p>
+- Autoscan repaired, it used to fail for more than one added file.<br>
+- Extract conductor names from mp4 files.<br>
+- Taglib updated: 2019-03-27
+</p>
+
+<h4>Version 1.2</h4>
+
+<p>
+- Extract album covers from FLAC files.
+</p>
+
+<h4>Version 1.1</h4>
+
+<p>
+- Intelligent incremental scan added.<br>
+- Processes lists of changed files (sent from Classical Music Tagger) in background or foreground.
+</p>
+
+<h4>Version 1.0.2</h4>
+
+<p>
+- bug removed: numeric id3v2 genres are now handled.
+</p>
+
+<h4>Version 1.0.1</h4>
+
+<p>
+- bug removed: Year information was not extracted from mp3 files.<br>
+- bug removed: Track and CD numbers were not extracted from mp4 files.
+</p>
+
+<h4>Version 1.0</h4>
+
+<p>
+- First published version
+</p>
+
+<br><br>
+</body>
+</html>

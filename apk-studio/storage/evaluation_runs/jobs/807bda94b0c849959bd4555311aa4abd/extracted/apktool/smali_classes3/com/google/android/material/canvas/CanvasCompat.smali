@@ -1,0 +1,83 @@
+.class public Lcom/google/android/material/canvas/CanvasCompat;
+.super Ljava/lang/Object;
+.source "CanvasCompat.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/google/android/material/canvas/CanvasCompat$CanvasOperation;
+    }
+.end annotation
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static saveLayerAlpha(Landroid/graphics/Canvas;FFFFI)I
+    .locals 7
+
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x15
+
+    if-le v0, v1, :cond_0
+
+    invoke-static/range {p0 .. p5}, Landroidx/work/impl/utils/NetworkApi21$$ExternalSyntheticApiModelOutline0;->m(Landroid/graphics/Canvas;FFFFI)I
+
+    move-result p0
+
+    return p0
+
+    :cond_0
+    const/16 v6, 0x1f
+
+    move-object v0, p0
+
+    move v1, p1
+
+    move v2, p2
+
+    move v3, p3
+
+    move v4, p4
+
+    move v5, p5
+
+    invoke-virtual/range {v0 .. v6}, Landroid/graphics/Canvas;->saveLayerAlpha(FFFFII)I
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static saveLayerAlpha(Landroid/graphics/Canvas;Landroid/graphics/RectF;I)I
+    .locals 2
+
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x15
+
+    if-le v0, v1, :cond_0
+
+    invoke-static {p0, p1, p2}, Lcom/google/android/material/chip/Chip$$ExternalSyntheticApiModelOutline0;->m(Landroid/graphics/Canvas;Landroid/graphics/RectF;I)I
+
+    move-result p0
+
+    return p0
+
+    :cond_0
+    const/16 v0, 0x1f
+
+    invoke-virtual {p0, p1, p2, v0}, Landroid/graphics/Canvas;->saveLayerAlpha(Landroid/graphics/RectF;II)I
+
+    move-result p0
+
+    return p0
+.end method

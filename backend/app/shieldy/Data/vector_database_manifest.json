@@ -1,0 +1,68 @@
+{
+  "collection": "security_assistant_v2",
+  "vector_db_path": "C:\\Users\\cc\\OneDrive\\Desktop\\New folder\\Graduation-Project-main\\backend\\app\\shieldy\\Data\\Vector_Database_v2",
+  "data_dir": "C:\\Users\\cc\\OneDrive\\Desktop\\New folder\\Graduation-Project-main\\backend\\app\\shieldy\\Data",
+  "embedding_model": "nomic-embed-text:latest",
+  "ollama_base_url": "http://127.0.0.1:11434",
+  "vector_size": 768,
+  "chunk_chars": 1000,
+  "chunk_overlap": 220,
+  "chunk_count": 4643,
+  "sources": [
+    {
+      "file": "Android Hacker's Handbook.pdf",
+      "bytes": 29344620,
+      "chunks": 1745,
+      "seconds": 20.91
+    },
+    {
+      "file": "Android_Enterprise_Security_White_Paper_2019.pdf",
+      "bytes": 469547,
+      "chunks": 122,
+      "seconds": 1.26
+    },
+    {
+      "file": "Android_Security_Internals_An_In_Depth_Guide_to_Android's_Security.pdf",
+      "bytes": 9478674,
+      "chunks": 1365,
+      "seconds": 17.02
+    },
+    {
+      "file": "Guidelines_for_Managing_the_Security_of_Mobile_Devices_in_the_Enterprise.pdf",
+      "bytes": 1910476,
+      "chunks": 247,
+      "seconds": 2.1
+    },
+    {
+      "file": "handbook.pdf",
+      "bytes": 19666088,
+      "chunks": 183,
+      "seconds": 2.06
+    },
+    {
+      "file": "INE_Mastering_Mobile_Security_and_Malware_Analysis_Course_File.pdf",
+      "bytes": 5314028,
+      "chunks": 166,
+      "seconds": 1.11
+    },
+    {
+      "file": "INE_Mobile_Application_Penetration_Testing_Techniques_Course_File.pdf",
+      "bytes": 4931618,
+      "chunks": 306,
+      "seconds": 2.02
+    },
+    {
+      "file": "Introduction_to_Mobile_Application_Security-1.pdf",
+      "bytes": 2239449,
+      "chunks": 421,
+      "seconds": 2.71
+    },
+    {
+      "file": "OWASP_MASVS (1).pdf",
+      "bytes": 1016447,
+      "chunks": 88,
+      "seconds": 0.53
+    }
+  ],
+  "generated_at_unix": 1782417463
+}

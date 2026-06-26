@@ -1,0 +1,20 @@
+<resources>
+    <style name="Theme.AegisAgent" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/accent</item>
+        <item name="colorPrimaryVariant">@color/accent</item>
+        <item name="colorOnPrimary">@color/on_accent</item>
+        <item name="colorSecondary">@color/status_good</item>
+        <item name="colorOnSecondary">@color/on_accent</item>
+        <item name="android:fontFamily">sans</item>
+        <item name="android:statusBarColor">@color/page_bg</item>
+        <item name="android:navigationBarColor">@color/page_bg</item>
+        <item name="android:windowBackground">@color/page_bg</item>
+    </style>
+
+    <style name="Theme.AegisAgent.Splash" parent="Theme.AegisAgent">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:statusBarColor">@color/page_bg</item>
+        <item name="android:navigationBarColor">@color/page_bg</item>
+        <item name="android:windowBackground">@color/page_bg</item>
+    </style>
+</resources>

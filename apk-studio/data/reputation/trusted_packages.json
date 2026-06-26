@@ -1,0 +1,42 @@
+{
+  "org.fdroid.fdroid": {
+    "name": "F-Droid",
+    "category": "app_store_like",
+    "trust_level": "known_benign",
+    "score_reduction": 18,
+    "expected_permissions": [
+      "android.permission.INTERNET",
+      "android.permission.REQUEST_INSTALL_PACKAGES",
+      "android.permission.QUERY_ALL_PACKAGES",
+      "android.permission.FOREGROUND_SERVICE",
+      "android.permission.RECEIVE_BOOT_COMPLETED"
+    ],
+    "notes": "Open-source Android app store. Installer/package-query permissions can be expected."
+  },
+  "org.telegram.messenger": {
+    "name": "Telegram",
+    "category": "chat_like",
+    "trust_level": "known_benign",
+    "score_reduction": 12,
+    "expected_permissions": [
+      "android.permission.INTERNET",
+      "android.permission.RECORD_AUDIO",
+      "android.permission.CAMERA",
+      "android.permission.READ_CONTACTS",
+      "android.permission.FOREGROUND_SERVICE"
+    ],
+    "notes": "Chat apps commonly request microphone, camera, contacts, notifications, and network permissions."
+  },
+  "com.simplemobiletools.filemanager": {
+    "name": "Simple File Manager",
+    "category": "file_manager_like",
+    "trust_level": "known_benign",
+    "score_reduction": 14,
+    "expected_permissions": [
+      "android.permission.READ_EXTERNAL_STORAGE",
+      "android.permission.WRITE_EXTERNAL_STORAGE",
+      "android.permission.MANAGE_EXTERNAL_STORAGE"
+    ],
+    "notes": "File managers commonly request broad storage access."
+  }
+}

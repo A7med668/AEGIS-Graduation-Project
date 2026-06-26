@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:tag="layout/item_appdetail_infobar_install_0" android:background="@drawable/bg_app_info_bar_item" android:paddingLeft="@dimen/default_margin_double" android:paddingTop="@dimen/default_margin_half" android:paddingRight="@dimen/default_margin_double" android:paddingBottom="@dimen/default_margin_half" android:layout_width="wrap_content" android:layout_height="match_parent" android:minHeight="@dimen/info_bar_min_height" android:layout_marginEnd="@dimen/default_margin_one_half"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/text_primary" android:gravity="center" android:id="@id/tvTitle" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/default_margin_quarter" style="@style/Bazaar.Text.Subtitle1" />
+    <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/text_secondary" android:gravity="center" android:id="@id/tvSubtitle" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Bazaar.Text.Caption" />
+</LinearLayout>

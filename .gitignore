@@ -1,0 +1,34 @@
+# ── Node / frontend ───────────────────────────────────
+node_modules/
+dist/
+build/
+.vite/
+coverage/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# ── Logs ──────────────────────────────────────────────
+*.log
+logs/
+
+
+# ── Backups / temporary patch files ───────────────────
+*.bak
+*.backup
+*.old
+*.tmp
+*.temp
+*_backup*
+*.bak_*
+_patch*/
+_patch_*/
+__patched__/
+
+# ── Large model/cache files ───────────────────────────
+*.onnx
+*.pt
+*.pth
+*.bin
+*.gguf
+.cache/

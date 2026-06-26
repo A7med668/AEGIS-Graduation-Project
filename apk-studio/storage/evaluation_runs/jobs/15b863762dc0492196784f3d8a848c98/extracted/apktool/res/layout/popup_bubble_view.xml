@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="?colorOnSecondary" android:id="@id/balloon_message" android:layout_width="match_parent" android:layout_height="wrap_content" android:lines="3" />
+    <LinearLayout android:gravity="end" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp">
+        <Button android:textColor="?colorOnSecondary" android:id="@id/balloon_button_negative" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no" style="@style/Widget.MaterialComponents.Button.TextButton" />
+        <Button android:textColor="?colorOnSecondary" android:id="@id/balloon_button_positive" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yes" style="@style/Widget.MaterialComponents.Button.TextButton" />
+    </LinearLayout>
+</LinearLayout>

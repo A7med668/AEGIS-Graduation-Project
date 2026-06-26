@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@id/progressButtonContainer" android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardUseCompatPadding="false" app:contentPadding="0.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/animationContainer" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/text_primary" android:layout_gravity="center" android:id="@id/buttonText" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Bazaar.Text.Medium.Subtitle" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/loading" android:visibility="gone" android:layout_width="@dimen/icon_size" android:layout_height="@dimen/icon_size" android:indeterminateDrawable="@drawable/progress_circle_white" android:contentDescription="@string/progress_bar_content_description" />
+</androidx.cardview.widget.CardView>

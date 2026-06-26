@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="?selectableItemBackground" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:grid="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/swipeIcon" android:padding="8.0dp" android:layout_width="48.0dp" android:layout_height="48.0dp" grid:srcCompat="@drawable/ic_add" />
+    <TextView android:textSize="14.0sp" android:textColor="?android:textColorPrimary" android:id="@id/swipeActionLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_to_queue_label" android:textAlignment="center" />
+</LinearLayout>

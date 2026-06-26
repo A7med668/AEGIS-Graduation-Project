@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_mode_done">పూర్తయింది</string>
+    <string name="abc_capital_off">ఆఫ్</string>
+    <string name="abc_capital_on">ఆన్</string>
+    <string name="abc_search_hint">సెర్చ్ చేయండి…</string>
+    <string name="abc_searchview_description_clear">ప్రశ్నను తీసివేస్తుంది</string>
+    <string name="abc_searchview_description_search">సెర్చ్</string>
+    <string name="abc_searchview_description_submit">ప్రశ్నని సమర్పిస్తుంది</string>
+    <string name="abc_searchview_description_voice">వాయిస్ సెర్చ్</string>
+    <string name="abc_toolbar_collapse_description">కుదిస్తుంది</string>
+    <string name="bottomsheet_drag_handle_content_description">లాగే హ్యాండిల్</string>
+    <string name="close_drawer">నావిగేషన్ మెనూను మూసివేయండి</string>
+    <string name="close_sheet">షీట్‌ను మూసివేయండి</string>
+    <string name="default_error_message">ఇన్‌పుట్ చెల్లదు</string>
+    <string name="default_popup_window_title">పాప్-అప్ విండో</string>
+    <string name="error_a11y_label">ఎర్రర్: చెల్లదు</string>
+    <string name="glance_error_layout_text_v2">కంటెంట్‌ను చూపడం సాధ్యం కాదు</string>
+    <string name="in_progress">ప్రోగ్రెస్‌లో ఉంది</string>
+    <string name="indeterminate">పాక్షికంగా ఎంచుకోబడింది</string>
+    <string name="m3_adaptive_default_pane_title_primary">ప్రధాన పేన్</string>
+    <string name="m3_adaptive_default_pane_title_secondary">ద్వితీయ పేన్</string>
+    <string name="m3_adaptive_default_pane_title_tertiary">తృతీయ పేన్</string>
+    <string name="m3_loading_indicator_content_description">లోడ్ అవుతోంది</string>
+    <string name="m3c_bottom_sheet_collapse_description">దిగువున ఉన్న షీట్‌ను కుదిస్తుంది</string>
+    <string name="m3c_bottom_sheet_dismiss_description">దిగువున ఉన్న షీట్‌ను విస్మరిస్తుంది</string>
+    <string name="m3c_bottom_sheet_drag_handle_description">లాగే హ్యాండిల్</string>
+    <string name="m3c_bottom_sheet_expand_description">దిగువున ఉన్న షీట్‌ను విస్తరిస్తుంది</string>
+    <string name="m3c_bottom_sheet_pane_title">దిగువున ఉన్న షీట్</string>
+    <string name="m3c_snackbar_pane_title">హెచ్చరిక</string>
+    <string name="mtrl_button_snackbar_close_content_description">మూసివేయండి</string>
+    <string name="navigation_menu">నావిగేషన్ మెనూ</string>
+    <string name="not_selected">ఎంచుకోబడలేదు</string>
+    <string name="password_toggle_content_description">పాస్‌వర్డ్‌ను చూపు</string>
+    <string name="selected">ఎంచుకోబడింది</string>
+    <string name="state_empty">ఖాళీగా ఉంది</string>
+    <string name="state_off">ఆఫ్‌లో ఉంది</string>
+    <string name="state_on">ఆన్‌లో ఉంది</string>
+    <string name="switch_role">Switch</string>
+    <string name="tab">ట్యాబ్</string>
+    <string name="template_percent">%1$d శాతం.</string>
+    <string name="tooltip_description">టూల్‌టిప్</string>
+    <string name="tooltip_label">టూల్‌టిప్‌ను చూపించండి</string>
+</resources>

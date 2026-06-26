@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <EditTextPreference android:title="@string/setting_title_fav" android:key="favoriteURL" android:defaultValue="https://github.com/woheller69/browser#Instructions" app:useSimpleSummaryProvider="true" />
+    <ListPreference android:entries="@array/setting_entries_search_engine" android:title="@string/setting_title_search_engine" android:key="sp_search_engine" android:defaultValue="4" android:entryValues="@array/setting_values_search_engine" />
+    <org.woheller69.preferences.EditTextSwitchPreference android:title="@string/setting_title_searchEngine" android:selectable="true" android:key="sp_search_engine_custom" app:SwitchKey="searchEngineSwitch" app:useSimpleSummaryProvider="true" />
+    <org.woheller69.preferences.EditTextSwitchPreference android:title="@string/setting_title_userAgent" android:selectable="true" android:key="sp_userAgent" app:SwitchKey="userAgentSwitch" app:useSimpleSummaryProvider="true" />
+    <SwitchPreference android:title="@string/setting_title_autofill" android:key="sp_autofill" android:defaultValue="false" />
+    <SwitchPreference android:title="@string/hint_DRM_Media" android:key="sp_drm" android:defaultValue="false" />
+    <SwitchPreference android:title="@string/setting_title_deny_cookie_banners" android:key="sp_deny_cookie_banners" android:summary="@string/summary_deny_cookie_banners" android:defaultValue="false" />
+    <PreferenceCategory>
+        <SwitchPreference android:title="@string/setting_title_adblock" android:key="sp_ad_block" android:defaultValue="true" />
+        <ListPreference android:entries="@array/setting_entries_adBlock" android:title="StevenBlack" android:key="ab_hosts" android:defaultValue="https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts" android:entryValues="@array/setting_values_adBlock" />
+        <org.woheller69.preferences.EditTextSwitchPreference android:title="@string/setting_title_custom_host_list" android:selectable="true" android:key="sp_custom_host_list" app:SwitchKey="customHostListSwitch" app:useSimpleSummaryProvider="true" />
+        <org.woheller69.preferences.EditTextSwitchPreference android:title="Youtube ➟ Invidious" android:selectable="true" android:key="sp_invidious_domain" android:defaultValue="yewtu.be" app:SwitchKey="sp_invidious_redirect" app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+    <PreferenceCategory>
+        <SwitchPreference android:title="@string/setting_title_cookie" android:key="sp_cookies" android:defaultValue="true" />
+        <Preference android:title="@string/setting_title_whitelistCookie" android:key="start_cookie" />
+    </PreferenceCategory>
+    <PreferenceCategory>
+        <SwitchPreference android:title="@string/setting_title_javascript" android:key="sp_javascript" android:defaultValue="true" />
+        <Preference android:title="@string/setting_title_whitelistJS" android:key="start_java" />
+    </PreferenceCategory>
+    <PreferenceCategory>
+        <SwitchPreference android:title="@string/setting_title_dom" android:key="sp_dom" android:defaultValue="true" />
+        <Preference android:title="@string/setting_title_dom_whitelist" android:key="start_dom" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/text_hint" android:ellipsize="end" android:id="@id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/Bazaar.Text.Overline" />
+    <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/text_primary" android:ellipsize="end" android:id="@id/tvSubtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/Bazaar.Text.Subtitle2" />
+</merge>

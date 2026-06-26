@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:title="@string/queue_label" android:key="prefSwipeQueue" />
+    <Preference android:title="@string/inbox_label" android:key="prefSwipeInbox" />
+    <Preference android:title="@string/episodes_label" android:key="prefSwipeEpisodes" />
+    <Preference android:title="@string/downloads_label" android:key="prefSwipeDownloads" />
+    <Preference android:title="@string/playback_history_label" android:key="prefSwipeHistory" />
+    <Preference android:title="@string/individual_subscription" android:key="prefSwipeFeed" />
+</PreferenceScreen>

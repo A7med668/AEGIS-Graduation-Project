@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.farsitel.bazaar.designsystem.widget.LoadingButton android:tag="layout/item_loading_button_0" android:layout_marginLeft="@dimen/default_margin_double" android:layout_marginTop="@dimen/default_margin" android:layout_marginRight="@dimen/default_margin_double" android:layout_marginBottom="@dimen/default_margin" android:layout_marginHorizontal="@dimen/default_margin_double" android:layout_marginVertical="@dimen/default_margin" app:text="@string/login" app:textColor="@color/tc_primary_button" style="@style/DetailPrimaryButton"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/mainContainer" android:background="@drawable/shape_round_top_only" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/statusIconImageView" android:layout_width="@dimen/bottom_sheet_icon_size" android:layout_height="@dimen/bottom_sheet_icon_size" android:layout_margin="@dimen/default_margin_triple" android:contentDescription="@string/image_content_description" app:srcCompat="@drawable/ic_error_outline_icon_primary_24dp_old" />
+        <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/text_primary" android:gravity="center" android:id="@id/messageTextView" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/no_storage_message" android:paddingStart="@dimen/default_margin_double" android:paddingEnd="@dimen/default_margin_double" style="@style/Bazaar.Text.Body1" />
+        <com.farsitel.bazaar.designsystem.component.button.BazaarButton android:id="@id/freeupSpaceButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin_triple" android:layout_marginBottom="@dimen/default_margin_double" android:layout_marginStart="@dimen/default_margin_double" android:layout_marginEnd="@dimen/default_margin_double" app:buttonTheme="contained" app:buttonType="app" app:sizeMode="large" app:text="@string/freeup_storage_space" />
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

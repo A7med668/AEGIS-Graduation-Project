@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <include layout="@layout/layout_page_non_data" />
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/appBarLayout" android:layout_width="match_parent" android:layout_height="@dimen/actionBarSize" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
+        <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/default_margin_double" android:paddingEnd="@dimen/default_margin_double" android:outlineProvider="bounds">
+            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/text_primary" android:gravity="center_vertical" android:id="@id/toolbarTitleTextView" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/editor_choice" android:maxLines="1" android:singleLine="true" android:alpha="0.0" android:layout_marginStart="@dimen/default_margin_one_half" android:layout_marginEnd="@dimen/default_margin_double" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/toolbarBackButton" style="@style/Bazaar.Text.Body1" />
+                <com.farsitel.bazaar.designsystem.widget.RTLImageView android:id="@id/toolbarBackButton" android:contentDescription="@string/back_content_description" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_round_arrow_back_icon_secondary_24dp_old" style="@style/Bazaar.Image.Toolbar.Icon" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

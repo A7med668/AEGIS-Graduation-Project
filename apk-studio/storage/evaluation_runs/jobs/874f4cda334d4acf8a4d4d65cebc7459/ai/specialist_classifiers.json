@@ -1,0 +1,228 @@
+{
+  "schema_version": "4.11.7-specialist-classifiers",
+  "classifiers": [
+    {
+      "id": "permission_risk",
+      "name": "Permission Risk Classifier",
+      "score": 31,
+      "severity": "low",
+      "description": "Scores permission abuse potential and manifest attack surface.",
+      "evidence": [
+        {
+          "ref": "static.permissions",
+          "title": "Sensitive permissions",
+          "detail": [
+            "android.permission.MANAGE_EXTERNAL_STORAGE"
+          ],
+          "weight": 3
+        },
+        {
+          "ref": "static.permissions",
+          "title": "High-risk permission subset",
+          "detail": [
+            "android.permission.MANAGE_EXTERNAL_STORAGE"
+          ],
+          "weight": 6
+        },
+        {
+          "ref": "static.components.exported_count",
+          "title": "Exported attack surface",
+          "detail": 2,
+          "weight": 6
+        },
+        {
+          "ref": "risk.risk_reason_groups",
+          "title": "Permission/combo risk groups",
+          "detail": [
+            "Sensitive permissions present"
+          ],
+          "weight": 16
+        }
+      ],
+      "evidence_count": 4,
+      "recommendation": "No major permission-risk pattern detected. Continue standard review."
+    },
+    {
+      "id": "network_risk",
+      "name": "Network Risk Classifier",
+      "score": 100,
+      "severity": "critical",
+      "description": "Scores static and dynamic network indicators, cleartext traffic, suspicious domains, and runtime connectivity.",
+      "evidence": [
+        {
+          "ref": "network_analysis.domains",
+          "title": "Domains",
+          "detail": [
+            "android.app",
+            "billthefarmer.github.io",
+            "github.com",
+            "www.gnu.org",
+            "www.openstreetmap.org"
+          ],
+          "weight": 10
+        },
+        {
+          "ref": "network_analysis.cleartext_http_urls",
+          "title": "Cleartext HTTP endpoints",
+          "detail": [
+            "http://schemas.android.com/apk/res/android",
+            "http://schemas.android.com/apk/res/android\u0000",
+            "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u0001\b\u0000",
+            "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u0001\b\u0000,\u0000\u0000\u0000\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001O\u0001\u0001\u0001\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0005\u0000\u0000\u0000",
+            "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u0001\b\u0000H\u0000\u0000\u0000\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0019\u0001\u0001\u0001z\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001",
+            "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0001\b\u0000$\u0000\u0000\u00004\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001q\u0001\u0001\u0001\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000",
+            "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0001\b\u00000\u0000\u0000\u00004\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001P\u0001\u0001\u0001",
+            "http://schemas.android.com/apk/res/android\u0000\u0004\u0004item\u0000\u0004\u0004menu\u0000\u0000\u0000\u0000\u0001\b\u0000",
+            "http://schemas.android.com/apk/res/android\u0000\u0004\u0004item\u0000\u0004\u0004menu\u0000\u0000\u0000\u0000\u0001\b\u0000\u0014\u0000\u0000\u0000\u0000\u0001\u0001\u0001\u0001\u0001\u0002\u0001\u0001\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0004\u0000\u0000\u0000\u0002\u0001\u0010\u0000$\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0006\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u0001\u0010\u0000`\u0000\u0000\u0000\u0007\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0003\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0004\u0000\u0000\u0000\u0000\u0000\u0000\u0000\b\u0000\u0000\u0001",
+            "http://schemas.android.com/apk/res/android\u0000\u0004\u0004item\u0000\b\bselector\u0000\u0001\b\u0000\u0010\u0000\u0000\u0000\u0000\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0002\u0001\u0010\u0000$\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u0001\u0010\u0000L\u0000\u0000\u0000\u0006\u0000\u0000\u0000\u0004\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0002\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0000\u0000\u0000\u0000\b\u0000\u0000\u0012\u0003\u0000\u0000\u0000\u0001\u0000\u0000\u0000\b\u0000\u0000\u0001\u0016\u0000\u0004\u0003\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0006\u0000\u0000\u0000\u0004\u0000\u0000\u0000\u0002\u0001\u0010\u00008\u0000\u0000\u0000\b\u0000\u0000\u0000\u0004\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0001\u0000\u0000\u0000\b\u0000\u0000\u0001\u0018\u0000\u0004\u0003\u0001\u0010\u0000\u0018\u0000\u0000\u0000\b\u0000\u0000\u0000\u0004\u0000\u0000\u0000\u0003\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0001\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0003\u0000\u0000\u0000"
+          ],
+          "weight": 30
+        }
+      ],
+      "evidence_count": 2,
+      "recommendation": "Investigate suspicious domains/IPs, block cleartext HTTP where possible, and validate whether contacted endpoints match the legitimate app backend."
+    },
+    {
+      "id": "secrets_crypto",
+      "name": "Secrets Classifier",
+      "score": 0,
+      "severity": "informational",
+      "description": "Detects hardcoded secrets, crypto indicators, and environment/root-check patterns.",
+      "evidence": [],
+      "evidence_count": 0,
+      "recommendation": "No embedded secret pattern detected in collected static evidence."
+    },
+    {
+      "id": "webview_security",
+      "name": "WebView Classifier",
+      "score": 100,
+      "severity": "critical",
+      "description": "Scores WebView exposure, JavaScript/file-access style indicators, and unsafe HTTP loading.",
+      "evidence": [
+        {
+          "ref": "static.webview_indicators",
+          "title": "WebView indicators",
+          "detail": [
+            {
+              "kind": "android.webkit",
+              "snippet": "uses-permission android:name=\"android.permission.INTERNET\"/>     <meta-data android:name=\"android.webkit.WebView.MetricsOptOut\" android:value=\"true\"/>     <application android:allowBackup=\"true\"",
+              "evidence_ref": "static.webview_indicators.0"
+            },
+            {
+              "kind": "WebView",
+              "snippet": " android:name=\"android.permission.INTERNET\"/>     <meta-data android:name=\"android.webkit.WebView.MetricsOptOut\" android:value=\"true\"/>     <application android:allowBackup=\"true\" android",
+              "evidence_ref": "static.webview_indicators.1"
+            },
+            {
+              "kind": "WebView",
+              "snippet": "w.smali--- .class public Lorg/billthefarmer/markdown/MarkdownView; .super Landroid/webkit/WebView; .source \"MarkdownView.java\"   # static fields .field private static final ASSET:Ljava/la",
+              "evidence_ref": "static.webview_indicators.2"
+            },
+            {
+              "kind": "WebView",
+              "snippet": "t>(Landroid/content/Context;)V     .locals 0      invoke-direct {p0, p1}, Landroid/webkit/WebView;-><init>(Landroid/content/Context;)V      return-void .end method  .method public constru",
+              "evidence_ref": "static.webview_indicators.3"
+            },
+            {
+              "kind": "WebView",
+              "snippet": "droid/util/AttributeSet;)V     .locals 0      invoke-direct {p0, p1, p2}, Landroid/webkit/WebView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V      return-void .end met",
+              "evidence_ref": "static.webview_indicators.4"
+            },
+            {
+              "kind": "loadUrl(",
+              "snippet": "1, \"about:blank\"      invoke-virtual {p0, p1}, Lorg/billthefarmer/markdown/MarkdownView;->loadUrl(Ljava/lang/String;)V      return-void .end method  .method synthetic lambda$loadMarkdownUr",
+              "evidence_ref": "static.webview_indicators.5"
+            },
+            {
+              "kind": "WebView",
+              "snippet": "er/notes/Notes$1.smali--- .class Lorg/billthefarmer/notes/Notes$1; .super Landroid/webkit/WebViewClient; .source \"Notes.java\"   # annotations .annotation system Ldalvik/annotation/Enclosi",
+              "evidence_ref": "static.webview_indicators.6"
+            },
+            {
+              "kind": "WebView",
+              "snippet": "/Notes$1;->val$context:Landroid/content/Context;      invoke-direct {p0}, Landroid/webkit/WebViewClient;-><init>()V      return-void .end method   # virtual methods .method public onPageF",
+              "evidence_ref": "static.webview_indicators.7"
+            },
+            {
+              "kind": "WebView",
+              "snippet": "return-void .end method   # virtual methods .method public onPageFinished(Landroid/webkit/WebView;Ljava/lang/String;)V     .locals 3      invoke-static {p2}, Landroid/webkit/URLUtil;->isF",
+              "evidence_ref": "static.webview_indicators.8"
+            },
+            {
+              "kind": "WebView",
+              "snippet": "va/lang/CharSequence;)V      :cond_1     :goto_0     invoke-virtual {p1}, Landroid/webkit/WebView;->clearHistory()V      goto :goto_2      :cond_2     invoke-virtual {p1}, Landroid/webkit",
+              "evidence_ref": "static.webview_indicators.9"
+            }
+          ],
+          "weight": 45
+        },
+        {
+          "ref": "network_analysis.cleartext_http_urls",
+          "title": "Cleartext Web/HTTP URLs",
+          "detail": [
+            "http://schemas.android.com/apk/res/android\u0000\u0005\u0005merge\u0000",
+            "http://schemas.android.com/apk/res/android\u0000\u0004\u0004path\u0000\u0006\u0006vector\u0000\u0000\u0000\u0000\u0001\b\u0000",
+            "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0001\b\u0000$\u0000\u0000\u00004\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001q\u0001\u0001\u0001\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000",
+            "http://schemas.android.com/apk/res/android\u0000\u0005\u0005scale\u0000\u0003\u0003set\u0000\u0000\u0001\b\u00004\u0000\u0000\u0000A\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0003\u0000\u0000\u0000",
+            "http://schemas.android.com/apk/res/android\u0000\u0004\u0004path\u0000\u0006\u0006vector\u0000\u0000\u0001\b\u0000",
+            "http://schemas.android.com/apk/res/android\u0000\u0004\u0004path\u0000\u0006\u0006vector\u0000\u0000\u0000\u0001\b\u0000",
+            "http://schemas.android.com/apk/res/android\u0000\u0005\u0005shape\u0000\u0004\u0004size\u0000\u0005\u0005solid\u0000\u0000\u0001\b\u0000\u0018\u0000\u0000\u0000U\u0001\u0001\u0001Y\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0004\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0002\u0001\u0010\u00008\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0006\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0002\u0000\u0000\u0000\b\u0000\u0000\u0010\u0001\u0000\u0000\u0000\u0002\u0001\u0010\u0000L\u0000\u0000\u0000",
+            "http://schemas.android.com/apk/res/android\u0000",
+            "http://schemas.android.com/apk/res/android\u0000\u0006\u0006intent\u0000\u0007\u0007newNote\u0000\u0017\u0017org.billthefarmer.notes\u0000",
+            "http://schemas.android.com/apk/res/android\u0000\u0004\u0004path\u0000\u0006\u0006vector\u0000\u0001\b\u0000"
+          ],
+          "weight": 30
+        }
+      ],
+      "evidence_count": 2,
+      "recommendation": "Review WebView settings, disable unsafe JavaScript bridges/file access where possible, enforce HTTPS, and restrict loaded domains."
+    },
+    {
+      "id": "dynamic_behavior",
+      "name": "Dynamic Behavior Classifier",
+      "score": 0,
+      "severity": "informational",
+      "description": "Scores emulator runtime indicators, dynamic coverage, observed behavior, and cleanup state.",
+      "evidence": [],
+      "evidence_count": 0,
+      "recommendation": "Runtime behavior did not show strong indicators in the captured path. Consider longer dynamic coverage for high-value samples."
+    },
+    {
+      "id": "mitre_mapping",
+      "name": "MITRE Classifier",
+      "score": 12,
+      "severity": "informational",
+      "description": "Summarizes mapped MITRE Mobile tactics/techniques and mapping confidence.",
+      "evidence": [
+        {
+          "ref": "mitre_attack_mapping",
+          "title": "Mapped MITRE techniques",
+          "detail": [
+            {
+              "tactic": "Command and Control",
+              "technique": "Application Layer Protocol / Network Communication",
+              "confidence": "medium"
+            }
+          ],
+          "weight": 10
+        }
+      ],
+      "evidence_count": 1,
+      "recommendation": "No strong MITRE mapping was produced from current evidence.",
+      "tactics": [
+        "Command and Control"
+      ],
+      "techniques": [
+        "Application Layer Protocol / Network Communication"
+      ]
+    }
+  ],
+  "summary": {
+    "classifier_count": 6,
+    "max_score": 100,
+    "max_severity": "critical",
+    "high_or_critical_count": 2,
+    "medium_plus_count": 2,
+    "note": "Specialist classifiers are deterministic, evidence-backed views. They complement the final risk score and help analyst triage."
+  }
+}

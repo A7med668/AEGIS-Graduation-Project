@@ -1,0 +1,15 @@
+[
+  {
+    "id": "finding-001",
+    "source_model_role": "ai_disabled",
+    "source_model": "local-fallback",
+    "severity": "informational",
+    "title": "Rule-based risk indicators",
+    "explanation": "The deterministic risk engine produced a non-zero score.",
+    "evidence_refs": [
+      "risk.reasons"
+    ],
+    "model_run_id": null,
+    "mitre_mobile": []
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "finding-001",
+    "source_model_role": "ai_disabled",
+    "source_model": "local-fallback",
+    "severity": "medium",
+    "title": "Possible embedded secrets",
+    "explanation": "Static string scanning found values resembling tokens, keys, or secrets. Values are redacted.",
+    "evidence_refs": [
+      "static.secrets"
+    ],
+    "model_run_id": null,
+    "mitre_mobile": [
+      {
+        "tactic": "Credential Access",
+        "technique": "Credentials from Files"
+      }
+    ]
+  }
+]

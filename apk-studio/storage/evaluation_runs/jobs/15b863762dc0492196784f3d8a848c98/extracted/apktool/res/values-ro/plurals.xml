@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="added_to_queue_message">
+        <item quantity="one">%d episod adăugat în coada de redare.</item>
+        <item quantity="few">%d episoade adăugate în coada de redare.</item>
+        <item quantity="other">%d de episoade adăugate în coada de redare.</item>
+    </plurals>
+    <plurals name="deleted_episode_message">
+        <item quantity="one">%d episod descărcat a fost șters.</item>
+        <item quantity="few">%d episoade descărcate au fost șterse.</item>
+        <item quantity="other">%d de episoade descărcate au fost șterse.</item>
+    </plurals>
+    <plurals name="downloading_episodes_message">
+        <item quantity="one">Se descarcă %d episod.</item>
+        <item quantity="few">Se descarcă %d episoade.</item>
+        <item quantity="other">Se descarcă %d de episoade.</item>
+    </plurals>
+    <plurals name="downloads_left">
+        <item quantity="one">%d descărcare rămasă</item>
+        <item quantity="few">%d descărcări rămase</item>
+        <item quantity="other">%d de descărcări rămase</item>
+    </plurals>
+    <plurals name="echo_hours_podcasts">
+        <item quantity="one">"ore redate de episoade
+de la un singur podcast"</item>
+        <item quantity="few">"ore redate de episoade
+de la %1$d podcasturi diferite"</item>
+        <item quantity="other">"ore redate de episoade
+de la %1$d de podcasturi diferite"</item>
+    </plurals>
+    <plurals name="echo_queue_hours_waiting">
+        <item quantity="one">"ore ce te așteaptă în lista de redare
+de la %1$d episod"</item>
+        <item quantity="few">"ore ce te așteaptă în lista de redare
+de la %1$d episoade"</item>
+        <item quantity="other">"ore ce te așteaptă în lista de redare
+de la %1$d de episoade"</item>
+    </plurals>
+    <plurals name="episode_cleanup_days_after_listening">
+        <item quantity="one">O zi după finalizare</item>
+        <item quantity="few">%d zile după finalizare</item>
+        <item quantity="other">%d de zile după finalizare</item>
+    </plurals>
+    <plurals name="episode_cleanup_hours_after_listening">
+        <item quantity="one">O oră după finalizare</item>
+        <item quantity="few">%d ore după finalizare</item>
+        <item quantity="other">%d de ore după finalizare</item>
+    </plurals>
+    <plurals name="episodes_sleep_timer_exceeds_queue">
+        <item quantity="one">A mai rămas numai %1$d episod în coada de redare</item>
+        <item quantity="few">Au mai rămas numai %1$d episoade în coada de redare</item>
+        <item quantity="other">Au mai rămas numai %1$d de episoade în coada de redare</item>
+    </plurals>
+    <plurals name="marked_as_played_message">
+        <item quantity="one">%d episod este marcat ca fiind redat.</item>
+        <item quantity="few">%d episoade sunt marcate ca fiind redate.</item>
+        <item quantity="other">%d de episoade sunt marcate ca fiind redate.</item>
+    </plurals>
+    <plurals name="marked_as_unplayed_message">
+        <item quantity="one">%d episod marcat ca neredat.</item>
+        <item quantity="few">%d episoade marcate ca neredate.</item>
+        <item quantity="other">%d de episoade marcate ca neredate.</item>
+    </plurals>
+    <plurals name="mobile_download_notice">
+        <item quantity="one">Descărcarea episoadelor folosind datele mobile pentru următorul minut</item>
+        <item quantity="few">Descărcarea episoadelor folosind datele mobile pentru următoarele %d minute</item>
+        <item quantity="other">Descărcarea episoadelor folosind datele mobile pentru următoarele %d de minute</item>
+    </plurals>
+    <plurals name="move_to_bottom_message">
+        <item quantity="one">%d episod a fost mutat mai jos.</item>
+        <item quantity="few">%d episoade au fost mutate mai jos.</item>
+        <item quantity="other">%d de episoade au fost mutate mai jos.</item>
+    </plurals>
+    <plurals name="move_to_top_message">
+        <item quantity="one">%d episod a fost mutat mai sus.</item>
+        <item quantity="few">%d episoade au fost mutate mai sus.</item>
+        <item quantity="other">%d de episoade au fost mutate mai sus.</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d notificare nouă</item>
+        <item quantity="few">%d notificări noi</item>
+        <item quantity="other">%d de notificări noi</item>
+    </plurals>
+    <plurals name="new_episode_notification_message">
+        <item quantity="one">%2$s are un episod nou</item>
+        <item quantity="few">%2$s are %1$d episoade noi</item>
+        <item quantity="other">%2$s are %1$d de episoade noi</item>
+    </plurals>
+    <plurals name="new_episode_notification_title">
+        <item quantity="one">Episod nou</item>
+        <item quantity="few">Episoade noi</item>
+        <item quantity="other">Episoade noi</item>
+    </plurals>
+    <plurals name="num_episodes">
+        <item quantity="one">%d episod</item>
+        <item quantity="few">%d episoade</item>
+        <item quantity="other">%d episoade</item>
+    </plurals>
+    <plurals name="num_selected_label">
+        <item quantity="one">%1$d/%2$dselectat</item>
+        <item quantity="few">%1$d/%2$dselectate</item>
+        <item quantity="other">%1$d/%2$d selectate</item>
+    </plurals>
+    <plurals name="num_subscriptions">
+        <item quantity="one">%d abonament</item>
+        <item quantity="few">%d abonamente</item>
+        <item quantity="other">%d de abonamente</item>
+    </plurals>
+    <plurals name="removed_from_inbox_batch_label">
+        <item quantity="one">%d episod eliminat din inbox.</item>
+        <item quantity="few">%d episoade eliminate din inbox.</item>
+        <item quantity="other">%d de episoade eliminate din inbox.</item>
+    </plurals>
+    <plurals name="removed_from_queue_message">
+        <item quantity="one">%d episod șters din coada de redare.</item>
+        <item quantity="few">%d episoade șterse din coada de redare.</item>
+        <item quantity="other">%d de episoade șterse din coada de redare.</item>
+    </plurals>
+    <plurals name="statistics_episodes_downloaded">
+        <item quantity="one">descărcat</item>
+        <item quantity="few">descărcate</item>
+        <item quantity="other">descărcate</item>
+    </plurals>
+    <plurals name="statistics_episodes_started">
+        <item quantity="one">început</item>
+        <item quantity="few">începute</item>
+        <item quantity="other">începute</item>
+    </plurals>
+    <plurals name="statistics_episodes_total">
+        <item quantity="one">total</item>
+        <item quantity="few">totale</item>
+        <item quantity="other">totale</item>
+    </plurals>
+    <plurals name="time_days_quantified">
+        <item quantity="one">o zi</item>
+        <item quantity="few">%d zile</item>
+        <item quantity="other">%d de zile</item>
+    </plurals>
+    <plurals name="time_hours_quantified">
+        <item quantity="one">o oră</item>
+        <item quantity="few">%d ore</item>
+        <item quantity="other">%d de ore</item>
+    </plurals>
+    <plurals name="time_minutes_quantified">
+        <item quantity="one">un minut</item>
+        <item quantity="few">%d minute</item>
+        <item quantity="other">%d de minute</item>
+    </plurals>
+    <plurals name="time_seconds_quantified">
+        <item quantity="one">o secundă</item>
+        <item quantity="few">%d secunde</item>
+        <item quantity="other">%d de secunde</item>
+    </plurals>
+    <plurals name="timer_exceeds_remaining_time_while_continuous_playback_disabled">
+        <item quantity="one">Redarea contină este dezactivată și episodul curent mai are numai %1$d minut rămas</item>
+        <item quantity="few">Redarea contină este dezactivată și episodul curent mai are numai %1$d minute rămase</item>
+        <item quantity="other">Redarea contină este dezactivată și episodul curent mai are numai %1$d de minute rămase</item>
+    </plurals>
+    <plurals name="total_size_downloaded_podcasts">
+        <item quantity="one">Mărimea totală ocupată de un episod pe acest dispozitiv</item>
+        <item quantity="few">Mărimea totală ocupată de %d episode pe acest dispozitiv</item>
+        <item quantity="other">Mărimea totală ocupată de %d de episode pe acest dispozitiv</item>
+    </plurals>
+    <plurals name="updated_feeds_batch_label">
+        <item quantity="one">%d abonament actualizat.</item>
+        <item quantity="few">%d abonamente actualizate.</item>
+        <item quantity="other">%d de abonamente actualizate.</item>
+    </plurals>
+</resources>

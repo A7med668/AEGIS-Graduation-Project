@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/navigation_mybazaar" app:startDestination="@id/emptyFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="EmptyFragment" android:name="com.farsitel.bazaar.component.EmptyFragment" android:id="@id/emptyFragment" />
+    <fragment android:label="MyBazaarFragment" android:name="com.farsitel.bazaar.mybazaar.view.MyBazaarFragment" android:id="@id/myBazaarFragment">
+        <deepLink app:uri="@string/deeplink_my_bazaar" />
+    </fragment>
+</navigation>

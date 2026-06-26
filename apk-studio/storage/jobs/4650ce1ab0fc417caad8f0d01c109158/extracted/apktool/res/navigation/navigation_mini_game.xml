@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/navigation_mini_game" app:startDestination="@id/emptyFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="EmptyFragment" android:name="com.farsitel.bazaar.component.EmptyFragment" android:id="@id/emptyFragment" />
+    <action android:id="@id/globalMiniGameAction" app:destination="@id/miniGameWebFragment" />
+    <fragment android:label="MiniGameWebFragment" android:name="com.farsitel.bazaar.minigame.view.MiniGameFragment" android:id="@id/miniGameWebFragment">
+        <argument android:name="miniGameArg" app:argType="com.farsitel.bazaar.navigation.MiniGameArgs" />
+    </fragment>
+    <fragment android:label="LeaderboardFragment" android:name="com.farsitel.bazaar.minigame.view.MiniGameLeaderboardFragment" android:id="@id/miniGameLeaderboardFragment">
+        <deepLink app:uri="@string/deeplink_mini_game_leaderboard_fragment" />
+    </fragment>
+    <fragment android:label="HomeMiniGameFragment" android:name="com.farsitel.bazaar.minigame.view.HomeMiniGameFragment" android:id="@id/homeMiniGameFragment">
+        <deepLink app:uri="@string/deeplink_home_mini_game_fragment" />
+    </fragment>
+</navigation>

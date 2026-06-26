@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference android:title="@string/clear_title_quit" android:key="sp_clear_quit" android:defaultValue="false" />
+    <SwitchPreference android:title="@string/clear_title_cache" android:key="sp_clear_cache" android:defaultValue="false" />
+    <SwitchPreference android:title="@string/localData" android:key="sp_clearIndexedDB" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/clear_title_cookie" android:key="sp_clear_cookie" android:summary="@string/setting_summary_cookie_delete" android:defaultValue="false" />
+</PreferenceScreen>

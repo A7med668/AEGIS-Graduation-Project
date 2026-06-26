@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_delete" android:id="@id/remove_item" android:title="@string/delete_label" />
+    <item android:icon="@drawable/ic_download" android:id="@id/download_item" android:title="@string/download_label" />
+    <item android:icon="@drawable/ic_mark_unplayed" android:id="@id/mark_unread_item" android:title="@string/mark_as_unplayed_label" />
+    <item android:icon="@drawable/ic_mark_played" android:id="@id/mark_read_item" android:title="@string/mark_as_played_label" />
+    <item android:icon="@drawable/ic_playlist_remove" android:id="@id/remove_from_queue_item" android:title="@string/remove_from_queue_label" />
+    <item android:icon="@drawable/ic_playlist_play" android:id="@id/add_to_queue_item" android:title="@string/add_to_queue_label" />
+    <item android:icon="@drawable/ic_check" android:id="@id/remove_inbox_item" android:title="@string/remove_inbox_label" />
+    <item android:icon="@drawable/ic_arrow_full_up" android:id="@id/move_to_top_item" android:visible="false" android:title="@string/move_to_top_label" />
+    <item android:icon="@drawable/ic_arrow_full_down" android:id="@id/move_to_bottom_item" android:visible="false" android:title="@string/move_to_bottom_label" />
+</menu>

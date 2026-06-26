@@ -1,0 +1,284 @@
+{
+  "score": 27,
+  "level": "low",
+  "reasons": [
+    {
+      "code": "permission_signal",
+      "bucket": "permission",
+      "weight": 3,
+      "detail": "android.permission.RECEIVE_BOOT_COMPLETED",
+      "evidence_ref": "static.permissions.android.permission.RECEIVE_BOOT_COMPLETED"
+    },
+    {
+      "code": "permission_signal",
+      "bucket": "permission",
+      "weight": 1,
+      "detail": "android.permission.FOREGROUND_SERVICE",
+      "evidence_ref": "static.permissions.android.permission.FOREGROUND_SERVICE"
+    },
+    {
+      "code": "permission_signal",
+      "bucket": "permission",
+      "weight": 1,
+      "detail": "android.permission.WAKE_LOCK",
+      "evidence_ref": "static.permissions.android.permission.WAKE_LOCK"
+    },
+    {
+      "code": "exported_components",
+      "bucket": "context",
+      "weight": 2,
+      "detail": "8 exported components",
+      "evidence_ref": "static.components.exported_count"
+    },
+    {
+      "code": "network_indicators",
+      "bucket": "context",
+      "weight": 1,
+      "detail": "3 domains found",
+      "evidence_ref": "static.network_indicators.domains"
+    },
+    {
+      "code": "cleartext_http_urls",
+      "bucket": "context",
+      "weight": 6,
+      "detail": "273 cleartext HTTP URLs found",
+      "evidence_ref": "static.network_indicators.urls"
+    },
+    {
+      "code": "embedded_secrets",
+      "bucket": "context",
+      "weight": 8,
+      "detail": "1 possible secrets",
+      "evidence_ref": "static.secrets",
+      "strong_evidence": true
+    },
+    {
+      "code": "native_code",
+      "bucket": "context",
+      "weight": 3,
+      "detail": "3 native libraries",
+      "evidence_ref": "static.native_libraries"
+    },
+    {
+      "code": "crypto_indicators",
+      "bucket": "context",
+      "weight": 2,
+      "detail": "2 cryptography indicators",
+      "evidence_ref": "static.crypto_indicators"
+    }
+  ],
+  "risk_reasons": [
+    {
+      "code": "permission_signal",
+      "bucket": "permission",
+      "weight": 3,
+      "detail": "android.permission.RECEIVE_BOOT_COMPLETED",
+      "evidence_ref": "static.permissions.android.permission.RECEIVE_BOOT_COMPLETED"
+    },
+    {
+      "code": "permission_signal",
+      "bucket": "permission",
+      "weight": 1,
+      "detail": "android.permission.FOREGROUND_SERVICE",
+      "evidence_ref": "static.permissions.android.permission.FOREGROUND_SERVICE"
+    },
+    {
+      "code": "permission_signal",
+      "bucket": "permission",
+      "weight": 1,
+      "detail": "android.permission.WAKE_LOCK",
+      "evidence_ref": "static.permissions.android.permission.WAKE_LOCK"
+    },
+    {
+      "code": "exported_components",
+      "bucket": "context",
+      "weight": 2,
+      "detail": "8 exported components",
+      "evidence_ref": "static.components.exported_count"
+    },
+    {
+      "code": "network_indicators",
+      "bucket": "context",
+      "weight": 1,
+      "detail": "3 domains found",
+      "evidence_ref": "static.network_indicators.domains"
+    },
+    {
+      "code": "cleartext_http_urls",
+      "bucket": "context",
+      "weight": 6,
+      "detail": "273 cleartext HTTP URLs found",
+      "evidence_ref": "static.network_indicators.urls"
+    },
+    {
+      "code": "embedded_secrets",
+      "bucket": "context",
+      "weight": 8,
+      "detail": "1 possible secrets",
+      "evidence_ref": "static.secrets",
+      "strong_evidence": true
+    },
+    {
+      "code": "native_code",
+      "bucket": "context",
+      "weight": 3,
+      "detail": "3 native libraries",
+      "evidence_ref": "static.native_libraries"
+    },
+    {
+      "code": "crypto_indicators",
+      "bucket": "context",
+      "weight": 2,
+      "detail": "2 cryptography indicators",
+      "evidence_ref": "static.crypto_indicators"
+    }
+  ],
+  "informational_observations": [],
+  "risk_reason_groups": [
+    {
+      "group": "permission_signals",
+      "title": "Sensitive permissions present",
+      "bucket": "permission",
+      "count": 3,
+      "total_weight": 5,
+      "strong_evidence": false,
+      "examples": [
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.WAKE_LOCK"
+      ],
+      "evidence_refs": [
+        "static.permissions.android.permission.RECEIVE_BOOT_COMPLETED",
+        "static.permissions.android.permission.FOREGROUND_SERVICE",
+        "static.permissions.android.permission.WAKE_LOCK"
+      ]
+    },
+    {
+      "group": "context:exported_components",
+      "title": "8 Exported Components",
+      "bucket": "context",
+      "count": 1,
+      "total_weight": 2,
+      "strong_evidence": false,
+      "examples": [
+        "8 exported components"
+      ],
+      "evidence_refs": [
+        "static.components.exported_count"
+      ]
+    },
+    {
+      "group": "context:network_indicators",
+      "title": "3 Domains Found",
+      "bucket": "context",
+      "count": 1,
+      "total_weight": 1,
+      "strong_evidence": false,
+      "examples": [
+        "3 domains found"
+      ],
+      "evidence_refs": [
+        "static.network_indicators.domains"
+      ]
+    },
+    {
+      "group": "context:cleartext_http_urls",
+      "title": "273 Cleartext Http Urls Found",
+      "bucket": "context",
+      "count": 1,
+      "total_weight": 6,
+      "strong_evidence": false,
+      "examples": [
+        "273 cleartext HTTP URLs found"
+      ],
+      "evidence_refs": [
+        "static.network_indicators.urls"
+      ]
+    },
+    {
+      "group": "context:embedded_secrets",
+      "title": "1 Possible Secrets",
+      "bucket": "context",
+      "count": 1,
+      "total_weight": 8,
+      "strong_evidence": true,
+      "examples": [
+        "1 possible secrets"
+      ],
+      "evidence_refs": [
+        "static.secrets"
+      ]
+    },
+    {
+      "group": "context:native_code",
+      "title": "3 Native Libraries",
+      "bucket": "context",
+      "count": 1,
+      "total_weight": 3,
+      "strong_evidence": false,
+      "examples": [
+        "3 native libraries"
+      ],
+      "evidence_refs": [
+        "static.native_libraries"
+      ]
+    },
+    {
+      "group": "context:crypto_indicators",
+      "title": "2 Cryptography Indicators",
+      "bucket": "context",
+      "count": 1,
+      "total_weight": 2,
+      "strong_evidence": false,
+      "examples": [
+        "2 cryptography indicators"
+      ],
+      "evidence_refs": [
+        "static.crypto_indicators"
+      ]
+    }
+  ],
+  "risk_reason_count": 9,
+  "risk_reason_group_count": 7,
+  "observation_count": 0,
+  "total_reason_entries": 9,
+  "verdict_note": "Risk score is based on the listed contributing evidence groups.",
+  "score_breakdown": {
+    "permission_score_raw": 5,
+    "permission_score_capped": 5,
+    "permission_score_cap": 16,
+    "context_score": 22,
+    "combo_score": 0,
+    "dynamic_score_raw": 0,
+    "dynamic_score_capped": 0,
+    "dynamic_score_cap": 3,
+    "dynamic_generic_only": true,
+    "dynamic_high_or_critical_count": 0,
+    "dynamic_c2_like_count": 0,
+    "score_before_profile": 27,
+    "app_profile": "background_sync_like",
+    "expected_permission_reduction": 0,
+    "score_after_profile": 27,
+    "strong_evidence": true,
+    "hard_strong_evidence": true,
+    "hard_strong_evidence_count": 1,
+    "soft_strong_only": false,
+    "critical_calibration_applied": false,
+    "permission_reason_count": 3,
+    "combo_reason_count": 0,
+    "risk_reason_count": 9,
+    "risk_reason_group_count": 7,
+    "observation_count": 0,
+    "permission_heavy_downgrade_applied": false,
+    "high_risk_gate_applied": false
+  },
+  "calibration": {
+    "profile": "v4.7.2_false_positive_resistant_calibration",
+    "high_threshold": 88,
+    "critical_threshold": 96,
+    "permission_score_cap": 16,
+    "dynamic_generic_score_cap": 3,
+    "note": "False-positive resistant calibration: permissions, domains, exported components, and soft static indicators cannot produce Critical 100% without hard malicious evidence."
+  },
+  "summary": "Rule score 27/100 (low). Risk groups: 7; observations: 0"
+}

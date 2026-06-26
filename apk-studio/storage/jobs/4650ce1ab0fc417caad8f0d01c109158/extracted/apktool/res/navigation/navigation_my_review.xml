@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/navigation_my_review" app:startDestination="@id/emptyFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="EmptyFragment" android:name="com.farsitel.bazaar.component.EmptyFragment" android:id="@id/emptyFragment" />
+    <fragment android:label="My reviews" android:name="com.farsitel.bazaar.myreview.view.MyReviewsAndCommentFragment" android:id="@id/myReviewsAndCommentFragment">
+        <deepLink app:uri="@string/deeplink_my_reviews" />
+        <deepLink app:uri="@string/deeplink_my_reviews_with_extra" />
+    </fragment>
+</navigation>

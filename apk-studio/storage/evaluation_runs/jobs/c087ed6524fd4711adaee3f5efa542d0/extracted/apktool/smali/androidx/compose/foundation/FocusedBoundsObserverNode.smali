@@ -1,0 +1,24 @@
+.class public abstract Landroidx/compose/foundation/FocusedBoundsObserverNode;
+.super Landroidx/compose/ui/Modifier$Node;
+.source "r8-map-id-6111cd36e04836b2112845bbfefcd639addb724f4b704f459dbb2086dbc06466"
+
+# interfaces
+.implements Landroidx/compose/ui/node/TraversableNode;
+
+
+# static fields
+.field public static final TraverseKey:Landroidx/compose/foundation/GestureNode$TraverseKey;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Landroidx/compose/foundation/GestureNode$TraverseKey;
+
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    sput-object v0, Landroidx/compose/foundation/FocusedBoundsObserverNode;->TraverseKey:Landroidx/compose/foundation/GestureNode$TraverseKey;
+
+    return-void
+.end method

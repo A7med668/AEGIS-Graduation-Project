@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="added_to_queue_message">
+        <item quantity="one">Dodano %d odcinek do kolejki.</item>
+        <item quantity="few">Dodano %d odcinki do kolejki.</item>
+        <item quantity="many">Dodano %d odcinków do kolejki.</item>
+        <item quantity="other">Dodano %d odcinków do kolejki.</item>
+    </plurals>
+    <plurals name="deleted_episode_message">
+        <item quantity="one">Usunięto %d pobrany odcinek.</item>
+        <item quantity="few">Usunięto %d pobrane odcinki.</item>
+        <item quantity="many">Usunięto %d pobranych odcinków.</item>
+        <item quantity="other">Usunięto %d pobranych odcinków.</item>
+    </plurals>
+    <plurals name="downloading_episodes_message">
+        <item quantity="one">Pobieranie %d odcinka.</item>
+        <item quantity="few">Pobieranie %d odcinków.</item>
+        <item quantity="many">Pobieranie %d odcinków.</item>
+        <item quantity="other">Pobieranie %d odcinków.</item>
+    </plurals>
+    <plurals name="downloads_left">
+        <item quantity="one">%d element pozostał do pobrania</item>
+        <item quantity="few">%d elementy pozostały do pobrania</item>
+        <item quantity="many">%d elementów pozostało do pobrania</item>
+        <item quantity="other">%d elementów pozostało do pobrania</item>
+    </plurals>
+    <plurals name="echo_hours_podcasts">
+        <item quantity="one">"godzin odcinków
+z %1$d podcastu"</item>
+        <item quantity="few">"godzin odcinków
+z %1$d różnych podcastów"</item>
+        <item quantity="many">"godzin odcinków
+z %1$d różnych podcastów"</item>
+        <item quantity="other">"godzin odcinków
+z %1$d różnych podcastów"</item>
+    </plurals>
+    <plurals name="echo_queue_hours_waiting">
+        <item quantity="one">"godzin w swojej kolejce
+z %1$d odcinka"</item>
+        <item quantity="few">"godzin w swojej kolejce
+z %1$d odcinków"</item>
+        <item quantity="many">"godzin w swojej kolejce
+z %1$d odcinków"</item>
+        <item quantity="other">"godzin w swojej kolejce
+z %1$d odcinków"</item>
+    </plurals>
+    <plurals name="episode_cleanup_days_after_listening">
+        <item quantity="one">%d dzień po zakończeniu</item>
+        <item quantity="few">%d dni po zakończeniu</item>
+        <item quantity="many">%d dni po zakończeniu</item>
+        <item quantity="other">%d dni po zakończeniu</item>
+    </plurals>
+    <plurals name="episode_cleanup_hours_after_listening">
+        <item quantity="one">%d godzina po zakończeniu</item>
+        <item quantity="few">%d godziny po zakończeniu</item>
+        <item quantity="many">%d godzin po zakończeniu</item>
+        <item quantity="other">%d godzin po zakończeniu</item>
+    </plurals>
+    <plurals name="episodes_sleep_timer_exceeds_queue">
+        <item quantity="one">Pozostał tylko %1$d odcinek w kolejce</item>
+        <item quantity="few">Pozostały tylko %1$d odcinki w kolejce</item>
+        <item quantity="many">Pozostało tylko %1$d odcinków w kolejce</item>
+        <item quantity="other">Pozostało tylko %1$d odcinków w kolejce</item>
+    </plurals>
+    <plurals name="marked_as_played_message">
+        <item quantity="one">%d odcinek oznaczony jako odtworzony.</item>
+        <item quantity="few">%d odcinki oznaczone jako odtworzone.</item>
+        <item quantity="many">%d odcinków oznaczonych jako odtworzone.</item>
+        <item quantity="other">%d odcinków oznaczonych jako odtworzone.</item>
+    </plurals>
+    <plurals name="marked_as_unplayed_message">
+        <item quantity="one">%d odcinek oznaczony jako nieodtworzony.</item>
+        <item quantity="few">%d odcinki oznaczone jako nieodtworzone.</item>
+        <item quantity="many">%d odcinków oznaczonych jako nieodtworzone.</item>
+        <item quantity="other">%d odcinków oznaczonych jako nieodtworzone.</item>
+    </plurals>
+    <plurals name="mobile_download_notice">
+        <item quantity="one">Pobieranie za pomocą danych mobilnych przez następną %d minutę</item>
+        <item quantity="few">Pobieranie za pomocą danych mobilnych przez następne %d minuty</item>
+        <item quantity="many">Pobieranie za pomocą danych mobilnych przez następne %d minut</item>
+        <item quantity="other">Pobieranie za pomocą danych mobilnych przez następne %d minut</item>
+    </plurals>
+    <plurals name="move_to_bottom_message">
+        <item quantity="one">%d odcinek przeniesiony na dół.</item>
+        <item quantity="few">%d odcinki przeniesione na dół.</item>
+        <item quantity="many">%d odcinków przeniesionych na dół.</item>
+        <item quantity="other">%d odcinków przeniesionych na dół.</item>
+    </plurals>
+    <plurals name="move_to_top_message">
+        <item quantity="one">%d odcinek przeniesiony na górę.</item>
+        <item quantity="few">%d odcinki przeniesione na górę.</item>
+        <item quantity="many">%d odcinków przeniesionych na górę.</item>
+        <item quantity="other">%d odcinków przeniesionych na górę.</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d nowe powiadomienie</item>
+        <item quantity="few">%d nowe powiadomienia</item>
+        <item quantity="many">%d nowych powiadomień</item>
+        <item quantity="other">%d nowego powiadomienia</item>
+    </plurals>
+    <plurals name="new_episode_notification_message">
+        <item quantity="one">%2$s ma opublikował nowy odcinek</item>
+        <item quantity="few">%2$s opublikował %1$d nowe odcinków</item>
+        <item quantity="many">%2$s opublikował %1$d nowych odcinków</item>
+        <item quantity="other">%2$s opublikował %1$d nowych odcinków</item>
+    </plurals>
+    <plurals name="new_episode_notification_title">
+        <item quantity="one">Nowy odcinek</item>
+        <item quantity="few">Nowe odcinki</item>
+        <item quantity="many">Nowe odcinki</item>
+        <item quantity="other">Nowe odcinki</item>
+    </plurals>
+    <plurals name="num_episodes">
+        <item quantity="one">%d odcinek</item>
+        <item quantity="few">%d odcinki</item>
+        <item quantity="many">%d odcinków</item>
+        <item quantity="other">%d odcinków</item>
+    </plurals>
+    <plurals name="num_selected_label">
+        <item quantity="one">%1$d/%2$d wybrany</item>
+        <item quantity="few">%1$d/%2$d wybranych</item>
+        <item quantity="many">%1$d/%2$d wybranych</item>
+        <item quantity="other">%1$d/%2$d wybranych</item>
+    </plurals>
+    <plurals name="num_subscriptions">
+        <item quantity="one">%d subskrybcja</item>
+        <item quantity="few">%d subskrybcji</item>
+        <item quantity="many">%d subskrybcji</item>
+        <item quantity="other">%d subskrybcji</item>
+    </plurals>
+    <plurals name="removed_from_inbox_batch_label">
+        <item quantity="one">%d odcinek usunięty ze skrzynki odbiorczej.</item>
+        <item quantity="few">%d odcinki usunięte ze skrzynki odbiorczej.</item>
+        <item quantity="many">%d odcinków usuniętych ze skrzynki odbiorczej.</item>
+        <item quantity="other">%d odcinków usuniętych ze skrzynki odbiorczej.</item>
+    </plurals>
+    <plurals name="removed_from_queue_message">
+        <item quantity="one">Usunięto %d odcinek z kolejki.</item>
+        <item quantity="few">Usunięto %d odcinki z kolejki.</item>
+        <item quantity="many">Usunięto %d odcinków z kolejki.</item>
+        <item quantity="other">Usunięto %d odcinków z kolejki.</item>
+    </plurals>
+    <plurals name="statistics_episodes_downloaded">
+        <item quantity="one">pobrany</item>
+        <item quantity="few">pobrane</item>
+        <item quantity="many">pobranych</item>
+        <item quantity="other">pobranych</item>
+    </plurals>
+    <plurals name="statistics_episodes_started">
+        <item quantity="one">rozpoczęty</item>
+        <item quantity="few">rozpoczęte</item>
+        <item quantity="many">rozpoczętych</item>
+        <item quantity="other">rozpoczętych</item>
+    </plurals>
+    <plurals name="statistics_episodes_total">
+        <item quantity="one">w sumie</item>
+        <item quantity="few">w sumie</item>
+        <item quantity="many">w sumie</item>
+        <item quantity="other">w sumie</item>
+    </plurals>
+    <plurals name="time_days_quantified">
+        <item quantity="one">%d dzień</item>
+        <item quantity="few">%d dni</item>
+        <item quantity="many">%d dni</item>
+        <item quantity="other">%d dni</item>
+    </plurals>
+    <plurals name="time_hours_quantified">
+        <item quantity="one">%d godzina</item>
+        <item quantity="few">%d godziny</item>
+        <item quantity="many">%d godzin</item>
+        <item quantity="other">%d godzin</item>
+    </plurals>
+    <plurals name="time_minutes_quantified">
+        <item quantity="one">%d minuta</item>
+        <item quantity="few">%d minuty</item>
+        <item quantity="many">%d minut</item>
+        <item quantity="other">%d minut</item>
+    </plurals>
+    <plurals name="time_seconds_quantified">
+        <item quantity="one">%d sekunda</item>
+        <item quantity="few">%d sekundy</item>
+        <item quantity="many">%d sekund</item>
+        <item quantity="other">%d sekund</item>
+    </plurals>
+    <plurals name="timer_exceeds_remaining_time_while_continuous_playback_disabled">
+        <item quantity="one">Ciągłe odtwarzanie jest wyłączone, a pozostało tylko %1$d aktualnego odcinka</item>
+        <item quantity="few">Ciągłe odtwarzanie jest wyłączone, a pozostały tylko %1$d minuty aktualnego odcinka</item>
+        <item quantity="many">Ciągłe odtwarzanie jest wyłączone, a pozostało tylko %1$d minut aktualnego odcinka</item>
+        <item quantity="other">Ciągłe odtwarzanie jest wyłączone, a pozostało tylko %1$d minut aktualnego odcinka</item>
+    </plurals>
+    <plurals name="total_size_downloaded_podcasts">
+        <item quantity="one">Rozmiar %d odcinka na urządzeniu</item>
+        <item quantity="few">Łączny rozmiar %d odcinków na urządzeniu</item>
+        <item quantity="many">Łączny rozmiar %d odcinków na urządzeniu</item>
+        <item quantity="other">Łączny rozmiar %d odcinków na urządzeniu</item>
+    </plurals>
+    <plurals name="updated_feeds_batch_label">
+        <item quantity="one">Uaktualniono %d subskrypcję.</item>
+        <item quantity="few">%d subskrypcje uaktualniono.</item>
+        <item quantity="many">%d subskrypcji uaktualniono.</item>
+        <item quantity="other">%d subskrypcji uaktualniono.</item>
+    </plurals>
+</resources>

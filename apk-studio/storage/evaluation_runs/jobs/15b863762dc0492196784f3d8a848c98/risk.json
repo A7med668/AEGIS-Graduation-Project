@@ -1,0 +1,343 @@
+{
+  "score": 24,
+  "level": "low",
+  "reasons": [
+    {
+      "code": "permission_signal",
+      "bucket": "permission",
+      "weight": 3,
+      "detail": "android.permission.RECEIVE_BOOT_COMPLETED",
+      "evidence_ref": "static.permissions.android.permission.RECEIVE_BOOT_COMPLETED"
+    },
+    {
+      "code": "permission_signal",
+      "bucket": "permission",
+      "weight": 1,
+      "detail": "android.permission.FOREGROUND_SERVICE",
+      "evidence_ref": "static.permissions.android.permission.FOREGROUND_SERVICE"
+    },
+    {
+      "code": "permission_signal",
+      "bucket": "permission",
+      "weight": 1,
+      "detail": "android.permission.WAKE_LOCK",
+      "evidence_ref": "static.permissions.android.permission.WAKE_LOCK"
+    },
+    {
+      "code": "boot_foreground_network_combo",
+      "bucket": "combo",
+      "weight": 3,
+      "detail": "Boot persistence plus foreground service and network access",
+      "evidence_ref": "static.permissions",
+      "strong_evidence": false
+    },
+    {
+      "code": "exported_components",
+      "bucket": "context",
+      "weight": 3,
+      "detail": "16 exported components",
+      "evidence_ref": "static.components.exported_count"
+    },
+    {
+      "code": "network_indicators",
+      "bucket": "context",
+      "weight": 2,
+      "detail": "20 domains found",
+      "evidence_ref": "static.network_indicators.domains"
+    },
+    {
+      "code": "cleartext_http_urls",
+      "bucket": "context",
+      "weight": 6,
+      "detail": "473 cleartext HTTP URLs found",
+      "evidence_ref": "static.network_indicators.urls"
+    },
+    {
+      "code": "native_code",
+      "bucket": "context",
+      "weight": 4,
+      "detail": "4 native libraries",
+      "evidence_ref": "static.native_libraries"
+    },
+    {
+      "code": "webview_indicators",
+      "bucket": "context",
+      "weight": 4,
+      "detail": "4 WebView/JavaScript indicators",
+      "evidence_ref": "static.webview_indicators"
+    },
+    {
+      "code": "crypto_indicators",
+      "bucket": "context",
+      "weight": 3,
+      "detail": "3 cryptography indicators",
+      "evidence_ref": "static.crypto_indicators"
+    },
+    {
+      "code": "expected_permission_profile_reduction",
+      "bucket": "calibration",
+      "weight": 0,
+      "detail": "background_sync_like profile reduced weak expected-permission noise by 6",
+      "evidence_ref": "risk.calibration.app_profile",
+      "profile": "background_sync_like",
+      "matched_expected_permissions": [
+        "android.permission.ACCESS_NETWORK_STATE",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.INTERNET",
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "android.permission.WAKE_LOCK"
+      ]
+    }
+  ],
+  "risk_reasons": [
+    {
+      "code": "permission_signal",
+      "bucket": "permission",
+      "weight": 3,
+      "detail": "android.permission.RECEIVE_BOOT_COMPLETED",
+      "evidence_ref": "static.permissions.android.permission.RECEIVE_BOOT_COMPLETED"
+    },
+    {
+      "code": "permission_signal",
+      "bucket": "permission",
+      "weight": 1,
+      "detail": "android.permission.FOREGROUND_SERVICE",
+      "evidence_ref": "static.permissions.android.permission.FOREGROUND_SERVICE"
+    },
+    {
+      "code": "permission_signal",
+      "bucket": "permission",
+      "weight": 1,
+      "detail": "android.permission.WAKE_LOCK",
+      "evidence_ref": "static.permissions.android.permission.WAKE_LOCK"
+    },
+    {
+      "code": "boot_foreground_network_combo",
+      "bucket": "combo",
+      "weight": 3,
+      "detail": "Boot persistence plus foreground service and network access",
+      "evidence_ref": "static.permissions",
+      "strong_evidence": false
+    },
+    {
+      "code": "exported_components",
+      "bucket": "context",
+      "weight": 3,
+      "detail": "16 exported components",
+      "evidence_ref": "static.components.exported_count"
+    },
+    {
+      "code": "network_indicators",
+      "bucket": "context",
+      "weight": 2,
+      "detail": "20 domains found",
+      "evidence_ref": "static.network_indicators.domains"
+    },
+    {
+      "code": "cleartext_http_urls",
+      "bucket": "context",
+      "weight": 6,
+      "detail": "473 cleartext HTTP URLs found",
+      "evidence_ref": "static.network_indicators.urls"
+    },
+    {
+      "code": "native_code",
+      "bucket": "context",
+      "weight": 4,
+      "detail": "4 native libraries",
+      "evidence_ref": "static.native_libraries"
+    },
+    {
+      "code": "webview_indicators",
+      "bucket": "context",
+      "weight": 4,
+      "detail": "4 WebView/JavaScript indicators",
+      "evidence_ref": "static.webview_indicators"
+    },
+    {
+      "code": "crypto_indicators",
+      "bucket": "context",
+      "weight": 3,
+      "detail": "3 cryptography indicators",
+      "evidence_ref": "static.crypto_indicators"
+    }
+  ],
+  "informational_observations": [
+    {
+      "code": "expected_permission_profile_reduction",
+      "bucket": "calibration",
+      "weight": 0,
+      "detail": "background_sync_like profile reduced weak expected-permission noise by 6",
+      "evidence_ref": "risk.calibration.app_profile",
+      "profile": "background_sync_like",
+      "matched_expected_permissions": [
+        "android.permission.ACCESS_NETWORK_STATE",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.INTERNET",
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "android.permission.WAKE_LOCK"
+      ]
+    }
+  ],
+  "risk_reason_groups": [
+    {
+      "group": "permission_signals",
+      "title": "Sensitive permissions present",
+      "bucket": "permission",
+      "count": 3,
+      "total_weight": 5,
+      "strong_evidence": false,
+      "examples": [
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.WAKE_LOCK"
+      ],
+      "evidence_refs": [
+        "static.permissions.android.permission.RECEIVE_BOOT_COMPLETED",
+        "static.permissions.android.permission.FOREGROUND_SERVICE",
+        "static.permissions.android.permission.WAKE_LOCK"
+      ]
+    },
+    {
+      "group": "combo:boot_foreground_network_combo",
+      "title": "Boot Persistence Plus Foreground Service And Network Access",
+      "bucket": "combo",
+      "count": 1,
+      "total_weight": 3,
+      "strong_evidence": false,
+      "examples": [
+        "Boot persistence plus foreground service and network access"
+      ],
+      "evidence_refs": [
+        "static.permissions"
+      ]
+    },
+    {
+      "group": "context:exported_components",
+      "title": "16 Exported Components",
+      "bucket": "context",
+      "count": 1,
+      "total_weight": 3,
+      "strong_evidence": false,
+      "examples": [
+        "16 exported components"
+      ],
+      "evidence_refs": [
+        "static.components.exported_count"
+      ]
+    },
+    {
+      "group": "context:network_indicators",
+      "title": "20 Domains Found",
+      "bucket": "context",
+      "count": 1,
+      "total_weight": 2,
+      "strong_evidence": false,
+      "examples": [
+        "20 domains found"
+      ],
+      "evidence_refs": [
+        "static.network_indicators.domains"
+      ]
+    },
+    {
+      "group": "context:cleartext_http_urls",
+      "title": "473 Cleartext Http Urls Found",
+      "bucket": "context",
+      "count": 1,
+      "total_weight": 6,
+      "strong_evidence": false,
+      "examples": [
+        "473 cleartext HTTP URLs found"
+      ],
+      "evidence_refs": [
+        "static.network_indicators.urls"
+      ]
+    },
+    {
+      "group": "context:native_code",
+      "title": "4 Native Libraries",
+      "bucket": "context",
+      "count": 1,
+      "total_weight": 4,
+      "strong_evidence": false,
+      "examples": [
+        "4 native libraries"
+      ],
+      "evidence_refs": [
+        "static.native_libraries"
+      ]
+    },
+    {
+      "group": "context:webview_indicators",
+      "title": "4 Webview/Javascript Indicators",
+      "bucket": "context",
+      "count": 1,
+      "total_weight": 4,
+      "strong_evidence": false,
+      "examples": [
+        "4 WebView/JavaScript indicators"
+      ],
+      "evidence_refs": [
+        "static.webview_indicators"
+      ]
+    },
+    {
+      "group": "context:crypto_indicators",
+      "title": "3 Cryptography Indicators",
+      "bucket": "context",
+      "count": 1,
+      "total_weight": 3,
+      "strong_evidence": false,
+      "examples": [
+        "3 cryptography indicators"
+      ],
+      "evidence_refs": [
+        "static.crypto_indicators"
+      ]
+    }
+  ],
+  "risk_reason_count": 10,
+  "risk_reason_group_count": 8,
+  "observation_count": 1,
+  "total_reason_entries": 11,
+  "verdict_note": "Some entries are informational runtime observations and calibration notes; they explain context but are not independent malicious proofs.",
+  "score_breakdown": {
+    "permission_score_raw": 5,
+    "permission_score_capped": 5,
+    "permission_score_cap": 16,
+    "context_score": 22,
+    "combo_score": 3,
+    "dynamic_score_raw": 0,
+    "dynamic_score_capped": 0,
+    "dynamic_score_cap": 3,
+    "dynamic_generic_only": true,
+    "dynamic_high_or_critical_count": 0,
+    "dynamic_c2_like_count": 0,
+    "score_before_profile": 30,
+    "app_profile": "background_sync_like",
+    "expected_permission_reduction": 6,
+    "score_after_profile": 24,
+    "strong_evidence": false,
+    "hard_strong_evidence": false,
+    "hard_strong_evidence_count": 0,
+    "soft_strong_only": false,
+    "critical_calibration_applied": false,
+    "permission_reason_count": 3,
+    "combo_reason_count": 1,
+    "risk_reason_count": 10,
+    "risk_reason_group_count": 8,
+    "observation_count": 1,
+    "permission_heavy_downgrade_applied": false,
+    "high_risk_gate_applied": false
+  },
+  "calibration": {
+    "profile": "v4.7.2_false_positive_resistant_calibration",
+    "high_threshold": 88,
+    "critical_threshold": 96,
+    "permission_score_cap": 16,
+    "dynamic_generic_score_cap": 3,
+    "note": "False-positive resistant calibration: permissions, domains, exported components, and soft static indicators cannot produce Critical 100% without hard malicious evidence."
+  },
+  "summary": "Rule score 24/100 (low). Risk groups: 8; observations: 1"
+}

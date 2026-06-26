@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/filter_rows" android:paddingLeft="24.0dp" android:paddingTop="24.0dp" android:paddingRight="24.0dp" android:paddingBottom="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.google.android.material.button.MaterialButton android:id="@id/resetFiltermenu" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/reset" android:layout_weight="1.0" style="@style/Widget.MaterialComponents.Button.TextButton" />
+            <com.google.android.material.button.MaterialButton android:id="@id/confirmFiltermenu" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/confirm_label" android:layout_weight="1.0" style="@style/Widget.MaterialComponents.Button.TextButton" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

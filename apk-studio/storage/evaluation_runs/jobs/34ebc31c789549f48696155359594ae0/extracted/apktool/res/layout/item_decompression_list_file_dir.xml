@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/item_holder" android:background="?selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="0.0dp" android:paddingEnd="@dimen/activity_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/item_icon" android:padding="@dimen/medium_margin" android:layout_width="@dimen/file_picker_icon_size" android:layout_height="@dimen/file_picker_icon_size" android:src="@drawable/ic_folder_vector" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/bigger_text_size" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/item_name" android:paddingTop="@dimen/small_margin" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_alignTop="@id/item_icon" android:layout_alignBottom="@id/item_icon" android:paddingStart="@dimen/tiny_margin" android:paddingEnd="0.0dp" android:layout_toEndOf="@id/item_icon" />
+</RelativeLayout>

@@ -1,0 +1,78 @@
+Applications Memory Usage (in Kilobytes):
+Uptime: 866744 Realtime: 866744
+
+** MEMINFO in pid 5025 [com.farsitel.bazaar] **
+                   Pss  Private  Private  SwapPss      Rss     Heap     Heap     Heap
+                 Total    Dirty    Clean    Dirty    Total     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------   ------
+  Native Heap    33136    33076        8       45    34248    40092    29561     6496
+  Dalvik Heap    18407    18208      144      174    19112    23115    11558    11557
+ Dalvik Other     7132     6688        0        8     7788                           
+        Stack     2580     2580        0        0     2588                           
+       Ashmem       31        0        0        0      420                           
+    Other dev       14        4        8        0      260                           
+     .so mmap     5166      300     1352       20    40168                           
+    .jar mmap     3485        0      804        0    37000                           
+    .apk mmap    37005        0    13488        0    65536                           
+    .ttf mmap      418        0      220        0      668                           
+    .dex mmap    35461        4    35440        0    36280                           
+    .oat mmap     1083        0      152        0    15104                           
+    .art mmap     1787      824      208      246    18096                           
+   Other mmap      888       68      568        0     2596                           
+      Unknown      573      564        4        0      916                           
+        TOTAL   147659    62316    52396      493   280780    63207    41119    18053
+ 
+ App Summary
+                       Pss(KB)                        Rss(KB)
+                        ------                         ------
+           Java Heap:    ۱۹۲۴۰                          ۳۷۲۰۸
+         Native Heap:    ۳۳۰۷۶                          ۳۴۲۴۸
+                Code:    ۵۱۷۶۰                         ۱۹۵۶۵۲
+               Stack:     ۲۵۸۰                           ۲۵۸۸
+            Graphics:        ۰                              ۰
+       Private Other:     ۸۰۵۶
+              System:    ۳۲۹۴۷
+             Unknown:                                   ۱۱۰۸۴
+ 
+           TOTAL PSS:   ۱۴۷۶۵۹            TOTAL RSS:   280780       TOTAL SWAP PSS:      ۴۹۳
+ 
+ Objects
+               Views:       ۷۷         ViewRootImpl:        ۱
+         AppContexts:       ۳۳           Activities:        ۲
+              Assets:       ۲۸        AssetManagers:        ۰
+       Local Binders:       ۵۱        Proxy Binders:       ۶۷
+       Parcel memory:      ۷۳۶         Parcel count:      ۴۷۳
+    Death Recipients:        ۲             WebViews:        ۰
+ 
+ SQL
+         MEMORY_USED:     ۱۴۱۹
+  PAGECACHE_OVERFLOW:      ۶۵۲          MALLOC_SIZE:       ۴۶
+ 
+ DATABASES
+      pgsz     dbsz   Lookaside(b) cache hits cache misses cache size  Dbname
+PER CONNECTION STATS
+         4      148             14   ۵۴۴   ۱۴۳     ۱  /data/user/0/com.farsitel.bazaar/databases/data.db
+         4        8                    ۰     ۰     ۰    (attached) temp
+         4      148             28    ۳۳    ۵۲     ۱  /data/user/0/com.farsitel.bazaar/databases/data.db (1)
+         4      148             38    ۱۱    ۳۷     ۱  /data/user/0/com.farsitel.bazaar/databases/data.db (2)
+         4       24             18    ۵۶   ۱۴۴     ۱  /data/user/0/com.farsitel.bazaar/databases/actionLog-db
+         4        8                    ۰     ۰     ۰    (attached) temp
+         4       24             22    ۲۸    ۴۶     ۱  /data/user/0/com.farsitel.bazaar/databases/actionLog-db (1)
+         4      104             18   ۳۸۲  ۱۰۳۹     ۱  /data/user/0/com.farsitel.bazaar/no_backup/androidx.work.workdb
+         4        8                    ۰     ۰     ۰    (attached) temp
+         4      104             20    ۷۷    ۴۸     ۱  /data/user/0/com.farsitel.bazaar/no_backup/androidx.work.workdb (2)
+         4       24             13     ۴    ۴۰     ۱  /data/user/0/com.farsitel.bazaar/databases/payment_data.db
+         4        8                    ۰     ۰     ۰    (attached) temp
+         4       24             32     ۳    ۲۱     ۱  /data/user/0/com.farsitel.bazaar/databases/payment_data.db (1)
+         4       56             46     ۲    ۶۳     ۵  /data/user/0/com.farsitel.bazaar/databases/com.google.android.datatransport.events
+         4       32             12     ۶    ۶۲     ۱  /data/user/0/com.farsitel.bazaar/databases/core-db
+         4        8                    ۰     ۰     ۰    (attached) temp
+         4       32             22     ۶    ۲۲     ۱  /data/user/0/com.farsitel.bazaar/databases/core-db (1)
+POOL STATS
+     cache hits  cache misses    cache size  Dbname
+            ۵۷۵           ۲۰۴           ۷۷۹  /data/user/0/com.farsitel.bazaar/databases/data.db
+             ۸۴           ۱۹۴           ۲۷۸  /data/user/0/com.farsitel.bazaar/databases/actionLog-db
+            ۴۵۹          ۱۱۰۴          ۱۵۶۳  /data/user/0/com.farsitel.bazaar/no_backup/androidx.work.workdb
+              ۷            ۶۵            ۷۲  /data/user/0/com.farsitel.bazaar/databases/payment_data.db
+              ۲            ۶۴            ۶۶  /data/user/0/com.farsitel.bazaar/databases/com.google.android.datatransport.events
+             ۱۲            ۸۸           ۱۰۰  /data/user/0/com.farsitel.bazaar/databases/core-db

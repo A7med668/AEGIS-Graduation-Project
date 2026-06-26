@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="content_types">
+        <item>INDETERMINATO</item>
+        <item>Testo</item>
+        <item>E-Mail</item>
+        <item>Numero di telefono</item>
+        <item>SMS</item>
+        <item>MMS</item>
+        <item>URL</item>
+        <item>Wifi</item>
+        <item>VCard</item>
+        <item>MeCard</item>
+        <item>BizCard</item>
+        <item>Market</item>
+        <item>Contatto</item>
+        <item>Geolocalizzazione</item>
+        <item>Libro indirizzi</item>
+        <item>Prodotto</item>
+        <item>Calendario</item>
+        <item>ISBN</item>
+        <item>Numero di identificazione del veicolo (VIN)</item>
+    </string-array>
+    <string-array name="email_array">
+        <item>Invia E-mail</item>
+        <item>Aggiungi ai Contatti</item>
+    </string-array>
+    <string-array name="generator_array">
+        <item>Testo</item>
+        <item>E-mail</item>
+        <item>URL</item>
+        <item>Numero di telefono</item>
+        <item>SMS</item>
+        <item>Geolocalizzazione</item>
+        <item>MeCard</item>
+        <item>BizCard</item>
+        <item>Wifi</item>
+        <item>VCard</item>
+        <item>Market</item>
+    </string-array>
+    <string-array name="geo_array">
+        <item>App Open Maps</item>
+        <item>Non fare niente</item>
+    </string-array>
+    <string-array name="history_array">
+        <item>Copia nella clipboard</item>
+        <item>Cancella valore</item>
+    </string-array>
+    <string-array name="mms_array">
+        <item>Invia MMS</item>
+        <item>Chiama Numero</item>
+        <item>Aggiungi ai Contatti</item>
+    </string-array>
+    <string-array name="pref_app_theme_entries">
+        <item>Chiaro</item>
+        <item>Scuro</item>
+        <item>Sistema predefinito</item>
+    </string-array>
+    <string-array name="product_array">
+        <item>Cerca sul Web</item>
+        <item>Non fare niente</item>
+    </string-array>
+    <string-array name="send_email_array">
+        <item>Invia E-mail</item>
+        <item>Aggiungi ai Contatti</item>
+    </string-array>
+    <string-array name="sms_array">
+        <item>Invia SMS</item>
+        <item>Chiama Numero</item>
+        <item>Aggiungi ai Contatti</item>
+    </string-array>
+    <string-array name="tel_array">
+        <item>Chiama Numero</item>
+        <item>Aggiungi ai Contatti</item>
+    </string-array>
+    <string-array name="text_array">
+        <item>Cerca sul Web</item>
+        <item>Non fare niente</item>
+    </string-array>
+    <string-array name="url_array">
+        <item>Visita URL</item>
+        <item>Non fare niente</item>
+    </string-array>
+    <string-array name="vcard_array">
+        <item>Aggiungi ai Contatti</item>
+        <item>Non fare niente</item>
+    </string-array>
+    <string-array name="wifi_array">
+        <item>Copia Password</item>
+        <item>Aggiungere una rete WiFi</item>
+        <item>Non fare niente</item>
+    </string-array>
+</resources>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="added_to_queue_message">
+        <item quantity="one">%d епізод додано до черги.</item>
+        <item quantity="few">%d епізоди додано до черги.</item>
+        <item quantity="many">%d епізодів додано до черги.</item>
+        <item quantity="other">%d епізодів додано до черги.</item>
+    </plurals>
+    <plurals name="deleted_episode_message">
+        <item quantity="one">%d завантажений епізод видалено.</item>
+        <item quantity="few">%d завантажені епізоди видалено.</item>
+        <item quantity="many">%d завантажені епізодів видалено.</item>
+        <item quantity="other">%d завантажені епізодів видалено.</item>
+    </plurals>
+    <plurals name="downloading_episodes_message">
+        <item quantity="one">Завантаження %d епізоду.</item>
+        <item quantity="few">Завантаження %d епізоди.</item>
+        <item quantity="many">Завантаження %d епізодів.</item>
+        <item quantity="other">Завантаження %d епізодів.</item>
+    </plurals>
+    <plurals name="downloads_left">
+        <item quantity="one">%d завантаження залишилось</item>
+        <item quantity="few">%d завантаження залишилось</item>
+        <item quantity="many">%d завантажень залишилось</item>
+        <item quantity="other">%d завантажень залишилось</item>
+    </plurals>
+    <plurals name="echo_hours_podcasts">
+        <item quantity="one">"годин випуска
+з %1$d подкасту"</item>
+        <item quantity="few">"годин випусків
+з %1$d різного подкастів"</item>
+        <item quantity="many">"годин випусків
+з %1$d різних подкастів"</item>
+        <item quantity="other">"годин випусків
+з %1$d різних подкастів"</item>
+    </plurals>
+    <plurals name="echo_queue_hours_waiting">
+        <item quantity="one">"годин очікування у вашій черзі
+з %1$d випуску"</item>
+        <item quantity="few">"годин очікування у вашій черзі
+з %1$d випусків"</item>
+        <item quantity="many">"годин очікування у вашій черзі
+з %1$d випусків"</item>
+        <item quantity="other">"годин очікування у вашій черзі
+з %1$d випусків"</item>
+    </plurals>
+    <plurals name="episode_cleanup_days_after_listening">
+        <item quantity="one">%d день після завершення</item>
+        <item quantity="few">%d днів після завершення</item>
+        <item quantity="many">%d днів після завершення</item>
+        <item quantity="other">%d днів після завершення</item>
+    </plurals>
+    <plurals name="episode_cleanup_hours_after_listening">
+        <item quantity="one">%d година після завершення</item>
+        <item quantity="few">%d годин після завершення</item>
+        <item quantity="many">%d годин після завершення</item>
+        <item quantity="other">%d годин після завершення</item>
+    </plurals>
+    <plurals name="episodes_sleep_timer_exceeds_queue">
+        <item quantity="one">У вашій черзі залишився лише %1$d епізод</item>
+        <item quantity="few">У вашій черзі залишилося лише %1$d епізодів</item>
+        <item quantity="many">У вашій черзі залишилося лише %1$d епізод</item>
+        <item quantity="other">У вашій черзі залишилося лише %1$d епізод</item>
+    </plurals>
+    <plurals name="marked_as_played_message">
+        <item quantity="one">%d епізод позначено як відтворений.</item>
+        <item quantity="few">%d епізоди позначено як відтворені.</item>
+        <item quantity="many">%d епізодів позначено як відтворені.</item>
+        <item quantity="other">%d епізодів позначено як відтворені.</item>
+    </plurals>
+    <plurals name="marked_as_unplayed_message">
+        <item quantity="one">%d епізод позначено як невідтворений.</item>
+        <item quantity="few">%d епізоди позначено як невідтворені.</item>
+        <item quantity="many">%d епізодів позначено як невідтворені.</item>
+        <item quantity="other">%d епізодів позначено як невідтворені.</item>
+    </plurals>
+    <plurals name="mobile_download_notice">
+        <item quantity="one">Завантаження через мобільне з’єднання даних протягом наступної %d хвилина</item>
+        <item quantity="few">Завантаження через мобільне з’єднання даних протягом наступних %d хвилини</item>
+        <item quantity="many">Завантаження через мобільне з’єднання даних протягом наступних %d хвилин</item>
+        <item quantity="other">Завантаження через мобільне з’єднання даних протягом наступних %d хвилин</item>
+    </plurals>
+    <plurals name="move_to_bottom_message">
+        <item quantity="one">%d епізод переміщено вниз.</item>
+        <item quantity="few">%d епізоди переміщено вниз.</item>
+        <item quantity="many">%d епізодів переміщено вниз.</item>
+        <item quantity="other">%d епізодів переміщено вниз.</item>
+    </plurals>
+    <plurals name="move_to_top_message">
+        <item quantity="one">%d епізод переміщено на початок.</item>
+        <item quantity="few">%d епізоди переміщено на початок.</item>
+        <item quantity="many">%d епізодів переміщено на початок.</item>
+        <item quantity="other">%d епізодів переміщено на початок.</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d нове сповіщення</item>
+        <item quantity="few">%d нові сповіщення</item>
+        <item quantity="many">%d нових сповіщень</item>
+        <item quantity="other">%d нового сповіщення</item>
+    </plurals>
+    <plurals name="new_episode_notification_message">
+        <item quantity="one">Вийшов новий випуск подкасту «%2$s»</item>
+        <item quantity="few">Вийшло %1$d нових випуски подкасту «%2$s»</item>
+        <item quantity="many">Вийшло %1$d нових випусків подкасту «%2$s»</item>
+        <item quantity="other">Вийшло %1$d нових випусків подкасту «%2$s»</item>
+    </plurals>
+    <plurals name="new_episode_notification_title">
+        <item quantity="one">Новий випуск</item>
+        <item quantity="few">Нові випуски</item>
+        <item quantity="many">Нових випусків</item>
+        <item quantity="other">Нових випусків</item>
+    </plurals>
+    <plurals name="num_episodes">
+        <item quantity="one">%d випуск</item>
+        <item quantity="few">%d випуски</item>
+        <item quantity="many">%d випусків</item>
+        <item quantity="other">%d випусків</item>
+    </plurals>
+    <plurals name="num_selected_label">
+        <item quantity="one">%1$d/%2$d вибрано</item>
+        <item quantity="few">%1$d/%2$d вибрано</item>
+        <item quantity="many">%1$d/%2$d вибрано</item>
+        <item quantity="other">%1$d/%2$d вибрано</item>
+    </plurals>
+    <plurals name="num_subscriptions">
+        <item quantity="one">%d підписка</item>
+        <item quantity="few">%d підписки</item>
+        <item quantity="many">%d підписків</item>
+        <item quantity="other">%d підписків</item>
+    </plurals>
+    <plurals name="removed_from_inbox_batch_label">
+        <item quantity="one">%d випуск вилучено з нових.</item>
+        <item quantity="few">%d випуски вилучено з нових.</item>
+        <item quantity="many">%d випуски вилучено з нових.</item>
+        <item quantity="other">%d випуски вилучено з нових.</item>
+    </plurals>
+    <plurals name="removed_from_queue_message">
+        <item quantity="one">%d епізод видалено з черги.</item>
+        <item quantity="few">%d епізоди видалено з черги.</item>
+        <item quantity="many">%d епізодів видалено з черги.</item>
+        <item quantity="other">%d епізодів видалено з черги.</item>
+    </plurals>
+    <plurals name="statistics_episodes_downloaded">
+        <item quantity="one">завантажено</item>
+        <item quantity="few">завантаженні</item>
+        <item quantity="many">завантаженні</item>
+        <item quantity="other">завантаженні</item>
+    </plurals>
+    <plurals name="statistics_episodes_started">
+        <item quantity="one">розпочато</item>
+        <item quantity="few">розпочала</item>
+        <item quantity="many">розпочали</item>
+        <item quantity="other">розпочали</item>
+    </plurals>
+    <plurals name="statistics_episodes_total">
+        <item quantity="one">загальна сума</item>
+        <item quantity="few">загальна суми</item>
+        <item quantity="many">загальна суми</item>
+        <item quantity="other">загальна суми</item>
+    </plurals>
+    <plurals name="time_days_quantified">
+        <item quantity="one">%d день</item>
+        <item quantity="few">%d дня</item>
+        <item quantity="many">%d днів</item>
+        <item quantity="other">%d днів</item>
+    </plurals>
+    <plurals name="time_hours_quantified">
+        <item quantity="one">%d година</item>
+        <item quantity="few">%d години</item>
+        <item quantity="many">%d годин</item>
+        <item quantity="other">%d годин</item>
+    </plurals>
+    <plurals name="time_minutes_quantified">
+        <item quantity="one">%d хвилина</item>
+        <item quantity="few">%d хвилини</item>
+        <item quantity="many">%d хвилин</item>
+        <item quantity="other">%d хвилин</item>
+    </plurals>
+    <plurals name="time_seconds_quantified">
+        <item quantity="one">%d секунда</item>
+        <item quantity="few">%d секунди</item>
+        <item quantity="many">%d секунд</item>
+        <item quantity="other">%d секунд</item>
+    </plurals>
+    <plurals name="timer_exceeds_remaining_time_while_continuous_playback_disabled">
+        <item quantity="one">Безперервне відтворення вимкнено, і до кінця поточного епізоду залишилося лише %1$d хвилина</item>
+        <item quantity="few">Безперервне відтворення вимкнено, і до кінця поточного епізоду залишилося лише %1$d хвилини</item>
+        <item quantity="many">Безперервне відтворення вимкнено, і до кінця поточного епізоду залишилося лише %1$d хвилин</item>
+        <item quantity="other">Безперервне відтворення вимкнено, і до кінця поточного епізоду залишилося лише %1$d хвилин</item>
+    </plurals>
+    <plurals name="total_size_downloaded_podcasts">
+        <item quantity="one">Загальний розмір %d випуску на пристрої</item>
+        <item quantity="few">Загальний розмір %d випусків на пристрої</item>
+        <item quantity="many">Загальний розмір %d випусків на пристрої</item>
+        <item quantity="other">Загальний розмір %d випусків на пристрої</item>
+    </plurals>
+    <plurals name="updated_feeds_batch_label">
+        <item quantity="one">%d підписку оновлено.</item>
+        <item quantity="few">%d підписки оновлено.</item>
+        <item quantity="many">%d підписок оновлено.</item>
+        <item quantity="other">%d підписок оновлено.</item>
+    </plurals>
+</resources>

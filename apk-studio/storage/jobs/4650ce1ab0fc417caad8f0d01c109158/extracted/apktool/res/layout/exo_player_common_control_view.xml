@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:padding="@dimen/default_margin_double" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.farsitel.bazaar.player.view.widget.InfoControl android:id="@id/buttonInfoControl" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.farsitel.bazaar.designsystem.widget.RTLImageView android:id="@id/playerBackButton" android:layout_width="@dimen/icon_size" android:layout_height="@dimen/icon_size" android:tint="@color/white_primary" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_round_arrow_back_icon_secondary_24dp_old" />
+    <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/white_primary" android:id="@id/videoTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/default_margin_double" app:layout_constraintBottom_toBottomOf="@id/playerBackButton" app:layout_constraintStart_toEndOf="@id/playerBackButton" app:layout_constraintTop_toTopOf="@id/playerBackButton" style="@style/Bazaar.Text.Medium.Subtitle" />
+</androidx.constraintlayout.widget.ConstraintLayout>

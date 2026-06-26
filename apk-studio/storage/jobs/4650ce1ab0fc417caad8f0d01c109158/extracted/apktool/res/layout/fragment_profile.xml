@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/appBarLayout" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:layout_width="match_parent" android:layout_height="@dimen/actionBarSize" android:paddingStart="@dimen/default_margin_double" android:paddingEnd="@dimen/default_margin_double" app:layout_scrollFlags="enterAlways">
+            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.farsitel.bazaar.designsystem.widget.RTLImageView android:id="@id/backButton" android:contentDescription="@string/back_content_description" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_round_arrow_back_icon_secondary_24dp_old" style="@style/Bazaar.Image.Toolbar.Icon" />
+                <com.farsitel.bazaar.designsystem.widget.LocalAwareTextView android:textColor="@color/text_primary" android:id="@id/titleTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/profile_title" android:layout_marginStart="@dimen/default_margin_double" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@id/backButton" app:layout_constraintTop_toTopOf="parent" style="@style/Bazaar.Text.Subtitle1" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:paddingBottom="@dimen/default_margin_double" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <include layout="@layout/layout_page_non_data" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

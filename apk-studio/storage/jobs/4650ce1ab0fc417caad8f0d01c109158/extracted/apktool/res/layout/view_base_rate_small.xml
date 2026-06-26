@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.farsitel.bazaar.designsystem.ratingbar.MaterialRatingBar android:id="@id/rbPostComment" android:tag="layout/view_base_rate_small_0" android:layout_width="wrap_content" android:layout_height="16.0dp" android:max="5" android:numStars="5" android:stepSize="1.0" android:isIndicator="false" app:emptyDrawableId="@drawable/ic_star_outline" app:fillDrawableId="@drawable/ic_star_fill" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/appBarLayout" />
+</merge>

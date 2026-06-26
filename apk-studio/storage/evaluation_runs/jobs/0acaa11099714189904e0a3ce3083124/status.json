@@ -1,0 +1,16 @@
+{
+  "job_id": "0acaa11099714189904e0a3ce3083124",
+  "filename": "malware_03_insecurebankv2.apk",
+  "status": "completed",
+  "progress": 100,
+  "error": null,
+  "report_available": true,
+  "created_at": "2026-06-24T23:29:04.054975+00:00",
+  "updated_at": "2026-06-24T23:29:58.108797+00:00",
+  "risk_score": 42,
+  "risk_level": "low",
+  "ai_risk_score": 42,
+  "ai_risk_level": "low",
+  "agentic_triggered": false,
+  "agentic_action_count": 1
+}

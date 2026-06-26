@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.farsitel.bazaar.designsystem.widget.loading.SpinKitView android:layout_gravity="center" android:id="@id/loadingContainer" android:layout_width="@dimen/loading_size" android:layout_height="@dimen/loading_size" />
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/errorView" android:background="@drawable/shape_round_top_only" android:paddingTop="@dimen/payment_error_view_padding" android:paddingBottom="@dimen/payment_error_view_padding" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="@dimen/payment_error_view_padding" />
+</FrameLayout>

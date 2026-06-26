@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/interruptions">
+        <SwitchPreferenceCompat android:enabled="true" android:title="@string/pref_pauseOnHeadsetDisconnect_title" android:key="prefPauseOnHeadsetDisconnect" android:summary="@string/pref_pauseOnDisconnect_sum" android:defaultValue="true" />
+        <SwitchPreferenceCompat android:enabled="true" android:title="@string/pref_unpauseOnHeadsetReconnect_title" android:key="prefUnpauseOnHeadsetReconnect" android:summary="@string/pref_unpauseOnHeadsetReconnect_sum" android:dependency="prefPauseOnHeadsetDisconnect" android:defaultValue="true" />
+        <SwitchPreferenceCompat android:enabled="true" android:title="@string/pref_unpauseOnBluetoothReconnect_title" android:key="prefUnpauseOnBluetoothReconnect" android:summary="@string/pref_unpauseOnBluetoothReconnect_sum" android:dependency="prefPauseOnHeadsetDisconnect" android:defaultValue="false" />
+        <SwitchPreferenceCompat android:enabled="true" android:title="@string/pref_pausePlaybackForFocusLoss_title" android:key="prefPauseForFocusLoss" android:summary="@string/pref_pausePlaybackForFocusLoss_sum" android:defaultValue="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/playback_control">
+        <Preference android:title="@string/pref_fast_forward" android:key="prefPlaybackFastForwardDeltaLauncher" android:summary="@string/pref_fast_forward_sum" />
+        <Preference android:title="@string/pref_rewind" android:key="prefPlaybackRewindDeltaLauncher" android:summary="@string/pref_rewind_sum" />
+        <Preference android:title="@string/playback_speed" android:key="prefPlaybackSpeedLauncher" android:summary="@string/pref_playback_speed_sum" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/reassign_hardware_buttons">
+        <de.danoeh.antennapod.ui.preferences.preference.MaterialListPreference android:entries="@array/button_action_options" android:title="@string/pref_hardware_forward_button_title" android:key="prefHardwareForwardButton" android:summary="@string/pref_hardware_forward_button_summary" android:defaultValue="@string/keycode_media_fast_forward" android:entryValues="@array/button_action_values" />
+        <de.danoeh.antennapod.ui.preferences.preference.MaterialListPreference android:entries="@array/button_action_options" android:title="@string/pref_hardware_previous_button_title" android:key="prefHardwarePreviousButton" android:summary="@string/pref_hardware_previous_button_summary" android:defaultValue="@string/keycode_media_rewind" android:entryValues="@array/button_action_values" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/queue_label">
+        <de.danoeh.antennapod.ui.preferences.preference.MaterialListPreference android:entries="@array/enqueue_location_options" android:title="@string/pref_enqueue_location_title" android:key="prefEnqueueLocation" android:defaultValue="BACK" android:entryValues="@array/enqueue_location_values" />
+        <SwitchPreferenceCompat android:enabled="true" android:title="@string/pref_enqueue_downloaded_title" android:key="prefEnqueueDownloaded" android:summary="@string/pref_enqueue_downloaded_summary" android:defaultValue="true" />
+        <SwitchPreferenceCompat android:enabled="true" android:title="@string/pref_followQueue_title" android:key="prefFollowQueue" android:summary="@string/pref_followQueue_sum" android:defaultValue="true" />
+        <de.danoeh.antennapod.ui.preferences.preference.MaterialListPreference android:entries="@array/smart_mark_as_played_values" android:title="@string/pref_smart_mark_as_played_title" android:key="prefSmartMarkAsPlayedSecs" android:summary="@string/pref_smart_mark_as_played_sum" android:defaultValue="30" android:entryValues="@array/smart_mark_as_played_values" />
+        <SwitchPreferenceCompat android:enabled="true" android:title="@string/pref_skip_keeps_episodes_title" android:key="prefSkipKeepsEpisode" android:summary="@string/pref_skip_keeps_episodes_sum" android:defaultValue="true" />
+    </PreferenceCategory>
+</PreferenceScreen>

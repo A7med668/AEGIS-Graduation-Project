@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/filepicker_coordinator" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/filepicker_holder" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/filepicker_files_holder" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.securefilemanager.app.views.Breadcrumbs android:id="@id/filepicker_breadcrumbs" android:paddingLeft="@dimen/activity_margin" android:paddingTop="@dimen/activity_margin" android:paddingRight="@dimen/activity_margin" android:paddingBottom="@dimen/medium_margin" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <com.securefilemanager.app.views.MyRecyclerView android:id="@id/filepicker_list" android:scrollbars="none" android:layoutAnimation="@anim/layout_animation" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/filepicker_breadcrumbs" app:layoutManager="com.securefilemanager.app.views.MyLinearLayoutManager" />
+            <com.securefilemanager.app.views.FastScroller android:id="@id/filepicker_fastscroller" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignTop="@id/filepicker_list" android:layout_alignBottom="@id/filepicker_list" android:paddingStart="@dimen/normal_margin" android:paddingEnd="0.0dp" android:layout_alignParentEnd="true">
+                <include layout="@layout/fastscroller_handle_vertical" />
+            </com.securefilemanager.app.views.FastScroller>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/filepicker_favorites_holder" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/bigger_text_size" android:id="@id/filepicker_favorites_label" android:padding="@dimen/activity_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/medium_margin" android:text="@string/favorites" />
+            <com.securefilemanager.app.views.MyRecyclerView android:id="@id/filepicker_favorites_list" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/filepicker_favorites_label" android:layout_marginStart="@dimen/activity_margin" app:layoutManager="com.securefilemanager.app.views.MyLinearLayoutManager" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:layout_gravity="end|bottom" android:orientation="vertical" android:id="@id/fabs_holder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/activity_margin">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@id/filepicker_fab_show_hidden" android:layout_width="@dimen/fab_size" android:layout_height="@dimen/fab_size" android:layout_marginBottom="@dimen/activity_margin" android:src="@drawable/ic_hide_vector" android:contentDescription="@string/hidden" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@id/filepicker_fab_show_favorites" android:layout_width="@dimen/fab_size" android:layout_height="@dimen/fab_size" android:layout_marginBottom="@dimen/activity_margin" android:src="@drawable/ic_star_on_vector" android:contentDescription="@string/favorites" />
+    </LinearLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="end|bottom" android:id="@id/filepicker_fab" android:visibility="gone" android:layout_width="@dimen/fab_size" android:layout_height="@dimen/fab_size" android:layout_margin="@dimen/activity_margin" android:src="@drawable/ic_plus_vector" android:contentDescription="@string/create_new" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

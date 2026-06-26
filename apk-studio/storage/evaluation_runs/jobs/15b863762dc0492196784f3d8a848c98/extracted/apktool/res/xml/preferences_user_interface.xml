@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:search="http://schemas.android.com/apk/com.bytehamster.lib.preferencesearch">
+    <PreferenceCategory android:title="@string/theming">
+        <de.danoeh.antennapod.ui.preferences.preference.ThemePreference android:key="prefTheme" />
+        <SwitchPreferenceCompat android:title="@string/pref_black_theme_title" android:key="prefThemeBlack" android:summary="@string/pref_black_theme_message" android:defaultValue="false" />
+        <SwitchPreferenceCompat android:title="@string/pref_tinted_theme_title" android:key="prefTintedColors" android:summary="@string/pref_tinted_theme_message" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/episode_information">
+        <SwitchPreferenceCompat android:enabled="true" android:title="@string/pref_episode_cover_title" android:key="prefEpisodeCover" android:summary="@string/pref_episode_cover_summary" android:defaultValue="true" />
+        <SwitchPreferenceCompat android:enabled="true" android:title="@string/pref_show_remain_time_title" android:key="showTimeLeft" android:summary="@string/pref_show_remain_time_summary" android:defaultValue="false" />
+        <SwitchPreferenceCompat android:title="@string/pref_playback_time_respects_speed_title" android:key="prefPlaybackTimeRespectsSpeed" android:summary="@string/pref_playback_time_respects_speed_sum" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/external_elements">
+        <SwitchPreferenceCompat android:enabled="true" android:title="@string/pref_expandNotify_title" android:key="prefExpandNotify" android:summary="@string/pref_expandNotify_sum" android:defaultValue="false" search:ignore="true" />
+        <SwitchPreferenceCompat android:enabled="true" android:title="@string/pref_persistNotify_title" android:key="prefPersistNotify" android:summary="@string/pref_persistNotify_sum" android:defaultValue="true" />
+        <Preference android:title="@string/pref_full_notification_buttons_title" android:key="prefFullNotificationButtons" android:summary="@string/pref_full_notification_buttons_sum" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/behavior">
+        <de.danoeh.antennapod.ui.preferences.preference.MaterialListPreference android:entries="@array/default_page_titles" android:title="@string/pref_default_page" android:key="prefDefaultPage" android:summary="@string/pref_default_page_sum" android:defaultValue="HomeFragment" android:entryValues="@array/default_page_values" />
+        <SwitchPreferenceCompat android:title="@string/bottom_navigation" android:key="prefBottomNavigation" android:summary="@string/bottom_navigation_summary" android:defaultValue="true" />
+        <Preference android:title="@string/pref_nav_drawer_items_title" android:key="prefHiddenDrawerItems" android:summary="@string/pref_nav_drawer_items_sum" />
+        <SwitchPreferenceCompat android:title="@string/pref_back_button_opens_drawer" android:key="prefBackButtonOpensDrawer" android:summary="@string/pref_back_button_opens_drawer_summary" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/episode_lists">
+        <Preference android:title="@string/pref_global_default_episode_list_sort_order_title" android:key="prefGlobalDefaultSortedOrder" android:summary="@string/pref_global_default_episode_list_sort_order_sum" />
+        <Preference android:title="@string/swipeactions_label" android:key="prefSwipe" android:summary="@string/swipeactions_summary" />
+        <SwitchPreferenceCompat android:title="@string/pref_stream_over_download_title" android:key="prefStreamOverDownload" android:summary="@string/pref_stream_over_download_sum" android:defaultValue="false" />
+        <SwitchPreferenceCompat android:enabled="true" android:title="@string/pref_downloads_button_action_title" android:key="prefDownloadsButtonAction" android:summary="@string/pref_downloads_button_action_sum" android:defaultValue="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

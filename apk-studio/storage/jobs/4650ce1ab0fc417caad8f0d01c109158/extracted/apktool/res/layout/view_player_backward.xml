@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.farsitel.bazaar.player.view.widget.PlayerRoundedContainer android:id="@id/traversParentView" android:background="@color/player_travers_view_color" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0.0" app:isOnRight="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.farsitel.bazaar.player.view.widget.RippleView android:gravity="center" android:orientation="vertical" android:id="@id/rippleView" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/playerTravers3" android:layout_width="@dimen/player_traverse_icon_size" android:layout_height="@dimen/player_traverse_icon_size" android:alpha="0.0" app:srcCompat="@drawable/ic_play_backward_white_24dp_old" />
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/playerTravers2" android:layout_width="@dimen/player_traverse_icon_size" android:layout_height="@dimen/player_traverse_icon_size" android:alpha="0.0" app:srcCompat="@drawable/ic_play_backward_white_24dp_old" />
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/playerTravers1" android:layout_width="@dimen/player_traverse_icon_size" android:layout_height="@dimen/player_traverse_icon_size" android:alpha="0.0" app:srcCompat="@drawable/ic_play_backward_white_24dp_old" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/tiny_font_size" android:textColor="@color/white_primary" android:id="@id/traversSecond" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" />
+    </com.farsitel.bazaar.player.view.widget.RippleView>
+</com.farsitel.bazaar.player.view.widget.PlayerRoundedContainer>

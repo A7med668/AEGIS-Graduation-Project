@@ -1,0 +1,16 @@
+{
+  "job_id": "0952fbe587bd4fabae575ca729864d87",
+  "filename": "benign_05_browser.apk",
+  "status": "completed",
+  "progress": 100,
+  "error": null,
+  "report_available": true,
+  "created_at": "2026-06-24T23:21:00.492687+00:00",
+  "updated_at": "2026-06-24T23:22:25.168675+00:00",
+  "risk_score": 45,
+  "risk_level": "medium",
+  "ai_risk_score": 45,
+  "ai_risk_level": "medium",
+  "agentic_triggered": false,
+  "agentic_action_count": 1
+}

@@ -1,0 +1,19 @@
+.class abstract Lu1/l;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# direct methods
+.method public static a(Ljava/lang/Object;)Ljava/util/List;
+    .locals 1
+
+    invoke-static {p0}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object p0
+
+    const-string v0, "singletonList(element)"
+
+    invoke-static {p0, v0}, Le2/i;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    return-object p0
+.end method

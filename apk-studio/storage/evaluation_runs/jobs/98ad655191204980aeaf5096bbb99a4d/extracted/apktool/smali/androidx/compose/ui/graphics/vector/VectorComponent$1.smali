@@ -1,0 +1,110 @@
+.class public final Landroidx/compose/ui/graphics/vector/VectorComponent$1;
+.super Lkotlin/jvm/internal/Lambda;
+.source "SourceFile"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function1;
+
+
+# instance fields
+.field public final synthetic $r8$classId:I
+
+.field public final synthetic this$0:Landroidx/compose/ui/graphics/vector/VectorComponent;
+
+
+# direct methods
+.method public synthetic constructor <init>(Landroidx/compose/ui/graphics/vector/VectorComponent;I)V
+    .locals 0
+
+    iput p2, p0, Landroidx/compose/ui/graphics/vector/VectorComponent$1;->$r8$classId:I
+
+    iput-object p1, p0, Landroidx/compose/ui/graphics/vector/VectorComponent$1;->this$0:Landroidx/compose/ui/graphics/vector/VectorComponent;
+
+    const/4 p1, 0x1
+
+    invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 9
+
+    iget v0, p0, Landroidx/compose/ui/graphics/vector/VectorComponent$1;->$r8$classId:I
+
+    packed-switch v0, :pswitch_data_0
+
+    check-cast p1, Landroidx/compose/ui/graphics/drawscope/DrawScope;
+
+    iget-object v0, p0, Landroidx/compose/ui/graphics/vector/VectorComponent$1;->this$0:Landroidx/compose/ui/graphics/vector/VectorComponent;
+
+    iget-object v1, v0, Landroidx/compose/ui/graphics/vector/VectorComponent;->root:Landroidx/compose/ui/graphics/vector/GroupComponent;
+
+    iget v2, v0, Landroidx/compose/ui/graphics/vector/VectorComponent;->rootScaleX:F
+
+    iget v0, v0, Landroidx/compose/ui/graphics/vector/VectorComponent;->rootScaleY:F
+
+    invoke-interface {p1}, Landroidx/compose/ui/graphics/drawscope/DrawScope;->getDrawContext()Landroidx/core/view/MenuHostHelper;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Landroidx/core/view/MenuHostHelper;->getSize-NH-jbRc()J
+
+    move-result-wide v4
+
+    invoke-virtual {v3}, Landroidx/core/view/MenuHostHelper;->getCanvas()Landroidx/compose/ui/graphics/Canvas;
+
+    move-result-object v6
+
+    invoke-interface {v6}, Landroidx/compose/ui/graphics/Canvas;->save()V
+
+    :try_start_0
+    iget-object v6, v3, Landroidx/core/view/MenuHostHelper;->mOnInvalidateMenuCallback:Ljava/lang/Object;
+
+    check-cast v6, Landroidx/compose/runtime/PrioritySet;
+
+    const-wide/16 v7, 0x0
+
+    invoke-virtual {v6, v2, v0, v7, v8}, Landroidx/compose/runtime/PrioritySet;->scale-0AR0LA0(FFJ)V
+
+    invoke-virtual {v1, p1}, Landroidx/compose/ui/graphics/vector/GroupComponent;->draw(Landroidx/compose/ui/graphics/drawscope/DrawScope;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    invoke-static {v3, v4, v5}, Landroidx/compose/foundation/lazy/LazyListScope$-CC;->m(Landroidx/core/view/MenuHostHelper;J)V
+
+    sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p1
+
+    :catchall_0
+    move-exception p1
+
+    invoke-static {v3, v4, v5}, Landroidx/compose/foundation/lazy/LazyListScope$-CC;->m(Landroidx/core/view/MenuHostHelper;J)V
+
+    throw p1
+
+    :pswitch_0
+    check-cast p1, Landroidx/compose/ui/graphics/vector/VNode;
+
+    iget-object p1, p0, Landroidx/compose/ui/graphics/vector/VectorComponent$1;->this$0:Landroidx/compose/ui/graphics/vector/VectorComponent;
+
+    const/4 v0, 0x1
+
+    iput-boolean v0, p1, Landroidx/compose/ui/graphics/vector/VectorComponent;->isDirty:Z
+
+    iget-object p1, p1, Landroidx/compose/ui/graphics/vector/VectorComponent;->invalidateCallback:Lkotlin/jvm/functions/Function0;
+
+    invoke-interface {p1}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
+
+    sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p1
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method

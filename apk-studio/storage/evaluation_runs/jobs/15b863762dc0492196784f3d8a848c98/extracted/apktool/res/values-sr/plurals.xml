@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="added_to_queue_message">
+        <item quantity="one">%d епизода је додата у редослед.</item>
+        <item quantity="few">%d епизоде је додато у редослед.</item>
+        <item quantity="other">%d епизода је додато у редослед.</item>
+    </plurals>
+    <plurals name="deleted_episode_message">
+        <item quantity="one">%d преузета епизода је избрисана.</item>
+        <item quantity="few">%d преузете епизоде је избрисано.</item>
+        <item quantity="other">%d преузетих епизода је избрисано.</item>
+    </plurals>
+    <plurals name="downloading_episodes_message">
+        <item quantity="one">Преузимање %d епизоде.</item>
+        <item quantity="few">Преузимање %d епизоде.</item>
+        <item quantity="other">Преузимање %d епизода.</item>
+    </plurals>
+    <plurals name="downloads_left">
+        <item quantity="one">%d преузимање је преостало</item>
+        <item quantity="few">%d преузимања су преостала</item>
+        <item quantity="other">%d преузимања је преостало</item>
+    </plurals>
+    <plurals name="echo_hours_podcasts">
+        <item quantity="one">"часова епизода
+из %1$d подкаста"</item>
+        <item quantity="few">"часова епизода
+из %1$d различита подкаста"</item>
+        <item quantity="other">"часова епизода
+из %1$d различитих подкаста"</item>
+    </plurals>
+    <plurals name="echo_queue_hours_waiting">
+        <item quantity="one">"часова чекања у вашем редоследу
+из %1$d епизоде"</item>
+        <item quantity="few">"часова чекања у вашем редоследу
+из %1$d епизоде"</item>
+        <item quantity="other">"часова чекања у вашем редоследу
+из %1$d епизода"</item>
+    </plurals>
+    <plurals name="episode_cleanup_days_after_listening">
+        <item quantity="one">%d дан након завршетка</item>
+        <item quantity="few">%d дана након завршетка</item>
+        <item quantity="other">%d дана након завршетка</item>
+    </plurals>
+    <plurals name="episode_cleanup_hours_after_listening">
+        <item quantity="one">%d час након завршетка</item>
+        <item quantity="few">%d часа након завршетка</item>
+        <item quantity="other">%d часова након завршетка</item>
+    </plurals>
+    <plurals name="episodes_sleep_timer_exceeds_queue">
+        <item quantity="one">Још само %1$d епизода у твом реду за репродукцију</item>
+        <item quantity="few">Још само %1$d епизоде у твом реду за репродукцију</item>
+        <item quantity="other">Још само %1$d епизода у твом реду за репродукцију</item>
+    </plurals>
+    <plurals name="marked_as_played_message">
+        <item quantity="one">%d епизода означена као репродукована.</item>
+        <item quantity="few">%d епизоде означене као репродуковане.</item>
+        <item quantity="other">%d епизода означено као репродуковане.</item>
+    </plurals>
+    <plurals name="marked_as_unplayed_message">
+        <item quantity="one">%d епизода означено као да није репродуковано.</item>
+        <item quantity="few">%d епизоде означене као да нису репродуковане.</item>
+        <item quantity="other">%d епизода означено као да нису репродуковане.</item>
+    </plurals>
+    <plurals name="mobile_download_notice">
+        <item quantity="one">Преузимање преко мобилних података следећих %d минут</item>
+        <item quantity="few">Преузимање преко мобилних података следећих %d минута</item>
+        <item quantity="other">Преузимање преко мобилних података следећих %d минута</item>
+    </plurals>
+    <plurals name="move_to_bottom_message">
+        <item quantity="one">%d епизода је премештена на дно.</item>
+        <item quantity="few">%d епизоде су премештене на дно.</item>
+        <item quantity="other">%d епизода је премештено на дно.</item>
+    </plurals>
+    <plurals name="move_to_top_message">
+        <item quantity="one">%d епизода је премештена на врх.</item>
+        <item quantity="few">%d епизоде су премештене на врх.</item>
+        <item quantity="other">%d епизода је премештено на врх.</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d ново обавештење</item>
+        <item quantity="few">%d нова обавештења</item>
+        <item quantity="other">%d нових обавештења</item>
+    </plurals>
+    <plurals name="new_episode_notification_message">
+        <item quantity="one">%2$s има нову епизоду</item>
+        <item quantity="few">%2$s има %1$d нове епизоде</item>
+        <item quantity="other">%2$s има %1$d нових епизода</item>
+    </plurals>
+    <plurals name="new_episode_notification_title">
+        <item quantity="one">Нова епизода</item>
+        <item quantity="few">Нове епизоде</item>
+        <item quantity="other">Нове епизоде</item>
+    </plurals>
+    <plurals name="num_episodes">
+        <item quantity="one">%d епизода</item>
+        <item quantity="few">%d епизоде</item>
+        <item quantity="other">%d епизода</item>
+    </plurals>
+    <plurals name="num_selected_label">
+        <item quantity="one">Изабрано: %1$d/%2$d</item>
+        <item quantity="few">Изабрано: %1$d/%2$d</item>
+        <item quantity="other">Изабрано: %1$d/%2$d</item>
+    </plurals>
+    <plurals name="num_subscriptions">
+        <item quantity="one">%d претплата</item>
+        <item quantity="few">%d претплате</item>
+        <item quantity="other">%d претплата</item>
+    </plurals>
+    <plurals name="removed_from_inbox_batch_label">
+        <item quantity="one">%d епизода је уклоњена из сандучета.</item>
+        <item quantity="few">%d епизоде су уклоњене из сандучета.</item>
+        <item quantity="other">%d епизода је уклоњено из сандучета.</item>
+    </plurals>
+    <plurals name="removed_from_queue_message">
+        <item quantity="one">%d епизода је уклоњена из редоследа.</item>
+        <item quantity="few">%d епизоде је уклоњено из редоследа.</item>
+        <item quantity="other">%d епизода је уклоњено из редоследа.</item>
+    </plurals>
+    <plurals name="statistics_episodes_downloaded">
+        <item quantity="one">преузето</item>
+        <item quantity="few">преузето</item>
+        <item quantity="other">преузето</item>
+    </plurals>
+    <plurals name="statistics_episodes_started">
+        <item quantity="one">започето</item>
+        <item quantity="few">започето</item>
+        <item quantity="other">започето</item>
+    </plurals>
+    <plurals name="statistics_episodes_total">
+        <item quantity="one">укупно</item>
+        <item quantity="few">укупно</item>
+        <item quantity="other">укупно</item>
+    </plurals>
+    <plurals name="time_days_quantified">
+        <item quantity="one">%d дан</item>
+        <item quantity="few">%d дана</item>
+        <item quantity="other">%d дана</item>
+    </plurals>
+    <plurals name="time_hours_quantified">
+        <item quantity="one">%d час</item>
+        <item quantity="few">%d часа</item>
+        <item quantity="other">%d часова</item>
+    </plurals>
+    <plurals name="time_minutes_quantified">
+        <item quantity="one">%d минут</item>
+        <item quantity="few">%d минута</item>
+        <item quantity="other">%d минута</item>
+    </plurals>
+    <plurals name="time_seconds_quantified">
+        <item quantity="one">%d секунд</item>
+        <item quantity="few">%d секунде</item>
+        <item quantity="other">%d секунди</item>
+    </plurals>
+    <plurals name="timer_exceeds_remaining_time_while_continuous_playback_disabled">
+        <item quantity="one">Континуирана репродукција је искључена и тренутна епизода траје још %1$d минуту</item>
+        <item quantity="few">Континуирана репродукција је искључена и тренутна епизода траје још %1$d минуте</item>
+        <item quantity="other">Континуирана репродукција је искључена и тренутна епизода траје још %1$d минута</item>
+    </plurals>
+    <plurals name="total_size_downloaded_podcasts">
+        <item quantity="one">Укупна величина %d епизоде на уређају</item>
+        <item quantity="few">Укупна величина %d епизоде на уређају</item>
+        <item quantity="other">Укупна величина %d епизода на уређају</item>
+    </plurals>
+    <plurals name="updated_feeds_batch_label">
+        <item quantity="one">%d претплата је ажурирано.</item>
+        <item quantity="few">%d претплате су ажурирана.</item>
+        <item quantity="other">%d претплата је ажурирано.</item>
+    </plurals>
+</resources>

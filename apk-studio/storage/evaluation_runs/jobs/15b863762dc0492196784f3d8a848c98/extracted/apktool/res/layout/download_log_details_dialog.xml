@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:padding="?dialogPreferredPadding" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/podcastContainer" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/feed" android:layout_marginEnd="4.0dp" style="@style/TextAppearance.Material3.TitleMedium" />
+                <TextView android:ellipsize="end" android:id="@id/podcastNameLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            </LinearLayout>
+            <com.google.android.material.button.MaterialButton android:id="@id/goToPodcastButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="0.0dp" android:text="@string/download_log_open_feed" android:layout_marginStart="8.0dp" style="@style/Widget.Material3.Button.TextButton" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/episodeContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/episode" android:layout_marginEnd="4.0dp" style="@style/TextAppearance.Material3.TitleMedium" />
+            <TextView android:ellipsize="middle" android:id="@id/episodeNameLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/humanReadableReasonContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/download_log_details_human_readable_reason_title" android:layout_marginEnd="4.0dp" style="@style/TextAppearance.Material3.TitleMedium" />
+            <TextView android:id="@id/humanReadableReasonLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/technicalReasonContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/download_log_details_technical_reason_title" android:layout_marginEnd="4.0dp" style="@style/TextAppearance.Material3.TitleMedium" />
+            <TextView android:id="@id/technicalReasonLabel" android:background="?android:selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/fileUrlContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/download_log_details_file_url_title" android:layout_marginEnd="4.0dp" style="@style/TextAppearance.Material3.TitleMedium" />
+            <TextView android:id="@id/fileUrlLabel" android:background="?android:selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

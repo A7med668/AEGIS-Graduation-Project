@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/navigation_subscription" app:startDestination="@id/emptyFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="EmptyFragment" android:name="com.farsitel.bazaar.component.EmptyFragment" android:id="@id/emptyFragment" />
+    <fragment android:label="subscriptionFragment" android:name="com.farsitel.bazaar.subscription.view.SubscriptionFragment" android:id="@id/subscriptionFragment">
+        <deepLink app:uri="@string/deeplink_subscription_fragment" />
+        <action android:id="@id/action_subscriptionFragment_to_subscriptionDetailFragment" app:destination="@id/subscriptionDetailFragment" />
+    </fragment>
+    <fragment android:label="subscriptionDetailFragment" android:name="com.farsitel.bazaar.subscription.view.SubscriptionDetailsFragment" android:id="@id/subscriptionDetailFragment">
+        <argument android:name="subscriptionItem" app:argType="com.farsitel.bazaar.subscription.model.SubscriptionItem" />
+    </fragment>
+    <fragment android:label="promotedSubscriptionFragment" android:name="com.farsitel.bazaar.subscription.view.promoted.PromotedSubscriptionFragment" android:id="@id/promotedSubscriptionFragment">
+        <deepLink app:uri="@string/deeplink_promoted_subscription_fragment" />
+    </fragment>
+</navigation>

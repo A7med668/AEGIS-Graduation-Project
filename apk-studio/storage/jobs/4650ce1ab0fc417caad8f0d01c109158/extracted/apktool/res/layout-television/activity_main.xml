@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/mainContainer" android:background="@color/surface_color_0" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/layout_page_non_data" />
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/rootView" android:visibility="invisible" android:layout_width="0.0dp" android:layout_height="match_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/bottomNavigation" app:layout_constraintTop_toTopOf="parent">
+        <include layout="@layout/container_main" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <com.farsitel.bazaar.designsystem.widget.VerticalBottomNavigationView android:theme="@style/Theme.Bazaar.BottomNavigationText" android:id="@id/bottomNavigation" android:background="@color/navigation_bar_color" android:visibility="invisible" android:layout_width="@dimen/vertical_bottom_navigation_width" android:layout_height="match_parent" app:itemIconTint="@color/bottom_navigation_selector" app:itemTextColor="@color/bottom_navigation_selector" app:labelVisibilityMode="labeled" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

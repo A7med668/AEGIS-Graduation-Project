@@ -1,0 +1,39 @@
+[
+  {
+    "id": "accessibility_overlay_combo",
+    "title": "Accessibility + Overlay abuse pattern",
+    "severity": "high",
+    "weight": 30,
+    "strong_evidence": true,
+    "requires_permissions": [
+      "android.permission.BIND_ACCESSIBILITY_SERVICE",
+      "android.permission.SYSTEM_ALERT_WINDOW"
+    ],
+    "description": "This combination can indicate phishing overlay or UI manipulation risk."
+  },
+  {
+    "id": "sms_boot_network_combo",
+    "title": "SMS access with boot persistence and network",
+    "severity": "high",
+    "weight": 25,
+    "strong_evidence": true,
+    "requires_permissions": [
+      "android.permission.READ_SMS",
+      "android.permission.RECEIVE_BOOT_COMPLETED",
+      "android.permission.INTERNET"
+    ],
+    "description": "Sensitive SMS access combined with persistence and network access deserves analyst review."
+  },
+  {
+    "id": "installer_query_packages_context",
+    "title": "Installer-like permissions",
+    "severity": "medium",
+    "weight": 8,
+    "strong_evidence": false,
+    "requires_permissions": [
+      "android.permission.REQUEST_INSTALL_PACKAGES",
+      "android.permission.QUERY_ALL_PACKAGES"
+    ],
+    "description": "Can be expected for app stores/installers; should not be high-risk alone."
+  }
+]

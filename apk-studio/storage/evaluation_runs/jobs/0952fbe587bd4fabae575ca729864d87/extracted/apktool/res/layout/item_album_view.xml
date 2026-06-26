@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="?android:listPreferredItemHeightSmall" android:minHeight="?android:listPreferredItemHeightSmall" android:paddingStart="20.0dp" android:paddingEnd="20.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:gravity="center_vertical" android:id="@id/faviconView" android:layout_width="20.0dp" android:layout_height="?android:listPreferredItemHeightSmall" android:src="@drawable/icon_image_broken" android:scaleType="fitCenter" android:contentDescription="@null" android:layout_marginEnd="8.0dp" />
+    <TextView android:textAppearance="?textAppearanceBody1" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/item_title" android:layout_width="wrap_content" android:layout_height="?android:listPreferredItemHeightSmall" android:text="Title" android:maxLines="1" android:includeFontPadding="false" android:layout_marginEnd="16.0dp" android:layout_toStartOf="@id/item_cancel" android:layout_toEndOf="@id/faviconView" />
+    <ImageButton android:gravity="center_vertical" android:id="@id/item_cancel" android:background="?actionBarItemBackground" android:layout_width="wrap_content" android:layout_height="?android:listPreferredItemHeightSmall" android:src="@drawable/icon_close" android:contentDescription="@null" android:layout_alignParentEnd="true" />
+</RelativeLayout>

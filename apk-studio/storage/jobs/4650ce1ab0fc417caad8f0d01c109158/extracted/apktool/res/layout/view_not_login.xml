@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:layout_width="56.0dp" android:layout_height="56.0dp" android:contentDescription="@string/general_icon_content_description" app:srcCompat="@drawable/ic_user_account_icon_secondary_24dp_old" style="@style/Bazaar.Image.Toolbar" />
+    <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/text_primary" android:gravity="center" android:id="@id/forceLoginViewTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_margin_triple" android:layout_marginTop="@dimen/default_margin_double" android:layout_marginRight="@dimen/default_margin_triple" android:text="@string/title_force_login" style="@style/Bazaar.Text.Body1" />
+    <com.farsitel.bazaar.designsystem.component.button.BazaarButton android:id="@id/loginButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin_double" app:buttonTheme="contained" app:buttonType="app" app:text="@string/login" />
+</merge>

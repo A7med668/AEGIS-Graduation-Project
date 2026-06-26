@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="34" android:compileSdkVersionCodename="14" android:installLocation="auto" package="com.secuso.privacyFriendlyCodeScanner" platformBuildVersionCode="34" platformBuildVersionName="14">
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:maxSdkVersion="28" android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:maxSdkVersion="28" android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.PICK"/>
+            <data android:mimeType="*/*"/>
+        </intent>
+    </queries>
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <uses-feature android:name="android.hardware.screen.landscape" android:required="false"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"/>
+    <permission android:name="com.secuso.privacyFriendlyCodeScanner.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.secuso.privacyFriendlyCodeScanner.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <application android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:extractNativeLibs="true" android:fullBackupContent="false" android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher" android:installLocation="preferExternal" android:label="@string/app_name" android:name="com.secuso.privacyfriendlycodescanner.qrscanner.PFACodeScannerApplication" android:supportsRtl="true" android:theme="@style/AppTheme">
+        <activity android:exported="true" android:name="com.secuso.privacyfriendlycodescanner.qrscanner.ui.activities.SplashActivity" android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:clearTaskOnLaunch="true" android:exported="true" android:name="com.secuso.privacyfriendlycodescanner.qrscanner.ui.activities.ScannerActivity" android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/about" android:name="com.secuso.privacyfriendlycodescanner.qrscanner.ui.activities.AboutActivity" android:parentActivityName="com.secuso.privacyfriendlycodescanner.qrscanner.ui.activities.ScannerActivity"/>
+        <activity android:label="@string/history" android:name="com.secuso.privacyfriendlycodescanner.qrscanner.ui.activities.HistoryActivity" android:parentActivityName="com.secuso.privacyfriendlycodescanner.qrscanner.ui.activities.ScannerActivity"/>
+        <activity android:label="@string/help" android:name="com.secuso.privacyfriendlycodescanner.qrscanner.ui.activities.HelpActivity" android:parentActivityName="com.secuso.privacyfriendlycodescanner.qrscanner.ui.activities.ScannerActivity"/>
+        <activity android:exported="true" android:label="@string/QRGenerator" android:name="com.secuso.privacyfriendlycodescanner.qrscanner.ui.activities.generator.QrGeneratorOverviewActivity" android:parentActivityName="com.secuso.privacyfriendlycodescanner.qrscanner.ui.activities.ScannerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/x-vcard"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.secuso.privacyfriendlycodescanner.qrscanner.ui.activities.TutorialActivity" android:parentActivityName="com.secuso.privacyfriendlycodescanner.qrscanner.ui.activities.ScannerActivity" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:label="@string/Settings" android:name="com.secuso.privacyfriendlycodescanner.qrscanner.ui.activities.SettingsActivity" android:parentActivityName="com.secuso.privacyfriendlycodescanner.qrscanner.ui.activities.ScannerActivity"/>
+        <activity android:name="com.secuso.privacyfriendlycodescanner.qrscanner.ui.activities.ResultActivity"/>
+        <activity android:label="URL" android:name="com.secuso.privacyfriendlycodescanner.qrscanner.ui.activities.generator.QrGeneratorDisplayActivity" android:parentActivityName="com.secuso.privacyfriendlycodescanner.qrscanner.ui.activities.generator.QrGeneratorOverviewActivity"/>
+        <activity android:label="E-Mail" android:name="com.secuso.privacyfriendlycodescanner.qrscanner.ui.activities.generator.MailEnterActivity" android:parentActivityName="com.secuso.privacyfriendlycodescanner.qrscanner.ui.activities.generator.QrGeneratorOverviewActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:label="Phone number" android:name="com.secuso.privacyfriendlycodescanner.qrscanner.ui.activities.generator.TelEnterActivity" android:parentActivityName="com.secuso.privacyfriendlycodescanner.qrscanner.ui.activities.generator.QrGeneratorOverviewActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:label="URL" android:name="com.secuso.privacyfriendlycodescanner.qrscanner.ui.activities.generator.UrlEnterActivity" android:parentActivityName="com.secuso.privacyfriendlycodescanner.qrscanner.ui.activities.generator.QrGeneratorOverviewActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:label="SMS" android:name="com.secuso.privacyfriendlycodescanner.qrscanner.ui.activities.generator.SmsEnterActivity" android:parentActivityName="com.secuso.privacyfriendlycodescanner.qrscanner.ui.activities.generator.QrGeneratorOverviewActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:label="Geo location" android:name="com.secuso.privacyfriendlycodescanner.qrscanner.ui.activities.generator.GeoLocationEnterActivity" android:parentActivityName="com.secuso.privacyfriendlycodescanner.qrscanner.ui.activities.generator.QrGeneratorOverviewActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:label="MeCard" android:name="com.secuso.privacyfriendlycodescanner.qrscanner.ui.activities.generator.MeCardEnterActivity" android:parentActivityName="com.secuso.privacyfriendlycodescanner.qrscanner.ui.activities.generator.QrGeneratorOverviewActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:label="BizCard" android:name="com.secuso.privacyfriendlycodescanner.qrscanner.ui.activities.generator.BizCardEnterActivity" android:parentActivityName="com.secuso.privacyfriendlycodescanner.qrscanner.ui.activities.generator.QrGeneratorOverviewActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:label="WIFI" android:name="com.secuso.privacyfriendlycodescanner.qrscanner.ui.activities.generator.WifiEnterActivity" android:parentActivityName="com.secuso.privacyfriendlycodescanner.qrscanner.ui.activities.generator.QrGeneratorOverviewActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:label="vcard" android:name="com.secuso.privacyfriendlycodescanner.qrscanner.ui.activities.generator.VcardEnterActivity" android:parentActivityName="com.secuso.privacyfriendlycodescanner.qrscanner.ui.activities.generator.QrGeneratorOverviewActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:label="Market" android:name="com.secuso.privacyfriendlycodescanner.qrscanner.ui.activities.generator.MarketEnterActivity" android:parentActivityName="com.secuso.privacyfriendlycodescanner.qrscanner.ui.activities.generator.QrGeneratorOverviewActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:label="Text" android:name="com.secuso.privacyfriendlycodescanner.qrscanner.ui.activities.generator.TextEnterActivity" android:parentActivityName="com.secuso.privacyfriendlycodescanner.qrscanner.ui.activities.generator.QrGeneratorOverviewActivity" android:windowSoftInputMode="adjustResize"/>
+        <service android:enabled="true" android:exported="true" android:name="com.secuso.privacyfriendlycodescanner.qrscanner.backup.PFABackupService" android:process=":backup">
+            <intent-filter>
+                <action android:name="org.secuso.privacyfriendlybackup.api.pfa.PFAAuthService"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:icon="@drawable/ic_tile" android:name="com.secuso.privacyfriendlycodescanner.qrscanner.QuickTileService" android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE"/>
+            </intent-filter>
+            <meta-data android:name="android.service.quicksettings.ACTIVE_TILE" android:value="false"/>
+        </service>
+        <provider android:authorities="org.secuso.qrscanner.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/fileprovider_path"/>
+        </provider>
+        <activity android:clearTaskOnLaunch="true" android:name="com.journeyapps.barcodescanner.CaptureActivity" android:screenOrientation="sensorLandscape" android:stateNotNeeded="true" android:theme="@style/zxing_CaptureTheme" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

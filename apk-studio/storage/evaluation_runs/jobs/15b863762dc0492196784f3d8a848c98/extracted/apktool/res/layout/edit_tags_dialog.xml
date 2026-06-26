@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <CheckBox android:id="@id/rootFolderCheckbox" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/feed_folders_include_root" />
+    <TextView android:textSize="@dimen/text_size_micro" android:gravity="center" android:id="@id/commonTagsInfo" android:paddingBottom="16.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/multi_feed_common_tags_info" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/tagsRecycler" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <com.google.android.material.textfield.TextInputLayout android:id="@id/newTagTextInput" android:layout_width="match_parent" android:layout_height="wrap_content" app:endIconContentDescription="@string/add_tag" app:endIconDrawable="@drawable/ic_add" app:endIconMode="custom" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <AutoCompleteTextView android:id="@id/newTagEditText" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/add_tag" android:ems="10" android:layout_weight="1.0" android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>

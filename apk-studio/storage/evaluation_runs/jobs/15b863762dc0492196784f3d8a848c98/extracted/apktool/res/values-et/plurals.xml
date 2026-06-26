@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="added_to_queue_message">
+        <item quantity="one">%d saade lisati järjekorda.</item>
+        <item quantity="other">%d saadet lisati järjekorda.</item>
+    </plurals>
+    <plurals name="deleted_episode_message">
+        <item quantity="one">%d allalaaditud saade kustutati.</item>
+        <item quantity="other">%d allalaaditud saadet kustutati.</item>
+    </plurals>
+    <plurals name="downloading_episodes_message">
+        <item quantity="one">Laetakse alla %d saade.</item>
+        <item quantity="other">Laetakse alla %d saadet.</item>
+    </plurals>
+    <plurals name="downloads_left">
+        <item quantity="one">%d allalaadimine jäänud</item>
+        <item quantity="other">%d allalaadimist jäänud</item>
+    </plurals>
+    <plurals name="echo_hours_podcasts">
+        <item quantity="one">"tundi saateid
+%1$d taskuhäälingust"</item>
+        <item quantity="other">"tundi saateid
+%1$d erinevast taskuhäälingust"</item>
+    </plurals>
+    <plurals name="echo_queue_hours_waiting">
+        <item quantity="one">"tundi järjekorras ootamist
+%1$d saate järel"</item>
+        <item quantity="other">"tundi järjekorras ootamist
+%1$d saate järel"</item>
+    </plurals>
+    <plurals name="episode_cleanup_days_after_listening">
+        <item quantity="one">%d päev pärast lõpetamist</item>
+        <item quantity="other">%d päeva pärast lõpetamist</item>
+    </plurals>
+    <plurals name="episode_cleanup_hours_after_listening">
+        <item quantity="one">%d tund pärast lõpetamist</item>
+        <item quantity="other">%d tundi pärast lõpetamist</item>
+    </plurals>
+    <plurals name="episodes_sleep_timer_exceeds_queue">
+        <item quantity="one">Järjekorda on jäänud ainult %1$d saade</item>
+        <item quantity="other">Järjekorda on jäänud ainult %1$d saadet</item>
+    </plurals>
+    <plurals name="marked_as_played_message">
+        <item quantity="one">%d saade märgiti esitatuks.</item>
+        <item quantity="other">%d saadet märgiti esitatuks.</item>
+    </plurals>
+    <plurals name="marked_as_unplayed_message">
+        <item quantity="one">%d saade märgiti mitte esitatuks.</item>
+        <item quantity="other">%d saadet märgiti mitte esitatuks.</item>
+    </plurals>
+    <plurals name="mobile_download_notice">
+        <item quantity="one">Järgmise %d minuti jooksul toimub allalaadimine mobiilse andmeside kaudu</item>
+        <item quantity="other">Järgmise %d minuti jooksul toimub allalaadimine mobiilse andmeside kaudu</item>
+    </plurals>
+    <plurals name="move_to_bottom_message">
+        <item quantity="one">%d saade liigutati alla.</item>
+        <item quantity="other">%d saadet liigutati alla.</item>
+    </plurals>
+    <plurals name="move_to_top_message">
+        <item quantity="one">%d saade liigutati üles.</item>
+        <item quantity="other">%d saadet liigutati üles.</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d uus märguanne</item>
+        <item quantity="other">%d uut märguannet</item>
+    </plurals>
+    <plurals name="new_episode_notification_message">
+        <item quantity="one">%2$s jaoks on uus saade</item>
+        <item quantity="other">%2$s jaoks on %1$d uut saadet</item>
+    </plurals>
+    <plurals name="new_episode_notification_title">
+        <item quantity="one">Uus saade</item>
+        <item quantity="other">Uued saated</item>
+    </plurals>
+    <plurals name="num_episodes">
+        <item quantity="one">%d saade</item>
+        <item quantity="other">%d saadet</item>
+    </plurals>
+    <plurals name="num_selected_label">
+        <item quantity="one">%1$d/%2$d valitud</item>
+        <item quantity="other">%1$d/%2$d valitud</item>
+    </plurals>
+    <plurals name="num_subscriptions">
+        <item quantity="one">%d tellimus</item>
+        <item quantity="other">%d tellimust</item>
+    </plurals>
+    <plurals name="removed_from_inbox_batch_label">
+        <item quantity="one">%d saade postkastist eemaldatud.</item>
+        <item quantity="other">%d saadet postkastist eemaldatud.</item>
+    </plurals>
+    <plurals name="removed_from_queue_message">
+        <item quantity="one">%d saade eemaldati järjekorrast.</item>
+        <item quantity="other">%d saadet eemaldati järjekorrast.</item>
+    </plurals>
+    <plurals name="statistics_episodes_downloaded">
+        <item quantity="one">alla laaditud</item>
+        <item quantity="other">alla laaditud</item>
+    </plurals>
+    <plurals name="statistics_episodes_started">
+        <item quantity="one">alustatud</item>
+        <item quantity="other">alustatud</item>
+    </plurals>
+    <plurals name="statistics_episodes_total">
+        <item quantity="one">kokku</item>
+        <item quantity="other">kokku</item>
+    </plurals>
+    <plurals name="time_days_quantified">
+        <item quantity="one">%d päev</item>
+        <item quantity="other">%d päeva</item>
+    </plurals>
+    <plurals name="time_hours_quantified">
+        <item quantity="one">%d tund</item>
+        <item quantity="other">%d tundi</item>
+    </plurals>
+    <plurals name="time_minutes_quantified">
+        <item quantity="one">%d minut</item>
+        <item quantity="other">%d minutit</item>
+    </plurals>
+    <plurals name="time_seconds_quantified">
+        <item quantity="one">%d sekund</item>
+        <item quantity="other">%d sekundit</item>
+    </plurals>
+    <plurals name="timer_exceeds_remaining_time_while_continuous_playback_disabled">
+        <item quantity="one">Pidev taasesitus on keelatud ja praeguse saate lõpuni on jäänud vaid %1$d minut</item>
+        <item quantity="other">Pidev taasesitus on keelatud ja praeguse saate lõpuni on jäänud vaid %1$d minutit</item>
+    </plurals>
+    <plurals name="total_size_downloaded_podcasts">
+        <item quantity="one">%d saate kogumaht seadmes</item>
+        <item quantity="other">%d saate kogumaht seadmes</item>
+    </plurals>
+    <plurals name="updated_feeds_batch_label">
+        <item quantity="one">%d tellimus uuendati.</item>
+        <item quantity="other">%d tellimust uuendati.</item>
+    </plurals>
+</resources>

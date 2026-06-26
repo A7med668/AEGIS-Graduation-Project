@@ -1,0 +1,48 @@
+.class public Landroidx/appcompat/app/WindowDecorActionBar$b;
+.super Lh0/t;
+.source ""
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/appcompat/app/WindowDecorActionBar;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+
+# instance fields
+.field public final synthetic a:Landroidx/appcompat/app/WindowDecorActionBar;
+
+
+# direct methods
+.method public constructor <init>(Landroidx/appcompat/app/WindowDecorActionBar;)V
+    .locals 0
+
+    iput-object p1, p0, Landroidx/appcompat/app/WindowDecorActionBar$b;->a:Landroidx/appcompat/app/WindowDecorActionBar;
+
+    invoke-direct {p0}, Lh0/t;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a(Landroid/view/View;)V
+    .locals 1
+
+    iget-object p1, p0, Landroidx/appcompat/app/WindowDecorActionBar$b;->a:Landroidx/appcompat/app/WindowDecorActionBar;
+
+    const/4 v0, 0x0
+
+    iput-object v0, p1, Landroidx/appcompat/app/WindowDecorActionBar;->s:Li/h;
+
+    iget-object p1, p1, Landroidx/appcompat/app/WindowDecorActionBar;->d:Landroidx/appcompat/widget/ActionBarContainer;
+
+    invoke-virtual {p1}, Landroid/widget/FrameLayout;->requestLayout()V
+
+    return-void
+.end method

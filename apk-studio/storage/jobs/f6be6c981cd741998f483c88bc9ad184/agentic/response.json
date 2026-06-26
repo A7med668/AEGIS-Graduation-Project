@@ -1,0 +1,38 @@
+{
+  "enabled": true,
+  "triggered": true,
+  "risk_level": "medium",
+  "risk_score": 76,
+  "policy": {
+    "enabled": true,
+    "dry_run": true,
+    "risk_score_threshold": 75,
+    "email_enabled": false,
+    "webhook_enabled": false,
+    "quarantine_enabled": true,
+    "require_approval_for_destructive": true
+  },
+  "actions": [
+    {
+      "ts": "2026-06-23T09:26:30.270733+00:00",
+      "type": "quarantine",
+      "status": "dry_run",
+      "message": "APK would be copied to local quarantine.",
+      "data": {
+        "source": "/workspace/apk-studio/storage/jobs/f6be6c981cd741998f483c88bc9ad184/upload/app.apk",
+        "destination": "/workspace/apk-studio/storage/jobs/f6be6c981cd741998f483c88bc9ad184/agentic/quarantine/uptodown-com.niksoftware.snapseed.apk"
+      }
+    },
+    {
+      "ts": "2026-06-23T09:26:30.284028+00:00",
+      "type": "incident_record",
+      "status": "executed",
+      "message": "Local incident record written.",
+      "data": {
+        "path": "agentic/incident.json"
+      }
+    }
+  ],
+  "generated_at": "2026-06-23T09:26:30.261976+00:00",
+  "message": "Agentic response completed in dry-run mode."
+}

@@ -1,0 +1,258 @@
+{
+  "schema_version": "4.11.7-specialist-classifiers",
+  "classifiers": [
+    {
+      "id": "permission_risk",
+      "name": "Permission Risk Classifier",
+      "score": 51,
+      "severity": "medium",
+      "description": "Scores permission abuse potential and manifest attack surface.",
+      "evidence": [
+        {
+          "ref": "static.permissions",
+          "title": "Sensitive permissions",
+          "detail": [
+            "android.permission.ACCESS_COARSE_LOCATION",
+            "android.permission.ACCESS_FINE_LOCATION",
+            "android.permission.MANAGE_EXTERNAL_STORAGE",
+            "android.permission.CAMERA",
+            "android.permission.RECORD_AUDIO"
+          ],
+          "weight": 15
+        },
+        {
+          "ref": "static.permissions",
+          "title": "High-risk permission subset",
+          "detail": [
+            "android.permission.MANAGE_EXTERNAL_STORAGE"
+          ],
+          "weight": 6
+        },
+        {
+          "ref": "static.components.exported_count",
+          "title": "Exported attack surface",
+          "detail": 2,
+          "weight": 6
+        },
+        {
+          "ref": "risk.risk_reason_groups",
+          "title": "Permission/combo risk groups",
+          "detail": [
+            "Sensitive permissions present",
+            "Suspicious Domain Indicators With Network Permission"
+          ],
+          "weight": 16
+        }
+      ],
+      "evidence_count": 4,
+      "recommendation": "Review requested permissions against the app purpose. Pay special attention to SMS, overlay, accessibility, install-packages, and exported components."
+    },
+    {
+      "id": "network_risk",
+      "name": "Network Risk Classifier",
+      "score": 100,
+      "severity": "critical",
+      "description": "Scores static and dynamic network indicators, cleartext traffic, suspicious domains, and runtime connectivity.",
+      "evidence": [
+        {
+          "ref": "network_analysis.domains",
+          "title": "Domains",
+          "detail": [
+            "010sec.com",
+            "01mspmd5yalky8.com",
+            "0202.com",
+            "0byv9mgbn0.com",
+            "0latfee.ero-advertising.com",
+            "12724.xyz",
+            "1493361689.rsc.cdn77.org",
+            "21736.xyz",
+            "2baners.ero-advertising.com",
+            "2ds.ero-advertising.com",
+            "2fbanners.ero-advertising.com",
+            "2fflatfee.ero-advertising.com"
+          ],
+          "weight": 20
+        },
+        {
+          "ref": "network_analysis.ips",
+          "title": "Remote IPs",
+          "detail": [
+            "0.0.0.0",
+            "101.101.170.199",
+            "103.98.133.66",
+            "107.162.155.1",
+            "12.34.56.78",
+            "12.8.110.206",
+            "121.136.92.16",
+            "125.61.29.122",
+            "127.0.0.1",
+            "193.13.207.228",
+            "193.58.14.254",
+            "194.186.207.233"
+          ],
+          "weight": 15
+        },
+        {
+          "ref": "network_analysis.cleartext_http_urls",
+          "title": "Cleartext HTTP endpoints",
+          "detail": [
+            "http://creativecommons.org/licenses/by/3.0/",
+            "http://schemas.android.com/aapt",
+            "http://schemas.android.com/aapt\u0000**http://schemas.android.com/apk/res/android\u0000\u0003\u0003set\u0000\u0006\u0006target\u0000\u0000\u0000\u0001\b\u0000",
+            "http://schemas.android.com/aapt\u0000**http://schemas.android.com/apk/res/android\u0000\u0004\u0004path\u0000\u000e\u000estrike_through\u0000\u0006\u0006vector\u0000\u0000\u0000\u0001\b\u00000\u0000\u0000\u0000\u0003\u0000\u0001\u0001U\u0001\u0001\u0001Y\u0001\u0001\u0001\u0002\u0004\u0001\u0001\u0003\u0004\u0001\u0001\u0004\u0004\u0001\u0001\u0005\u0004\u0001\u0001\u0006\u0004\u0001\u0001\u0007\u0004\u0001\u0001",
+            "http://schemas.android.com/aapt\u0000**http://schemas.android.com/apk/res/android\u0000\u0004\u0004path\u0000\u000e\u000estrike_through\u0000\u0006\u0006vector\u0000\u0001\b\u00004\u0000\u0000\u0000\u0003\u0000\u0001\u0001U\u0001\u0001\u0001Y\u0001\u0001\u0001\u0002\u0004\u0001\u0001\u0003\u0004\u0001\u0001\u0004\u0004\u0001\u0001\u0005\u0004\u0001\u0001\u0006\u0004\u0001\u0001\u0007\u0004\u0001\u0001",
+            "http://schemas.android.com/aapt\u0000**http://schemas.android.com/apk/res/android\u0000\u0006\u0006target\u0000\u0000\u0000\u0000\u0001\b\u0000\u0014\u0000\u0000\u0000\u0003\u0000\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0015\u0000\u0000\u0000\u0004\u0000\u0000\u0000\u0007\u0000\u0000\u0000\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0015\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0006\u0000\u0000\u0000\u0002\u0001\u0010\u00008\u0000\u0000\u0000\u0015\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0007\u0000\u0000\u0000\u0001\u0000\u0000\u0000\b\u0000\u0000\u0001\u0000\b\u0002\u0001\u0010\u0000L\u0000\u0000\u0000\u0016\u0000\u0000\u0000\b\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0002\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0007\u0000\u0000\u0000\u0000\u0000\u0000\u0000\b\u0000\u0000\u0001\u0000\u0011\u0007\u0000\u0000\u0000\u0002\u0000\u0000\u0000\b\u0000\u0000\u0001",
+            "http://schemas.android.com/aapt\u0000**http://schemas.android.com/apk/res/android\u0000\u0006\u0006target\u0000\u0000\u0000\u0000\u0001\b\u0000\u0014\u0000\u0000\u0000\u0003\u0000\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0015\u0000\u0000\u0000\u0004\u0000\u0000\u0000\u0007\u0000\u0000\u0000\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0015\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0006\u0000\u0000\u0000\u0002\u0001\u0010\u00008\u0000\u0000\u0000\u0015\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0007\u0000\u0000\u0000\u0001\u0000\u0000\u0000\b\u0000\u0000\u0001\u0000\b\u0002\u0001\u0010\u0000L\u0000\u0000\u0000\u0016\u0000\u0000\u0000\b\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0002\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0007\u0000\u0000\u0000\u0000\u0000\u0000\u0000\b\u0000\u0000\u0001\u0000\u0011\u0007\u0000\u0000\u0000\u0002\u0000\u0000\u0000\b\u0000\u0000\u0001\u000f\u0000\b\u0003\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0016\u0000\u0000\u0000\b\u0000\u0000\u0000\u0003\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0015\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0001\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0015\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0006\u0000\u0000\u0000\u0001\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0015\u0000\u0000\u0000\u0004\u0000\u0000\u0000\u0007\u0000\u0000\u0000",
+            "http://schemas.android.com/aapt\u0000**http://schemas.android.com/apk/res/android\u0000\u0006\u0006target\u0000\u0000\u0000\u0000\u0001\b\u0000\u0014\u0000\u0000\u0000\u0003\u0000\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0015\u0000\u0000\u0000\u0004\u0000\u0000\u0000\u0007\u0000\u0000\u0000\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0015\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0006\u0000\u0000\u0000\u0002\u0001\u0010\u00008\u0000\u0000\u0000\u0015\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0007\u0000\u0000\u0000\u0001\u0000\u0000\u0000\b\u0000\u0000\u0001\u0000\b\u0002\u0001\u0010\u0000L\u0000\u0000\u0000\u0016\u0000\u0000\u0000\b\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0002\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0007\u0000\u0000\u0000\u0000\u0000\u0000\u0000\b\u0000\u0000\u0001\u0000\u0011\u0007\u0000\u0000\u0000\u0002\u0000\u0000\u0000\b\u0000\u0000\u0001\u0010\u0000\b\u0003\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0016\u0000\u0000\u0000\b\u0000\u0000\u0000\u0002\u0001\u0010\u0000L\u0000\u0000\u0000!\u0000\u0000\u0000\b\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0002\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0007\u0000\u0000\u0000\u0000\u0000\u0000\u0000\b\u0000\u0000\u0001\u0000\u0011\u0007\u0000\u0000\u0000\u0002\u0000\u0000\u0000\b\u0000\u0000\u0001\u0011\u0000\b\u0003\u0001\u0010\u0000\u0018\u0000\u0000\u0000!\u0000\u0000\u0000\b\u0000\u0000\u0000\u0002\u0001\u0010\u0000L\u0000\u0000\u0000,\u0000\u0000\u0000\b\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0002\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0007\u0000\u0000\u0000\u0000\u0000\u0000\u0000\b\u0000\u0000\u0001\u0000\u0011\u0007\u0000\u0000\u0000\u0002\u0000\u0000\u0000\b\u0000\u0000\u0001\u0012\u0000\b\u0003\u0001\u0010\u0000\u0018\u0000\u0000\u0000,\u0000\u0000\u0000\b\u0000\u0000\u0000\u0003\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0015\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0001\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0015\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0006\u0000\u0000\u0000\u0001\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0015\u0000\u0000\u0000\u0004\u0000\u0000\u0000\u0007\u0000\u0000\u0000",
+            "http://schemas.android.com/aapt\u0000**http://schemas.android.com/apk/res/android\u0000\u0006\u0006target\u0000\u0000\u0000\u0000\u0001\b\u0000\u0014\u0000\u0000\u0000\u0003\u0000\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0015\u0000\u0000\u0000\u0004\u0000\u0000\u0000\u0007\u0000\u0000\u0000\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0015\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0006\u0000\u0000\u0000\u0002\u0001\u0010\u00008\u0000\u0000\u0000\u0015\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0007\u0000\u0000\u0000\u0001\u0000\u0000\u0000\b\u0000\u0000\u0001\u0000\b\u0002\u0001\u0010\u0000L\u0000\u0000\u0000\u0016\u0000\u0000\u0000\b\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0002\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0007\u0000\u0000\u0000\u0000\u0000\u0000\u0000\b\u0000\u0000\u0001\u0000\u0011\u0007\u0000\u0000\u0000\u0002\u0000\u0000\u0000\b\u0000\u0000\u0001\u0013\u0000\b\u0003\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0016\u0000\u0000\u0000\b\u0000\u0000\u0000\u0003\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0015\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0001\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0015\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0006\u0000\u0000\u0000\u0001\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0015\u0000\u0000\u0000\u0004\u0000\u0000\u0000\u0007\u0000\u0000\u0000",
+            "http://schemas.android.com/aapt\u0000**http://schemas.android.com/apk/res/android\u0000\u0006\u0006target\u0000\u0000\u0000\u0000\u0001\b\u0000\u0014\u0000\u0000\u0000\u0003\u0000\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0015\u0000\u0000\u0000\u0004\u0000\u0000\u0000\u0007\u0000\u0000\u0000\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0015\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0006\u0000\u0000\u0000\u0002\u0001\u0010\u00008\u0000\u0000\u0000\u0015\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0007\u0000\u0000\u0000\u0001\u0000\u0000\u0000\b\u0000\u0000\u0001\u0000\b\u0002\u0001\u0010\u0000L\u0000\u0000\u0000\u0016\u0000\u0000\u0000\b\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0002\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0007\u0000\u0000\u0000\u0000\u0000\u0000\u0000\b\u0000\u0000\u0001\u0000\u0011\u0007\u0000\u0000\u0000\u0002\u0000\u0000\u0000\b\u0000\u0000\u0001\u0014\u0000\b\u0003\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0016\u0000\u0000\u0000\b\u0000\u0000\u0000\u0002\u0001\u0010\u0000L\u0000\u0000\u0000!\u0000\u0000\u0000\b\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0002\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0007\u0000\u0000\u0000\u0000\u0000\u0000\u0000\b\u0000\u0000\u0001\u0000\u0011\u0007\u0000\u0000\u0000\u0002\u0000\u0000\u0000\b\u0000\u0000\u0001\u0015\u0000\b\u0003\u0001\u0010\u0000\u0018\u0000\u0000\u0000!\u0000\u0000\u0000\b\u0000\u0000\u0000\u0002\u0001\u0010\u0000L\u0000\u0000\u0000,\u0000\u0000\u0000\b\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0002\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0007\u0000\u0000\u0000\u0000\u0000\u0000\u0000\b\u0000\u0000\u0001\u0000\u0011\u0007\u0000\u0000\u0000\u0002\u0000\u0000\u0000\b\u0000\u0000\u0001\u0016\u0000\b\u0003\u0001\u0010\u0000\u0018\u0000\u0000\u0000,\u0000\u0000\u0000\b\u0000\u0000\u0000\u0003\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0015\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0001\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0015\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0006\u0000\u0000\u0000\u0001\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0015\u0000\u0000\u0000\u0004\u0000\u0000\u0000\u0007\u0000\u0000\u0000"
+          ],
+          "weight": 30
+        },
+        {
+          "ref": "network_analysis.suspicious_domains",
+          "title": "Suspicious domains/TLDs",
+          "detail": [
+            "12724.xyz",
+            "21736.xyz",
+            "ahf4ycvea439tt9rq.site",
+            "aicleaner.shouji.360.cn"
+          ],
+          "weight": 35
+        }
+      ],
+      "evidence_count": 4,
+      "recommendation": "Investigate suspicious domains/IPs, block cleartext HTTP where possible, and validate whether contacted endpoints match the legitimate app backend."
+    },
+    {
+      "id": "secrets_crypto",
+      "name": "Secrets Classifier",
+      "score": 24,
+      "severity": "low",
+      "description": "Detects hardcoded secrets, crypto indicators, and environment/root-check patterns.",
+      "evidence": [
+        {
+          "ref": "static.crypto_indicators",
+          "title": "Crypto indicators",
+          "detail": [
+            {
+              "kind": "aes",
+              "snippet": "s.ero-advertising.com adspaces2.ero-advertising.com www.adspaces2.ero-advertising.com adspaes.ero-advertising.com www.adspaes.ero-advertising.com adspages.ero-advertising.com www.adsp",
+              "evidence_ref": "static.crypto_indicators.0"
+            },
+            {
+              "kind": "aes",
+              "snippet": "ero-advertising.com www.adspaces2.ero-advertising.com adspaes.ero-advertising.com www.adspaes.ero-advertising.com adspages.ero-advertising.com www.adspages.ero-advertising.com adspcce",
+              "evidence_ref": "static.crypto_indicators.1"
+            },
+            {
+              "kind": "aes",
+              "snippet": "-03.braze.com belgikanst.iad-03.braze.com blucher.iad-03.braze.com bond.iad-03.braze.com caesar.iad-03.braze.com carinus.iad-03.braze.com ceres.iad-03.braze.com clair.iad-03.braze.com",
+              "evidence_ref": "static.crypto_indicators.2"
+            },
+            {
+              "kind": "aeS",
+              "snippet": "fEVgnEbam+qBlWRYNah3719ECY3c=\r \r Name: res/kB.xml\r SHA-256-Digest: 7+5URUkM2qukWSowL0usnKiaeSmnkSXu0wMs53PtNnk=\r \r Name: res/kJ.9.png\r SHA-256-Digest: wPkwpyKhbfmGkjv0GQgdEJD5R2pyh8i2",
+              "evidence_ref": "static.crypto_indicators.3"
+            }
+          ],
+          "weight": 20
+        }
+      ],
+      "evidence_count": 1,
+      "recommendation": "No embedded secret pattern detected in collected static evidence."
+    },
+    {
+      "id": "webview_security",
+      "name": "WebView Classifier",
+      "score": 100,
+      "severity": "critical",
+      "description": "Scores WebView exposure, JavaScript/file-access style indicators, and unsafe HTTP loading.",
+      "evidence": [
+        {
+          "ref": "static.webview_indicators",
+          "title": "WebView indicators",
+          "detail": [
+            {
+              "kind": "android.webkit",
+              "snippet": "nt.category.LAUNCHER\"/>             </intent-filter>             <meta-data android:name=\"android.webkit.WebView.MetricsOptOut\" android:value=\"true\"/>         </activity>         <activity andro",
+              "evidence_ref": "static.webview_indicators.0"
+            },
+            {
+              "kind": "WebView",
+              "snippet": "NCHER\"/>             </intent-filter>             <meta-data android:name=\"android.webkit.WebView.MetricsOptOut\" android:value=\"true\"/>         </activity>         <activity android:label",
+              "evidence_ref": "static.webview_indicators.1"
+            }
+          ],
+          "weight": 24
+        },
+        {
+          "ref": "network_analysis.cleartext_http_urls",
+          "title": "Cleartext Web/HTTP URLs",
+          "detail": [
+            "http://stevenblack.com",
+            "http://creativecommons.org/licenses/by/3.0/",
+            "http://schemas.android.com/apk/res/android\u0000\u0004\u0004path\u0000\u0006\u0006vector\u0000\u0000\u0000\u0000\u0001\b\u0000,\u0000\u0000\u0000\u0003\u0000\u0001\u0001U\u0001\u0001\u0001Y\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0002\u0004\u0001\u0001\u0003\u0004\u0001\u0001\u0004\u0004\u0001\u0001\u0005\u0004\u0001\u0001\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0017\u0000\u0000\u0000",
+            "http://schemas.android.com/apk/res/android\u0000\u0001\b\u0000d\u0000\u0000\u00004\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0018\u0001\u0001\u0001\u0019\u0001\u0001\u0001",
+            "http://schemas.android.com/apk/res/android\u0000\u0005\u0005style\u0000\u0000\u0000\u0000\u0001\b\u0000\u0010\u0000\u0000\u0000\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0015\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0004\u0000\u0000\u0000\u0002\u0001\u0010\u0000`\u0000\u0000\u0000\u0015\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0003\u0000\u0000\u0000\u0000\u0000\u0003\u0000\u0004\u0000\u0000\u0000\u0000\u0000\u0000\u0000\b\u0000\u0000\u0001u\u0002\u0007\u0004\u0000\u0000\u0000\u0001\u0000\u0000\u0000\b\u0000\u0000\u0001v\u0002\u0007\u0005\u0000\u0000\u0000\b\u0000\u0000\u0002\u0002\u0004\u0003\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0015\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0001\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0015\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0004\u0000\u0000\u0000",
+            "http://schemas.android.com/apk/res-auto\u0000**http://schemas.android.com/apk/res/android\u0000\u0005\u0005style\u0000\u0000\u0001\b\u0000(\u0000\u0000\u0000\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001I\u0000\u0004\u0001\u0004\u0002\u0004\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000",
+            "http://schemas.android.com/apk/res/android\u0000\u0004\u0004path\u0000\u0006\u0006vector\u0000\u0000\u0000\u0000\u0001\b\u0000",
+            "http://schemas.android.com/apk/res/android\u0000\u0003\u0003set\u0000",
+            "http://schemas.android.com/apk/res/android\u0000\u0004\u0004path\u0000\u0006\u0006vector\u0000\u0000\u0001\b\u0000",
+            "http://schemas.android.com/apk/res-auto\u0000**http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u0001\b\u0000@\u0000\u0000\u0000\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001?\u0001\u0001\u0001\u0003\u0001\u0001\u0003\u0001\u0001\u0002\u0004\u0003\u0003\u0004\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000"
+          ],
+          "weight": 30
+        }
+      ],
+      "evidence_count": 2,
+      "recommendation": "Review WebView settings, disable unsafe JavaScript bridges/file access where possible, enforce HTTPS, and restrict loaded domains."
+    },
+    {
+      "id": "dynamic_behavior",
+      "name": "Dynamic Behavior Classifier",
+      "score": 0,
+      "severity": "informational",
+      "description": "Scores emulator runtime indicators, dynamic coverage, observed behavior, and cleanup state.",
+      "evidence": [],
+      "evidence_count": 0,
+      "recommendation": "Runtime behavior did not show strong indicators in the captured path. Consider longer dynamic coverage for high-value samples."
+    },
+    {
+      "id": "mitre_mapping",
+      "name": "MITRE Classifier",
+      "score": 12,
+      "severity": "informational",
+      "description": "Summarizes mapped MITRE Mobile tactics/techniques and mapping confidence.",
+      "evidence": [
+        {
+          "ref": "mitre_attack_mapping",
+          "title": "Mapped MITRE techniques",
+          "detail": [
+            {
+              "tactic": "Command and Control",
+              "technique": "Application Layer Protocol / Network Communication",
+              "confidence": "medium"
+            }
+          ],
+          "weight": 10
+        }
+      ],
+      "evidence_count": 1,
+      "recommendation": "No strong MITRE mapping was produced from current evidence.",
+      "tactics": [
+        "Command and Control"
+      ],
+      "techniques": [
+        "Application Layer Protocol / Network Communication"
+      ]
+    }
+  ],
+  "summary": {
+    "classifier_count": 6,
+    "max_score": 100,
+    "max_severity": "critical",
+    "high_or_critical_count": 2,
+    "medium_plus_count": 3,
+    "note": "Specialist classifiers are deterministic, evidence-backed views. They complement the final risk score and help analyst triage."
+  }
+}

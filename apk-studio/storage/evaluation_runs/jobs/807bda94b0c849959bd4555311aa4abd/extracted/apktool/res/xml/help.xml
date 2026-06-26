@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/help_overview_heading">
+        <Preference android:persistent="false" android:title="" android:selectable="false" android:summary="@string/help_intro" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/help_category_example">
+        <Preference android:title="" android:selectable="false" android:summary="@string/usability_hint2" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/help_privacy_heading">
+        <Preference android:title="@string/help_permission1_heading" android:selectable="false" android:summary="@string/help_permission1_description" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/help_data_backup">
+        <Preference android:title="@string/help_data_backup" android:summary="@string/help_data_backup" />
+    </PreferenceCategory>
+</PreferenceScreen>

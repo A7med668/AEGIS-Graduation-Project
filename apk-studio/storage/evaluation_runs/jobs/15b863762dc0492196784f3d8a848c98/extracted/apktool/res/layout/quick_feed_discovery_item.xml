@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:padding="4.0dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:squareImageView="http://schemas.android.com/apk/de.danoeh.antennapod">
+    <de.danoeh.antennapod.ui.common.SquareImageView android:id="@id/discovery_cover" android:layout_width="match_parent" android:layout_height="match_parent" android:foreground="?android:selectableItemBackground" android:elevation="4.0dp" android:outlineProvider="background" squareImageView:direction="width" />
+</LinearLayout>

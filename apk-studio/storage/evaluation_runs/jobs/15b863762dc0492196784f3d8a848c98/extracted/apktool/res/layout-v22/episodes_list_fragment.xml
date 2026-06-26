@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/appbar" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:layout_width="match_parent" android:layout_height="?actionBarSize" app:navigationContentDescription="@string/toolbar_back_button_content_description" app:navigationIcon="?homeAsUpIndicator" />
+        <TextView android:id="@id/txtvInformation" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingTop="4.0dp" android:paddingRight="16.0dp" android:paddingBottom="4.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-16.0dp" android:text="@string/filtered_label" android:paddingHorizontal="16.0dp" android:paddingVertical="4.0dp" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipeRefresh" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/appbar">
+        <de.danoeh.antennapod.ui.episodeslist.EpisodeItemListRecyclerView android:id="@id/recyclerView" android:paddingLeft="@dimen/additional_horizontal_spacing" android:paddingRight="@dimen/additional_horizontal_spacing" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingHorizontal="@dimen/additional_horizontal_spacing" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <ProgressBar android:gravity="center" android:id="@id/progressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateOnly="true" android:layout_centerInParent="true" />
+    <de.danoeh.antennapod.ui.view.FloatingSelectMenu android:id="@id/floatingSelectMenu" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</RelativeLayout>

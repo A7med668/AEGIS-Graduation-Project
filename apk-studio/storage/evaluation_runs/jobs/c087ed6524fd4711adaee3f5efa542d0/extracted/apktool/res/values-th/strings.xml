@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_mode_done">เสร็จ</string>
+    <string name="abc_capital_off">ปิด</string>
+    <string name="abc_capital_on">เปิด</string>
+    <string name="abc_search_hint">ค้นหา…</string>
+    <string name="abc_searchview_description_clear">ล้างคำค้นหา</string>
+    <string name="abc_searchview_description_search">ค้นหา</string>
+    <string name="abc_searchview_description_submit">ส่งคำค้นหา</string>
+    <string name="abc_searchview_description_voice">ค้นหาด้วยเสียง</string>
+    <string name="abc_toolbar_collapse_description">ยุบ</string>
+    <string name="bottomsheet_drag_handle_content_description">แฮนเดิลการลาก</string>
+    <string name="close_drawer">ปิดเมนูการนำทาง</string>
+    <string name="close_sheet">ปิดชีต</string>
+    <string name="default_error_message">อินพุตไม่ถูกต้อง</string>
+    <string name="default_popup_window_title">หน้าต่างป๊อปอัป</string>
+    <string name="error_a11y_label">ข้อผิดพลาด: ไม่ถูกต้อง</string>
+    <string name="glance_error_layout_text_v2">แสดงเนื้อหาไม่ได้</string>
+    <string name="in_progress">กำลังดำเนินการ</string>
+    <string name="indeterminate">เลือกบางส่วน</string>
+    <string name="m3_adaptive_default_pane_title_primary">แผงหลัก</string>
+    <string name="m3_adaptive_default_pane_title_secondary">แผงรอง</string>
+    <string name="m3_adaptive_default_pane_title_tertiary">แผงลำดับที่ 3</string>
+    <string name="m3_loading_indicator_content_description">กำลังโหลด</string>
+    <string name="m3c_bottom_sheet_collapse_description">ยุบ Bottom Sheet</string>
+    <string name="m3c_bottom_sheet_dismiss_description">ปิด Bottom Sheet</string>
+    <string name="m3c_bottom_sheet_drag_handle_description">แฮนเดิลการลาก</string>
+    <string name="m3c_bottom_sheet_expand_description">ขยาย Bottom Sheet</string>
+    <string name="m3c_bottom_sheet_pane_title">Bottom Sheet</string>
+    <string name="m3c_snackbar_pane_title">การแจ้งเตือน</string>
+    <string name="mtrl_button_snackbar_close_content_description">ปิด</string>
+    <string name="navigation_menu">เมนูการนำทาง</string>
+    <string name="not_selected">ไม่ได้เลือก</string>
+    <string name="password_toggle_content_description">แสดงรหัสผ่าน</string>
+    <string name="selected">เลือกไว้</string>
+    <string name="state_empty">ว่าง</string>
+    <string name="state_off">ปิดอยู่</string>
+    <string name="state_on">เปิดอยู่</string>
+    <string name="switch_role">เปลี่ยน</string>
+    <string name="tab">แท็บ</string>
+    <string name="template_percent">%1$d เปอร์เซ็นต์</string>
+    <string name="tooltip_description">เคล็ดลับเครื่องมือ</string>
+    <string name="tooltip_label">แสดงเคล็ดลับเครื่องมือ</string>
+</resources>

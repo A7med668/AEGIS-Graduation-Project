@@ -1,0 +1,142 @@
+﻿services:
+  redis:
+    image: redis:7-alpine
+    container_name: aegis-redis
+    networks:
+      - aegis-net
+    ports:
+      - "6379:6379"
+    command: ["redis-server", "--appendonly", "yes"]
+    volumes:
+      - aegis_redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  redisinsight:
+    image: redis/redisinsight:latest
+    container_name: aegis-redisinsight
+    networks:
+      - aegis-net
+    depends_on:
+      redis:
+        condition: service_healthy
+    ports:
+      - "5540:5540"
+    volumes:
+      - aegis_redisinsight_data:/data
+
+  zookeeper:
+    image: confluentinc/cp-zookeeper:7.6.1
+    container_name: aegis-zookeeper
+    networks:
+      - aegis-net
+    ports:
+      - "2181:2181"
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+    healthcheck:
+      test: ["CMD-SHELL", "echo ruok | nc localhost 2181 || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  kafka:
+    image: confluentinc/cp-kafka:7.6.1
+    container_name: aegis-kafka
+    networks:
+      - aegis-net
+    depends_on:
+      zookeeper:
+        condition: service_started
+    ports:
+      - "9092:9092"
+      - "29092:29092"
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: aegis-zookeeper:2181
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
+      KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:29092,PLAINTEXT_HOST://0.0.0.0:9092
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://aegis-kafka:29092,PLAINTEXT_HOST://127.0.0.1:9092
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
+      KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
+      KAFKA_AUTO_CREATE_TOPICS_ENABLE: "true"
+    healthcheck:
+      test: ["CMD-SHELL", "kafka-topics --bootstrap-server localhost:9092 --list >/dev/null 2>&1"]
+      interval: 15s
+      timeout: 10s
+      retries: 15
+
+  kafdrop:
+    image: obsidiandynamics/kafdrop:latest
+    container_name: aegis-kafdrop
+    networks:
+      - aegis-net
+    depends_on:
+      kafka:
+        condition: service_healthy
+    ports:
+      - "9000:9000"
+    environment:
+      KAFKA_BROKERCONNECT: aegis-kafka:29092
+      JVM_OPTS: "-Xms32M -Xmx128M"
+
+  postgres:
+    image: postgres:16-alpine
+    container_name: aegis-postgres
+    networks:
+      - aegis-net
+    environment:
+      POSTGRES_USER: aegis
+      POSTGRES_PASSWORD: aegis_password
+      POSTGRES_DB: aegis
+    ports:
+      - "5432:5432"
+    volumes:
+      - aegis_postgres_data:/var/lib/postgresql/data
+
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: aegis-pgadmin
+    networks:
+      - aegis-net
+    depends_on:
+      - postgres
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@aegisproject.com
+      PGADMIN_DEFAULT_PASSWORD: admin123
+      PGADMIN_CONFIG_SERVER_MODE: "False"
+    ports:
+      - "5050:80"
+    volumes:
+      - aegis_pgadmin_data:/var/lib/pgadmin
+
+  nginx:
+    image: nginx:1.27-alpine
+    container_name: aegis-nginx
+    networks:
+      - aegis-net
+    depends_on:
+      - kafdrop
+      - redisinsight
+      - pgadmin
+    ports:
+      - "8088:80"
+    volumes:
+      - ../nginx/conf.d:/etc/nginx/conf.d:ro
+      - ../nginx/html:/usr/share/nginx/html:ro
+
+volumes:
+  aegis_redis_data:
+  aegis_redisinsight_data:
+  aegis_postgres_data:
+  aegis_pgadmin_data:
+
+networks:
+  aegis-net:
+    name: aegis-net

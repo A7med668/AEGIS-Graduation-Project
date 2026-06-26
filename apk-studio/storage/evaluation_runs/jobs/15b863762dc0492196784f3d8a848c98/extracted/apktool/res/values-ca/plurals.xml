@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="added_to_queue_message">
+        <item quantity="one">"S'ha afegit %d episodi a la cua."</item>
+        <item quantity="many">"S'han afegit %d episodis a la cua."</item>
+        <item quantity="other">"S'han afegit %d episodis a la cua."</item>
+    </plurals>
+    <plurals name="deleted_episode_message">
+        <item quantity="one">"S'ha suprimit %d episodi baixat."</item>
+        <item quantity="many">"S'han suprimit %d episodis baixats."</item>
+        <item quantity="other">"S'han suprimit %d episodis baixats."</item>
+    </plurals>
+    <plurals name="downloading_episodes_message">
+        <item quantity="one">"S'està baixant %d episodi."</item>
+        <item quantity="many">"S'estan baixant %d episodis."</item>
+        <item quantity="other">"S'estan baixant %d episodis."</item>
+    </plurals>
+    <plurals name="downloads_left">
+        <item quantity="one">%d baixada pendent</item>
+        <item quantity="many">%d baixades pendents</item>
+        <item quantity="other">%d baixades pendents</item>
+    </plurals>
+    <plurals name="echo_hours_podcasts">
+        <item quantity="one">"hores d'episodis
+de %1$d pòdcast"</item>
+        <item quantity="many">"hores d'episodis
+de %1$d pòdcasts"</item>
+        <item quantity="other">"hores d'episodis
+de %1$d pòdcasts"</item>
+    </plurals>
+    <plurals name="echo_queue_hours_waiting">
+        <item quantity="one">"hora esperant a la teva cua
+de %1$d episodi"</item>
+        <item quantity="many">"hora esperant a la teva cua
+de %1$d episodis"</item>
+        <item quantity="other">"hora esperant a la teva cua
+de %1$d episodis"</item>
+    </plurals>
+    <plurals name="episode_cleanup_days_after_listening">
+        <item quantity="one">"%d dia despres d'acabar"</item>
+        <item quantity="many">"%d dies despres d'acabar"</item>
+        <item quantity="other">"%d dies despres d'acabar"</item>
+    </plurals>
+    <plurals name="episode_cleanup_hours_after_listening">
+        <item quantity="one">"%d hora després d'acabar"</item>
+        <item quantity="many">"%d hores després d'acabar"</item>
+        <item quantity="other">"%d hores després d'acabar"</item>
+    </plurals>
+    <plurals name="episodes_sleep_timer_exceeds_queue">
+        <item quantity="one">Només queda %1$d episodi a la cua</item>
+        <item quantity="many">Només queden %1$d episodis a la cua</item>
+        <item quantity="other">Només queden %1$d episodis a la cua</item>
+    </plurals>
+    <plurals name="marked_as_played_message">
+        <item quantity="one">"S'ha marcat %d episodi com a reproduït."</item>
+        <item quantity="many">S’han marcat %d episodis com a reproduïts.</item>
+        <item quantity="other">S’han marcat %d episodis com a reproduïts.</item>
+    </plurals>
+    <plurals name="marked_as_unplayed_message">
+        <item quantity="one">S’ha marcat %d episodi com a no reproduït.</item>
+        <item quantity="many">S’han marcat %d episodis com a no reproduïts.</item>
+        <item quantity="other">S’han marcat %d episodis com a no reproduïts.</item>
+    </plurals>
+    <plurals name="mobile_download_notice">
+        <item quantity="one">Descarregant amb dades mòbils durant el proper minut</item>
+        <item quantity="many">Descarregant amb dades mòbils durant els propers %d minuts</item>
+        <item quantity="other">Descarregant amb dades mòbils durant els propers %d minuts</item>
+    </plurals>
+    <plurals name="move_to_bottom_message">
+        <item quantity="one">"S'ha mogut %d episodi al final."</item>
+        <item quantity="many">"S'han mogut %d episodis al final."</item>
+        <item quantity="other">"S'han mogut %d episodis al final."</item>
+    </plurals>
+    <plurals name="move_to_top_message">
+        <item quantity="one">"S'ha mogut %d episodi al principi."</item>
+        <item quantity="many">"S'han mogut %d episodis al principi."</item>
+        <item quantity="other">"S'han mogut %d episodis al principi."</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d notificació nova</item>
+        <item quantity="other">%d notificacions noves</item>
+    </plurals>
+    <plurals name="new_episode_notification_message">
+        <item quantity="one">%2$s té un nou episodi</item>
+        <item quantity="many">%2$s té %1$d episodis nous</item>
+        <item quantity="other">%2$s té %1$d episodis nous</item>
+    </plurals>
+    <plurals name="new_episode_notification_title">
+        <item quantity="one">Episodi nou</item>
+        <item quantity="many">Episodis nous</item>
+        <item quantity="other">Episodis nous</item>
+    </plurals>
+    <plurals name="num_episodes">
+        <item quantity="one">%d episodi</item>
+        <item quantity="many">%d episodis</item>
+        <item quantity="other">%d episodis</item>
+    </plurals>
+    <plurals name="num_selected_label">
+        <item quantity="one">%1$d/%2$d seleccionat</item>
+        <item quantity="many">%1$d/%2$d seleccionats</item>
+        <item quantity="other">%1$d/%2$d seleccionats</item>
+    </plurals>
+    <plurals name="num_subscriptions">
+        <item quantity="one">%d subscripció</item>
+        <item quantity="many">%d subscripcions</item>
+        <item quantity="other">%d subscripcions</item>
+    </plurals>
+    <plurals name="removed_from_inbox_batch_label">
+        <item quantity="one">"%d episodi eliminat de la safata d'entrada."</item>
+        <item quantity="many">"%d episodis eliminats de la safata d'entrada."</item>
+        <item quantity="other">"%d episodis eliminats de la safata d'entrada."</item>
+    </plurals>
+    <plurals name="removed_from_queue_message">
+        <item quantity="one">"S'ha suprimit %d episodi de la cua."</item>
+        <item quantity="many">"S'han suprimit %d episodis de la cua."</item>
+        <item quantity="other">"S'han suprimit %d episodis de la cua."</item>
+    </plurals>
+    <plurals name="statistics_episodes_downloaded">
+        <item quantity="one">descarregat</item>
+        <item quantity="many">descarregats</item>
+        <item quantity="other">descarregats</item>
+    </plurals>
+    <plurals name="statistics_episodes_started">
+        <item quantity="one">iniciat</item>
+        <item quantity="many">iniciats</item>
+        <item quantity="other">iniciats</item>
+    </plurals>
+    <plurals name="statistics_episodes_total">
+        <item quantity="one">total</item>
+        <item quantity="many">totals</item>
+        <item quantity="other">totals</item>
+    </plurals>
+    <plurals name="time_days_quantified">
+        <item quantity="one">%d dia</item>
+        <item quantity="many">%d dies</item>
+        <item quantity="other">%d dies</item>
+    </plurals>
+    <plurals name="time_hours_quantified">
+        <item quantity="one">%d hora</item>
+        <item quantity="many">%d hores</item>
+        <item quantity="other">%d hores</item>
+    </plurals>
+    <plurals name="time_minutes_quantified">
+        <item quantity="one">%d minut</item>
+        <item quantity="many">%d minuts</item>
+        <item quantity="other">%d minuts</item>
+    </plurals>
+    <plurals name="time_seconds_quantified">
+        <item quantity="one">%d segon</item>
+        <item quantity="many">%d segons</item>
+        <item quantity="other">%d segons</item>
+    </plurals>
+    <plurals name="timer_exceeds_remaining_time_while_continuous_playback_disabled">
+        <item quantity="one">La reproducció contínua està desactivada i a l’episodi actual només li queda %1$d minut</item>
+        <item quantity="many">La reproducció contínua està desactivada i a l’episodi actual només li queden %1$d minuts</item>
+        <item quantity="other">La reproducció contínua està desactivada i a l’episodi actual només li queden %1$d minuts</item>
+    </plurals>
+    <plurals name="total_size_downloaded_podcasts">
+        <item quantity="one">"Mida total d'%d episodi al dispositiu"</item>
+        <item quantity="many">Mida total de %d episodis al dispositiu</item>
+        <item quantity="other">Mida total de %d episodis al dispositiu</item>
+    </plurals>
+    <plurals name="updated_feeds_batch_label">
+        <item quantity="one">%d subscripció actualizada.</item>
+        <item quantity="many">%d subscripcions actualizades.</item>
+        <item quantity="other">%d subscripcions actualizades.</item>
+    </plurals>
+</resources>

@@ -1,0 +1,95 @@
+ACTIVITY MANAGER SERVICES (dumpsys activity services)
+  User 0 active services:
+  * ServiceRecord{94258b0 u0 com.farsitel.bazaar/.core.pushnotification.fcm.BazaarFirebaseMessagingService}
+    intent={act=com.google.firebase.MESSAGING_EVENT pkg=com.farsitel.bazaar}
+    packageName=com.farsitel.bazaar
+    processName=com.farsitel.bazaar
+    baseDir=/data/app/~~uRyHRKep9UOcua2ERIAOhA==/com.farsitel.bazaar-xR3WwIfi1mUHyOeq1G0DJw==/base.apk
+    dataDir=/data/user/0/com.farsitel.bazaar
+    app=ProcessRecord{58693e8 5025:com.farsitel.bazaar/u0a190}
+    mAllowWhileInUsePermissionInFgsReason=DENIED
+    allowUiJobScheduling=false
+    recentCallingPackage=com.farsitel.bazaar
+    recentCallingUid=10190
+    allowStartForeground=ACTIVITY_VISIBILITY_GRACE_PERIOD
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: com.farsitel.bazaar; callingUid: 10190; uidState: TRNB; uidBFSL: n/a; intent: Intent { act=com.google.firebase.MESSAGING_EVENT pkg=com.farsitel.bazaar }; code:ACTIVITY_VISIBILITY_GRACE_PERIOD; tempAllowListReason:<null>; targetSdkVersion:35; callerTargetSdkVersion:35; startForegroundCount:0; bindFromPackage:null: isBindService:true]
+    createTime=-23s139ms startingBgTimeout=--
+    lastActivity=-23s138ms restartTime=-23s138ms createdFromFg=false
+    Bindings:
+    * IntentBindRecord{b1edde CREATE}:
+      intent={act=com.google.firebase.MESSAGING_EVENT pkg=com.farsitel.bazaar}
+      binder=android.os.BinderProxy@9f01bbf
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{86a328c ProcessRecord{58693e8 5025:com.farsitel.bazaar/u0a190}}
+        Per-process Connections:
+          ConnectionRecord{23e33f3 u0 CR IMP com.farsitel.bazaar/.core.pushnotification.fcm.BazaarFirebaseMessagingService:@d4d3662 flags=0x41}
+    All Connections:
+      ConnectionRecord{23e33f3 u0 CR IMP com.farsitel.bazaar/.core.pushnotification.fcm.BazaarFirebaseMessagingService:@d4d3662 flags=0x41}
+
+  * ServiceRecord{76e183e u0 com.farsitel.bazaar/.voice.service.MusicService}
+    intent={act=androidx.media3.session.MediaSessionService cmp=com.farsitel.bazaar/.voice.service.MusicService}
+    packageName=com.farsitel.bazaar
+    processName=com.farsitel.bazaar
+    baseDir=/data/app/~~uRyHRKep9UOcua2ERIAOhA==/com.farsitel.bazaar-xR3WwIfi1mUHyOeq1G0DJw==/base.apk
+    dataDir=/data/user/0/com.farsitel.bazaar
+    app=ProcessRecord{58693e8 5025:com.farsitel.bazaar/u0a190}
+    mAllowWhileInUsePermissionInFgsReason=PROC_STATE_TOP
+    allowUiJobScheduling=false
+    recentCallingPackage=com.farsitel.bazaar
+    recentCallingUid=10190
+    allowStartForeground=PROC_STATE_TOP
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: com.farsitel.bazaar; callingUid: 10190; uidState: TOP ; uidBFSL: [BFSL]; intent: Intent { act=androidx.media3.session.MediaSessionService cmp=com.farsitel.bazaar/.voice.service.MusicService }; code:PROC_STATE_TOP; tempAllowListReason:<null>; targetSdkVersion:35; callerTargetSdkVersion:35; startForegroundCount:0; bindFromPackage:null: isBindService:true]
+    createTime=-21s451ms startingBgTimeout=--
+    lastActivity=-21s404ms restartTime=-21s404ms createdFromFg=true
+    Bindings:
+    * IntentBindRecord{4e65dd5 CREATE}:
+      intent={act=androidx.media3.session.MediaSessionService cmp=com.farsitel.bazaar/.voice.service.MusicService}
+      binder=android.os.BinderProxy@e6b09ea
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{594b4db ProcessRecord{58693e8 5025:com.farsitel.bazaar/u0a190}}
+        Per-process Connections:
+          ConnectionRecord{3f620f9 u0 CR CAPS com.farsitel.bazaar/.voice.service.MusicService:@ec83bc0 flags=0x1001}
+    All Connections:
+      ConnectionRecord{3f620f9 u0 CR CAPS com.farsitel.bazaar/.voice.service.MusicService:@ec83bc0 flags=0x1001}
+
+  * ServiceRecord{2bf47c6 u0 com.farsitel.bazaar/androidx.work.impl.background.systemjob.SystemJobService}
+    intent={cmp=com.farsitel.bazaar/androidx.work.impl.background.systemjob.SystemJobService}
+    packageName=com.farsitel.bazaar
+    processName=com.farsitel.bazaar
+    permission=android.permission.BIND_JOB_SERVICE
+    baseDir=/data/app/~~uRyHRKep9UOcua2ERIAOhA==/com.farsitel.bazaar-xR3WwIfi1mUHyOeq1G0DJw==/base.apk
+    dataDir=/data/user/0/com.farsitel.bazaar
+    app=ProcessRecord{58693e8 5025:com.farsitel.bazaar/u0a190}
+    mAllowWhileInUsePermissionInFgsReason=PROC_STATE_PERSISTENT
+    allowUiJobScheduling=false
+    recentCallingPackage=android
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: android; callingUid: 1000; uidState: PER ; uidBFSL: [BFSL]; intent: Intent { flg=0x4 cmp=com.farsitel.bazaar/androidx.work.impl.background.systemjob.SystemJobService }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<null>; targetSdkVersion:35; callerTargetSdkVersion:34; startForegroundCount:0; bindFromPackage:null: isBindService:true]
+    createTime=-32s294ms startingBgTimeout=--
+    lastActivity=-15s404ms restartTime=-32s286ms createdFromFg=true
+    Bindings:
+    * IntentBindRecord{bcdeb78 CREATE}:
+      intent={flg=0x4 cmp=com.farsitel.bazaar/androidx.work.impl.background.systemjob.SystemJobService}
+      binder=android.os.BinderProxy@b3c0251
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{ce7dab6 ProcessRecord{b9164b6 571:system/1000}}
+        Per-process Connections:
+          ConnectionRecord{20f4513 u0 CR !FG !PRCP com.farsitel.bazaar/androidx.work.impl.background.systemjob.SystemJobService:@65b354d flags=0x8105}
+    All Connections:
+      ConnectionRecord{20f4513 u0 CR !FG !PRCP com.farsitel.bazaar/androidx.work.impl.background.systemjob.SystemJobService:@65b354d flags=0x8105}
+
+  Connection bindings to services:
+  * ConnectionRecord{20f4513 u0 CR !FG !PRCP com.farsitel.bazaar/androidx.work.impl.background.systemjob.SystemJobService:@65b354d flags=0x8105}
+    binding=AppBindRecord{ce7dab6 com.farsitel.bazaar/androidx.work.impl.background.systemjob.SystemJobService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@65b354d flags=0x8105
+  * ConnectionRecord{23e33f3 u0 CR IMP com.farsitel.bazaar/.core.pushnotification.fcm.BazaarFirebaseMessagingService:@d4d3662 flags=0x41}
+    binding=AppBindRecord{86a328c com.farsitel.bazaar/.core.pushnotification.fcm.BazaarFirebaseMessagingService:com.farsitel.bazaar}
+    conn=android.os.BinderProxy@d4d3662 flags=0x41
+  * ConnectionRecord{3f620f9 u0 CR CAPS com.farsitel.bazaar/.voice.service.MusicService:@ec83bc0 flags=0x1001}
+    binding=AppBindRecord{594b4db com.farsitel.bazaar/.voice.service.MusicService:com.farsitel.bazaar}
+    activity=ActivityRecord{70b2fba u0 com.farsitel.bazaar/.MainActivity t14}
+    conn=android.os.BinderProxy@ec83bc0 flags=0x1001

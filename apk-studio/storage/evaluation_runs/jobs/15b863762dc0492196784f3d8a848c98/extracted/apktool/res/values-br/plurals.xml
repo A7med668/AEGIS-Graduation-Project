@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="downloads_left">
+        <item quantity="one">%d pellgargadur a chom</item>
+        <item quantity="two">%d bellgargadur a chom</item>
+        <item quantity="few">%d fellgargadur a chom</item>
+        <item quantity="many">%d a bellgargadurioù a chom</item>
+        <item quantity="other">%d pellgargadur a chom</item>
+    </plurals>
+    <plurals name="new_episode_notification_message">
+        <item quantity="one">Ur rann nevez a zo gant %2$s</item>
+        <item quantity="two">%1$d rann nevez zo gant %2$s</item>
+        <item quantity="few">%1$d rann nevez zo gant %2$s</item>
+        <item quantity="many">%1$d rann nevez zo gant %2$s</item>
+        <item quantity="other">%1$d rann nevez zo gant %2$s</item>
+    </plurals>
+    <plurals name="new_episode_notification_title">
+        <item quantity="one">Rann nevez</item>
+        <item quantity="two">Rannoù nevez</item>
+        <item quantity="few">Rannoù nevez</item>
+        <item quantity="many">Rannoù nevez</item>
+        <item quantity="other">Rannoù nevez</item>
+    </plurals>
+    <plurals name="num_episodes">
+        <item quantity="one">%d rann</item>
+        <item quantity="two">%d rann</item>
+        <item quantity="few">%d rann</item>
+        <item quantity="many">%d rann</item>
+        <item quantity="other">%d rann</item>
+    </plurals>
+    <plurals name="num_selected_label">
+        <item quantity="one">%1$d/%2$d diuzet</item>
+        <item quantity="two">%1$d/%2$d diuzet</item>
+        <item quantity="few">%1$d/%2$d diuzet</item>
+        <item quantity="many">%1$d/%2$d diuzet</item>
+        <item quantity="other">%1$d/%2$d diuzet</item>
+    </plurals>
+    <plurals name="removed_from_inbox_batch_label">
+        <item quantity="one">%d rann tennet eus ar voest degemer</item>
+        <item quantity="two">%d rann tennet eus ar voest degemer</item>
+        <item quantity="few">%d rann tennet eus ar voest degemer</item>
+        <item quantity="many">%d rann tennet eus ar voest degemer</item>
+        <item quantity="other">%d rann tennet eus ar voest degemer</item>
+    </plurals>
+    <plurals name="updated_feeds_batch_label">
+        <item quantity="one">"%d c'houmanant a zo bet hizivaet."</item>
+        <item quantity="two">%d goumanant a zo bet hizivaet.</item>
+        <item quantity="few">%d a goumanantoù a zo bet hizivaet.</item>
+        <item quantity="many">%d a goumanantoù a zo bet hizivaet.</item>
+        <item quantity="other">%d a goumanantoù a zo bet hizivaet.</item>
+    </plurals>
+</resources>

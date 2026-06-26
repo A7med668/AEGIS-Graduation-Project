@@ -1,0 +1,228 @@
+{
+  "schema_version": "4.11.7-specialist-classifiers",
+  "classifiers": [
+    {
+      "id": "permission_risk",
+      "name": "Permission Risk Classifier",
+      "score": 39,
+      "severity": "low",
+      "description": "Scores permission abuse potential and manifest attack surface.",
+      "evidence": [
+        {
+          "ref": "static.permissions",
+          "title": "Sensitive permissions",
+          "detail": [
+            "android.permission.RECEIVE_BOOT_COMPLETED"
+          ],
+          "weight": 3
+        },
+        {
+          "ref": "static.components.exported_count",
+          "title": "Exported attack surface",
+          "detail": 16,
+          "weight": 20
+        },
+        {
+          "ref": "risk.risk_reason_groups",
+          "title": "Permission/combo risk groups",
+          "detail": [
+            "Sensitive permissions present",
+            "Boot Persistence Plus Foreground Service And Network Access"
+          ],
+          "weight": 16
+        }
+      ],
+      "evidence_count": 3,
+      "recommendation": "No major permission-risk pattern detected. Continue standard review."
+    },
+    {
+      "id": "network_risk",
+      "name": "Network Risk Classifier",
+      "score": 100,
+      "severity": "critical",
+      "description": "Scores static and dynamic network indicators, cleartext traffic, suspicious domains, and runtime connectivity.",
+      "evidence": [
+        {
+          "ref": "network_analysis.domains",
+          "title": "Domains",
+          "detail": [
+            "66androidx.appcompat.app",
+            "android.app",
+            "android.net",
+            "androidx.car.app",
+            "androidx.core.app",
+            "androidx.fragment.app",
+            "antennapod.org",
+            "commons.apache.org",
+            "de.danoeh.antennapod.net",
+            "fmsware.com",
+            "fsf.org",
+            "github.com"
+          ],
+          "weight": 20
+        },
+        {
+          "ref": "network_analysis.cleartext_http_urls",
+          "title": "Cleartext HTTP endpoints",
+          "detail": [
+            "http://pictogrammers.com/",
+            "http://schemas.android.com/aapt\u0000**http://schemas.android.com/apk/res/android\u0000\u0003\u0003set\u0000\u0006\u0006target\u0000\u0000\u0000\u0001\b\u0000",
+            "http://schemas.android.com/aapt\u0000**http://schemas.android.com/apk/res/android\u0000\u0004\u0004item\u0000",
+            "http://schemas.android.com/aapt\u0000**http://schemas.android.com/apk/res/android\u0000\u0004\u0004item\u0000\u0001\b\u0000\u0014\u0000\u0000\u0000\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0004\u0000\u0000\u0000\u0007\u0000\u0000\u0000\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0006\u0000\u0000\u0000\u0002\u0001\u0010\u00008\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0007\u0000\u0000\u0000\u0000\u0000\u0000\u0000\b\u0000\u0000\u0012\u0000\u0000\u0000\u0000\u0002\u0001\u0010\u0000L\u0000\u0000\u0000\u0007\u0000\u0000\u0000\b\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0002\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0007\u0000\u0000\u0000\u0001\u0000\u0000\u0000\b\u0000\u0000\u0010\u0003\u0000\u0000\u0007\u0000\u0000\u0000\u0002\u0000\u0000\u0000\b\u0000\u0000\u0001",
+            "http://schemas.android.com/aapt\u0000**http://schemas.android.com/apk/res/android\u0000\u0004\u0004item\u0000\b\bselector\u0000\u0000\u0000\u0001\b\u0000\u0010\u0000\u0000\u0000\u0001\u0001\u0001",
+            "http://schemas.android.com/aapt\u0000**http://schemas.android.com/apk/res/android\u0000\u0004\u0004path\u0000\u0006\u0006target\u0000\u0001\b\u0000\u0014\u0000\u0000\u0000\u0003\u0000\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0007\u0000\u0000\u0000\u0004\u0000\u0000\u0000\b\u0000\u0000\u0000\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0007\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0007\u0000\u0000\u0000\u0002\u0001\u0010\u00008\u0000\u0000\u0000\u0007\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\b\u0000\u0000\u0000\u0001\u0000\u0000\u0000\b\u0000\u0000\u0001\u0000\b\u0002\u0001\u0010\u0000L\u0000\u0000\u0000\b\u0000\u0000\u0000",
+            "http://schemas.android.com/aapt\u0000**http://schemas.android.com/apk/res/android\u0000\u0004\u0004path\u0000\u0006\u0006vector\u0000\u0001\b\u0000",
+            "http://schemas.android.com/aapt\u0000**http://schemas.android.com/apk/res/android\u0000\u0004\u0004path\u0000\u000e\u000estrike_through\u0000\u0006\u0006vector\u0000\u0000\u0000\u0001\b\u00000\u0000\u0000\u0000\u0003\u0000\u0001\u0001U\u0001\u0001\u0001Y\u0001\u0001\u0001\u0002\u0004\u0001\u0001\u0003\u0004\u0001\u0001\u0004\u0004\u0001\u0001\u0005\u0004\u0001\u0001\u0006\u0004\u0001\u0001\u0007\u0004\u0001\u0001",
+            "http://schemas.android.com/aapt\u0000**http://schemas.android.com/apk/res/android\u0000\u0004\u0004path\u0000\u000e\u000estrike_through\u0000\u0006\u0006vector\u0000\u0001\b\u00004\u0000\u0000\u0000\u0003\u0000\u0001\u0001U\u0001\u0001\u0001Y\u0001\u0001\u0001\u0002\u0004\u0001\u0001\u0003\u0004\u0001\u0001\u0004\u0004\u0001\u0001\u0005\u0004\u0001\u0001\u0006\u0004\u0001\u0001\u0007\u0004\u0001\u0001",
+            "http://schemas.android.com/aapt\u0000**http://schemas.android.com/apk/res/android\u0000\u0005\u0005shape\u0000\u0005\u0005solid\u0000\u0006\u0006stroke\u0000\u0001\b\u0000\u0014\u0000\u0000\u0000Y\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0004\u0000\u0000\u0000\u0007\u0000\u0000\u0000\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0006\u0000\u0000\u0000\u0002\u0001\u0010\u0000$\u0000\u0000\u0000\u0003\u0000\u0000\u0000\b\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u0001\u0010\u0000L\u0000\u0000\u0000\u0006\u0000\u0000\u0000"
+          ],
+          "weight": 30
+        }
+      ],
+      "evidence_count": 2,
+      "recommendation": "Investigate suspicious domains/IPs, block cleartext HTTP where possible, and validate whether contacted endpoints match the legitimate app backend."
+    },
+    {
+      "id": "secrets_crypto",
+      "name": "Secrets Classifier",
+      "score": 18,
+      "severity": "informational",
+      "description": "Detects hardcoded secrets, crypto indicators, and environment/root-check patterns.",
+      "evidence": [
+        {
+          "ref": "static.crypto_indicators",
+          "title": "Crypto indicators",
+          "detail": [
+            {
+              "kind": "aES",
+              "snippet": "est: xH3cNyEBZQuyAiZQn6SBq3wrzlEuRr8Q1l849JkEclA=\r \r Name: res/hc.xml\r SHA-256-Digest: o1FaES+gk0zppu8zlDXrMPfVyn1pmVEUN4T7lGRusiw=\r \r Name: res/hg.xml\r SHA-256-Digest: B6BSEp/pY0ia4j",
+              "evidence_ref": "static.crypto_indicators.0"
+            },
+            {
+              "kind": "aEs",
+              "snippet": "9V4Qztr7EyN1EPc=\r \r Name: res/iy.xml\r SHA-256-Digest: dn/YeM8rHSB+5GiFdx/xCsk1240sl/BmczjqaEsHd5U=\r \r Name: res/j3.xml\r SHA-256-Digest: 9s9SukiBPytWSOKaBJjIwQchO6JicY2KKkIr5bfUITE=\r \r",
+              "evidence_ref": "static.crypto_indicators.1"
+            },
+            {
+              "kind": "AEs",
+              "snippet": " CB5QNJMziqZD7HTTJldaw1f8oQHRzRkxOw2Ekbw4tVc=\r \r Name: res/ok.xml\r SHA-256-Digest: ogSPJH6AEsT0zAH1WriKANFAV8pjZAzKmMnX2NM2/iE=\r \r Name: res/ok1.xml\r SHA-256-Digest: 4Pn7kVQ9LjG8NBjNx",
+              "evidence_ref": "static.crypto_indicators.2"
+            }
+          ],
+          "weight": 15
+        }
+      ],
+      "evidence_count": 1,
+      "recommendation": "No embedded secret pattern detected in collected static evidence."
+    },
+    {
+      "id": "webview_security",
+      "name": "WebView Classifier",
+      "score": 100,
+      "severity": "critical",
+      "description": "Scores WebView exposure, JavaScript/file-access style indicators, and unsafe HTTP loading.",
+      "evidence": [
+        {
+          "ref": "static.webview_indicators",
+          "title": "WebView indicators",
+          "detail": [
+            {
+              "kind": "WebView",
+              "snippet": "de.danoeh.antennapod.ui.view.NestedScrollableHost\u0000--de.danoeh.antennapod.ui.view.ShownotesWebView\u0000''http://schemas.android.com/apk/res-auto\u0000**http://schemas.android.com/apk/res/android\u0000\u0001\b",
+              "evidence_ref": "static.webview_indicators.0"
+            },
+            {
+              "kind": "WebView",
+              "snippet": "de.danoeh.antennapod.ui.view.NestedScrollableHost\u0000--de.danoeh.antennapod.ui.view.ShownotesWebView\u0000''http://schemas.android.com/apk/res-auto\u0000**http://schemas.android.com/apk/res/android\u0000\u0005\u0005",
+              "evidence_ref": "static.webview_indicators.1"
+            },
+            {
+              "kind": "android.webkit",
+              "snippet": "AULT\"/>             </intent-filter>         </activity>         <meta-data android:name=\"android.webkit.WebView.MetricsOptOut\" android:value=\"true\"/>         <meta-data android:name=\"com.google",
+              "evidence_ref": "static.webview_indicators.2"
+            },
+            {
+              "kind": "WebView",
+              "snippet": "     </intent-filter>         </activity>         <meta-data android:name=\"android.webkit.WebView.MetricsOptOut\" android:value=\"true\"/>         <meta-data android:name=\"com.google.android",
+              "evidence_ref": "static.webview_indicators.3"
+            }
+          ],
+          "weight": 45
+        },
+        {
+          "ref": "network_analysis.cleartext_http_urls",
+          "title": "Cleartext Web/HTTP URLs",
+          "detail": [
+            "http://www.apache.org/licenses/",
+            "http://www.apache.org/licenses/LICENSE-2.0",
+            "http://pictogrammers.com/",
+            "http://schemas.android.com/apk/res/android\u0000\u0004\u0004path\u0000\u0006\u0006vector\u0000\u0000\u0000\u0000\u0001\b\u0000,\u0000\u0000\u0000\u0003\u0000\u0001\u0001U\u0001\u0001\u0001Y\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0002\u0004\u0001\u0001\u0003\u0004\u0001\u0001\u0004\u0004\u0001\u0001\u0005\u0004\u0001\u0001\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0017\u0000\u0000\u0000",
+            "http://schemas.android.com/apk/res/android\u0000\u0005\u0005style\u0000\u0000\u0000\u0000\u0001\b\u0000\u0010\u0000\u0000\u0000\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0015\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0004\u0000\u0000\u0000\u0002\u0001\u0010\u0000`\u0000\u0000\u0000\u0015\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0003\u0000\u0000\u0000\u0000\u0000\u0003\u0000\u0004\u0000\u0000\u0000\u0000\u0000\u0000\u0000\b\u0000\u0000\u0001\u0002\u0007\u0004\u0000\u0000\u0000\u0001\u0000\u0000\u0000\b\u0000\u0000\u0001\u0002\u0007\u0005\u0000\u0000\u0000\b\u0000\u0000\u0002\u0003\u0003\u0004\u0003\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0015\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0001\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0015\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0004\u0000\u0000\u0000",
+            "http://schemas.android.com/apk/res-auto\u0000**http://schemas.android.com/apk/res/android\u0000\u0005\u0005style\u0000\u0000\u0001\b\u0000(\u0000\u0000\u0000\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001M\u0000\u0004\u0001\u0004\u0002\u0004\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000",
+            "http://schemas.android.com/apk/res/android\u0000\u0004\u0004path\u0000\u0006\u0006vector\u0000\u0000\u0000\u0000\u0001\b\u0000",
+            "http://schemas.android.com/apk/res/android\u0000\u0003\u0003set\u0000",
+            "http://schemas.android.com/apk/res-auto\u0000**http://schemas.android.com/apk/res/android\u0000\u0005\u0005style\u0000\u0000\u0000\u0000\u0001\b\u0000",
+            "http://schemas.android.com/apk/res/android\u0000\u000e\u000eprefAutoDelete\u0000\u0013\u0013prefAutoDeleteLocal\u0000\u0012\u0012prefEpisodeCleanup\u0000\u0018\u0018prefFavoriteKeepsEpisode\u0000\u0000\u0001\b\u0000$\u0000\u0000\u0000\u000e\u0000\u0001\u0001\u0000\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0003\u0000\u0000\u0000"
+          ],
+          "weight": 30
+        }
+      ],
+      "evidence_count": 2,
+      "recommendation": "Review WebView settings, disable unsafe JavaScript bridges/file access where possible, enforce HTTPS, and restrict loaded domains."
+    },
+    {
+      "id": "dynamic_behavior",
+      "name": "Dynamic Behavior Classifier",
+      "score": 0,
+      "severity": "informational",
+      "description": "Scores emulator runtime indicators, dynamic coverage, observed behavior, and cleanup state.",
+      "evidence": [],
+      "evidence_count": 0,
+      "recommendation": "Runtime behavior did not show strong indicators in the captured path. Consider longer dynamic coverage for high-value samples."
+    },
+    {
+      "id": "mitre_mapping",
+      "name": "MITRE Classifier",
+      "score": 24,
+      "severity": "low",
+      "description": "Summarizes mapped MITRE Mobile tactics/techniques and mapping confidence.",
+      "evidence": [
+        {
+          "ref": "mitre_attack_mapping",
+          "title": "Mapped MITRE techniques",
+          "detail": [
+            {
+              "tactic": "Persistence",
+              "technique": "Boot or Login Initialization",
+              "confidence": "medium"
+            },
+            {
+              "tactic": "Command and Control",
+              "technique": "Application Layer Protocol / Network Communication",
+              "confidence": "medium"
+            }
+          ],
+          "weight": 20
+        }
+      ],
+      "evidence_count": 1,
+      "recommendation": "No strong MITRE mapping was produced from current evidence.",
+      "tactics": [
+        "Persistence",
+        "Command and Control"
+      ],
+      "techniques": [
+        "Boot or Login Initialization",
+        "Application Layer Protocol / Network Communication"
+      ]
+    }
+  ],
+  "summary": {
+    "classifier_count": 6,
+    "max_score": 100,
+    "max_severity": "critical",
+    "high_or_critical_count": 2,
+    "medium_plus_count": 2,
+    "note": "Specialist classifiers are deterministic, evidence-backed views. They complement the final risk score and help analyst triage."
+  }
+}

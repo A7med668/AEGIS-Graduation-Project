@@ -1,0 +1,223 @@
+{
+  "risk_score": 76,
+  "risk_level": "medium",
+  "confidence": 0.5,
+  "verdict": "Suspicious APK with indicators that merit review, not confirmed malware",
+  "needs_human_review": true,
+  "review_status": "pending",
+  "evidence_findings": [
+    {
+      "id": "finding-001",
+      "source_model_role": "rule_engine",
+      "source_model": "deterministic",
+      "severity": "low",
+      "title": "Permission Signal",
+      "explanation": "android.permission.RECORD_AUDIO",
+      "evidence_refs": [
+        "static.permissions.android.permission.RECORD_AUDIO"
+      ],
+      "model_run_id": null,
+      "mitre_mobile": []
+    },
+    {
+      "id": "finding-002",
+      "source_model_role": "rule_engine",
+      "source_model": "deterministic",
+      "severity": "low",
+      "title": "Permission Signal",
+      "explanation": "android.permission.REQUEST_INSTALL_PACKAGES",
+      "evidence_refs": [
+        "static.permissions.android.permission.REQUEST_INSTALL_PACKAGES"
+      ],
+      "model_run_id": null,
+      "mitre_mobile": [
+        {
+          "tactic": "Persistence",
+          "technique": "Install Additional Applications"
+        }
+      ]
+    },
+    {
+      "id": "finding-003",
+      "source_model_role": "rule_engine",
+      "source_model": "deterministic",
+      "severity": "low",
+      "title": "Permission Signal",
+      "explanation": "android.permission.QUERY_ALL_PACKAGES",
+      "evidence_refs": [
+        "static.permissions.android.permission.QUERY_ALL_PACKAGES"
+      ],
+      "model_run_id": null,
+      "mitre_mobile": [
+        {
+          "tactic": "Discovery",
+          "technique": "Software Discovery"
+        }
+      ]
+    },
+    {
+      "id": "finding-004",
+      "source_model_role": "rule_engine",
+      "source_model": "deterministic",
+      "severity": "low",
+      "title": "Permission Signal",
+      "explanation": "android.permission.MANAGE_EXTERNAL_STORAGE",
+      "evidence_refs": [
+        "static.permissions.android.permission.MANAGE_EXTERNAL_STORAGE"
+      ],
+      "model_run_id": null,
+      "mitre_mobile": []
+    },
+    {
+      "id": "finding-005",
+      "source_model_role": "rule_engine",
+      "source_model": "deterministic",
+      "severity": "informational",
+      "title": "Permission Signal",
+      "explanation": "android.permission.RECEIVE_BOOT_COMPLETED",
+      "evidence_refs": [
+        "static.permissions.android.permission.RECEIVE_BOOT_COMPLETED"
+      ],
+      "model_run_id": null,
+      "mitre_mobile": [
+        {
+          "tactic": "Persistence",
+          "technique": "Boot or Logon Initialization Scripts"
+        }
+      ]
+    }
+  ],
+  "recommended_actions": [
+    "Review the list of domain names and ensure they are properly secured and only accessible to authorized users.",
+    "Ensure that all communications involving IP addresses and ports are encrypted.",
+    "Review AI findings and run dynamic analysis if not already completed.",
+    "Preserve job artifacts and evidence lineage.",
+    "Use a disposable emulator for dynamic validation before allowing installation."
+  ],
+  "routing_decision": {
+    "path": "high_risk_primary_plus_reviewer",
+    "models": [
+      "primary_llm",
+      "reviewer_llm"
+    ],
+    "human_review": true,
+    "critical_signal": false,
+    "high_signal": true,
+    "suspicious": true,
+    "ambiguous": true,
+    "rule_score": 76,
+    "calibration": {
+      "profile": "v3.5_benign_runtime_context_aware",
+      "human_review_threshold": 88,
+      "note": "Generic runtime observations and permission-heavy samples route to medium analysis unless hard strong evidence is present."
+    },
+    "routing_reasons": {
+      "dangerous_permission_count": 4,
+      "has_accessibility_plus_overlay": false,
+      "suspicious_domain_count": 1,
+      "cleartext_http_url_count": 203,
+      "exported_component_count": 14,
+      "has_embedded_secrets": true,
+      "has_webview_indicator": true,
+      "has_dynamic_code_indicator": false,
+      "has_strong_rule_evidence": true,
+      "app_profile": "app_store_like",
+      "permission_heavy_downgrade_applied": false,
+      "strong_rule_codes": [
+        "suspicious_domain_network_combo",
+        "embedded_secrets",
+        "dynamic_indicator_high"
+      ],
+      "dynamic_indicator_count": 8,
+      "dynamic_network_signal": true,
+      "dynamic_generic_runtime_only": true,
+      "dynamic_c2_signal": false
+    }
+  },
+  "fusion_inputs": {
+    "rule_score": 76,
+    "model_scores": [],
+    "feature_summary": {
+      "rule_score": 76,
+      "risk_level": "medium",
+      "score_breakdown": {
+        "permission_score_raw": 24,
+        "permission_score_capped": 16,
+        "permission_score_cap": 16,
+        "context_score": 38,
+        "combo_score": 19,
+        "dynamic_score_raw": 9,
+        "dynamic_score_capped": 3,
+        "dynamic_score_cap": 3,
+        "dynamic_generic_only": false,
+        "dynamic_high_or_critical_count": 1,
+        "dynamic_c2_like_count": 0,
+        "score_before_profile": 76,
+        "app_profile": "app_store_like",
+        "expected_permission_reduction": 0,
+        "score_after_profile": 76,
+        "strong_evidence": true,
+        "hard_strong_evidence": true,
+        "hard_strong_evidence_count": 1,
+        "soft_strong_only": false,
+        "critical_calibration_applied": false,
+        "permission_reason_count": 7,
+        "combo_reason_count": 4,
+        "risk_reason_count": 22,
+        "risk_reason_group_count": 15,
+        "observation_count": 8,
+        "permission_heavy_downgrade_applied": false,
+        "high_risk_gate_applied": false
+      },
+      "app_profile": "app_store_like",
+      "expected_permission_reduction": 0,
+      "permission_heavy_downgrade_applied": false,
+      "has_strong_rule_evidence": true,
+      "strong_rule_codes": [
+        "suspicious_domain_network_combo",
+        "embedded_secrets",
+        "dynamic_indicator_high"
+      ],
+      "dangerous_permission_count": 4,
+      "permission_count": 33,
+      "has_accessibility_plus_overlay": false,
+      "has_overlay": false,
+      "has_accessibility": false,
+      "has_installer_inventory_combo": true,
+      "has_boot_foreground_network_combo": true,
+      "has_audio_background_network_combo": true,
+      "exported_component_count": 14,
+      "domain_count": 500,
+      "url_count": 500,
+      "cleartext_http_url_count": 203,
+      "suspicious_domain_count": 1,
+      "has_embedded_secrets": true,
+      "native_library_count": 8,
+      "dex_file_count": 3,
+      "has_webview_indicator": true,
+      "webview_indicator_count": 2,
+      "has_dynamic_code_indicator": false,
+      "dynamic_code_indicator_count": 0,
+      "dynamic_status": "completed",
+      "dynamic_indicator_count": 8,
+      "dynamic_network_signal": true,
+      "dynamic_c2_signal": false,
+      "dynamic_generic_runtime_only": true,
+      "dynamic_crash_signal": true,
+      "known_bad_indicator": false,
+      "conflicting_evidence": false,
+      "low_confidence_static": false
+    },
+    "strong_evidence_gate": true,
+    "permission_heavy_or_generic_runtime_cap": true,
+    "allowed_evidence_refs_count": 1209,
+    "dropped_model_findings_count": 0,
+    "claim_downgraded_count": 0
+  },
+  "evidence_quality": {
+    "validated_findings_count": 5,
+    "dropped_model_findings_count": 0,
+    "claim_downgraded_count": 0,
+    "dropped_model_findings": []
+  }
+}

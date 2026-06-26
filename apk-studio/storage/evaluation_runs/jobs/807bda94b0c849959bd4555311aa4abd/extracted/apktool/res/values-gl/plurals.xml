@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="entries_selected">
+        <item quantity="one">%1$d entrada seleccionada</item>
+        <item quantity="other">%1$d entradas seleccionadas</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d notificación nova</item>
+        <item quantity="other">%d notificacións novas</item>
+    </plurals>
+</resources>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button android:id="@id/button" android:layout_width="0.0dp" android:layout_height="wrap_content" app:layout_columnWeight="1.0" app:layout_gravity="fill_horizontal|center" style="@style/Widget.Material3.Button.OutlinedButton"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

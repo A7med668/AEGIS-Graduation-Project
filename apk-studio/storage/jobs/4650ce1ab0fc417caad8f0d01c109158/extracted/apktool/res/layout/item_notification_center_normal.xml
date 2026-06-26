@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/item_notification_center_normal_0" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="@drawable/selector_old"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/item_notification_center_base" />
+        <View android:layout_width="match_parent" android:layout_marginTop="@dimen/default_margin_double" android:layout_marginStart="@dimen/notif_action_start_margin" style="@style/Bazaar.HorizontalDivider" />
+    </LinearLayout>
+</FrameLayout>

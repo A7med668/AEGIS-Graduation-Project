@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="calendar_array">
+        <item>添加到日历</item>
+        <item>不进行任何操作</item>
+    </string-array>
+    <string-array name="content_types">
+        <item>未定义</item>
+        <item>文本</item>
+        <item>电子邮件</item>
+        <item>电话号码</item>
+        <item>短信</item>
+        <item>彩信</item>
+        <item>网址</item>
+        <item>WiFi</item>
+        <item>VCard</item>
+        <item>MeCard</item>
+        <item>BizCard</item>
+        <item>市场</item>
+        <item>联系人</item>
+        <item>地理位置</item>
+        <item>通讯录</item>
+        <item>产品</item>
+        <item>日历</item>
+        <item>ISBN</item>
+        <item>车辆识别号（VIN）</item>
+    </string-array>
+    <string-array name="email_array">
+        <item>发送电子邮件</item>
+        <item>添加到联系人</item>
+    </string-array>
+    <string-array name="generator_array">
+        <item>文本</item>
+        <item>电子邮件</item>
+        <item>网址</item>
+        <item>电话号码</item>
+        <item>短信</item>
+        <item>地理位置</item>
+        <item>MeCard</item>
+        <item>BizCard</item>
+        <item>WiFi</item>
+        <item>VCard</item>
+        <item>市场</item>
+    </string-array>
+    <string-array name="geo_array">
+        <item>打开地图应用</item>
+        <item>不进行任何操作</item>
+    </string-array>
+    <string-array name="history_array">
+        <item>复制到剪贴板</item>
+        <item>删除条目</item>
+    </string-array>
+    <string-array name="mms_array">
+        <item>发送彩信</item>
+        <item>拨打电话号码</item>
+        <item>添加到联系人</item>
+    </string-array>
+    <string-array name="pref_app_theme_entries">
+        <item>明亮</item>
+        <item>暗黑</item>
+        <item>系统默认</item>
+    </string-array>
+    <string-array name="pref_search_engine_entries">
+        <item>DuckDuckGo</item>
+        <item>谷歌</item>
+        <item>Startpage</item>
+        <item>Brave</item>
+    </string-array>
+    <string-array name="product_array">
+        <item>在网上搜索</item>
+        <item>不进行任何操作</item>
+    </string-array>
+    <string-array name="send_email_array">
+        <item>发送电子邮件</item>
+        <item>添加到联系人</item>
+    </string-array>
+    <string-array name="sms_array">
+        <item>发送短信</item>
+        <item>拨打电话号码</item>
+        <item>添加到联系人</item>
+    </string-array>
+    <string-array name="tel_array">
+        <item>拨打电话号码</item>
+        <item>添加到联系人</item>
+    </string-array>
+    <string-array name="text_array">
+        <item>在网上搜索</item>
+        <item>不进行任何操作</item>
+    </string-array>
+    <string-array name="url_array">
+        <item>访问网址</item>
+        <item>不进行任何操作</item>
+    </string-array>
+    <string-array name="vcard_array">
+        <item>添加到联系人</item>
+        <item>不进行任何操作</item>
+    </string-array>
+    <string-array name="wifi_array">
+        <item>复制密码</item>
+        <item>添加WiFi网络</item>
+        <item>不进行任何操作</item>
+    </string-array>
+</resources>

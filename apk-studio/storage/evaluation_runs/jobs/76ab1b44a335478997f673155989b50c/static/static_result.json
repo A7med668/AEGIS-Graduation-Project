@@ -1,0 +1,798 @@
+{
+  "package": "com.mwr.example.sieve",
+  "app_label": "Sieve",
+  "version_name": "1.0",
+  "version_code": "1",
+  "min_sdk": "8",
+  "target_sdk": "17",
+  "permissions": [
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "android.permission.INTERNET"
+  ],
+  "components": {
+    "activities": [
+      "FileSelectActivity",
+      "MainLoginActivity",
+      "PWList",
+      "SettingsActivity",
+      "AddEntryActivity",
+      "ShortLoginActivity",
+      "WelcomeActivity",
+      "PINActivity"
+    ],
+    "services": [
+      "AuthService",
+      "CryptoService"
+    ],
+    "receivers": [],
+    "providers": [
+      "DBContentProvider",
+      "FileBackupProvider"
+    ],
+    "exported_count": 6
+  },
+  "network_indicators": {
+    "urls": [
+      "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u000e\u000eRelativeLayout\u0000\b\bTextView\u0000\b\bEditText\u0000\u0006\u0006Button\u0000\u0004\u0004save\u0000\u0006\u0006cancel\u0000\u0000\u0000\u0001\b\u0000H\u0000\u0000\u0000\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001O\u0001\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0001",
+      "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u000e\u000eRelativeLayout\u0000\b\bTextView\u0000\b\bListView\u0000\u0000\u0000\u0001\b\u0000$\u0000\u0000\u0000\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001O\u0001\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0007\u0000\u0000\u0000\b\u0000\u0000\u0000\u0002\u0001\u0010\u0000L\u0000\u0000\u0000\u0001\u0000\u0000\u0000",
+      "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u000e\u000eRelativeLayout\u0000\u0006\u0006Button\u0000\u0005\u0005login\u0000\b\bEditText\u0000\b\bTextView\u0000\u0010\u0010sans-serif-light\u0000\u0000\u0000\u0000\u0001\b\u0000d\u0000\u0000\u0000\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001O\u0001\u0001\u0001o\u0002\u0001\u0001\u0001\u0001\u0001X\u0001\u0001\u0001P\u0001\u0001\u0001f\u0002\u0001\u0001e\u0002\u0001\u0001d\u0002\u0001\u0001",
+      "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u000e\u000eRelativeLayout\u0000\b\bEditText\u0000\b\bTextView\u0000\u0003\u0003PIN\u0000\u0006\u0006Button\u0000\u0006\u0006submit\u0000\b\bPIN(old)\u0000\u0000\u0000\u0000\u0001\b\u0000T\u0000\u0000\u0000\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0001",
+      "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u000e\u000eRelativeLayout\u0000\b\bListView\u0000\b\bTextView\u0000\u0000\u0000\u0001\b\u0000(\u0000\u0000\u0000\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001O\u0001\u0001\u0001\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0001\u0000\u0000\u0000\b\u0000\u0000\u0000",
+      "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u000e\u000eRelativeLayout\u0000",
+      "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u000e\u000eRelativeLayout\u0000\b\bEditText\u0000",
+      "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u000e\u000eRelativeLayout\u0000\b\bTextView\u0000\b\bEditText\u0000\u0006\u0006Button\u0000\u0006\u0006submit\u0000\u0000\u0000\u0000\u0001\b\u0000P\u0000\u0000\u0000\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001O\u0001\u0001\u00014\u0000\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0001",
+      "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000",
+      "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u0004\u0004menu\u0000\u0000\u0000\u0000\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0002\u0001\u0010\u0000$\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0001\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0000\u0000",
+      "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u0004\u0004menu\u0000\u0004\u0004item\u0000\u0000\u0000\u0000\u0001\b\u0000",
+      "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u0004\u0004menu\u0000\u0000\u0000\u0000\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0002\u0001\u0010\u0000$\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0001\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0000\u0000",
+      "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u0004\u0004menu\u0000\u0004\u0004item\u0000\u0000\u0000\u0001\b\u0000\u0018\u0000\u0000\u0000\u0000\u0001\u0001\u0001\u0001\u0001\u0002\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0004\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0002\u0001\u0010\u0000$\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0007\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u0001\u0010\u0000t\u0000\u0000\u0000\u0003\u0000\u0000\u0000\b\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0004\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0000\u0000\u0000\u0000\b\u0000\u0000\u00013\u0000\b\u0005\u0000\u0000\u0000\u0001\u0000\u0000\u0000\b\u0000\u0000\u0010d\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0003\u0000\u0000\u0000\b\u0000\u0000\u0001\u0002\u0000\u0005\u0005\u0000\u0000\u0000\u0002\u0000\u0000\u0000\b\u0000\u0000\u0011\u0000\u0000\u0000\u0000\u0003\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0007\u0000\u0000\u0000\b\u0000\u0000\u0000\u0003\u0001\u0010\u0000\u0018\u0000\u0000\u0000\b\u0000\u0000\u0000\u0007\u0000\u0000\u0000\u0001\u0001\u0010\u0000\u0018\u0000\u0000\u0000\b\u0000\u0000\u0000\u0004\u0000\u0000\u0000\u0005\u0000\u0000\u0000",
+      "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u0010\u0010PreferenceScreen\u0000\u000e\u000eListPreference\u0000\b\bpref_key\u0000\u0001\b\u0000",
+      "http://schemas.android.com/apk/res/android",
+      "http://xmlpull.org/v1/doc/features.html#process-namespaces"
+    ],
+    "domains": [
+      "android.support.v4.app",
+      "xmlpull.org"
+    ],
+    "ips": [
+      "10.0.2.2"
+    ],
+    "emails": []
+  },
+  "native_libraries": [
+    "lib/armeabi/libencrypt.so",
+    "lib/armeabi/libdecrypt.so"
+  ],
+  "dex_files": [
+    "classes.dex"
+  ],
+  "file_tree_sample": [
+    "res/layout/activity_add_entry.xml",
+    "res/layout/activity_file_select.xml",
+    "res/layout/activity_main_login.xml",
+    "res/layout/activity_pin.xml",
+    "res/layout/activity_pwlist.xml",
+    "res/layout/activity_settings.xml",
+    "res/layout/activity_short_login.xml",
+    "res/layout/activity_welcome.xml",
+    "res/layout/format_pwlist.xml",
+    "res/menu/activity_add_entry_add.xml",
+    "res/menu/activity_add_entry_edit.xml",
+    "res/menu/activity_file_select.xml",
+    "res/menu/activity_main_login.xml",
+    "res/menu/activity_pin.xml",
+    "res/menu/activity_pwlist.xml",
+    "res/menu/activity_settings.xml",
+    "res/menu/activity_short_login.xml",
+    "res/menu/activity_welcome.xml",
+    "res/xml/prefrences.xml",
+    "AndroidManifest.xml",
+    "resources.arsc",
+    "res/drawable-hdpi/ic_launcher.png",
+    "res/drawable-ldpi/ic_launcher.png",
+    "res/drawable-mdpi/ic_launcher.png",
+    "res/drawable-xhdpi/ic_launcher.png",
+    "classes.dex",
+    "lib/armeabi/gdbserver",
+    "lib/armeabi/libencrypt.so",
+    "lib/armeabi/libdecrypt.so",
+    "META-INF/MANIFEST.MF",
+    "META-INF/CERT.SF",
+    "META-INF/CERT.RSA"
+  ],
+  "secrets": [
+    {
+      "kind": "password",
+      "redacted_value": "Land...id",
+      "evidence_ref": "static.secrets"
+    },
+    {
+      "kind": "password",
+      "redacted_value": "Land...id",
+      "evidence_ref": "static.secrets"
+    },
+    {
+      "kind": "password",
+      "redacted_value": "Land...id",
+      "evidence_ref": "static.secrets"
+    },
+    {
+      "kind": "password",
+      "redacted_value": "Land...id",
+      "evidence_ref": "static.secrets"
+    }
+  ],
+  "webview_indicators": [],
+  "dynamic_code_indicators": [
+    {
+      "kind": "loadClass(",
+      "snippet": "Loader;      move-result-object v3      invoke-virtual {v3, p1}, Ljava/lang/ClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;      move-result-object v0      sget-object v3, Landr",
+      "evidence_ref": "static.dynamic_code_indicators.0"
+    }
+  ],
+  "crypto_indicators": [],
+  "root_check_indicators": [],
+  "anti_analysis_indicators": [],
+  "manifest": {
+    "decoded_manifest_ref": "extracted/apktool/AndroidManifest.xml",
+    "exported_components": 6
+  },
+  "decompiled_sources": {
+    "apktool": "extracted/apktool",
+    "jadx": "extracted/jadx",
+    "samples": [
+      {
+        "source": "aapt_badging",
+        "path": "tool-output/aapt_badging",
+        "size_bytes": 1093
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/AndroidManifest.xml",
+        "size_bytes": 3474
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/apktool.yml",
+        "size_bytes": 224
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/original/AndroidManifest.xml",
+        "size_bytes": 5816
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/res/layout/activity_add_entry.xml",
+        "size_bytes": 3934
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/res/layout/activity_file_select.xml",
+        "size_bytes": 621
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/res/layout/activity_main_login.xml",
+        "size_bytes": 1423
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/res/layout/activity_pin.xml",
+        "size_bytes": 2961
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/res/layout/activity_pwlist.xml",
+        "size_bytes": 671
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/res/layout/activity_settings.xml",
+        "size_bytes": 2481
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/res/layout/activity_short_login.xml",
+        "size_bytes": 1075
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/res/layout/activity_welcome.xml",
+        "size_bytes": 2380
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/res/layout/format_pwlist.xml",
+        "size_bytes": 572
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/res/menu/activity_add_entry_add.xml",
+        "size_bytes": 109
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/res/menu/activity_add_entry_edit.xml",
+        "size_bytes": 304
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/res/menu/activity_file_select.xml",
+        "size_bytes": 109
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/res/menu/activity_main_login.xml",
+        "size_bytes": 256
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/res/menu/activity_pin.xml",
+        "size_bytes": 109
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/res/menu/activity_pwlist.xml",
+        "size_bytes": 485
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/res/menu/activity_settings.xml",
+        "size_bytes": 109
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/res/menu/activity_short_login.xml",
+        "size_bytes": 109
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/res/menu/activity_welcome.xml",
+        "size_bytes": 109
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/res/values/ids.xml",
+        "size_bytes": 2252
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/res/values/public.xml",
+        "size_bytes": 10312
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/res/values/strings.xml",
+        "size_bytes": 4928
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/res/values/styles.xml",
+        "size_bytes": 420
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/res/values-large-v4/styles.xml",
+        "size_bytes": 344
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/res/values-v11/styles.xml",
+        "size_bytes": 133
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/res/values-v14/styles.xml",
+        "size_bytes": 133
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/res/xml/prefrences.xml",
+        "size_bytes": 342
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/accessibilityservice/AccessibilityServiceInfoCompat$AccessibilityServiceInfoIcsImpl.smali",
+        "size_bytes": 2700
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/accessibilityservice/AccessibilityServiceInfoCompat$AccessibilityServiceInfoStubImpl.smali",
+        "size_bytes": 1670
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/accessibilityservice/AccessibilityServiceInfoCompat$AccessibilityServiceInfoVersionImpl.smali",
+        "size_bytes": 1182
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/accessibilityservice/AccessibilityServiceInfoCompat.smali",
+        "size_bytes": 7915
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/accessibilityservice/AccessibilityServiceInfoCompatIcs.smali",
+        "size_bytes": 1841
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/ActivityCompat.smali",
+        "size_bytes": 730
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/ActivityCompatHoneycomb.smali",
+        "size_bytes": 776
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/BackStackRecord$Op.smali",
+        "size_bytes": 1057
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/BackStackRecord.smali",
+        "size_bytes": 68600
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/BackStackState$1.smali",
+        "size_bytes": 1874
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/BackStackState.smali",
+        "size_bytes": 18970
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/DialogFragment.smali",
+        "size_bytes": 20251
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/Fragment$1.smali",
+        "size_bytes": 1664
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/Fragment$InstantiationException.smali",
+        "size_bytes": 638
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/Fragment$SavedState$1.smali",
+        "size_bytes": 1975
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/Fragment$SavedState.smali",
+        "size_bytes": 2526
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/Fragment.smali",
+        "size_bytes": 87581
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/FragmentActivity$1.smali",
+        "size_bytes": 2248
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/FragmentActivity$2.smali",
+        "size_bytes": 1194
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/FragmentActivity$FragmentTag.smali",
+        "size_bytes": 1091
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/FragmentActivity$NonConfigurationInstances.smali",
+        "size_bytes": 1508
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/FragmentActivity.smali",
+        "size_bytes": 63683
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/FragmentContainer.smali",
+        "size_bytes": 217
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/FragmentManager$BackStackEntry.smali",
+        "size_bytes": 832
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/FragmentManager$OnBackStackChangedListener.smali",
+        "size_bytes": 506
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/FragmentManager.smali",
+        "size_bytes": 2853
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/FragmentManagerImpl$1.smali",
+        "size_bytes": 1121
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/FragmentManagerImpl$2.smali",
+        "size_bytes": 1604
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/FragmentManagerImpl$3.smali",
+        "size_bytes": 2046
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/FragmentManagerImpl$4.smali",
+        "size_bytes": 1940
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/FragmentManagerImpl$5.smali",
+        "size_bytes": 2603
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/FragmentManagerImpl.smali",
+        "size_bytes": 193371
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/FragmentManagerState$1.smali",
+        "size_bytes": 1946
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/FragmentManagerState.smali",
+        "size_bytes": 3155
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/FragmentPagerAdapter.smali",
+        "size_bytes": 9131
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/FragmentState$1.smali",
+        "size_bytes": 1855
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/FragmentState.smali",
+        "size_bytes": 12891
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/FragmentStatePagerAdapter.smali",
+        "size_bytes": 17330
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/FragmentTabHost$1.smali",
+        "size_bytes": 364
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/FragmentTabHost$DummyTabFactory.smali",
+        "size_bytes": 1368
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/FragmentTabHost$SavedState$1.smali",
+        "size_bytes": 2085
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/FragmentTabHost$SavedState.smali",
+        "size_bytes": 3841
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/FragmentTabHost$TabInfo.smali",
+        "size_bytes": 2860
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/FragmentTabHost.smali",
+        "size_bytes": 25235
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/FragmentTransaction.smali",
+        "size_bytes": 3321
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/ListFragment$1.smali",
+        "size_bytes": 1373
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/ListFragment$2.smali",
+        "size_bytes": 1563
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/ListFragment.smali",
+        "size_bytes": 22241
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/LoaderManager$LoaderCallbacks.smali",
+        "size_bytes": 1525
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/LoaderManager.smali",
+        "size_bytes": 2295
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/LoaderManagerImpl$LoaderInfo.smali",
+        "size_bytes": 43474
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/LoaderManagerImpl.smali",
+        "size_bytes": 49313
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/NavUtils$NavUtilsImpl.smali",
+        "size_bytes": 843
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/NavUtils$NavUtilsImplBase.smali",
+        "size_bytes": 5400
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/NavUtils$NavUtilsImplJB.smali",
+        "size_bytes": 2522
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/NavUtils.smali",
+        "size_bytes": 10019
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/NavUtilsJB.smali",
+        "size_bytes": 1234
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/NoSaveStateFrameLayout.smali",
+        "size_bytes": 2430
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/NotificationCompat$Action.smali",
+        "size_bytes": 1028
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/NotificationCompat$BigPictureStyle.smali",
+        "size_bytes": 2057
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/NotificationCompat$BigTextStyle.smali",
+        "size_bytes": 2021
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/NotificationCompat$Builder.smali",
+        "size_bytes": 16148
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/NotificationCompat$InboxStyle.smali",
+        "size_bytes": 2715
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/NotificationCompat$NotificationCompatImpl.smali",
+        "size_bytes": 563
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/NotificationCompat$NotificationCompatImplBase.smali",
+        "size_bytes": 1853
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/NotificationCompat$NotificationCompatImplHoneycomb.smali",
+        "size_bytes": 2350
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/NotificationCompat$NotificationCompatImplIceCreamSandwich.smali",
+        "size_bytes": 2651
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/NotificationCompat$NotificationCompatImplJellybean.smali",
+        "size_bytes": 9087
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/NotificationCompat$Style.smali",
+        "size_bytes": 2382
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/NotificationCompat.smali",
+        "size_bytes": 3775
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/NotificationCompatHoneycomb.smali",
+        "size_bytes": 5558
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/NotificationCompatIceCreamSandwich.smali",
+        "size_bytes": 5864
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/NotificationCompatJellybean.smali",
+        "size_bytes": 10809
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/ServiceCompat.smali",
+        "size_bytes": 329
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/ShareCompat$IntentBuilder.smali",
+        "size_bytes": 24039
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/ShareCompat$IntentReader.smali",
+        "size_bytes": 16704
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/ShareCompat$ShareCompatImpl.smali",
+        "size_bytes": 629
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/ShareCompat$ShareCompatImplBase.smali",
+        "size_bytes": 4218
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/ShareCompat$ShareCompatImplICS.smali",
+        "size_bytes": 1966
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/ShareCompat$ShareCompatImplJB.smali",
+        "size_bytes": 996
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/ShareCompat.smali",
+        "size_bytes": 5651
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/ShareCompatICS.smali",
+        "size_bytes": 2115
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/ShareCompatJB.smali",
+        "size_bytes": 502
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/SuperNotCalledException.smali",
+        "size_bytes": 361
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/TaskStackBuilder$TaskStackBuilderImpl.smali",
+        "size_bytes": 585
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/TaskStackBuilder$TaskStackBuilderImplBase.smali",
+        "size_bytes": 1365
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/TaskStackBuilder$TaskStackBuilderImplHoneycomb.smali",
+        "size_bytes": 1427
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/TaskStackBuilder$TaskStackBuilderImplJellybean.smali",
+        "size_bytes": 1450
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/TaskStackBuilder.smali",
+        "size_bytes": 16407
+      },
+      {
+        "source": "apktool",
+        "path": "jobs/76ab1b44a335478997f673155989b50c/extracted/apktool/smali/android/support/v4/app/TaskStackBuilderHoneycomb.smali",
+        "size_bytes": 653
+      }
+    ]
+  },
+  "tools": {
+    "aapt": {
+      "available": true,
+      "path": "/usr/bin/aapt",
+      "status": "ok",
+      "returncode": 0
+    },
+    "apksigner": {
+      "available": true,
+      "path": "/usr/bin/apksigner",
+      "status": "ok",
+      "returncode": 0
+    },
+    "apktool": {
+      "available": true,
+      "path": "/usr/local/bin/apktool",
+      "status": "ok",
+      "output_dir": "extracted/apktool",
+      "returncode": 0,
+      "output_sample": "I: Using Apktool 3.0.2 on app.apk with 8 threads\nI: Loading resource table...\nI: Baksmaling classes.dex...\nI: Decoding value resources...\nI: Loading resource table from file: /root/.local/share/apktool/framework/1.apk\nI: Decoding file resources...\nI: Generating values XMLs...\nI: Decoding AndroidManifest.xml with resources...\nI: Copying original files...\nI: Copying lib...\nI: Copying unknown files...\n"
+    },
+    "jadx": {
+      "available": true,
+      "path": "/usr/local/bin/jadx",
+      "status": "ok",
+      "output_dir": "extracted/jadx",
+      "timeout_seconds": 170,
+      "threads": 1,
+      "returncode": 0,
+      "output_sample": "Exception in thread \"AWT-EventQueue-0\" java.awt.HeadlessException: \nNo X11 DISPLAY variable was set,\nor no headful library support was found,\nbut this program performed an operation which requires it.\n\tat java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:164)\n\tat java.desktop/java.awt.Window.<init>(Window.java:553)\n\tat java.desktop/java.awt.Frame.<init>(Frame.java:428)\n\tat java.desktop/java.awt.Frame.<init>(Frame.java:393)\n\tat java.desktop/javax.swing.JFrame.<init>(JFrame.java:180)\n\tat jadx.gui.ui.MainWindow.<init>(MainWindow.java:255)\n\tat jadx.gui.JadxGUI.lambda$main$0(JadxGUI.java:41)\n\tat java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318)\n\tat java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773)\n\tat java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720)\n\tat java.desktop/java.awt.EventQueue$4.run(EventQueue.java:714)\n\tat java.base/java.security.AccessController.doPrivileged(AccessController.java:400)\n\tat java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87)\n\tat java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742)\n\tat java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)\n\tat java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)\n\tat java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)\n\tat java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)\n\tat java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)\n\tat java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)\n"
+    }
+  },
+  "warnings": [],
+  "evidence_refs": [
+    "static.permissions",
+    "static.components.exported_count",
+    "static.network_indicators.domains",
+    "static.network_indicators.urls",
+    "static.secrets",
+    "static.webview_indicators",
+    "static.dynamic_code_indicators",
+    "static.crypto_indicators",
+    "static.root_check_indicators",
+    "static.anti_analysis_indicators",
+    "static.native_libraries",
+    "static.decompiled_sources"
+  ],
+  "certificate": {
+    "verified": true,
+    "output_sample": "Signer #1 certificate DN: CN=Android Debug, O=Android, C=US\nSigner #1 certificate SHA-256 digest: dca76ba76f4b3f5dea55952a5e85670fb7fbd298fe4ae6f2ca4b5b6aba0df5c1\nSigner #1 certificate SHA-1 digest: 1901fb7891bfc127363701812b81735e3ee3de08\nSigner #1 certificate MD5 digest: a8890569c57dccd72705995bbe2b411d\n"
+  }
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="?colorPrimary" android:layout_width="match_parent" android:layout_height="?actionBarSize" app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <include android:id="@id/include" layout="@layout/content_main" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="end|bottom" android:id="@id/fab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dp" android:layout_marginBottom="32.0dp" android:contentDescription="Incremental Scan" app:backgroundTint="@color/action_button_scan_colour" app:srcCompat="@drawable/scan" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="left|bottom" android:id="@id/fab2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginBottom="32.0dp" android:contentDescription="Complete Scan" app:backgroundTint="@color/action_button_manualscan_colour" app:fabSize="mini" app:srcCompat="@drawable/scan" />
+    <ProgressBar android:id="@id/progressBar" android:layout_width="match_parent" android:layout_height="wrap_content" android:progress="25" app:layout_anchor="@id/include" app:layout_anchorGravity="center|bottom" style="@android:style/Widget.ProgressBar.Horizontal" />
+    <TextView android:textSize="10.0sp" android:textColor="#ff909090" android:id="@id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="74.0dp" android:text="@string/complete" app:layout_anchor="@id/fab2" app:layout_anchorGravity="center|top" />
+    <TextView android:textSize="10.0sp" android:textColor="#ff909090" android:id="@id/textView4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="90.0dp" android:text="@string/auto_scan" app:layout_anchor="@id/fab" app:layout_anchorGravity="center|top" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

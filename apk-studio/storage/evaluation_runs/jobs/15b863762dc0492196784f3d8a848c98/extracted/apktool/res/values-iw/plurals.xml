@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="added_to_queue_message">
+        <item quantity="one">פרק נוסף לתור.</item>
+        <item quantity="two">שני פרקים נוספו לתור.</item>
+        <item quantity="other">%d פרקים נוספו לתור.</item>
+    </plurals>
+    <plurals name="deleted_episode_message">
+        <item quantity="one">פרק שירד נמחק.</item>
+        <item quantity="two">שני פרקים שירדו נמחקו.</item>
+        <item quantity="other">%d פרקים שירדו נמחקו.</item>
+    </plurals>
+    <plurals name="downloading_episodes_message">
+        <item quantity="one">פרק יורד.</item>
+        <item quantity="two">יורדים שני פרקים.</item>
+        <item quantity="other">יורדים %d פרקים.</item>
+    </plurals>
+    <plurals name="downloads_left">
+        <item quantity="one">נותרה הורדה אחת</item>
+        <item quantity="two">נותרו %d הורדות</item>
+        <item quantity="other">נותרו %d הורדות</item>
+    </plurals>
+    <plurals name="echo_hours_podcasts">
+        <item quantity="one">"שעות של פרקים
+מהסכת יחיד"</item>
+        <item quantity="two">"שעות של פרקים
+מ־%1$d הסכתים"</item>
+        <item quantity="other">"שעות של פרקים
+מ־%1$d הסכתים"</item>
+    </plurals>
+    <plurals name="echo_queue_hours_waiting">
+        <item quantity="one">"שעות המתנה בתור שלך
+מפרק אחד"</item>
+        <item quantity="two">"שעות המתנה בתור שלך
+מ־%1$d פרקים"</item>
+        <item quantity="other">"שעות המתנה בתור שלך
+מ־%1$d פרקים"</item>
+    </plurals>
+    <plurals name="episode_cleanup_days_after_listening">
+        <item quantity="one">יום (%d) לאחר סיום</item>
+        <item quantity="two">יומיים (%d) לאחר סיום</item>
+        <item quantity="other">%d ימים לאחר סיום</item>
+    </plurals>
+    <plurals name="episode_cleanup_hours_after_listening">
+        <item quantity="one">שעה (%d) לאחר הסיום</item>
+        <item quantity="two">שעתיים (%d) לאחר הסיום</item>
+        <item quantity="other">%d שעות לאחר הסיום</item>
+    </plurals>
+    <plurals name="episodes_sleep_timer_exceeds_queue">
+        <item quantity="one">נותר רק פרק בתור שלך</item>
+        <item quantity="two">נותרו רק שני פרקים בתור שלך</item>
+        <item quantity="other">נותרו רק %1$d פרקים בתור שלך</item>
+    </plurals>
+    <plurals name="marked_as_played_message">
+        <item quantity="one">פרק סומן כהושמע.</item>
+        <item quantity="two">שני פרקים סומנו כהושמעו.</item>
+        <item quantity="other">%d פרקים סומנו כהושמעו.</item>
+    </plurals>
+    <plurals name="marked_as_unplayed_message">
+        <item quantity="one">פרק סומן כלא הושמע.</item>
+        <item quantity="two">שני פרקים סומנו כלא הושמעו.</item>
+        <item quantity="other">%d פרקים סומנו כלא הושמעו.</item>
+    </plurals>
+    <plurals name="mobile_download_notice">
+        <item quantity="one">מתבצעת הורדה דרך חיבור נתונים סלולרי למשך הדקה הקרובה</item>
+        <item quantity="two">מתבצעת הורדה דרך חיבור נתונים סלולרי למשך שתי הדקות הקרובות</item>
+        <item quantity="other">מתבצעת הורדה דרך חיבור נתונים סלולרי למשך %d הדקות הקרובות</item>
+    </plurals>
+    <plurals name="move_to_bottom_message">
+        <item quantity="one">פרק ירד לסוף.</item>
+        <item quantity="two">שני פרקים ירדו לסוף.</item>
+        <item quantity="other">%d פרקים ירדו לסוף.</item>
+    </plurals>
+    <plurals name="move_to_top_message">
+        <item quantity="one">פרק עלה להתחלה.</item>
+        <item quantity="two">שני פרקים עלו להתחלה.</item>
+        <item quantity="other">%d פרקים עלו להתחלה.</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d התראות חדשות</item>
+        <item quantity="two">%d התראות חדשות</item>
+        <item quantity="other">%d התראות חדשות</item>
+    </plurals>
+    <plurals name="new_episode_notification_message">
+        <item quantity="one">אצל %2$s יש פרק אחד חדש</item>
+        <item quantity="two">אצל %2$s יש %1$d פרקים חדשים</item>
+        <item quantity="other">אצל %2$s יש %1$d פרקים חדשים</item>
+    </plurals>
+    <plurals name="new_episode_notification_title">
+        <item quantity="one">פרק חדש</item>
+        <item quantity="two">פרקים חדשים</item>
+        <item quantity="other">פרקים חדשים</item>
+    </plurals>
+    <plurals name="num_episodes">
+        <item quantity="one">פרק אחד</item>
+        <item quantity="two">%d פרקים</item>
+        <item quantity="other">%d פרקים</item>
+    </plurals>
+    <plurals name="num_selected_label">
+        <item quantity="one">%1$d/%2$d נבחר</item>
+        <item quantity="two">%1$d/%2$d נבחרו</item>
+        <item quantity="other">%1$d/%2$d נבחרו</item>
+    </plurals>
+    <plurals name="num_subscriptions">
+        <item quantity="one">מינוי</item>
+        <item quantity="two">שני מינויים</item>
+        <item quantity="other">%d מינויים</item>
+    </plurals>
+    <plurals name="removed_from_inbox_batch_label">
+        <item quantity="one">הפרק הוסר מהדואר הנכנס.</item>
+        <item quantity="two">%d פרקים הוסרו מהדואר הנכנס.</item>
+        <item quantity="other">%d פרקים הוסרו מהדואר הנכנס.</item>
+    </plurals>
+    <plurals name="removed_from_queue_message">
+        <item quantity="one">פרק הוסר מהתור.</item>
+        <item quantity="two">שני פרקים הוסרו מהתור.</item>
+        <item quantity="other">%d פרקים הוסרו מהתור.</item>
+    </plurals>
+    <plurals name="statistics_episodes_downloaded">
+        <item quantity="one">ירד</item>
+        <item quantity="two">ירדו</item>
+        <item quantity="other">ירדו</item>
+    </plurals>
+    <plurals name="statistics_episodes_started">
+        <item quantity="one">החל</item>
+        <item quantity="two">החלו</item>
+        <item quantity="other">החלו</item>
+    </plurals>
+    <plurals name="statistics_episodes_total">
+        <item quantity="one">סך הכול</item>
+        <item quantity="two">סך הכול</item>
+        <item quantity="other">סך הכול</item>
+    </plurals>
+    <plurals name="time_days_quantified">
+        <item quantity="one">יום (%d)</item>
+        <item quantity="two">יומיים (%d)</item>
+        <item quantity="other">%d ימים</item>
+    </plurals>
+    <plurals name="time_hours_quantified">
+        <item quantity="one">שעה (%d)</item>
+        <item quantity="two">שעתיים (%d)</item>
+        <item quantity="other">%d שעות</item>
+    </plurals>
+    <plurals name="time_minutes_quantified">
+        <item quantity="one">דקה (%d)</item>
+        <item quantity="two">%d דקות</item>
+        <item quantity="other">%d דקות</item>
+    </plurals>
+    <plurals name="time_seconds_quantified">
+        <item quantity="one">שנייה (%d)</item>
+        <item quantity="two">%d שניות</item>
+        <item quantity="other">%d שניות</item>
+    </plurals>
+    <plurals name="timer_exceeds_remaining_time_while_continuous_playback_disabled">
+        <item quantity="one">נגינה רציפה כבויה ולפרק הנוכחי נותרה דקה</item>
+        <item quantity="two">נגינה רציפה כבויה ולפרק הנוכחי נותרו שתי דקות</item>
+        <item quantity="other">נגינה רציפה כבויה ולפרק הנוכחי נותרו %1$d דקות</item>
+    </plurals>
+    <plurals name="total_size_downloaded_podcasts">
+        <item quantity="one">הגודל הכולל של פרק במכשיר</item>
+        <item quantity="two">הגודל הכולל של שני פרקים במכשיר</item>
+        <item quantity="other">הגודל הכולל של %d פרקים במכשיר</item>
+    </plurals>
+    <plurals name="updated_feeds_batch_label">
+        <item quantity="one">אחד המינויים עודכן.</item>
+        <item quantity="two">%d מינויים עודכנו.</item>
+        <item quantity="other">%d מינויים עודכנו.</item>
+    </plurals>
+</resources>

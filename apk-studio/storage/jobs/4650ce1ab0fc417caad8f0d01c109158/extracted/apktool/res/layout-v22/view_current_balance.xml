@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_wallet_outline" />
+    <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/text_primary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_current_balance" android:textAlignment="viewStart" android:layout_marginStart="@dimen/default_margin" style="@style/Bazaar.Text.Body2" />
+    <com.farsitel.bazaar.designsystem.widget.LocalAwareTextView android:textColor="@color/text_primary" android:id="@id/balanceTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_margin_half" android:layout_marginRight="@dimen/default_margin_half" android:textAlignment="viewStart" android:layout_marginHorizontal="@dimen/default_margin_half" style="@style/Bazaar.Text.Body2" />
+</merge>

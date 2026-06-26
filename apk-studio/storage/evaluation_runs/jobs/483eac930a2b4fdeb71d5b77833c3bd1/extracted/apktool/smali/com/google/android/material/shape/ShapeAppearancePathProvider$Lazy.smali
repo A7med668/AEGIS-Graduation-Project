@@ -1,0 +1,21 @@
+.class public abstract Lcom/google/android/material/shape/ShapeAppearancePathProvider$Lazy;
+.super Ljava/lang/Object;
+.source "r8-map-id-226db4dad4ab4d5786e2bb0e8f3f1f65ee6d48d6f3bce6d8fcd4994964287ee8"
+
+
+# static fields
+.field public static final INSTANCE:Lcom/google/android/material/shape/ShapeAppearancePathProvider;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lcom/google/android/material/shape/ShapeAppearancePathProvider;
+
+    invoke-direct {v0}, Lcom/google/android/material/shape/ShapeAppearancePathProvider;-><init>()V
+
+    sput-object v0, Lcom/google/android/material/shape/ShapeAppearancePathProvider$Lazy;->INSTANCE:Lcom/google/android/material/shape/ShapeAppearancePathProvider;
+
+    return-void
+.end method

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_mode_done">Готово</string>
+    <string name="abc_capital_off">ВИМКНЕНО</string>
+    <string name="abc_capital_on">УВІМКНЕНО</string>
+    <string name="abc_search_hint">Введіть пошуковий запит…</string>
+    <string name="abc_searchview_description_clear">Очистити запит</string>
+    <string name="abc_searchview_description_search">Пошук</string>
+    <string name="abc_searchview_description_submit">Наіслати запит</string>
+    <string name="abc_searchview_description_voice">Голосовий пошук</string>
+    <string name="abc_toolbar_collapse_description">Згорнути</string>
+    <string name="bottomsheet_drag_handle_content_description">Маркер переміщення</string>
+    <string name="close_drawer">Закрити меню навігації</string>
+    <string name="close_sheet">Закрити аркуш</string>
+    <string name="default_error_message">Введено недійсні дані</string>
+    <string name="default_popup_window_title">Спливаюче вікно</string>
+    <string name="error_a11y_label">Помилка: недійсне значення</string>
+    <string name="glance_error_layout_text_v2">Не вдається відобразити контент</string>
+    <string name="in_progress">Виконується</string>
+    <string name="indeterminate">Частково вибрано</string>
+    <string name="m3_adaptive_default_pane_title_primary">Основна панель</string>
+    <string name="m3_adaptive_default_pane_title_secondary">Друга панель</string>
+    <string name="m3_adaptive_default_pane_title_tertiary">Третя панель</string>
+    <string name="m3_loading_indicator_content_description">Завантаження</string>
+    <string name="m3c_bottom_sheet_collapse_description">Згорнути нижній екран</string>
+    <string name="m3c_bottom_sheet_dismiss_description">Закрити нижній екран</string>
+    <string name="m3c_bottom_sheet_drag_handle_description">Маркер переміщення</string>
+    <string name="m3c_bottom_sheet_expand_description">Розгорнути нижній екран</string>
+    <string name="m3c_bottom_sheet_pane_title">Нижній екран</string>
+    <string name="m3c_snackbar_pane_title">Сповіщення</string>
+    <string name="mtrl_button_snackbar_close_content_description">Закрити</string>
+    <string name="navigation_menu">Меню навігації</string>
+    <string name="not_selected">Не вибрано</string>
+    <string name="password_toggle_content_description">Показувати пароль</string>
+    <string name="selected">Вибрано</string>
+    <string name="state_empty">Пусто</string>
+    <string name="state_off">Вимкнено</string>
+    <string name="state_on">Увімкнено</string>
+    <string name="switch_role">Перемикач</string>
+    <string name="tab">Вкладка</string>
+    <string name="template_percent">Відсотків: %1$d.</string>
+    <string name="tooltip_description">спливаюча підказка</string>
+    <string name="tooltip_label">показати спливаючу підказку</string>
+</resources>

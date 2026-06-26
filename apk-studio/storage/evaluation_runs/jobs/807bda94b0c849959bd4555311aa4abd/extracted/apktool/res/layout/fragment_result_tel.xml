@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/scrollView3" android:layout_width="match_parent" android:layout_height="wrap_content" android:fillViewport="true" android:layout_alignParentTop="true" android:layout_alignParentEnd="true">
+        <LinearLayout android:orientation="vertical" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="15.0sp" android:id="@id/textLink" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/description_tel" />
+            <TextView android:textSize="20.0sp" android:gravity="center" android:id="@id/result_field_tel" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="Example application" android:textIsSelectable="true" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

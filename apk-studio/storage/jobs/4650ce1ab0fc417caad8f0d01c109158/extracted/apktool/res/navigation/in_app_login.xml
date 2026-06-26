@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/graphInAppLogin" app:startDestination="@id/emptyFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="EmptyFragment" android:name="com.farsitel.bazaar.inapplogin.view.NavGraphStartFragment" android:id="@id/emptyFragment" />
+    <fragment android:label="InAppLoginPermissionScopeFragment" android:name="com.farsitel.bazaar.inapplogin.view.InAppLoginPermissionScopeFragment" android:id="@id/scopePermission">
+        <argument android:name="args" app:argType="com.farsitel.bazaar.inapplogin.argument.ScopePermissionArgument" />
+    </fragment>
+    <action android:id="@id/action_global_login_scope_permission" app:destination="@id/scopePermission" app:enterAnim="@anim/slide_up_login" app:exitAnim="@anim/slide_down" />
+</navigation>

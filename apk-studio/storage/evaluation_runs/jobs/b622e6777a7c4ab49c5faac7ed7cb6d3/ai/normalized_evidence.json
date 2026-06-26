@@ -1,0 +1,1203 @@
+{
+  "job_id": "b622e6777a7c4ab49c5faac7ed7cb6d3",
+  "apk": {
+    "sha256": "35b126c88069521735fc65dc49b003276b3978ffeae3f901d80bb98c558c82f0",
+    "sha1": "414da9666c83dcbfdd984eb60ddc57dd69cb06bf",
+    "md5": "969bac4cb8392ceb79b5e60f310e480b",
+    "size_bytes": 1256313,
+    "package": "org.owasp.goatdroid.fourgoats",
+    "app_label": "FourGoats",
+    "version_name": "1.0"
+  },
+  "static": {
+    "permissions": [
+      "android.permission.SEND_SMS",
+      "android.permission.CALL_PHONE",
+      "android.permission.ACCESS_COARSE_LOCATION",
+      "android.permission.ACCESS_FINE_LOCATION",
+      "android.permission.INTERNET"
+    ],
+    "components": {
+      "activities": [
+        "activities.Main",
+        "activities.Login",
+        "activities.Register",
+        "activities.Home",
+        "fragments.DoCheckin",
+        "activities.Checkins",
+        "activities.Friends",
+        "fragments.HistoryFragment",
+        "activities.History",
+        "activities.Rewards",
+        "activities.AddVenue",
+        "activities.ViewCheckin",
+        "fragments.MyFriends",
+        "fragments.SearchForFriends",
+        "activities.ViewProfile",
+        "fragments.PendingFriendRequests",
+        "activities.ViewFriendRequest",
+        "fragments.MyRewards",
+        "fragments.AvailableRewards",
+        "activities.Preferences",
+        "activities.About",
+        "activities.SendSMS",
+        "activities.DoComment",
+        "activities.UserHistory",
+        "activities.DestinationInfo",
+        "activities.AdminHome",
+        "activities.AdminOptions",
+        "fragments.ResetUserPasswords",
+        "fragments.DeleteUsers",
+        "activities.DoAdminPasswordReset",
+        "activities.DoAdminDeleteUser",
+        "activities.SocialAPIAuthentication",
+        "activities.GenericWebViewActivity"
+      ],
+      "services": [
+        "services.LocationService"
+      ],
+      "receivers": [
+        "broadcastreceivers.SendSMSNowReceiver"
+      ],
+      "providers": [],
+      "exported_count": 3
+    },
+    "network_indicators": {
+      "urls": [
+        "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\b\bselector\u0000\u0004\u0004item\u0000\u0001\b\u0000\u0010\u0000\u0000\u0000\u0000\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0011\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0002\u0001\u0010\u0000$\u0000\u0000\u0000\u0011\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u0001\u0010\u0000L\u0000\u0000\u0000\u0012\u0000\u0000\u0000\u0006\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0002\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0000\u0000\u0000\u0000\b\u0000\u0000\u0012\u0000\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0001\u0000\u0000\u0000\b\u0000\u0000\u0001\u0004\u0000\u0006\u0003\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0012\u0000\u0000\u0000\u0006\u0000\u0000\u0000\u0002\u0001\u0010\u00008\u0000\u0000\u0000\u0013\u0000\u0000\u0000\u0006\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0001\u0000\u0000\u0000\b\u0000\u0000\u0001\u0002\u0000\u0006\u0003\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0013\u0000\u0000\u0000\u0006\u0000\u0000\u0000\u0003\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0014\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0001\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0014\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0003\u0000\u0000\u0000",
+        "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\b\bselector\u0000\u0004\u0004item\u0000\u0001\b\u0000\u0010\u0000\u0000\u0000\u0000\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0011\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0002\u0001\u0010\u0000$\u0000\u0000\u0000\u0011\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u0001\u0010\u0000L\u0000\u0000\u0000\u0012\u0000\u0000\u0000\u0006\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0002\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0000\u0000\u0000\u0000\b\u0000\u0000\u0012\u0000\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0001\u0000\u0000\u0000\b\u0000\u0000\u0001\u0005\u0000\u0006\u0003\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0012\u0000\u0000\u0000\u0006\u0000\u0000\u0000\u0002\u0001\u0010\u00008\u0000\u0000\u0000\u0013\u0000\u0000\u0000\u0006\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0001\u0000\u0000\u0000\b\u0000\u0000\u0001\u0003\u0000\u0006\u0003\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0013\u0000\u0000\u0000\u0006\u0000\u0000\u0000\u0003\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0014\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0001\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0014\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0003\u0000\u0000\u0000",
+        "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\b\bselector\u0000\u0004\u0004item\u0000\u0000\u0000\u0001\b\u0000",
+        "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000",
+        "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u0005\u0005class\u0000\u0004\u0004view\u0000",
+        "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u0005\u0005class\u0000\u0005\u0005style\u0000\u0004\u0004view\u0000GGcom.actionbarsherlock.internal.widget.ScrollingTabContainerView$TabView\u0000\u0017\u0017?attr/actionBarTabStyle\u0000\u0000\u0000\u0000\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0002\u0001\u0010\u0000L\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0002\u0000\u0000\u0000\u0001\u0000\u0002\u0000\u0003\u0000\u0000\u0000\u0006\u0000\u0000\u0000\b\u0000\u0000\u0003\u0006\u0000\u0000\u0000\u0004\u0000\u0000\u0000\u0007\u0000\u0000\u0000\b\u0000\u0000\u0002\u0006\u0000\u0001\u0003\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0007\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0001\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0007\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0000\u0000",
+        "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u0005\u0005style\u000055com.actionbarsherlock.internal.widget.IcsLinearLayout\u0000\u001a\u001a?attr/actionBarTabBarStyle\u0000\u0000\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0002\u0001\u0010\u00008\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0004\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0003\u0000\u0000\u0000\u0005\u0000\u0000\u0000\b\u0000\u0000\u0002\u0007\u0000\u0001\u0003\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0006\u0000\u0000\u0000\u0004\u0000\u0000\u0000\u0001\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0006\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0000\u0000",
+        "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u0005\u0005style\u0000;;com.actionbarsherlock.internal.view.menu.ActionMenuItemView\u0000\u0017\u0017?attr/actionButtonStyle\u0000",
+        "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u000077com.actionbarsherlock.internal.view.menu.ActionMenuView\u0000\u0001\b\u0000",
+        "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u0005\u0005style\u0000::com.actionbarsherlock.internal.widget.ActionBarContextView\u0000\u0015\u0015?attr/actionModeStyle\u0000\u0000\u0001\b\u0000\u0014\u0000\u0000\u0000\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0013\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0004\u0000\u0000\u0000\u0002\u0001\u0010\u0000t\u0000\u0000\u0000\u0013\u0000\u0000\u0000\u0007\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0004\u0000\u0000\u0000\u0000\u0000\u0004\u0000\u0004\u0000\u0000\u0000\u0002\u0000\u0000\u0000\b\u0000\u0000\u0010\u0002\u0000\u0000\u0000\u0004\u0000\u0000\u0000\u0000\u0000\u0000\u0000\b\u0000\u0000\u0010\u0004\u0000\u0000\u0000\u0001\u0000\u0000\u0000\b\u0000\u0000\u0010\u0006\u0000\u0000\u0000\b\u0000\u0000\u0000\b\u0000\u0000\u0002\u0012\u0000\u0001\u0003\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0018\u0000\u0000\u0000\u0007\u0000\u0000\u0000\u0001\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0018\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0004\u0000\u0000\u0000",
+        "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u0005\u0005style\u0000FFcom.actionbarsherlock.internal.nineoldandroids.widget.NineLinearLayout\u0000",
+        "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u0005\u0005style\u000055com.actionbarsherlock.internal.widget.IcsLinearLayout\u0000",
+        "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000;;com.actionbarsherlock.internal.widget.FakeDialogPhoneWindow\u0000\u0005\u0005style\u0000\b\bTextView\u0000",
+        "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\b\bCheckBox\u0000\u0000\u0000\u0000\u0001\b\u0000$\u0000\u0000\u0000\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0011\u0000\u0000\u0000\u0007\u0000\u0000\u0000\b\u0000\u0000\u0000\u0002\u0001\u0010\u0000\u0000\u0000\u0000\u0011\u0000\u0000\u0000",
+        "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u000099com.actionbarsherlock.internal.view.menu.ListMenuItemView\u0000\u000e\u000eRelativeLayout\u0000\b\bTextView\u0000\u0000\u0000\u0001\b\u0000D\u0000\u0000\u0000\u0000\u0001\u0001\u0000\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u00014\u0000\u0001\u0001]\u0001\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0011\u0000\u0000\u0000\u000f\u0000\u0000\u0000\u0010\u0000\u0000\u0000\u0002\u0001\u0010\u0000L\u0000\u0000\u0000\u0011\u0000\u0000\u0000\u0012\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0002\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0010\u0000\u0000\u0000\u0000\u0000\u0000\u0000\b\u0000\u0000\u0010\u0010\u0000\u0000\u0000\u0001\u0000\u0000\u0000\b\u0000\u0000\u0002#\u0000\u0001\u0002\u0001\u0010\u0000\u0000\u0000\u0000\u0018\u0000\u0000\u0000\u0013\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0007\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0010\u0000\u0000\u0000\u0003\u0000\u0000\u0000\b\u0000\u0000\u0011\u0010\u0000\u0000\u0000\u0010\u0000\u0000\u0000\u0006\u0000\u0000\u0000\b\u0000\u0000\u0012\u0010\u0000\u0000\u0000\u0000\u0000\u0000\u0000\b\u0000\u0000\u0005\u0001\u0000\u0000\u0000\u0010\u0000\u0000\u0000\u0001\u0000\u0000\u0000\b\u0000\u0000\u0010\u0010\u0000\u0000\u0000\u0004\u0000\u0000\u0000\b\u0000\u0000\u0002$\u0000\u0001\u0010\u0000\u0000\u0000\u0005\u0000\u0000\u0000\b\u0000\u0000\u0002%\u0000\u0001\u0010\u0000\u0000\u0000\u0002\u0000\u0000\u0000\b\u0000\u0000\u0004\u0000\u0000?\u0002\u0001\u0010\u0000\u0000\u0000\u0000!\u0000\u0000\u0000\u0014\u0000\u0000\u0000\u0014\u0000\u0014\u0000",
+        "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u000099com.actionbarsherlock.internal.view.menu.ListMenuItemView\u0000\u000e\u000eRelativeLayout\u0000\b\bTextView\u0000\u0000\u0001\b\u0000H\u0000\u0000\u0000\u0000\u0001\u0001\u0000\u0001\u0001?\u0001\u0001\u0001\u0000\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u00014\u0000\u0001\u0001]\u0001\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0011\u0000\u0000\u0000\u0010\u0000\u0000\u0000\u0011\u0000\u0000\u0000\u0002\u0001\u0010\u0000t\u0000\u0000\u0000\u0011\u0000\u0000\u0000\u0013\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0004\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0011\u0000\u0000\u0000\u0003\u0000\u0000\u0000\b\u0000\u0000\u0005\u0001\u0010\u0000\u0000\u0011\u0000\u0000\u0000\u0000\u0000\u0000\u0000\b\u0000\u0000\u0010\u0011\u0000\u0000\u0000\u0001\u0000\u0000\u0000\b\u0000\u0000\u0002/\u0000\u0001\u0011\u0000\u0000\u0000\u0002\u0000\u0000\u0000\b\u0000\u0000\u0005\u0001\u0000\u0000\u0002\u0001\u0010\u0000\u0000\u0000\u0000\u001a\u0000\u0000\u0000\u0014\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0006\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0011\u0000\u0000\u0000\u0005\u0000\u0000\u0000\b\u0000\u0000\u0011\u0010\u0000\u0000\u0000\u0011\u0000\u0000\u0000\u0007\u0000\u0000\u0000\b\u0000\u0000\u0012\u0011\u0000\u0000\u0000\u0000\u0000\u0000\u0000\b\u0000\u0000\u0005\u0001\u0000\u0000\u0000\u0011\u0000\u0000\u0000\u0001\u0000\u0000\u0000\b\u0000\u0000\u0010\u0011\u0000\u0000\u0000\u0006\u0000\u0000\u0000\b\u0000\u0000\u0005\u0001\u0010\u0000\u0000\u0011\u0000\u0000\u0000\u0004\u0000\u0000\u0000\b\u0000\u0000\u0004\u0000\u0000?\u0002\u0001\u0010\u0000\u0000\u0000\u0000",
+        "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u0005\u0005style\u0000\b\bTextView\u0000",
+        "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u0005\u0005style\u0000\b\bTextView\u0000\u0016\u0016?attr/spinnerItemStyle\u0000\u0000\u0001\b\u0000",
+        "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u0004\u0004menu\u0000\u0004\u0004item\u0000\u0000\u0000\u0000\u0001\b\u0000\u0010\u0000\u0000\u0000\u0000\u0001\u0001\u0001\u0001\u0001\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0002\u0001\u0010\u0000$\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u0001\u0010\u0000L\u0000\u0000\u0000\u0004\u0000\u0000\u0000\u0006\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0002\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0000\u0000\u0000\u0000\b\u0000\u0000\u0001g\u0000\u0004\u0003\u0000\u0000\u0000\u0001\u0000\u0000\u0000\b\u0000\u0000\u0001",
+        "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u0004\u0004menu\u0000\u0004\u0004item\u0000",
+        "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u0005\u0005style\u0000\b\bTextView\u0000&&?android:attr/spinnerDropDownItemStyle\u0000\u0000\u0001\b\u0000",
+        "http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\u000e\u000eRelativeLayout\u0000EEcom.actionbarsherlock.internal.nineoldandroids.widget.NineFrameLayout\u0000\u0005\u0005style\u000088com.actionbarsherlock.internal.widget.ActionBarContainer\u0000\u0014\u0014?attr/actionBarStyle\u000033com.actionbarsherlock.internal.widget.ActionBarView\u0000::com.actionbarsherlock.internal.widget.ActionBarContextView\u0000\u0015\u0015?attr/actionModeStyle\u0000",
+        "http://schemas.android.com/apk/res/android"
+      ],
+      "domains": [
+        "android.support.v4.app"
+      ],
+      "ips": [],
+      "emails": []
+    },
+    "native_libraries": [],
+    "dex_files": [
+      "classes.dex"
+    ],
+    "secrets": [],
+    "webview_indicators": [
+      {
+        "kind": "WebView",
+        "snippet": "ientation\u0000\u0002\u0002id\u0000\u0007\u0007android\u0000**http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\f\fLinearLayout\u0000\u0007\u0007WebView\u0000\u0000\u0000\u0000\u0001\b\u0000\u0018\u0000\u0000\u0000\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0004\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0002\u0001\u0010\u0000`\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0007\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0003\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0002\u0000\u0000\u0000\b\u0000\u0000\u0010\u0001\u0000\u0000\u0000\u0005\u0000\u0000",
+        "evidence_ref": "static.webview_indicators.0"
+      },
+      {
+        "kind": "android.webkit",
+        "snippet": "emas.android.com/apk/res/android\u0000\u0000\u0000\u0000\f\fLinearLayout\u0000\u0005\u0005style\u0000\b\bTextView\u0000\u000f\u000f@style/TextFont\u0000\u0016\u0016android.webkit.WebView\u0000\u0000\u0000\u0000\u0001\b\u0000(\u0000\u0000\u0000\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001O\u0001\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0002\u0000\u0000\u0000\b\u0000\u0000\u0000\t\u0000\u0000\u0000\u0002\u0001\u0010\u0000t\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u000b\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0004\u0000\u0000\u0000\u0000\u0000",
+        "evidence_ref": "static.webview_indicators.1"
+      },
+      {
+        "kind": "WebView",
+        "snippet": "m/apk/res/android\u0000\u0000\u0000\u0000\f\fLinearLayout\u0000\u0005\u0005style\u0000\b\bTextView\u0000\u000f\u000f@style/TextFont\u0000\u0016\u0016android.webkit.WebView\u0000\u0000\u0000\u0000\u0001\b\u0000(\u0000\u0000\u0000\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001O\u0001\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0002\u0000\u0000\u0000\b\u0000\u0000\u0000\t\u0000\u0000\u0000\u0002\u0001\u0010\u0000t\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u000b\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0004\u0000\u0000\u0000\u0000\u0000\u0000\u0000\t\u0000\u0000\u0000\u0003\u0000",
+        "evidence_ref": "static.webview_indicators.2"
+      },
+      {
+        "kind": "android.webkit",
+        "snippet": "ientation\u0000\u0002\u0002id\u0000\u0007\u0007android\u0000**http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\f\fLinearLayout\u0000\u0016\u0016android.webkit.WebView\u0000\u0000\u0000\u0000\u0001\b\u0000\u001c\u0000\u0000\u0000\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0006\u0000\u0000\u0000\u0002\u0001\u0010\u0000t\u0000\u0000\u0000\u0002\u0000\u0000\u0000\b\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0004\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0006\u0000\u0000\u0000\u0003\u0000\u0000\u0000",
+        "evidence_ref": "static.webview_indicators.3"
+      },
+      {
+        "kind": "WebView",
+        "snippet": "\u0007\u0007android\u0000**http://schemas.android.com/apk/res/android\u0000\u0000\u0000\u0000\f\fLinearLayout\u0000\u0016\u0016android.webkit.WebView\u0000\u0000\u0000\u0000\u0001\b\u0000\u001c\u0000\u0000\u0000\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0001\u0000\u0001\u0010\u0000\u0018\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0006\u0000\u0000\u0000\u0002\u0001\u0010\u0000t\u0000\u0000\u0000\u0002\u0000\u0000\u0000\b\u0000\u0000\u0000\u0014\u0000\u0014\u0000\u0004\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0006\u0000\u0000\u0000\u0003\u0000\u0000\u0000\b\u0000\u0000\u0010\u0001\u0000\u0000\u0000",
+        "evidence_ref": "static.webview_indicators.4"
+      },
+      {
+        "kind": "WebView",
+        "snippet": "on\"/>         <activity android:label=\"@string/app_name\" android:name=\".activities.GenericWebViewActivity\"/>         <service android:name=\".services.LocationService\">             <intent",
+        "evidence_ref": "static.webview_indicators.5"
+      },
+      {
+        "kind": "WebView",
+        "snippet": "_height=\"match_parent\"   xmlns:android=\"http://schemas.android.com/apk/res/android\">     <WebView android:id=\"@id/webView\" android:layout_width=\"match_parent\" android:layout_height=\"match",
+        "evidence_ref": "static.webview_indicators.6"
+      },
+      {
+        "kind": "webView",
+        "snippet": " xmlns:android=\"http://schemas.android.com/apk/res/android\">     <WebView android:id=\"@id/webView\" android:layout_width=\"match_parent\" android:layout_height=\"match_parent\" /> </LinearLayo",
+        "evidence_ref": "static.webview_indicators.7"
+      },
+      {
+        "kind": "android.webkit",
+        "snippet": "ut_marginTop=\"100.0dp\" android:text=\"@string/no_checkins\" style=\"@style/TextFont\" />     <android.webkit.WebView android:id=\"@id/historyWebView\" android:layout_width=\"match_parent\" android:layou",
+        "evidence_ref": "static.webview_indicators.8"
+      },
+      {
+        "kind": "WebView",
+        "snippet": "00.0dp\" android:text=\"@string/no_checkins\" style=\"@style/TextFont\" />     <android.webkit.WebView android:id=\"@id/historyWebView\" android:layout_width=\"match_parent\" android:layout_height",
+        "evidence_ref": "static.webview_indicators.9"
+      },
+      {
+        "kind": "WebView",
+        "snippet": "o_checkins\" style=\"@style/TextFont\" />     <android.webkit.WebView android:id=\"@id/historyWebView\" android:layout_width=\"match_parent\" android:layout_height=\"match_parent\" /> </LinearLayo",
+        "evidence_ref": "static.webview_indicators.10"
+      },
+      {
+        "kind": "android.webkit",
+        "snippet": "_height=\"match_parent\"   xmlns:android=\"http://schemas.android.com/apk/res/android\">     <android.webkit.WebView android:id=\"@id/viewCheckinWebView\" android:layout_width=\"match_parent\" android:l",
+        "evidence_ref": "static.webview_indicators.11"
+      },
+      {
+        "kind": "WebView",
+        "snippet": "parent\"   xmlns:android=\"http://schemas.android.com/apk/res/android\">     <android.webkit.WebView android:id=\"@id/viewCheckinWebView\" android:layout_width=\"match_parent\" android:layout_he",
+        "evidence_ref": "static.webview_indicators.12"
+      },
+      {
+        "kind": "WebView",
+        "snippet": "emas.android.com/apk/res/android\">     <android.webkit.WebView android:id=\"@id/viewCheckinWebView\" android:layout_width=\"match_parent\" android:layout_height=\"match_parent\" /> </LinearLayo",
+        "evidence_ref": "static.webview_indicators.13"
+      },
+      {
+        "kind": "webView",
+        "snippet": "\"userName\" />     <id name=\"fullName\" />     <id name=\"embedded_friends\" />     <id name=\"webView\" />     <id name=\"noCheckinsTextView\" />     <id name=\"historyWebView\" />     <id name=\"p",
+        "evidence_ref": "static.webview_indicators.14"
+      },
+      {
+        "kind": "WebView",
+        "snippet": "s\" />     <id name=\"webView\" />     <id name=\"noCheckinsTextView\" />     <id name=\"historyWebView\" />     <id name=\"password\" />     <id name=\"rememberMeCheckBox\" />     <id name=\"noFrien",
+        "evidence_ref": "static.webview_indicators.15"
+      },
+      {
+        "kind": "WebView",
+        "snippet": " />     <id name=\"smsMessageEditText\" />     <id name=\"pager\" />     <id name=\"viewCheckinWebView\" />     <id name=\"destination_info\" />     <id name=\"preferences\" />     <id name=\"viewMy",
+        "evidence_ref": "static.webview_indicators.16"
+      },
+      {
+        "kind": "webView",
+        "snippet": " <public type=\"id\" name=\"embedded_friends\" id=\"0x7f040048\" />     <public type=\"id\" name=\"webView\" id=\"0x7f040049\" />     <public type=\"id\" name=\"noCheckinsTextView\" id=\"0x7f04004a\" />   ",
+        "evidence_ref": "static.webview_indicators.17"
+      },
+      {
+        "kind": "WebView",
+        "snippet": "type=\"id\" name=\"noCheckinsTextView\" id=\"0x7f04004a\" />     <public type=\"id\" name=\"historyWebView\" id=\"0x7f04004b\" />     <public type=\"id\" name=\"password\" id=\"0x7f04004c\" />     <public ",
+        "evidence_ref": "static.webview_indicators.18"
+      },
+      {
+        "kind": "WebView",
+        "snippet": " <public type=\"id\" name=\"pager\" id=\"0x7f040065\" />     <public type=\"id\" name=\"viewCheckinWebView\" id=\"0x7f040066\" />     <public type=\"id\" name=\"destination_info\" id=\"0x7f040067\" />     ",
+        "evidence_ref": "static.webview_indicators.19"
+      },
+      {
+        "kind": "WebView",
+        "snippet": "7  .field public static final gpsCoords:I = 0x7f04003e  .field public static final historyWebView:I = 0x7f04004b  .field public static final homeAsUp:I = 0x7f040006  .field public static ",
+        "evidence_ref": "static.webview_indicators.20"
+      },
+      {
+        "kind": "WebView",
+        "snippet": "ld public static final venueWebsite:I = 0x7f04002e  .field public static final viewCheckinWebView:I = 0x7f040066  .field public static final viewMyProfile:I = 0x7f040069  .field public st",
+        "evidence_ref": "static.webview_indicators.21"
+      },
+      {
+        "kind": "webView",
+        "snippet": "0066  .field public static final viewMyProfile:I = 0x7f040069  .field public static final webView:I = 0x7f040049  .field public static final wrap_content:I = 0x7f040000   # direct methods",
+        "evidence_ref": "static.webview_indicators.22"
+      }
+    ],
+    "dynamic_code_indicators": [
+      {
+        "kind": "loadClass(",
+        "snippet": "Loader;      move-result-object v3      invoke-virtual {v3, p1}, Ljava/lang/ClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;      move-result-object v0      sget-object v3, Landr",
+        "evidence_ref": "static.dynamic_code_indicators.0"
+      }
+    ],
+    "crypto_indicators": [
+      {
+        "kind": "AES",
+        "snippet": "4jHtkTBV2YHVsw=\r \r Name: res/drawable/ic_reward_pressed.png\r SHA1-Digest: 5ViGFGbXgzmhmCumAESnzQGNWuM=\r \r Name: res/drawable-mdpi/abs__btn_cab_done_focused_holo_dark.9.png\r SHA1-Diges",
+        "evidence_ref": "static.crypto_indicators.0"
+      }
+    ],
+    "root_check_indicators": [],
+    "anti_analysis_indicators": [],
+    "decompiled_sources": {
+      "apktool": "extracted/apktool",
+      "jadx": "extracted/jadx",
+      "samples": [
+        {
+          "source": "aapt_badging",
+          "path": "tool-output/aapt_badging",
+          "size_bytes": 2007
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/AndroidManifest.xml",
+          "size_bytes": 4590
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/apktool.yml",
+          "size_bytes": 230
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/original/AndroidManifest.xml",
+          "size_bytes": 8388
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/color/abs__primary_text_disable_only_holo_dark.xml",
+          "size_bytes": 300
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/color/abs__primary_text_disable_only_holo_light.xml",
+          "size_bytes": 302
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/color/abs__primary_text_holo_dark.xml",
+          "size_bytes": 703
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/color/abs__primary_text_holo_light.xml",
+          "size_bytes": 709
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/drawable/abs__activated_background_holo_dark.xml",
+          "size_bytes": 280
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/drawable/abs__activated_background_holo_light.xml",
+          "size_bytes": 280
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/drawable/abs__btn_cab_done_holo_dark.xml",
+          "size_bytes": 473
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/drawable/abs__btn_cab_done_holo_light.xml",
+          "size_bytes": 476
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/drawable/abs__ic_menu_moreoverflow_holo_dark.xml",
+          "size_bytes": 208
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/drawable/abs__ic_menu_moreoverflow_holo_light.xml",
+          "size_bytes": 209
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/drawable/abs__item_background_holo_dark.xml",
+          "size_bytes": 886
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/drawable/abs__item_background_holo_light.xml",
+          "size_bytes": 890
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/drawable/abs__list_selector_background_transition_holo_dark.xml",
+          "size_bytes": 266
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/drawable/abs__list_selector_background_transition_holo_light.xml",
+          "size_bytes": 267
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/drawable/abs__list_selector_holo_dark.xml",
+          "size_bytes": 923
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/drawable/abs__list_selector_holo_light.xml",
+          "size_bytes": 927
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/drawable/abs__progress_horizontal_holo_dark.xml",
+          "size_bytes": 567
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/drawable/abs__progress_horizontal_holo_light.xml",
+          "size_bytes": 570
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/drawable/abs__progress_medium_holo.xml",
+          "size_bytes": 520
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/drawable/abs__spinner_ab_holo_dark.xml",
+          "size_bytes": 546
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/drawable/abs__spinner_ab_holo_light.xml",
+          "size_bytes": 550
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/drawable/abs__tab_indicator_ab_holo.xml",
+          "size_bytes": 1392
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/drawable/admin_options_delete_users.xml",
+          "size_bytes": 557
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/drawable/admin_options_password_reset.xml",
+          "size_bytes": 565
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/drawable/checkins_checkin_now.xml",
+          "size_bytes": 553
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/drawable/checkins_history.xml",
+          "size_bytes": 537
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/drawable/friends_my_friends.xml",
+          "size_bytes": 537
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/drawable/friends_pending_friend_requests.xml",
+          "size_bytes": 601
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/drawable/friends_search_for_friends.xml",
+          "size_bytes": 581
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/drawable/home_checkin.xml",
+          "size_bytes": 549
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/drawable/home_friends.xml",
+          "size_bytes": 545
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/drawable/home_manage_users.xml",
+          "size_bytes": 541
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/drawable/home_rewards.xml",
+          "size_bytes": 545
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/drawable/rewards_available_rewards.xml",
+          "size_bytes": 577
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/drawable/rewards_my_rewards.xml",
+          "size_bytes": 549
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/drawable/standard_button.xml",
+          "size_bytes": 525
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/drawable-hdpi-v4/home_dashboard.xml",
+          "size_bytes": 1486
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/drawable-v11/abs__progress_medium_holo.xml",
+          "size_bytes": 520
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/layout/about.xml",
+          "size_bytes": 1552
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/layout/abs__action_bar_home.xml",
+          "size_bytes": 945
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/layout/abs__action_bar_tab.xml",
+          "size_bytes": 221
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/layout/abs__action_bar_tab_bar_view.xml",
+          "size_bytes": 193
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/layout/abs__action_bar_title_item.xml",
+          "size_bytes": 1270
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/layout/abs__action_menu_item_layout.xml",
+          "size_bytes": 1514
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/layout/abs__action_menu_layout.xml",
+          "size_bytes": 335
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/layout/abs__action_mode_bar.xml",
+          "size_bytes": 292
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/layout/abs__action_mode_close_item.xml",
+          "size_bytes": 714
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/layout/abs__activity_chooser_view.xml",
+          "size_bytes": 1644
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/layout/abs__activity_chooser_view_list_item.xml",
+          "size_bytes": 1134
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/layout/abs__dialog_title_holo.xml",
+          "size_bytes": 1091
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/layout/abs__list_menu_item_checkbox.xml",
+          "size_bytes": 346
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/layout/abs__list_menu_item_icon.xml",
+          "size_bytes": 463
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/layout/abs__list_menu_item_layout.xml",
+          "size_bytes": 1325
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/layout/abs__list_menu_item_radio.xml",
+          "size_bytes": 346
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/layout/abs__popup_menu_item_layout.xml",
+          "size_bytes": 1312
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/layout/abs__screen_action_bar.xml",
+          "size_bytes": 1535
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/layout/abs__screen_action_bar_overlay.xml",
+          "size_bytes": 1687
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/layout/abs__screen_simple.xml",
+          "size_bytes": 692
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/layout/abs__screen_simple_overlay_action_mode.xml",
+          "size_bytes": 732
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/layout/add_venue.xml",
+          "size_bytes": 1406
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/layout/admin_home.xml",
+          "size_bytes": 1705
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/layout/admin_home_dashboard.xml",
+          "size_bytes": 1705
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/layout/admin_options.xml",
+          "size_bytes": 1264
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/layout/available_rewards.xml",
+          "size_bytes": 494
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/layout/available_rewards_item.xml",
+          "size_bytes": 1259
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/layout/checkins.xml",
+          "size_bytes": 1220
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/layout/checkins_tab.xml",
+          "size_bytes": 498
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/layout/delete_users.xml",
+          "size_bytes": 452
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/layout/destination_info.xml",
+          "size_bytes": 2188
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/layout/do_checkin.xml",
+          "size_bytes": 838
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/layout/do_comment.xml",
+          "size_bytes": 998
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/layout/do_delete_user.xml",
+          "size_bytes": 1588
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/layout/do_password_reset.xml",
+          "size_bytes": 1998
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/layout/friend_request.xml",
+          "size_bytes": 1643
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/layout/friends_tab.xml",
+          "size_bytes": 506
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/layout/generic_web_view.xml",
+          "size_bytes": 349
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/layout/history.xml",
+          "size_bytes": 659
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/layout/home.xml",
+          "size_bytes": 1528
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/layout/loader.xml",
+          "size_bytes": 399
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/layout/login.xml",
+          "size_bytes": 2420
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/layout/my_friends.xml",
+          "size_bytes": 731
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/layout/my_rewards.xml",
+          "size_bytes": 731
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/layout/pending_friend_requests.xml",
+          "size_bytes": 766
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/layout/preferences.xml",
+          "size_bytes": 1217
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/layout/profile.xml",
+          "size_bytes": 1681
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/layout/register.xml",
+          "size_bytes": 2643
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/layout/reset_user_passwords.xml",
+          "size_bytes": 464
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/layout/rewards_tab.xml",
+          "size_bytes": 505
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/layout/search_for_friends.xml",
+          "size_bytes": 485
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/layout/search_for_friends_item.xml",
+          "size_bytes": 590
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/layout/send_sms.xml",
+          "size_bytes": 1376
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/layout/sherlock_spinner_dropdown_item.xml",
+          "size_bytes": 330
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/layout/sherlock_spinner_item.xml",
+          "size_bytes": 302
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/layout/social_api_authentication.xml",
+          "size_bytes": 1352
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/layout/tabsviewpager.xml",
+          "size_bytes": 373
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/layout/view_checkin.xml",
+          "size_bytes": 417
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/layout-large-v4/abs__action_mode_close_item.xml",
+          "size_bytes": 1049
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/layout-v14/sherlock_spinner_dropdown_item.xml",
+          "size_bytes": 338
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/layout-v14/sherlock_spinner_item.xml",
+          "size_bytes": 310
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/layout-xlarge-v4/abs__screen_action_bar.xml",
+          "size_bytes": 1273
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/layout-xlarge-v4/abs__screen_action_bar_overlay.xml",
+          "size_bytes": 1289
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/menu/destination_info_menu.xml",
+          "size_bytes": 203
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/menu/options_menu.xml",
+          "size_bytes": 517
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/values/arrays.xml",
+          "size_bytes": 966
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/values/attrs.xml",
+          "size_bytes": 5270
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/values/bools.xml",
+          "size_bytes": 475
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/values/colors.xml",
+          "size_bytes": 805
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/values/dimens.xml",
+          "size_bytes": 783
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/values/ids.xml",
+          "size_bytes": 3632
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/values/integers.xml",
+          "size_bytes": 120
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/values/public.xml",
+          "size_bytes": 44947
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/values/strings.xml",
+          "size_bytes": 4687
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/values/styles.xml",
+          "size_bytes": 36210
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/values-land/dimens.xml",
+          "size_bytes": 471
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/values-large-hdpi-1024x600-v4/dimens.xml",
+          "size_bytes": 471
+        },
+        {
+          "source": "apktool",
+          "path": "jobs/b622e6777a7c4ab49c5faac7ed7cb6d3/extracted/apktool/res/values-large-land-hdpi-1024x600-v4/dimens.xml",
+          "size_bytes": 471
+        }
+      ]
+    },
+    "tools": {
+      "aapt": {
+        "available": true,
+        "path": "/usr/bin/aapt",
+        "status": "ok",
+        "returncode": 0
+      },
+      "apksigner": {
+        "available": true,
+        "path": "/usr/bin/apksigner",
+        "status": "ok",
+        "returncode": 0
+      },
+      "apktool": {
+        "available": true,
+        "path": "/usr/local/bin/apktool",
+        "status": "ok",
+        "output_dir": "extracted/apktool",
+        "returncode": 0,
+        "output_sample": "I: Using Apktool 3.0.2 on app.apk with 8 threads\nI: Loading resource table...\nI: Baksmaling classes.dex...\nI: Decoding value resources...\nI: Loading resource table from file: /root/.local/share/apktool/framework/1.apk\nI: Decoding file resources...\nI: Generating values XMLs...\nI: Decoding AndroidManifest.xml with resources...\nI: Copying original files...\nI: Copying unknown files...\n"
+      },
+      "jadx": {
+        "available": true,
+        "path": "/usr/local/bin/jadx",
+        "status": "ok",
+        "output_dir": "extracted/jadx",
+        "timeout_seconds": 170,
+        "threads": 1,
+        "returncode": 0,
+        "output_sample": "Exception in thread \"AWT-EventQueue-0\" java.awt.HeadlessException: \nNo X11 DISPLAY variable was set,\nor no headful library support was found,\nbut this program performed an operation which requires it.\n\tat java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:164)\n\tat java.desktop/java.awt.Window.<init>(Window.java:553)\n\tat java.desktop/java.awt.Frame.<init>(Frame.java:428)\n\tat java.desktop/java.awt.Frame.<init>(Frame.java:393)\n\tat java.desktop/javax.swing.JFrame.<init>(JFrame.java:180)\n\tat jadx.gui.ui.MainWindow.<init>(MainWindow.java:255)\n\tat jadx.gui.JadxGUI.lambda$main$0(JadxGUI.java:41)\n\tat java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318)\n\tat java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773)\n\tat java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720)\n\tat java.desktop/java.awt.EventQueue$4.run(EventQueue.java:714)\n\tat java.base/java.security.AccessController.doPrivileged(AccessController.java:400)\n\tat java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87)\n\tat java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742)\n\tat java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)\n\tat java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)\n\tat java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)\n\tat java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)\n\tat java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)\n\tat java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)\n"
+      }
+    },
+    "warnings": []
+  },
+  "dynamic": {},
+  "rule_risk": {
+    "score": 35,
+    "level": "low",
+    "reasons": [
+      {
+        "code": "permission_signal",
+        "bucket": "permission",
+        "weight": 10,
+        "detail": "android.permission.SEND_SMS",
+        "evidence_ref": "static.permissions.android.permission.SEND_SMS"
+      },
+      {
+        "code": "permission_signal",
+        "bucket": "permission",
+        "weight": 3,
+        "detail": "android.permission.ACCESS_FINE_LOCATION",
+        "evidence_ref": "static.permissions.android.permission.ACCESS_FINE_LOCATION"
+      },
+      {
+        "code": "permission_signal",
+        "bucket": "permission",
+        "weight": 1,
+        "detail": "android.permission.ACCESS_COARSE_LOCATION",
+        "evidence_ref": "static.permissions.android.permission.ACCESS_COARSE_LOCATION"
+      },
+      {
+        "code": "exported_components",
+        "bucket": "context",
+        "weight": 1,
+        "detail": "3 exported components",
+        "evidence_ref": "static.components.exported_count"
+      },
+      {
+        "code": "network_indicators",
+        "bucket": "context",
+        "weight": 1,
+        "detail": "1 domains found",
+        "evidence_ref": "static.network_indicators.domains"
+      },
+      {
+        "code": "cleartext_http_urls",
+        "bucket": "context",
+        "weight": 6,
+        "detail": "23 cleartext HTTP URLs found",
+        "evidence_ref": "static.network_indicators.urls"
+      },
+      {
+        "code": "webview_indicators",
+        "bucket": "context",
+        "weight": 4,
+        "detail": "23 WebView/JavaScript indicators",
+        "evidence_ref": "static.webview_indicators"
+      },
+      {
+        "code": "dynamic_code_loading",
+        "bucket": "context",
+        "weight": 3,
+        "detail": "1 dynamic-code indicators",
+        "evidence_ref": "static.dynamic_code_indicators",
+        "strong_evidence": false
+      },
+      {
+        "code": "dynamic_code_network_combo",
+        "bucket": "combo",
+        "weight": 10,
+        "detail": "Dynamic code indicators plus network indicators",
+        "evidence_ref": "static.dynamic_code_indicators",
+        "strong_evidence": true
+      },
+      {
+        "code": "crypto_indicators",
+        "bucket": "context",
+        "weight": 1,
+        "detail": "1 cryptography indicators",
+        "evidence_ref": "static.crypto_indicators"
+      }
+    ],
+    "risk_reasons": [
+      {
+        "code": "permission_signal",
+        "bucket": "permission",
+        "weight": 10,
+        "detail": "android.permission.SEND_SMS",
+        "evidence_ref": "static.permissions.android.permission.SEND_SMS"
+      },
+      {
+        "code": "permission_signal",
+        "bucket": "permission",
+        "weight": 3,
+        "detail": "android.permission.ACCESS_FINE_LOCATION",
+        "evidence_ref": "static.permissions.android.permission.ACCESS_FINE_LOCATION"
+      },
+      {
+        "code": "permission_signal",
+        "bucket": "permission",
+        "weight": 1,
+        "detail": "android.permission.ACCESS_COARSE_LOCATION",
+        "evidence_ref": "static.permissions.android.permission.ACCESS_COARSE_LOCATION"
+      },
+      {
+        "code": "exported_components",
+        "bucket": "context",
+        "weight": 1,
+        "detail": "3 exported components",
+        "evidence_ref": "static.components.exported_count"
+      },
+      {
+        "code": "network_indicators",
+        "bucket": "context",
+        "weight": 1,
+        "detail": "1 domains found",
+        "evidence_ref": "static.network_indicators.domains"
+      },
+      {
+        "code": "cleartext_http_urls",
+        "bucket": "context",
+        "weight": 6,
+        "detail": "23 cleartext HTTP URLs found",
+        "evidence_ref": "static.network_indicators.urls"
+      },
+      {
+        "code": "webview_indicators",
+        "bucket": "context",
+        "weight": 4,
+        "detail": "23 WebView/JavaScript indicators",
+        "evidence_ref": "static.webview_indicators"
+      },
+      {
+        "code": "dynamic_code_loading",
+        "bucket": "context",
+        "weight": 3,
+        "detail": "1 dynamic-code indicators",
+        "evidence_ref": "static.dynamic_code_indicators",
+        "strong_evidence": false
+      },
+      {
+        "code": "dynamic_code_network_combo",
+        "bucket": "combo",
+        "weight": 10,
+        "detail": "Dynamic code indicators plus network indicators",
+        "evidence_ref": "static.dynamic_code_indicators",
+        "strong_evidence": true
+      },
+      {
+        "code": "crypto_indicators",
+        "bucket": "context",
+        "weight": 1,
+        "detail": "1 cryptography indicators",
+        "evidence_ref": "static.crypto_indicators"
+      }
+    ],
+    "informational_observations": [],
+    "risk_reason_groups": [
+      {
+        "group": "permission_signals",
+        "title": "Sensitive permissions present",
+        "bucket": "permission",
+        "count": 3,
+        "total_weight": 14,
+        "strong_evidence": false,
+        "examples": [
+          "android.permission.SEND_SMS",
+          "android.permission.ACCESS_FINE_LOCATION",
+          "android.permission.ACCESS_COARSE_LOCATION"
+        ],
+        "evidence_refs": [
+          "static.permissions.android.permission.SEND_SMS",
+          "static.permissions.android.permission.ACCESS_FINE_LOCATION",
+          "static.permissions.android.permission.ACCESS_COARSE_LOCATION"
+        ]
+      },
+      {
+        "group": "context:exported_components",
+        "title": "3 Exported Components",
+        "bucket": "context",
+        "count": 1,
+        "total_weight": 1,
+        "strong_evidence": false,
+        "examples": [
+          "3 exported components"
+        ],
+        "evidence_refs": [
+          "static.components.exported_count"
+        ]
+      },
+      {
+        "group": "context:network_indicators",
+        "title": "1 Domains Found",
+        "bucket": "context",
+        "count": 1,
+        "total_weight": 1,
+        "strong_evidence": false,
+        "examples": [
+          "1 domains found"
+        ],
+        "evidence_refs": [
+          "static.network_indicators.domains"
+        ]
+      },
+      {
+        "group": "context:cleartext_http_urls",
+        "title": "23 Cleartext Http Urls Found",
+        "bucket": "context",
+        "count": 1,
+        "total_weight": 6,
+        "strong_evidence": false,
+        "examples": [
+          "23 cleartext HTTP URLs found"
+        ],
+        "evidence_refs": [
+          "static.network_indicators.urls"
+        ]
+      },
+      {
+        "group": "context:webview_indicators",
+        "title": "23 Webview/Javascript Indicators",
+        "bucket": "context",
+        "count": 1,
+        "total_weight": 4,
+        "strong_evidence": false,
+        "examples": [
+          "23 WebView/JavaScript indicators"
+        ],
+        "evidence_refs": [
+          "static.webview_indicators"
+        ]
+      },
+      {
+        "group": "context:dynamic_code_loading",
+        "title": "1 Dynamic-Code Indicators",
+        "bucket": "context",
+        "count": 1,
+        "total_weight": 3,
+        "strong_evidence": false,
+        "examples": [
+          "1 dynamic-code indicators"
+        ],
+        "evidence_refs": [
+          "static.dynamic_code_indicators"
+        ]
+      },
+      {
+        "group": "combo:dynamic_code_network_combo",
+        "title": "Dynamic Code Indicators Plus Network Indicators",
+        "bucket": "combo",
+        "count": 1,
+        "total_weight": 10,
+        "strong_evidence": true,
+        "examples": [
+          "Dynamic code indicators plus network indicators"
+        ],
+        "evidence_refs": [
+          "static.dynamic_code_indicators"
+        ]
+      },
+      {
+        "group": "context:crypto_indicators",
+        "title": "1 Cryptography Indicators",
+        "bucket": "context",
+        "count": 1,
+        "total_weight": 1,
+        "strong_evidence": false,
+        "examples": [
+          "1 cryptography indicators"
+        ],
+        "evidence_refs": [
+          "static.crypto_indicators"
+        ]
+      }
+    ],
+    "risk_reason_count": 10,
+    "risk_reason_group_count": 8,
+    "observation_count": 0,
+    "total_reason_entries": 10,
+    "verdict_note": "Risk score is based on the listed contributing evidence groups.",
+    "score_breakdown": {
+      "permission_score_raw": 14,
+      "permission_score_capped": 14,
+      "permission_score_cap": 16,
+      "context_score": 16,
+      "combo_score": 5,
+      "dynamic_score_raw": 0,
+      "dynamic_score_capped": 0,
+      "dynamic_score_cap": 3,
+      "dynamic_generic_only": true,
+      "dynamic_high_or_critical_count": 0,
+      "dynamic_c2_like_count": 0,
+      "score_before_profile": 35,
+      "app_profile": "generic",
+      "expected_permission_reduction": 0,
+      "score_after_profile": 35,
+      "strong_evidence": true,
+      "hard_strong_evidence": false,
+      "hard_strong_evidence_count": 0,
+      "soft_strong_only": true,
+      "critical_calibration_applied": false,
+      "permission_reason_count": 3,
+      "combo_reason_count": 1,
+      "risk_reason_count": 10,
+      "risk_reason_group_count": 8,
+      "observation_count": 0,
+      "permission_heavy_downgrade_applied": false,
+      "high_risk_gate_applied": false
+    },
+    "calibration": {
+      "profile": "v4.7.2_false_positive_resistant_calibration",
+      "high_threshold": 88,
+      "critical_threshold": 96,
+      "permission_score_cap": 16,
+      "dynamic_generic_score_cap": 3,
+      "note": "False-positive resistant calibration: permissions, domains, exported components, and soft static indicators cannot produce Critical 100% without hard malicious evidence."
+    },
+    "summary": "Rule score 35/100 (low). Risk groups: 8; observations: 0"
+  },
+  "evidence_refs": {
+    "apk_hash": "intake.sha256",
+    "permissions": "static.permissions",
+    "components": "static.components",
+    "network": "static.network_indicators",
+    "webview": "static.webview_indicators",
+    "dynamic_code": "static.dynamic_code_indicators",
+    "decompiled_sources": "static.decompiled_sources",
+    "root_checks": "static.root_check_indicators",
+    "anti_analysis": "static.anti_analysis_indicators",
+    "rule_reasons": "risk.reasons",
+    "dynamic": "dynamic.runtime_indicators"
+  }
+}

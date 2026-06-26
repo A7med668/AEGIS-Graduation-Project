@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:search="http://schemas.android.com/apk/com.bytehamster.lib.preferencesearch">
+    <Preference android:title="@string/choose_data_directory" android:key="prefChooseDataDir" />
+    <PreferenceCategory android:title="@string/automation">
+        <de.danoeh.antennapod.ui.preferences.preference.MaterialListPreference android:entries="@array/feed_refresh_interval_entries" android:title="@string/feed_refresh_title" android:key="prefAutoUpdateIntervall" android:summary="@string/feed_refresh_sum" android:defaultValue="720" android:entryValues="@array/feed_refresh_interval_values" />
+        <de.danoeh.antennapod.ui.preferences.preference.MaterialListPreference android:entries="@array/globalNewEpisodesActionItems" android:title="@string/pref_new_episodes_action_title" android:key="prefNewEpisodesAction" android:summary="@string/pref_new_episodes_action_sum" android:defaultValue="1" android:entryValues="@array/globalNewEpisodesActionValues" />
+        <Preference android:title="@string/pref_automatic_download_title" android:key="prefAutoDownloadSettings" android:summary="@string/pref_automatic_download_sum" search:ignore="true" />
+        <Preference android:title="@string/pref_auto_delete_title" android:key="prefAutoDeleteScreen" android:summary="@string/pref_auto_delete_sum" />
+        <SwitchPreferenceCompat android:enabled="true" android:title="@string/pref_delete_removes_from_queue_title" android:key="prefDeleteRemovesFromQueue" android:summary="@string/pref_delete_removes_from_queue_sum" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/download_pref_details">
+        <de.danoeh.antennapod.ui.preferences.preference.MaterialMultiSelectListPreference android:entries="@array/mobile_update_entries" android:title="@string/pref_mobileUpdate_title" android:key="prefMobileUpdateTypes" android:summary="@string/pref_mobileUpdate_sum" android:defaultValue="@array/mobile_update_default_value" android:entryValues="@array/mobile_update_values" />
+        <Preference android:title="@string/pref_proxy_title" android:key="prefProxy" android:summary="@string/pref_proxy_sum" />
+    </PreferenceCategory>
+</PreferenceScreen>

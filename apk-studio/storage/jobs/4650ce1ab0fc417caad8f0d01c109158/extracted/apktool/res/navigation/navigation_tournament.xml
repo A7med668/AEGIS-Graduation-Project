@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/navigation_tournament" app:startDestination="@id/emptyFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="EmptyFragment" android:name="com.farsitel.bazaar.component.EmptyFragment" android:id="@id/emptyFragment" />
+    <fragment android:label="TournamentHistoryFragment" android:name="com.farsitel.bazaar.tournament.view.TournamentHistoryFragment" android:id="@id/tournamentHistoryFragment">
+        <deepLink app:uri="@string/deeplink_tournament_history" />
+    </fragment>
+    <fragment android:label="TournamentRuleFragment" android:name="com.farsitel.bazaar.tournament.view.TournamentRuleFragment" android:id="@id/tournamentRuleFragment">
+        <deepLink app:uri="@string/deeplink_tournament_rule" />
+    </fragment>
+    <fragment android:label="leaderboardFragment" android:name="com.farsitel.bazaar.tournament.view.TournamentLeaderboardFragment" android:id="@id/leaderboardFragment">
+        <deepLink app:uri="@string/deeplink_tournament_leaderboard" />
+    </fragment>
+</navigation>

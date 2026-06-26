@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+</head>
+<body>
+<a href="#feedback">Feedback</a>
+
+<h3>Table of Contents</h3>
+
+<a href="#introduction">Introduction</a><br>
+<a href="#start">Program Start</a><br>
+<a href="#albums">Albums</a><br>
+<a href="#pictures">Album Pictures</a><br>
+<a href="#limitations">Limitations</a><br>
+<a href="#technical">Technical</a><br>
+<a href="#licenses">External Licenses</a><br>
+
+<h3>The Classical Music Scanner</h3>
+
+<a id="introduction"></a>
+<h4>What is the program for?</h4>
+
+    <p>Both <i>Unpopular Music Player</i> and <i>Opus 1 Music Player</i> use Android's media database.
+    Unfortunately it is incomplete, error prone, and the update automatism is hardly to predict and unreliable.
+    Sometimes it fails.</p>
+
+    <p>For music management the mentioned programs use their own tagger library to extract the missing
+    and wrong information directly from the music files. This works, but the inconsistency problem
+    remains.</p>
+
+    <p>The <i>Classical Music Scanner</i> creates its own database replacing that one of Android for the
+    mentioned programs (if configured accordingly). However, this database only contains information
+    about audio files, neither pictures nor movies. Note that the tagger libraries in the music player
+    applications are no longer used in this case.</p>
+
+<a id="start"></a>
+<h4>Start from <i>Opus 1 Music Player</i></h4>
+
+    <p>Via menu entry "Scan Device for Audio Files…" and the context menu.</p>
+
+<h4>Start from <i>Unpopular Music Player</i></h4>
+
+    <p>Via menu entry "Scan Device for Audio Files…" and the context menu in the Playback view.</p>
+
+<h4>Start from <i>Classical Music Tagger</i></h4>
+
+    <p>Runs invisibly in background whenever files are changed or deleted.</p>
+
+<h4>Start in standalone mode</h4>
+
+    <p>Just run it and press the green floating button.</p>
+
+    <p>The "Auto Scan" looks for changed, added and deleted audio files and updates the database accordingly.
+    In case there many of such changes, the application automatically decides to run a complete scan, this will
+    also happen in case of a failure of whatever reason.</p>
+
+    <p>In case of any problems the complete scan can also initiated manally, using the yellow floating button.</p>
+
+<a id="albums"></a>
+<h4>Albums, also multi-CD</h4>
+
+    <p>Contrary to the Android system the scanner detects multi-CD-albums and manages them accordingly.
+    The album folder shall contain some album picture ("folder.jpg") and for each CD its
+    subdirectory named "CD1" etc. or "1" etc..</p>
+
+    <p>Otherwise an album is defined by album name and "album artist", and all audio files should
+    be located in the same directory.</p>
+
+
+<a id="pictures"></a>
+<h4>Album Pictures</h4>
+
+    <p>Album Pictures are located in the album directory and are named "albumart.jpg/png" or "folder.jpg/png".
+    Additionally "cover.jpg" is allowed. Other file names, including "Folder.jpg" e.g., are ignored.</p>
+
+    <p>In case of a missing picture the largest embedded one (if any) is extracted and stored in a new
+    image file. The file name is configurable. If necessary and configured via settings, it is scaled down, while,
+    if configured, the original picture is saved as ".backup".</p>
+
+    <p>If configured, existing album pictures are also downscaled and the original file saved.</p>
+
+    <p>If configured, existing album pictures are renamed.</p>
+
+    <p>Large album pictures slow down album browsing. Thus 500 pixels limit are preconfigured, like in
+    Android system. Contrarily to Android pictures of 501 pixels are not scaled to 250, but to 500. Android
+    always halves the size until the picture fits.</p>
+
+<a id="limitations"></a>
+<h4>Limitations</h4>
+
+    <p>Picture files like "AlbumArt.jpg" currently cannot be renamed to "albumart.jpg".</p>
+
+    <p>Write access to SD card or USB memory is forbidden in Android. Use the SAF scanner instead.</p>
+
+<a id="technical"></a>
+<h4>Technical</h4>
+
+    <p>The main functionality is written in C++, so called "native code".</p>
+
+    <p>The program uses the C++ library <i>TagLib</i>.</p>
+
+    <p>The program does not use Android's SQLite database functions, but contains its own
+    <i>SQLite</i> library.</p>
+
+    <p>Theoretically the music database could be used by an arbitrary program. It can even be copied to
+    a computer for analysis, e.g. using some "DB Browser".</p>
+
+<a id="licenses"></a>
+<h4>External Licenses</h4>
+
+<p>TagLib C++ Library:</p>
+<p>Source: https://taglib.org/</p>
+<p>License: LGPL (http://www.gnu.org/copyleft/lesser.html) and MPL (https://www.mozilla.org/en-US/MPL/1.1/)</p>
+<p></p>
+<p>SQLite C Library:</p>
+<p>Source: https://www.sqlite.org/</p>
+<p>License: https://www.sqlite.org/copyright.html</p>
+
+<br>
+<a name="feedback" id="feedback">
+    <h3>Feedback</h3>
+    For comments, feedback, and suggestions, please
+    <br><br>
+    <a href="mailto:Andreas.Kromke@gmail.com">Kontaktiere Suppen-Ort</a>
+</a>
+<br><br>
+</body>
+</html>

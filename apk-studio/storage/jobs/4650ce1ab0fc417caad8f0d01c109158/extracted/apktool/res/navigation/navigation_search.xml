@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/navigation_search" app:startDestination="@id/emptyFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="SearchFragment" android:name="com.farsitel.bazaar.search.view.fragment.SearchFragment" android:id="@id/searchFragment">
+        <deepLink app:uri="@string/deeplink_search" />
+        <action android:id="@id/action_searchFragment_to_searchAutoCompleteFragment" app:destination="@id/searchAutoCompleteFragment" />
+    </fragment>
+    <fragment android:label="SearchAutoCompleteFragment" android:name="com.farsitel.bazaar.search.view.fragment.SearchAutoCompleteFragment" android:id="@id/searchAutoCompleteFragment">
+        <argument android:name="bundleExtraData" app:argType="com.farsitel.bazaar.pagedto.model.SearchPageParams" />
+        <argument android:name="previousSearchQuery" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+    </fragment>
+    <fragment android:label="SearchAutoCompleteFragment" android:name="com.farsitel.bazaar.search.view.fragment.SearchAutoCompleteFragment" android:id="@id/searchAutoCompleteFragmentStartDest">
+        <deepLink app:uri="@string/deeplink_search_autocomplete" />
+    </fragment>
+    <fragment android:label="EmptyFragment" android:name="com.farsitel.bazaar.component.EmptyFragment" android:id="@id/emptyFragment" />
+</navigation>

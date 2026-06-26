@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/selector_button_flat_stroke_only" android:padding="2.0dp" android:layout_width="@dimen/avatar_category_size" android:layout_height="@dimen/avatar_category_size" android:contentDescription="@string/avatar_content_description"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/itemCategory" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="right|bottom" android:id="@id/checkedImageView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/default_margin" app:srcCompat="@drawable/ic_circle_check_black_18dp" />
+</FrameLayout>

@@ -1,0 +1,16 @@
+{
+  "job_id": "4d65e18a693442e6bd3247ad625f5513",
+  "filename": "malware_08_injuredandroid.apk",
+  "status": "completed",
+  "progress": 100,
+  "error": null,
+  "report_available": true,
+  "created_at": "2026-06-24T23:32:32.391251+00:00",
+  "updated_at": "2026-06-24T23:33:28.598435+00:00",
+  "risk_score": 27,
+  "risk_level": "low",
+  "ai_risk_score": 27,
+  "ai_risk_level": "low",
+  "agentic_triggered": false,
+  "agentic_action_count": 1
+}

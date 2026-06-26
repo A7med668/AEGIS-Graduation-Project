@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RadioGroup android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp">
+            <RadioButton android:id="@id/includeRadio" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/include_terms" android:layout_weight="1.0" />
+            <RadioButton android:id="@id/excludeRadio" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/exclude_terms" android:layout_weight="1.0" />
+        </RadioGroup>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/termsRecycler" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <com.google.android.material.textfield.TextInputLayout android:id="@id/termsTextInput" android:layout_width="match_parent" android:layout_height="wrap_content" app:endIconContentDescription="@string/add_term" app:endIconDrawable="@drawable/ic_add" app:endIconMode="custom" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <View android:background="?android:listDivider" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginTop="16.0dp" android:layout_marginBottom="8.0dp" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <CheckBox android:id="@id/durationCheckBox" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/exclude_episodes_shorter_than" android:layout_weight="1.0" />
+            <EditText android:id="@id/episodeFilterDurationText" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="50.0dp" android:layout_height="wrap_content" android:cursorVisible="true" android:lines="1" android:inputType="numberSigned" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/time_minutes" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

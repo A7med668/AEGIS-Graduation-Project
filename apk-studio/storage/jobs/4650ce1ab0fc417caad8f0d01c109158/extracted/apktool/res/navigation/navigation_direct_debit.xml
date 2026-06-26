@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/navigation_direct_debit" app:startDestination="@id/emptyFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="EmptyFragment" android:name="com.farsitel.bazaar.component.EmptyFragment" android:id="@id/emptyFragment" />
+    <fragment android:label="DirectDebitInfoFragment" android:name="com.farsitel.bazaar.directdebit.info.view.DirectDebitInfoFragment" android:id="@id/directDebitInfoFragment">
+        <deepLink app:uri="@string/deeplink_direct_debit_info_fragment" />
+    </fragment>
+    <fragment android:label="DirectDebitMoreInfoFragment" android:name="com.farsitel.bazaar.directdebit.moreinfo.view.DirectDebitMoreInfoFragment" android:id="@id/directDebitMoreInfoFragment">
+        <deepLink app:uri="@string/deeplink_direct_debit_more_info_fragment" />
+    </fragment>
+    <fragment android:label="DirectDebitBankListFragment" android:name="com.farsitel.bazaar.directdebit.banklist.view.DirectDebitBankListFragment" android:id="@id/directDebitBankListFragment">
+        <deepLink app:uri="@string/deeplink_direct_debit_bank_list_fragment" />
+    </fragment>
+    <fragment android:label="NationalIdFragment" android:name="com.farsitel.bazaar.directdebit.nationalid.view.NationalIdFragment" android:id="@id/nationalIdFragment">
+        <deepLink app:uri="@string/deeplink_direct_debit_national_id_fragment" />
+    </fragment>
+    <fragment android:label="DirectDebitOnBoardingFragment" android:name="com.farsitel.bazaar.directdebit.onboarding.view.DirectDebitOnBoardingFragment" android:id="@id/directDebitOnBoardingFragment">
+        <deepLink app:uri="@string/deeplink_direct_debit_on_boarding_fragment" />
+    </fragment>
+</navigation>

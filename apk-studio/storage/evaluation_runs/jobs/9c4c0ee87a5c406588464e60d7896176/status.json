@@ -1,0 +1,16 @@
+{
+  "job_id": "9c4c0ee87a5c406588464e60d7896176",
+  "filename": "malware_07_ostorlab_insecure.apk",
+  "status": "completed",
+  "progress": 100,
+  "error": null,
+  "report_available": true,
+  "created_at": "2026-06-24T23:31:29.360384+00:00",
+  "updated_at": "2026-06-24T23:32:32.193864+00:00",
+  "risk_score": 49,
+  "risk_level": "medium",
+  "ai_risk_score": 49,
+  "ai_risk_level": "medium",
+  "agentic_triggered": false,
+  "agentic_action_count": 1
+}

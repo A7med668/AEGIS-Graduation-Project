@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>AEGIS Admin Console</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #e5e7eb;
+      margin: 0;
+      padding: 48px;
+    }
+
+    h1 {
+      color: #38bdf8;
+      font-size: 34px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #94a3b8;
+      font-size: 16px;
+      margin-bottom: 28px;
+    }
+
+    table {
+      width: 860px;
+      border-collapse: collapse;
+      background: #111827;
+      border: 1px solid #334155;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 16px 18px;
+      border-bottom: 1px solid #334155;
+      text-align: left;
+      font-size: 15px;
+    }
+
+    th {
+      background: #1e293b;
+      color: #f8fafc;
+      font-size: 16px;
+    }
+
+    a {
+      color: #38bdf8;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .badge {
+      display: inline-block;
+      margin-left: 10px;
+      padding: 3px 9px;
+      border-radius: 999px;
+      background: #064e3b;
+      color: #6ee7b7;
+      font-size: 12px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>AEGIS Admin Console <span class="badge">Local Gateway</span></h1>
+  <p>Unified local gateway for the AEGIS security platform.</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Service</th>
+        <th>URL</th>
+      </tr>
+    </thead>
+    <tbody id="links"></tbody>
+  </table>
+
+  <script>
+    const base = window.location.origin;
+
+    const services = [
+      ["Dashboard", "/dashboard/"],
+      ["API Swagger", "/docs"],
+      ["API Health", "/health"],
+      ["Admin Console", "/admin/"],
+      ["pgAdmin", "/pgadmin/"],
+      ["Kafka UI", "/kafka-ui/"],
+      ["Redis UI", "/redis/"]
+    ];
+
+    const tbody = document.getElementById("links");
+
+    for (const [name, path] of services) {
+      const url = base + path;
+      const row = document.createElement("tr");
+
+      row.innerHTML = `
+        <td>${name}</td>
+        <td><a href="${path}">${url}</a></td>
+      `;
+
+      tbody.appendChild(row);
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.compose.ui.platform.ComposeView android:id="@id/pageContainer" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        <include layout="@layout/layout_page_non_data" />
+        <com.google.android.material.appbar.AppBarLayout android:id="@id/appBarLayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@id/collapsingToolbar" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_scrollFlags="scroll|enterAlways|snap">
+                <androidx.appcompat.widget.Toolbar android:theme="@style/ThemeOverlay.MaterialComponents.ActionBar" android:id="@id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/default_margin_double" android:paddingEnd="@dimen/default_margin_double" app:popupTheme="@style/ThemeOverlay.MaterialComponents.Light">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/actionBarSize">
+                        <com.farsitel.bazaar.designsystem.widget.RTLImageView android:id="@id/toolbarBack" app:srcCompat="@drawable/ic_round_arrow_back_icon_secondary_24dp_old" style="@style/Bazaar.Image.Toolbar.Icon" />
+                        <com.farsitel.bazaar.designsystem.widget.LocalAwareTextView android:textColor="@color/text_primary" android:gravity="start" android:layout_gravity="center" android:id="@id/toolbarTitle" android:layout_width="0.0dp" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:layout_weight="1.0" android:layout_marginStart="@dimen/default_margin" android:layout_marginEnd="@dimen/default_margin" style="@style/Bazaar.Text.Subtitle1" />
+                        <androidx.appcompat.widget.AppCompatImageView android:id="@id/toolbarLeaderboard" android:visibility="invisible" android:layout_width="@dimen/icon_toolbar_size" android:layout_height="@dimen/icon_toolbar_size" app:srcCompat="@drawable/minigame_leaderboard" />
+                    </LinearLayout>
+                </androidx.appcompat.widget.Toolbar>
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <View android:id="@id/windowInsetsPlaceholder" android:background="@drawable/bg_status_bar_placeholder" android:layout_width="match_parent" android:layout_height="0.0dp" android:alpha="0.0" />
+</FrameLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/default_margin_quarter" app:cardCornerRadius="@dimen/default_margin">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/text_primary" android:gravity="center_vertical" android:id="@id/history" android:layout_width="wrap_content" android:layout_height="56.0dp" android:minWidth="150.0dp" android:text="@string/history_title" android:paddingStart="@dimen/default_margin" android:paddingEnd="@dimen/default_margin" style="@style/Bazaar.Text.Body2" />
+            <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/text_primary" android:gravity="center_vertical" android:id="@id/user_leveling" android:paddingLeft="@dimen/default_margin" android:paddingRight="@dimen/default_margin" android:layout_width="wrap_content" android:layout_height="56.0dp" android:minWidth="150.0dp" android:text="@string/user_leveling_title" android:paddingHorizontal="@dimen/default_margin" style="@style/Bazaar.Text.Body2" />
+            <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/text_primary" android:gravity="center_vertical" android:id="@id/moreInfo" android:paddingLeft="@dimen/default_margin" android:paddingRight="@dimen/default_margin" android:layout_width="wrap_content" android:layout_height="56.0dp" android:minWidth="150.0dp" android:text="@string/more_info_title" android:paddingHorizontal="@dimen/default_margin" style="@style/Bazaar.Text.Body2" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

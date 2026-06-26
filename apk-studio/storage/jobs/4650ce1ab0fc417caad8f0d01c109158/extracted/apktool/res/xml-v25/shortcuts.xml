@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut android:icon="@drawable/ic_round_search_icon_brand_primary" android:enabled="true" android:shortcutId="search" android:shortcutShortLabel="@string/search_content_description">
+        <intent android:action="android.intent.action.VIEW" android:data="bazaar://search" />
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+    <shortcut android:icon="@drawable/ic_round_update_fill_brand_primary" android:enabled="true" android:shortcutId="update" android:shortcutShortLabel="@string/update_tab_title">
+        <intent android:action="android.intent.action.VIEW" android:data="bazaar://upgradable" />
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+</shortcuts>

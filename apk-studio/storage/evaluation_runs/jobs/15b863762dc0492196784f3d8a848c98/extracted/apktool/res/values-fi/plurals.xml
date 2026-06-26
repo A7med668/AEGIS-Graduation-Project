@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="added_to_queue_message">
+        <item quantity="one">%d jakso lisätty jonoon.</item>
+        <item quantity="other">%d jaksoa lisätty jonoon.</item>
+    </plurals>
+    <plurals name="deleted_episode_message">
+        <item quantity="one">%d ladattu jakso poistettu.</item>
+        <item quantity="other">%d ladattua jaksoa poistettu.</item>
+    </plurals>
+    <plurals name="downloading_episodes_message">
+        <item quantity="one">Ladataan %d jakso.</item>
+        <item quantity="other">Ladataan %d jaksoa.</item>
+    </plurals>
+    <plurals name="downloads_left">
+        <item quantity="one">%d lataus jäljellä</item>
+        <item quantity="other">%d latausta jäljellä</item>
+    </plurals>
+    <plurals name="echo_hours_podcasts">
+        <item quantity="one">"tuntikausia jaksoja
+%1$d podcastista"</item>
+        <item quantity="other">"tuntikausia jaksoja
+%1$d eri podcastista"</item>
+    </plurals>
+    <plurals name="echo_queue_hours_waiting">
+        <item quantity="one">"tunti odottamassa jonossasi
+%1$d jaksosta"</item>
+        <item quantity="other">"tuntia odottamassa jonossasi
+%1$d jaksosta"</item>
+    </plurals>
+    <plurals name="episode_cleanup_days_after_listening">
+        <item quantity="one">%d päivä lopettamisen jälkeen</item>
+        <item quantity="other">%d päivää lopettamisen jälkeen</item>
+    </plurals>
+    <plurals name="episode_cleanup_hours_after_listening">
+        <item quantity="one">%d tunti lopettamisen jälkeen</item>
+        <item quantity="other">%d tuntia lopettamisen jälkeen</item>
+    </plurals>
+    <plurals name="episodes_sleep_timer_exceeds_queue">
+        <item quantity="one">Jonossasi on vain %1$d jakso jäljellä</item>
+        <item quantity="other">Jonossasi on vain %1$d jaksoa jäljellä</item>
+    </plurals>
+    <plurals name="marked_as_played_message">
+        <item quantity="one">%d jakso merkitty toistetuiksi.</item>
+        <item quantity="other">%d jaksoa merkitty toistetuiksi.</item>
+    </plurals>
+    <plurals name="marked_as_unplayed_message">
+        <item quantity="one">%d jakso merkitty ei-toistetuksi.</item>
+        <item quantity="other">%d jaksoa merkitty ei-toistetuiksi.</item>
+    </plurals>
+    <plurals name="mobile_download_notice">
+        <item quantity="one">Ladataan mobiiliyhteydellä seuraava %d minuutti</item>
+        <item quantity="other">Ladataan mobiiliyhteydellä seuraavat %d minuuttia</item>
+    </plurals>
+    <plurals name="move_to_bottom_message">
+        <item quantity="one">%d jakso siirretty alimpaan kohtaan.</item>
+        <item quantity="other">%d jaksoa siirretty alimpaan kohtaan.</item>
+    </plurals>
+    <plurals name="move_to_top_message">
+        <item quantity="one">%d jakso siirretty ylimpään kohtaan.</item>
+        <item quantity="other">%d jaksoa siirretty ylimpään kohtaan.</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d uusi ilmoitus</item>
+        <item quantity="other">%d uutta ilmoitusta</item>
+    </plurals>
+    <plurals name="new_episode_notification_message">
+        <item quantity="one">%2$s on julkaissut uuden jakson</item>
+        <item quantity="other">%2$s on julkaissut %1$d uutta jaksoa</item>
+    </plurals>
+    <plurals name="new_episode_notification_title">
+        <item quantity="one">Uusi jakso</item>
+        <item quantity="other">Uusia jaksoja</item>
+    </plurals>
+    <plurals name="num_episodes">
+        <item quantity="one">%d jakso</item>
+        <item quantity="other">%d jaksoa</item>
+    </plurals>
+    <plurals name="num_selected_label">
+        <item quantity="one">%1$d/%2$d valittuna</item>
+        <item quantity="other">%1$d/%2$d valittuna</item>
+    </plurals>
+    <plurals name="num_subscriptions">
+        <item quantity="one">%d tilaus</item>
+        <item quantity="other">%d tilausta</item>
+    </plurals>
+    <plurals name="removed_from_inbox_batch_label">
+        <item quantity="one">%d jakso poistettu saapuneista.</item>
+        <item quantity="other">%d jaksoa poistettu saapuneista.</item>
+    </plurals>
+    <plurals name="removed_from_queue_message">
+        <item quantity="one">%d jakso poistettu jonosta.</item>
+        <item quantity="other">%d jaksoa poistettu jonosta.</item>
+    </plurals>
+    <plurals name="statistics_episodes_downloaded">
+        <item quantity="one">ladattu</item>
+        <item quantity="other">ladattu</item>
+    </plurals>
+    <plurals name="statistics_episodes_started">
+        <item quantity="one">aloitettu</item>
+        <item quantity="other">aloitettu</item>
+    </plurals>
+    <plurals name="statistics_episodes_total">
+        <item quantity="one">yhteensä</item>
+        <item quantity="other">yhteensä</item>
+    </plurals>
+    <plurals name="time_days_quantified">
+        <item quantity="one">%d päivä</item>
+        <item quantity="other">%d päivää</item>
+    </plurals>
+    <plurals name="time_hours_quantified">
+        <item quantity="one">%d tunti</item>
+        <item quantity="other">%d tuntia</item>
+    </plurals>
+    <plurals name="time_minutes_quantified">
+        <item quantity="one">%d minuutti</item>
+        <item quantity="other">%d minuuttia</item>
+    </plurals>
+    <plurals name="time_seconds_quantified">
+        <item quantity="one">%d sekunti</item>
+        <item quantity="other">%d sekuntia</item>
+    </plurals>
+    <plurals name="timer_exceeds_remaining_time_while_continuous_playback_disabled">
+        <item quantity="one">Jatkuva toisto on pois käytöstä ja nykyistä jaksoa on vain %1$d minuutti jäljellä</item>
+        <item quantity="other">Jatkuva toisto on pois käytöstä ja nykyistä jaksoa on vain %1$d minuuttia jäljellä</item>
+    </plurals>
+    <plurals name="total_size_downloaded_podcasts">
+        <item quantity="one">%d jakson kokonaiskoko laitteella</item>
+        <item quantity="other">%d jakson kokonaiskoko laitteella</item>
+    </plurals>
+    <plurals name="updated_feeds_batch_label">
+        <item quantity="one">%d tilaus päivitetty.</item>
+        <item quantity="other">%d tilausta päivitetty.</item>
+    </plurals>
+</resources>

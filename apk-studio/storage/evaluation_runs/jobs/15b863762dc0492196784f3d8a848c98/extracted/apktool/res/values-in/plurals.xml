@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="added_to_queue_message">
+        <item quantity="other">%d episode ditambahkan ke antrean.</item>
+    </plurals>
+    <plurals name="deleted_episode_message">
+        <item quantity="other">%d episode yang diunduh telah dihapus.</item>
+    </plurals>
+    <plurals name="downloading_episodes_message">
+        <item quantity="other">Mengunduh %d episode.</item>
+    </plurals>
+    <plurals name="downloads_left">
+        <item quantity="other">Sebanyak %d unduhan tersisa</item>
+    </plurals>
+    <plurals name="echo_hours_podcasts">
+        <item quantity="other">"jam episode
+dari %1$d siniar"</item>
+    </plurals>
+    <plurals name="echo_queue_hours_waiting">
+        <item quantity="other">"jam antrean
+dari %1$d episode"</item>
+    </plurals>
+    <plurals name="episode_cleanup_days_after_listening">
+        <item quantity="other">%d hari setelah didengarkan</item>
+    </plurals>
+    <plurals name="episode_cleanup_hours_after_listening">
+        <item quantity="other">%d jam setelah didengarkan</item>
+    </plurals>
+    <plurals name="marked_as_played_message">
+        <item quantity="other">%d episode telah ditandai sebagai telah diputar.</item>
+    </plurals>
+    <plurals name="marked_as_unplayed_message">
+        <item quantity="other">%d episode yang ditandai sebagai belum diputar.</item>
+    </plurals>
+    <plurals name="mobile_download_notice">
+        <item quantity="other">Mengunduh dengan data seluler selama %d menit ke depan</item>
+    </plurals>
+    <plurals name="move_to_bottom_message">
+        <item quantity="other">%d episode dipindahkan ke bagian bawah.</item>
+    </plurals>
+    <plurals name="move_to_top_message">
+        <item quantity="other">%d episode dipindahkan ke bagian atas.</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d notifikasi baru</item>
+        <item quantity="other">%d notifikasi baru</item>
+    </plurals>
+    <plurals name="new_episode_notification_message">
+        <item quantity="other">%2$s merilis %1$d episode baru</item>
+    </plurals>
+    <plurals name="new_episode_notification_title">
+        <item quantity="other">Episode baru</item>
+    </plurals>
+    <plurals name="num_episodes">
+        <item quantity="other">%d episode</item>
+    </plurals>
+    <plurals name="num_selected_label">
+        <item quantity="other">Terpilih sebanyak %1$d/%2$d</item>
+    </plurals>
+    <plurals name="num_subscriptions">
+        <item quantity="other">%d langganan</item>
+    </plurals>
+    <plurals name="removed_from_inbox_batch_label">
+        <item quantity="other">Sebanyak %d episode dihapus dari kotak masuk.</item>
+    </plurals>
+    <plurals name="removed_from_queue_message">
+        <item quantity="other">%d episode dihapus dari antrean.</item>
+    </plurals>
+    <plurals name="statistics_episodes_downloaded">
+        <item quantity="other">terunduh</item>
+    </plurals>
+    <plurals name="statistics_episodes_started">
+        <item quantity="other">dimulai</item>
+    </plurals>
+    <plurals name="statistics_episodes_total">
+        <item quantity="other">seluruh</item>
+    </plurals>
+    <plurals name="time_days_quantified">
+        <item quantity="other">%d hari</item>
+    </plurals>
+    <plurals name="time_hours_quantified">
+        <item quantity="other">%d jam</item>
+    </plurals>
+    <plurals name="time_minutes_quantified">
+        <item quantity="other">%d menit</item>
+    </plurals>
+    <plurals name="time_seconds_quantified">
+        <item quantity="other">%d detik</item>
+    </plurals>
+    <plurals name="total_size_downloaded_podcasts">
+        <item quantity="other">Ukuran seluruh %d episode pada perangkat ini</item>
+    </plurals>
+    <plurals name="updated_feeds_batch_label">
+        <item quantity="other">Sebanyak %d langganan dimutakhirkan.</item>
+    </plurals>
+</resources>

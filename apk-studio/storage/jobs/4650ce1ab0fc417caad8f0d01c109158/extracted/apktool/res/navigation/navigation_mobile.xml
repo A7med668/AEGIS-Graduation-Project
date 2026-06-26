@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/navigation_mobile" app:startDestination="@id/emptyFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include app:graph="@navigation/navigation_onboarding" />
+    <include app:graph="@navigation/navigation_review" />
+    <include app:graph="@navigation/navigation_appdetails" />
+    <include app:graph="@navigation/navigation_search" />
+    <include app:graph="@navigation/navigation_session_management" />
+    <include app:graph="@navigation/navigation_loyalty_club" />
+    <include app:graph="@navigation/payment" />
+    <include app:graph="@navigation/navigation_postpaid" />
+    <include app:graph="@navigation/navigation_postcomment" />
+    <include app:graph="@navigation/navigation_direct_debit" />
+    <include app:graph="@navigation/navigation_notification_center" />
+    <include app:graph="@navigation/navigation_my_review" />
+    <include app:graph="@navigation/navigation_discount_and_gift" />
+    <include app:graph="@navigation/navigation_subscription" />
+    <include app:graph="@navigation/navigation_badge" />
+    <include app:graph="@navigation/navigation_transaction" />
+    <include app:graph="@navigation/navigation_securityshield" />
+    <include app:graph="@navigation/navigation_editor_choice" />
+    <include app:graph="@navigation/navigation_user_profile" />
+    <include app:graph="@navigation/navigation_gender" />
+    <include app:graph="@navigation/navigation_bought_apps" />
+    <include app:graph="@navigation/navigation_bookmark" />
+    <include app:graph="@navigation/navigation_updatetab" />
+    <include app:graph="@navigation/navigation_birthdate" />
+    <include app:graph="@navigation/navigation_wallet" />
+    <include app:graph="@navigation/navigation_avatar" />
+    <include app:graph="@navigation/navigation_fehrest" />
+    <include app:graph="@navigation/navigation_setting" />
+    <include app:graph="@navigation/navigation_vpn" />
+    <include app:graph="@navigation/navigation_screenshot" />
+    <include app:graph="@navigation/navigation_nickname" />
+    <include app:graph="@navigation/navigation_release_note" />
+    <include app:graph="@navigation/navigation_kids" />
+    <include app:graph="@navigation/navigation_article" />
+    <include app:graph="@navigation/navigation_schedule_update" />
+    <include app:graph="@navigation/navigation_story" />
+    <include app:graph="@navigation/navigation_mybazaar" />
+    <include app:graph="@navigation/navigation_profile" />
+    <include app:graph="@navigation/navigation_tournament" />
+    <include app:graph="@navigation/navigation_ready_to_install" />
+    <include app:graph="@navigation/navigation_app_setting" />
+    <include app:graph="@navigation/navigation_mini_game" />
+    <include app:graph="@navigation/navigation_web_page" />
+    <include app:graph="@navigation/in_app_login" />
+    <include app:graph="@navigation/navigation_reels" />
+    <include app:graph="@navigation/navigation_event" />
+    <include app:graph="@navigation/navigation_magazine" />
+    <include app:graph="@navigation/navigation_content" />
+    <include app:graph="@navigation/navigation_installed_apps" />
+    <include app:graph="@navigation/navigation_downloaded_apps" />
+    <fragment android:label="EmptyFragment" android:name="com.farsitel.bazaar.component.EmptyFragment" android:id="@id/emptyFragment" />
+</navigation>

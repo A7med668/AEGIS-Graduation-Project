@@ -1,0 +1,5 @@
+filename,relative_path,package_name,label,expected_risk,category,source,notes,sha256,date_added
+fdroid.apk,evaluation/samples/permission_heavy/fdroid.apk,org.fdroid.fdroid,benign,low,app_store_like,F-Droid,Installer permissions expected for app store.,,
+telegram.apk,evaluation/samples/permission_heavy/telegram.apk,org.telegram.messenger,benign,medium,chat_like,Known app,Permission-heavy but expected for chat/calls.,,
+simple-file-manager.apk,evaluation/samples/permission_heavy/simple-file-manager.apk,unknown,benign,medium,file_manager_like,F-Droid,Storage permissions expected.,,
+fake-laser.apk,evaluation/samples/suspicious/fake-laser.apk,unknown,suspicious,high,generic,local_sample,Unknown/suspicious sample for demo.,,

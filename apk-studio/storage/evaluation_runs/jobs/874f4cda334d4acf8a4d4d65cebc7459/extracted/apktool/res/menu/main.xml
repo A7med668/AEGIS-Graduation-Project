@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/findAll" android:title="@string/findAll" android:showAsAction="never" />
+    <item android:icon="@drawable/ic_arrow_back_white_24dp" android:id="@id/back" android:title="@string/back" android:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_arrow_forward_white_24dp" android:id="@id/forward" android:title="@string/forward" android:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_add_white_24dp" android:id="@id/newNote" android:title="@string/newNote" android:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_save_white_24dp" android:id="@id/saveNote" android:title="@string/saveNote" android:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_folder_open_white_24dp" android:id="@id/openNote" android:title="@string/openNote" android:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_search_white_24dp" android:id="@id/search" android:title="@string/search" android:showAsAction="ifRoom|collapseActionView" android:actionViewClass="android.widget.SearchView" />
+    <item android:id="@id/saveAs" android:title="@string/saveAs" android:showAsAction="never" />
+    <item android:id="@id/openRecent" android:title="@string/openRecent" android:showAsAction="never">
+        <menu>
+            <item android:id="@id/fileItem" android:title="" android:showAsAction="never" />
+            <item android:id="@id/clearList" android:title="@string/clearList" android:showAsAction="never" />
+        </menu>
+    </item>
+    <item android:icon="@drawable/ic_print_white_24dp" android:id="@id/printNote" android:title="@string/print" android:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_share_white_24dp" android:id="@id/shareNote" android:title="@string/share" android:showAsAction="ifRoom" />
+    <item android:id="@id/addDate" android:title="@string/addDate" android:showAsAction="never" />
+    <item android:id="@id/addMedia" android:title="@string/addMedia" android:showAsAction="never" />
+    <item android:id="@id/backup" android:title="@string/backup" android:showAsAction="never" />
+</menu>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_tag" android:id="@id/edit_tags" android:menuCategory="container" android:title="@string/edit_tags" />
+    <item android:icon="@drawable/ic_delete" android:id="@id/remove_archive_feed" android:menuCategory="container" android:title="@string/remove_archive_feed_label" />
+    <item android:icon="@drawable/ic_refresh" android:id="@id/keep_updated" android:menuCategory="container" android:title="@string/keep_updated" />
+    <item android:icon="@drawable/ic_notifications" android:id="@id/notify_new_episodes" android:menuCategory="container" android:title="@string/episode_notification" />
+    <item android:icon="@drawable/ic_download" android:id="@id/autodownload" android:menuCategory="container" android:title="@string/auto_download_label" />
+    <item android:icon="@drawable/ic_delete_auto" android:id="@id/autoDeleteDownload" android:menuCategory="container" android:title="@string/pref_auto_delete_playback_title" />
+    <item android:icon="@drawable/ic_playback_speed" android:id="@id/playback_speed" android:menuCategory="container" android:title="@string/playback_speed" />
+</menu>

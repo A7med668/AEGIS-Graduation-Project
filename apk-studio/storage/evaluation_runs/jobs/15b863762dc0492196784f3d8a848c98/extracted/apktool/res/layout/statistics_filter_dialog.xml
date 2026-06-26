@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:id="@id/includeMarkedCheckbox" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" android:text="@string/statistics_include_marked" />
+    <LinearLayout android:orientation="vertical" android:id="@id/dateSelectionContainer" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:padding="4.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/statistics_from" android:layout_weight="1.0" />
+            <TextView android:padding="4.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/statistics_to" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Spinner android:id="@id/timeFromSpinner" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <Spinner android:id="@id/timeToSpinner" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/past_year_button" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/statistics_filter_past_year" android:layout_weight="1.0" android:layout_marginEnd="4.0dp" style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+            <Button android:id="@id/allTimeButton" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/statistics_filter_all_time" android:layout_weight="1.0" android:layout_marginStart="4.0dp" style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="@string/statistics_speed_not_counted" />
+</LinearLayout>

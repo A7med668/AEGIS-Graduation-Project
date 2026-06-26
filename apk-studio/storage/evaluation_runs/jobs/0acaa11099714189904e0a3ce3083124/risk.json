@@ -1,0 +1,345 @@
+{
+  "score": 42,
+  "level": "low",
+  "reasons": [
+    {
+      "code": "permission_signal",
+      "bucket": "permission",
+      "weight": 10,
+      "detail": "android.permission.SEND_SMS",
+      "evidence_ref": "static.permissions.android.permission.SEND_SMS"
+    },
+    {
+      "code": "permission_signal",
+      "bucket": "permission",
+      "weight": 4,
+      "detail": "android.permission.READ_CONTACTS",
+      "evidence_ref": "static.permissions.android.permission.READ_CONTACTS"
+    },
+    {
+      "code": "permission_signal",
+      "bucket": "permission",
+      "weight": 6,
+      "detail": "android.permission.READ_CALL_LOG",
+      "evidence_ref": "static.permissions.android.permission.READ_CALL_LOG"
+    },
+    {
+      "code": "permission_signal",
+      "bucket": "permission",
+      "weight": 1,
+      "detail": "android.permission.ACCESS_COARSE_LOCATION",
+      "evidence_ref": "static.permissions.android.permission.ACCESS_COARSE_LOCATION"
+    },
+    {
+      "code": "permission_bucket_cap",
+      "bucket": "calibration",
+      "weight": 0,
+      "detail": "Permission score capped from 21 to 16",
+      "evidence_ref": "static.permissions"
+    },
+    {
+      "code": "exported_components",
+      "bucket": "context",
+      "weight": 2,
+      "detail": "6 exported components",
+      "evidence_ref": "static.components.exported_count"
+    },
+    {
+      "code": "network_indicators",
+      "bucket": "context",
+      "weight": 1,
+      "detail": "2 domains found",
+      "evidence_ref": "static.network_indicators.domains"
+    },
+    {
+      "code": "cleartext_http_urls",
+      "bucket": "context",
+      "weight": 6,
+      "detail": "48 cleartext HTTP URLs found",
+      "evidence_ref": "static.network_indicators.urls"
+    },
+    {
+      "code": "webview_indicators",
+      "bucket": "context",
+      "weight": 4,
+      "detail": "5 WebView/JavaScript indicators",
+      "evidence_ref": "static.webview_indicators"
+    },
+    {
+      "code": "dynamic_code_loading",
+      "bucket": "context",
+      "weight": 6,
+      "detail": "2 dynamic-code indicators",
+      "evidence_ref": "static.dynamic_code_indicators",
+      "strong_evidence": false
+    },
+    {
+      "code": "dynamic_code_network_combo",
+      "bucket": "combo",
+      "weight": 10,
+      "detail": "Dynamic code indicators plus network indicators",
+      "evidence_ref": "static.dynamic_code_indicators",
+      "strong_evidence": true
+    },
+    {
+      "code": "crypto_indicators",
+      "bucket": "context",
+      "weight": 2,
+      "detail": "2 cryptography indicators",
+      "evidence_ref": "static.crypto_indicators"
+    }
+  ],
+  "risk_reasons": [
+    {
+      "code": "permission_signal",
+      "bucket": "permission",
+      "weight": 10,
+      "detail": "android.permission.SEND_SMS",
+      "evidence_ref": "static.permissions.android.permission.SEND_SMS"
+    },
+    {
+      "code": "permission_signal",
+      "bucket": "permission",
+      "weight": 4,
+      "detail": "android.permission.READ_CONTACTS",
+      "evidence_ref": "static.permissions.android.permission.READ_CONTACTS"
+    },
+    {
+      "code": "permission_signal",
+      "bucket": "permission",
+      "weight": 6,
+      "detail": "android.permission.READ_CALL_LOG",
+      "evidence_ref": "static.permissions.android.permission.READ_CALL_LOG"
+    },
+    {
+      "code": "permission_signal",
+      "bucket": "permission",
+      "weight": 1,
+      "detail": "android.permission.ACCESS_COARSE_LOCATION",
+      "evidence_ref": "static.permissions.android.permission.ACCESS_COARSE_LOCATION"
+    },
+    {
+      "code": "exported_components",
+      "bucket": "context",
+      "weight": 2,
+      "detail": "6 exported components",
+      "evidence_ref": "static.components.exported_count"
+    },
+    {
+      "code": "network_indicators",
+      "bucket": "context",
+      "weight": 1,
+      "detail": "2 domains found",
+      "evidence_ref": "static.network_indicators.domains"
+    },
+    {
+      "code": "cleartext_http_urls",
+      "bucket": "context",
+      "weight": 6,
+      "detail": "48 cleartext HTTP URLs found",
+      "evidence_ref": "static.network_indicators.urls"
+    },
+    {
+      "code": "webview_indicators",
+      "bucket": "context",
+      "weight": 4,
+      "detail": "5 WebView/JavaScript indicators",
+      "evidence_ref": "static.webview_indicators"
+    },
+    {
+      "code": "dynamic_code_loading",
+      "bucket": "context",
+      "weight": 6,
+      "detail": "2 dynamic-code indicators",
+      "evidence_ref": "static.dynamic_code_indicators",
+      "strong_evidence": false
+    },
+    {
+      "code": "dynamic_code_network_combo",
+      "bucket": "combo",
+      "weight": 10,
+      "detail": "Dynamic code indicators plus network indicators",
+      "evidence_ref": "static.dynamic_code_indicators",
+      "strong_evidence": true
+    },
+    {
+      "code": "crypto_indicators",
+      "bucket": "context",
+      "weight": 2,
+      "detail": "2 cryptography indicators",
+      "evidence_ref": "static.crypto_indicators"
+    }
+  ],
+  "informational_observations": [
+    {
+      "code": "permission_bucket_cap",
+      "bucket": "calibration",
+      "weight": 0,
+      "detail": "Permission score capped from 21 to 16",
+      "evidence_ref": "static.permissions"
+    }
+  ],
+  "risk_reason_groups": [
+    {
+      "group": "permission_signals",
+      "title": "Sensitive permissions present",
+      "bucket": "permission",
+      "count": 4,
+      "total_weight": 21,
+      "strong_evidence": false,
+      "examples": [
+        "android.permission.SEND_SMS",
+        "android.permission.READ_CONTACTS",
+        "android.permission.READ_CALL_LOG",
+        "android.permission.ACCESS_COARSE_LOCATION"
+      ],
+      "evidence_refs": [
+        "static.permissions.android.permission.SEND_SMS",
+        "static.permissions.android.permission.READ_CONTACTS",
+        "static.permissions.android.permission.READ_CALL_LOG",
+        "static.permissions.android.permission.ACCESS_COARSE_LOCATION"
+      ]
+    },
+    {
+      "group": "context:exported_components",
+      "title": "6 Exported Components",
+      "bucket": "context",
+      "count": 1,
+      "total_weight": 2,
+      "strong_evidence": false,
+      "examples": [
+        "6 exported components"
+      ],
+      "evidence_refs": [
+        "static.components.exported_count"
+      ]
+    },
+    {
+      "group": "context:network_indicators",
+      "title": "2 Domains Found",
+      "bucket": "context",
+      "count": 1,
+      "total_weight": 1,
+      "strong_evidence": false,
+      "examples": [
+        "2 domains found"
+      ],
+      "evidence_refs": [
+        "static.network_indicators.domains"
+      ]
+    },
+    {
+      "group": "context:cleartext_http_urls",
+      "title": "48 Cleartext Http Urls Found",
+      "bucket": "context",
+      "count": 1,
+      "total_weight": 6,
+      "strong_evidence": false,
+      "examples": [
+        "48 cleartext HTTP URLs found"
+      ],
+      "evidence_refs": [
+        "static.network_indicators.urls"
+      ]
+    },
+    {
+      "group": "context:webview_indicators",
+      "title": "5 Webview/Javascript Indicators",
+      "bucket": "context",
+      "count": 1,
+      "total_weight": 4,
+      "strong_evidence": false,
+      "examples": [
+        "5 WebView/JavaScript indicators"
+      ],
+      "evidence_refs": [
+        "static.webview_indicators"
+      ]
+    },
+    {
+      "group": "context:dynamic_code_loading",
+      "title": "2 Dynamic-Code Indicators",
+      "bucket": "context",
+      "count": 1,
+      "total_weight": 6,
+      "strong_evidence": false,
+      "examples": [
+        "2 dynamic-code indicators"
+      ],
+      "evidence_refs": [
+        "static.dynamic_code_indicators"
+      ]
+    },
+    {
+      "group": "combo:dynamic_code_network_combo",
+      "title": "Dynamic Code Indicators Plus Network Indicators",
+      "bucket": "combo",
+      "count": 1,
+      "total_weight": 10,
+      "strong_evidence": true,
+      "examples": [
+        "Dynamic code indicators plus network indicators"
+      ],
+      "evidence_refs": [
+        "static.dynamic_code_indicators"
+      ]
+    },
+    {
+      "group": "context:crypto_indicators",
+      "title": "2 Cryptography Indicators",
+      "bucket": "context",
+      "count": 1,
+      "total_weight": 2,
+      "strong_evidence": false,
+      "examples": [
+        "2 cryptography indicators"
+      ],
+      "evidence_refs": [
+        "static.crypto_indicators"
+      ]
+    }
+  ],
+  "risk_reason_count": 11,
+  "risk_reason_group_count": 8,
+  "observation_count": 1,
+  "total_reason_entries": 12,
+  "verdict_note": "Some entries are informational runtime observations and calibration notes; they explain context but are not independent malicious proofs.",
+  "score_breakdown": {
+    "permission_score_raw": 21,
+    "permission_score_capped": 16,
+    "permission_score_cap": 16,
+    "context_score": 21,
+    "combo_score": 5,
+    "dynamic_score_raw": 0,
+    "dynamic_score_capped": 0,
+    "dynamic_score_cap": 3,
+    "dynamic_generic_only": true,
+    "dynamic_high_or_critical_count": 0,
+    "dynamic_c2_like_count": 0,
+    "score_before_profile": 42,
+    "app_profile": "generic",
+    "expected_permission_reduction": 0,
+    "score_after_profile": 42,
+    "strong_evidence": true,
+    "hard_strong_evidence": false,
+    "hard_strong_evidence_count": 0,
+    "soft_strong_only": true,
+    "critical_calibration_applied": false,
+    "permission_reason_count": 4,
+    "combo_reason_count": 1,
+    "risk_reason_count": 11,
+    "risk_reason_group_count": 8,
+    "observation_count": 1,
+    "permission_heavy_downgrade_applied": false,
+    "high_risk_gate_applied": false
+  },
+  "calibration": {
+    "profile": "v4.7.2_false_positive_resistant_calibration",
+    "high_threshold": 88,
+    "critical_threshold": 96,
+    "permission_score_cap": 16,
+    "dynamic_generic_score_cap": 3,
+    "note": "False-positive resistant calibration: permissions, domains, exported components, and soft static indicators cannot produce Critical 100% without hard malicious evidence."
+  },
+  "summary": "Rule score 42/100 (low). Risk groups: 8; observations: 1"
+}

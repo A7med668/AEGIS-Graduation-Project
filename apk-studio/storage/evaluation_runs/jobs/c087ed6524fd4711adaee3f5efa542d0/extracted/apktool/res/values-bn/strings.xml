@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_mode_done">হয়ে গেছে</string>
+    <string name="abc_capital_off">বন্ধ আছে</string>
+    <string name="abc_capital_on">চালু করুন</string>
+    <string name="abc_search_hint">সার্চ করুন…</string>
+    <string name="abc_searchview_description_clear">কোয়েরি মুছে ফেলুন</string>
+    <string name="abc_searchview_description_search">সার্চ করুন</string>
+    <string name="abc_searchview_description_submit">কোয়েরি জমা দিন</string>
+    <string name="abc_searchview_description_voice">ভয়েস সার্চ করুন</string>
+    <string name="abc_toolbar_collapse_description">সঙ্কুচিত করুন</string>
+    <string name="bottomsheet_drag_handle_content_description">টেনে আনার হ্যান্ডেল</string>
+    <string name="close_drawer">নেভিগেশন মেনু বন্ধ করুন</string>
+    <string name="close_sheet">শিট বন্ধ করুন</string>
+    <string name="default_error_message">ভুল ইনপুট</string>
+    <string name="default_popup_window_title">পপ-আপ উইন্ডো</string>
+    <string name="error_a11y_label">সমস্যা: সঠিক নয়</string>
+    <string name="glance_error_layout_text_v2">কন্টেন্ট দেখানো যাচ্ছে না</string>
+    <string name="in_progress">কাজ চলছে</string>
+    <string name="indeterminate">কয়েকটি বিকল্প বেছে নেওয়া হয়েছে</string>
+    <string name="m3_adaptive_default_pane_title_primary">প্রাথমিক প্যানেল</string>
+    <string name="m3_adaptive_default_pane_title_secondary">সেকেন্ডারি প্যানেল</string>
+    <string name="m3_adaptive_default_pane_title_tertiary">টার্শিয়ারি প্যানেল</string>
+    <string name="m3_loading_indicator_content_description">লোড করা হচ্ছে</string>
+    <string name="m3c_bottom_sheet_collapse_description">স্ক্রিনের নিচে অ্যাটাচ করা শিট আড়াল করুন</string>
+    <string name="m3c_bottom_sheet_dismiss_description">স্ক্রিনের নিচে অ্যাটাচ করা শিট বাতিল করুন</string>
+    <string name="m3c_bottom_sheet_drag_handle_description">টেনে আনার হ্যান্ডেল</string>
+    <string name="m3c_bottom_sheet_expand_description">স্ক্রিনের নিচে অ্যাটাচ করা শিট বড় করুন</string>
+    <string name="m3c_bottom_sheet_pane_title">স্ক্রিনের নিচে অ্যাটাচ করা শিট</string>
+    <string name="m3c_snackbar_pane_title">সতর্কতা</string>
+    <string name="mtrl_button_snackbar_close_content_description">বন্ধ করুন</string>
+    <string name="navigation_menu">নেভিগেশন মেনু</string>
+    <string name="not_selected">বেছে নেওয়া হয়নি</string>
+    <string name="password_toggle_content_description">পাসওয়ার্ড দেখান</string>
+    <string name="selected">বেছে নেওয়া হয়েছে</string>
+    <string name="state_empty">ফাঁকা</string>
+    <string name="state_off">বন্ধ আছে</string>
+    <string name="state_on">চালু আছে</string>
+    <string name="switch_role">সুইচ</string>
+    <string name="tab">ট্যাব</string>
+    <string name="template_percent">%1$d শতাংশ।</string>
+    <string name="tooltip_description">টুলটিপ</string>
+    <string name="tooltip_label">টুলটিপ দেখুন</string>
+</resources>

@@ -1,0 +1,62 @@
+ACTIVITY MANAGER SERVICES (dumpsys activity services)
+  Last ANR service:
+ServiceRecord{b8ef77e u0 com.android.systemui/.keyguard.KeyguardService}
+    intent={cmp=com.android.systemui/.keyguard.KeyguardService}
+    packageName=com.android.systemui
+    processName=com.android.systemui
+    baseDir=/system_ext/priv-app/SystemUIGoogle/SystemUIGoogle.apk
+    dataDir=/data/user_de/0/com.android.systemui
+    app=ProcessRecord{4276ff9 783:com.android.systemui/u0a163}
+    mAllowWhileInUsePermissionInFgsReason=PROC_STATE_PERSISTENT
+    allowUiJobScheduling=false
+    recentCallingPackage=android
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: android; callingUid: 1000; uidState: PER ; uidBFSL: [BFSL]; intent: Intent { flg=0x100 cmp=com.android.systemui/.keyguard.KeyguardService }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<null>; targetSdkVersion:34; callerTargetSdkVersion:34; startForegroundCount:0; bindFromPackage:null: isBindService:true]
+    createTime=-20s41ms startingBgTimeout=--
+    lastActivity=-20s40ms restartTime=-20s40ms createdFromFg=true
+    executeNesting=2 executeFg=true executingStart=-20s38ms
+    Bindings:
+    * IntentBindRecord{72939a8 CREATE}:
+      intent={flg=0x100 cmp=com.android.systemui/.keyguard.KeyguardService}
+      binder=null
+      requested=true received=false hasBound=true doRebind=false
+      * Client AppBindRecord{c0eecc1 ProcessRecord{3000b71 562:system/1000}}
+        Per-process Connections:
+          ConnectionRecord{71df539 u0 CR com.android.systemui/.keyguard.KeyguardService:@f95b900 flags=0x1}
+    All Connections:
+      ConnectionRecord{71df539 u0 CR com.android.systemui/.keyguard.KeyguardService:@f95b900 flags=0x1}
+
+  User 0 active services:
+  * ServiceRecord{4438e86 u0 com.uptodown/.gcm.MyFirebaseMessagingService}
+    intent={act=com.google.firebase.MESSAGING_EVENT pkg=com.uptodown}
+    packageName=com.uptodown
+    processName=com.uptodown
+    baseDir=/data/app/~~9BN075oR-WHp1Fbaf-uw0Q==/com.uptodown-Q4nmdBM2sydsbnezA0pBUw==/base.apk
+    dataDir=/data/user/0/com.uptodown
+    app=ProcessRecord{3bb2b35 5391:com.uptodown/u0a190}
+    mAllowWhileInUsePermissionInFgsReason=ACTIVITY_STARTER
+    allowUiJobScheduling=false
+    recentCallingPackage=com.uptodown
+    recentCallingUid=10190
+    allowStartForeground=ACTIVITY_STARTER
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: com.uptodown; callingUid: 10190; uidState: TRNB; uidBFSL: n/a; intent: Intent { act=com.google.firebase.MESSAGING_EVENT pkg=com.uptodown }; code:ACTIVITY_STARTER; tempAllowListReason:<null>; targetSdkVersion:35; callerTargetSdkVersion:35; startForegroundCount:0; bindFromPackage:null: isBindService:true]
+    createTime=-23s939ms startingBgTimeout=--
+    lastActivity=-23s935ms restartTime=-23s935ms createdFromFg=true
+    Bindings:
+    * IntentBindRecord{7f7e566 CREATE}:
+      intent={act=com.google.firebase.MESSAGING_EVENT pkg=com.uptodown}
+      binder=android.os.BinderProxy@f55f0a7
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{f148954 ProcessRecord{3bb2b35 5391:com.uptodown/u0a190}}
+        Per-process Connections:
+          ConnectionRecord{1c9e361 u0 CR IMP com.uptodown/.gcm.MyFirebaseMessagingService:@3f166c8 flags=0x41}
+    All Connections:
+      ConnectionRecord{1c9e361 u0 CR IMP com.uptodown/.gcm.MyFirebaseMessagingService:@3f166c8 flags=0x41}
+
+  Connection bindings to services:
+  * ConnectionRecord{1c9e361 u0 CR IMP com.uptodown/.gcm.MyFirebaseMessagingService:@3f166c8 flags=0x41}
+    binding=AppBindRecord{f148954 com.uptodown/.gcm.MyFirebaseMessagingService:com.uptodown}
+    conn=android.os.BinderProxy@3f166c8 flags=0x41

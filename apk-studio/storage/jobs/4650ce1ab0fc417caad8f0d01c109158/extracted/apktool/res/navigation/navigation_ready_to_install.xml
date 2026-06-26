@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/navigation_ready_to_install" app:startDestination="@id/readyToInstallFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="ReadyToInstallFragment" android:name="com.farsitel.bazaar.readytoinstall.view.ReadyToInstallFragment" android:id="@id/readyToInstallFragment">
+        <deepLink app:uri="@string/deeplink_ready_to_install_apps" />
+    </fragment>
+</navigation>

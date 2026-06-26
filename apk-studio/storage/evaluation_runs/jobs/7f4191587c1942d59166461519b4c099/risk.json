@@ -1,0 +1,354 @@
+{
+  "score": 47,
+  "level": "medium",
+  "reasons": [
+    {
+      "code": "permission_signal",
+      "bucket": "permission",
+      "weight": 5,
+      "detail": "android.permission.RECORD_AUDIO",
+      "evidence_ref": "static.permissions.android.permission.RECORD_AUDIO"
+    },
+    {
+      "code": "permission_signal",
+      "bucket": "permission",
+      "weight": 4,
+      "detail": "android.permission.QUERY_ALL_PACKAGES",
+      "evidence_ref": "static.permissions.android.permission.QUERY_ALL_PACKAGES"
+    },
+    {
+      "code": "exported_components",
+      "bucket": "context",
+      "weight": 2,
+      "detail": "7 exported components",
+      "evidence_ref": "static.components.exported_count"
+    },
+    {
+      "code": "network_indicators",
+      "bucket": "context",
+      "weight": 1,
+      "detail": "13 domains found",
+      "evidence_ref": "static.network_indicators.domains"
+    },
+    {
+      "code": "cleartext_http_urls",
+      "bucket": "context",
+      "weight": 6,
+      "detail": "323 cleartext HTTP URLs found",
+      "evidence_ref": "static.network_indicators.urls"
+    },
+    {
+      "code": "native_code",
+      "bucket": "context",
+      "weight": 4,
+      "detail": "8 native libraries",
+      "evidence_ref": "static.native_libraries"
+    },
+    {
+      "code": "webview_indicators",
+      "bucket": "context",
+      "weight": 4,
+      "detail": "18 WebView/JavaScript indicators",
+      "evidence_ref": "static.webview_indicators"
+    },
+    {
+      "code": "dynamic_code_loading",
+      "bucket": "context",
+      "weight": 6,
+      "detail": "2 dynamic-code indicators",
+      "evidence_ref": "static.dynamic_code_indicators",
+      "strong_evidence": false
+    },
+    {
+      "code": "dynamic_code_network_combo",
+      "bucket": "combo",
+      "weight": 10,
+      "detail": "Dynamic code indicators plus network indicators",
+      "evidence_ref": "static.dynamic_code_indicators",
+      "strong_evidence": true
+    },
+    {
+      "code": "anti_analysis_indicators",
+      "bucket": "context",
+      "weight": 8,
+      "detail": "9 anti-analysis/emulator indicators",
+      "evidence_ref": "static.anti_analysis_indicators"
+    },
+    {
+      "code": "crypto_indicators",
+      "bucket": "context",
+      "weight": 2,
+      "detail": "2 cryptography indicators",
+      "evidence_ref": "static.crypto_indicators"
+    }
+  ],
+  "risk_reasons": [
+    {
+      "code": "permission_signal",
+      "bucket": "permission",
+      "weight": 5,
+      "detail": "android.permission.RECORD_AUDIO",
+      "evidence_ref": "static.permissions.android.permission.RECORD_AUDIO"
+    },
+    {
+      "code": "permission_signal",
+      "bucket": "permission",
+      "weight": 4,
+      "detail": "android.permission.QUERY_ALL_PACKAGES",
+      "evidence_ref": "static.permissions.android.permission.QUERY_ALL_PACKAGES"
+    },
+    {
+      "code": "exported_components",
+      "bucket": "context",
+      "weight": 2,
+      "detail": "7 exported components",
+      "evidence_ref": "static.components.exported_count"
+    },
+    {
+      "code": "network_indicators",
+      "bucket": "context",
+      "weight": 1,
+      "detail": "13 domains found",
+      "evidence_ref": "static.network_indicators.domains"
+    },
+    {
+      "code": "cleartext_http_urls",
+      "bucket": "context",
+      "weight": 6,
+      "detail": "323 cleartext HTTP URLs found",
+      "evidence_ref": "static.network_indicators.urls"
+    },
+    {
+      "code": "native_code",
+      "bucket": "context",
+      "weight": 4,
+      "detail": "8 native libraries",
+      "evidence_ref": "static.native_libraries"
+    },
+    {
+      "code": "webview_indicators",
+      "bucket": "context",
+      "weight": 4,
+      "detail": "18 WebView/JavaScript indicators",
+      "evidence_ref": "static.webview_indicators"
+    },
+    {
+      "code": "dynamic_code_loading",
+      "bucket": "context",
+      "weight": 6,
+      "detail": "2 dynamic-code indicators",
+      "evidence_ref": "static.dynamic_code_indicators",
+      "strong_evidence": false
+    },
+    {
+      "code": "dynamic_code_network_combo",
+      "bucket": "combo",
+      "weight": 10,
+      "detail": "Dynamic code indicators plus network indicators",
+      "evidence_ref": "static.dynamic_code_indicators",
+      "strong_evidence": true
+    },
+    {
+      "code": "anti_analysis_indicators",
+      "bucket": "context",
+      "weight": 8,
+      "detail": "9 anti-analysis/emulator indicators",
+      "evidence_ref": "static.anti_analysis_indicators"
+    },
+    {
+      "code": "crypto_indicators",
+      "bucket": "context",
+      "weight": 2,
+      "detail": "2 cryptography indicators",
+      "evidence_ref": "static.crypto_indicators"
+    }
+  ],
+  "informational_observations": [],
+  "risk_reason_groups": [
+    {
+      "group": "permission_signals",
+      "title": "Sensitive permissions present",
+      "bucket": "permission",
+      "count": 2,
+      "total_weight": 9,
+      "strong_evidence": false,
+      "examples": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.QUERY_ALL_PACKAGES"
+      ],
+      "evidence_refs": [
+        "static.permissions.android.permission.RECORD_AUDIO",
+        "static.permissions.android.permission.QUERY_ALL_PACKAGES"
+      ]
+    },
+    {
+      "group": "context:exported_components",
+      "title": "7 Exported Components",
+      "bucket": "context",
+      "count": 1,
+      "total_weight": 2,
+      "strong_evidence": false,
+      "examples": [
+        "7 exported components"
+      ],
+      "evidence_refs": [
+        "static.components.exported_count"
+      ]
+    },
+    {
+      "group": "context:network_indicators",
+      "title": "13 Domains Found",
+      "bucket": "context",
+      "count": 1,
+      "total_weight": 1,
+      "strong_evidence": false,
+      "examples": [
+        "13 domains found"
+      ],
+      "evidence_refs": [
+        "static.network_indicators.domains"
+      ]
+    },
+    {
+      "group": "context:cleartext_http_urls",
+      "title": "323 Cleartext Http Urls Found",
+      "bucket": "context",
+      "count": 1,
+      "total_weight": 6,
+      "strong_evidence": false,
+      "examples": [
+        "323 cleartext HTTP URLs found"
+      ],
+      "evidence_refs": [
+        "static.network_indicators.urls"
+      ]
+    },
+    {
+      "group": "context:native_code",
+      "title": "8 Native Libraries",
+      "bucket": "context",
+      "count": 1,
+      "total_weight": 4,
+      "strong_evidence": false,
+      "examples": [
+        "8 native libraries"
+      ],
+      "evidence_refs": [
+        "static.native_libraries"
+      ]
+    },
+    {
+      "group": "context:webview_indicators",
+      "title": "18 Webview/Javascript Indicators",
+      "bucket": "context",
+      "count": 1,
+      "total_weight": 4,
+      "strong_evidence": false,
+      "examples": [
+        "18 WebView/JavaScript indicators"
+      ],
+      "evidence_refs": [
+        "static.webview_indicators"
+      ]
+    },
+    {
+      "group": "context:dynamic_code_loading",
+      "title": "2 Dynamic-Code Indicators",
+      "bucket": "context",
+      "count": 1,
+      "total_weight": 6,
+      "strong_evidence": false,
+      "examples": [
+        "2 dynamic-code indicators"
+      ],
+      "evidence_refs": [
+        "static.dynamic_code_indicators"
+      ]
+    },
+    {
+      "group": "combo:dynamic_code_network_combo",
+      "title": "Dynamic Code Indicators Plus Network Indicators",
+      "bucket": "combo",
+      "count": 1,
+      "total_weight": 10,
+      "strong_evidence": true,
+      "examples": [
+        "Dynamic code indicators plus network indicators"
+      ],
+      "evidence_refs": [
+        "static.dynamic_code_indicators"
+      ]
+    },
+    {
+      "group": "context:anti_analysis_indicators",
+      "title": "9 Anti-Analysis/Emulator Indicators",
+      "bucket": "context",
+      "count": 1,
+      "total_weight": 8,
+      "strong_evidence": false,
+      "examples": [
+        "9 anti-analysis/emulator indicators"
+      ],
+      "evidence_refs": [
+        "static.anti_analysis_indicators"
+      ]
+    },
+    {
+      "group": "context:crypto_indicators",
+      "title": "2 Cryptography Indicators",
+      "bucket": "context",
+      "count": 1,
+      "total_weight": 2,
+      "strong_evidence": false,
+      "examples": [
+        "2 cryptography indicators"
+      ],
+      "evidence_refs": [
+        "static.crypto_indicators"
+      ]
+    }
+  ],
+  "risk_reason_count": 11,
+  "risk_reason_group_count": 10,
+  "observation_count": 0,
+  "total_reason_entries": 11,
+  "verdict_note": "Risk score is based on the listed contributing evidence groups.",
+  "score_breakdown": {
+    "permission_score_raw": 9,
+    "permission_score_capped": 9,
+    "permission_score_cap": 16,
+    "context_score": 33,
+    "combo_score": 5,
+    "dynamic_score_raw": 0,
+    "dynamic_score_capped": 0,
+    "dynamic_score_cap": 3,
+    "dynamic_generic_only": true,
+    "dynamic_high_or_critical_count": 0,
+    "dynamic_c2_like_count": 0,
+    "score_before_profile": 47,
+    "app_profile": "generic",
+    "expected_permission_reduction": 0,
+    "score_after_profile": 47,
+    "strong_evidence": true,
+    "hard_strong_evidence": false,
+    "hard_strong_evidence_count": 0,
+    "soft_strong_only": true,
+    "critical_calibration_applied": false,
+    "permission_reason_count": 2,
+    "combo_reason_count": 1,
+    "risk_reason_count": 11,
+    "risk_reason_group_count": 10,
+    "observation_count": 0,
+    "permission_heavy_downgrade_applied": false,
+    "high_risk_gate_applied": false
+  },
+  "calibration": {
+    "profile": "v4.7.2_false_positive_resistant_calibration",
+    "high_threshold": 88,
+    "critical_threshold": 96,
+    "permission_score_cap": 16,
+    "dynamic_generic_score_cap": 3,
+    "note": "False-positive resistant calibration: permissions, domains, exported components, and soft static indicators cannot produce Critical 100% without hard malicious evidence."
+  },
+  "summary": "Rule score 47/100 (medium). Risk groups: 10; observations: 0"
+}

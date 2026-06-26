@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="about">About</string>
+    <string name="access">Access all files</string>
+    <string name="addDate">Add date</string>
+    <string name="addLink">Add link</string>
+    <string name="addMedia">Add media…</string>
+    <string name="appName">Notes</string>
+    <string name="back">Back</string>
+    <string name="backup">Backup…</string>
+    <string name="built">Built %s</string>
+    <string name="cancel">Cancel</string>
+    <string name="changedOverwrite">This file has changed, do you want to overwrite it?</string>
+    <string name="changedReload">This file has changed, do you want to reload it?</string>
+    <string name="choose">Choose a file name</string>
+    <string name="clearList">Clear list</string>
+    <string name="complete">Backup complete</string>
+    <string name="copyright">Copyright © 2020 <a href="https://billthefarmer.github.io">Bill Farmer</a>"
+
+Markdown view by "<a href="https://github.com/falnatsheh/MarkdownView">Markdown View</a>, German translation by <a href="https://github.com/mondlicht-und-sterne">mondstern</a>, Brazilian Portuguese translation by <a href="https://github.com/aevw">aevw</a>, Finnish translation by <a href="https://github.com/Rigo-V">Rigo-V</a>, Turkish translation by <a href="https://github.com/berkaygunduzz">Berkay Gündüz</a> </string>
+    <string name="discard">Discard</string>
+    <string name="editScript">Edit script…</string>
+    <string name="editStyles">Edit styles…</string>
+    <string name="files">Files</string>
+    <string name="findAll">Find all…</string>
+    <string name="folder">Folder</string>
+    <string name="forward">Forward</string>
+    <string name="licence">Licence <a href="https://www.gnu.org/licenses/gpl.txt">GNU GPLv3</a> </string>
+    <string name="loading">Loading…</string>
+    <string name="manageFiles"><p>In order to have access to the <b>Notes</b> and other folders <b>Notes</b> must use the <b>Files</b> or <b>All files access</b> permission depending upon the version of Android. If this is not allowed the app may still be able to access files using the <b>Storage</b> button in the file chooser.</p></string>
+    <string name="media">Media</string>
+    <string name="modified">You have unsaved changes. Do you want to save your changes?</string>
+    <string name="name">Name</string>
+    <string name="newNote">New note</string>
+    <string name="new_note_name">New note name template</string>
+    <string name="ok">OK</string>
+    <string name="openNote">Open</string>
+    <string name="openRecent">Open recent</string>
+    <string name="overwrite">Overwrite</string>
+    <string name="pref_about_summ"><a href="https://github.com/billthefarmer/notes/releases/latest">Version %s</a></string>
+    <string name="pref_external">Browser</string>
+    <string name="pref_external_summ">Use browser for external links</string>
+    <string name="pref_name">Default note name</string>
+    <string name="pref_new_name">New note name</string>
+    <string name="pref_new_template_summ">Use template for new note name</string>
+    <string name="pref_template_file">New note template file</string>
+    <string name="pref_theme_summ">%s</string>
+    <string name="pref_use_template">Use template</string>
+    <string name="pref_use_template_summ">Use template for new notes</string>
+    <string name="print">Print…</string>
+    <string name="reload">Reload</string>
+    <string name="saveAs">Save as…</string>
+    <string name="saveNote">Save</string>
+    <string name="search">Search…</string>
+    <string name="settings">Settings</string>
+    <string name="share">Share…</string>
+    <string name="start">Start backup</string>
+    <string name="storage">Storage</string>
+    <string name="template">New note template</string>
+    <string name="theme">Theme</string>
+</resources>

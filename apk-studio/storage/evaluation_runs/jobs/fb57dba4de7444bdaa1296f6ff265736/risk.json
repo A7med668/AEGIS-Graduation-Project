@@ -1,0 +1,194 @@
+{
+  "score": 16,
+  "level": "low",
+  "reasons": [
+    {
+      "code": "exported_components",
+      "bucket": "context",
+      "weight": 1,
+      "detail": "1 exported components",
+      "evidence_ref": "static.components.exported_count"
+    },
+    {
+      "code": "cleartext_http_urls",
+      "bucket": "context",
+      "weight": 6,
+      "detail": "74 cleartext HTTP URLs found",
+      "evidence_ref": "static.network_indicators.urls"
+    },
+    {
+      "code": "native_code",
+      "bucket": "context",
+      "weight": 4,
+      "detail": "7 native libraries",
+      "evidence_ref": "static.native_libraries"
+    },
+    {
+      "code": "webview_indicators",
+      "bucket": "context",
+      "weight": 4,
+      "detail": "4 WebView/JavaScript indicators",
+      "evidence_ref": "static.webview_indicators"
+    },
+    {
+      "code": "crypto_indicators",
+      "bucket": "context",
+      "weight": 1,
+      "detail": "1 cryptography indicators",
+      "evidence_ref": "static.crypto_indicators"
+    }
+  ],
+  "risk_reasons": [
+    {
+      "code": "exported_components",
+      "bucket": "context",
+      "weight": 1,
+      "detail": "1 exported components",
+      "evidence_ref": "static.components.exported_count"
+    },
+    {
+      "code": "cleartext_http_urls",
+      "bucket": "context",
+      "weight": 6,
+      "detail": "74 cleartext HTTP URLs found",
+      "evidence_ref": "static.network_indicators.urls"
+    },
+    {
+      "code": "native_code",
+      "bucket": "context",
+      "weight": 4,
+      "detail": "7 native libraries",
+      "evidence_ref": "static.native_libraries"
+    },
+    {
+      "code": "webview_indicators",
+      "bucket": "context",
+      "weight": 4,
+      "detail": "4 WebView/JavaScript indicators",
+      "evidence_ref": "static.webview_indicators"
+    },
+    {
+      "code": "crypto_indicators",
+      "bucket": "context",
+      "weight": 1,
+      "detail": "1 cryptography indicators",
+      "evidence_ref": "static.crypto_indicators"
+    }
+  ],
+  "informational_observations": [],
+  "risk_reason_groups": [
+    {
+      "group": "context:exported_components",
+      "title": "1 Exported Components",
+      "bucket": "context",
+      "count": 1,
+      "total_weight": 1,
+      "strong_evidence": false,
+      "examples": [
+        "1 exported components"
+      ],
+      "evidence_refs": [
+        "static.components.exported_count"
+      ]
+    },
+    {
+      "group": "context:cleartext_http_urls",
+      "title": "74 Cleartext Http Urls Found",
+      "bucket": "context",
+      "count": 1,
+      "total_weight": 6,
+      "strong_evidence": false,
+      "examples": [
+        "74 cleartext HTTP URLs found"
+      ],
+      "evidence_refs": [
+        "static.network_indicators.urls"
+      ]
+    },
+    {
+      "group": "context:native_code",
+      "title": "7 Native Libraries",
+      "bucket": "context",
+      "count": 1,
+      "total_weight": 4,
+      "strong_evidence": false,
+      "examples": [
+        "7 native libraries"
+      ],
+      "evidence_refs": [
+        "static.native_libraries"
+      ]
+    },
+    {
+      "group": "context:webview_indicators",
+      "title": "4 Webview/Javascript Indicators",
+      "bucket": "context",
+      "count": 1,
+      "total_weight": 4,
+      "strong_evidence": false,
+      "examples": [
+        "4 WebView/JavaScript indicators"
+      ],
+      "evidence_refs": [
+        "static.webview_indicators"
+      ]
+    },
+    {
+      "group": "context:crypto_indicators",
+      "title": "1 Cryptography Indicators",
+      "bucket": "context",
+      "count": 1,
+      "total_weight": 1,
+      "strong_evidence": false,
+      "examples": [
+        "1 cryptography indicators"
+      ],
+      "evidence_refs": [
+        "static.crypto_indicators"
+      ]
+    }
+  ],
+  "risk_reason_count": 5,
+  "risk_reason_group_count": 5,
+  "observation_count": 0,
+  "total_reason_entries": 5,
+  "verdict_note": "Risk score is based on the listed contributing evidence groups.",
+  "score_breakdown": {
+    "permission_score_raw": 0,
+    "permission_score_capped": 0,
+    "permission_score_cap": 16,
+    "context_score": 16,
+    "combo_score": 0,
+    "dynamic_score_raw": 0,
+    "dynamic_score_capped": 0,
+    "dynamic_score_cap": 3,
+    "dynamic_generic_only": true,
+    "dynamic_high_or_critical_count": 0,
+    "dynamic_c2_like_count": 0,
+    "score_before_profile": 16,
+    "app_profile": "generic",
+    "expected_permission_reduction": 0,
+    "score_after_profile": 16,
+    "strong_evidence": false,
+    "hard_strong_evidence": false,
+    "hard_strong_evidence_count": 0,
+    "soft_strong_only": false,
+    "critical_calibration_applied": false,
+    "permission_reason_count": 0,
+    "combo_reason_count": 0,
+    "risk_reason_count": 5,
+    "risk_reason_group_count": 5,
+    "observation_count": 0,
+    "permission_heavy_downgrade_applied": false,
+    "high_risk_gate_applied": false
+  },
+  "calibration": {
+    "profile": "v4.7.2_false_positive_resistant_calibration",
+    "high_threshold": 88,
+    "critical_threshold": 96,
+    "permission_score_cap": 16,
+    "dynamic_generic_score_cap": 3,
+    "note": "False-positive resistant calibration: permissions, domains, exported components, and soft static indicators cannot produce Critical 100% without hard malicious evidence."
+  },
+  "summary": "Rule score 16/100 (low). Risk groups: 5; observations: 0"
+}

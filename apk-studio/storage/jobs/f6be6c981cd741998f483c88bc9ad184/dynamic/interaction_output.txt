@@ -1,0 +1,33 @@
+  bash arg: -p
+  bash arg: com.uptodown
+  bash arg: -c
+  bash arg: android.intent.category.LAUNCHER
+  bash arg: 1
+Events injected: 1
+## Network stats: elapsed time=607ms (0ms mobile, 0ms wifi, 607ms not connected)
+
+$ adb shell input keyevent 82
+
+$ adb shell input tap 540 1600
+
+$ adb shell input swipe 540 1600 540 500 500
+
+$ adb shell input keyevent 4
+
+$ adb shell input keyevent 3
+
+$ adb shell monkey -p com.uptodown -c android.intent.category.LAUNCHER 1
+  bash arg: -p
+  bash arg: com.uptodown
+  bash arg: -c
+  bash arg: android.intent.category.LAUNCHER
+  bash arg: 1
+Events injected: 1
+## Network stats: elapsed time=74ms (0ms mobile, 0ms wifi, 74ms not connected)
+  bash arg: -p
+  bash arg: com.uptodown
+  bash arg: --throttle
+  bash arg: 250
+  bash arg: 3
+Events injected: 3
+## Network stats: elapsed time=315ms (0ms mobile, 0ms wifi, 315ms not connected)

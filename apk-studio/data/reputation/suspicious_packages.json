@@ -1,0 +1,9 @@
+{
+  "examples": [
+    {
+      "package_pattern": "com.fake.*",
+      "risk_boost": 10,
+      "reason": "Example placeholder pattern. Replace with lab-confirmed suspicious packages only."
+    }
+  ]
+}

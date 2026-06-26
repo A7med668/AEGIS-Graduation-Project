@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="about">Über</string>
+    <string name="addDate">Datum hinzufügen</string>
+    <string name="addLink">Link hinzufügen</string>
+    <string name="addMedia">Medien hinzufügen</string>
+    <string name="appName">Notizen</string>
+    <string name="backup">Sicherung…</string>
+    <string name="built">Erstellt %s</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="changedOverwrite">Diese Datei hat sich geändert, möchtest Du sie überschreiben?</string>
+    <string name="changedReload">Diese Datei hat sich geändert, möchtest Du sie neu laden?</string>
+    <string name="choose">Wähle einen Dateinamen</string>
+    <string name="clearList">Liste löschen</string>
+    <string name="complete">Sicherung abgeschlossen</string>
+    <string name="copyright">Urheberrecht © 2020 <a href="https://billthefarmer.github.io">Bill Farmer</a>"
+
+Markdown-Ansicht von "<a href="https://github.com/falnatsheh/MarkdownView">Markdown View</a>, Deutsche Übersetzung von <a href="https://github.com/mondlicht-und-sterne">mondstern</a>, Türkische Übersetzung von <a href="https://github.com/berkaygunduzz">Berkay Gündüz</a> </string>
+    <string name="discard">Verwerfen</string>
+    <string name="editScript">Skript bearbeiten…</string>
+    <string name="editStyles">Stile bearbeiten…</string>
+    <string name="findAll">Finde alle…</string>
+    <string name="folder">Ordner</string>
+    <string name="licence">Lizenz <a href="https://www.gnu.org/licenses/gpl.txt">GNU GPLv3</a> </string>
+    <string name="loading">Laden…</string>
+    <string name="media">Medien</string>
+    <string name="modified">Du hast ungespeicherte Änderungen. Möchtest Du Deine Änderungen speichern?</string>
+    <string name="name">Name</string>
+    <string name="newNote">Neu Notiz</string>
+    <string name="new_note_name">Neue Vorlage für Notiznamen</string>
+    <string name="ok">OK</string>
+    <string name="openNote">Öffne</string>
+    <string name="openRecent">Öffne letzte</string>
+    <string name="overwrite">Überschreiben</string>
+    <string name="pref_about_summ"><a href="https://github.com/billthefarmer/notes/releases/latest">Version %s</a></string>
+    <string name="pref_external">Browser</string>
+    <string name="pref_external_summ">Browser für externe Links verwenden</string>
+    <string name="pref_name">Standardnotizname</string>
+    <string name="pref_new_name">Neuer Notenname</string>
+    <string name="pref_new_template_summ">Vorlage für neuen Notennamen verwenden</string>
+    <string name="pref_template_file">Vorlagendatei</string>
+    <string name="pref_use_template">Benutze Vorlage</string>
+    <string name="pref_use_template_summ">Benutze Volage für Neu Notizen</string>
+    <string name="print">Drucken…</string>
+    <string name="reload">Neu laden</string>
+    <string name="saveAs">Speichern als…</string>
+    <string name="saveNote">Speichern</string>
+    <string name="search">Suchen…</string>
+    <string name="settings">Einstellungen</string>
+    <string name="share">Teilen…</string>
+    <string name="start">Sicherung beginnen</string>
+    <string name="storage">Speicher</string>
+    <string name="template">Neu Notiz Vorlage</string>
+    <string name="theme">Thema</string>
+</resources>

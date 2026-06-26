@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textColor="@color/text_primary" android:tag="layout/item_reply_header_0" android:paddingLeft="@dimen/default_margin_double_half" android:paddingTop="@dimen/default_margin_double" android:paddingRight="@dimen/default_margin_double_half" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Bazaar.Text.Medium.Heading2"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

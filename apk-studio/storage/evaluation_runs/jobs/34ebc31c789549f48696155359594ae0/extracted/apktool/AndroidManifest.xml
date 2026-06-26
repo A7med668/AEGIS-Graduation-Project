@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="29" android:compileSdkVersionCodename="10" package="com.securefilemanager.app" platformBuildVersionCode="29" platformBuildVersionName="10">
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-feature android:name="android.hardware.camera.any" android:required="false"/>
+    <uses-feature android:name="android.hardware.fingerprint" android:required="false"/>
+    <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <application android:allowBackup="false" android:allowClearUserData="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:description="@string/description" android:extractNativeLibs="false" android:hasFragileUserData="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:manageSpaceActivity="com.securefilemanager.app.activities.ManageStorageActivity" android:requestLegacyExternalStorage="true" android:roundIcon="@mipmap/ic_launcher_round" android:theme="@style/AppTheme">
+        <activity android:name="com.securefilemanager.app.activities.MainActivity">
+            <meta-data android:name="android.app.default_searchable" android:resource="@xml/searchable"/>
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.GET_CONTENT"/>
+                <data android:mimeType="*/*"/>
+                <category android:name="android.intent.category.OPENABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.RINGTONE_PICKER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/save_as" android:name="com.securefilemanager.app.activities.SaveAsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+                <data android:mimeType="image/*"/>
+                <data android:mimeType="video/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+                <data android:mimeType="image/*"/>
+                <data android:mimeType="video/*"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/manage_storage" android:name="com.securefilemanager.app.activities.ManageStorageActivity"/>
+        <activity android:label="@string/introduction" android:name="com.securefilemanager.app.activities.IntroActivity"/>
+        <activity android:label="@string/decompress" android:name="com.securefilemanager.app.activities.DecompressActivity"/>
+        <activity android:label="@string/settings" android:name="com.securefilemanager.app.activities.SettingsActivity" android:parentActivityName="com.securefilemanager.app.activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.APPLICATION_PREFERENCES"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/favorites" android:name="com.securefilemanager.app.activities.FavoritesActivity" android:parentActivityName="com.securefilemanager.app.activities.MainActivity"/>
+        <activity android:label="@string/about" android:name="com.securefilemanager.app.activities.AboutActivity" android:parentActivityName="com.securefilemanager.app.activities.MainActivity"/>
+        <activity android:label="@string/authenticate" android:name="com.securefilemanager.app.activities.AuthenticationActivity"/>
+        <provider android:authorities="com.securefilemanager.app.provider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <service android:description="@string/compression_service_description" android:directBootAware="false" android:enabled="true" android:exported="false" android:icon="@drawable/ic_launcher_foreground" android:label="ZipManagerService" android:name="com.securefilemanager.app.services.ZipManagerService">
+            <intent-filter>
+                <action android:name=".helpers.ZipManagerService.ACTION_COMPRESSION"/>
+                <action android:name=".helpers.ZipManagerService.ACTION_DECOMPRESSION"/>
+                <action android:name=".helpers.ZipManagerService.ACTION_STOP"/>
+            </intent-filter>
+        </service>
+        <service android:description="@string/authentication_service_description" android:directBootAware="false" android:enabled="true" android:exported="false" android:icon="@drawable/ic_launcher_foreground" android:label="UnlockAppService" android:name="com.securefilemanager.app.services.UnlockAppService">
+            <intent-filter>
+                <action android:name=".helpers.UnlockAppService.ACTION_LOCK"/>
+                <action android:name=".helpers.UnlockAppService.ACTION_STOP"/>
+            </intent-filter>
+        </service>
+        <receiver android:description="@string/lock_receiver_description" android:directBootAware="true" android:enabled="true" android:exported="false" android:icon="@drawable/ic_launcher_foreground" android:label="LockReceiver" android:name="com.securefilemanager.app.receivers.LockReceiver" android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.mikepenz.aboutlibraries.ui.LibsActivity"/>
+        <provider android:authorities="com.securefilemanager.app.lifecycle-process" android:exported="false" android:multiprocess="true" android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"/>
+    </application>
+</manifest>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:tag="layout/fragment_tabs_0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/tabsAppBarLayout" android:fitsSystemWindows="false" android:layout_width="match_parent" android:layout_height="wrap_content" app:liftOnScroll="false">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@id/collapsingToolbar" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.farsitel.bazaar.designsystem.widget.FlexibleTabLayout android:id="@id/tabLayout" android:background="@drawable/layer_list_appbar_lifted_background" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_collapseMode="pin" app:tabIndicator="@drawable/tab_indicator" app:tabIndicatorFullWidth="false" app:tabInlineLabel="true" style="@style/Bazaar.TabsTabLayout" />
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.viewpager2.widget.ViewPager2 android:id="@id/tabViewPager" android:saveEnabled="false" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

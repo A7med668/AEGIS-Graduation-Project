@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="14.0dp" android:id="@id/downloadProgressPercent" android:tag="layout/downloading_progress_0" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/Bazaar.Text.Subtitle2" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/cancelButton" android:tag="layout/downloading_progress_1" android:paddingBottom="@dimen/default_margin_half_quarter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/cancel_content_description" android:paddingStart="@dimen/default_margin_double" android:paddingEnd="@dimen/default_margin_half" app:layout_constraintBottom_toTopOf="@id/progressBar" app:layout_constraintEnd_toEndOf="parent" app:srcCompat="@drawable/ic_cancel_download" />
+    <com.farsitel.bazaar.designsystem.progressindicator.AppProgressBar android:id="@id/progressBar" android:tag="layout/downloading_progress_2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" style="@style/Bazaar.InstallProgress.List" />
+</merge>

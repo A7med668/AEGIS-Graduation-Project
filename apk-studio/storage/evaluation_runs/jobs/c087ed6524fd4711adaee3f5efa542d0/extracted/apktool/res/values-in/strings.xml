@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_mode_done">Selesai</string>
+    <string name="abc_capital_off">NONAKTIF</string>
+    <string name="abc_capital_on">AKTIF</string>
+    <string name="abc_search_hint">Telusuri...</string>
+    <string name="abc_searchview_description_clear">Hapus kueri</string>
+    <string name="abc_searchview_description_search">Telusuri</string>
+    <string name="abc_searchview_description_submit">Kirim kueri</string>
+    <string name="abc_searchview_description_voice">Penelusuran suara</string>
+    <string name="abc_toolbar_collapse_description">Ciutkan</string>
+    <string name="bottomsheet_drag_handle_content_description">Handel geser</string>
+    <string name="close_drawer">Tutup menu navigasi</string>
+    <string name="close_sheet">Tutup sheet</string>
+    <string name="default_error_message">Input tidak valid</string>
+    <string name="default_popup_window_title">Jendela Pop-Up</string>
+    <string name="error_a11y_label">Error: tidak valid</string>
+    <string name="glance_error_layout_text_v2">Tidak dapat menampilkan konten</string>
+    <string name="in_progress">Dalam proses</string>
+    <string name="indeterminate">Diperiksa sebagian</string>
+    <string name="m3_adaptive_default_pane_title_primary">Panel utama</string>
+    <string name="m3_adaptive_default_pane_title_secondary">Panel sekunder</string>
+    <string name="m3_adaptive_default_pane_title_tertiary">Panel tersier</string>
+    <string name="m3_loading_indicator_content_description">Memuat</string>
+    <string name="m3c_bottom_sheet_collapse_description">Menciutkan sheet bawah</string>
+    <string name="m3c_bottom_sheet_dismiss_description">Menutup sheet bawah</string>
+    <string name="m3c_bottom_sheet_drag_handle_description">Handel geser</string>
+    <string name="m3c_bottom_sheet_expand_description">Meluaskan sheet bawah</string>
+    <string name="m3c_bottom_sheet_pane_title">Sheet Bawah</string>
+    <string name="m3c_snackbar_pane_title">Pemberitahuan</string>
+    <string name="mtrl_button_snackbar_close_content_description">Tutup</string>
+    <string name="navigation_menu">Menu navigasi</string>
+    <string name="not_selected">Tidak dipilih</string>
+    <string name="password_toggle_content_description">Tampilkan sandi</string>
+    <string name="selected">Dipilih</string>
+    <string name="state_empty">Kosong</string>
+    <string name="state_off">Nonaktif</string>
+    <string name="state_on">Aktif</string>
+    <string name="switch_role">Alihkan</string>
+    <string name="tab">Tab</string>
+    <string name="template_percent">%1$d persen.</string>
+    <string name="tooltip_description">tooltip</string>
+    <string name="tooltip_label">tampilkan tooltip</string>
+</resources>

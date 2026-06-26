@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/item_earn_point_description_0" android:paddingLeft="@dimen/default_margin_double" android:paddingTop="@dimen/default_margin_double" android:paddingRight="@dimen/default_margin_double" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/default_margin_double"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/text_hint" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:textAlignment="viewStart" style="@style/Bazaar.Text.Medium.Heading2" />
+    <View android:tag="binding_2" android:layout_width="match_parent" android:layout_marginTop="@dimen/default_margin" style="@style/Bazaar.HorizontalDivider" />
+</LinearLayout>

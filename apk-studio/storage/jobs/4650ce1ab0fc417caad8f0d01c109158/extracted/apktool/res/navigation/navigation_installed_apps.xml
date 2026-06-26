@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/navigation_installed_apps" app:startDestination="@id/installed_apps_fragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="ComposeInstalledAppsFragment" android:name="com.farsitel.bazaar.installedapps.view.ComposeInstalledAppsFragment" android:id="@id/installed_apps_fragment">
+        <deepLink app:uri="@string/deeplink_installed_apps" />
+    </fragment>
+</navigation>

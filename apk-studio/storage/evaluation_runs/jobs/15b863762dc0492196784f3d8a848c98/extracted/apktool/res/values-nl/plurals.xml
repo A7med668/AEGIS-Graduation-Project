@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="added_to_queue_message">
+        <item quantity="one">%d aflevering toegevoegd aan de wachtrij.</item>
+        <item quantity="other">%d afleveringen toegevoegd aan de wachtrij.</item>
+    </plurals>
+    <plurals name="deleted_episode_message">
+        <item quantity="one">%d aflevering verwijderd.</item>
+        <item quantity="other">%d afleveringen verwijderd.</item>
+    </plurals>
+    <plurals name="downloading_episodes_message">
+        <item quantity="one">%d aflevering aan het downloaden.</item>
+        <item quantity="other">%d afleveringen aan het downloaden.</item>
+    </plurals>
+    <plurals name="downloads_left">
+        <item quantity="one">Nog %d download</item>
+        <item quantity="other">Nog %d downloads te gaan</item>
+    </plurals>
+    <plurals name="echo_hours_podcasts">
+        <item quantity="one">"uren aan afleveringen
+van %1$d podcast"</item>
+        <item quantity="other">"uren aan afleveringen
+van %1$d verschillende podcasts"</item>
+    </plurals>
+    <plurals name="echo_queue_hours_waiting">
+        <item quantity="one">"uren wachten in je wachtrij
+van %1$d aflevering"</item>
+        <item quantity="other">"uren wachten in je wachtrij
+van %1$d afleveringen"</item>
+    </plurals>
+    <plurals name="episode_cleanup_days_after_listening">
+        <item quantity="one">%d dag na afloop</item>
+        <item quantity="other">%d dagen na afloop</item>
+    </plurals>
+    <plurals name="episode_cleanup_hours_after_listening">
+        <item quantity="one">%d uur na afloop</item>
+        <item quantity="other">%d uren na afloop</item>
+    </plurals>
+    <plurals name="marked_as_played_message">
+        <item quantity="one">Één aflevering gemarkeerd als afgespeeld.</item>
+        <item quantity="other">%d afleveringen gemarkeerd als afgespeeld.</item>
+    </plurals>
+    <plurals name="marked_as_unplayed_message">
+        <item quantity="one">Één aflevering gemarkeerd als onafgespeeld.</item>
+        <item quantity="other">%d afleveringen gemarkeerd als onafgespeeld.</item>
+    </plurals>
+    <plurals name="move_to_bottom_message">
+        <item quantity="one">%d aflevering naar onderaan verplaatst.</item>
+        <item quantity="other">%d afleveringen naar onderaan verplaatst.</item>
+    </plurals>
+    <plurals name="move_to_top_message">
+        <item quantity="one">%d aflevering naar bovenaan verplaatst.</item>
+        <item quantity="other">%d afleveringen naar bovenaan verplaatst.</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d nieuwe melding</item>
+        <item quantity="other">%d nieuwe meldingen</item>
+    </plurals>
+    <plurals name="new_episode_notification_message">
+        <item quantity="one">Er is een nieuwe aflevering van %2$s</item>
+        <item quantity="other">Er zijn %1$d nieuwe afleveringen van %2$s</item>
+    </plurals>
+    <plurals name="new_episode_notification_title">
+        <item quantity="one">Nieuwe aflevering</item>
+        <item quantity="other">Nieuwe afleveringen</item>
+    </plurals>
+    <plurals name="num_episodes">
+        <item quantity="one">%d aflevering</item>
+        <item quantity="other">%d afleveringen</item>
+    </plurals>
+    <plurals name="num_selected_label">
+        <item quantity="one">%1$d/%2$d geselecteerd</item>
+        <item quantity="other">%1$d/%2$d geselecteerd</item>
+    </plurals>
+    <plurals name="num_subscriptions">
+        <item quantity="one">Één abonnement</item>
+        <item quantity="other">%d abonnementen</item>
+    </plurals>
+    <plurals name="removed_from_inbox_batch_label">
+        <item quantity="one">%d aflevering verwijderd uit Postvak In.</item>
+        <item quantity="other">%d afleveringen verwijderd uit Postvak In.</item>
+    </plurals>
+    <plurals name="removed_from_queue_message">
+        <item quantity="one">%d aflevering verwijderd uit de wachtrij.</item>
+        <item quantity="other">%d afleveringen verwijderd uit de wachtrij.</item>
+    </plurals>
+    <plurals name="time_days_quantified">
+        <item quantity="one">%d dag</item>
+        <item quantity="other">%d dagen</item>
+    </plurals>
+    <plurals name="time_hours_quantified">
+        <item quantity="one">%d uur</item>
+        <item quantity="other">%d uren</item>
+    </plurals>
+    <plurals name="time_minutes_quantified">
+        <item quantity="one">%d minuut</item>
+        <item quantity="other">%d minuten</item>
+    </plurals>
+    <plurals name="time_seconds_quantified">
+        <item quantity="one">%d seconde</item>
+        <item quantity="other">%d seconden</item>
+    </plurals>
+    <plurals name="total_size_downloaded_podcasts">
+        <item quantity="one">Totale grootte van %d aflevering op het apparaat</item>
+        <item quantity="other">Totale grootte van %d afleveringen op het apparaat</item>
+    </plurals>
+    <plurals name="updated_feeds_batch_label">
+        <item quantity="one">%d aflevering bijgewerkt.</item>
+        <item quantity="other">%d abonnementen bijgewerkt.</item>
+    </plurals>
+</resources>

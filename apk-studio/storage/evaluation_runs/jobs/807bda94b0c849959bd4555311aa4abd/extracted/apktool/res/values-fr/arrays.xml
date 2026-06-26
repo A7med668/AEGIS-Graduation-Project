@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="content_types">
+        <item>UNDEFINED</item>
+        <item>Text</item>
+        <item>E-Mail</item>
+        <item>Phone number</item>
+        <item>SMS</item>
+        <item>MMS</item>
+        <item>URL</item>
+        <item>Wifi</item>
+        <item>VCard</item>
+        <item>MeCard</item>
+        <item>BizCard</item>
+        <item>Market</item>
+        <item>Contact</item>
+        <item>Localisation géographique</item>
+        <item>"Carnet d'adresses"</item>
+        <item>Produit</item>
+        <item>Calendrier</item>
+        <item>ISBN</item>
+        <item>"Numéro d'identification de véhicule (VIN)"</item>
+    </string-array>
+    <string-array name="email_array">
+        <item>Envoyer un e-mail</item>
+        <item>Ajouter aux contacts</item>
+    </string-array>
+    <string-array name="generator_array">
+        <item>Texte</item>
+        <item>E-mail</item>
+        <item>URL</item>
+        <item>Numéro de téléphone</item>
+        <item>SMS</item>
+        <item>Emplacement géographique</item>
+        <item>MeCard</item>
+        <item>BizCard</item>
+        <item>Wifi</item>
+        <item>VCard</item>
+        <item>Market</item>
+    </string-array>
+    <string-array name="geo_array">
+        <item>"Ouvrir l'application Cartes"</item>
+        <item>Ne rien faire</item>
+    </string-array>
+    <string-array name="history_array">
+        <item>Copier dans le presse-papiers</item>
+        <item>"Supprimer l'entrée"</item>
+    </string-array>
+    <string-array name="mms_array">
+        <item>Envoyer un MMS</item>
+        <item>Appeler le numéro</item>
+        <item>Ajouter aux contacts</item>
+    </string-array>
+    <string-array name="pref_search_engine_entries">
+        <item>DuckDuckGo</item>
+        <item>Google</item>
+        <item>Startpage</item>
+        <item>Brave</item>
+    </string-array>
+    <string-array name="product_array">
+        <item>Rechercher sur le Web</item>
+        <item>Ne rien faire</item>
+    </string-array>
+    <string-array name="send_email_array">
+        <item>Envoyer un e-mail</item>
+        <item>Ajouter aux contacts</item>
+    </string-array>
+    <string-array name="sms_array">
+        <item>Envoyer un SMS</item>
+        <item>Appeler le numéro</item>
+        <item>Ajouter aux contacts</item>
+    </string-array>
+    <string-array name="tel_array">
+        <item>Appeler le numéro</item>
+        <item>Ajouter aux contacts</item>
+    </string-array>
+    <string-array name="text_array">
+        <item>Rechercher sur le Web</item>
+        <item>Ne rien faire</item>
+    </string-array>
+    <string-array name="url_array">
+        <item>"Visiter l'URL"</item>
+        <item>Ne rien faire</item>
+    </string-array>
+    <string-array name="vcard_array">
+        <item>Ajouter aux contacts</item>
+        <item>Ne rien faire</item>
+    </string-array>
+    <string-array name="wifi_array">
+        <item>Copier le mot de passe</item>
+        <item>Ajouter un réseau WiFi</item>
+        <item>Ne rien faire</item>
+    </string-array>
+</resources>

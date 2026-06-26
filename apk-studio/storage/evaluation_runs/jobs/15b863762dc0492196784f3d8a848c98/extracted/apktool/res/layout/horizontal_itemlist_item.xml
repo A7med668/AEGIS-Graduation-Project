@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:squareImageView="http://schemas.android.com/apk/de.danoeh.antennapod">
+    <androidx.cardview.widget.CardView android:id="@id/card" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dp" android:foreground="?android:selectableItemBackground" app:cardBackgroundColor="?colorSurfaceContainer" app:cardCornerRadius="12.0dp" app:cardElevation="1.0dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.cardview.widget.CardView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="1.0px" app:cardBackgroundColor="@android:color/transparent" app:cardCornerRadius="12.0dp" app:cardElevation="0.0dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <FrameLayout android:background="@color/image_readability_tint" android:layout_width="128.0dp" android:layout_height="128.0dp">
+                        <de.danoeh.antennapod.ui.common.SquareImageView android:id="@id/cover" android:layout_width="match_parent" android:layout_height="match_parent" android:outlineProvider="bounds" squareImageView:direction="width" />
+                        <ImageView android:layout_gravity="end|bottom" android:padding="3.0dp" android:layout_width="48.0dp" android:layout_height="48.0dp" android:layout_margin="4.0dp" app:srcCompat="@drawable/bg_circle" />
+                        <de.danoeh.antennapod.ui.common.CircularProgressBar android:layout_gravity="end|bottom" android:id="@id/circularProgressBar" android:layout_width="48.0dp" android:layout_height="48.0dp" android:layout_margin="4.0dp" app:foregroundColor="?colorOnPrimary" />
+                        <ImageView android:layout_gravity="end|bottom" android:id="@id/secondaryActionIcon" android:padding="12.0dp" android:clickable="true" android:layout_width="48.0dp" android:layout_height="48.0dp" android:layout_margin="4.0dp" android:foreground="?selectableItemBackgroundBorderless" app:srcCompat="@drawable/ic_play_24dp" app:tint="?colorOnPrimary" app:tintMode="src_atop" />
+                    </FrameLayout>
+                    <com.google.android.material.progressindicator.LinearProgressIndicator android:layout_gravity="bottom" android:id="@id/progressBar" android:layout_width="match_parent" android:layout_height="4.0dp" android:max="100" app:trackStopIndicatorSize="0.0dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <View android:id="@id/progressBarReplacementSpacer" android:visibility="gone" android:layout_width="match_parent" android:layout_height="4.0dp" />
+            <TextView android:textSize="14.0sp" android:textColor="?android:textColorPrimary" android:ellipsize="end" android:id="@id/titleLabel" android:paddingLeft="4.0dp" android:paddingRight="4.0dp" android:layout_width="128.0dp" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:lines="2" android:singleLine="false" />
+            <TextView android:textSize="14.0sp" android:id="@id/dateLabel" android:paddingLeft="4.0dp" android:paddingRight="4.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dp" android:singleLine="true" android:textAlignment="textStart" style="@style/AntennaPod.TextView.ListItemSecondaryTitle" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

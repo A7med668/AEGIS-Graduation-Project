@@ -1,0 +1,25 @@
+.class public final Landroidx/compose/runtime/NextFrameEndCallbackQueue$NextFrameEndAwaiter;
+.super Landroidx/compose/runtime/internal/AwaiterQueue$Awaiter;
+.source "r8-map-id-226db4dad4ab4d5786e2bb0e8f3f1f65ee6d48d6f3bce6d8fcd4994964287ee8"
+
+
+# instance fields
+.field public onNextFrameEnd:Landroidx/compose/ui/node/LayoutNode$_foldedChildren$1;
+
+
+# virtual methods
+.method public final cancel()V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    iput-object v0, p0, Landroidx/compose/runtime/NextFrameEndCallbackQueue$NextFrameEndAwaiter;->onNextFrameEnd:Landroidx/compose/ui/node/LayoutNode$_foldedChildren$1;
+
+    return-void
+.end method
+
+.method public final resumeWithException(Ljava/lang/Throwable;)V
+    .locals 0
+
+    throw p1
+.end method

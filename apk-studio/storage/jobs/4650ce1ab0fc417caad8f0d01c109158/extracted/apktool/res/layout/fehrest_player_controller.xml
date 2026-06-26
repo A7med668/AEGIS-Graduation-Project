@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/exo_controls_background" android:background="@color/exo_black_opacity_60" android:layout_width="0.0dp" android:layout_height="0.0dp" />
+    <View android:layout_gravity="bottom" android:id="@id/exo_progress_placeholder" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <ImageButton android:layout_gravity="center" android:id="@id/exo_play_pause" android:background="@android:color/transparent" android:layout_width="@dimen/exo_button_width" android:layout_height="@dimen/exo_button_height" />
+</FrameLayout>

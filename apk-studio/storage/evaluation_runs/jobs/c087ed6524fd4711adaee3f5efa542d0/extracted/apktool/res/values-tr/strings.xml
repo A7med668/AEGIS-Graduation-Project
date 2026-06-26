@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_mode_done">Bitti</string>
+    <string name="abc_capital_off">KAPAT</string>
+    <string name="abc_capital_on">AÇ</string>
+    <string name="abc_search_hint">Ara…</string>
+    <string name="abc_searchview_description_clear">Sorguyu temizle</string>
+    <string name="abc_searchview_description_search">Ara</string>
+    <string name="abc_searchview_description_submit">Sorguyu gönder</string>
+    <string name="abc_searchview_description_voice">Sesli arama</string>
+    <string name="abc_toolbar_collapse_description">Daralt</string>
+    <string name="bottomsheet_drag_handle_content_description">Sürükleme tutamacı</string>
+    <string name="close_drawer">Gezinme menüsünü kapat</string>
+    <string name="close_sheet">Sayfayı kapat</string>
+    <string name="default_error_message">Geçersiz giriş</string>
+    <string name="default_popup_window_title">Pop-up Pencere</string>
+    <string name="error_a11y_label">Hata: geçersiz</string>
+    <string name="glance_error_layout_text_v2">İçerik gösterilemiyor</string>
+    <string name="in_progress">Devam ediyor</string>
+    <string name="indeterminate">Kısmi olarak kontrol edildi</string>
+    <string name="m3_adaptive_default_pane_title_primary">Birincil bölme</string>
+    <string name="m3_adaptive_default_pane_title_secondary">İkincil bölme</string>
+    <string name="m3_adaptive_default_pane_title_tertiary">Üçüncül bölme</string>
+    <string name="m3_loading_indicator_content_description">Yükleniyor</string>
+    <string name="m3c_bottom_sheet_collapse_description">Alt sayfayı daralt</string>
+    <string name="m3c_bottom_sheet_dismiss_description">Alt sayfayı kapat</string>
+    <string name="m3c_bottom_sheet_drag_handle_description">Sürükleme tutamacı</string>
+    <string name="m3c_bottom_sheet_expand_description">Alt sayfayı genişlet</string>
+    <string name="m3c_bottom_sheet_pane_title">Alt Sayfa</string>
+    <string name="m3c_snackbar_pane_title">Uyarı</string>
+    <string name="mtrl_button_snackbar_close_content_description">Kapat</string>
+    <string name="navigation_menu">Gezinme menüsü</string>
+    <string name="not_selected">Seçili değil</string>
+    <string name="password_toggle_content_description">Şifreyi göster</string>
+    <string name="selected">Seçili</string>
+    <string name="state_empty">Boş</string>
+    <string name="state_off">Kapalı</string>
+    <string name="state_on">Açık</string>
+    <string name="switch_role">Anahtar</string>
+    <string name="tab">Sekme</string>
+    <string name="template_percent">Yüzde %1$d.</string>
+    <string name="tooltip_description">ipucu</string>
+    <string name="tooltip_label">ipucunu göster</string>
+</resources>

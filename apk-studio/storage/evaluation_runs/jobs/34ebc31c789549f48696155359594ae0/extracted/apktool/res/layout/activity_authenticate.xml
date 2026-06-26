@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_gravity="center" android:id="@id/authenticate_coordinator_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:filterTouchesWhenObscured="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/extra_big_text_size" android:textStyle="bold" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/prompt_info_title" android:drawablePadding="@dimen/medium_margin" app:drawableTopCompat="@drawable/ic_lock_open_vector_big" />
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton android:textSize="@dimen/big_text_size" android:layout_gravity="end|bottom" android:id="@id/authenticate_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/big_margin" android:text="@string/authenticate" android:contentDescription="@string/authenticate" app:icon="@drawable/ic_lock_open_vector" />
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

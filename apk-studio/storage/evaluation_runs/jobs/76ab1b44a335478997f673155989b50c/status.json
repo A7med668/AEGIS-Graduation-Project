@@ -1,0 +1,16 @@
+{
+  "job_id": "76ab1b44a335478997f673155989b50c",
+  "filename": "malware_05_sieve.apk",
+  "status": "completed",
+  "progress": 100,
+  "error": null,
+  "report_available": true,
+  "created_at": "2026-06-24T23:30:22.935357+00:00",
+  "updated_at": "2026-06-24T23:30:39.452545+00:00",
+  "risk_score": 44,
+  "risk_level": "low",
+  "ai_risk_score": 44,
+  "ai_risk_level": "low",
+  "agentic_triggered": false,
+  "agentic_action_count": 1
+}

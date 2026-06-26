@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut android:icon="@drawable/ic_launcher" android:enabled="true" android:shortcutId="newNote" android:shortcutShortLabel="@string/newNote">
+        <intent android:targetPackage="org.billthefarmer.notes" android:action="org.billthefarmer.notes.NEW_NOTE" android:targetClass="org.billthefarmer.notes.Notes" />
+    </shortcut>
+</shortcuts>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="downloads_left">
+        <item quantity="other">%d ダウンロード残</item>
+    </plurals>
+    <plurals name="episode_cleanup_days_after_listening">
+        <item quantity="other">完了後 %d 日</item>
+    </plurals>
+    <plurals name="episode_cleanup_hours_after_listening">
+        <item quantity="other">完了後 %d 時間</item>
+    </plurals>
+    <plurals name="mobile_download_notice">
+        <item quantity="other">次の %d 分間をモバイルデータ接続でダウンロード中</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d 件の新しい通知</item>
+        <item quantity="other">%d 件の新しい通知</item>
+    </plurals>
+    <plurals name="new_episode_notification_message">
+        <item quantity="other">%2$s に %1$d 個の新しいエピソードがあります</item>
+    </plurals>
+    <plurals name="new_episode_notification_title">
+        <item quantity="other">新規エピソード</item>
+    </plurals>
+    <plurals name="num_episodes">
+        <item quantity="other">%dエピソード</item>
+    </plurals>
+    <plurals name="num_selected_label">
+        <item quantity="other">%1$d/%2$d 項目を選択中</item>
+    </plurals>
+    <plurals name="removed_from_inbox_batch_label">
+        <item quantity="other">%d エピソードを受信トレイから削除しました。</item>
+    </plurals>
+    <plurals name="statistics_episodes_downloaded">
+        <item quantity="other">ダウンロード済み</item>
+    </plurals>
+    <plurals name="statistics_episodes_started">
+        <item quantity="other">開始済み</item>
+    </plurals>
+    <plurals name="statistics_episodes_total">
+        <item quantity="other">合計</item>
+    </plurals>
+    <plurals name="time_days_quantified">
+        <item quantity="other">%d 日</item>
+    </plurals>
+    <plurals name="time_hours_quantified">
+        <item quantity="other">%d 時間</item>
+    </plurals>
+    <plurals name="time_minutes_quantified">
+        <item quantity="other">%d 分</item>
+    </plurals>
+    <plurals name="time_seconds_quantified">
+        <item quantity="other">%d 秒</item>
+    </plurals>
+    <plurals name="total_size_downloaded_podcasts">
+        <item quantity="other">デバイス上の %d エピソードの合計サイズ</item>
+    </plurals>
+    <plurals name="updated_feeds_batch_label">
+        <item quantity="other">%d 個の購読を更新しました。</item>
+    </plurals>
+</resources>

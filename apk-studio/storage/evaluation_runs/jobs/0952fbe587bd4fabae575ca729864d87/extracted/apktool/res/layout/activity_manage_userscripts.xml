@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout android:id="@id/view3" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.Toolbar android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:id="@id/toolbar" android:background="?colorPrimaryDark" android:layout_width="match_parent" android:layout_height="?actionBarSize" app:popupTheme="@style/ThemeOverlay.AppCompat.DayNight.ActionBar" />
+        </com.google.android.material.appbar.AppBarLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <EditText android:textSize="16.0dp" android:gravity="top" android:id="@id/edit_script" android:layout_width="match_parent" android:layout_height="180.0dp" android:layout_marginTop="8.0dp" android:hint="@string/summary_userscript" android:selectAllOnFocus="true" android:inputType="textMultiLine|textNoSuggestions" android:imeOptions="actionDone" android:textCursorDrawable="@null" android:layout_marginStart="8.0dp" android:layout_marginEnd="8.0dp" android:importantForAutofill="no" />
+            <com.google.android.material.button.MaterialButton android:ellipsize="end" android:id="@id/whitelist_add" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/whitelist_add" android:maxLines="1" android:includeFontPadding="false" android:textAllCaps="true" android:layout_marginStart="8.0dp" android:layout_marginEnd="8.0dp" />
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="match_parent" android:layout_height="match_parent" android:drawSelectorOnTop="true" />
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

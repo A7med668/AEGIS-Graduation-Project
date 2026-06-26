@@ -1,0 +1,223 @@
+{
+  "score": 7,
+  "level": "informational",
+  "reasons": [
+    {
+      "code": "permission_signal",
+      "bucket": "permission",
+      "weight": 5,
+      "detail": "android.permission.MANAGE_EXTERNAL_STORAGE",
+      "evidence_ref": "static.permissions.android.permission.MANAGE_EXTERNAL_STORAGE"
+    },
+    {
+      "code": "exported_components",
+      "bucket": "context",
+      "weight": 1,
+      "detail": "2 exported components",
+      "evidence_ref": "static.components.exported_count"
+    },
+    {
+      "code": "network_indicators",
+      "bucket": "context",
+      "weight": 1,
+      "detail": "5 domains found",
+      "evidence_ref": "static.network_indicators.domains"
+    },
+    {
+      "code": "cleartext_http_urls",
+      "bucket": "context",
+      "weight": 6,
+      "detail": "24 cleartext HTTP URLs found",
+      "evidence_ref": "static.network_indicators.urls"
+    },
+    {
+      "code": "webview_indicators",
+      "bucket": "context",
+      "weight": 4,
+      "detail": "18 WebView/JavaScript indicators",
+      "evidence_ref": "static.webview_indicators"
+    },
+    {
+      "code": "expected_permission_profile_reduction",
+      "bucket": "calibration",
+      "weight": 0,
+      "detail": "file_manager_like profile reduced weak expected-permission noise by 10",
+      "evidence_ref": "risk.calibration.app_profile",
+      "profile": "file_manager_like",
+      "matched_expected_permissions": [
+        "android.permission.INTERNET",
+        "android.permission.MANAGE_EXTERNAL_STORAGE",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE"
+      ]
+    }
+  ],
+  "risk_reasons": [
+    {
+      "code": "permission_signal",
+      "bucket": "permission",
+      "weight": 5,
+      "detail": "android.permission.MANAGE_EXTERNAL_STORAGE",
+      "evidence_ref": "static.permissions.android.permission.MANAGE_EXTERNAL_STORAGE"
+    },
+    {
+      "code": "exported_components",
+      "bucket": "context",
+      "weight": 1,
+      "detail": "2 exported components",
+      "evidence_ref": "static.components.exported_count"
+    },
+    {
+      "code": "network_indicators",
+      "bucket": "context",
+      "weight": 1,
+      "detail": "5 domains found",
+      "evidence_ref": "static.network_indicators.domains"
+    },
+    {
+      "code": "cleartext_http_urls",
+      "bucket": "context",
+      "weight": 6,
+      "detail": "24 cleartext HTTP URLs found",
+      "evidence_ref": "static.network_indicators.urls"
+    },
+    {
+      "code": "webview_indicators",
+      "bucket": "context",
+      "weight": 4,
+      "detail": "18 WebView/JavaScript indicators",
+      "evidence_ref": "static.webview_indicators"
+    }
+  ],
+  "informational_observations": [
+    {
+      "code": "expected_permission_profile_reduction",
+      "bucket": "calibration",
+      "weight": 0,
+      "detail": "file_manager_like profile reduced weak expected-permission noise by 10",
+      "evidence_ref": "risk.calibration.app_profile",
+      "profile": "file_manager_like",
+      "matched_expected_permissions": [
+        "android.permission.INTERNET",
+        "android.permission.MANAGE_EXTERNAL_STORAGE",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE"
+      ]
+    }
+  ],
+  "risk_reason_groups": [
+    {
+      "group": "permission_signals",
+      "title": "Sensitive permissions present",
+      "bucket": "permission",
+      "count": 1,
+      "total_weight": 5,
+      "strong_evidence": false,
+      "examples": [
+        "android.permission.MANAGE_EXTERNAL_STORAGE"
+      ],
+      "evidence_refs": [
+        "static.permissions.android.permission.MANAGE_EXTERNAL_STORAGE"
+      ]
+    },
+    {
+      "group": "context:exported_components",
+      "title": "2 Exported Components",
+      "bucket": "context",
+      "count": 1,
+      "total_weight": 1,
+      "strong_evidence": false,
+      "examples": [
+        "2 exported components"
+      ],
+      "evidence_refs": [
+        "static.components.exported_count"
+      ]
+    },
+    {
+      "group": "context:network_indicators",
+      "title": "5 Domains Found",
+      "bucket": "context",
+      "count": 1,
+      "total_weight": 1,
+      "strong_evidence": false,
+      "examples": [
+        "5 domains found"
+      ],
+      "evidence_refs": [
+        "static.network_indicators.domains"
+      ]
+    },
+    {
+      "group": "context:cleartext_http_urls",
+      "title": "24 Cleartext Http Urls Found",
+      "bucket": "context",
+      "count": 1,
+      "total_weight": 6,
+      "strong_evidence": false,
+      "examples": [
+        "24 cleartext HTTP URLs found"
+      ],
+      "evidence_refs": [
+        "static.network_indicators.urls"
+      ]
+    },
+    {
+      "group": "context:webview_indicators",
+      "title": "18 Webview/Javascript Indicators",
+      "bucket": "context",
+      "count": 1,
+      "total_weight": 4,
+      "strong_evidence": false,
+      "examples": [
+        "18 WebView/JavaScript indicators"
+      ],
+      "evidence_refs": [
+        "static.webview_indicators"
+      ]
+    }
+  ],
+  "risk_reason_count": 5,
+  "risk_reason_group_count": 5,
+  "observation_count": 1,
+  "total_reason_entries": 6,
+  "verdict_note": "Some entries are informational runtime observations and calibration notes; they explain context but are not independent malicious proofs.",
+  "score_breakdown": {
+    "permission_score_raw": 5,
+    "permission_score_capped": 5,
+    "permission_score_cap": 16,
+    "context_score": 12,
+    "combo_score": 0,
+    "dynamic_score_raw": 0,
+    "dynamic_score_capped": 0,
+    "dynamic_score_cap": 3,
+    "dynamic_generic_only": true,
+    "dynamic_high_or_critical_count": 0,
+    "dynamic_c2_like_count": 0,
+    "score_before_profile": 17,
+    "app_profile": "file_manager_like",
+    "expected_permission_reduction": 10,
+    "score_after_profile": 7,
+    "strong_evidence": false,
+    "hard_strong_evidence": false,
+    "hard_strong_evidence_count": 0,
+    "soft_strong_only": false,
+    "critical_calibration_applied": false,
+    "permission_reason_count": 1,
+    "combo_reason_count": 0,
+    "risk_reason_count": 5,
+    "risk_reason_group_count": 5,
+    "observation_count": 1,
+    "permission_heavy_downgrade_applied": false,
+    "high_risk_gate_applied": false
+  },
+  "calibration": {
+    "profile": "v4.7.2_false_positive_resistant_calibration",
+    "high_threshold": 88,
+    "critical_threshold": 96,
+    "permission_score_cap": 16,
+    "dynamic_generic_score_cap": 3,
+    "note": "False-positive resistant calibration: permissions, domains, exported components, and soft static indicators cannot produce Critical 100% without hard malicious evidence."
+  },
+  "summary": "Rule score 7/100 (informational). Risk groups: 5; observations: 1"
+}

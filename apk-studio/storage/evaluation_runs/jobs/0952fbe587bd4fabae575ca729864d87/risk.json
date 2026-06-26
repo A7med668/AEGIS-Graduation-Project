@@ -1,0 +1,392 @@
+{
+  "score": 45,
+  "level": "medium",
+  "reasons": [
+    {
+      "code": "permission_signal",
+      "bucket": "permission",
+      "weight": 5,
+      "detail": "android.permission.RECORD_AUDIO",
+      "evidence_ref": "static.permissions.android.permission.RECORD_AUDIO"
+    },
+    {
+      "code": "permission_signal",
+      "bucket": "permission",
+      "weight": 3,
+      "detail": "android.permission.CAMERA",
+      "evidence_ref": "static.permissions.android.permission.CAMERA"
+    },
+    {
+      "code": "permission_signal",
+      "bucket": "permission",
+      "weight": 3,
+      "detail": "android.permission.ACCESS_FINE_LOCATION",
+      "evidence_ref": "static.permissions.android.permission.ACCESS_FINE_LOCATION"
+    },
+    {
+      "code": "permission_signal",
+      "bucket": "permission",
+      "weight": 1,
+      "detail": "android.permission.ACCESS_COARSE_LOCATION",
+      "evidence_ref": "static.permissions.android.permission.ACCESS_COARSE_LOCATION"
+    },
+    {
+      "code": "permission_signal",
+      "bucket": "permission",
+      "weight": 5,
+      "detail": "android.permission.MANAGE_EXTERNAL_STORAGE",
+      "evidence_ref": "static.permissions.android.permission.MANAGE_EXTERNAL_STORAGE"
+    },
+    {
+      "code": "permission_bucket_cap",
+      "bucket": "calibration",
+      "weight": 0,
+      "detail": "Permission score capped from 17 to 16",
+      "evidence_ref": "static.permissions"
+    },
+    {
+      "code": "exported_components",
+      "bucket": "context",
+      "weight": 1,
+      "detail": "2 exported components",
+      "evidence_ref": "static.components.exported_count"
+    },
+    {
+      "code": "network_indicators",
+      "bucket": "context",
+      "weight": 3,
+      "detail": "500 domains found",
+      "evidence_ref": "static.network_indicators.domains"
+    },
+    {
+      "code": "suspicious_domains",
+      "bucket": "context",
+      "weight": 8,
+      "detail": [
+        "12724.xyz",
+        "21736.xyz",
+        "mclean.f.360.cn",
+        "mvconf.f.360.cn",
+        "care.help.360.cn",
+        "eul.s.360.cn",
+        "g.s.360.cn",
+        "p.s.360.cn",
+        "aicleaner.shouji.360.cn",
+        "new.915yzt.cn"
+      ],
+      "evidence_ref": "static.network_indicators.domains"
+    },
+    {
+      "code": "cleartext_http_urls",
+      "bucket": "context",
+      "weight": 6,
+      "detail": "329 cleartext HTTP URLs found",
+      "evidence_ref": "static.network_indicators.urls"
+    },
+    {
+      "code": "suspicious_domain_network_combo",
+      "bucket": "combo",
+      "weight": 10,
+      "detail": "Suspicious domain indicators with network permission",
+      "evidence_ref": "static.network_indicators.domains",
+      "strong_evidence": true
+    },
+    {
+      "code": "webview_indicators",
+      "bucket": "context",
+      "weight": 2,
+      "detail": "2 WebView/JavaScript indicators",
+      "evidence_ref": "static.webview_indicators"
+    },
+    {
+      "code": "crypto_indicators",
+      "bucket": "context",
+      "weight": 4,
+      "detail": "4 cryptography indicators",
+      "evidence_ref": "static.crypto_indicators"
+    }
+  ],
+  "risk_reasons": [
+    {
+      "code": "permission_signal",
+      "bucket": "permission",
+      "weight": 5,
+      "detail": "android.permission.RECORD_AUDIO",
+      "evidence_ref": "static.permissions.android.permission.RECORD_AUDIO"
+    },
+    {
+      "code": "permission_signal",
+      "bucket": "permission",
+      "weight": 3,
+      "detail": "android.permission.CAMERA",
+      "evidence_ref": "static.permissions.android.permission.CAMERA"
+    },
+    {
+      "code": "permission_signal",
+      "bucket": "permission",
+      "weight": 3,
+      "detail": "android.permission.ACCESS_FINE_LOCATION",
+      "evidence_ref": "static.permissions.android.permission.ACCESS_FINE_LOCATION"
+    },
+    {
+      "code": "permission_signal",
+      "bucket": "permission",
+      "weight": 1,
+      "detail": "android.permission.ACCESS_COARSE_LOCATION",
+      "evidence_ref": "static.permissions.android.permission.ACCESS_COARSE_LOCATION"
+    },
+    {
+      "code": "permission_signal",
+      "bucket": "permission",
+      "weight": 5,
+      "detail": "android.permission.MANAGE_EXTERNAL_STORAGE",
+      "evidence_ref": "static.permissions.android.permission.MANAGE_EXTERNAL_STORAGE"
+    },
+    {
+      "code": "exported_components",
+      "bucket": "context",
+      "weight": 1,
+      "detail": "2 exported components",
+      "evidence_ref": "static.components.exported_count"
+    },
+    {
+      "code": "network_indicators",
+      "bucket": "context",
+      "weight": 3,
+      "detail": "500 domains found",
+      "evidence_ref": "static.network_indicators.domains"
+    },
+    {
+      "code": "suspicious_domains",
+      "bucket": "context",
+      "weight": 8,
+      "detail": [
+        "12724.xyz",
+        "21736.xyz",
+        "mclean.f.360.cn",
+        "mvconf.f.360.cn",
+        "care.help.360.cn",
+        "eul.s.360.cn",
+        "g.s.360.cn",
+        "p.s.360.cn",
+        "aicleaner.shouji.360.cn",
+        "new.915yzt.cn"
+      ],
+      "evidence_ref": "static.network_indicators.domains"
+    },
+    {
+      "code": "cleartext_http_urls",
+      "bucket": "context",
+      "weight": 6,
+      "detail": "329 cleartext HTTP URLs found",
+      "evidence_ref": "static.network_indicators.urls"
+    },
+    {
+      "code": "suspicious_domain_network_combo",
+      "bucket": "combo",
+      "weight": 10,
+      "detail": "Suspicious domain indicators with network permission",
+      "evidence_ref": "static.network_indicators.domains",
+      "strong_evidence": true
+    },
+    {
+      "code": "webview_indicators",
+      "bucket": "context",
+      "weight": 2,
+      "detail": "2 WebView/JavaScript indicators",
+      "evidence_ref": "static.webview_indicators"
+    },
+    {
+      "code": "crypto_indicators",
+      "bucket": "context",
+      "weight": 4,
+      "detail": "4 cryptography indicators",
+      "evidence_ref": "static.crypto_indicators"
+    }
+  ],
+  "informational_observations": [
+    {
+      "code": "permission_bucket_cap",
+      "bucket": "calibration",
+      "weight": 0,
+      "detail": "Permission score capped from 17 to 16",
+      "evidence_ref": "static.permissions"
+    }
+  ],
+  "risk_reason_groups": [
+    {
+      "group": "permission_signals",
+      "title": "Sensitive permissions present",
+      "bucket": "permission",
+      "count": 5,
+      "total_weight": 17,
+      "strong_evidence": false,
+      "examples": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.CAMERA",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.MANAGE_EXTERNAL_STORAGE"
+      ],
+      "evidence_refs": [
+        "static.permissions.android.permission.RECORD_AUDIO",
+        "static.permissions.android.permission.CAMERA",
+        "static.permissions.android.permission.ACCESS_FINE_LOCATION",
+        "static.permissions.android.permission.ACCESS_COARSE_LOCATION",
+        "static.permissions.android.permission.MANAGE_EXTERNAL_STORAGE"
+      ]
+    },
+    {
+      "group": "context:exported_components",
+      "title": "2 Exported Components",
+      "bucket": "context",
+      "count": 1,
+      "total_weight": 1,
+      "strong_evidence": false,
+      "examples": [
+        "2 exported components"
+      ],
+      "evidence_refs": [
+        "static.components.exported_count"
+      ]
+    },
+    {
+      "group": "context:network_indicators",
+      "title": "500 Domains Found",
+      "bucket": "context",
+      "count": 1,
+      "total_weight": 3,
+      "strong_evidence": false,
+      "examples": [
+        "500 domains found"
+      ],
+      "evidence_refs": [
+        "static.network_indicators.domains"
+      ]
+    },
+    {
+      "group": "context:suspicious_domains",
+      "title": "['12724.Xyz', '21736.Xyz', 'Mclean.F.360.Cn', 'Mvconf.F.360.Cn', 'Care.Help.360.Cn', 'Eul.S.360.Cn', 'G.S.360.Cn', 'P.S.360.Cn', 'Aicleaner.Shouji.360.Cn', 'New.915Yzt.Cn']",
+      "bucket": "context",
+      "count": 1,
+      "total_weight": 8,
+      "strong_evidence": false,
+      "examples": [
+        [
+          "12724.xyz",
+          "21736.xyz",
+          "mclean.f.360.cn",
+          "mvconf.f.360.cn",
+          "care.help.360.cn",
+          "eul.s.360.cn",
+          "g.s.360.cn",
+          "p.s.360.cn",
+          "aicleaner.shouji.360.cn",
+          "new.915yzt.cn"
+        ]
+      ],
+      "evidence_refs": [
+        "static.network_indicators.domains"
+      ]
+    },
+    {
+      "group": "context:cleartext_http_urls",
+      "title": "329 Cleartext Http Urls Found",
+      "bucket": "context",
+      "count": 1,
+      "total_weight": 6,
+      "strong_evidence": false,
+      "examples": [
+        "329 cleartext HTTP URLs found"
+      ],
+      "evidence_refs": [
+        "static.network_indicators.urls"
+      ]
+    },
+    {
+      "group": "combo:suspicious_domain_network_combo",
+      "title": "Suspicious Domain Indicators With Network Permission",
+      "bucket": "combo",
+      "count": 1,
+      "total_weight": 10,
+      "strong_evidence": true,
+      "examples": [
+        "Suspicious domain indicators with network permission"
+      ],
+      "evidence_refs": [
+        "static.network_indicators.domains"
+      ]
+    },
+    {
+      "group": "context:webview_indicators",
+      "title": "2 Webview/Javascript Indicators",
+      "bucket": "context",
+      "count": 1,
+      "total_weight": 2,
+      "strong_evidence": false,
+      "examples": [
+        "2 WebView/JavaScript indicators"
+      ],
+      "evidence_refs": [
+        "static.webview_indicators"
+      ]
+    },
+    {
+      "group": "context:crypto_indicators",
+      "title": "4 Cryptography Indicators",
+      "bucket": "context",
+      "count": 1,
+      "total_weight": 4,
+      "strong_evidence": false,
+      "examples": [
+        "4 cryptography indicators"
+      ],
+      "evidence_refs": [
+        "static.crypto_indicators"
+      ]
+    }
+  ],
+  "risk_reason_count": 12,
+  "risk_reason_group_count": 8,
+  "observation_count": 1,
+  "total_reason_entries": 13,
+  "verdict_note": "Some entries are informational runtime observations and calibration notes; they explain context but are not independent malicious proofs.",
+  "score_breakdown": {
+    "permission_score_raw": 17,
+    "permission_score_capped": 16,
+    "permission_score_cap": 16,
+    "context_score": 24,
+    "combo_score": 5,
+    "dynamic_score_raw": 0,
+    "dynamic_score_capped": 0,
+    "dynamic_score_cap": 3,
+    "dynamic_generic_only": true,
+    "dynamic_high_or_critical_count": 0,
+    "dynamic_c2_like_count": 0,
+    "score_before_profile": 45,
+    "app_profile": "file_manager_like",
+    "expected_permission_reduction": 0,
+    "score_after_profile": 45,
+    "strong_evidence": true,
+    "hard_strong_evidence": false,
+    "hard_strong_evidence_count": 0,
+    "soft_strong_only": true,
+    "critical_calibration_applied": false,
+    "permission_reason_count": 5,
+    "combo_reason_count": 1,
+    "risk_reason_count": 12,
+    "risk_reason_group_count": 8,
+    "observation_count": 1,
+    "permission_heavy_downgrade_applied": false,
+    "high_risk_gate_applied": false
+  },
+  "calibration": {
+    "profile": "v4.7.2_false_positive_resistant_calibration",
+    "high_threshold": 88,
+    "critical_threshold": 96,
+    "permission_score_cap": 16,
+    "dynamic_generic_score_cap": 3,
+    "note": "False-positive resistant calibration: permissions, domains, exported components, and soft static indicators cannot produce Critical 100% without hard malicious evidence."
+  },
+  "summary": "Rule score 45/100 (medium). Risk groups: 8; observations: 1"
+}

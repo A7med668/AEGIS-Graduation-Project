@@ -1,0 +1,26 @@
+[
+  {
+    "id": "generic_tls_network_observed",
+    "title": "Generic TLS/network runtime activity",
+    "severity": "info",
+    "weight": 0,
+    "strong_evidence": false,
+    "description": "Normal network/TLS logs are observations, not malicious behavior by themselves."
+  },
+  {
+    "id": "cleartext_unknown_endpoint",
+    "title": "Cleartext connection to unknown endpoint",
+    "severity": "medium",
+    "weight": 10,
+    "strong_evidence": false,
+    "description": "Cleartext traffic should be reviewed, especially if the endpoint is unknown."
+  },
+  {
+    "id": "known_bad_network_indicator",
+    "title": "Known-bad network indicator",
+    "severity": "high",
+    "weight": 30,
+    "strong_evidence": true,
+    "description": "Runtime connection to a known-bad domain/IP is strong evidence."
+  }
+]

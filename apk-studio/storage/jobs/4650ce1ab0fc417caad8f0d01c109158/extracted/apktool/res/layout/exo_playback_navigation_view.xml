@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.farsitel.bazaar.player.view.widget.PlayerTraversView android:id="@id/traversViewForward" android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_marginStart="@dimen/default_margin_duodecuple" app:isForward="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/traverseViewBackward" app:layout_constraintTop_toTopOf="parent" />
+    <com.farsitel.bazaar.player.view.widget.PlayerTraversView android:id="@id/traverseViewBackward" android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_marginEnd="@dimen/default_margin_duodecuple" app:isForward="false" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/traversViewForward" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

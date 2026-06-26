@@ -1,0 +1,13 @@
+.class public Lorg/commonmark/ext/gfm/tables/TableHead;
+.super Lorg/commonmark/node/CustomNode;
+.source "TableHead.java"
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Lorg/commonmark/node/CustomNode;-><init>()V
+
+    return-void
+.end method

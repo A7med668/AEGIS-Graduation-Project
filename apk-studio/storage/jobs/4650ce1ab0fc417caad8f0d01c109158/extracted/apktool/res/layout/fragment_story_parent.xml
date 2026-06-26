@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/rootView" android:background="@drawable/story_background" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.viewpager2.widget.ViewPager2 android:id="@id/viewPager" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <include layout="@layout/story_page_non_data" />
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="end|top" android:id="@id/storyCloseButton" android:background="@drawable/selectable_background_story_icon" android:padding="@dimen/default_margin_one_half" android:layout_width="@dimen/story_icons_size" android:layout_height="@dimen/story_icons_size" android:layout_marginTop="@dimen/story_close_margin" android:layout_marginEnd="@dimen/default_margin_double" app:srcCompat="@drawable/ic_close" app:tint="@color/white_primary" />
+</FrameLayout>

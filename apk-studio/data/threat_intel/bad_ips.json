@@ -1,0 +1,10 @@
+{
+  "ips": [
+    {
+      "value": "203.0.113.10",
+      "severity": "high",
+      "source": "local_lab_placeholder",
+      "description": "Documentation IP placeholder. Replace with real confirmed indicators."
+    }
+  ]
+}

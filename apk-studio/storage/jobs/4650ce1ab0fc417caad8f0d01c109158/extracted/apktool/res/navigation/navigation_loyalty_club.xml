@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/navigation_loyalty_club" app:startDestination="@id/emptyFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="EmptyFragment" android:name="com.farsitel.bazaar.component.EmptyFragment" android:id="@id/emptyFragment" />
+    <fragment android:label="LoyaltyClubFragment" android:name="com.farsitel.bazaar.loyaltyclub.detail.view.LoyaltyClubFragment" android:id="@id/loyaltyClubFragment">
+        <deepLink app:uri="@string/deeplink_loyalty_club" />
+        <action android:id="@id/action_loyaltyClub_to_activation" app:destination="@id/activationFragment" app:popUpTo="@id/loyaltyClubFragment" app:popUpToInclusive="true" />
+    </fragment>
+    <fragment android:label="UserLevelingFragment" android:name="com.farsitel.bazaar.loyaltyclub.userleveling.view.UserLevelingFragment" android:id="@id/userLevelingFragment">
+        <deepLink app:uri="@string/deeplink_loyalty_club_levels" />
+    </fragment>
+    <fragment android:label="HistoryFragment" android:name="com.farsitel.bazaar.loyaltyclub.history.view.HistoryFragment" android:id="@id/historyFragment">
+        <deepLink app:uri="@string/deeplink_loyalty_club_history" />
+    </fragment>
+    <fragment android:label="MoreInfoFragment" android:name="com.farsitel.bazaar.loyaltyclub.info.view.MoreInfoFragment" android:id="@id/moreInfoFragment">
+        <deepLink app:uri="@string/deeplink_loyalty_club_more_info" />
+    </fragment>
+    <fragment android:label="ActivationFragment" android:name="com.farsitel.bazaar.loyaltyclub.activation.view.ActivationFragment" android:id="@id/activationFragment">
+        <argument android:name="activationParam" app:argType="com.farsitel.bazaar.loyaltyclub.activation.entity.ActivationParam" />
+        <action android:id="@id/action_activation_to_loyaltyClub" app:destination="@id/loyaltyClubFragment" app:popUpTo="@id/activationFragment" app:popUpToInclusive="true" />
+    </fragment>
+    <dialog android:label="spendItemFragment" android:name="com.farsitel.bazaar.loyaltyclubspendingpoint.view.SpendItemFragment" android:id="@id/spendItemFragment">
+        <deepLink app:uri="@string/deeplink_spend_item_fragment" />
+    </dialog>
+    <dialog android:label="successSpendItemFragment" android:name="com.farsitel.bazaar.loyaltyclubspendingpoint.view.SuccessSpendItemFragment" android:id="@id/successSpendItemFragment">
+        <deepLink app:uri="@string/deeplink_success_spend_item_fragment" />
+    </dialog>
+</navigation>

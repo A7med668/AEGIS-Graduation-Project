@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="?android:listPreferredItemHeightSmall" android:minHeight="?android:listPreferredItemHeightSmall" android:paddingStart="20.0dp" android:paddingEnd="20.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <CheckBox android:gravity="center_vertical" android:id="@id/active" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_toStartOf="@id/whitelist_item_cancel" />
+    <ImageButton android:gravity="center_vertical" android:id="@id/whitelist_item_cancel" android:background="?actionBarItemBackground" android:layout_width="wrap_content" android:layout_height="?android:listPreferredItemHeightSmall" android:src="@drawable/icon_close" android:contentDescription="@null" android:layout_alignParentEnd="true" />
+    <ImageView android:gravity="center_vertical" android:id="@id/faviconView" android:visibility="gone" android:layout_width="20.0dp" android:layout_height="?android:listPreferredItemHeightSmall" android:scaleType="fitCenter" android:contentDescription="@null" android:layout_marginEnd="8.0dp" />
+    <TextView android:textAppearance="?textAppearanceBody1" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/whitelist_item_domain" android:layout_width="match_parent" android:layout_height="?android:listPreferredItemHeightSmall" android:maxLines="1" android:includeFontPadding="false" android:layout_marginEnd="16.0dp" android:layout_toStartOf="@id/active" android:layout_toEndOf="@id/faviconView" />
+</RelativeLayout>

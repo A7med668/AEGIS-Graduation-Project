@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/navigation_magazine" app:startDestination="@id/magazineHomeFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:name="com.farsitel.bazaar.magazine.home.view.MagazineHomePageFragment" android:id="@id/magazineHomeFragment">
+        <deepLink app:uri="@string/deeplink_magazine" />
+    </fragment>
+    <fragment android:name="com.farsitel.bazaar.magazine.detail.view.MagazineDetailPageFragment" android:id="@id/magazineDetailFragment">
+        <deepLink app:uri="@string/deeplink_magazine_detail" />
+    </fragment>
+    <fragment android:name="com.farsitel.bazaar.magazine.home.view.MagazineFilterPageFragment" android:id="@id/magazineFilterFragment">
+        <deepLink app:uri="@string/deeplink_magazine_filter" />
+    </fragment>
+</navigation>

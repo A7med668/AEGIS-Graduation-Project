@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_mode_done">Lokið</string>
+    <string name="abc_capital_off">SLÖKKT</string>
+    <string name="abc_capital_on">KVEIKT</string>
+    <string name="abc_search_hint">Leita…</string>
+    <string name="abc_searchview_description_clear">Hreinsa fyrirspurn</string>
+    <string name="abc_searchview_description_search">Leit</string>
+    <string name="abc_searchview_description_submit">Senda fyrirspurn</string>
+    <string name="abc_searchview_description_voice">Raddleit</string>
+    <string name="abc_toolbar_collapse_description">Minnka</string>
+    <string name="bottomsheet_drag_handle_content_description">Dragkló</string>
+    <string name="close_drawer">Loka yfirlitsvalmynd</string>
+    <string name="close_sheet">Loka blaði</string>
+    <string name="default_error_message">Ógildur innsláttur</string>
+    <string name="default_popup_window_title">Sprettigluggi</string>
+    <string name="error_a11y_label">Villa: Ógilt</string>
+    <string name="glance_error_layout_text_v2">Ekki er hægt að sýna efnið</string>
+    <string name="in_progress">Í vinnslu</string>
+    <string name="indeterminate">Hakað við að hluta til</string>
+    <string name="m3_adaptive_default_pane_title_primary">Fyrsti gluggi</string>
+    <string name="m3_adaptive_default_pane_title_secondary">Annar gluggi</string>
+    <string name="m3_adaptive_default_pane_title_tertiary">Þriðji gluggi</string>
+    <string name="m3_loading_indicator_content_description">Hleður</string>
+    <string name="m3c_bottom_sheet_collapse_description">Minnka blað neðst</string>
+    <string name="m3c_bottom_sheet_dismiss_description">Hunsa blað neðst</string>
+    <string name="m3c_bottom_sheet_drag_handle_description">Dragkló</string>
+    <string name="m3c_bottom_sheet_expand_description">Stækka blað neðst</string>
+    <string name="m3c_bottom_sheet_pane_title">Blað neðst</string>
+    <string name="m3c_snackbar_pane_title">Viðvörun</string>
+    <string name="mtrl_button_snackbar_close_content_description">Loka</string>
+    <string name="navigation_menu">Yfirlitsvalmynd</string>
+    <string name="not_selected">Ekki valið</string>
+    <string name="password_toggle_content_description">Sýna aðgangsorð</string>
+    <string name="selected">Valið</string>
+    <string name="state_empty">Autt</string>
+    <string name="state_off">Slökkt</string>
+    <string name="state_on">Kveikt</string>
+    <string name="switch_role">Skipta</string>
+    <string name="tab">Flipi</string>
+    <string name="template_percent">%1$d prósent.</string>
+    <string name="tooltip_description">ábending</string>
+    <string name="tooltip_label">sýna ábendingu</string>
+</resources>

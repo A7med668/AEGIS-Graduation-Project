@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="added_to_queue_message">
+        <item quantity="one">%d epizóda pridaná do poradia.</item>
+        <item quantity="few">%d epizódy pridané do poradia.</item>
+        <item quantity="other">%d epizód pridaných do poradia.</item>
+    </plurals>
+    <plurals name="deleted_episode_message">
+        <item quantity="one">%d stiahnutá epizóda odstránená.</item>
+        <item quantity="few">%d stiahnuté epizódy boli odstránené.</item>
+        <item quantity="other">%d stiahnutých epizód bolo odstránených.</item>
+    </plurals>
+    <plurals name="downloading_episodes_message">
+        <item quantity="one">Sťahovanie %d epizódy.</item>
+        <item quantity="few">Sťahovanie %d epizód.</item>
+        <item quantity="other">Sťahovanie %d epizód.</item>
+    </plurals>
+    <plurals name="downloads_left">
+        <item quantity="one">%d čaká na stiahnutie</item>
+        <item quantity="few">%d čakajú na stiahnutie</item>
+        <item quantity="many">%d čaká na stiahnutie</item>
+        <item quantity="other">%d čaká na stiahnutie</item>
+    </plurals>
+    <plurals name="echo_hours_podcasts">
+        <item quantity="one">"hodín epizód
+z %1$d podcastu"</item>
+        <item quantity="few">"hodín epizód
+z %1$d rôznych podcastov"</item>
+        <item quantity="other">"hodín epizód
+z %1$d rôznych podcastov"</item>
+    </plurals>
+    <plurals name="echo_queue_hours_waiting">
+        <item quantity="one">"hodín čakajúcich vo vašom poradí
+z %1$d epizódy"</item>
+        <item quantity="few">"hodín čakajúcich vo vašom poradí
+z %1$d epizód"</item>
+        <item quantity="other">"hodín čakajúcich vo vašom poradí
+z %1$d epizód"</item>
+    </plurals>
+    <plurals name="episode_cleanup_days_after_listening">
+        <item quantity="one">%d deň po dokončení</item>
+        <item quantity="few">%d dni po dokončení</item>
+        <item quantity="other">%d dní po dokončení</item>
+    </plurals>
+    <plurals name="episode_cleanup_hours_after_listening">
+        <item quantity="one">%d hodinu po dokončení</item>
+        <item quantity="few">%d hodiny po dokončení</item>
+        <item quantity="other">%d hodín po dokončení</item>
+    </plurals>
+    <plurals name="marked_as_played_message">
+        <item quantity="one">%d epizóda označená ako prehraná.</item>
+        <item quantity="few">%d epizódy označené ako prehrané.</item>
+        <item quantity="many">%d epizód označených ako prehrané.</item>
+        <item quantity="other">%d epizód označených ako prehrané.</item>
+    </plurals>
+    <plurals name="marked_as_unplayed_message">
+        <item quantity="one">%d epizóda označená ako neprehraná.</item>
+        <item quantity="few">%d epizódy označené ako neprehrané.</item>
+        <item quantity="many">%d epizód označených ako neprehraných.</item>
+        <item quantity="other">%d epizód označených ako neprehraných.</item>
+    </plurals>
+    <plurals name="mobile_download_notice">
+        <item quantity="one">Sťahovanie cez mobilné pripojenie nasledujúcu %d minútu</item>
+        <item quantity="few">Sťahovanie cez mobilné pripojenie nasledujúce %d minúty</item>
+        <item quantity="many">Sťahovanie cez mobilné pripojenie nasledujúcich %d minút</item>
+        <item quantity="other">Sťahovanie cez mobilné pripojenie nasledujúcich %d minút</item>
+    </plurals>
+    <plurals name="move_to_bottom_message">
+        <item quantity="one">%d epizóda bola presunutá na koniec.</item>
+        <item quantity="few">%d epizódy boli presunuté na koniec.</item>
+        <item quantity="other">%d epizód bolo presunutých na koniec.</item>
+    </plurals>
+    <plurals name="move_to_top_message">
+        <item quantity="one">%d epizóda bola presunutá na začiatok.</item>
+        <item quantity="few">%d epizódy boli presunuté na začiatok.</item>
+        <item quantity="other">%d epizód bolo presunutých na začiatok.</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d nové upozornenie</item>
+        <item quantity="few">%d nové upozornenia</item>
+        <item quantity="many">%d new notifications</item>
+        <item quantity="other">%d nových upozornení</item>
+    </plurals>
+    <plurals name="new_episode_notification_message">
+        <item quantity="one">%2$s má novú epizódu</item>
+        <item quantity="few">%2$s má %1$d nové epizódy</item>
+        <item quantity="other">%2$s má %1$d nových epizód</item>
+    </plurals>
+    <plurals name="new_episode_notification_title">
+        <item quantity="one">Nová epizóda</item>
+        <item quantity="few">Nové epizódy</item>
+        <item quantity="other">Nové epizódy</item>
+    </plurals>
+    <plurals name="num_episodes">
+        <item quantity="one">%d epizóda</item>
+        <item quantity="few">%d epizódy</item>
+        <item quantity="other">%d epizód</item>
+    </plurals>
+    <plurals name="num_selected_label">
+        <item quantity="one">%1$d/%2$d vybraný</item>
+        <item quantity="few">%1$d/%2$d vybrané</item>
+        <item quantity="other">%1$d/%2$d vybraných</item>
+    </plurals>
+    <plurals name="num_subscriptions">
+        <item quantity="one">%d odber</item>
+        <item quantity="few">%d odbery</item>
+        <item quantity="many">%d odberov</item>
+        <item quantity="other">%d odberov</item>
+    </plurals>
+    <plurals name="removed_from_inbox_batch_label">
+        <item quantity="one">%d epizóda bola odstránená z noviniek.</item>
+        <item quantity="few">%d epizódy boli odstránených z noviniek.</item>
+        <item quantity="other">%d epizód bolo odstránených z noviniek.</item>
+    </plurals>
+    <plurals name="removed_from_queue_message">
+        <item quantity="one">%d epizóda odstránená z poradia.</item>
+        <item quantity="few">%d epizódy odstránené z poradia.</item>
+        <item quantity="other">%d epizód odstránených z poradia.</item>
+    </plurals>
+    <plurals name="statistics_episodes_downloaded">
+        <item quantity="one">stiahnutá</item>
+        <item quantity="few">stiahnuté</item>
+        <item quantity="many">stiahnutých</item>
+        <item quantity="other">stiahnutých</item>
+    </plurals>
+    <plurals name="statistics_episodes_started">
+        <item quantity="one">spustená</item>
+        <item quantity="few">spustené</item>
+        <item quantity="many">spustených</item>
+        <item quantity="other">spustených</item>
+    </plurals>
+    <plurals name="statistics_episodes_total">
+        <item quantity="one">celkovo</item>
+        <item quantity="few">celkovo</item>
+        <item quantity="many">celkovo</item>
+        <item quantity="other">celkovo</item>
+    </plurals>
+    <plurals name="time_days_quantified">
+        <item quantity="one">%d deň</item>
+        <item quantity="few">%d dni</item>
+        <item quantity="other">%d dní</item>
+    </plurals>
+    <plurals name="time_hours_quantified">
+        <item quantity="one">%d hodina</item>
+        <item quantity="few">%d hodiny</item>
+        <item quantity="other">%d hodín</item>
+    </plurals>
+    <plurals name="time_minutes_quantified">
+        <item quantity="one">%d minúta</item>
+        <item quantity="few">%d minúty</item>
+        <item quantity="other">%d minút</item>
+    </plurals>
+    <plurals name="time_seconds_quantified">
+        <item quantity="one">%d sekunda</item>
+        <item quantity="few">%d sekundy</item>
+        <item quantity="other">%d sekúnd</item>
+    </plurals>
+    <plurals name="total_size_downloaded_podcasts">
+        <item quantity="one">Celková veľkosť %d epizódy v zariadení</item>
+        <item quantity="few">Celková veľkosť %d epizód v zariadení</item>
+        <item quantity="other">Celková veľkosť %d epizód v zariadení</item>
+    </plurals>
+    <plurals name="updated_feeds_batch_label">
+        <item quantity="one">%d odber aktualizovaný.</item>
+        <item quantity="few">%d odbery aktualizované.</item>
+        <item quantity="other">%d odberov aktualizovaných.</item>
+    </plurals>
+</resources>

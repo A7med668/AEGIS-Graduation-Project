@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/item_soft_update_description_0" android:padding="@dimen/default_margin" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="24.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="start|top" android:id="@id/movieCover" android:layout_width="8.0dp" android:layout_height="@dimen/title1_font_size" app:srcCompat="@drawable/ic_circle_96dp_old" />
+    <com.farsitel.bazaar.designsystem.widget.LocalAwareTextView android:textColor="@color/text_primary" android:id="@id/movieName" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_marginStart="@dimen/default_margin_double" style="@style/Bazaar.Text.Body1" />
+</FrameLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_mode_done">סיום</string>
+    <string name="abc_capital_off">כבוי</string>
+    <string name="abc_capital_on">מופעל</string>
+    <string name="abc_search_hint">חיפוש…</string>
+    <string name="abc_searchview_description_clear">מחיקת השאילתה</string>
+    <string name="abc_searchview_description_search">חיפוש</string>
+    <string name="abc_searchview_description_submit">שליחת שאילתה</string>
+    <string name="abc_searchview_description_voice">חיפוש קולי</string>
+    <string name="abc_toolbar_collapse_description">כיווץ</string>
+    <string name="bottomsheet_drag_handle_content_description">נקודת אחיזה לגרירה</string>
+    <string name="close_drawer">סגירת תפריט הניווט</string>
+    <string name="close_sheet">סגירת הגיליון</string>
+    <string name="default_error_message">הקלט לא תקין</string>
+    <string name="default_popup_window_title">חלון קופץ</string>
+    <string name="error_a11y_label">שגיאה: לא תקין</string>
+    <string name="glance_error_layout_text_v2">לא ניתן להציג את התוכן</string>
+    <string name="in_progress">בתהליך</string>
+    <string name="indeterminate">מסומנת חלקית</string>
+    <string name="m3_adaptive_default_pane_title_primary">החלונית הראשית</string>
+    <string name="m3_adaptive_default_pane_title_secondary">החלונית המשנית</string>
+    <string name="m3_adaptive_default_pane_title_tertiary">החלונית השלישית</string>
+    <string name="m3_loading_indicator_content_description">בטעינה</string>
+    <string name="m3c_bottom_sheet_collapse_description">כיווץ הגיליון התחתון</string>
+    <string name="m3c_bottom_sheet_dismiss_description">סגירת הגיליון התחתון</string>
+    <string name="m3c_bottom_sheet_drag_handle_description">נקודת אחיזה לגרירה</string>
+    <string name="m3c_bottom_sheet_expand_description">הרחבת הגיליון התחתון</string>
+    <string name="m3c_bottom_sheet_pane_title">גיליון תחתון</string>
+    <string name="m3c_snackbar_pane_title">התראה</string>
+    <string name="mtrl_button_snackbar_close_content_description">סגירה</string>
+    <string name="navigation_menu">תפריט הניווט</string>
+    <string name="not_selected">לא נבחר</string>
+    <string name="password_toggle_content_description">הצגת סיסמה</string>
+    <string name="selected">נבחר</string>
+    <string name="state_empty">ריק</string>
+    <string name="state_off">מצב מושבת</string>
+    <string name="state_on">מצב פעיל</string>
+    <string name="switch_role">מתג</string>
+    <string name="tab">כרטיסייה</string>
+    <string name="template_percent">%1$d אחוזים.</string>
+    <string name="tooltip_description">הסבר קצר</string>
+    <string name="tooltip_label">הצגת ההסבר הקצר</string>
+</resources>

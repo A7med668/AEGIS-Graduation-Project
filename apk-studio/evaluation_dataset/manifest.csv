@@ -1,0 +1,11 @@
+filename,label,expected_risk,source,notes
+benign/benign_01_calculator.apk,benign,informational_or_low,your_source,Known safe calculator app
+benign/benign_02_notes.apk,benign,informational_or_low,your_source,Known safe notes app
+benign/benign_03_browser.apk,benign,low_or_medium,your_source,Known safe browser
+benign/benign_04_media_player.apk,benign,low_or_medium,your_source,Known safe media player
+benign/benign_05_app_store.apk,benign,low_or_medium,your_source,Known safe app store
+malware/malware_01.apk,malware,high_or_critical,authorized_lab_source,Known malware/suspicious sample
+malware/malware_02.apk,malware,high_or_critical,authorized_lab_source,Known malware/suspicious sample
+malware/malware_03.apk,malware,high_or_critical,authorized_lab_source,Known malware/suspicious sample
+malware/malware_04.apk,malware,high_or_critical,authorized_lab_source,Known malware/suspicious sample
+malware/malware_05.apk,malware,high_or_critical,authorized_lab_source,Known malware/suspicious sample

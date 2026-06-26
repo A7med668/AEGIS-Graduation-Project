@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="top" android:orientation="horizontal" android:background="?android:colorBackground" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:id="@id/themeSystemCard" android:clickable="true" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_margin="4.0dp" android:foreground="?android:selectableItemBackground" android:layout_weight="1.0" app:cardCornerRadius="16.0dp" app:cardElevation="0.0dp" app:contentPadding="16.0dp">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/theme_preview_system" android:adjustViewBounds="true" android:maxHeight="200.0dp" />
+            <TextView android:textColor="?android:textColorPrimary" android:id="@id/themeSystemRadio" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="@string/pref_theme_title_automatic" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView android:id="@id/themeLightCard" android:clickable="true" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_margin="4.0dp" android:foreground="?android:selectableItemBackground" android:layout_weight="1.0" app:cardCornerRadius="16.0dp" app:cardElevation="0.0dp" app:contentPadding="16.0dp">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/theme_preview_light" android:adjustViewBounds="true" android:maxHeight="200.0dp" />
+            <TextView android:textColor="?android:textColorPrimary" android:id="@id/themeLightRadio" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="@string/pref_theme_title_light" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView android:id="@id/themeDarkCard" android:clickable="true" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_margin="4.0dp" android:foreground="?android:selectableItemBackground" android:layout_weight="1.0" app:cardCornerRadius="16.0dp" app:cardElevation="0.0dp" app:contentPadding="16.0dp">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/theme_preview_dark" android:adjustViewBounds="true" android:maxHeight="200.0dp" />
+            <TextView android:textColor="?android:textColorPrimary" android:id="@id/themeDarkCardRadio" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="@string/pref_theme_title_dark" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/triangle_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/tri_1" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_play_seek_triangle" />
+        <ImageView android:id="@id/tri_2" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_play_seek_triangle" />
+        <ImageView android:id="@id/tri_3" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_play_seek_triangle" />
+    </LinearLayout>
+    <TextView android:textSize="12.0sp" android:textColor="#fff" android:gravity="center" android:id="@id/double_tap_seconds" android:padding="4.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</merge>

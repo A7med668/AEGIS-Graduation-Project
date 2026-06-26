@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/navigation_badge" app:startDestination="@id/emptyFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="EmptyFragment" android:name="com.farsitel.bazaar.component.EmptyFragment" android:id="@id/emptyFragment" />
+    <fragment android:label="missionsFragment" android:name="com.farsitel.bazaar.badge.view.MissionsFragment" android:id="@id/missionsFragment">
+        <deepLink app:uri="@string/deeplink_badge_missions" />
+        <action android:id="@id/action_missionsFragment_to_badgeFragment" app:destination="@id/badgeFragment" app:popUpTo="@id/navigation_badge" app:popUpToInclusive="true" />
+    </fragment>
+    <fragment android:label="badgeFragment" android:name="com.farsitel.bazaar.badge.view.BadgeFragment" android:id="@id/badgeFragment">
+        <deepLink app:uri="@string/deeplink_badge" />
+    </fragment>
+</navigation>

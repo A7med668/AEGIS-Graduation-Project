@@ -1,0 +1,52 @@
+{
+  "app_store_like": {
+    "description": "Apps that install/update APKs or list installed packages.",
+    "expected_permissions": [
+      "android.permission.REQUEST_INSTALL_PACKAGES",
+      "android.permission.QUERY_ALL_PACKAGES",
+      "android.permission.INTERNET",
+      "android.permission.FOREGROUND_SERVICE"
+    ],
+    "risk_reduction": 12,
+    "max_permission_only_score": 55
+  },
+  "file_manager_like": {
+    "description": "Apps that manage local files and storage.",
+    "expected_permissions": [
+      "android.permission.MANAGE_EXTERNAL_STORAGE",
+      "android.permission.READ_EXTERNAL_STORAGE",
+      "android.permission.WRITE_EXTERNAL_STORAGE"
+    ],
+    "risk_reduction": 10,
+    "max_permission_only_score": 55
+  },
+  "camera_or_voice_like": {
+    "description": "Camera, recorder, meeting, or voice-note apps.",
+    "expected_permissions": [
+      "android.permission.CAMERA",
+      "android.permission.RECORD_AUDIO",
+      "android.permission.FOREGROUND_SERVICE"
+    ],
+    "risk_reduction": 8,
+    "max_permission_only_score": 55
+  },
+  "chat_like": {
+    "description": "Messaging or calling apps.",
+    "expected_permissions": [
+      "android.permission.INTERNET",
+      "android.permission.RECORD_AUDIO",
+      "android.permission.CAMERA",
+      "android.permission.READ_CONTACTS",
+      "android.permission.FOREGROUND_SERVICE",
+      "android.permission.POST_NOTIFICATIONS"
+    ],
+    "risk_reduction": 10,
+    "max_permission_only_score": 58
+  },
+  "generic": {
+    "description": "Default profile when no app category is inferred.",
+    "expected_permissions": [],
+    "risk_reduction": 0,
+    "max_permission_only_score": 60
+  }
+}

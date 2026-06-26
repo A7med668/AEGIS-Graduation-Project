@@ -1,0 +1,417 @@
+{
+  "status": "completed",
+  "created_at": "2026-06-23T09:22:24.462145+00:00",
+  "device_serial": "emulator-5554",
+  "device_info": {
+    "serial": "emulator-5554",
+    "sdk": "34",
+    "release": "14",
+    "model": "sdk_gphone64_x86_64",
+    "manufacturer": "Google",
+    "fingerprint": "google/sdk_gphone64_x86_64/emu64xa:14/UE1A.230829.036.A4/12096271:user/release-keys",
+    "boot_completed": "1",
+    "safety": {
+      "is_emulator": true,
+      "policy": "emulator_only",
+      "block_physical_devices": true,
+      "markers": [
+        "emulator",
+        "sdk_gphone"
+      ]
+    }
+  },
+  "safety_policy": {
+    "require_emulator": true,
+    "emulator_verified": true,
+    "uninstall_after_analysis": true,
+    "force_stop_after_analysis": true,
+    "block_physical_devices": true,
+    "reject_emulator_with_accounts": false,
+    "max_runtime_seconds": 180,
+    "auto_start_emulator": false,
+    "avd_name": "Medium_Phone_API_36.1",
+    "emulator_boot_timeout_seconds": 180,
+    "snapshot_reset_enabled": true,
+    "snapshot_name": "aegis_clean",
+    "network_analysis_enabled": true,
+    "network_note": "Use disposable emulator networking only; do not attach personal accounts or host secrets.",
+    "warning": "Run unknown APKs only inside a disposable emulator snapshot. Do not use personal devices."
+  },
+  "cleanup": {
+    "attempted": true,
+    "force_stopped": true,
+    "uninstalled": true,
+    "uninstall_output_sample": "success\n",
+    "snapshot_reset": {
+      "attempted": true,
+      "action": "load",
+      "name": "aegis_clean",
+      "ok": false,
+      "supported": false,
+      "returncode": 1,
+      "output_sample": "error: could not connect to TCP port 5554: Connection refused"
+    }
+  },
+  "package": "com.uptodown",
+  "duration_seconds": 8,
+  "monkey_events": 3,
+  "coverage": {
+    "installed": true,
+    "launched": true,
+    "interaction_script": true,
+    "extended_artifacts": true,
+    "netstats_captured": true,
+    "screenshot_captured": true,
+    "video_captured": true,
+    "video_started_before_launch": true,
+    "network_analysis_captured": true,
+    "snapshot_reset_attempted": true
+  },
+  "runtime_indicators": [
+    {
+      "title": "Root shell reference observed",
+      "severity": "high",
+      "category": "risk",
+      "evidence_ref": "dynamic.logcat"
+    },
+    {
+      "title": "Network/socket related log observed",
+      "severity": "informational",
+      "category": "observation",
+      "evidence_ref": "dynamic.logcat"
+    },
+    {
+      "title": "HTTP/network related log observed",
+      "severity": "informational",
+      "category": "observation",
+      "evidence_ref": "dynamic.logcat"
+    },
+    {
+      "title": "TLS/SSL related runtime log observed",
+      "severity": "informational",
+      "category": "observation",
+      "evidence_ref": "dynamic.logcat"
+    },
+    {
+      "title": "Runtime crash word observed",
+      "severity": "informational",
+      "category": "observation",
+      "evidence_ref": "dynamic.logcat"
+    },
+    {
+      "title": "Activity/runtime logs observed",
+      "severity": "informational",
+      "category": "observation",
+      "evidence_ref": "dynamic.logcat"
+    },
+    {
+      "title": "Package produced runtime logs or appeared in dumpsys",
+      "severity": "informational",
+      "category": "observation",
+      "evidence_ref": "dynamic.logcat"
+    },
+    {
+      "title": "Network socket table captured",
+      "severity": "informational",
+      "category": "observation",
+      "evidence_ref": "dynamic.proc_net_tcp"
+    }
+  ],
+  "risk_indicators": [
+    {
+      "title": "Root shell reference observed",
+      "severity": "high",
+      "category": "risk",
+      "evidence_ref": "dynamic.logcat"
+    }
+  ],
+  "informational_observations": [
+    {
+      "title": "Network/socket related log observed",
+      "severity": "informational",
+      "category": "observation",
+      "evidence_ref": "dynamic.logcat"
+    },
+    {
+      "title": "HTTP/network related log observed",
+      "severity": "informational",
+      "category": "observation",
+      "evidence_ref": "dynamic.logcat"
+    },
+    {
+      "title": "TLS/SSL related runtime log observed",
+      "severity": "informational",
+      "category": "observation",
+      "evidence_ref": "dynamic.logcat"
+    },
+    {
+      "title": "Runtime crash word observed",
+      "severity": "informational",
+      "category": "observation",
+      "evidence_ref": "dynamic.logcat"
+    },
+    {
+      "title": "Activity/runtime logs observed",
+      "severity": "informational",
+      "category": "observation",
+      "evidence_ref": "dynamic.logcat"
+    },
+    {
+      "title": "Package produced runtime logs or appeared in dumpsys",
+      "severity": "informational",
+      "category": "observation",
+      "evidence_ref": "dynamic.logcat"
+    },
+    {
+      "title": "Network socket table captured",
+      "severity": "informational",
+      "category": "observation",
+      "evidence_ref": "dynamic.proc_net_tcp"
+    }
+  ],
+  "state_diff": {
+    "new_app_files_sample": [],
+    "new_process_lines_sample": [
+      "audioserver    382     1   11087616   4568 0                   0 S android.hardware.audio.service",
+      "hsm            383     1   10874856   1844 0                   0 S android.hardware.authsecret-service.example",
+      "keystore       201     1   10916856   6272 0                   0 S keystore2",
+      "logd           176     1   10821644   4448 0                   0 S logd",
+      "nobody         205     1   10908212   3408 0                   0 S android.hardware.security.keymint-service",
+      "prng_seeder    166     1   10890908   3888 0                   0 S prng_seeder",
+      "root             1     0   10924572   3468 0                   0 S init",
+      "root            10     2          0      0 0                   0 I [kworker/u12:1-events_unbound]",
+      "root            19     2          0      0 0                   0 R [kworker/0:1-events]",
+      "root            35     2          0      0 0                   0 I [kworker/3:0H-kverityd]",
+      "root            40     2          0      0 0                   0 I [kworker/4:0H-kblockd]",
+      "root            63     2          0      0 0                   0 I [kworker/u13:0-blk_crypto_wq]",
+      "root            99     2          0      0 0                   0 I [kworker/0:3H-kblockd]",
+      "root           104     2          0      0 0                   0 I [kworker/3:1H-kblockd]",
+      "root           109     1   10883884   2940 0                   0 S ueventd",
+      "root           189     1   10848192   1504 0                   0 S qemu-props",
+      "root           192     2          0      0 0                   0 I [kworker/3:2-events]",
+      "root           193     1   10943012   3608 0                   0 S vold",
+      "root           219     2          0      0 0                   0 I [kworker/u13:1-blk_crypto_wq]",
+      "root           285     2          0      0 0                   0 I [kworker/u12:3-events_unbound]",
+      "root           297     2          0      0 0                   0 I [kworker/u12:4-loop18]",
+      "root           363     1   10798676   1512 0                   0 R dhcpclient",
+      "root           376     1   10988712   4328 0                   0 S netd",
+      "root           377     1   14353448  81964 0                   0 S zygote64",
+      "statsd         375     1   10810192   3420 0                   0 S statsd",
+      "system         178     1   10911696   3348 0                   0 S servicemanager",
+      "system         186     1   10862240   2124 0                   0 S hwservicemanager",
+      "system         200     1   10873636   3540 0                   0 S android.system.suspend-service",
+      "system         378     1   10890436   1620 0                   0 S android.hidl.allocator@1.0-service",
+      "system         384     1   11006740   3252 0                   0 S android.hardware.camera.provider.ranchu",
+      "system         385     1   10906136   3404 0                   0 S android.hardware.camera.provider@2.7-service-google",
+      "system         386     1   10853884   2096 0                   0 S android.hardware.gatekeeper@1.0-service.software",
+      "system         387     1   10887876   4816 0                   0 S android.hardware.graphics.allocator@3.0-service.ranchu",
+      "system         390     1   10850288   3236 0                   0 S android.hardware.health-service"
+    ],
+    "appops_after_sample": "Uid mode: POST_NOTIFICATION: ignore\nRECORD_AUDIO: ignore\nREAD_EXTERNAL_STORAGE: ignore\nWRITE_EXTERNAL_STORAGE: ignore\nGET_ACCOUNTS: ignore\nLEGACY_STORAGE: ignore\nWAKE_LOCK: allow; time=+32s982ms ago; duration=+8s660ms\nWRITE_MEDIA_AUDIO: deny; rejectTime=+30s322ms ago\nWRITE_MEDIA_VIDEO: deny; rejectTime=+30s288ms ago\nWRITE_MEDIA_IMAGES: deny; rejectTime=+30s269ms ago\nMANAGE_EXTERNAL_STORAGE: default; rejectTime=+32s211ms ago\nNO_ISOLATED_STORAGE: deny; rejectTime=+32s213ms ago\n"
+  },
+  "filesystem_diff": {
+    "new_app_files_sample": [],
+    "new_process_lines_sample": [
+      "audioserver    382     1   11087616   4568 0                   0 S android.hardware.audio.service",
+      "hsm            383     1   10874856   1844 0                   0 S android.hardware.authsecret-service.example",
+      "keystore       201     1   10916856   6272 0                   0 S keystore2",
+      "logd           176     1   10821644   4448 0                   0 S logd",
+      "nobody         205     1   10908212   3408 0                   0 S android.hardware.security.keymint-service",
+      "prng_seeder    166     1   10890908   3888 0                   0 S prng_seeder",
+      "root             1     0   10924572   3468 0                   0 S init",
+      "root            10     2          0      0 0                   0 I [kworker/u12:1-events_unbound]",
+      "root            19     2          0      0 0                   0 R [kworker/0:1-events]",
+      "root            35     2          0      0 0                   0 I [kworker/3:0H-kverityd]",
+      "root            40     2          0      0 0                   0 I [kworker/4:0H-kblockd]",
+      "root            63     2          0      0 0                   0 I [kworker/u13:0-blk_crypto_wq]",
+      "root            99     2          0      0 0                   0 I [kworker/0:3H-kblockd]",
+      "root           104     2          0      0 0                   0 I [kworker/3:1H-kblockd]",
+      "root           109     1   10883884   2940 0                   0 S ueventd",
+      "root           189     1   10848192   1504 0                   0 S qemu-props",
+      "root           192     2          0      0 0                   0 I [kworker/3:2-events]",
+      "root           193     1   10943012   3608 0                   0 S vold",
+      "root           219     2          0      0 0                   0 I [kworker/u13:1-blk_crypto_wq]",
+      "root           285     2          0      0 0                   0 I [kworker/u12:3-events_unbound]",
+      "root           297     2          0      0 0                   0 I [kworker/u12:4-loop18]",
+      "root           363     1   10798676   1512 0                   0 R dhcpclient",
+      "root           376     1   10988712   4328 0                   0 S netd",
+      "root           377     1   14353448  81964 0                   0 S zygote64",
+      "statsd         375     1   10810192   3420 0                   0 S statsd",
+      "system         178     1   10911696   3348 0                   0 S servicemanager",
+      "system         186     1   10862240   2124 0                   0 S hwservicemanager",
+      "system         200     1   10873636   3540 0                   0 S android.system.suspend-service",
+      "system         378     1   10890436   1620 0                   0 S android.hidl.allocator@1.0-service",
+      "system         384     1   11006740   3252 0                   0 S android.hardware.camera.provider.ranchu",
+      "system         385     1   10906136   3404 0                   0 S android.hardware.camera.provider@2.7-service-google",
+      "system         386     1   10853884   2096 0                   0 S android.hardware.gatekeeper@1.0-service.software",
+      "system         387     1   10887876   4816 0                   0 S android.hardware.graphics.allocator@3.0-service.ranchu",
+      "system         390     1   10850288   3236 0                   0 S android.hardware.health-service"
+    ],
+    "appops_after_sample": "Uid mode: POST_NOTIFICATION: ignore\nRECORD_AUDIO: ignore\nREAD_EXTERNAL_STORAGE: ignore\nWRITE_EXTERNAL_STORAGE: ignore\nGET_ACCOUNTS: ignore\nLEGACY_STORAGE: ignore\nWAKE_LOCK: allow; time=+32s982ms ago; duration=+8s660ms\nWRITE_MEDIA_AUDIO: deny; rejectTime=+30s322ms ago\nWRITE_MEDIA_VIDEO: deny; rejectTime=+30s288ms ago\nWRITE_MEDIA_IMAGES: deny; rejectTime=+30s269ms ago\nMANAGE_EXTERNAL_STORAGE: default; rejectTime=+32s211ms ago\nNO_ISOLATED_STORAGE: deny; rejectTime=+32s213ms ago\n"
+  },
+  "network_analysis": {
+    "captured": true,
+    "urls": [],
+    "domains": [],
+    "remote_ips": [],
+    "cleartext_http_urls": [],
+    "cleartext_http_count": 0,
+    "suspicious_domains": [],
+    "suspicious_domain_count": 0,
+    "socket_lines_sample": [
+      "Active Internet connections (servers and established)",
+      "tcp      130      0 10.0.2.16:57228         142.251.208.150:443     CLOSE_WAIT ",
+      "tcp      130      0 10.0.2.16:59204         216.239.36.223:443      CLOSE_WAIT ",
+      "tcp        0      0 10.0.2.16:47018         142.250.178.14:443      ESTABLISHED",
+      "tcp        0      0 10.0.2.16:45366         10.0.2.3:853            ESTABLISHED",
+      "tcp      130      0 10.0.2.16:59200         216.239.36.223:443      CLOSE_WAIT ",
+      "tcp        0      0 10.0.2.16:41894         216.239.36.223:443      ESTABLISHED",
+      "tcp   1291680      0 10.0.2.16:36360         192.178.202.93:443      ESTABLISHED",
+      "tcp6       0      0 [::]:5555               [::]:*                  LISTEN     ",
+      "tcp6       0      0 [::]:45135              [::]:*                  LISTEN     ",
+      "tcp6       0      0 ::ffff:127.0.0.1:34679  [::]:*                  LISTEN     ",
+      "tcp6       0      0 ::ffff:127.0.0.1:46785  [::]:*                  LISTEN     ",
+      "tcp6       1      0 ::ffff:10.0.2.16:39838  ::ffff:172.217.20.9:443 CLOSE_WAIT ",
+      "tcp6       0      0 ::ffff:10.0.2.16:40290  ::ffff:216.239.32.2:443 ESTABLISHED",
+      "tcp6       0      0 ::ffff:10.0.2.16:46082  ::ffff:104.21.78.21:443 ESTABLISHED",
+      "tcp6       0      0 ::ffff:10.0.2.16:50712  ::ffff:108.177.15.:5228 ESTABLISHED",
+      "tcp6       1      0 ::ffff:10.0.2.16:47120  ::ffff:172.217.17.4:443 CLOSE_WAIT ",
+      "tcp6       1      0 ::ffff:10.0.2.16:60544  ::ffff:142.251.209.:443 CLOSE_WAIT ",
+      "tcp6      32      0 ::ffff:10.0.2.16:35990  ::ffff:51.210.117.8:443 CLOSE_WAIT ",
+      "tcp6       0      0 ::ffff:10.0.2.16:47958  ::ffff:216.239.32.2:443 ESTABLISHED",
+      "tcp6       1      0 ::ffff:10.0.2.16:34266  ::ffff:142.251.209.:443 CLOSE_WAIT ",
+      "tcp6       0      0 ::ffff:10.0.2.16:46062  ::ffff:104.21.78.21:443 ESTABLISHED",
+      "tcp6       0      0 ::ffff:10.0.2.16:46072  ::ffff:104.21.78.21:443 ESTABLISHED",
+      "tcp6       0      0 ::ffff:10.0.2.16:53562  ::ffff:142.251.208.:443 ESTABLISHED",
+      "tcp6       1      0 ::ffff:10.0.2.16:36790  ::ffff:142.251.36.1:443 CLOSE_WAIT ",
+      "tcp6       1      0 ::ffff:10.0.2.16:58512  ::ffff:10.0.2.2:80      CLOSE_WAIT ",
+      "tcp6       0      0 ::ffff:10.0.2.16:45606  ::ffff:142.251.209.:443 ESTABLISHED",
+      "tcp6       1      0 ::ffff:10.0.2.16:49222  ::ffff:142.250.74.7:443 CLOSE_WAIT ",
+      "tcp6       0      0 ::ffff:10.0.2.16:42428  ::ffff:172.217.18.9:443 ESTABLISHED",
+      "tcp6       1      0 ::ffff:10.0.2.16:60526  ::ffff:142.251.209.:443 CLOSE_WAIT ",
+      "tcp6       0      0 ::ffff:10.0.2.16:44980  ::ffff:142.251.209.:443 TIME_WAIT  ",
+      "tcp6       0      0 ::ffff:10.0.2.16:46412  ::ffff:216.239.36.1:443 ESTABLISHED",
+      "tcp6       1      0 ::ffff:10.0.2.16:33862  ::ffff:216.239.32.2:443 CLOSE_WAIT ",
+      "tcp6       0      0 ::ffff:10.0.2.16:54256  ::ffff:151.101.67.5:443 ESTABLISHED",
+      "tcp6      32      0 ::ffff:10.0.2.16:35974  ::ffff:51.210.117.8:443 CLOSE_WAIT ",
+      "tcp6       0      0 ::ffff:10.0.2.16:34274  ::ffff:142.251.209.:443 ESTABLISHED",
+      "tcp6       0      0 ::ffff:10.0.2.16:35948  ::ffff:51.210.117.8:443 ESTABLISHED",
+      "tcp6       0      0 ::ffff:10.0.2.16:53088  ::ffff:142.251.39.1:443 ESTABLISHED",
+      "tcp6       0      0 ::ffff:10.0.2.16:42560  ::ffff:142.251.209.:443 ESTABLISHED",
+      "tcp6       1      0 ::ffff:10.0.2.16:38866  ::ffff:142.251.142.:443 CLOSE_WAIT ",
+      "tcp6       0      0 ::ffff:10.0.2.16:42572  ::ffff:142.251.209.:443 ESTABLISHED",
+      "tcp6       1      0 ::ffff:10.0.2.16:39836  ::ffff:172.217.20.9:443 CLOSE_WAIT ",
+      "tcp6       1      0 ::ffff:10.0.2.16:59106  ::ffff:142.251.142.:443 CLOSE_WAIT ",
+      "tcp6       0      0 ::ffff:10.0.2.16:41036  ::ffff:216.239.38.2:443 ESTABLISHED",
+      "tcp6       0      0 ::ffff:10.0.2.16:42250  ::ffff:142.251.36.1:443 ESTABLISHED",
+      "tcp6       1      0 ::ffff:10.0.2.16:39196  ::ffff:142.251.208.:443 CLOSE_WAIT ",
+      "tcp6       1      0 ::ffff:10.0.2.16:60538  ::ffff:142.251.209.:443 CLOSE_WAIT ",
+      "tcp6       1      0 ::ffff:10.0.2.16:59114  ::ffff:142.251.142.:443 CLOSE_WAIT ",
+      "tcp6       0      0 ::ffff:10.0.2.16:39490  ::ffff:216.239.34.2:443 ESTABLISHED",
+      "tcp6       0      0 ::ffff:10.0.2.16:35972  ::ffff:51.210.117.8:443 ESTABLISHED",
+      "tcp6       1      0 ::ffff:10.0.2.16:60556  ::ffff:142.251.209.:443 CLOSE_WAIT ",
+      "tcp6      32      0 ::ffff:10.0.2.16:35998  ::ffff:51.210.117.8:443 CLOSE_WAIT ",
+      "tcp6       0      0 ::ffff:10.0.2.16:46050  ::ffff:104.21.78.21:443 TIME_WAIT  ",
+      "tcp6       0      0 ::ffff:10.0.2.16:60590  ::ffff:216.239.38.2:443 TIME_WAIT  ",
+      "tcp6       0      0 ::ffff:10.0.2.16:49384  ::ffff:216.239.36.2:443 TIME_WAIT  ",
+      "tcp6       1      0 ::ffff:10.0.2.16:59128  ::ffff:142.251.142.:443 CLOSE_WAIT ",
+      "tcp6       0      0 ::ffff:10.0.2.16:34722  ::ffff:142.251.39.1:443 TIME_WAIT  ",
+      "tcp6       0      0 ::ffff:10.0.2.16:54260  ::ffff:151.101.67.5:443 ESTABLISHED",
+      "tcp6       0      0 ::ffff:10.0.2.16:50846  ::ffff:216.239.34.2:443 ESTABLISHED",
+      "tcp6       1      0 ::ffff:10.0.2.16:38312  ::ffff:142.251.142.:443 CLOSE_WAIT ",
+      "tcp6       1      0 ::ffff:10.0.2.16:47944  ::ffff:216.239.32.2:443 CLOSE_WAIT ",
+      "udp     1280      0 10.0.2.16:68            10.0.2.2:67             ESTABLISHED",
+      "udp        0      0 10.0.2.16:56407         142.250.178.14:443      ESTABLISHED",
+      "udp        0      0 0.0.0.0:5353            0.0.0.0:*                          ",
+      "udp        0      0 0.0.0.0:5353            0.0.0.0:*                          ",
+      "udp        0      0 10.0.2.16:44292         216.239.36.223:443      ESTABLISHED",
+      "udp        0      0 10.0.2.16:40197         216.239.36.223:443      ESTABLISHED",
+      "udp        0    768 10.0.2.16:60728         142.251.208.138:443     ESTABLISHED",
+      "udp        0      0 0.0.0.0:60798           0.0.0.0:*                          ",
+      "udp        0      0 10.0.2.16:37738         142.251.208.150:443     ESTABLISHED",
+      "udp6       0      0 [::]:56200              [::]:*                             ",
+      "udp6       0      0 [::]:5353               [::]:*                             ",
+      "udp6       0      0 [::]:5353               [::]:*                             ",
+      "udp6       0      0 [::]:5353               [::]:*                             ",
+      "udp6       0      0 [::]:5353               [::]:*                             ",
+      "Active UNIX domain sockets (servers and established)"
+    ],
+    "socket_line_count": 76,
+    "note": "Runtime network evidence is best-effort from logcat, dumpsys connectivity, netstats, and socket tables."
+  },
+  "appops": "Uid mode: POST_NOTIFICATION: ignore\nRECORD_AUDIO: ignore\nREAD_EXTERNAL_STORAGE: ignore\nWRITE_EXTERNAL_STORAGE: ignore\nGET_ACCOUNTS: ignore\nLEGACY_STORAGE: ignore\nWAKE_LOCK: allow; time=+32s982ms ago; duration=+8s660ms\nWRITE_MEDIA_AUDIO: deny; rejectTime=+30s322ms ago\nWRITE_MEDIA_VIDEO: deny; rejectTime=+30s288ms ago\nWRITE_MEDIA_IMAGES: deny; rejectTime=+30s269ms ago\nMANAGE_EXTERNAL_STORAGE: default; rejectTime=+32s211ms ago\nNO_ISOLATED_STORAGE: deny; rejectTime=+32s213ms ago\n",
+  "actions": [
+    {
+      "type": "launch",
+      "detail": "Launch package com.uptodown",
+      "status": "attempted"
+    },
+    {
+      "type": "keyevent",
+      "detail": "shell input keyevent 82",
+      "status": "executed"
+    },
+    {
+      "type": "tap",
+      "detail": "shell input tap 540 1600",
+      "status": "executed"
+    },
+    {
+      "type": "swipe",
+      "detail": "shell input swipe 540 1600 540 500 500",
+      "status": "executed"
+    },
+    {
+      "type": "keyevent",
+      "detail": "shell input keyevent 4",
+      "status": "executed"
+    },
+    {
+      "type": "keyevent",
+      "detail": "shell input keyevent 3",
+      "status": "executed"
+    },
+    {
+      "type": "monkey",
+      "detail": "shell monkey -p com.uptodown -c android.intent.category.LAUNCHER 1",
+      "status": "executed"
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "dynamic/screenshot_001.png",
+      "label": "Final emulator screen"
+    }
+  ],
+  "video_path": "dynamic/dynamic_replay.mp4",
+  "log_snippets_ref": "dynamic/runtime_snippets.json",
+  "artifacts": {
+    "logcat": "dynamic/logcat.txt",
+    "dumpsys_activity_top": "dynamic/dumpsys_activity_top.txt",
+    "processes": "dynamic/processes.txt",
+    "proc_net_tcp": "dynamic/proc_net_tcp.txt",
+    "proc_net_tcp6": "dynamic/proc_net_tcp6.txt",
+    "netstat": "dynamic/netstat.txt",
+    "dumpsys_connectivity": "dynamic/dumpsys_connectivity.txt",
+    "dumpsys_package": "dynamic/dumpsys_package.txt",
+    "appops": "dynamic/appops.txt",
+    "dumpsys_meminfo": "dynamic/dumpsys_meminfo.txt",
+    "dumpsys_services": "dynamic/dumpsys_services.txt",
+    "dumpsys_netstats": "dynamic/dumpsys_netstats.txt",
+    "screenshot": "dynamic/screenshot_001.png",
+    "screenrecord": "dynamic/dynamic_replay.mp4",
+    "video": "dynamic/dynamic_replay.mp4",
+    "interaction_output": "dynamic/interaction_output.txt",
+    "replay_actions": "dynamic/replay_actions.json",
+    "state_diff": "dynamic/state_diff.json",
+    "network_analysis": "dynamic/network_analysis.json",
+    "snapshot_pre": "dynamic/snapshot_pre.json"
+  },
+  "summary": {
+    "risk_indicator_count": 1,
+    "observation_count": 7,
+    "artifact_count": 20,
+    "network_endpoint_count": 0,
+    "note": "Generic logcat/network/TLS/socket-table activity is kept as an observation unless paired with stronger behavior."
+  }
+}

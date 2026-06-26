@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/main_view" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+        <androidx.fragment.app.FragmentContainerView android:layout_gravity="start" android:orientation="vertical" android:id="@id/navDrawerFragment" android:layout_width="300.0dp" android:layout_height="match_parent" />
+        <View android:background="?android:listDivider" android:layout_width="1.0dp" android:layout_height="match_parent" />
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/overview_coordinator_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.fragment.app.FragmentContainerView android:id="@id/main_content_view" android:layout_width="match_parent" android:layout_height="match_parent" android:foreground="?android:windowContentOverlay" android:layout_alignParentTop="true" />
+            <androidx.fragment.app.FragmentContainerView android:id="@id/audioplayerFragment" android:background="?android:colorBackground" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:elevation="8.0dp" app:layout_behavior="de.danoeh.antennapod.ui.view.LockableBottomSheetBehavior" />
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </LinearLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView android:id="@id/bottomNavigationView" android:layout_width="match_parent" android:layout_height="64.0dp" app:itemPaddingBottom="12.0dp" app:itemPaddingTop="6.0dp" app:itemTextAppearanceActive="@style/TextBottomNav" app:itemTextAppearanceInactive="@style/TextBottomNav" app:labelVisibilityMode="labeled" />
+    <View android:id="@id/bottom_padding" android:background="?colorSurfaceContainer" android:layout_width="match_parent" android:layout_height="0.0dp" />
+</LinearLayout>

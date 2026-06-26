@@ -1,0 +1,63 @@
+Applications Memory Usage (in Kilobytes):
+Uptime: 327940 Realtime: 327940
+
+** MEMINFO in pid 5391 [com.uptodown] **
+                   Pss  Private  Private  SwapPss      Rss     Heap     Heap     Heap
+                 Total    Dirty    Clean    Dirty    Total     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------   ------
+  Native Heap    34830    34748       52       19    35992    49296    35109    11000
+  Dalvik Heap     8823     8664      120       92     9612    14825     7413     7412
+ Dalvik Other     3601     3480        0        2     3972                           
+        Stack     2584     2584        0        0     2592                           
+       Ashmem       10        0        0        0      560                           
+    Other dev       18        4       12        0      256                           
+     .so mmap     4151      272      440        3    38116                           
+    .jar mmap     3277        0      940        0    33900                           
+    .apk mmap    25376       88    15912        0    50912                           
+    .ttf mmap      519        0      284        0      844                           
+    .dex mmap    13121       28    12912        0    15224                           
+    .oat mmap     1203        0      164        0    14848                           
+    .art mmap     1460      740      244      127    18220                           
+   Other mmap      379        4      252        0     1468                           
+      Unknown      546      544        0        0      900                           
+        TOTAL   100141    51156    31332      243   227416    64121    42522    18412
+ 
+ App Summary
+                       Pss(KB)                        Rss(KB)
+                        ------                         ------
+           Java Heap:     9648                          27832
+         Native Heap:    34748                          35992
+                Code:    31052                         154112
+               Stack:     2584                           2592
+            Graphics:        0                              0
+       Private Other:     4456
+              System:    17653
+             Unknown:                                    6888
+ 
+           TOTAL PSS:   100141            TOTAL RSS:   227416       TOTAL SWAP PSS:      243
+ 
+ Objects
+               Views:      335         ViewRootImpl:        2
+         AppContexts:       10           Activities:        1
+              Assets:       54        AssetManagers:        0
+       Local Binders:       46        Proxy Binders:       55
+       Parcel memory:       19         Parcel count:       75
+    Death Recipients:        3             WebViews:        0
+ 
+ SQL
+         MEMORY_USED:     1172
+  PAGECACHE_OVERFLOW:      840          MALLOC_SIZE:      294
+ 
+ DATABASES
+      pgsz     dbsz   Lookaside(b) cache hits cache misses cache size  Dbname
+PER CONNECTION STATS
+         4      104             18   152   307     1  /data/user/0/com.uptodown/no_backup/androidx.work.workdb
+         4        8                    0     0     0    (attached) temp
+         4      104             50   106    81     1  /data/user/0/com.uptodown/no_backup/androidx.work.workdb (1)
+         4      580            123   798    90    25  /data/user/0/com.uptodown/databases/Uptodown.db
+         4       56             46     2    71     5  /data/user/0/com.uptodown/databases/com.google.android.datatransport.events
+POOL STATS
+     cache hits  cache misses    cache size  Dbname
+            258           392           650  /data/user/0/com.uptodown/no_backup/androidx.work.workdb
+            798            91           889  /data/user/0/com.uptodown/databases/Uptodown.db
+              2            72            74  /data/user/0/com.uptodown/databases/com.google.android.datatransport.events

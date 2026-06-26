@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="added_to_queue_message">
+        <item quantity="one">atal %d ilarara gehitu da.</item>
+        <item quantity="other">%d atal ilarara gehitu dira.</item>
+    </plurals>
+    <plurals name="deleted_episode_message">
+        <item quantity="one">Deskargatutako atal %d ezabatuta.</item>
+        <item quantity="other">Deskargatutako %d atal deskargatuta.</item>
+    </plurals>
+    <plurals name="downloading_episodes_message">
+        <item quantity="one">Atal %d deskargatzen.</item>
+        <item quantity="other">%d atal deskargatzen.</item>
+    </plurals>
+    <plurals name="downloads_left">
+        <item quantity="one">Deskarga %d zain</item>
+        <item quantity="other">%d deskarga zain</item>
+    </plurals>
+    <plurals name="echo_hours_podcasts">
+        <item quantity="one">"Atalen orduak
+%1$d podcastetik"</item>
+        <item quantity="other">"Atalen orduak
+%1$d podcast ezberdinetatik"</item>
+    </plurals>
+    <plurals name="echo_queue_hours_waiting">
+        <item quantity="one">"zure ilaran itxaron beharreko orduak
+ %1$d ataletik"</item>
+        <item quantity="other">"zure ilaran itxaron beharreko orduak
+ %1$d ataletatik"</item>
+    </plurals>
+    <plurals name="episode_cleanup_days_after_listening">
+        <item quantity="one">Egunaren %d bukatu arte</item>
+        <item quantity="other">Egunen %d bukatu arte</item>
+    </plurals>
+    <plurals name="episode_cleanup_hours_after_listening">
+        <item quantity="one">Orduaren %d bukatu arte</item>
+        <item quantity="other">Orduen %d bukatu arte</item>
+    </plurals>
+    <plurals name="episodes_sleep_timer_exceeds_queue">
+        <item quantity="one">Atal %1$d baino ez da gertazen zure ilaran</item>
+        <item quantity="other">%1$d atal baino ez dira geratzen zure ilaran</item>
+    </plurals>
+    <plurals name="marked_as_played_message">
+        <item quantity="one">%d erreproduzituta gisa ezarri da.</item>
+        <item quantity="other">%d erreproduzituta gisa ezarri da.</item>
+    </plurals>
+    <plurals name="marked_as_unplayed_message">
+        <item quantity="one">%d erreproduzitu gabe gisa ezarrita.</item>
+        <item quantity="other">%d erreproduzitu gabe gisa ezarrita.</item>
+    </plurals>
+    <plurals name="mobile_download_notice">
+        <item quantity="one">Hurrengo %d minutuz datu mugikorren konexioaren bidez deskargatzen</item>
+        <item quantity="other">Hurrengo %d minutuz datu mugikorren konexioaren bidez deskargatzen</item>
+    </plurals>
+    <plurals name="move_to_bottom_message">
+        <item quantity="one">Atal %d behean ezarri da.</item>
+        <item quantity="other">%d atal behean ezarri dira.</item>
+    </plurals>
+    <plurals name="move_to_top_message">
+        <item quantity="one">Atal %d goian ezarri da.</item>
+        <item quantity="other">%d atal goian ezarri dira.</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d jakinarazpen berri</item>
+        <item quantity="other">%d jakinarazpen berri</item>
+    </plurals>
+    <plurals name="new_episode_notification_message">
+        <item quantity="one">%2$s (e)k saio berri bat du</item>
+        <item quantity="other">%2$s (e)k %1$d saio berri ditu</item>
+    </plurals>
+    <plurals name="new_episode_notification_title">
+        <item quantity="one">Saio berria</item>
+        <item quantity="other">Saio berriak</item>
+    </plurals>
+    <plurals name="num_episodes">
+        <item quantity="one">Saio %d</item>
+        <item quantity="other">%d saio</item>
+    </plurals>
+    <plurals name="num_selected_label">
+        <item quantity="one">%1$d/%2$d hautatuta</item>
+        <item quantity="other">%1$d/%2$d hautatuta</item>
+    </plurals>
+    <plurals name="num_subscriptions">
+        <item quantity="one">%d harpidetza</item>
+        <item quantity="other">%d harpidetzak</item>
+    </plurals>
+    <plurals name="removed_from_inbox_batch_label">
+        <item quantity="one">Saio %d sarrerako ontzitik kenduta.</item>
+        <item quantity="other">%d saio sarrerako ontzitik kenduta.</item>
+    </plurals>
+    <plurals name="removed_from_queue_message">
+        <item quantity="one">atal %d ilaratik kendu da.</item>
+        <item quantity="other">%d atal ilaratik kendu dira.</item>
+    </plurals>
+    <plurals name="statistics_episodes_downloaded">
+        <item quantity="one">deskargatuta</item>
+        <item quantity="other">deskargatuta</item>
+    </plurals>
+    <plurals name="statistics_episodes_started">
+        <item quantity="one">hasita</item>
+        <item quantity="other">hasita</item>
+    </plurals>
+    <plurals name="statistics_episodes_total">
+        <item quantity="one">guztira</item>
+        <item quantity="other">guztira</item>
+    </plurals>
+    <plurals name="time_days_quantified">
+        <item quantity="one">%d egun</item>
+        <item quantity="other">%d egun</item>
+    </plurals>
+    <plurals name="time_hours_quantified">
+        <item quantity="one">%d ordu</item>
+        <item quantity="other">%d ordu</item>
+    </plurals>
+    <plurals name="time_minutes_quantified">
+        <item quantity="one">%d minutu</item>
+        <item quantity="other">%d minutu</item>
+    </plurals>
+    <plurals name="time_seconds_quantified">
+        <item quantity="one">%d segundo</item>
+        <item quantity="other">%d segundo</item>
+    </plurals>
+    <plurals name="timer_exceeds_remaining_time_while_continuous_playback_disabled">
+        <item quantity="one">Erreprodukzio jarraitua desgaituta dago eta uneko atalari minutu %1$d baino ez zaio geratzen</item>
+        <item quantity="other">Erreprodukzio jarraitua desgaituta dago eta uneko atalari %1$d minutu baino ez zaizkio geratzen</item>
+    </plurals>
+    <plurals name="total_size_downloaded_podcasts">
+        <item quantity="one">Atalaren %d guztizko tamaina gailuan</item>
+        <item quantity="other">Atalen %d guztizko tamaina gailuan</item>
+    </plurals>
+    <plurals name="updated_feeds_batch_label">
+        <item quantity="one">Harpidetza %d eguneratu da.</item>
+        <item quantity="other">%d harpidetzak eguneratu dira.</item>
+    </plurals>
+</resources>

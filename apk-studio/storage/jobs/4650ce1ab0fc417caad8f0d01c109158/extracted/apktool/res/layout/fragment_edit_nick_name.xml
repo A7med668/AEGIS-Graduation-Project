@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/Theme.Bazaar.BottomSheetDialog.EnterExitAnimation"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/toolbar" android:padding="@dimen/default_margin_double" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/toolbarBackButton" android:padding="@dimen/default_margin_quarter" android:layout_centerVertical="true" android:contentDescription="@string/close_button_content_description" android:layout_alignParentEnd="true" app:srcCompat="@drawable/ic_round_close_icon_secondary_24dp_old" style="@style/Bazaar.Image.Toolbar" />
+        <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/text_primary" android:id="@id/pageDesc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nick_name" android:includeFontPadding="false" android:layout_centerInParent="true" android:layout_marginStart="@dimen/default_margin_one_half" style="@style/Bazaar.Text.Subtitle1" />
+    </RelativeLayout>
+    <View android:id="@id/divider" android:layout_width="match_parent" style="@style/Bazaar.HorizontalDivider" />
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputLayout android:theme="@style/Bazaar.TextInput" android:id="@id/nickNameInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin_double" android:layout_marginStart="@dimen/default_margin_double" android:layout_marginEnd="@dimen/default_margin_double" app:hintTextAppearance="@style/Bazaar.Text.Caption">
+                <androidx.appcompat.widget.AppCompatEditText android:id="@id/nickNameEditText" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/nick_name" android:singleLine="true" android:imeOptions="actionDone" style="@style/Bazaar.Text.Body">
+                    <requestFocus />
+                </androidx.appcompat.widget.AppCompatEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+            <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/text_primary" android:id="@id/description" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin_double" android:text="@string/nickname_fragment_description" android:layout_marginStart="@dimen/default_margin_double" android:layout_marginEnd="@dimen/default_margin_double" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/nickNameInput" style="@style/Bazaar.Text.Body2" />
+            <com.farsitel.bazaar.designsystem.component.button.BazaarButton android:layout_gravity="end" android:id="@id/saveButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_margin_double" android:layout_marginTop="@dimen/default_margin_one_half" android:layout_marginRight="@dimen/default_margin_double" android:layout_marginBottom="@dimen/default_margin_quadruple" app:buttonTheme="contained" app:buttonType="app" app:sizeMode="medium" app:text="@string/save" app:textColor="@color/tc_primary_button" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

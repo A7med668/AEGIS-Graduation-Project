@@ -1,0 +1,7 @@
+ضع هنا APKs سليمة ومعروفة المصدر فقط.
+أمثلة أسماء:
+benign_01_calculator.apk
+benign_02_notes.apk
+benign_03_browser.apk
+benign_04_media_player.apk
+benign_05_app_store.apk

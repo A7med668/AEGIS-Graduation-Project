@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_mode_done">Gotowe</string>
+    <string name="abc_capital_off">WYŁ.</string>
+    <string name="abc_capital_on">WŁ.</string>
+    <string name="abc_search_hint">Szukaj…</string>
+    <string name="abc_searchview_description_clear">Wyczyść zapytanie</string>
+    <string name="abc_searchview_description_search">Szukaj</string>
+    <string name="abc_searchview_description_submit">Wyślij zapytanie</string>
+    <string name="abc_searchview_description_voice">Wyszukiwanie głosowe</string>
+    <string name="abc_toolbar_collapse_description">Zwiń</string>
+    <string name="bottomsheet_drag_handle_content_description">Uchwyt do przeciągania</string>
+    <string name="close_drawer">Zamknij menu nawigacyjne</string>
+    <string name="close_sheet">Zamknij arkusz</string>
+    <string name="default_error_message">Nieprawidłowe dane wejściowe</string>
+    <string name="default_popup_window_title">Wyskakujące okienko</string>
+    <string name="error_a11y_label">Błąd: nieprawidłowe</string>
+    <string name="glance_error_layout_text_v2">Nie można wyświetlić zawartości</string>
+    <string name="in_progress">W toku</string>
+    <string name="indeterminate">Częściowo zaznaczone</string>
+    <string name="m3_adaptive_default_pane_title_primary">Panel główny</string>
+    <string name="m3_adaptive_default_pane_title_secondary">Panel dodatkowy</string>
+    <string name="m3_adaptive_default_pane_title_tertiary">Panel trzeciorzędny</string>
+    <string name="m3_loading_indicator_content_description">Wczytuję</string>
+    <string name="m3c_bottom_sheet_collapse_description">Zwiń planszę dolną</string>
+    <string name="m3c_bottom_sheet_dismiss_description">Zamknij planszę dolną</string>
+    <string name="m3c_bottom_sheet_drag_handle_description">Uchwyt do przeciągania</string>
+    <string name="m3c_bottom_sheet_expand_description">Rozwiń planszę dolną</string>
+    <string name="m3c_bottom_sheet_pane_title">Plansza dolna</string>
+    <string name="m3c_snackbar_pane_title">Alert</string>
+    <string name="mtrl_button_snackbar_close_content_description">Zamknij</string>
+    <string name="navigation_menu">Menu nawigacyjne</string>
+    <string name="not_selected">Nie wybrano</string>
+    <string name="password_toggle_content_description">Pokaż hasło</string>
+    <string name="selected">Wybrano</string>
+    <string name="state_empty">Puste</string>
+    <string name="state_off">Wyłączono</string>
+    <string name="state_on">Włączono</string>
+    <string name="switch_role">Przełącznik</string>
+    <string name="tab">Karta</string>
+    <string name="template_percent">%1$d procent.</string>
+    <string name="tooltip_description">etykietka</string>
+    <string name="tooltip_label">pokaż etykietkę</string>
+</resources>

@@ -1,0 +1,3 @@
+filename,label,notes
+benign/sample-benign.apk,benign,Known benign app sample
+malware/sample-malware.apk,malware_confirmed,Lab-only malware sample

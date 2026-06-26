@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/fragmentLayout" android:background="?selectableItemBackground" android:layout_width="match_parent" android:layout_height="@dimen/external_player_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+        <ImageView android:id="@id/imgvCover" android:background="@color/non_square_icon_background" android:layout_width="wrap_content" android:layout_height="match_parent" android:scaleType="fitCenter" android:adjustViewBounds="true" android:maxWidth="96.0dp" android:cropToPadding="true" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_weight="1.0" android:layout_marginStart="16.0dp">
+            <TextView android:ellipsize="end" android:id="@id/txtvTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" style="@style/Base.TextAppearance.AppCompat.Body1" />
+            <TextView android:textColor="?android:textColorSecondary" android:ellipsize="end" android:id="@id/txtvAuthor" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" style="@style/TextAppearance.AppCompat.Body1" />
+        </LinearLayout>
+        <de.danoeh.antennapod.ui.screen.playback.PlayButton android:id="@id/butPlay" android:background="?selectableItemBackground" android:padding="8.0dp" android:layout_width="52.0dp" android:layout_height="match_parent" android:scaleType="fitCenter" android:contentDescription="@string/pause_label" app:srcCompat="@drawable/ic_play_48dp" />
+    </LinearLayout>
+    <com.google.android.material.progressindicator.LinearProgressIndicator android:id="@id/episodeProgress" android:layout_width="match_parent" android:layout_height="4.0dp" android:indeterminate="false" app:trackStopIndicatorSize="0.0dp" />
+</LinearLayout>

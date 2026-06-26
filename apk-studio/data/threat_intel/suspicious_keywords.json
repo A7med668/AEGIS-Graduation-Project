@@ -1,0 +1,12 @@
+{
+  "suspicious_strings": [
+    "DexClassLoader",
+    "PathClassLoader",
+    "loadDex",
+    "su ",
+    "busybox",
+    "AccessibilityService",
+    "SYSTEM_ALERT_WINDOW"
+  ],
+  "notes": "Use as weak signals only. Do not classify malware from strings alone."
+}

@@ -1,0 +1,13 @@
+{
+  "filename": "app.apk",
+  "size_bytes": 12295036,
+  "sha256": "8faee459f952e62e5c12be18620911b01c15b5fa0ee67768dcf8ae1e1a68b09c",
+  "sha1": "a4fa8715bbdb56f427dfa6048ede6d435d9d90b7",
+  "md5": "8790e1d0831539397d485f3d08481d2a",
+  "is_zip_magic": true,
+  "evidence_refs": [
+    "upload.app.apk",
+    "intake.sha256",
+    "intake.size_bytes"
+  ]
+}

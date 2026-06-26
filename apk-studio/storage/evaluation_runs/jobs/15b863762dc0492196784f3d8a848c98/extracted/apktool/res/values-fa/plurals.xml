@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="added_to_queue_message">
+        <item quantity="one">%d قسمت به صف اضافه شد.</item>
+        <item quantity="other">%d قسمت به صف اضافه شدند.</item>
+    </plurals>
+    <plurals name="deleted_episode_message">
+        <item quantity="one">%d قسمت بارگرفته حذف شد.</item>
+        <item quantity="other">%d قسمت بارگرفته حذف شدند.</item>
+    </plurals>
+    <plurals name="downloading_episodes_message">
+        <item quantity="one">بارگرفتن %d قسمت.</item>
+        <item quantity="other">بارگرفتن %d قسمت.</item>
+    </plurals>
+    <plurals name="downloads_left">
+        <item quantity="one">%d بارگیری مانده</item>
+        <item quantity="other">%d بارگیری مانده</item>
+    </plurals>
+    <plurals name="echo_hours_podcasts">
+        <item quantity="one">"ساعت قسمت‌هایی
+از %1$d پادپخش را پخش‌کرده‌اید"</item>
+        <item quantity="other">"ساعت قسمت‌هایی
+از %1$d پادپخش مختلف را پخش‌کرده‌اید"</item>
+    </plurals>
+    <plurals name="echo_queue_hours_waiting">
+        <item quantity="one">"ساعت از %1$d قسمت
+در صفتان منتظر است"</item>
+        <item quantity="other">"ساعت از %1$d قسمت
+در صفتان منتظر است"</item>
+    </plurals>
+    <plurals name="episode_cleanup_days_after_listening">
+        <item quantity="one">%d روز پس از پایان یافتن</item>
+        <item quantity="other">%d روز پس از پایان یافتن</item>
+    </plurals>
+    <plurals name="episode_cleanup_hours_after_listening">
+        <item quantity="one">%d ساعت پس از پایان یافتن</item>
+        <item quantity="other">%d ساعت پس از پایان یافتن</item>
+    </plurals>
+    <plurals name="episodes_sleep_timer_exceeds_queue">
+        <item quantity="one">تنها %1$d قسمت در صفتان مانده</item>
+        <item quantity="other">تنها %1$d قسمت در صفتان مانده</item>
+    </plurals>
+    <plurals name="marked_as_played_message">
+        <item quantity="one">‫‏%d قسمت به پخش شده علامت خورد.</item>
+        <item quantity="other">‫‏%d قسمت به پخش شده علامت خوردند.</item>
+    </plurals>
+    <plurals name="marked_as_unplayed_message">
+        <item quantity="one">‫‏%d قسمت به پخش نشده علامت خورد.</item>
+        <item quantity="other">‫‏%d قسمت به پخش نشده علامت خوردند.</item>
+    </plurals>
+    <plurals name="mobile_download_notice">
+        <item quantity="one">بار گرفتن با دادهٔ همراه برای %d دقیقهٔ آینده</item>
+        <item quantity="other">بار گرفتن با دادهٔ همراه برای %d دقیقهٔ آینده</item>
+    </plurals>
+    <plurals name="move_to_bottom_message">
+        <item quantity="one">%d قسمت به پایین رفت.</item>
+        <item quantity="other">%d قسمت به پایین رفتند.</item>
+    </plurals>
+    <plurals name="move_to_top_message">
+        <item quantity="one">%d قسمت به بالا رفت.</item>
+        <item quantity="other">%d قسمت به بالا رفتند.</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d اعلان جدید</item>
+        <item quantity="other">%d اعلان جدید</item>
+    </plurals>
+    <plurals name="new_episode_notification_message">
+        <item quantity="one">%2$s دارای قسمتی جدید است</item>
+        <item quantity="other">%2$s دارای %1$d قسمت جدید است</item>
+    </plurals>
+    <plurals name="new_episode_notification_title">
+        <item quantity="one">قسمت جدید</item>
+        <item quantity="other">قسمت‌های جدید</item>
+    </plurals>
+    <plurals name="num_episodes">
+        <item quantity="one">%d قسمت</item>
+        <item quantity="other">%d قسمت</item>
+    </plurals>
+    <plurals name="num_selected_label">
+        <item quantity="one">%1$d/%2$d گزیده</item>
+        <item quantity="other">%1$d/%2$d گزیده</item>
+    </plurals>
+    <plurals name="num_subscriptions">
+        <item quantity="one">%d اشتراک</item>
+        <item quantity="other">%d اشتراک</item>
+    </plurals>
+    <plurals name="removed_from_inbox_batch_label">
+        <item quantity="one">%d قسمت از صندوق ورودی برداشته شد.</item>
+        <item quantity="other">%d قسمت از صندوق ورودی برداشته شدند.</item>
+    </plurals>
+    <plurals name="removed_from_queue_message">
+        <item quantity="one">%d قسمت از صف برداشته شد.</item>
+        <item quantity="other">%d قسمت از صف برداشته شدند.</item>
+    </plurals>
+    <plurals name="statistics_episodes_downloaded">
+        <item quantity="one">بار گرفته</item>
+        <item quantity="other">بار گرفته</item>
+    </plurals>
+    <plurals name="statistics_episodes_started">
+        <item quantity="one">آغاز شده</item>
+        <item quantity="other">آغاز شده</item>
+    </plurals>
+    <plurals name="statistics_episodes_total">
+        <item quantity="one">در مجموع</item>
+        <item quantity="other">در مجموع</item>
+    </plurals>
+    <plurals name="time_days_quantified">
+        <item quantity="one">%d روز</item>
+        <item quantity="other">%d روز</item>
+    </plurals>
+    <plurals name="time_hours_quantified">
+        <item quantity="one">%d ساعت</item>
+        <item quantity="other">%d ساعت</item>
+    </plurals>
+    <plurals name="time_minutes_quantified">
+        <item quantity="one">%d دقیقه</item>
+        <item quantity="other">%d دقیقه</item>
+    </plurals>
+    <plurals name="time_seconds_quantified">
+        <item quantity="one">%d ثانیه</item>
+        <item quantity="other">%d ثانیه</item>
+    </plurals>
+    <plurals name="timer_exceeds_remaining_time_while_continuous_playback_disabled">
+        <item quantity="one">پخش ادامه‌دار از کار افتاده و از قسمت کنونی تنها %1$d دقیقه مانده</item>
+        <item quantity="other">پخش ادامه‌دار از کار افتاده و از قسمت کنونی تنها %1$d دقیقه مانده</item>
+    </plurals>
+    <plurals name="total_size_downloaded_podcasts">
+        <item quantity="one">کل حجم %d قسمت روی دستگاه</item>
+        <item quantity="other">کل حجم %d قسمت روی دستگاه</item>
+    </plurals>
+    <plurals name="updated_feeds_batch_label">
+        <item quantity="one">%d اشتراک به‌روز شد.</item>
+        <item quantity="other">%d اشتراک به‌روز شدند.</item>
+    </plurals>
+</resources>

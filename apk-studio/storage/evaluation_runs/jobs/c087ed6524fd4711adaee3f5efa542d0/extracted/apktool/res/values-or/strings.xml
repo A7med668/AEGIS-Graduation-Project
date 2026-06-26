@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_mode_done">ହୋଇଗଲା</string>
+    <string name="abc_capital_off">ବନ୍ଦ</string>
+    <string name="abc_capital_on">ଚାଲୁ ଅଛି</string>
+    <string name="abc_search_hint">ସର୍ଚ୍ଚ କରନ୍ତୁ…</string>
+    <string name="abc_searchview_description_clear">କ୍ୱେରୀ ଖାଲି କରନ୍ତୁ</string>
+    <string name="abc_searchview_description_search">ସର୍ଚ୍ଚ କରନ୍ତୁ</string>
+    <string name="abc_searchview_description_submit">କ୍ୱେରୀ ଦାଖଲ କରନ୍ତୁ</string>
+    <string name="abc_searchview_description_voice">ଭଏସ ସର୍ଚ୍ଚ</string>
+    <string name="abc_toolbar_collapse_description">ସଂକୁଚିତ କରନ୍ତୁ</string>
+    <string name="bottomsheet_drag_handle_content_description">Drag handle</string>
+    <string name="close_drawer">ନାଭିଗେସନ୍ ମେନୁ ବନ୍ଦ କରନ୍ତୁ</string>
+    <string name="close_sheet">ସିଟ୍ ବନ୍ଦ କରନ୍ତୁ</string>
+    <string name="default_error_message">ଅବୈଧ ଇନପୁଟ୍</string>
+    <string name="default_popup_window_title">ପପ୍-ଅପ୍ ୱିଣ୍ଡୋ</string>
+    <string name="error_a11y_label">Error: invalid</string>
+    <string name="glance_error_layout_text_v2">ବିଷୟବସ୍ତୁ ଦେଖାଯାଇପାରିବ ନାହିଁ</string>
+    <string name="in_progress">ଚାଲିଛି</string>
+    <string name="indeterminate">ଆଶିଂକ ଭାବେ ଯାଞ୍ଚ କରାଯାଇଛି</string>
+    <string name="m3_adaptive_default_pane_title_primary">ପ୍ରାଥମିକ ପେନ</string>
+    <string name="m3_adaptive_default_pane_title_secondary">ଦ୍ୱିତୀୟ ପେନ</string>
+    <string name="m3_adaptive_default_pane_title_tertiary">ତୃତୀୟ ପେନ</string>
+    <string name="m3_loading_indicator_content_description">Loading</string>
+    <string name="m3c_bottom_sheet_collapse_description">ବଟମ ସିଟକୁ ସଙ୍କୁଚିତ କରନ୍ତୁ</string>
+    <string name="m3c_bottom_sheet_dismiss_description">ବଟମ ସିଟକୁ ଖାରଜ କରନ୍ତୁ</string>
+    <string name="m3c_bottom_sheet_drag_handle_description">ଡ୍ରାଗ ହେଣ୍ଡେଲ</string>
+    <string name="m3c_bottom_sheet_expand_description">ବଟମ ସିଟକୁ ବିସ୍ତାର କରନ୍ତୁ</string>
+    <string name="m3c_bottom_sheet_pane_title">ବଟମ ସିଟ</string>
+    <string name="m3c_snackbar_pane_title">ଆଲର୍ଟ</string>
+    <string name="mtrl_button_snackbar_close_content_description">Close</string>
+    <string name="navigation_menu">ନାଭିଗେସନ୍ ମେନୁ</string>
+    <string name="not_selected">ଚୟନ କରାଯାଇନାହିଁ</string>
+    <string name="password_toggle_content_description">ପାସ୍‍ୱାର୍ଡ ଦେଖାନ୍ତୁ</string>
+    <string name="selected">ଚୟନିତ</string>
+    <string name="state_empty">ଖାଲି</string>
+    <string name="state_off">ବନ୍ଦ ଅଛି</string>
+    <string name="state_on">ଚାଲୁ ଅଛି</string>
+    <string name="switch_role">ସ୍ୱିଚ କରନ୍ତୁ</string>
+    <string name="tab">ଟାବ୍</string>
+    <string name="template_percent">ଶତକଡ଼ା %1$d।</string>
+    <string name="tooltip_description">ଟୁଲଟିପ</string>
+    <string name="tooltip_label">ଟୁଲଟିପ ଦେଖାନ୍ତୁ</string>
+</resources>

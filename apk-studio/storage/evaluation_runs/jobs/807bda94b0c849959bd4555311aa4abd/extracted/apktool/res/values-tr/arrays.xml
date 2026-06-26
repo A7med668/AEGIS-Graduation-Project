@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="content_types">
+        <item>BELİRSİZ</item>
+        <item>Metin</item>
+        <item>E-posta</item>
+        <item>Telefon numarası</item>
+        <item>SMS</item>
+        <item>MMS</item>
+        <item>URL</item>
+        <item>Kablosuz ağ</item>
+        <item>VCard</item>
+        <item>MeCard</item>
+        <item>BizCard</item>
+        <item>Market</item>
+        <item>Contact</item>
+        <item>Konum belirleme</item>
+        <item>Adres rehberi</item>
+        <item>Ürün</item>
+        <item>Takvim</item>
+        <item>İSBN</item>
+        <item>Araç şase numarası (VIN)</item>
+    </string-array>
+    <string-array name="email_array">
+        <item>E-posta gönder</item>
+        <item>Kişilere ekle</item>
+    </string-array>
+    <string-array name="generator_array">
+        <item>Metin</item>
+        <item>E-posta</item>
+        <item>URL</item>
+        <item>Telefon numarası</item>
+        <item>SMS</item>
+        <item>Konum belirleme</item>
+        <item>MeCard</item>
+        <item>BizCard</item>
+        <item>Kablosuz ağ</item>
+        <item>VCard</item>
+        <item>Market</item>
+    </string-array>
+    <string-array name="geo_array">
+        <item>Haritalar uygulamasını aç</item>
+        <item>Hiçbir şey yapma</item>
+    </string-array>
+    <string-array name="history_array">
+        <item>Panoya kopyala</item>
+        <item>Girdiyi sil</item>
+    </string-array>
+    <string-array name="mms_array">
+        <item>MMS gönder</item>
+        <item>Numarayı ara</item>
+        <item>Kişilere ekle</item>
+    </string-array>
+    <string-array name="pref_search_engine_entries">
+        <item>DuckDuckGo</item>
+        <item>Google</item>
+        <item>Startpage</item>
+        <item>Brave</item>
+    </string-array>
+    <string-array name="product_array">
+        <item>"Web'de ara"</item>
+        <item>Hiçbir şey yapma</item>
+    </string-array>
+    <string-array name="send_email_array">
+        <item>E-posta gönder</item>
+        <item>Kişilere ekle</item>
+    </string-array>
+    <string-array name="sms_array">
+        <item>SMS gönder</item>
+        <item>Numarayı ara</item>
+        <item>Kişilere ekle</item>
+    </string-array>
+    <string-array name="tel_array">
+        <item>Numarayı ara</item>
+        <item>Kişilere ekle</item>
+    </string-array>
+    <string-array name="text_array">
+        <item>"Web'de ara"</item>
+        <item>Hiçbir şey yapma</item>
+    </string-array>
+    <string-array name="url_array">
+        <item>"URL'yi ziyaret et"</item>
+        <item>Hiçbir şey yapma</item>
+    </string-array>
+    <string-array name="vcard_array">
+        <item>Kişilere ekle</item>
+        <item>Hiçbir şey yapma</item>
+    </string-array>
+    <string-array name="wifi_array">
+        <item>Parolayı kopyala</item>
+        <item>Wifi ağı ekle</item>
+        <item>Hiçbir şey yapma</item>
+    </string-array>
+</resources>

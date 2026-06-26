@@ -1,0 +1,1200 @@
+Activity Resolver Table:
+  Full MIME Types:
+      application/*:
+        c57f16f com.uptodown/.activities.MainActivity filter 4dd7fb2
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "file"
+          Scheme: "content"
+          Authority: "": -1 WILD
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: .*.xapk}"
+          Path: "PatternMatcher{GLOB: .*.xapk}"
+          StaticType: "application"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        c57f16f com.uptodown/.activities.MainActivity filter 74e145f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "file"
+          Scheme: "content"
+          Authority: "": -1 WILD
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: .*.apkm}"
+          Path: "PatternMatcher{GLOB: .*.apkm}"
+          StaticType: "application"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        c57f16f com.uptodown/.activities.MainActivity filter 5bf2998
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "file"
+          Scheme: "content"
+          Authority: "": -1 WILD
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: .*.apks}"
+          Path: "PatternMatcher{GLOB: .*.apks}"
+          StaticType: "application"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      application/vnd.apkm:
+        c57f16f com.uptodown/.activities.MainActivity filter 59fe4fe
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "file"
+          Scheme: "content"
+          StaticType: "application/vnd.apkm"
+        c57f16f com.uptodown/.activities.MainActivity filter 6edceac
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "*"
+          Authority: "": -1 WILD
+          StaticType: "application/vnd.apkm"
+      application/vnd.apks:
+        c57f16f com.uptodown/.activities.MainActivity filter ae9977b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "file"
+          Scheme: "content"
+          StaticType: "application/vnd.apks"
+        c57f16f com.uptodown/.activities.MainActivity filter 4a135f1
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "*"
+          Authority: "": -1 WILD
+          StaticType: "application/vnd.apks"
+      application/vnd.xapk:
+        c57f16f com.uptodown/.activities.MainActivity filter fb56dbd
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "file"
+          Scheme: "content"
+          StaticType: "application/vnd.xapk"
+        c57f16f com.uptodown/.activities.MainActivity filter 4e3cb03
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "*"
+          Authority: "": -1 WILD
+          StaticType: "application/vnd.xapk"
+      */*:
+        c57f16f com.uptodown/.activities.MainActivity filter d969f67
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.OPENABLE"
+          Scheme: "content"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: .*.xapk}"
+          Path: "PatternMatcher{GLOB: .*..*.xapk}"
+          Path: "PatternMatcher{GLOB: .*..*..*.xapk}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*.xapk}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*.xapk}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*.xapk}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*.xapk}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*.xapk}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*..*.xapk}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*..*..*.xapk}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*..*..*..*.xapk}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*..*..*..*..*.xapk}"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        c57f16f com.uptodown/.activities.MainActivity filter 42a8a80
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.OPENABLE"
+          Scheme: "content"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: .*.apkm}"
+          Path: "PatternMatcher{GLOB: .*..*.apkm}"
+          Path: "PatternMatcher{GLOB: .*..*..*.apkm}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*.apkm}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*.apkm}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*.apkm}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*.apkm}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*.apkm}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*..*.apkm}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*..*..*.apkm}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*..*..*..*.apkm}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*..*..*..*..*.apkm}"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        c57f16f com.uptodown/.activities.MainActivity filter d419775
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.OPENABLE"
+          Scheme: "content"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: .*.apks}"
+          Path: "PatternMatcher{GLOB: .*..*.apks}"
+          Path: "PatternMatcher{GLOB: .*..*..*.apks}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*.apks}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*.apks}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*.apks}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*.apks}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*.apks}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*..*.apks}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*..*..*.apks}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*..*..*..*.apks}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*..*..*..*..*.apks}"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      application/vnd.android.package-archive:
+        c57f16f com.uptodown/.activities.MainActivity filter 7995d6
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          Scheme: "file"
+          StaticType: "application/vnd.android.package-archive"
+      application/apks-package-archive:
+        c57f16f com.uptodown/.activities.MainActivity filter a91530a
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          StaticType: "application/apks-package-archive"
+      application/xapk-package-archive:
+        c57f16f com.uptodown/.activities.MainActivity filter e5d7114
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          StaticType: "application/xapk-package-archive"
+      application/apkm-package-archive:
+        c57f16f com.uptodown/.activities.MainActivity filter b5028b9
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          StaticType: "application/apkm-package-archive"
+
+  Base MIME Types:
+      application:
+        c57f16f com.uptodown/.activities.MainActivity filter e5d7114
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          StaticType: "application/xapk-package-archive"
+        c57f16f com.uptodown/.activities.MainActivity filter fb56dbd
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "file"
+          Scheme: "content"
+          StaticType: "application/vnd.xapk"
+        c57f16f com.uptodown/.activities.MainActivity filter 4e3cb03
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "*"
+          Authority: "": -1 WILD
+          StaticType: "application/vnd.xapk"
+        c57f16f com.uptodown/.activities.MainActivity filter b5028b9
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          StaticType: "application/apkm-package-archive"
+        c57f16f com.uptodown/.activities.MainActivity filter 59fe4fe
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "file"
+          Scheme: "content"
+          StaticType: "application/vnd.apkm"
+        c57f16f com.uptodown/.activities.MainActivity filter 6edceac
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "*"
+          Authority: "": -1 WILD
+          StaticType: "application/vnd.apkm"
+        c57f16f com.uptodown/.activities.MainActivity filter a91530a
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          StaticType: "application/apks-package-archive"
+        c57f16f com.uptodown/.activities.MainActivity filter ae9977b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "file"
+          Scheme: "content"
+          StaticType: "application/vnd.apks"
+        c57f16f com.uptodown/.activities.MainActivity filter 4a135f1
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "*"
+          Authority: "": -1 WILD
+          StaticType: "application/vnd.apks"
+        c57f16f com.uptodown/.activities.MainActivity filter 7995d6
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          Scheme: "file"
+          StaticType: "application/vnd.android.package-archive"
+
+  Wild MIME Types:
+      *:
+        c57f16f com.uptodown/.activities.MainActivity filter d969f67
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.OPENABLE"
+          Scheme: "content"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: .*.xapk}"
+          Path: "PatternMatcher{GLOB: .*..*.xapk}"
+          Path: "PatternMatcher{GLOB: .*..*..*.xapk}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*.xapk}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*.xapk}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*.xapk}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*.xapk}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*.xapk}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*..*.xapk}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*..*..*.xapk}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*..*..*..*.xapk}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*..*..*..*..*.xapk}"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        c57f16f com.uptodown/.activities.MainActivity filter 42a8a80
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.OPENABLE"
+          Scheme: "content"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: .*.apkm}"
+          Path: "PatternMatcher{GLOB: .*..*.apkm}"
+          Path: "PatternMatcher{GLOB: .*..*..*.apkm}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*.apkm}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*.apkm}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*.apkm}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*.apkm}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*.apkm}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*..*.apkm}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*..*..*.apkm}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*..*..*..*.apkm}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*..*..*..*..*.apkm}"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        c57f16f com.uptodown/.activities.MainActivity filter d419775
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.OPENABLE"
+          Scheme: "content"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: .*.apks}"
+          Path: "PatternMatcher{GLOB: .*..*.apks}"
+          Path: "PatternMatcher{GLOB: .*..*..*.apks}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*.apks}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*.apks}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*.apks}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*.apks}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*.apks}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*..*.apks}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*..*..*.apks}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*..*..*..*.apks}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*..*..*..*..*.apks}"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      application:
+        c57f16f com.uptodown/.activities.MainActivity filter 4dd7fb2
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "file"
+          Scheme: "content"
+          Authority: "": -1 WILD
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: .*.xapk}"
+          Path: "PatternMatcher{GLOB: .*.xapk}"
+          StaticType: "application"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        c57f16f com.uptodown/.activities.MainActivity filter 74e145f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "file"
+          Scheme: "content"
+          Authority: "": -1 WILD
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: .*.apkm}"
+          Path: "PatternMatcher{GLOB: .*.apkm}"
+          StaticType: "application"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        c57f16f com.uptodown/.activities.MainActivity filter 5bf2998
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "file"
+          Scheme: "content"
+          Authority: "": -1 WILD
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: .*.apks}"
+          Path: "PatternMatcher{GLOB: .*.apks}"
+          StaticType: "application"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Schemes:
+      market:
+        c57f16f com.uptodown/.activities.MainActivity filter 39c358b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "market"
+      package:
+        c57f16f com.uptodown/.activities.MainActivity filter 8f03057
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          Scheme: "file"
+          Scheme: "package"
+      *:
+        c57f16f com.uptodown/.activities.MainActivity filter 4e3cb03
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "*"
+          Authority: "": -1 WILD
+          StaticType: "application/vnd.xapk"
+        c57f16f com.uptodown/.activities.MainActivity filter 6edceac
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "*"
+          Authority: "": -1 WILD
+          StaticType: "application/vnd.apkm"
+        c57f16f com.uptodown/.activities.MainActivity filter 4a135f1
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "*"
+          Authority: "": -1 WILD
+          StaticType: "application/vnd.apks"
+      utd:
+        c57f16f com.uptodown/.activities.MainActivity filter 9b25f5a
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "utd"
+      file:
+        c57f16f com.uptodown/.activities.MainActivity filter d969f67
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.OPENABLE"
+          Scheme: "content"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: .*.xapk}"
+          Path: "PatternMatcher{GLOB: .*..*.xapk}"
+          Path: "PatternMatcher{GLOB: .*..*..*.xapk}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*.xapk}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*.xapk}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*.xapk}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*.xapk}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*.xapk}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*..*.xapk}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*..*..*.xapk}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*..*..*..*.xapk}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*..*..*..*..*.xapk}"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        c57f16f com.uptodown/.activities.MainActivity filter e5d7114
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          StaticType: "application/xapk-package-archive"
+        c57f16f com.uptodown/.activities.MainActivity filter fb56dbd
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "file"
+          Scheme: "content"
+          StaticType: "application/vnd.xapk"
+        c57f16f com.uptodown/.activities.MainActivity filter 4dd7fb2
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "file"
+          Scheme: "content"
+          Authority: "": -1 WILD
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: .*.xapk}"
+          Path: "PatternMatcher{GLOB: .*.xapk}"
+          StaticType: "application"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        c57f16f com.uptodown/.activities.MainActivity filter 42a8a80
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.OPENABLE"
+          Scheme: "content"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: .*.apkm}"
+          Path: "PatternMatcher{GLOB: .*..*.apkm}"
+          Path: "PatternMatcher{GLOB: .*..*..*.apkm}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*.apkm}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*.apkm}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*.apkm}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*.apkm}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*.apkm}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*..*.apkm}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*..*..*.apkm}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*..*..*..*.apkm}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*..*..*..*..*.apkm}"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        c57f16f com.uptodown/.activities.MainActivity filter b5028b9
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          StaticType: "application/apkm-package-archive"
+        c57f16f com.uptodown/.activities.MainActivity filter 59fe4fe
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "file"
+          Scheme: "content"
+          StaticType: "application/vnd.apkm"
+        c57f16f com.uptodown/.activities.MainActivity filter 74e145f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "file"
+          Scheme: "content"
+          Authority: "": -1 WILD
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: .*.apkm}"
+          Path: "PatternMatcher{GLOB: .*.apkm}"
+          StaticType: "application"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        c57f16f com.uptodown/.activities.MainActivity filter d419775
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.OPENABLE"
+          Scheme: "content"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: .*.apks}"
+          Path: "PatternMatcher{GLOB: .*..*.apks}"
+          Path: "PatternMatcher{GLOB: .*..*..*.apks}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*.apks}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*.apks}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*.apks}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*.apks}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*.apks}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*..*.apks}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*..*..*.apks}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*..*..*..*.apks}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*..*..*..*..*.apks}"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        c57f16f com.uptodown/.activities.MainActivity filter a91530a
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          StaticType: "application/apks-package-archive"
+        c57f16f com.uptodown/.activities.MainActivity filter ae9977b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "file"
+          Scheme: "content"
+          StaticType: "application/vnd.apks"
+        c57f16f com.uptodown/.activities.MainActivity filter 5bf2998
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "file"
+          Scheme: "content"
+          Authority: "": -1 WILD
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: .*.apks}"
+          Path: "PatternMatcher{GLOB: .*.apks}"
+          StaticType: "application"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        c57f16f com.uptodown/.activities.MainActivity filter 7995d6
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          Scheme: "file"
+          StaticType: "application/vnd.android.package-archive"
+        c57f16f com.uptodown/.activities.MainActivity filter 8f03057
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          Scheme: "file"
+          Scheme: "package"
+      http:
+        c57f16f com.uptodown/.activities.MainActivity filter f19aa81
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "http"
+          Authority: "play.google.com": -1
+          Authority: "play.google.com": -1
+      https:
+        c57f16f com.uptodown/.activities.MainActivity filter 7dbce7c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "www.uptodown.com": -1
+          Path: "PatternMatcher{PREFIX: /preregister-available}"
+        c57f16f com.uptodown/.activities.MainActivity filter 6555668
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "market.android.com": -1
+        c57f16f com.uptodown/.activities.MainActivity filter f19aa81
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "http"
+          Authority: "play.google.com": -1
+          Authority: "play.google.com": -1
+        c57f16f com.uptodown/.activities.MainActivity filter a71726
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "dw.uptodown.com": -1
+          Path: "PatternMatcher{PREFIX: /dwn}"
+      content:
+        c57f16f com.uptodown/.activities.MainActivity filter d969f67
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.OPENABLE"
+          Scheme: "content"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: .*.xapk}"
+          Path: "PatternMatcher{GLOB: .*..*.xapk}"
+          Path: "PatternMatcher{GLOB: .*..*..*.xapk}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*.xapk}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*.xapk}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*.xapk}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*.xapk}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*.xapk}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*..*.xapk}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*..*..*.xapk}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*..*..*..*.xapk}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*..*..*..*..*.xapk}"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        c57f16f com.uptodown/.activities.MainActivity filter e5d7114
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          StaticType: "application/xapk-package-archive"
+        c57f16f com.uptodown/.activities.MainActivity filter fb56dbd
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "file"
+          Scheme: "content"
+          StaticType: "application/vnd.xapk"
+        c57f16f com.uptodown/.activities.MainActivity filter 4dd7fb2
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "file"
+          Scheme: "content"
+          Authority: "": -1 WILD
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: .*.xapk}"
+          Path: "PatternMatcher{GLOB: .*.xapk}"
+          StaticType: "application"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        c57f16f com.uptodown/.activities.MainActivity filter 42a8a80
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.OPENABLE"
+          Scheme: "content"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: .*.apkm}"
+          Path: "PatternMatcher{GLOB: .*..*.apkm}"
+          Path: "PatternMatcher{GLOB: .*..*..*.apkm}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*.apkm}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*.apkm}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*.apkm}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*.apkm}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*.apkm}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*..*.apkm}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*..*..*.apkm}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*..*..*..*.apkm}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*..*..*..*..*.apkm}"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        c57f16f com.uptodown/.activities.MainActivity filter b5028b9
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          StaticType: "application/apkm-package-archive"
+        c57f16f com.uptodown/.activities.MainActivity filter 59fe4fe
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "file"
+          Scheme: "content"
+          StaticType: "application/vnd.apkm"
+        c57f16f com.uptodown/.activities.MainActivity filter 74e145f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "file"
+          Scheme: "content"
+          Authority: "": -1 WILD
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: .*.apkm}"
+          Path: "PatternMatcher{GLOB: .*.apkm}"
+          StaticType: "application"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        c57f16f com.uptodown/.activities.MainActivity filter d419775
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.OPENABLE"
+          Scheme: "content"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: .*.apks}"
+          Path: "PatternMatcher{GLOB: .*..*.apks}"
+          Path: "PatternMatcher{GLOB: .*..*..*.apks}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*.apks}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*.apks}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*.apks}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*.apks}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*.apks}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*..*.apks}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*..*..*.apks}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*..*..*..*.apks}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*..*..*..*..*.apks}"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        c57f16f com.uptodown/.activities.MainActivity filter a91530a
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          StaticType: "application/apks-package-archive"
+        c57f16f com.uptodown/.activities.MainActivity filter ae9977b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "file"
+          Scheme: "content"
+          StaticType: "application/vnd.apks"
+        c57f16f com.uptodown/.activities.MainActivity filter 5bf2998
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "file"
+          Scheme: "content"
+          Authority: "": -1 WILD
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: .*.apks}"
+          Path: "PatternMatcher{GLOB: .*.apks}"
+          StaticType: "application"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        c57f16f com.uptodown/.activities.MainActivity filter 7995d6
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          Scheme: "file"
+          StaticType: "application/vnd.android.package-archive"
+        c57f16f com.uptodown/.activities.MainActivity filter 8f03057
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          Scheme: "file"
+          Scheme: "package"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        c57f16f com.uptodown/.activities.MainActivity filter 168e305
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        7494744 com.uptodown/.tv.ui.activity.TvMainActivity filter 82402d
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LEANBACK_LAUNCHER"
+      android.intent.action.SEARCH:
+        6d13962 com.uptodown/.activities.SearchActivity filter a5d7af3
+          Action: "android.intent.action.SEARCH"
+          Category: "android.intent.category.DEFAULT"
+
+  MIME Typed Actions:
+      android.intent.action.VIEW:
+        c57f16f com.uptodown/.activities.MainActivity filter d969f67
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.OPENABLE"
+          Scheme: "content"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: .*.xapk}"
+          Path: "PatternMatcher{GLOB: .*..*.xapk}"
+          Path: "PatternMatcher{GLOB: .*..*..*.xapk}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*.xapk}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*.xapk}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*.xapk}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*.xapk}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*.xapk}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*..*.xapk}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*..*..*.xapk}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*..*..*..*.xapk}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*..*..*..*..*.xapk}"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        c57f16f com.uptodown/.activities.MainActivity filter e5d7114
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          StaticType: "application/xapk-package-archive"
+        c57f16f com.uptodown/.activities.MainActivity filter fb56dbd
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "file"
+          Scheme: "content"
+          StaticType: "application/vnd.xapk"
+        c57f16f com.uptodown/.activities.MainActivity filter 4dd7fb2
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "file"
+          Scheme: "content"
+          Authority: "": -1 WILD
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: .*.xapk}"
+          Path: "PatternMatcher{GLOB: .*.xapk}"
+          StaticType: "application"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        c57f16f com.uptodown/.activities.MainActivity filter 4e3cb03
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "*"
+          Authority: "": -1 WILD
+          StaticType: "application/vnd.xapk"
+        c57f16f com.uptodown/.activities.MainActivity filter 42a8a80
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.OPENABLE"
+          Scheme: "content"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: .*.apkm}"
+          Path: "PatternMatcher{GLOB: .*..*.apkm}"
+          Path: "PatternMatcher{GLOB: .*..*..*.apkm}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*.apkm}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*.apkm}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*.apkm}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*.apkm}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*.apkm}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*..*.apkm}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*..*..*.apkm}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*..*..*..*.apkm}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*..*..*..*..*.apkm}"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        c57f16f com.uptodown/.activities.MainActivity filter b5028b9
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          StaticType: "application/apkm-package-archive"
+        c57f16f com.uptodown/.activities.MainActivity filter 59fe4fe
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "file"
+          Scheme: "content"
+          StaticType: "application/vnd.apkm"
+        c57f16f com.uptodown/.activities.MainActivity filter 74e145f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "file"
+          Scheme: "content"
+          Authority: "": -1 WILD
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: .*.apkm}"
+          Path: "PatternMatcher{GLOB: .*.apkm}"
+          StaticType: "application"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        c57f16f com.uptodown/.activities.MainActivity filter 6edceac
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "*"
+          Authority: "": -1 WILD
+          StaticType: "application/vnd.apkm"
+        c57f16f com.uptodown/.activities.MainActivity filter d419775
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.OPENABLE"
+          Scheme: "content"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: .*.apks}"
+          Path: "PatternMatcher{GLOB: .*..*.apks}"
+          Path: "PatternMatcher{GLOB: .*..*..*.apks}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*.apks}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*.apks}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*.apks}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*.apks}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*.apks}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*..*.apks}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*..*..*.apks}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*..*..*..*.apks}"
+          Path: "PatternMatcher{GLOB: .*..*..*..*..*..*..*..*..*..*..*..*.apks}"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        c57f16f com.uptodown/.activities.MainActivity filter a91530a
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          StaticType: "application/apks-package-archive"
+        c57f16f com.uptodown/.activities.MainActivity filter ae9977b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "file"
+          Scheme: "content"
+          StaticType: "application/vnd.apks"
+        c57f16f com.uptodown/.activities.MainActivity filter 5bf2998
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "file"
+          Scheme: "content"
+          Authority: "": -1 WILD
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: .*.apks}"
+          Path: "PatternMatcher{GLOB: .*.apks}"
+          StaticType: "application"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        c57f16f com.uptodown/.activities.MainActivity filter 4a135f1
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "*"
+          Authority: "": -1 WILD
+          StaticType: "application/vnd.apks"
+        c57f16f com.uptodown/.activities.MainActivity filter 7995d6
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          Scheme: "file"
+          StaticType: "application/vnd.android.package-archive"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      RESUME:
+        4583adc com.uptodown/.receivers.DownloadNotificationReceiver filter da847e5
+          Action: "RESUME"
+          Action: "PAUSE"
+          Action: "CANCEL"
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        dbebf12 com.uptodown/androidx.profileinstaller.ProfileInstallReceiver filter efc7799
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      PAUSE:
+        4583adc com.uptodown/.receivers.DownloadNotificationReceiver filter da847e5
+          Action: "RESUME"
+          Action: "PAUSE"
+          Action: "CANCEL"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        dbebf12 com.uptodown/androidx.profileinstaller.ProfileInstallReceiver filter 25b06e3
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.google.android.c2dm.intent.RECEIVE:
+        e9c28c8 com.uptodown/com.google.firebase.iid.FirebaseInstanceIdReceiver filter f9a7d61
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      androidx.profileinstaller.action.SKIP_FILE:
+        dbebf12 com.uptodown/androidx.profileinstaller.ProfileInstallReceiver filter 36d48e0
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        dbebf12 com.uptodown/androidx.profileinstaller.ProfileInstallReceiver filter 745ba5e
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      android.intent.action.BOOT_COMPLETED:
+        3593b0 com.uptodown/.receivers.BootDeviceReceiver filter 3efb229
+          Action: "android.intent.action.BOOT_COMPLETED"
+        1012086 com.uptodown/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 307dd47
+          Action: "android.intent.action.BOOT_COMPLETED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        baf0974 com.uptodown/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 2208e9d
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        a0d89ae com.uptodown/.receivers.MyAppUpdatedReceiver filter 24ad34f
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      CANCEL:
+        4583adc com.uptodown/.receivers.DownloadNotificationReceiver filter da847e5
+          Action: "RESUME"
+          Action: "PAUSE"
+          Action: "CANCEL"
+        6ac92ba com.uptodown/.receivers.DownloadUpdateNotificationReceiver filter 20b556b
+          Action: "CANCEL"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        13f455 com.uptodown/.gcm.MyFirebaseMessagingService filter baf1e6a
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        4d06f5b com.uptodown/com.google.firebase.messaging.FirebaseMessagingService filter a0f53f8
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.accounts.AccountAuthenticator:
+        a2d2e3f com.uptodown/.services.AuthenticatorService filter d0e130c
+          Action: "android.accounts.AccountAuthenticator"
+
+Domain verification status:
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          dw.uptodown.com
+          play.google.com
+          market.android.com
+          www.uptodown.com
+
+Permissions:
+  Permission [com.uptodown.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (87475de):
+    sourcePackage=com.uptodown
+    uid=10190 gids=[] type=0 prot=signature
+    perm=PermissionInfo{d3403bf com.uptodown.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.uptodown/androidx.core.content.FileProvider:
+    Provider{d03fa8c com.uptodown/androidx.core.content.FileProvider}
+  com.uptodown/com.squareup.picasso.PicassoProvider:
+    Provider{55085d5 com.uptodown/com.squareup.picasso.PicassoProvider}
+  com.uptodown/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{3ce11ea com.uptodown/com.google.firebase.provider.FirebaseInitProvider}
+  com.uptodown/androidx.startup.InitializationProvider:
+    Provider{d2f1cdb com.uptodown/androidx.startup.InitializationProvider}
+
+ContentProvider Authorities:
+  [com.uptodown.com.squareup.picasso]:
+    Provider{55085d5 com.uptodown/com.squareup.picasso.PicassoProvider}
+      applicationInfo=ApplicationInfo{43c3378 com.uptodown}
+  [com.uptodown.androidx-startup]:
+    Provider{d2f1cdb com.uptodown/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{c20aa51 com.uptodown}
+  [com.uptodown.firebaseinitprovider]:
+    Provider{3ce11ea com.uptodown/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{97362b6 com.uptodown}
+  [com.uptodown.provider]:
+    Provider{d03fa8c com.uptodown/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{cf8abb7 com.uptodown}
+
+Key Set Manager:
+  [com.uptodown]
+      Signing KeySets: 62
+
+Packages:
+  Package [com.uptodown] (bd0f24):
+    appId=10190
+    pkg=Package{4f49a8d com.uptodown}
+    codePath=/data/app/~~9BN075oR-WHp1Fbaf-uw0Q==/com.uptodown-Q4nmdBM2sydsbnezA0pBUw==
+    resourcePath=/data/app/~~9BN075oR-WHp1Fbaf-uw0Q==/com.uptodown-Q4nmdBM2sydsbnezA0pBUw==
+    legacyNativeLibraryDir=/data/app/~~9BN075oR-WHp1Fbaf-uw0Q==/com.uptodown-Q4nmdBM2sydsbnezA0pBUw==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=x86_64
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=727 minSdk=23 targetSdk=35
+    minExtensionVersions=[]
+    versionName=7.27
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/com.uptodown
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      android.ext.adservices
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2026-06-23 12:21:37
+    lastUpdateTime=2026-06-23 12:21:38
+    installerPackageName=null
+    installerPackageUid=-1
+    initiatingPackageName=com.android.shell
+    originatingPackageName=null
+    packageSource=1
+    appMetadataFilePath=null
+    signatures=PackageSignatures{94af442 version:3, signatures:[3c2ecfec], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP LARGE_HEAP ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.uptodown.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.GET_ACCOUNTS
+      android.permission.WAKE_LOCK
+      android.permission.GET_PACKAGE_SIZE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.USE_CREDENTIALS
+      android.permission.AUTHENTICATE_ACCOUNTS
+      android.permission.MANAGE_ACCOUNTS
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.REQUEST_INSTALL_PACKAGES
+      android.permission.REQUEST_DELETE_PACKAGES
+      android.permission.MANAGE_EXTERNAL_STORAGE
+      android.permission.QUERY_ALL_PACKAGES
+      android.permission.UPDATE_PACKAGES_WITHOUT_USER_ACTION
+      android.permission.POST_NOTIFICATIONS
+      android.permission.ENFORCE_UPDATE_OWNERSHIP
+      android.permission.INSTALL_PACKAGES
+      android.permission.DELETE_PACKAGES
+      android.permission.ACCESS_SUPERUSER
+      android.permission.RECORD_AUDIO
+      android.permission.PACKAGE_USAGE_STATS
+      com.google.android.c2dm.permission.RECEIVE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      com.google.android.gms.permission.AD_ID
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION
+      android.permission.ACCESS_ADSERVICES_AD_ID
+      android.permission.FOREGROUND_SERVICE
+      com.uptodown.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.READ_EXTERNAL_STORAGE
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.USE_CREDENTIALS: granted=true
+      android.permission.MANAGE_EXTERNAL_STORAGE: granted=false
+      android.permission.MANAGE_ACCOUNTS: granted=true
+      android.permission.INSTALL_PACKAGES: granted=false
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.ENFORCE_UPDATE_OWNERSHIP: granted=true
+      android.permission.ACCESS_ADSERVICES_AD_ID: granted=true
+      android.permission.AUTHENTICATE_ACCOUNTS: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.UPDATE_PACKAGES_WITHOUT_USER_ACTION: granted=true
+      android.permission.GET_PACKAGE_SIZE: granted=true
+      android.permission.PACKAGE_USAGE_STATS: granted=false
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION: granted=true
+      android.permission.REQUEST_DELETE_PACKAGES: granted=true
+      com.uptodown.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.REQUEST_INSTALL_PACKAGES: granted=false
+      android.permission.QUERY_ALL_PACKAGES: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+      android.permission.DELETE_PACKAGES: granted=false
+    User 0: ceDataInode=336145 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2026-06-23 12:21:38
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-Sr4d.frro
+        /data/resource-cache/com.android.systemui-accent-Llp3.frro
+        /data/resource-cache/com.android.systemui-dynamic-kMxO.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.GET_ACCOUNTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.RECORD_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      enabledComponents:
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+        androidx.work.impl.background.systemjob.SystemJobService
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.settings.intelligence:
+      com.uptodown
+    com.google.android.apps.messaging:
+      com.uptodown
+    com.google.android.contacts:
+      com.uptodown
+    com.google.android.calendar:
+      com.uptodown
+    com.google.android.gm:
+      com.uptodown
+    com.google.android.apps.photos:
+      com.uptodown
+    com.google.android.apps.docs:
+      com.uptodown
+    com.google.android.googlesdksetup:
+      com.uptodown
+  queryable via interaction:
+    User 0:
+      [com.android.keychain,com.android.wallpaperbackup,com.android.dynsystem,com.android.settings,com.android.emulator.multidisplay,com.android.providers.settings,com.android.location.fused,android,com.android.server.telecom,com.android.inputdevices,com.android.localtransport]:
+        com.uptodown
+      [com.google.android.gms,com.google.android.gsf]:
+        com.uptodown
+      com.google.android.inputmethod.latin:
+        com.uptodown
+      com.uptodown:
+        [com.android.keychain,com.android.wallpaperbackup,com.android.dynsystem,com.android.settings,com.android.emulator.multidisplay,com.android.providers.settings,com.android.location.fused,android,com.android.server.telecom,com.android.inputdevices,com.android.localtransport]
+  queryable via uses-library:
+
+Dexopt state:
+  [com.uptodown]
+    path: /data/app/~~9BN075oR-WHp1Fbaf-uw0Q==/com.uptodown-Q4nmdBM2sydsbnezA0pBUw==/base.apk
+      x86_64: [status=verify] [reason=install] [primary-abi]
+        [location is /data/app/~~9BN075oR-WHp1Fbaf-uw0Q==/com.uptodown-Q4nmdBM2sydsbnezA0pBUw==/oat/x86_64/base.odex]
+
+Compiler stats:
+  [com.uptodown]
+     base.apk - 2909

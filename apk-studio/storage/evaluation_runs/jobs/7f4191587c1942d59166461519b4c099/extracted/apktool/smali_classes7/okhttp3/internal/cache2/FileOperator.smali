@@ -1,0 +1,188 @@
+.class public final Lokhttp3/internal/cache2/FileOperator;
+.super Ljava/lang/Object;
+.source "FileOperator.kt"
+
+
+# annotations
+.annotation runtime Lkotlin/Metadata;
+    bv = {
+        0x1,
+        0x0,
+        0x3
+    }
+    d1 = {
+        "\u0000&\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\u0008\u0000\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004J\u001e\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\u00082\u0006\u0010\t\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\u0008J\u001e\u0010\u000c\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\u00082\u0006\u0010\r\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\u0008R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u000e"
+    }
+    d2 = {
+        "Lokhttp3/internal/cache2/FileOperator;",
+        "",
+        "fileChannel",
+        "Ljava/nio/channels/FileChannel;",
+        "(Ljava/nio/channels/FileChannel;)V",
+        "read",
+        "",
+        "pos",
+        "",
+        "sink",
+        "Lokio/Buffer;",
+        "byteCount",
+        "write",
+        "source",
+        "okhttp"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x4,
+        0x0
+    }
+.end annotation
+
+
+# instance fields
+.field private final fileChannel:Ljava/nio/channels/FileChannel;
+
+
+# direct methods
+.method public constructor <init>(Ljava/nio/channels/FileChannel;)V
+    .locals 1
+
+    const-string v0, "fileChannel"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lokhttp3/internal/cache2/FileOperator;->fileChannel:Ljava/nio/channels/FileChannel;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final read(JLokio/Buffer;J)V
+    .locals 13
+
+    move-object/from16 v0, p3
+
+    const-string v1, "sink"
+
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-wide/16 v1, 0x0
+
+    cmp-long v3, p4, v1
+
+    if-ltz v3, :cond_1
+
+    move-wide v3, p1
+
+    move-wide/from16 v5, p4
+
+    move-wide v8, v3
+
+    move-wide v10, v5
+
+    :goto_0
+    cmp-long v3, v10, v1
+
+    if-lez v3, :cond_0
+
+    iget-object v7, p0, Lokhttp3/internal/cache2/FileOperator;->fileChannel:Ljava/nio/channels/FileChannel;
+
+    move-object v12, v0
+
+    check-cast v12, Ljava/nio/channels/WritableByteChannel;
+
+    invoke-virtual/range {v7 .. v12}, Ljava/nio/channels/FileChannel;->transferTo(JJLjava/nio/channels/WritableByteChannel;)J
+
+    move-result-wide v3
+
+    add-long/2addr v8, v3
+
+    sub-long/2addr v10, v3
+
+    goto :goto_0
+
+    :cond_0
+    return-void
+
+    :cond_1
+    new-instance v1, Ljava/lang/IndexOutOfBoundsException;
+
+    invoke-direct {v1}, Ljava/lang/IndexOutOfBoundsException;-><init>()V
+
+    check-cast v1, Ljava/lang/Throwable;
+
+    throw v1
+.end method
+
+.method public final write(JLokio/Buffer;J)V
+    .locals 13
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    move-object/from16 v0, p3
+
+    const-string v1, "source"
+
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-wide/16 v1, 0x0
+
+    cmp-long v3, p4, v1
+
+    if-ltz v3, :cond_1
+
+    invoke-virtual {v0}, Lokio/Buffer;->size()J
+
+    move-result-wide v3
+
+    cmp-long v3, p4, v3
+
+    if-gtz v3, :cond_1
+
+    move-wide v3, p1
+
+    move-wide/from16 v5, p4
+
+    move-wide v9, v3
+
+    move-wide v11, v5
+
+    :goto_0
+    cmp-long v3, v11, v1
+
+    if-lez v3, :cond_0
+
+    iget-object v7, p0, Lokhttp3/internal/cache2/FileOperator;->fileChannel:Ljava/nio/channels/FileChannel;
+
+    move-object v8, v0
+
+    check-cast v8, Ljava/nio/channels/ReadableByteChannel;
+
+    invoke-virtual/range {v7 .. v12}, Ljava/nio/channels/FileChannel;->transferFrom(Ljava/nio/channels/ReadableByteChannel;JJ)J
+
+    move-result-wide v3
+
+    add-long/2addr v9, v3
+
+    sub-long/2addr v11, v3
+
+    goto :goto_0
+
+    :cond_0
+    return-void
+
+    :cond_1
+    new-instance v1, Ljava/lang/IndexOutOfBoundsException;
+
+    invoke-direct {v1}, Ljava/lang/IndexOutOfBoundsException;-><init>()V
+
+    check-cast v1, Ljava/lang/Throwable;
+
+    throw v1
+.end method

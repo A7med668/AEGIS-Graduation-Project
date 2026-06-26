@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/popup_more_menu_appdetail_0" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/default_margin_quarter" app:cardCornerRadius="@dimen/default_margin">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/moreMenuShare" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/default_margin" android:paddingEnd="@dimen/default_margin">
+                <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:layout_width="24.0dp" android:layout_height="24.0dp" android:contentDescription="@string/general_icon_content_description" app:srcCompat="@drawable/ic_share_secondary" />
+                <androidx.appcompat.widget.AppCompatTextView android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="56.0dp" android:minWidth="110.0dp" android:text="@string/share_entity_title" android:paddingStart="@dimen/default_margin" android:paddingEnd="@dimen/default_margin" style="@style/Bazaar.Text.Subtitle2" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/moreMenuBookmark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/default_margin" android:paddingEnd="@dimen/default_margin">
+                <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/moreMenuBookmarkImage" android:tag="binding_1" android:layout_width="24.0dp" android:layout_height="24.0dp" android:contentDescription="@string/general_icon_content_description" />
+                <androidx.appcompat.widget.AppCompatTextView android:gravity="center" android:id="@id/moreMenuBookmarkTxt" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="56.0dp" android:minWidth="110.0dp" android:paddingStart="@dimen/default_margin" android:paddingEnd="@dimen/default_margin" style="@style/Bazaar.Text.Subtitle2" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/moreMenuReport" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/default_margin" android:paddingEnd="@dimen/default_margin">
+                <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/moreMenuReportImage" android:layout_width="24.0dp" android:layout_height="24.0dp" android:contentDescription="@string/general_icon_content_description" app:srcCompat="@drawable/ic_report_secondary_24dp" />
+                <androidx.appcompat.widget.AppCompatTextView android:gravity="center" android:id="@id/moreMenuReportTxt" android:layout_width="wrap_content" android:layout_height="56.0dp" android:minWidth="110.0dp" android:text="@string/report_this_app" android:paddingStart="@dimen/default_margin" android:paddingEnd="@dimen/default_margin" style="@style/Bazaar.Text.Subtitle2" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

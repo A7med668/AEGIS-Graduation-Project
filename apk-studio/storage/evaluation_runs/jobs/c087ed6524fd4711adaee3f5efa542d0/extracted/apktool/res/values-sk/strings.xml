@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_mode_done">Hotovo</string>
+    <string name="abc_capital_off">VYP.</string>
+    <string name="abc_capital_on">ZAP.</string>
+    <string name="abc_search_hint">Vyhľadať…</string>
+    <string name="abc_searchview_description_clear">Vymazať dopyt</string>
+    <string name="abc_searchview_description_search">Hľadať</string>
+    <string name="abc_searchview_description_submit">Odoslať dopyt</string>
+    <string name="abc_searchview_description_voice">Hlasové vyhľadávanie</string>
+    <string name="abc_toolbar_collapse_description">Zbaliť</string>
+    <string name="bottomsheet_drag_handle_content_description">Presúvadlo</string>
+    <string name="close_drawer">Zavrieť navigačnú ponuku</string>
+    <string name="close_sheet">Zavrieť hárok</string>
+    <string name="default_error_message">Neplatný vstup</string>
+    <string name="default_popup_window_title">Vyskakovacie okno</string>
+    <string name="error_a11y_label">Chyba: neplatné</string>
+    <string name="glance_error_layout_text_v2">Obsah nie je možné zobraziť</string>
+    <string name="in_progress">Prebieha</string>
+    <string name="indeterminate">Čiastočne začiarknuté</string>
+    <string name="m3_adaptive_default_pane_title_primary">Primárny panel</string>
+    <string name="m3_adaptive_default_pane_title_secondary">Sekundárny panel</string>
+    <string name="m3_adaptive_default_pane_title_tertiary">Terciárny panel</string>
+    <string name="m3_loading_indicator_content_description">Načítava sa</string>
+    <string name="m3c_bottom_sheet_collapse_description">Zbaliť dolný hárok</string>
+    <string name="m3c_bottom_sheet_dismiss_description">Zavrieť dolný hárok</string>
+    <string name="m3c_bottom_sheet_drag_handle_description">Presúvadlo</string>
+    <string name="m3c_bottom_sheet_expand_description">Rozbaliť dolný hárok</string>
+    <string name="m3c_bottom_sheet_pane_title">Dolný hárok</string>
+    <string name="m3c_snackbar_pane_title">Upozornenie</string>
+    <string name="mtrl_button_snackbar_close_content_description">Zavrieť</string>
+    <string name="navigation_menu">Navigačná ponuka</string>
+    <string name="not_selected">Nevybrané</string>
+    <string name="password_toggle_content_description">Zobraziť heslo</string>
+    <string name="selected">Vybrané</string>
+    <string name="state_empty">Prázdne</string>
+    <string name="state_off">Vypnuté</string>
+    <string name="state_on">Zapnuté</string>
+    <string name="switch_role">Prepnúť</string>
+    <string name="tab">Karta</string>
+    <string name="template_percent">%1$d %%</string>
+    <string name="tooltip_description">popis</string>
+    <string name="tooltip_label">zobraziť popis</string>
+</resources>

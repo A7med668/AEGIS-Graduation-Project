@@ -1,0 +1,79 @@
+(for newer version see fastlane directory)
+
+Version 1.7
+
+- Ogg Opus file support added.
+- Extract album pictures from Ogg Vorbis and Ogg Opus files.
+
+Version 1.6.1
+
+- Precede movement name with movement number (arabic digits).
+- After renaming album pictures, write correct (new) file name to database.
+- Progress and result text corrected.
+
+Version 1.6
+
+- Vorbis (.ogg or .flac files) movement tags added according to the "MusicBrainz Picard" tagger.
+- Preserve original file name of album art pictures when downscaling
+- Image files can be renamed automatically, e.g. from "folder.jpg" to "albumart.jpg".
+
+Version 1.5
+
+- Built for Android 10 (SDK 29).
+- Base name for extracted album images is configurable ...
+- ... and its default value is now "albumart" instead of "folder".
+- Preference screen beautified.
+- Warnings about failed album image extraction (mostly due to SD card write restriction, i.e. SAF is mandatory).
+- Visual indication in case memory access was denied.
+
+Version 1.4.1
+
+- Additionally to "folder.jpg" and "cover.jpg", detect "AlbumArt.jpg" and "albumart.jpg" as album picture (workaround for Samsung's Android deprovement).
+
+Version 1.4
+
+- Auto scan now finds added and removed album pictures.
+- Multi CD album handling repaired.
+- Extracted album pictures may be scaled, like existing ones.
+
+Version 1.3.1
+
+- Workaround for Android bug that causes a null path to be returned for SD cards.
+
+Version 1.3
+
+- SD card detection
+- Database path is configurable
+- Menu entry to restore default paths
+- .nomedia file handling
+
+Version 1.2.4
+
+- Smaller package
+- Round app icon
+
+Version 1.2.3
+
+- Multi CD albums are processed correctly, i.e. with CD and track number.
+
+Version 1.2.2
+
+- Autoscan repaired, it used to fail for more than one added file.
+- Extract conductor names from mp4 files.
+- Taglib updated: 2019-03-27
+
+Version 1.2
+
+- Extract album covers from FLAC files
+
+Version 1.1.1
+
+- Crash avoided when called as background service.
+
+Version 1.1
+
+- Intelligent incremental/complete scan
+
+Version 1.0
+
+- initial version

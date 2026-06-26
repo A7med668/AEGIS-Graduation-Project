@@ -1,0 +1,32 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    env_file:
+      - .env.example
+    environment:
+      - STORAGE_DIR=/app/storage
+      - OLLAMA_BASE_URL=http://host.docker.internal:11434
+      - ADB_SERVER_SOCKET=tcp:host.docker.internal:5037
+      - DYNAMIC_ADB_SERIAL=emulator-5554
+      - DYNAMIC_AVD_NAME=Medium_Phone_API_36.1
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./storage:/app/storage
+      - C:/Tools:/opt/aegis-tools:ro
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/api/health', timeout=3).read()"]
+      interval: 20s
+      timeout: 5s
+      retries: 5
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "5173:80"
+    depends_on:
+      - backend

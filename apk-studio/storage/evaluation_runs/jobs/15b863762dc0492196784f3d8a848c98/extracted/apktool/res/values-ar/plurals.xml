@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="added_to_queue_message">
+        <item quantity="zero">%d حلقة أُضيفت لقائمة الانتظار.</item>
+        <item quantity="one">حلقة واحدة أُضيفت لقائمة الانتظار.</item>
+        <item quantity="two">حلقتان أُضيفتان لقائمة الانتظار.</item>
+        <item quantity="few">%d حلقات أُضيفت لقائمة الانتظار.</item>
+        <item quantity="many">%d حلقة أُضيفت لقائمة الانتظار.</item>
+        <item quantity="other">%d حلقة أُضيفت لقائمة الانتظار.</item>
+    </plurals>
+    <plurals name="deleted_episode_message">
+        <item quantity="zero">لم تحذف أي حلقات منزلة.</item>
+        <item quantity="one">حذفت حلقة منزلة واحدة.</item>
+        <item quantity="two">حذفت حلقتان منزلتان.</item>
+        <item quantity="few">حذفت %d حلقات منزلة.</item>
+        <item quantity="many">حذفت %d حلقة منزلة.</item>
+        <item quantity="other">حذفت %d حلقة منزلة.</item>
+    </plurals>
+    <plurals name="downloading_episodes_message">
+        <item quantity="zero">لا ينزل أي حلقات.</item>
+        <item quantity="one">ينزل حلقة واحدة.</item>
+        <item quantity="two">ينزل حلقتين.</item>
+        <item quantity="few">ينزل %d حلقات.</item>
+        <item quantity="many">ينزل %d حلقة.</item>
+        <item quantity="other">ينزل %d حلقة.</item>
+    </plurals>
+    <plurals name="downloads_left">
+        <item quantity="zero">بقي %d تنزيل</item>
+        <item quantity="one">بقي تنزيل واحد</item>
+        <item quantity="two">بقي تنزيلان</item>
+        <item quantity="few">بقي %d تنزيلات</item>
+        <item quantity="many">بقي %d تنزيلاً</item>
+        <item quantity="other">بقي %d تنزيل</item>
+    </plurals>
+    <plurals name="echo_hours_podcasts">
+        <item quantity="zero">"ساعات من الحلقات
+من المسموعية %1$d"</item>
+        <item quantity="one">"ساعات من الحلقات
+من المسموعية %1$d"</item>
+        <item quantity="two">"ساعات من الحلقات
+من المسموعيتان %1$d"</item>
+        <item quantity="few">"ساعات من الحلقات
+من مسموعيات مختلفة %1$d"</item>
+        <item quantity="many">"ساعات من الحلقات
+من مسموعيات مختلفة %1$d"</item>
+        <item quantity="other">"ساعات من الحلقات
+من مسموعية مختلفة %1$d"</item>
+    </plurals>
+    <plurals name="echo_queue_hours_waiting">
+        <item quantity="zero">"ساعة تتنظرك في الطابور
+من %1$d حلقة"</item>
+        <item quantity="one">"ساعة تتنظرك في الطابور
+من حلقة واحدة"</item>
+        <item quantity="two">"ساعة تتنظرك في الطابور
+من حلقتين"</item>
+        <item quantity="few">"ساعة تتنظرك في الطابور
+من %1$d حلقات"</item>
+        <item quantity="many">"ساعة تتنظرك في الطابور
+من %1$d حلقة"</item>
+        <item quantity="other">"ساعة تتنظرك في الطابور
+من %1$d حلقة"</item>
+    </plurals>
+    <plurals name="episode_cleanup_days_after_listening">
+        <item quantity="zero">%d يوم بعد الانتهاء</item>
+        <item quantity="one">%d يوم بعد الانتهاء</item>
+        <item quantity="two">%d يومان بعد الانتهاء</item>
+        <item quantity="few">%d أيام بعد الانتهاء</item>
+        <item quantity="many">%d يومًا بعد الانتهاء</item>
+        <item quantity="other">%d يوم بعد الانتهاء</item>
+    </plurals>
+    <plurals name="episode_cleanup_hours_after_listening">
+        <item quantity="zero">%d ساعة بعد الانتهاء</item>
+        <item quantity="one">%d ساعة بعد الانتهاء</item>
+        <item quantity="two">%d ساعتان بعد الانتهاء</item>
+        <item quantity="few">%d ساعات بعد الانتهاء</item>
+        <item quantity="many">%d ساعة بعد الانتهاء</item>
+        <item quantity="other">%d ساعة بعد الانتهاء</item>
+    </plurals>
+    <plurals name="marked_as_played_message">
+        <item quantity="zero">عُلِّمت %d حلقة كمُشغّلة.</item>
+        <item quantity="one">عُلِّمت حلقة واحدة كمُشغّلة.</item>
+        <item quantity="two">عُلِّمت حلقتان كمُشغّلة.</item>
+        <item quantity="few">عُلِّمت %d حلقات كمُشغّلة.</item>
+        <item quantity="many">عُلِّمت %d حلقة كمُشغّلة.</item>
+        <item quantity="other">عُلِّمت %d حلقة كمُشغّلة.</item>
+    </plurals>
+    <plurals name="marked_as_unplayed_message">
+        <item quantity="zero">%d حلقة عُلّمت كغير مُشغّلة.</item>
+        <item quantity="one">حلقة واحدة عُلّمت كغير مُشغّلة.</item>
+        <item quantity="two">حلقتان عُلّمتان كغير مُشغّلة.</item>
+        <item quantity="few">%d حلقات عُلّمت كغير مُشغّلة.</item>
+        <item quantity="many">%d حلقة عُلّمت كغير مُشغّلة.</item>
+        <item quantity="other">%d حلقة عُلّمت كغير مُشغّلة.</item>
+    </plurals>
+    <plurals name="mobile_download_notice">
+        <item quantity="zero">سيُنزّل باستخدام بيانات الهاتف لمدة %d دقيقة</item>
+        <item quantity="one">سيُنزّل باستخدام بيانات الهاتف لمدة دقيقة</item>
+        <item quantity="two">سيُنزّل باستخدام بيانات الهاتف لمدة دقيقتين</item>
+        <item quantity="few">سيُنزّل باستخدام بيانات الهاتف لمدة %d دقائق</item>
+        <item quantity="many">سيُنزّل باستخدام بيانات الهاتف لمدة %d دقيقة</item>
+        <item quantity="other">سيُنزّل باستخدام بيانات الهاتف لمدة %d دقيقة</item>
+    </plurals>
+    <plurals name="move_to_bottom_message">
+        <item quantity="zero">لم تنقل أي حلقة للأسفل.</item>
+        <item quantity="one">نقلت حلقة واحدة للأسفل.</item>
+        <item quantity="two">نقلت حلقتان للأسفل.</item>
+        <item quantity="few">نقلت %d حلقات للأسفل.</item>
+        <item quantity="many">نقلت %d حلقة للأسفل.</item>
+        <item quantity="other">نقلت %d حلقة للأسفل.</item>
+    </plurals>
+    <plurals name="move_to_top_message">
+        <item quantity="zero">لم تنقل أي حلقة للأعلى.</item>
+        <item quantity="one">نقلت حلقة واحدة للأعلى.</item>
+        <item quantity="two">نقلت حلقتان للأعلى.</item>
+        <item quantity="few">نقلت %d حلقات للأعلى.</item>
+        <item quantity="many">نقلت %d حلقة للأعلى.</item>
+        <item quantity="other">نقلت %d حلقة للأعلى.</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="zero">%d إشعار جديد</item>
+        <item quantity="one">إشعار جديد واحد (%d)</item>
+        <item quantity="two">إشعاران جديدان (%d)</item>
+        <item quantity="few">%d إشعارات جديدة</item>
+        <item quantity="many">%d إشعارًا جديدًا</item>
+        <item quantity="other">%d إشعار جديد</item>
+    </plurals>
+    <plurals name="new_episode_notification_message">
+        <item quantity="zero">لا حلقات جديدة من %2$s</item>
+        <item quantity="one">حلقة جديدة من %2$s</item>
+        <item quantity="two">حلقتان جديدة من %2$s</item>
+        <item quantity="few">%1$d حلقات جديدة من %2$s</item>
+        <item quantity="many">%1$d حلقة جديدة من %2$s</item>
+        <item quantity="other">%1$d حلقة جديدة من %2$s</item>
+    </plurals>
+    <plurals name="new_episode_notification_title">
+        <item quantity="zero">لا يوجد حلقات جديدة</item>
+        <item quantity="one">يوجد حلقة جديدة</item>
+        <item quantity="two">يوجد حلقتان جديدتان</item>
+        <item quantity="few">يوجد حلقات جديدة</item>
+        <item quantity="many">يوجد حلقات جديدة</item>
+        <item quantity="other">يوجد حلقات جديدة</item>
+    </plurals>
+    <plurals name="num_episodes">
+        <item quantity="zero">%d حلقة</item>
+        <item quantity="one">حلقة واحدة</item>
+        <item quantity="two">حلقتان</item>
+        <item quantity="few">%d حلقات</item>
+        <item quantity="many">%d حلقة</item>
+        <item quantity="other">%d حلقة</item>
+    </plurals>
+    <plurals name="num_selected_label">
+        <item quantity="zero">حدد %1$d/%2$d</item>
+        <item quantity="one">حدد %1$d/%2$d</item>
+        <item quantity="two">حدد %1$d/%2$d</item>
+        <item quantity="few">حدد %1$d/%2$d</item>
+        <item quantity="many">حدد %1$d/%2$d</item>
+        <item quantity="other">حدد %1$d/%2$d</item>
+    </plurals>
+    <plurals name="num_subscriptions">
+        <item quantity="zero">لا اشتراكات</item>
+        <item quantity="one">اشتراك واحد</item>
+        <item quantity="two">اشتراكان</item>
+        <item quantity="few">%d اشتراكات</item>
+        <item quantity="many">%d اشتراكًا</item>
+        <item quantity="other">%d اشتراك</item>
+    </plurals>
+    <plurals name="removed_from_inbox_batch_label">
+        <item quantity="zero">%d حلقة أزيلت من صندوق الوارد.</item>
+        <item quantity="one">%d حلقة أزيلت من صندوق الوارد.</item>
+        <item quantity="two">%d حلقتان أزيلتا من صندوق الوارد.</item>
+        <item quantity="few">%d حلقات أزيلت من صندوق الوارد.</item>
+        <item quantity="many">%d حلقات أزيلت من صندوق الوارد.</item>
+        <item quantity="other">%d حلقات أزيلت من صندوق الوارد.</item>
+    </plurals>
+    <plurals name="removed_from_queue_message">
+        <item quantity="zero">حُذفت %d حلقة من قائمة الانتظار.</item>
+        <item quantity="one">حُذفت حلقة واحدة من قائمة الانتظار.</item>
+        <item quantity="two">حُذفت حلقتان من قائمة الانتظار.</item>
+        <item quantity="few">حُذفت %d حلقات من قائمة الانتظار.</item>
+        <item quantity="many">حُذفت %d حلقة من قائمة الانتظار.</item>
+        <item quantity="other">حُذفت %d حلقة من قائمة الانتظار.</item>
+    </plurals>
+    <plurals name="time_days_quantified">
+        <item quantity="zero">%d يوم</item>
+        <item quantity="one">يوم %d</item>
+        <item quantity="two">%d يومان</item>
+        <item quantity="few">%d أيام</item>
+        <item quantity="many">%d يومًا</item>
+        <item quantity="other">%d يوما</item>
+    </plurals>
+    <plurals name="time_hours_quantified">
+        <item quantity="zero">%d ساعة</item>
+        <item quantity="one">%d ساعة</item>
+        <item quantity="two">%d ساعتان</item>
+        <item quantity="few">%d ساعات</item>
+        <item quantity="many">%d ساعة</item>
+        <item quantity="other">%d ساعة</item>
+    </plurals>
+    <plurals name="time_minutes_quantified">
+        <item quantity="zero">%d دقيقة</item>
+        <item quantity="one">%d دقيقة</item>
+        <item quantity="two">%d دقيقتان</item>
+        <item quantity="few">%d دقائق</item>
+        <item quantity="many">%d دقيقة</item>
+        <item quantity="other">%d دقائق</item>
+    </plurals>
+    <plurals name="time_seconds_quantified">
+        <item quantity="zero">%d ثانية</item>
+        <item quantity="one">%d ثانية</item>
+        <item quantity="two">%d ثانيتان</item>
+        <item quantity="few">%d ثواني</item>
+        <item quantity="many">%d ثانية</item>
+        <item quantity="other">%d ثانية</item>
+    </plurals>
+    <plurals name="total_size_downloaded_podcasts">
+        <item quantity="zero">الحجم الكلي لـ %d حلقة في الجهاز</item>
+        <item quantity="one">الحجم الكلي لحلقة في الجهاز</item>
+        <item quantity="two">الحجم الكلي لحلقتين في الجهاز</item>
+        <item quantity="few">الحجم الكلي لـ%d حلقات في الجهاز</item>
+        <item quantity="many">الحجم الكلي لـ%d حلقةً في الجهاز</item>
+        <item quantity="other">الحجم الكلي لـ%d حلقةٍ في الجهاز</item>
+    </plurals>
+    <plurals name="updated_feeds_batch_label">
+        <item quantity="zero">لم يحدث أي اشتراك.</item>
+        <item quantity="one">حدث اشتراك واحد.</item>
+        <item quantity="two">حدث اشتراكان.</item>
+        <item quantity="few">حدث %d اشتراكات.</item>
+        <item quantity="many">حدث %d اشتراكًا.</item>
+        <item quantity="other">حدث %d اشتراك.</item>
+    </plurals>
+</resources>

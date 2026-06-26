@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/transparentBackground" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:id="@id/card" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="32.0dp" android:elevation="16.0dp" app:cardCornerRadius="4.0dp">
+        <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" android:layout_alignParentTop="true" />
+            <View android:id="@id/divider" android:background="?android:listDivider" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_below="@id/toolbar" />
+            <ListView android:id="@id/list" android:paddingBottom="88.0dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/divider" />
+            <Button android:id="@id/shortcutBtn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16.0dp" android:text="@string/add_shortcut" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

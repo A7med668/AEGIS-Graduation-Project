@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/container" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imgvCover" android:layout_width="@dimen/thumbnail_length_queue_item" android:layout_height="@dimen/thumbnail_length_queue_item" android:layout_marginLeft="16.0dp" android:importantForAccessibility="no" android:layout_marginStart="16.0dp" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="@dimen/listitem_threeline_verticalpadding" android:layout_marginRight="@dimen/listitem_threeline_textrightpadding" android:layout_marginBottom="@dimen/listitem_threeline_verticalpadding" android:layout_weight="1.0" android:layout_marginStart="16.0dp" android:layout_marginEnd="@dimen/listitem_threeline_textrightpadding">
+        <TextView android:id="@id/txtvStart" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/AntennaPod.TextView.ListItemSecondaryTitle" />
+        <TextView android:ellipsize="end" android:id="@id/txtvTitle" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/AntennaPod.TextView.ListItemPrimaryTitle" />
+        <TextView android:id="@id/txtvLink" android:background="?selectableItemBackground" android:focusable="false" android:focusableInTouchMode="false" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/AntennaPod.TextView.ListItemSecondaryTitle" />
+        <TextView android:id="@id/txtvDuration" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/AntennaPod.TextView.ListItemSecondaryTitle" />
+    </LinearLayout>
+    <include layout="@layout/secondary_action" />
+</LinearLayout>

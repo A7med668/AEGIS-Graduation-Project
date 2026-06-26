@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/profileBadgeContainer" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/ivProfileBadge" android:layout_width="100.0dp" android:layout_height="100.0dp" />
+    <TextView android:textColor="@color/text_secondary" android:layout_gravity="center" android:id="@id/tvProfileBadge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin_half" style="@style/Bazaar.Text.Body2" />
+</LinearLayout>

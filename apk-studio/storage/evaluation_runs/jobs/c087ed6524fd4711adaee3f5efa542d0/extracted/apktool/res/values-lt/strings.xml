@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_mode_done">Atlikta</string>
+    <string name="abc_capital_off">IŠJUNGTI</string>
+    <string name="abc_capital_on">ĮJUNGTI</string>
+    <string name="abc_search_hint">Ieškoti…</string>
+    <string name="abc_searchview_description_clear">Išvalyti užklausą</string>
+    <string name="abc_searchview_description_search">Ieškoti</string>
+    <string name="abc_searchview_description_submit">Pateikti užklausą</string>
+    <string name="abc_searchview_description_voice">Paieška balsu</string>
+    <string name="abc_toolbar_collapse_description">Sutraukti</string>
+    <string name="bottomsheet_drag_handle_content_description">Vilkimo rankenėlė</string>
+    <string name="close_drawer">Uždaryti naršymo meniu</string>
+    <string name="close_sheet">Uždaryti lapą</string>
+    <string name="default_error_message">Netinkama įvestis</string>
+    <string name="default_popup_window_title">Iššokantysis langas</string>
+    <string name="error_a11y_label">Klaida: netinkama</string>
+    <string name="glance_error_layout_text_v2">Nepavyko parodyti turinio</string>
+    <string name="in_progress">Vyksta</string>
+    <string name="indeterminate">Iš dalies pažymėta</string>
+    <string name="m3_adaptive_default_pane_title_primary">Pagrindinė sritis</string>
+    <string name="m3_adaptive_default_pane_title_secondary">Antrinė sritis</string>
+    <string name="m3_adaptive_default_pane_title_tertiary">Tretinė sritis</string>
+    <string name="m3_loading_indicator_content_description">Įkeliama</string>
+    <string name="m3c_bottom_sheet_collapse_description">Sutraukti apatinį lapą</string>
+    <string name="m3c_bottom_sheet_dismiss_description">Atsisakyti apatinio lapo</string>
+    <string name="m3c_bottom_sheet_drag_handle_description">Vilkimo rankenėlė</string>
+    <string name="m3c_bottom_sheet_expand_description">Išskleisti apatinį lapą</string>
+    <string name="m3c_bottom_sheet_pane_title">Apatinis lapas</string>
+    <string name="m3c_snackbar_pane_title">Įspėjimas</string>
+    <string name="mtrl_button_snackbar_close_content_description">Uždaryti</string>
+    <string name="navigation_menu">Naršymo meniu</string>
+    <string name="not_selected">Nepasirinkta</string>
+    <string name="password_toggle_content_description">Rodyti slaptažodį</string>
+    <string name="selected">Pasirinkta</string>
+    <string name="state_empty">Tuščia</string>
+    <string name="state_off">Išjungta</string>
+    <string name="state_on">Įjungta</string>
+    <string name="switch_role">Jungiklis</string>
+    <string name="tab">Tabuliavimo klavišas</string>
+    <string name="template_percent">Procentų: %1$d.</string>
+    <string name="tooltip_description">patarimas</string>
+    <string name="tooltip_label">rodyti patarimą</string>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/navigation_release_note" app:startDestination="@id/emptyFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="EmptyFragment" android:name="com.farsitel.bazaar.component.EmptyFragment" android:id="@id/emptyFragment" />
+    <fragment android:label="ReleaseNoteFragment" android:name="com.farsitel.bazaar.releasenote.view.ReleaseNoteFragment" android:id="@id/releaseNoteFragment">
+        <deepLink app:uri="@string/deeplink_release_note_fragment" />
+    </fragment>
+    <action android:id="@id/action_global_releaseNoteFragment" app:destination="@id/releaseNoteFragment" />
+    <fragment android:label="ReleaseNoteDialog" android:name="com.farsitel.bazaar.releasenote.view.ReleaseNoteDialog" android:id="@id/releaseNoteDialog" />
+</navigation>

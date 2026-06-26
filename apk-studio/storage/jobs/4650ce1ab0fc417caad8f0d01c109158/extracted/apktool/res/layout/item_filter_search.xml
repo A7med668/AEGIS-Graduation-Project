@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="@dimen/secondary_button_height" android:paddingStart="@dimen/default_margin_one_half" android:paddingEnd="@dimen/default_margin_one_half"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/filterSearchIcon" android:layout_width="20.0dp" android:layout_height="16.0dp" />
+    <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/text_secondary" android:gravity="center" android:layout_gravity="center" android:id="@id/filterSearchText" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginStart="@dimen/default_margin_half" android:layout_marginEnd="@dimen/default_margin_half" style="@style/Bazaar.Text.Body2" />
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/action_about" android:title="@string/action_about" app:showAsAction="never" />
+    <item android:id="@id/action_settings" android:title="@string/action_settings" app:showAsAction="never" />
+    <item android:id="@id/action_manage_external_files" android:title="@string/action_manage_files" app:showAsAction="never" />
+    <item android:id="@id/action_help" android:title="@string/action_help" app:showAsAction="never" />
+    <item android:id="@id/action_changes" android:title="@string/action_changes" app:showAsAction="never" />
+    <item android:id="@id/action_scan_directories" android:title="Only Scan Directories" app:showAsAction="never" />
+    <item android:id="@id/action_collect_files" android:title="Collect Files" app:showAsAction="never" />
+    <item android:id="@id/action_query_audio_files" android:title="Query Audio File Table" app:showAsAction="never" />
+    <item android:id="@id/action_query_albums" android:title="Query Album Table" app:showAsAction="never" />
+    <item android:id="@id/action_query_album_pictures" android:title="Query Album Pictures" app:showAsAction="never" />
+    <item android:id="@id/action_build_albums" android:title="Build Album Table" app:showAsAction="never" />
+    <item android:id="@id/action_truncate_audio_file_table" android:title="Truncate Audio File Table" app:showAsAction="never" />
+    <item android:id="@id/action_truncate_album_table" android:title="Truncate Album Table" app:showAsAction="never" />
+    <item android:id="@id/action_remove" android:title="Remove Tables" app:showAsAction="never" />
+    <item android:id="@id/action_delete_db" android:title="Remove DB file" app:showAsAction="never" />
+    <item android:id="@id/action_get_num" android:title="Get Number of Audio Files and Albums" app:showAsAction="never" />
+    <item android:id="@id/action_write_db_version" android:title="Write Db version" app:showAsAction="never" />
+    <item android:id="@id/action_revoke_permissions" android:title="Revoke permissions" app:showAsAction="never" />
+</menu>

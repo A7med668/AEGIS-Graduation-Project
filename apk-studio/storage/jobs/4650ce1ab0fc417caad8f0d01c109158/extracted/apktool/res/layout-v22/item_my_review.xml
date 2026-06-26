@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/item_my_review_0" android:padding="@dimen/default_margin_double" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.farsitel.bazaar.designsystem.widget.AppIconView android:tag="binding_1" android:layout_width="@dimen/small_icon_size" android:layout_height="@dimen/small_icon_size" android:layout_marginTop="@dimen/default_margin_half" android:layout_marginBottom="@dimen/default_margin_half" android:contentDescription="@string/app_icon_content_description" android:layout_marginVertical="@dimen/default_margin_half" />
+        <com.farsitel.bazaar.designsystem.widget.LocalAwareTextView android:textColor="@color/text_primary" android:ellipsize="end" android:tag="binding_2" android:layout_width="0.0dp" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" android:layout_marginStart="@dimen/default_margin_one_half" app:gravity="START" style="@style/Bazaar.Text.Body2" />
+        <com.farsitel.bazaar.designsystem.widget.badge.IndicatorBadgeView android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/default_margin_double" android:layout_marginEnd="@dimen/default_margin" />
+        <androidx.appcompat.widget.AppCompatImageView android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/more_button_content_description" app:srcCompat="@drawable/ic_round_more_vert_icon_secondary_24dp_old" />
+        <ProgressBar android:tag="binding_5" android:layout_width="24.0dp" android:layout_height="24.0dp" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin">
+        <com.farsitel.bazaar.designsystem.ratingbar.MaterialRatingBar android:tag="binding_6" android:layout_width="wrap_content" android:layout_height="16.0dp" android:max="5" android:numStars="5" android:stepSize="1.0" android:isIndicator="true" app:emptyDrawableId="@drawable/ic_star_outline" app:fillDrawableId="@drawable/ic_star_fill" />
+        <View android:layout_width="0.0dp" android:layout_height="1.0dp" android:layout_weight="1.0" />
+        <androidx.appcompat.widget.AppCompatTextView android:tag="binding_7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/default_margin" android:layout_marginEnd="@dimen/default_margin" style="@style/Bazaar.Text.Caption" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:tag="binding_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin_one_half">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_add_comment_hint_24dp" />
+        <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/text_secondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_comment" android:layout_marginStart="@dimen/default_margin" style="@style/Bazaar.Text.Body2" />
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/text_secondary" android:tag="binding_9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin_one_half" style="@style/Bazaar.Text.Body2" />
+    <LinearLayout android:orientation="horizontal" android:tag="binding_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin_double">
+        <androidx.appcompat.widget.AppCompatImageView android:contentDescription="@string/like_content_description" app:srcCompat="@drawable/selector_thumb_up" app:tint="@color/icon_hint_color" style="@style/Bazaar.Image.Icon" />
+        <androidx.appcompat.widget.AppCompatTextView android:tag="binding_11" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/default_margin_half_quarter" style="@style/Bazaar.Text.Caption" />
+        <androidx.appcompat.widget.AppCompatImageView android:layout_marginTop="@dimen/default_margin_half" android:contentDescription="@string/dislike_content_description" android:layout_marginStart="@dimen/default_margin_double_half_quarter" app:srcCompat="@drawable/selector_thumb_down" app:tint="@color/icon_hint_color" style="@style/Bazaar.Image.Icon" />
+        <androidx.appcompat.widget.AppCompatTextView android:tag="binding_12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/default_margin_half_quarter" style="@style/Bazaar.Text.Caption" />
+    </LinearLayout>
+    <View android:layout_width="match_parent" android:layout_marginTop="@dimen/default_margin_double" style="@style/Bazaar.HorizontalDivider" />
+</LinearLayout>

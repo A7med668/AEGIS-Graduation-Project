@@ -1,0 +1,6 @@
+filename,package_name,label,expected_risk,category,source,notes
+fdroid.apk,org.fdroid.fdroid,benign,medium,app_store_like,F-Droid,Installer-like permissions are expected.
+telegram.apk,org.telegram.messenger,benign,medium,chat_like,Known app,Permission-heavy but expected for chat/calls.
+simple-file-manager.apk,com.simplemobiletools.filemanager,benign,medium,file_manager_like,F-Droid,Storage permissions expected.
+fake-flashlight.apk,com.example.fakeflashlight,suspicious,high,generic,local_dummy,Suspicious if requests SMS/overlay/accessibility unexpectedly.
+unknown-sms-overlay.apk,com.example.smsoverlay,suspicious,high,generic,local_dummy,SMS + overlay + network should be high.

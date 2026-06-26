@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="added_to_queue_message">
+        <item quantity="one">%d episode added to queue.</item>
+        <item quantity="other">%d episodes added to queue.</item>
+    </plurals>
+    <plurals name="deleted_episode_message">
+        <item quantity="one">%d downloaded episode deleted.</item>
+        <item quantity="other">%d downloaded episodes deleted.</item>
+    </plurals>
+    <plurals name="downloading_episodes_message">
+        <item quantity="one">Downloading %d episode.</item>
+        <item quantity="other">Downloading %d episodes.</item>
+    </plurals>
+    <plurals name="downloads_left">
+        <item quantity="one">%d download left</item>
+        <item quantity="other">%d downloads left</item>
+    </plurals>
+    <plurals name="echo_hours_podcasts">
+        <item quantity="one">"hours of episodes
+from %1$d podcast"</item>
+        <item quantity="other">"hours of episodes
+from %1$d different podcasts"</item>
+    </plurals>
+    <plurals name="echo_queue_hours_waiting">
+        <item quantity="one">"hours waiting in your queue
+from %1$d episode"</item>
+        <item quantity="other">"hours waiting in your queue
+from %1$d episodes"</item>
+    </plurals>
+    <plurals name="episode_cleanup_days_after_listening">
+        <item quantity="one">%d day after finishing</item>
+        <item quantity="other">%d days after finishing</item>
+    </plurals>
+    <plurals name="episode_cleanup_hours_after_listening">
+        <item quantity="one">%d hour after finishing</item>
+        <item quantity="other">%d hours after finishing</item>
+    </plurals>
+    <plurals name="episodes_sleep_timer_exceeds_queue">
+        <item quantity="zero">There are %1$d episodes left in your queue</item>
+        <item quantity="one">There is only %1$d episode left in your queue</item>
+        <item quantity="other">There are only %1$d episodes left in your queue</item>
+    </plurals>
+    <plurals name="marked_as_played_message">
+        <item quantity="one">%d episode marked as played.</item>
+        <item quantity="other">%d episodes marked as played.</item>
+    </plurals>
+    <plurals name="marked_as_unplayed_message">
+        <item quantity="one">%d episode marked as unplayed.</item>
+        <item quantity="other">%d episodes marked as unplayed.</item>
+    </plurals>
+    <plurals name="mobile_download_notice">
+        <item quantity="one">Downloading over mobile data connection for the next %d minute</item>
+        <item quantity="other">Downloading over mobile data connection for the next %d minutes</item>
+    </plurals>
+    <plurals name="move_to_bottom_message">
+        <item quantity="one">%d episode moved to bottom.</item>
+        <item quantity="other">%d episodes moved to bottom.</item>
+    </plurals>
+    <plurals name="move_to_top_message">
+        <item quantity="one">%d episode moved to top.</item>
+        <item quantity="other">%d episodes moved to top.</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d new notification</item>
+        <item quantity="other">%d new notifications</item>
+    </plurals>
+    <plurals name="new_episode_notification_message">
+        <item quantity="one">%2$s has a new episode</item>
+        <item quantity="other">%2$s has %1$d new episodes</item>
+    </plurals>
+    <plurals name="new_episode_notification_title">
+        <item quantity="one">New episode</item>
+        <item quantity="other">New episodes</item>
+    </plurals>
+    <plurals name="num_episodes">
+        <item quantity="one">%d episode</item>
+        <item quantity="other">%d episodes</item>
+    </plurals>
+    <plurals name="num_selected_label">
+        <item quantity="one">%1$d/%2$d selected</item>
+        <item quantity="other">%1$d/%2$d selected</item>
+    </plurals>
+    <plurals name="num_subscriptions">
+        <item quantity="one">%d subscription</item>
+        <item quantity="other">%d subscriptions</item>
+    </plurals>
+    <plurals name="removed_from_inbox_batch_label">
+        <item quantity="one">%d episode removed from inbox.</item>
+        <item quantity="other">%d episodes removed from inbox.</item>
+    </plurals>
+    <plurals name="removed_from_queue_message">
+        <item quantity="one">%d episode removed from queue.</item>
+        <item quantity="other">%d episodes removed from queue.</item>
+    </plurals>
+    <plurals name="statistics_episodes_downloaded">
+        <item quantity="one">downloaded</item>
+        <item quantity="other">downloaded</item>
+    </plurals>
+    <plurals name="statistics_episodes_started">
+        <item quantity="one">started</item>
+        <item quantity="other">started</item>
+    </plurals>
+    <plurals name="statistics_episodes_total">
+        <item quantity="one">total</item>
+        <item quantity="other">total</item>
+    </plurals>
+    <plurals name="time_days_quantified">
+        <item quantity="one">%d day</item>
+        <item quantity="other">%d days</item>
+    </plurals>
+    <plurals name="time_hours_quantified">
+        <item quantity="one">%d hour</item>
+        <item quantity="other">%d hours</item>
+    </plurals>
+    <plurals name="time_minutes_quantified">
+        <item quantity="one">%d minute</item>
+        <item quantity="other">%d minutes</item>
+    </plurals>
+    <plurals name="time_seconds_quantified">
+        <item quantity="one">%d second</item>
+        <item quantity="other">%d seconds</item>
+    </plurals>
+    <plurals name="timer_exceeds_remaining_time_while_continuous_playback_disabled">
+        <item quantity="one">Continuous playback is disabled and the current episode has only %1$d minute left</item>
+        <item quantity="other">Continuous playback is disabled and the current episode has only %1$d minutes left</item>
+    </plurals>
+    <plurals name="total_size_downloaded_podcasts">
+        <item quantity="one">Total size of %d episode on the device</item>
+        <item quantity="other">Total size of %d episodes on the device</item>
+    </plurals>
+    <plurals name="updated_feeds_batch_label">
+        <item quantity="one">%d subscription updated.</item>
+        <item quantity="other">%d subscriptions updated.</item>
+    </plurals>
+</resources>

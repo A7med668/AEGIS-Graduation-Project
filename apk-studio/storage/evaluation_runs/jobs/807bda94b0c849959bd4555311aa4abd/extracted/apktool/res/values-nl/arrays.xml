@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="content_types">
+        <item>UNDEFINED</item>
+        <item>Tekst</item>
+        <item>E-mailadres</item>
+        <item>Telefoonnummer</item>
+        <item>SMS</item>
+        <item>MMS</item>
+        <item>URL</item>
+        <item>Wifi</item>
+        <item>VCard</item>
+        <item>MeCard</item>
+        <item>BizCard</item>
+        <item>Market</item>
+        <item>Contact</item>
+        <item>Geolocatie</item>
+        <item>Adressenboek</item>
+        <item>Product</item>
+        <item>Kalender</item>
+        <item>ISBN</item>
+        <item>VoertuigIdentificatieNummer (VIN)</item>
+    </string-array>
+    <string-array name="email_array">
+        <item>E-mail versturen</item>
+        <item>Toevoegen aan contactpersonen</item>
+    </string-array>
+    <string-array name="generator_array">
+        <item>Tekst</item>
+        <item>E-mailadres</item>
+        <item>URL</item>
+        <item>Telefoonnummer</item>
+        <item>SMS</item>
+        <item>Geolocatie</item>
+        <item>MeCard</item>
+        <item>BizCard</item>
+        <item>Wi-Fi</item>
+        <item>VCard</item>
+        <item>App-winkel</item>
+    </string-array>
+    <string-array name="geo_array">
+        <item>Maps-app openen</item>
+        <item>Niets doen</item>
+    </string-array>
+    <string-array name="history_array">
+        <item>Kopiëren naar klembord</item>
+        <item>Item verwijderen</item>
+    </string-array>
+    <string-array name="mms_array">
+        <item>MMS versturen</item>
+        <item>Nummer bellen</item>
+        <item>Toevoegen aan contactpersonen</item>
+    </string-array>
+    <string-array name="pref_app_theme_entries">
+        <item>Licht</item>
+        <item>Donker</item>
+        <item>Systeem standaard</item>
+    </string-array>
+    <string-array name="product_array">
+        <item>Opzoeken op internet</item>
+        <item>Niets doen</item>
+    </string-array>
+    <string-array name="send_email_array">
+        <item>E-mail versturen</item>
+        <item>Toevoegen aan contactpersonen</item>
+    </string-array>
+    <string-array name="sms_array">
+        <item>SMS versturen</item>
+        <item>Nummer bellen</item>
+        <item>Toevoegen aan contactpersonen</item>
+    </string-array>
+    <string-array name="tel_array">
+        <item>Nummer bellen</item>
+        <item>Toevoegen aan contactpersonen</item>
+    </string-array>
+    <string-array name="text_array">
+        <item>Opzoeken op internet</item>
+        <item>Niets doen</item>
+    </string-array>
+    <string-array name="url_array">
+        <item>URL openen</item>
+        <item>Niets doen</item>
+    </string-array>
+    <string-array name="vcard_array">
+        <item>Toevoegen aan contactpersonen</item>
+        <item>Niets doen</item>
+    </string-array>
+    <string-array name="wifi_array">
+        <item>Wachtwoord kopiëren</item>
+        <item>WiFi-netwerk toevoegen</item>
+        <item>Niets doen</item>
+    </string-array>
+</resources>

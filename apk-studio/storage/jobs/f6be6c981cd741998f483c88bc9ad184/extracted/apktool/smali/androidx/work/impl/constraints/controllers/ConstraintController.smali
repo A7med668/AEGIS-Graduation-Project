@@ -1,0 +1,22 @@
+.class public interface abstract Landroidx/work/impl/constraints/controllers/ConstraintController;
+.super Ljava/lang/Object;
+.source "r8-map-id-6a9b11ff2c2b95756cb4ee2d05b385becae903f3ac48c16c621eba2c73a81bfd"
+
+
+# virtual methods
+.method public abstract hasConstraint(Landroidx/work/impl/model/WorkSpec;)Z
+.end method
+
+.method public abstract isCurrentlyConstrained(Landroidx/work/impl/model/WorkSpec;)Z
+.end method
+
+.method public abstract track(Landroidx/work/Constraints;)Lr7/h;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroidx/work/Constraints;",
+            ")",
+            "Lr7/h;"
+        }
+    .end annotation
+.end method

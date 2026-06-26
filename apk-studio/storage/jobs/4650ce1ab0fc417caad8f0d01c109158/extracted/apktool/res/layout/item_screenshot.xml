@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:id="@id/screenshot1" android:layout_width="0.0dp" android:layout_height="228.0dp" android:layout_marginTop="@dimen/default_margin_half_quarter" android:layout_marginBottom="@dimen/default_margin_half_quarter" android:layout_weight="1.0" android:layout_marginStart="@dimen/default_margin_one_half" app:cardCornerRadius="@dimen/image_rounded_corner" app:cardElevation="@dimen/screenshot_elevation" app:cardPreventCornerOverlap="false" app:cardUseCompatPadding="true">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/screenshotImageView1" android:layout_width="match_parent" android:layout_height="match_parent" android:adjustViewBounds="true" />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView android:id="@id/screenshot2" android:layout_width="0.0dp" android:layout_height="228.0dp" android:layout_marginTop="@dimen/default_margin_half_quarter" android:layout_marginBottom="@dimen/default_margin_half_quarter" android:layout_weight="1.0" android:layout_marginStart="@dimen/default_margin_quarter" android:layout_marginEnd="@dimen/default_margin_one_half" app:cardCornerRadius="@dimen/image_rounded_corner" app:cardElevation="@dimen/screenshot_elevation" app:cardPreventCornerOverlap="false" app:cardUseCompatPadding="true">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/screenshotImageView2" android:layout_width="match_parent" android:layout_height="match_parent" android:adjustViewBounds="true" />
+    </androidx.cardview.widget.CardView>
+</androidx.appcompat.widget.LinearLayoutCompat>

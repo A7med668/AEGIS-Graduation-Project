@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="added_to_queue_message">
+        <item quantity="one">%d epizód hozzáadva a sorhoz.</item>
+        <item quantity="other">%d epizód hozzáadva a sorhoz.</item>
+    </plurals>
+    <plurals name="deleted_episode_message">
+        <item quantity="one">%d letöltött epizód törölve.</item>
+        <item quantity="other">%d letöltött epizód törölve.</item>
+    </plurals>
+    <plurals name="downloading_episodes_message">
+        <item quantity="one">%d epizód letöltése.</item>
+        <item quantity="other">%d epizód letöltése.</item>
+    </plurals>
+    <plurals name="downloads_left">
+        <item quantity="one">%d letöltés van hátra</item>
+        <item quantity="other">%d letöltés van hátra</item>
+    </plurals>
+    <plurals name="echo_hours_podcasts">
+        <item quantity="one">"órányi epizódot játszott le,
+%1$d podcastból"</item>
+        <item quantity="other">"órányi epizódot játszott le,
+%1$d különböző podcastból"</item>
+    </plurals>
+    <plurals name="echo_queue_hours_waiting">
+        <item quantity="one">"órányi műsor van a várakozási sorban,
+%1$d epizódból"</item>
+        <item quantity="other">"órányi műsor van a várakozási sorban,
+%1$d epizódból"</item>
+    </plurals>
+    <plurals name="episode_cleanup_days_after_listening">
+        <item quantity="one">%d nappal a befejezés után</item>
+        <item quantity="other">%d nappal a befejezés után</item>
+    </plurals>
+    <plurals name="episode_cleanup_hours_after_listening">
+        <item quantity="one">%d órával a befejezés után</item>
+        <item quantity="other">%d órával a befejezés után</item>
+    </plurals>
+    <plurals name="marked_as_played_message">
+        <item quantity="one">%d epizód megjelölve lejátszottként.</item>
+        <item quantity="other">%d epizódok megjelölve lejáttszottként.</item>
+    </plurals>
+    <plurals name="marked_as_unplayed_message">
+        <item quantity="one">%d epizód megjelölve nem lejátszottként.</item>
+        <item quantity="other">%d epizódok megjelölve nem lejátszottként.</item>
+    </plurals>
+    <plurals name="mobile_download_notice">
+        <item quantity="one">Letöltés mobil adatkapcsolaton keresztül a következő %d percben</item>
+        <item quantity="other">Letöltés mobil adatkapcsolaton keresztül a következő %d percben</item>
+    </plurals>
+    <plurals name="move_to_bottom_message">
+        <item quantity="one">%d epizód alulra helyezve.</item>
+        <item quantity="other">%d epizód alulra helyezve.</item>
+    </plurals>
+    <plurals name="move_to_top_message">
+        <item quantity="one">%d epizód a tetejére helyezve.</item>
+        <item quantity="other">%d epizód a tetejére helyezve.</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d új értesítés</item>
+        <item quantity="other">%d új értesítés</item>
+    </plurals>
+    <plurals name="new_episode_notification_message">
+        <item quantity="one">A(z) %2$s új epizódot tartalmaz</item>
+        <item quantity="other">A(z) %2$s %1$d új epizódot tartalmaz</item>
+    </plurals>
+    <plurals name="new_episode_notification_title">
+        <item quantity="one">Új epizód</item>
+        <item quantity="other">Új epizódok</item>
+    </plurals>
+    <plurals name="num_episodes">
+        <item quantity="one">%d epizód</item>
+        <item quantity="other">%d epizód</item>
+    </plurals>
+    <plurals name="num_selected_label">
+        <item quantity="one">%1$d/%2$d kiválasztva</item>
+        <item quantity="other">%1$d/%2$d kiválasztva</item>
+    </plurals>
+    <plurals name="num_subscriptions">
+        <item quantity="one">%d feliratkozás</item>
+        <item quantity="other">%d feliratkozás</item>
+    </plurals>
+    <plurals name="removed_from_inbox_batch_label">
+        <item quantity="one">%d epizód eltávolítva a beérkezők közül.</item>
+        <item quantity="other">%d epizód eltávolítva a beérkezők közül.</item>
+    </plurals>
+    <plurals name="removed_from_queue_message">
+        <item quantity="one">%d epizód eltávolítva a sorból.</item>
+        <item quantity="other">%d epizód eltávolítva a sorból.</item>
+    </plurals>
+    <plurals name="statistics_episodes_downloaded">
+        <item quantity="one">letöltve</item>
+        <item quantity="other">letöltve</item>
+    </plurals>
+    <plurals name="statistics_episodes_started">
+        <item quantity="one">elindítva</item>
+        <item quantity="other">elindítva</item>
+    </plurals>
+    <plurals name="statistics_episodes_total">
+        <item quantity="one">összesen</item>
+        <item quantity="other">összesen</item>
+    </plurals>
+    <plurals name="time_days_quantified">
+        <item quantity="one">%d nap</item>
+        <item quantity="other">%d nap</item>
+    </plurals>
+    <plurals name="time_hours_quantified">
+        <item quantity="one">%d óra</item>
+        <item quantity="other">%d óra</item>
+    </plurals>
+    <plurals name="time_minutes_quantified">
+        <item quantity="one">%d perc</item>
+        <item quantity="other">%d perc</item>
+    </plurals>
+    <plurals name="time_seconds_quantified">
+        <item quantity="one">%d másodperc</item>
+        <item quantity="other">%d másodperc</item>
+    </plurals>
+    <plurals name="total_size_downloaded_podcasts">
+        <item quantity="one">%d epizód teljes mérete az eszközön</item>
+        <item quantity="other">%d epizód teljes mérete az eszközön</item>
+    </plurals>
+    <plurals name="updated_feeds_batch_label">
+        <item quantity="one">%d feliratkozás frissítve.</item>
+        <item quantity="other">%d feliratkozás frissítve.</item>
+    </plurals>
+</resources>

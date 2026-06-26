@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="downloads_left">
+        <item quantity="other">다운로드 %d개 남음</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">새 알림 %d개</item>
+        <item quantity="other">새 알림 %d개</item>
+    </plurals>
+    <plurals name="new_episode_notification_message">
+        <item quantity="other">%2$s에 새 에피소드 %1$d개</item>
+    </plurals>
+    <plurals name="new_episode_notification_title">
+        <item quantity="other">새 에피소드</item>
+    </plurals>
+    <plurals name="num_episodes">
+        <item quantity="other">%d개 에피소드</item>
+    </plurals>
+    <plurals name="num_selected_label">
+        <item quantity="other">%1$d/%2$d 선택</item>
+    </plurals>
+    <plurals name="removed_from_inbox_batch_label">
+        <item quantity="other">%d개 에피소드를 새로 받음 목록에서 제거했습니다.</item>
+    </plurals>
+    <plurals name="updated_feeds_batch_label">
+        <item quantity="other">%d개 구독 업데이트함.</item>
+    </plurals>
+</resources>

@@ -1,0 +1,104 @@
+.class public final Landroidx/media3/exoplayer/DefaultLivePlaybackSpeedControl$Builder;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/media3/exoplayer/DefaultLivePlaybackSpeedControl;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "Builder"
+.end annotation
+
+
+# instance fields
+.field public fallbackMaxPlaybackSpeed:F
+
+.field public fallbackMinPlaybackSpeed:F
+
+.field public maxLiveOffsetErrorUsForUnitSpeed:J
+
+.field public minPossibleLiveOffsetSmoothingFactor:F
+
+.field public minUpdateIntervalMs:J
+
+.field public proportionalControlFactorUs:F
+
+.field public targetLiveOffsetIncrementOnRebufferUs:J
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 2
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const v0, 0x3f7851ec    # 0.97f
+
+    iput v0, p0, Landroidx/media3/exoplayer/DefaultLivePlaybackSpeedControl$Builder;->fallbackMinPlaybackSpeed:F
+
+    const v0, 0x3f83d70a    # 1.03f
+
+    iput v0, p0, Landroidx/media3/exoplayer/DefaultLivePlaybackSpeedControl$Builder;->fallbackMaxPlaybackSpeed:F
+
+    const-wide/16 v0, 0x3e8
+
+    iput-wide v0, p0, Landroidx/media3/exoplayer/DefaultLivePlaybackSpeedControl$Builder;->minUpdateIntervalMs:J
+
+    const v0, 0x33d6bf95    # 1.0E-7f
+
+    iput v0, p0, Landroidx/media3/exoplayer/DefaultLivePlaybackSpeedControl$Builder;->proportionalControlFactorUs:F
+
+    const-wide/16 v0, 0x14
+
+    invoke-static {v0, v1}, Landroidx/media3/common/util/Util;->msToUs(J)J
+
+    move-result-wide v0
+
+    iput-wide v0, p0, Landroidx/media3/exoplayer/DefaultLivePlaybackSpeedControl$Builder;->maxLiveOffsetErrorUsForUnitSpeed:J
+
+    const-wide/16 v0, 0x1f4
+
+    invoke-static {v0, v1}, Landroidx/media3/common/util/Util;->msToUs(J)J
+
+    move-result-wide v0
+
+    iput-wide v0, p0, Landroidx/media3/exoplayer/DefaultLivePlaybackSpeedControl$Builder;->targetLiveOffsetIncrementOnRebufferUs:J
+
+    const v0, 0x3f7fbe77    # 0.999f
+
+    iput v0, p0, Landroidx/media3/exoplayer/DefaultLivePlaybackSpeedControl$Builder;->minPossibleLiveOffsetSmoothingFactor:F
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public build()Landroidx/media3/exoplayer/DefaultLivePlaybackSpeedControl;
+    .locals 12
+
+    new-instance v0, Landroidx/media3/exoplayer/DefaultLivePlaybackSpeedControl;
+
+    iget v1, p0, Landroidx/media3/exoplayer/DefaultLivePlaybackSpeedControl$Builder;->fallbackMinPlaybackSpeed:F
+
+    iget v2, p0, Landroidx/media3/exoplayer/DefaultLivePlaybackSpeedControl$Builder;->fallbackMaxPlaybackSpeed:F
+
+    iget-wide v3, p0, Landroidx/media3/exoplayer/DefaultLivePlaybackSpeedControl$Builder;->minUpdateIntervalMs:J
+
+    iget v5, p0, Landroidx/media3/exoplayer/DefaultLivePlaybackSpeedControl$Builder;->proportionalControlFactorUs:F
+
+    iget-wide v6, p0, Landroidx/media3/exoplayer/DefaultLivePlaybackSpeedControl$Builder;->maxLiveOffsetErrorUsForUnitSpeed:J
+
+    iget-wide v8, p0, Landroidx/media3/exoplayer/DefaultLivePlaybackSpeedControl$Builder;->targetLiveOffsetIncrementOnRebufferUs:J
+
+    iget v10, p0, Landroidx/media3/exoplayer/DefaultLivePlaybackSpeedControl$Builder;->minPossibleLiveOffsetSmoothingFactor:F
+
+    const/4 v11, 0x0
+
+    invoke-direct/range {v0 .. v11}, Landroidx/media3/exoplayer/DefaultLivePlaybackSpeedControl;-><init>(FFJFJJFLandroidx/media3/exoplayer/DefaultLivePlaybackSpeedControl$1;)V
+
+    return-object v0
+.end method

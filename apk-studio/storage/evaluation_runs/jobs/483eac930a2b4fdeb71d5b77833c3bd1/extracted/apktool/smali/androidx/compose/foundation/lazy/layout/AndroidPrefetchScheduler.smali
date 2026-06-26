@@ -1,0 +1,406 @@
+.class public final Landroidx/compose/foundation/lazy/layout/AndroidPrefetchScheduler;
+.super Ljava/lang/Object;
+.source "r8-map-id-226db4dad4ab4d5786e2bb0e8f3f1f65ee6d48d6f3bce6d8fcd4994964287ee8"
+
+# interfaces
+.implements Landroidx/compose/foundation/lazy/layout/PrefetchScheduler;
+.implements Landroid/view/View$OnAttachStateChangeListener;
+.implements Ljava/lang/Runnable;
+.implements Landroid/view/Choreographer$FrameCallback;
+
+
+# static fields
+.field public static frameIntervalNs:J
+
+
+# instance fields
+.field public final choreographer:Landroid/view/Choreographer;
+
+.field public frameStartTimeNanos:J
+
+.field public isActive:Z
+
+.field public final prefetchRequests:Ljava/util/PriorityQueue;
+
+.field public prefetchScheduled:Z
+
+.field public final scope:Landroidx/compose/foundation/lazy/layout/AndroidPrefetchScheduler$PrefetchRequestScopeImpl;
+
+.field public final view:Landroid/view/View;
+
+
+# direct methods
+.method public constructor <init>(Landroid/view/View;)V
+    .locals 5
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Landroidx/compose/foundation/lazy/layout/AndroidPrefetchScheduler;->view:Landroid/view/View;
+
+    new-instance v0, Ljava/util/PriorityQueue;
+
+    new-instance v1, Landroidx/compose/ui/node/LayoutNode$$ExternalSyntheticLambda1;
+
+    const/4 v2, 0x1
+
+    invoke-direct {v1, v2}, Landroidx/compose/ui/node/LayoutNode$$ExternalSyntheticLambda1;-><init>(I)V
+
+    const/16 v3, 0xb
+
+    invoke-direct {v0, v3, v1}, Ljava/util/PriorityQueue;-><init>(ILjava/util/Comparator;)V
+
+    iput-object v0, p0, Landroidx/compose/foundation/lazy/layout/AndroidPrefetchScheduler;->prefetchRequests:Ljava/util/PriorityQueue;
+
+    invoke-static {}, Landroid/view/Choreographer;->getInstance()Landroid/view/Choreographer;
+
+    move-result-object v0
+
+    iput-object v0, p0, Landroidx/compose/foundation/lazy/layout/AndroidPrefetchScheduler;->choreographer:Landroid/view/Choreographer;
+
+    new-instance v0, Landroidx/compose/foundation/lazy/layout/AndroidPrefetchScheduler$PrefetchRequestScopeImpl;
+
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    iput-object v0, p0, Landroidx/compose/foundation/lazy/layout/AndroidPrefetchScheduler;->scope:Landroidx/compose/foundation/lazy/layout/AndroidPrefetchScheduler$PrefetchRequestScopeImpl;
+
+    sget-wide v0, Landroidx/compose/foundation/lazy/layout/AndroidPrefetchScheduler;->frameIntervalNs:J
+
+    const-wide/16 v3, 0x0
+
+    cmp-long v0, v0, v3
+
+    if-nez v0, :cond_1
+
+    invoke-virtual {p1}, Landroid/view/View;->getDisplay()Landroid/view/Display;
+
+    move-result-object v0
+
+    invoke-virtual {p1}, Landroid/view/View;->isInEditMode()Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0}, Landroid/view/Display;->getRefreshRate()F
+
+    move-result v0
+
+    const/high16 v1, 0x41f00000    # 30.0f
+
+    cmpl-float v1, v0, v1
+
+    if-ltz v1, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/high16 v0, 0x42700000    # 60.0f
+
+    :goto_0
+    const v1, 0x4e6e6b28    # 1.0E9f
+
+    div-float/2addr v1, v0
+
+    float-to-long v0, v1
+
+    sput-wide v0, Landroidx/compose/foundation/lazy/layout/AndroidPrefetchScheduler;->frameIntervalNs:J
+
+    :cond_1
+    invoke-virtual {p1, p0}, Landroid/view/View;->addOnAttachStateChangeListener(Landroid/view/View$OnAttachStateChangeListener;)V
+
+    invoke-virtual {p1}, Landroid/view/View;->isAttachedToWindow()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_2
+
+    iput-boolean v2, p0, Landroidx/compose/foundation/lazy/layout/AndroidPrefetchScheduler;->isActive:Z
+
+    :cond_2
+    return-void
+.end method
+
+
+# virtual methods
+.method public final doFrame(J)V
+    .locals 1
+
+    iget-boolean v0, p0, Landroidx/compose/foundation/lazy/layout/AndroidPrefetchScheduler;->isActive:Z
+
+    if-eqz v0, :cond_0
+
+    iput-wide p1, p0, Landroidx/compose/foundation/lazy/layout/AndroidPrefetchScheduler;->frameStartTimeNanos:J
+
+    iget-object p1, p0, Landroidx/compose/foundation/lazy/layout/AndroidPrefetchScheduler;->view:Landroid/view/View;
+
+    invoke-virtual {p1, p0}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
+
+    :cond_0
+    return-void
+.end method
+
+.method public final onViewAttachedToWindow(Landroid/view/View;)V
+    .locals 0
+
+    const/4 p1, 0x1
+
+    iput-boolean p1, p0, Landroidx/compose/foundation/lazy/layout/AndroidPrefetchScheduler;->isActive:Z
+
+    return-void
+.end method
+
+.method public final onViewDetachedFromWindow(Landroid/view/View;)V
+    .locals 0
+
+    const/4 p1, 0x0
+
+    iput-boolean p1, p0, Landroidx/compose/foundation/lazy/layout/AndroidPrefetchScheduler;->isActive:Z
+
+    iget-object p1, p0, Landroidx/compose/foundation/lazy/layout/AndroidPrefetchScheduler;->view:Landroid/view/View;
+
+    invoke-virtual {p1, p0}, Landroid/view/View;->removeCallbacks(Ljava/lang/Runnable;)Z
+
+    iget-object p1, p0, Landroidx/compose/foundation/lazy/layout/AndroidPrefetchScheduler;->choreographer:Landroid/view/Choreographer;
+
+    invoke-virtual {p1, p0}, Landroid/view/Choreographer;->removeFrameCallback(Landroid/view/Choreographer$FrameCallback;)V
+
+    return-void
+.end method
+
+.method public final run()V
+    .locals 11
+
+    iget-object v0, p0, Landroidx/compose/foundation/lazy/layout/AndroidPrefetchScheduler;->prefetchRequests:Ljava/util/PriorityQueue;
+
+    invoke-virtual {v0}, Ljava/util/AbstractCollection;->isEmpty()Z
+
+    move-result v1
+
+    const/4 v2, 0x0
+
+    if-nez v1, :cond_5
+
+    iget-boolean v1, p0, Landroidx/compose/foundation/lazy/layout/AndroidPrefetchScheduler;->prefetchScheduled:Z
+
+    if-eqz v1, :cond_5
+
+    iget-boolean v1, p0, Landroidx/compose/foundation/lazy/layout/AndroidPrefetchScheduler;->isActive:Z
+
+    if-eqz v1, :cond_5
+
+    iget-object v1, p0, Landroidx/compose/foundation/lazy/layout/AndroidPrefetchScheduler;->view:Landroid/view/View;
+
+    invoke-virtual {v1}, Landroid/view/View;->getWindowVisibility()I
+
+    move-result v3
+
+    if-eqz v3, :cond_0
+
+    goto :goto_3
+
+    :cond_0
+    sget-object v3, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
+
+    invoke-virtual {v1}, Landroid/view/View;->getDrawingTime()J
+
+    move-result-wide v4
+
+    invoke-virtual {v3, v4, v5}, Ljava/util/concurrent/TimeUnit;->toNanos(J)J
+
+    move-result-wide v3
+
+    invoke-static {}, Ljava/lang/System;->nanoTime()J
+
+    move-result-wide v5
+
+    const-wide/16 v7, 0x2
+
+    sget-wide v9, Landroidx/compose/foundation/lazy/layout/AndroidPrefetchScheduler;->frameIntervalNs:J
+
+    mul-long/2addr v7, v9
+
+    add-long/2addr v7, v3
+
+    cmp-long v1, v5, v7
+
+    if-lez v1, :cond_1
+
+    const/4 v1, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    move v1, v2
+
+    :goto_0
+    iget-object v5, p0, Landroidx/compose/foundation/lazy/layout/AndroidPrefetchScheduler;->scope:Landroidx/compose/foundation/lazy/layout/AndroidPrefetchScheduler$PrefetchRequestScopeImpl;
+
+    iput-boolean v1, v5, Landroidx/compose/foundation/lazy/layout/AndroidPrefetchScheduler$PrefetchRequestScopeImpl;->isFrameIdle:Z
+
+    iget-wide v6, p0, Landroidx/compose/foundation/lazy/layout/AndroidPrefetchScheduler;->frameStartTimeNanos:J
+
+    invoke-static {v6, v7, v3, v4}, Ljava/lang/Math;->max(JJ)J
+
+    move-result-wide v3
+
+    sget-wide v6, Landroidx/compose/foundation/lazy/layout/AndroidPrefetchScheduler;->frameIntervalNs:J
+
+    add-long/2addr v3, v6
+
+    iput-wide v3, v5, Landroidx/compose/foundation/lazy/layout/AndroidPrefetchScheduler$PrefetchRequestScopeImpl;->nextFrameTimeNs:J
+
+    move v1, v2
+
+    :goto_1
+    invoke-interface {v0}, Ljava/util/Collection;->isEmpty()Z
+
+    move-result v3
+
+    if-nez v3, :cond_3
+
+    if-nez v1, :cond_3
+
+    iget-boolean v1, v5, Landroidx/compose/foundation/lazy/layout/AndroidPrefetchScheduler$PrefetchRequestScopeImpl;->isFrameIdle:Z
+
+    if-eqz v1, :cond_2
+
+    const-string v1, "compose:lazy:prefetch:idle_frame"
+
+    invoke-static {v1}, Landroid/os/Trace;->beginSection(Ljava/lang/String;)V
+
+    :try_start_0
+    invoke-virtual {p0}, Landroidx/compose/foundation/lazy/layout/AndroidPrefetchScheduler;->runRequest()Z
+
+    move-result v1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    invoke-static {}, Landroid/os/Trace;->endSection()V
+
+    goto :goto_1
+
+    :catchall_0
+    move-exception p0
+
+    invoke-static {}, Landroid/os/Trace;->endSection()V
+
+    throw p0
+
+    :cond_2
+    invoke-virtual {p0}, Landroidx/compose/foundation/lazy/layout/AndroidPrefetchScheduler;->runRequest()Z
+
+    move-result v1
+
+    goto :goto_1
+
+    :cond_3
+    if-eqz v1, :cond_4
+
+    iget-object v0, p0, Landroidx/compose/foundation/lazy/layout/AndroidPrefetchScheduler;->choreographer:Landroid/view/Choreographer;
+
+    invoke-virtual {v0, p0}, Landroid/view/Choreographer;->postFrameCallback(Landroid/view/Choreographer$FrameCallback;)V
+
+    goto :goto_2
+
+    :cond_4
+    iput-boolean v2, p0, Landroidx/compose/foundation/lazy/layout/AndroidPrefetchScheduler;->prefetchScheduled:Z
+
+    :goto_2
+    const-string p0, "compose:lazy:prefetch:available_time_nanos"
+
+    const-wide/16 v0, 0x0
+
+    invoke-static {p0, v0, v1}, Landroid/os/Trace;->setCounter(Ljava/lang/String;J)V
+
+    return-void
+
+    :cond_5
+    :goto_3
+    iput-boolean v2, p0, Landroidx/compose/foundation/lazy/layout/AndroidPrefetchScheduler;->prefetchScheduled:Z
+
+    return-void
+.end method
+
+.method public final runRequest()Z
+    .locals 5
+
+    iget-object v0, p0, Landroidx/compose/foundation/lazy/layout/AndroidPrefetchScheduler;->scope:Landroidx/compose/foundation/lazy/layout/AndroidPrefetchScheduler$PrefetchRequestScopeImpl;
+
+    invoke-virtual {v0}, Landroidx/compose/foundation/lazy/layout/AndroidPrefetchScheduler$PrefetchRequestScopeImpl;->availableTimeNanos()J
+
+    move-result-wide v1
+
+    const-string v3, "compose:lazy:prefetch:available_time_nanos"
+
+    invoke-static {v3, v1, v2}, Landroid/os/Trace;->setCounter(Ljava/lang/String;J)V
+
+    const-wide/16 v3, 0x0
+
+    cmp-long v1, v1, v3
+
+    const/4 v2, 0x1
+
+    if-lez v1, :cond_1
+
+    iget-object p0, p0, Landroidx/compose/foundation/lazy/layout/AndroidPrefetchScheduler;->prefetchRequests:Ljava/util/PriorityQueue;
+
+    invoke-virtual {p0}, Ljava/util/PriorityQueue;->peek()Ljava/lang/Object;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    check-cast v1, Landroidx/compose/foundation/lazy/layout/PriorityTask;
+
+    iget-object v1, v1, Landroidx/compose/foundation/lazy/layout/PriorityTask;->request:Landroidx/compose/foundation/lazy/layout/PrefetchHandleProvider$HandleAndRequestImpl;
+
+    invoke-virtual {v1, v0}, Landroidx/compose/foundation/lazy/layout/PrefetchHandleProvider$HandleAndRequestImpl;->execute(Landroidx/compose/foundation/lazy/layout/AndroidPrefetchScheduler$PrefetchRequestScopeImpl;)Z
+
+    move-result v1
+
+    const/4 v3, 0x0
+
+    if-eqz v1, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    invoke-virtual {p0}, Ljava/util/PriorityQueue;->poll()Ljava/lang/Object;
+
+    move v2, v3
+
+    :goto_0
+    iput-boolean v3, v0, Landroidx/compose/foundation/lazy/layout/AndroidPrefetchScheduler$PrefetchRequestScopeImpl;->isFrameIdle:Z
+
+    :cond_1
+    return v2
+.end method
+
+.method public final schedulePrefetch(Landroidx/compose/foundation/lazy/layout/PrefetchHandleProvider$HandleAndRequestImpl;)V
+    .locals 2
+
+    new-instance v0, Landroidx/compose/foundation/lazy/layout/PriorityTask;
+
+    const/4 v1, 0x1
+
+    invoke-direct {v0, v1, p1}, Landroidx/compose/foundation/lazy/layout/PriorityTask;-><init>(ILandroidx/compose/foundation/lazy/layout/PrefetchHandleProvider$HandleAndRequestImpl;)V
+
+    iget-object p1, p0, Landroidx/compose/foundation/lazy/layout/AndroidPrefetchScheduler;->prefetchRequests:Ljava/util/PriorityQueue;
+
+    invoke-virtual {p1, v0}, Ljava/util/PriorityQueue;->add(Ljava/lang/Object;)Z
+
+    iget-boolean p1, p0, Landroidx/compose/foundation/lazy/layout/AndroidPrefetchScheduler;->prefetchScheduled:Z
+
+    if-nez p1, :cond_0
+
+    iput-boolean v1, p0, Landroidx/compose/foundation/lazy/layout/AndroidPrefetchScheduler;->prefetchScheduled:Z
+
+    iget-object p1, p0, Landroidx/compose/foundation/lazy/layout/AndroidPrefetchScheduler;->view:Landroid/view/View;
+
+    invoke-virtual {p1, p0}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
+
+    :cond_0
+    return-void
+.end method

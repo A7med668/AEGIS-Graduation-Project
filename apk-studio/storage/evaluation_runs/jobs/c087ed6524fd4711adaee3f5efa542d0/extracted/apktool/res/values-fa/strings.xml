@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_mode_done">تمام</string>
+    <string name="abc_capital_off">خاموش</string>
+    <string name="abc_capital_on">روشن</string>
+    <string name="abc_search_hint">جستجو…‏</string>
+    <string name="abc_searchview_description_clear">پاک کردن پُرسمان</string>
+    <string name="abc_searchview_description_search">جستجو</string>
+    <string name="abc_searchview_description_submit">ارسال پُرسمان</string>
+    <string name="abc_searchview_description_voice">جستجوی گفتاری</string>
+    <string name="abc_toolbar_collapse_description">کوچک کردن</string>
+    <string name="bottomsheet_drag_handle_content_description">دستگیره کشاندن</string>
+    <string name="close_drawer">بستن منوی پیمایش</string>
+    <string name="close_sheet">بستن برگ</string>
+    <string name="default_error_message">ورودی نامعتبر</string>
+    <string name="default_popup_window_title">پنجره بالاپر</string>
+    <string name="error_a11y_label">خطا: نامعتبر</string>
+    <string name="glance_error_layout_text_v2">محتوا نشان داده نشد</string>
+    <string name="in_progress">درحال انجام</string>
+    <string name="indeterminate">ناقص علامت زده‌شده</string>
+    <string name="m3_adaptive_default_pane_title_primary">قاب اصلی</string>
+    <string name="m3_adaptive_default_pane_title_secondary">قاب دوم</string>
+    <string name="m3_adaptive_default_pane_title_tertiary">قاب سوم</string>
+    <string name="m3_loading_indicator_content_description">درحال بار کردن</string>
+    <string name="m3c_bottom_sheet_collapse_description">جمع کردن برگ زیرین</string>
+    <string name="m3c_bottom_sheet_dismiss_description">بستن برگ زیرین</string>
+    <string name="m3c_bottom_sheet_drag_handle_description">دستگیره کشاندن</string>
+    <string name="m3c_bottom_sheet_expand_description">ازهم باز کردن برگ زیرین</string>
+    <string name="m3c_bottom_sheet_pane_title">برگ زیرین</string>
+    <string name="m3c_snackbar_pane_title">هشدار</string>
+    <string name="mtrl_button_snackbar_close_content_description">بستن</string>
+    <string name="navigation_menu">منوی پیمایش</string>
+    <string name="not_selected">انتخاب‌نشده</string>
+    <string name="password_toggle_content_description">نشان دادن گذرواژه</string>
+    <string name="selected">انتخاب شد</string>
+    <string name="state_empty">خالی</string>
+    <string name="state_off">خاموش</string>
+    <string name="state_on">روشن</string>
+    <string name="switch_role">کلید</string>
+    <string name="tab">زبانه</string>
+    <string name="template_percent">%1$d درصد.</string>
+    <string name="tooltip_description">نکته‌ابزار</string>
+    <string name="tooltip_label">نمایش نکته‌ابزار</string>
+</resources>

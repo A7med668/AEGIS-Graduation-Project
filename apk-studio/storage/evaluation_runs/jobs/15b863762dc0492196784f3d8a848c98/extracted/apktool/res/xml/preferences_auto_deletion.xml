@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreferenceCompat android:enabled="true" android:title="@string/pref_auto_delete_playback_title" android:key="prefAutoDelete" android:summary="@string/pref_auto_delete_playback_sum" android:defaultValue="false" />
+    <SwitchPreferenceCompat android:enabled="true" android:title="@string/pref_auto_local_delete_title" android:key="prefAutoDeleteLocal" android:summary="@string/pref_auto_local_delete_sum" android:defaultValue="false" />
+    <SwitchPreferenceCompat android:enabled="true" android:title="@string/pref_favorite_keeps_episodes_title" android:key="prefFavoriteKeepsEpisode" android:summary="@string/pref_favorite_keeps_episodes_sum" android:defaultValue="true" />
+    <de.danoeh.antennapod.ui.preferences.preference.MaterialListPreference android:entries="@array/episode_cleanup_entries" android:title="@string/pref_episode_cleanup_title" android:key="prefEpisodeCleanup" android:summary="@string/pref_episode_cleanup_summary" android:defaultValue="-2" android:entryValues="@array/episode_cleanup_values" />
+</PreferenceScreen>

@@ -1,0 +1,55 @@
+{
+  "total": 4,
+  "by_label": {
+    "benign": 3,
+    "suspicious": 1
+  },
+  "by_expected_risk": {
+    "medium": 3,
+    "high": 1
+  },
+  "by_category": {
+    "app_store_like": 1,
+    "chat_like": 1,
+    "file_manager_like": 1,
+    "generic": 1
+  },
+  "rows": [
+    {
+      "filename": "fdroid.apk",
+      "package_name": "org.fdroid.fdroid",
+      "label": "benign",
+      "expected_risk": "medium",
+      "category": "app_store_like",
+      "source": "F-Droid",
+      "notes": "Installer-like permissions are expected."
+    },
+    {
+      "filename": "telegram.apk",
+      "package_name": "org.telegram.messenger",
+      "label": "benign",
+      "expected_risk": "medium",
+      "category": "chat_like",
+      "source": "Known app",
+      "notes": "Permission-heavy but expected for chat/calls."
+    },
+    {
+      "filename": "simple-file-manager.apk",
+      "package_name": "unknown",
+      "label": "benign",
+      "expected_risk": "medium",
+      "category": "file_manager_like",
+      "source": "F-Droid",
+      "notes": "Storage permissions expected."
+    },
+    {
+      "filename": "fake-laser.apk",
+      "package_name": "unknown",
+      "label": "suspicious",
+      "expected_risk": "high",
+      "category": "generic",
+      "source": "local_sample",
+      "notes": "Suspicious or unknown APK used for testing."
+    }
+  ]
+}
